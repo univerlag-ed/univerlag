@@ -33,10 +33,15 @@
     <xsl:output indent="yes"/>
 
     <!--the max thumbnail height & width from dspace.cfg, needed for item view and item list pages-->
-    <xsl:variable name="thumbnail.maxheight" select="confman:getIntProperty('thumbnail.maxheight', 80)"/>
-    <xsl:variable name="thumbnail.maxwidth" select="confman:getIntProperty('thumbnail.maxwidth', 80)"/>
+    <xsl:variable name="thumbnail.maxheight" select="confman:getIntProperty('thumbnail.maxheight', 120)"/>
+    <xsl:variable name="thumbnail.maxwidth" select="confman:getIntProperty('thumbnail.maxwidth', 180)"/>
     <!-- item details url -->
     <xsl:variable name="ds_item_view_toggle_url" select="//dri:p[contains(@rend , 'item-view-toggle') and
         (preceding-sibling::dri:referenceSet[@type = 'summaryView'] or following-sibling::dri:referenceSet[@type = 'summaryView'])]/dri:xref/@target"/>
 
+
+    <!-- variables for customization -->
+    <xsl:variable name="home-collection">handle/56789/363</xsl:variable>
+    <xsl:variable name="special-collection">handle/56789/353</xsl:variable>
+    <xsl:variable name="series-collection">handle/56789/641</xsl:variable>
 </xsl:stylesheet>

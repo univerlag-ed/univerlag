@@ -95,6 +95,7 @@
                         <!--ds-content is a groups ds-body and the navigation together and used to put the clearfix on, center, etc.
                             ds-content-wrapper is necessary for IE6 to allow it to center the page content-->
                         <div id="ds-content-wrapper">
+			    <div id="test">&#160;</div>
                             <div id="ds-content" class="clearfix">
                                 <!--
                                Goes over the document tag's children elements: body, options, meta. The body template
@@ -270,6 +271,7 @@
                                 };
 
                                 var runAfterJSImports = new FnArray();
+
             </script>
 
             <!-- Modernizr enables HTML5 elements & feature detects -->
@@ -280,7 +282,18 @@
                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='theme'][@qualifier='path']"/>
                     <xsl:text>/lib/js/modernizr-1.7.min.js</xsl:text>
                 </xsl:attribute>&#160;</script>
+	    <!-- <script type="text/javascript">
 
+		<xsl:attribute name="src">
+		
+		<xsl:text><![CDATA[http://demo.multivio.org/js/1.0/multivio-dev.js]]></xsl:text>
+		</xsl:attribute>&#160;
+	    </script>
+	    <link rel="stylesheet" type="text/css">
+		<xsl:attribute name="href">
+		<xsl:text><![CDATA[http://demo.multivio.org/css/1.0/multivio-min.css]]></xsl:text>
+		</xsl:attribute>&#160;
+	    </link> -->
             <!-- Add the title in -->
             <xsl:variable name="page_title" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='title']" />
             <title>
@@ -327,9 +340,9 @@
                         <xsl:text>/</xsl:text>
                     </xsl:attribute>
                     <span id="ds-header-logo">&#160;</span>
-                    <span id="ds-header-logo-text">
+                    <!-- <span id="ds-header-logo-text">
                        <i18n:text>xmlui.dri2xhtml.structural.head-subtitle</i18n:text>
-                    </span>
+                    </span> -->
                 </a>
                 <h1 class="pagetitle visuallyhidden">
                     <xsl:choose>
@@ -344,7 +357,75 @@
                     </xsl:choose>
 
                 </h1>
+		<div id="topbox">
+					<!-- The form, complete with a text box and a button, all built from attributes referenced from under pageMeta. -->
+                        <form id="ds-search-form" method="post">
+                            <xsl:attribute name="action">
+                                <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
+                                <xsl:value-of
+                                        select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
+                            </xsl:attribute>
+                            <fieldset>
+                                <input class="ds-text-field " type="text">
+                                    <xsl:attribute name="name">
+                                        <xsl:value-of
+                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
+                                    </xsl:attribute>
+                                </input>
+                                <!-- <input class="ds-button-field " name="submit" type="submit" i18n:attr="value"
+                                       value="xmlui.general.go">
+                                    <xsl:attribute name="onclick">
+                                    <xsl:text>
+                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
+                                        if (radio != undefined &amp;&amp; radio.checked)
+                                        {
+                                        var form = document.getElementById(&quot;ds-search-form&quot;);
+                                        form.action=
+                                    </xsl:text>
+                                        <xsl:text>&quot;</xsl:text>
+                                        <xsl:value-of
+                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
+                                        <xsl:text>/handle/&quot; + radio.value + &quot;</xsl:text>
+                                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
+                                        <xsl:text>&quot; ; </xsl:text>
+                                    <xsl:text>
+                                        }
+                                    </xsl:text>
+                                    </xsl:attribute>
+                                </input> -->
+				<input class="ds-button-field " name="submit" type="submit" i18n:attr="value"
+                                       value="xmlui.general.go"></input>
+				<input name="scope" type="hidden" value="56789/363"> </input>
+                                <!-- <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
+				    <br />
+                                    <label>
+                                        <input id="ds-search-form-scope-all" type="radio" name="scope" value=""
+                                               checked="checked"/>
+                                        <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
+                                    </label>
+                                    <br/>
+                                    <label>
+                                        <input id="ds-search-form-scope-container" type="radio" name="scope">
+                                            <xsl:attribute name="value">
+                                                <xsl:value-of
+                                                        select="substring-after(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container'],':')"/>
+                                            </xsl:attribute>
+                                        </input>
+                                        <xsl:choose>
+                                            <xsl:when
+                                                    test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='containerType']/text() = 'type:community'">
+                                                <i18n:text>xmlui.dri2xhtml.structural.search-in-community</i18n:text>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <i18n:text>xmlui.dri2xhtml.structural.search-in-collection</i18n:text>
+                                            </xsl:otherwise>
 
+                                        </xsl:choose>
+                                    </label> 
+                                </xsl:if> -->
+                            </fieldset>
+                        </form>
+		
                 <xsl:choose>
                     <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                         <div id="ds-user-box">
@@ -375,20 +456,38 @@
                     <xsl:otherwise>
                         <div id="ds-user-box">
                             <p>
-                                <a>
+                                <!-- <a>
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
                                         dri:metadata[@element='identifier' and @qualifier='loginURL']"/>
                                     </xsl:attribute>
                                     <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
-                                </a>
-                            </p>
+                                </a> -->
+                            </p> 
                         </div>
                     </xsl:otherwise>
                 </xsl:choose>
-                
-                <xsl:call-template name="languageSelection" />
-                
+                <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
+	            <div id="ds-language-selection">
+        	        <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']">
+                	    <xsl:if test=". != /dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']">
+	                    <xsl:variable name="locale" select="."/>
+        	            <a>
+                	        <xsl:attribute name="href">
+	                            <xsl:value-of select="$current-uri"/>
+                	            <xsl:text>?locale-attribute=</xsl:text>
+        	                    <xsl:value-of select="$locale"/>
+	                        </xsl:attribute>
+        	                <!-- <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/> -->
+                	        <xsl:value-of select="concat('[', $locale, ']')" />
+	                    </a>
+        	            </xsl:if>
+                	</xsl:for-each>
+	          </div>
+        	</xsl:if>
+ 
+                <!-- <xsl:call-template name="languageSelection" /> -->
+               </div> 
             </div>
         </div>
     </xsl:template>
@@ -565,16 +664,15 @@
     <xsl:template name="buildFooter">
         <div id="ds-footer-wrapper">
             <div id="ds-footer">
-                <div id="ds-footer-left">
-                    <a href="http://www.dspace.org/" target="_blank">DSpace software</a> copyright&#160;&#169;&#160;2002-2012&#160; <a href="http://www.duraspace.org/" target="_blank">Duraspace</a>
-                </div>
-                <div id="ds-footer-right">
-                    <span class="theme-by">Theme by&#160;</span>
-                    <a title="@mire NV" target="_blank" href="http://atmire.com" id="ds-footer-logo-link">
-                    <span id="ds-footer-logo">&#160;</span>
-                    </a>
-                </div>
                 <div id="ds-footer-links">
+		    <a href="/univerlag/info/impressum">
+                        <i18n:text>xmlui.static.impressum.head</i18n:text>
+                    </a>
+		    <xsl:text> | </xsl:text>
+                     <a href="/univerlag/info/aboutus">
+                        <i18n:text>xmlui.static.aboutus.head</i18n:text>
+                    </a>
+		    <xsl:text> | </xsl:text>
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of
@@ -592,6 +690,23 @@
                         </xsl:attribute>
                         <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
                     </a>
+		    <xsl:text> | </xsl:text>
+		    <a>			
+                       <xsl:attribute name="href">
+                            <xsl:value-of
+                                    select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+                            <xsl:text>/order</xsl:text>
+                        </xsl:attribute>
+                        <i18n:text>xmlui.dri2xhtml.structural.order-link</i18n:text>
+                    </a>
+		    <xsl:text> | </xsl:text>
+		    <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="//dri:userMeta/dri:metadata[@element='identifier' and @qualifier='loginURL']"/>
+                                    </xsl:attribute>
+                                  <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
+                    </a>
+
                 </div>
                 <!--Invisible link to HTML sitemap (for search engines) -->
                 <a class="hidden">

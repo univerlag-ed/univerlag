@@ -140,6 +140,7 @@
                 <map:transform type="IncludePageMeta">
                     <map:parameter name="stylesheet.all" value="lib/css/media.css"/>
                     <map:parameter name="javascript" value="lib/js/jquery-ui-1.8.15.custom.min.js"/>
+		    <map:parameter name="javascript" value="lib/js/addon.js"/>
                     <map:parameter name="theme.path" value="{global:theme-path}"/>
                     <map:parameter name="theme.name" value="{global:theme-name}"/>
                 </map:transform>
@@ -159,6 +160,10 @@
 						<map:parameter name="locale" value="{locale}"/>
 					</map:transform>
 				</map:act>
+
+                                <!-- Remove any leftover i18n or dri namespaces from the final document -->
+                                <map:transform type="NamespaceFilter" src="http://di.tamu.edu/DRI/1.0/"/>
+                                <map:transform type="NamespaceFilter" src="http://apache.org/cocoon/i18n/2.1"/>
 
 				<!-- Step 5: Serialize to the browser -->
 				<map:serialize type="xhtml"/>
