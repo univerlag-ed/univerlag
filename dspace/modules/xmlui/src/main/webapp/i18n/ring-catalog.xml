@@ -1,0 +1,107 @@
+<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+
+	<!-- Ringvorlesungen -->
+	<!-- Common parts in general messages -->
+<item id="ss14">        
+	<!-- SS 2014 -->
+
+	<!-- Breadcrumbs -->
+	<message key="xmlui.static.ring-ss14.trail">Ringvorlesung SS 2014</message>
+	<!-- Title -->
+	<message key="xmlui.static.ring.title-ss14">
+ 		<br />Klassiker, Thriller, Ladenhüter<br />
+		 Wie Texte gebaut sind und wie sie wirken
+	</message>
+
+	<!-- Poster -->
+	<message key="xmlui.static.ring.poster-2214">
+		<p>
+			<img src="/static/images/ring/cover-ss14-300.jpg" alt="Coverabbildung" />
+		</p>
+		<p>
+			<a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
+		</p>
+	</message>
+	
+	<!-- Audio Files -->
+	<message key="xmlui.static.ring.list-2214">
+		<ul>
+			<li class="content"><b>06. Mai 2014</b><br />
+				Prof. Christiane Schildknecht, Luzern<br />
+				»Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht
+			</li>
+				<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>13. Mai 2014</b><br />
+				Prof. Manfred Krifka, Berlin<br />
+			</li>
+			<a href="/static/audio/ring2014-05-13.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</a></li>
+
+			<li class="content"><b>20. Mai 2014</b><br />
+				Prof. Annekathrin Schacht, Göttingen<br />
+			</li>
+			<a href="/static/audio/ring2014-05-20.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</a>
+			</li>
+
+			<li class="content"><b>27. Mai 2014</b><br />
+				Prof. Edgar Onea, Göttingen<br />
+				Offene Fragen und spannende Texte
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>3. Juni 2014</b><br />
+				Prof. Markus Steinbach und Dr. Annika Herrmann, Göttingen<br />
+				Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+
+			<li class="content"><b>10. Juni 2014</b><br />
+				Prof. Nivedita Mani, Göttingen<br />
+				Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>17. Juni 2014</b><br />
+				Prof. Regine Eckardt, Göttingen<br />
+				Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte?
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>24. Juni 2014</b><br />
+				Prof. Simone Winko und Anna Fenner MA, Göttingen<br />
+				More than words. Emotionen in literarischen Texten
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+
+			<li class="content"><b>1. Juli 2014</b><br />
+				Prof. Evelyn Ferstl, Freiburg<br />
+				Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>8. Juli 2014</b><br />
+				Prof. Heinrich Detering, Göttingen<br />
+				Horror! Literatur der Angstlust
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+			<li class="content"><b>15. Juli 2014</b><br />
+				Prof. Tilmann Köppe, Göttingen<br />
+				Angenehmes Grauen. Warum wir Thriller lieben
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+
+			<li class="content"><b>22. Juli 2014</b><br />
+				Prof. Anke Holler, Göttingen<br />
+				Signale im Text. Wie sprachliche Strukturen die Leser lenken
+			</li>
+			<!---<a href="/static/audio/ring2011-10-25.mp3"><img src="sound.gif" alt="Klangdatei" />&nbsp;xxxxxTitel</a></li>-->
+
+		</ul>
+	</message>
+</item>
+</catalogue>
+

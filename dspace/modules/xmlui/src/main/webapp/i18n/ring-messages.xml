@@ -1,0 +1,36 @@
+<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+        <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:</message>
+        <message key="xmlui.static.ring.preambel">
+        <div id="preambel">
+                <h2>Audiomitschnitte<br />
+                Universität Göttingen<br />
+                </h2>
+
+                <p>Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden. Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a> übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
+                </p>
+
+
+                <p>Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB). Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+                </p>
+        </div>
+
+        </message>
+        <message key="xmlui.static.ring.contact">
+                <div id="contact">
+
+                   <b>Organisation/Kontakt:</b><br />
+                   Prof. Dr. Regine Eckardt<br />
+                   Käte-Hamburger-Weg 3<br />
+                   37073  Göttingen<br />
+                   Telefon: +49 551 39 7576<br />
+                   Fax: +49 551 39 14651<br />
+                   <a href="mailto: regine.eckardt@phil.uni-goettingen.de">regine.eckardt@phil.uni-goettingen.de</a><br />
+                   und<br />
+                   Prof. Dr. Annekathrin Schacht<br />
+                   Nikolausbergerweg 23<br />
+                   37073  Göttingen<br />
+                   Telefon: +49 551 39 20022<br />
+                </div>
+        </message>
+	<message key="test">INCLUDE TEST</message>
+</catalogue>
