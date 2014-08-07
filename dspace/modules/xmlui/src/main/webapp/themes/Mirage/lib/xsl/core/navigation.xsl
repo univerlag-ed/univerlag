@@ -44,104 +44,45 @@
     <xsl:template match="dri:options">
         <div id="ds-options-wrapper">
             <div id="ds-options">
-                <xsl:if test="not(contains(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI'], 'discover'))">
-                    <h1 id="ds-search-option-head" class="ds-option-set-head">
-                        <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
-                    </h1>
-                    <div id="ds-search-option" class="ds-option-set">
-                        <!-- The form, complete with a text box and a button, all built from attributes referenced
-                     from under pageMeta. -->
-                        <form id="ds-search-form" method="post">
-                            <xsl:attribute name="action">
-                                <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
-                                <xsl:value-of
-                                        select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
-                            </xsl:attribute>
-                            <fieldset>
-                                <input class="ds-text-field " type="text">
-                                    <xsl:attribute name="name">
-                                        <xsl:value-of
-                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
-                                    </xsl:attribute>
-                                </input>
-                                <input class="ds-button-field " name="submit" type="submit" i18n:attr="value"
-                                       value="xmlui.general.go">
-                                    <xsl:attribute name="onclick">
-                                    <xsl:text>
-                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
-                                        if (radio != undefined &amp;&amp; radio.checked)
-                                        {
-                                        var form = document.getElementById(&quot;ds-search-form&quot;);
-                                        form.action=
-                                    </xsl:text>
-                                        <xsl:text>&quot;</xsl:text>
-                                        <xsl:value-of
-                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
-                                        <xsl:text>/handle/&quot; + radio.value + &quot;</xsl:text>
-                                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
-                                        <xsl:text>&quot; ; </xsl:text>
-                                    <xsl:text>
-                                        }
-                                    </xsl:text>
-                                    </xsl:attribute>
-                                </input>
-                                <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
-                                    <label>
-                                        <input id="ds-search-form-scope-all" type="radio" name="scope" value=""
-                                               checked="checked"/>
-                                        <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
-                                    </label>
-                                    <br/>
-                                    <label>
-                                        <input id="ds-search-form-scope-container" type="radio" name="scope">
-                                            <xsl:attribute name="value">
-                                                <xsl:value-of
-                                                        select="substring-after(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container'],':')"/>
-                                            </xsl:attribute>
-                                        </input>
-                                        <xsl:choose>
-                                            <xsl:when
-                                                    test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='containerType']/text() = 'type:community'">
-                                                <i18n:text>xmlui.dri2xhtml.structural.search-in-community</i18n:text>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <i18n:text>xmlui.dri2xhtml.structural.search-in-collection</i18n:text>
-                                            </xsl:otherwise>
+		    <!-- do not show general browsing navi on the homepage -->
+		    <!-- <xsl:if test="string-length(//dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI']) = 0"> -->
+		    	<h1 class="ds-option-set-head"><i18n:text>xmlui.ArtifactBrowser.CommunityViewer.head_browse</i18n:text></h1>
+			<div class="ds-option-set" id="aspect_viewArtifacts_Navigation_list_browse">
+			    	<xsl:call-template name="menu-static"/>
+			</div>
 
-                                        </xsl:choose>
-                                    </label>
-                                </xsl:if>
-                            </fieldset>
-                        </form>
-                        <!--Only add if the advanced search url is different from the simple search-->
-                        <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='advancedURL'] != /dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']">
-                            <!-- The "Advanced search" link, to be perched underneath the search box -->
-                            <a>
-                                <xsl:attribute name="href">
-                                    <xsl:value-of
-                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='advancedURL']"/>
-                                </xsl:attribute>
-                                <i18n:text>xmlui.dri2xhtml.structural.search-advanced</i18n:text>
-                            </a>
-                        </xsl:if>
-                    </div>
-
-                </xsl:if>
+		<h1 class="ds-option-set-head"><i18n:text>xmlui.static.navigation.informations</i18n:text></h1>
+		<div class="ds-option-set" id="infonav">
+			<ul class="ds-options-list">
+				<li>
+					
+					<a href="{$context-path}/info/publishing"><i18n:text>xmlui.static.publishing.trail</i18n:text></a>
+					<!-- show only if Publishing is activ -->
+					<xsl:if test="contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/publishing')">
+					<ul class="ds-simple-list sublist">
+						<li><a href="{$context-path}/info/publishing-authors"><i18n:text>xmlui.static.editors-authors.head</i18n:text></a></li>
+						<li><a href="{$context-path}/info/publishing-price"><i18n:text>xmlui.static.price.head</i18n:text></a></li>
+						<li><a href="{$context-path}/info/publishing-policy"><i18n:text>xmlui.static.policy.head</i18n:text></a></li>
+					</ul>
+					</xsl:if>
+				</li>
+				<!-- Review Form: accessible for authenticated user only -->
+				<xsl:if test="//dri:userMeta[@authenticated='yes']">
+					<li><i18n:text>xmlui.static.reviewform.link</i18n:text></li>
+				</xsl:if>
+				<li><a href="{$context-path}/info/editors"><i18n:text>xmlui.static.editors.head</i18n:text></a></li>
+				<li><a href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a></li>
+				<li><a href="{$context-path}/info/openaccess">Open Access</a></li>
+				<li><a href="{$context-path}/info/publishing-catalog"><i18n:text>xmlui.static.publisher-catalog.link</i18n:text></a></li>
+				<!-- <li><a href="{$context-path}/info/aboutus"><i18n:text>xmlui.static.aboutus.head</i18n:text></a></li> -->
+			</ul>
+		</div>
+		<xsl:apply-templates select="dri:list[@n='context']"/>
+		<xsl:apply-templates select="dri:list[@n='account']"/>
+		<xsl:apply-templates select="dri:list[@n='discovery']"/>
+		<xsl:apply-templates select="dri:list[@n='administrative']"/>
+		<xsl:apply-templates select="dri:list[@n='statistics']"/>
                 <!-- Once the search box is built, the other parts of the options are added -->
-                <xsl:apply-templates/>
-
-                <!-- DS-984 Add RSS Links to Options Box -->
-                <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
-                    <h1 id="ds-feed-option-head" class="ds-option-set-head">
-                        <i18n:text>xmlui.feed.header</i18n:text>
-                    </h1>
-                    <div id="ds-feed-option" class="ds-option-set">
-                        <ul>
-                            <xsl:call-template name="addRSSLinks"/>
-                        </ul>
-                    </div>
-                </xsl:if>
-
 
             </div>
         </div>
@@ -196,5 +137,19 @@
     </xsl:template>
     <xsl:template match="dri:options//dri:list[count(child::*)=0]" priority="5">
     </xsl:template>
+
+    <!-- translate language iso code and division in facet side bar -->
+    <xsl:template match="dri:item[@rend='selected']" mode="nested" priority="3">
+		<xsl:choose> 
+                <xsl:when test="(@rend='selected') and (../@n='language' or ../@n='division' or ../@n='type') ">
+                        <li><i18n:text><xsl:value-of select="substring-before(., ' ')" /></i18n:text><xsl:value-of select="concat(' ', substring-after(., ' '))" /></li>
+                </xsl:when>
+		<xsl:otherwise>
+		<li>
+			<xsl:apply-templates />
+		</li>
+		</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template> 
 
 </xsl:stylesheet>
