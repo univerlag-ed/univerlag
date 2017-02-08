@@ -91,10 +91,9 @@ public class EmbargoManager
              }
         }
         String slift = myLift.toString();
-        boolean ignoreAuth = context.ignoreAuthorization();
         try
         {
-            context.setIgnoreAuthorization(true);
+            context.turnOffAuthorisationSystem();
             item.clearMetadata(lift_schema, lift_element, lift_qualifier, Item.ANY);
             item.addMetadata(lift_schema, lift_element, lift_qualifier, null, slift);
             log.info("Set embargo on Item "+item.getHandle()+", expires on: "+slift);
@@ -105,7 +104,7 @@ public class EmbargoManager
         }
         finally
         {
-            context.setIgnoreAuthorization(ignoreAuth);
+            context.restoreAuthSystemState();
         }
     }
 
@@ -128,7 +127,7 @@ public class EmbargoManager
         throws SQLException, AuthorizeException, IOException
     {
         init();
-        DCValue terms[] = item.getMetadata(terms_schema, terms_element,
+        Metadatum terms[] = item.getMetadata(terms_schema, terms_element,
                 terms_qualifier, Item.ANY);
 
         DCDate result = null;
@@ -267,7 +266,7 @@ public class EmbargoManager
         try
         {
             context = new Context();
-            context.setIgnoreAuthorization(true);
+            context.turnOffAuthorisationSystem();
             Date now = new Date();
              
             // scan items under embargo
@@ -338,7 +337,7 @@ public class EmbargoManager
         throws Exception
     {
         boolean status = false;
-        DCValue lift[] = item.getMetadata(lift_schema, lift_element, lift_qualifier, Item.ANY);
+        Metadatum lift[] = item.getMetadata(lift_schema, lift_element, lift_qualifier, Item.ANY);
 
         if (lift.length > 0)
         {
@@ -448,7 +447,7 @@ public class EmbargoManager
     // it was never under embargo, or the lift date has passed.
     private static DCDate recoverEmbargoDate(Item item) {
         DCDate liftDate = null;
-        DCValue lift[] = item.getMetadata(lift_schema, lift_element, lift_qualifier, Item.ANY);
+        Metadatum lift[] = item.getMetadata(lift_schema, lift_element, lift_qualifier, Item.ANY);
         if (lift.length > 0)
         {
             liftDate = new DCDate(lift[0].value);

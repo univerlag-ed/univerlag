@@ -39,7 +39,7 @@ public class IndexClient {
     public static void main(String[] args) throws SQLException, IOException, SearchServiceException {
 
         Context context = new Context();
-        context.setIgnoreAuthorization(true);
+        context.turnOffAuthorisationSystem();
 
         String usage = "org.dspace.discovery.IndexClient [-cbhf[r <item handle>]] or nothing to update/clean an existing index.";
         Options options = new Options();
@@ -65,6 +65,10 @@ public class IndexClient {
         options.addOption(OptionBuilder.isRequired(false).withDescription(
                 "(re)build index, wiping out current one if it exists").create(
                 "b"));
+
+        options.addOption(OptionBuilder.isRequired(false).withDescription(
+                "Rebuild the spellchecker, can be combined with -b and -f.").create(
+                "s"));
 
         options
                 .addOption(OptionBuilder
@@ -111,15 +115,32 @@ public class IndexClient {
         } else if (line.hasOption("b")) {
             log.info("(Re)building index from scratch.");
             indexer.createIndex(context);
+            checkRebuildSpellCheck(line, indexer);
         } else if (line.hasOption("o")) {
             log.info("Optimizing search core.");
             indexer.optimize();
+        } else if(line.hasOption('s')) {
+            checkRebuildSpellCheck(line, indexer);
         } else {
             log.info("Updating and Cleaning Index");
             indexer.cleanIndex(line.hasOption("f"));
             indexer.updateIndex(context, line.hasOption("f"));
+            checkRebuildSpellCheck(line, indexer);
         }
 
         log.info("Done with indexing");
 	}
+
+    /**
+     * Check the command line options and rebuild the spell check if active.
+     * @param line the command line options
+     * @param indexer the solr indexer
+     * @throws SearchServiceException in case of a solr exception
+     */
+    protected static void checkRebuildSpellCheck(CommandLine line, IndexingService indexer) throws SearchServiceException {
+        if (line.hasOption("s")) {
+            log.info("Rebuilding spell checker.");
+            indexer.buildSpellCheck();
+        }
+    }
 }

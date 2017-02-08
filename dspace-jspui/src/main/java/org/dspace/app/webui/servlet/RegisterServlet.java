@@ -288,9 +288,9 @@ public class RegisterServlet extends DSpaceServlet
                             //--------- START LDAP AUTH SECTION -------------
                             if (password!=null && !password.equals("")) 
                             {
-                                String ldap_provider_url = ConfigurationManager.getProperty("ldap.provider_url");
-                                String ldap_id_field = ConfigurationManager.getProperty("ldap.id_field");
-                                String ldap_search_context = ConfigurationManager.getProperty("ldap.search_context");
+                                String ldap_provider_url = ConfigurationManager.getProperty("authentication-ldap", "provider_url");
+                                String ldap_id_field = ConfigurationManager.getProperty("authentication-ldap", "id_field");
+                                String ldap_search_context = ConfigurationManager.getProperty("authentication-ldap", "search_context");
                            
                                 // Set up environment for creating initial context
                                 Hashtable env = new Hashtable(11);
@@ -471,7 +471,7 @@ public class RegisterServlet extends DSpaceServlet
             // Need to create new eperson
             // FIXME: TEMPORARILY need to turn off authentication, as usually
             // only site admins can create e-people
-            context.setIgnoreAuthorization(true);
+            context.turnOffAuthorisationSystem();
             eperson = EPerson.create(context);
             eperson.setEmail(email);
             if (netid!=null)
@@ -479,7 +479,7 @@ public class RegisterServlet extends DSpaceServlet
                 eperson.setNetid(netid.toLowerCase());
             }
             eperson.update();
-            context.setIgnoreAuthorization(false);
+            context.restoreAuthSystemState();
         }
 
         // Now set the current user of the context

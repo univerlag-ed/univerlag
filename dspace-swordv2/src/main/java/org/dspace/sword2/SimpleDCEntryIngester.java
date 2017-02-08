@@ -10,7 +10,7 @@ package org.dspace.sword2;
 import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.Collection;
 import org.dspace.content.DCDate;
-import org.dspace.content.DCValue;
+import org.dspace.content.Metadatum;
 import org.dspace.content.DSpaceObject;
 import org.dspace.content.Item;
 import org.dspace.content.WorkspaceItem;
@@ -86,10 +86,9 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			// authorisation briefly, because although the user may be
 			// able to add stuff to the repository, they may not have
 			// WRITE permissions on the archive.
-			boolean ignore = context.ignoreAuthorization();
-			context.setIgnoreAuthorization(true);
+			context.turnOffAuthorisationSystem();
 			item.update();
-			context.setIgnoreAuthorization(ignore);
+			context.restoreAuthSystemState();
 
 			verboseDescription.append("Update successful");
 
@@ -115,12 +114,12 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
         String[] parts = raw.split(",");
         for (String part : parts)
         {
-            DCValue dcv = this.makeDCValue(part.trim(), null);
+            Metadatum dcv = this.makeDCValue(part.trim(), null);
             item.clearMetadata(dcv.schema, dcv.element, dcv.qualifier, Item.ANY);
         }
     }
 
-    private void addUniqueMetadata(DCValue dcv, Item item)
+    private void addUniqueMetadata(Metadatum dcv, Item item)
     {
         String qual = dcv.qualifier;
         if (dcv.qualifier == null)
@@ -133,8 +132,8 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
         {
             lang = Item.ANY;
         }
-        DCValue[] existing = item.getMetadata(dcv.schema, dcv.element, qual, lang);
-        for (DCValue dcValue : existing)
+        Metadatum[] existing = item.getMetadata(dcv.schema, dcv.element, qual, lang);
+        for (Metadatum dcValue : existing)
         {
             // FIXME: probably we want to be slightly more careful about qualifiers and languages
             //
@@ -163,7 +162,7 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			String titleField = this.dcMap.get("title");
 			if (titleField != null)
 			{
-				DCValue dcv = this.makeDCValue(titleField, title);
+				Metadatum dcv = this.makeDCValue(titleField, title);
                 this.addUniqueMetadata(dcv, item);
 			}
 		}
@@ -172,7 +171,7 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			String abstractField = this.dcMap.get("abstract");
 			if (abstractField != null)
 			{
-				DCValue dcv = this.makeDCValue(abstractField, summary);
+				Metadatum dcv = this.makeDCValue(abstractField, summary);
                 this.addUniqueMetadata(dcv, item);
 			}
 		}
@@ -188,7 +187,7 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			}
 
 			// now add all the metadata terms
-            DCValue dcv = this.makeDCValue(dsTerm, null);
+            Metadatum dcv = this.makeDCValue(dsTerm, null);
 			for (String value : dc.get(term))
 			{
                 dcv.value = value;
@@ -235,10 +234,9 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			// authorisation briefly, because although the user may be
 			// able to add stuff to the repository, they may not have
 			// WRITE permissions on the archive.
-			boolean ignore = context.ignoreAuthorization();
-			context.setIgnoreAuthorization(true);
+			context.turnOffAuthorisationSystem();
 			item.update();
-			context.setIgnoreAuthorization(ignore);
+			context.restoreAuthSystemState();
 
 			verboseDescription.append("Ingest successful");
 			verboseDescription.append("Item created with internal identifier: " + item.getID());
@@ -262,10 +260,10 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 		}
     }
 
-    public DCValue makeDCValue(String field, String value)
+    public Metadatum makeDCValue(String field, String value)
             throws DSpaceSwordException
     {
-        DCValue dcv = new DCValue();
+        Metadatum dcv = new Metadatum();
         String[] bits = field.split("\\.");
         if (bits.length < 2 || bits.length > 3)
         {
@@ -298,7 +296,7 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			throw new DSpaceSwordException("No configuration, or configuration is invalid for: sword.updated.field");
 		}
 
-		DCValue dc = this.makeDCValue(field, null);
+		Metadatum dc = this.makeDCValue(field, null);
 		item.clearMetadata(dc.schema, dc.element, dc.qualifier, Item.ANY);
 		DCDate date = new DCDate(new Date());
 		item.addMetadata(dc.schema, dc.element, dc.qualifier, null, date.toString());
@@ -331,7 +329,7 @@ public class SimpleDCEntryIngester extends AbstractSimpleDC implements SwordEntr
 			throw new DSpaceSwordException("No configuration, or configuration is invalid for: sword.slug.field");
 		}
 
-		DCValue dc = this.makeDCValue(field, null);
+		Metadatum dc = this.makeDCValue(field, null);
 		item.clearMetadata(dc.schema, dc.element, dc.qualifier, Item.ANY);
 		item.addMetadata(dc.schema, dc.element, dc.qualifier, null, slugVal);
 
