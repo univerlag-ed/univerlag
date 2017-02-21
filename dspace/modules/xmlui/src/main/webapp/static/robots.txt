@@ -1,0 +1,23 @@
+User-agent: *
+
+Disallow: /contact
+Disallow: /feedback
+Disallow: /feed/*
+Disallow: /forgot
+Disallow: /login
+Disallow: /register
+Disallow: /discover
+Disallow: /handle/*/*/discover
+Disallow: /utils
+Disallow: /*/advanced-search
+Disallow: /browse
+Disallow: /*/browse
+Disallow: /password-login
+Disallow: /community-list
+Disallow: /handle/*/*/submit
+Disallow: /handle/*/*/search-filter
+Disallow: /handle/*/*/search
+Disallow: /static/*
+Disallow: /static
+Disallow: /review
+Disallow: /review/*
