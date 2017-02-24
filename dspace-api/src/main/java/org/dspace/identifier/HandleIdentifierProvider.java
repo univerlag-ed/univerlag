@@ -34,7 +34,7 @@ public class HandleIdentifierProvider extends IdentifierProvider {
     private static Logger log = Logger.getLogger(HandleIdentifierProvider.class);
 
     /** Prefix registered to no one */
-    protected static final String EXAMPLE_PREFIX = "123456789";
+    protected static final String EXAMPLE_PREFIX = "isbn-";
 
     protected String[] supportedPrefixes = new String[]{"info:hdl", "hdl", "http://"};
 
@@ -348,7 +348,17 @@ public class HandleIdentifierProvider extends IdentifierProvider {
 
         if(handle==null){
             handle = DatabaseManager.create(context, "Handle");
-            handleId = createId(handle.getIntColumn("handle_id"));
+            if (dso.getType() == 2) {
+                Item item = (Item)dso;
+                String internId = item.getMetadata("dc","identifier", "intern", Item.ANY)[0].value;
+                String handlePrefix = getPrefix();
+                handleId =  handlePrefix + (handlePrefix.endsWith("/") ? "" : "/") + internId;
+            }
+            else {
+                handleId = createId(handle.getIntColumn("handle_id"));
+            }
+            System.out.println("Identifier created handleId: " + handleId);
+
         }
 
         modifyHandleRecord(context, dso, handle, handleId);

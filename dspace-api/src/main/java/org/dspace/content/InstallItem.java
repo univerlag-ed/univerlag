@@ -19,6 +19,8 @@ import org.dspace.identifier.IdentifierException;
 import org.dspace.identifier.IdentifierService;
 import org.dspace.utils.DSpace;
 
+import org.dspace.core.ConfigurationManager;
+
 /**
  * Support to install an Item in the archive.
  * 
@@ -38,6 +40,11 @@ public class InstallItem
      * 
      * @return the fully archived Item
      */
+
+    /*Take SUB URN prefix as default*/
+    static final String DEFAULT_UURN =  "urn:nbn:de:gbv:7-";
+
+
     public static Item installItem(Context c, InProgressSubmission is)
             throws SQLException, IOException, AuthorizeException
     {
@@ -127,18 +134,18 @@ public class InstallItem
         DCDate now = DCDate.getCurrent();
         
         // If the item doesn't have a date.accessioned, set it to today
-        Metadatum[] dateAccessioned = item.getDC("date", "accessioned", Item.ANY);
+        Metadatum[] dateAccessioned = item.getMetadata("dc","date", "accessioned", Item.ANY);
         if (dateAccessioned.length == 0)
         {
-	        item.addDC("date", "accessioned", null, now.toString());
+	        item.addMetadata("dc","date", "accessioned", null, now.toString());
         }
         
         // If issue date is set as "today" (literal string), then set it to current date
         // In the below loop, we temporarily clear all issued dates and re-add, one-by-one,
         // replacing "today" with today's date.
         // NOTE: As of DSpace 4.0, DSpace no longer sets an issue date by default
-        Metadatum[] currentDateIssued = item.getDC("date", "issued", Item.ANY);
-        item.clearDC("date", "issued", Item.ANY);
+        Metadatum[] currentDateIssued = item.getMetadata("dc","date", "issued", Item.ANY);
+        item.clearMetadata("dc","date", "issued", Item.ANY);
         for (Metadatum dcv : currentDateIssued)
         {
             if(dcv.value!=null && dcv.value.equalsIgnoreCase("today"))
@@ -154,7 +161,7 @@ public class InstallItem
         
         // Record that the item was restored
         String provDescription = "Restored into DSpace on "+ now + " (GMT).";
-        item.addDC("description", "provenance", "en", provDescription);
+        item.addMetadata("dc","description", "provenance", "en", provDescription);
 
         return finishItem(c, item, is);
     }
@@ -213,6 +220,25 @@ public class InstallItem
 
         // Add provenance description
         item.addDC("description", "provenance", "en", provDescription);
+
+        //Create URN and add to metadata
+        String handleKey = item.getHandle().substring(item.getHandle().indexOf('/')+1);
+        if (item.getMetadata("dc","identifier", "urn", Item.ANY).length == 0)
+        {
+            String urn = getURNPrefix() +  handleKey + '-';
+            item.addMetadata("dc","identifier", "urn", null, urn + URNChecksum(urn));
+        }
+        //Add ISBN or ISSN if existent in handle
+        if (handleKey.indexOf("isbn") > -1)
+        {
+            String isbn = handleKey.substring(handleKey.indexOf("isbn-") + 5);
+            item.addMetadata("dc", "relation", "isbn-13", null, isbn);
+        }
+        else if (handleKey.indexOf("issn") > -1)
+        {
+            String issn = handleKey.substring(handleKey.indexOf("issn-") + 5);
+            item.addMetadata("dc","relation", "issn", null, issn);
+        }
     }
 
     /**
@@ -283,5 +309,46 @@ public class InstallItem
         }
 
         return myMessage.toString();
+    }
+
+    /**
+     * Get the configured URN prefix string, or the default SUB URNprefix
+     * @return configured prefix or "urn:nbn:de:gbv:7-"
+     */
+    public static String getURNPrefix()
+    {
+        String URNPrefix = ConfigurationManager.getProperty("urn.prefix");
+        if (URNPrefix == null)
+            URNPrefix = DEFAULT_UURN;
+
+        return URNPrefix;
+    }
+
+    /**
+     * Generate urn-checksum for the urn of an item
+     *
+     * @param uurn  (unchecked) urn i.e. urn without checksum
+     *
+     * @return urn checksum to be appended to uurn
+     */
+    private static String URNChecksum(String uurn)
+    {
+        String urn = uurn.toUpperCase();
+        int[] Nums={1,2,3,4,5,6,7,8,9,41,18,14,19,15,16,21,22,23,24,25,
+                42,26,27,13,28,29,31,12,32,33,11,34,35,36,37,38,39,17,47,43,45,49};
+
+        String Zeichen="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-:._/+";
+        int erg=0;
+        StringBuffer sb= new StringBuffer();
+
+        for(int i=0; i < urn.length(); i++)
+            sb.append(Nums[Zeichen.indexOf(urn.charAt(i))]);
+
+        for(int i=0;i<sb.length();i++)
+            erg=erg+(i+1)*(sb.charAt(i)-48);
+
+        erg=erg/(sb.charAt(sb.length()-1)-48);
+        String serg=String.valueOf(erg);
+        return serg.substring(serg.length() - 1);
     }
 }
