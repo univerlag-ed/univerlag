@@ -354,6 +354,183 @@
                                 </map:select>
                         </map:match>
 
+                        <!-- redirect publishing in series to info -->
+
+
+
+                        <map:match pattern="handle/3/Annals_of_the_history_and_philosophy_of_biology_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/northwest_german_forest_research_institute_contributons_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Biodiversity_and_ecology_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Educational_studies_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_contributons_to_geosciences_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_series_in_x-ray_physics/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_studies_in_cultural_property_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_contributions_to_old_orient_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_contributions_to_cultural_anthropology_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_library_works_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_forest_sciences_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_legal_works_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_classical_fluid_mechanics_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_series_in_social_and_cultural_anthropology/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_medical_law_works_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_public_law_works_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_english_philology_works_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_writings_on_internet_research_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Goettingen_studies_on_criminology_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/793/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+
+                        <map:match pattern="handle/3/rtg_interdisciplinary_environmental_history_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/college_sport_education_and_science_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/interKULTUR_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/fadaf_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/seminars_of_mathematical_institute_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/835/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Didaxis_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Writings_on_history_of_goettingen_university_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/821/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Species_phylogeny_and_evolution_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Studies_in_euroculture_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Syngramma_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+                        <map:match pattern="handle/3/Zeltforum_series/submit">
+                                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+                        </map:match>
+
+
+                        <!-- For permanent links to old website -->
+
+                        <map:match pattern="content/list*">
+                                <map:redirect-to uri="/handle/3/{request-param:details}" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="ring*">
+                                <map:redirect-to uri="/info/{1}" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/anfrage.php">
+                                <map:redirect-to uri="/costrequest" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/herausgeber.php">
+                                <map:redirect-to uri="/info/editors" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/sparten.php">
+                                <map:redirect-to uri="/info/divisions" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/contact.php">
+                                <map:redirect-to uri="/info/contact" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/open-access.php">
+                                <map:redirect-to uri="/info/openaccess" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/publish.php">
+                                <map:redirect-to uri="/info/publishing" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/impressum.php">
+                                <map:redirect-to uri="/info/impressum" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/utils.php">
+                                <map:redirect-to uri="/info/publishing-utils" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/about.php">
+                                <map:redirect-to uri="/info/about" permanent="yes"/>
+                        </map:match>
+                        <map:match pattern="content/prices.php">
+                                <map:redirect-to uri="/info/publishing-prices" permanent="yes"/>
+                        </map:match>
+
 
                         <!--
                                 For URL compatibility with the JSPUI, redirect these old url to their new locations.
@@ -389,6 +566,18 @@
                                     <map:parameter name="handle" value="{1}/{2}" />
                                 </map:read>
                         </map:match>
+
+                                               <!-- local Resolver -->
+                        <map:match pattern="resolvexml">
+                                 <map:generate type="file" src="resolver/local-resolver-response.xml"/>
+                                 <map:transform src="resolver/resolver.xsl">
+                                        <map:parameter name="purl" value="{request-param:purl}"/>
+                                        <map:parameter name="query" value="{request:queryString}"/>
+                                </map:transform>
+                                 <map:serialize type="xml"/>
+                         </map:match>
+
+
 
                         <map:match pattern="handle/*/*/stats/csv">
                             <map:match type="StatisticsAuthorizedMatcher" pattern="READ">
