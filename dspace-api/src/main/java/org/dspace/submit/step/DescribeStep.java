@@ -39,6 +39,8 @@ import org.dspace.core.ConfigurationManager;
 import org.dspace.core.Context;
 import org.dspace.submit.AbstractProcessingStep;
 
+import java.util.Calendar;
+
 /**
  * Describe step for DSpace submission process. Handles the gathering of
  * descriptive information (i.e. metadata) for an item being submitted into
@@ -185,6 +187,20 @@ public class DescribeStep extends AbstractProcessingStep
         clearErrorFields(request);
 
         // Step 2:
+
+
+        // Creators want to write the future DOI in his work, so
+        // create university press DOI in advance and save it as special metadata
+        if (item.getMetadataByMetadataString("dc.intern.doi").length == 0)
+        {
+            item.addMetadata("dc", "intern", "doi", "en", createDOI(item));
+            // Save changes to database
+            subInfo.getSubmissionItem().update();
+
+            // commit changes
+            context.commit();
+
+        }
         // now update the item metadata.
         String fieldName;
         boolean moreInput = false;
@@ -1023,6 +1039,22 @@ public class DescribeStep extends AbstractProcessingStep
         {
             return dcSchema + "_" + dcElement;
         }
+
+    }
+
+    /**
+     * Create DOI based on configured prefix and namespacseparator
+     * on year and itemid
+     *
+     * @param it
+     * @return created DOI
+     */
+    private String createDOI(Item it)
+    {
+        Calendar cal = Calendar.getInstance();
+        return (ConfigurationManager.getProperty("identifier.doi.prefix")
+                + "/" + ConfigurationManager.getProperty("identifier.doi.namespaceseparator")
+                + cal.get(Calendar.YEAR) + "." + it.getID());
 
     }
 }
