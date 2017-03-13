@@ -281,6 +281,7 @@ public class CostRequestForm extends AbstractDSpaceTransformer implements Cachea
         type.addOption("Tagungsband", "Tagungsband");
         type.addOption("Sammelband", "Sammelband");
         type.addOption("Lehrbuch", "Lehrbuch");
+        type.addOption("Dissertation", "Dissertation");
         type.addOption("Sonstige Publikation", "Sonstige Publikation");
         type.setOptionSelected(parameters.getParameter("type",""));
 

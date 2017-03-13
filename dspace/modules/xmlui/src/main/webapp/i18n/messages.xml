@@ -3906,20 +3906,22 @@ Das Team vom Universitätsverlag Göttingen
 	<!-- Ringvorlesungen common parts -->
 	<message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:</message>
 	<message key="xmlui.static.ring.preambel">
-		<div id="preambel">
-			<h2>Audiomitschnitte<br />
-				Universität Göttingen<br />
-			</h2>
-
-			<p>Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden. Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a> übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.<br />
-
+		<div class="media-body">
+			<h2 class="media-heading">Audiomitschnitte Universität Göttingen</h2>
+			<p>
+				Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
+				Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a>
+				übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
+			</p>
+			<p>
 				Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r">Playlist</a>.
 			</p>
-
-
-
-			<p>Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB). Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+			<p>
+				Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
+				Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
 			</p>
+
+
 		</div>
 
 	</message>
@@ -3982,21 +3984,10 @@ Das Team vom Universitätsverlag Göttingen
 
 
 
-		<p>
-
-
-
-			<img src="/static/images/ring/cover-16-17.jpg" alt="Coverabbildung" /><br />
-
-
-
-			<a class="extern" href="http://www.uni-goettingen.de/de/547325.html">
-
-				Mehr Informationen der Universität...</a>
-
-
-
-		</p>
+		<div class="media-right">
+			<img class="media-object" src="/static/images/ring/cover-16-17.jpg" alt="poster"></img><br />
+			<a class="extern" href="http://www.uni-goettingen.de/de/547325.html">Mehr Informationen der Universität...</a>
+		</div>
 
 
 
@@ -4006,7 +3997,80 @@ Das Team vom Universitätsverlag Göttingen
 	<message key="xmlui.static.ring.list-16-17">
 
 
+		<div class="panel panel-default">
 
+			<header class="panel-heading">
+
+				<h4 class="panel-title">25. Oktober 2016</h4>
+
+			</header>
+
+			<div class="panel-body">
+
+				Prof. Dr. Bernd Ludwig, Universität Göttingen
+
+				<h4>Wurzeln der Aufklärung</h4>
+				<div class="pull-right">
+					<div class="btn-group btn-block">
+
+						<a href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> YouTube Video</a>
+						<a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Audio Datei</a>
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<div class="panel panel-default">       <header class="panel-heading">          <h3 class="panel-title">1. November 2016</h3>
+		</header>
+			<div class="panel-body">
+				<p>Prof. Dr. Gerhard Lauer, Universität Göttingen</p>
+
+				<p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-01.mp3">Jüdische Aufklärung</a></p>
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">       <header class="panel-heading">          <h3 class="panel-title">8. November 2016</h3>
+		</header>
+			<div class="panel-body">
+				<p>Dr. Avi Lifschitz, University College London</p>
+				<p>Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</p>
+				<!--<a href="/static/audio/ring2016-11-08.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+			</div>
+		</div>
+
+
+		<div class="panel panel-default">       <header class="panel-heading">          <h3 class="panel-title">15. November 2016</h3>
+		</header>
+			<div class="panel-body">
+				<p>Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen</p>
+				<p>Vortragender: Prof. Dr. Jens Peter Laut, Universität Göttingen</p>
+				<p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-15.mp3">Aufklärung im Islam und Aufklärung über den Islam</a></p></div>
+		</div>
+
+
+		<div class="panel panel-default">       <header class="panel-heading">          <h3 class="panel-title">22. November 2016</h3>
+		</header>
+			<div class="panel-body">
+				<p>Prof. Dr. Joachim Ringleben, Universität Göttingen</p>
+				<p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>  <a href="/static/audio/ring2016-11-22.mp3">
+					Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</a></p></div>
+		</div>
+
+
+
+		<div class="panel panel-default">       <header class="panel-heading">          <h3 class="panel-title">29. November 2016</h3>
+		</header>
+			<div class="panel-body">
+				<p>Prof. Dr. Wolfgang Eßbach, Universität Freiburg</p>
+				<p>Religionskritik der Aufklärung</p>
+				<!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+			</div>
+		</div>
 		<ul id="ring">
 			<li class="content"><strong>25. Oktober 2016</strong><br />
 				Prof. Dr. Bernd Ludwig, Universität Göttingen<br />
@@ -10301,7 +10365,7 @@ Mehr Informationen der Universität...</a>-->
 		<div class="embed-responsive embed-responsive-16by9">
 			<object class="embed-responsive-item" data="/xmlui/documents/verlagsprogramm_2016.pdf" type="application/pdf" internalinstanceid="9" title="">
 				<p>Your browser isn't supporting embedded pdf files. You can download the file
-					<a href="/xmlui/static/documents/verlagsprogramm_2016.pdf">here</a>.</p>
+					<a href="/static/documents/verlagsprogramm_2016.pdf">here</a>.</p>
 			</object>
 		</div>
 
@@ -10325,6 +10389,7 @@ Mehr Informationen der Universität...</a>-->
 
 	<message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
 	<message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
+	<message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-division">Sparte</message>
 	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_division">Sparte</message>
@@ -10334,13 +10399,18 @@ Mehr Informationen der Universität...</a>-->
 	<message key="xmlui.item.print.order">In den Warenkorb</message>
 	<message key="xmlui.item.uvg.order">In den Warenkorb</message>
 	<message key="xmlui.item.notavailable">Nicht verfügbar</message>
+	<message key="xmlui.item.print.version">Print</message>
+	<message key="xmlui.item.info.print">(Print)</message>
+	<message key="xmlui.item.info.document">(Online Dokument)</message>
+	<message key="xmlui.item.info.pages">Seiten</message>
 
-	<message key="xmlui.item.online.version">Online Ausgabe</message>
+	<message key="xmlui.item.online.version">Online</message>
 	<message key="xmlui.item.access.document">Zum Dokument</message>
 	<message key="xmlui.item.outofstock">Vergriffen</message>
+	<message key="xmlui.item.fileformat.pdf">PDF</message>
 
 	<message key="xmlui.item.noonline">Elektronisches Dokument nicht verfügbar!</message>
-	<message key="xmlui.item.nodocument">Elektronisches Dokument nicht verfügbar!</message>
+	<message key="xmlui.item.nodocument">Nicht verfügbar</message>
 	<message key="xmlui.item.relation.online">Online Version</message>
 	<message key="xmlui.item.review.online">Online Rezension</message>
 	<message key="xmlui.item.onlineonly">Nur Online verfügbar.</message>
@@ -10521,16 +10591,80 @@ Mehr Informationen der Universität...</a>-->
 	<message key="xmlui.static.ring.list.trail">Ringvorlesungen</message>
 	<message key="xmlui.static.ring.list">Ringvorlesungen</message>
 	<message key="xmlui.static.ring.list.preambel">
-		<p class="paragraph">
-			Der Universitätsverlag Göttingen präsentiert in Zusammenarbeit mit dem StadtRadio Göttingen Audio-Mitschnitte der Ringvorlesungsreihen der Universität Göttingen. Das Angebot finden Sie auf den Seiten der jeweiligen Ringvorlesung</p>
+
+		Der Universitätsverlag Göttingen präsentiert in Zusammenarbeit mit dem StadtRadio Göttingen Audio-Mitschnitte der Ringvorlesungsreihen der Universität Göttingen. Das Angebot finden Sie auf den Seiten der jeweiligen Ringvorlesung.
 	</message>
 
 	<message key="xmlui.static.ring.listall">
 		<!-- Liste der Ringvorlesungen -->
+
+		<nav>
+			<ul class="pagination pagination-sm">
+				<li><a href="#2016">2016</a></li>
+				<li><a href="#2015">2015</a></li>
+				<li><a href="#2014">2014</a></li>
+				<li><a href="#2013">2013</a></li>
+				<li><a href="#2012">2012</a></li>
+				<li><a href="#2011">2011</a></li>
+				<li><a href="#2010">2010</a></li>
+				<li><a href="#2009">2009</a></li>
+				<li><a href="#2008">2008</a></li>
+				<li><a href="#2007">2007</a></li>
+				<li><a href="#2006">2006</a></li>
+				<li><a href="#2005">2005</a></li>
+				<li><a href="#2004">2004</a></li>.
+			</ul>
+		</nav>
+
+		<h3 class="page-header" id="2016">2016</h3>
+
+		<div class="row">
+			<div class="col-sm-6">
+
+				<p>Wintersemester</p>
+				<p><a href="/xmlui/info/16-17">AUFKLÄRUNG 2.0</a></p>
+
+			</div>
+			<div class="col-sm-6">
+				<p>Sommersemester</p>
+				<p><a href="/xmlui/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+			</div>
+		</div>
+
+		<h3 class="page-header" id="2015">2015</h3>
+
+		<div class="row">
+			<div class="col-sm-6">
+
+				<p>Wintersemester</p>
+				<p><a href="/xmlui/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+
+			</div>
+			<div class="col-sm-6">
+				<p>Sommersemester</p>
+				<p><a href="/xmlui/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+			</div>
+		</div>
+
+		<h3 class="page-header" id="2014">2014</h3>
+
+		<div class="row">
+			<div class="col-sm-6">
+
+				<p>Wintersemester</p>
+				<p><a href="/xmlui/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
+
+			</div>
+			<div class="col-sm-6">
+				<p>Sommersemester</p>
+				<p><a href="/xmlui/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+			</div>
+		</div>
+
 		<div class="media">
 
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
@@ -10541,7 +10675,7 @@ Mehr Informationen der Universität...</a>-->
 		<div class="media">
 
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2016</strong></span>
@@ -10551,7 +10685,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2015/16</strong></span>
@@ -10562,7 +10696,7 @@ Mehr Informationen der Universität...</a>-->
 		<div class="media">
 
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-15.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-15.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2015</strong></span>
@@ -10572,7 +10706,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-14-15.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-14-15.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2014/15</strong></span>
@@ -10582,7 +10716,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-14.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-14.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2014</strong></span>
@@ -10592,7 +10726,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-13-14.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-13-14.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
@@ -10602,7 +10736,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-13.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-13.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2013</strong></span>
@@ -10612,7 +10746,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-12-13.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-12-13.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2012/13</strong></span>
@@ -10622,7 +10756,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-12.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-12.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2012</strong></span>
@@ -10632,7 +10766,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-11-12.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-11-12.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2011/12</strong></span>
@@ -10642,7 +10776,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-11.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-11.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2011</strong></span>
@@ -10652,7 +10786,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-10-11.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-10-11.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2010/11</strong></span>
@@ -10662,7 +10796,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-10.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-10.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2010</strong></span>
@@ -10672,7 +10806,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-09-10.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-09-10.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2009/10</strong></span>
@@ -10682,7 +10816,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-09.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-09.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2009</strong></span>
@@ -10692,7 +10826,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-08-09.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-08-09.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2008/09</strong></span>
@@ -10702,7 +10836,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-08.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-08.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2008</strong></span>
@@ -10712,7 +10846,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-07-08.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-07-08.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2007/08</strong></span>
@@ -10722,7 +10856,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-07.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-07.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2007</strong></span>
@@ -10732,7 +10866,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-06-07.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-06-07.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2006/07</strong></span>
@@ -10742,7 +10876,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-06.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-06.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2006</strong></span>
@@ -10752,7 +10886,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-05-06.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-05-06.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2005/06</strong></span>
@@ -10762,7 +10896,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-05.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-05.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2005</strong></span>
@@ -10772,7 +10906,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-04-05.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-04-05.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Wintersemester 2004/05</strong></span>
@@ -10782,7 +10916,7 @@ Mehr Informationen der Universität...</a>-->
 
 		<div class="media">
 			<div class="media-left hidden-xs">
-				<img src="/xmlui/static/images/ring/cover-04.jpg" class="media-object" alt="poster"></img>
+				<img src="/static/images/ring/cover-04.jpg" class="media-object" alt="poster"></img>
 			</div>
 			<div class="media-body">
 				<span class="media-heading"><strong>Sommersemester 2004</strong></span>
@@ -11112,7 +11246,6 @@ Mehr Informationen der Universität...</a>-->
 			</p>
 
 			<br />
-
 
 			<h2>Fachartikel zum Thema Universitätsverlage in Deutschland erschienen</h2>
 			<span class="contributor">Bargheer, Margo; Pabst, Jutta</span>

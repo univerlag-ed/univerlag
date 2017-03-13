@@ -45,81 +45,81 @@
     <xsl:template match="dri:options">
         <div id="ds-options" class="word-break hidden-print">
             <!-- <xsl:if test="not(contains(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='request'][@qualifier='URI'], 'discover'))"> -->
-           <!--  <div id="ds-search-option" class="ds-option-set"> -->
-                <!-- The form, complete with a text box and a button, all built from attributes referenced
-             from under pageMeta. -->
-                <!-- <form id="ds-search-form" class="" method="post">
-                    <xsl:attribute name="action">
-                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
-                        <xsl:value-of
-                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
-                    </xsl:attribute>
-                    <fieldset>
-                        <div class="input-group">
-                            <input class="ds-text-field form-control" type="text" placeholder="xmlui.general.search"
-                                   i18n:attr="placeholder">
-                                <xsl:attribute name="name">
+            <!--  <div id="ds-search-option" class="ds-option-set"> -->
+            <!-- The form, complete with a text box and a button, all built from attributes referenced
+         from under pageMeta. -->
+            <!-- <form id="ds-search-form" class="" method="post">
+                <xsl:attribute name="action">
+                    <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
+                    <xsl:value-of
+                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
+                </xsl:attribute>
+                <fieldset>
+                    <div class="input-group">
+                        <input class="ds-text-field form-control" type="text" placeholder="xmlui.general.search"
+                               i18n:attr="placeholder">
+                            <xsl:attribute name="name">
+                                <xsl:value-of
+                                        select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
+                            </xsl:attribute>
+                        </input>
+                        <span class="input-group-btn">
+                            <button class="ds-button-field btn btn-primary" title="xmlui.general.go" i18n:attr="title">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"/>
+                                <xsl:attribute name="onclick">
+                                                <xsl:text>
+                                                    var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
+                                                    if (radio != undefined &amp;&amp; radio.checked)
+                                                    {
+                                                    var form = document.getElementById(&quot;ds-search-form&quot;);
+                                                    form.action=
+                                                </xsl:text>
+                                    <xsl:text>&quot;</xsl:text>
                                     <xsl:value-of
-                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='queryField']"/>
+                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
+                                    <xsl:text>/handle/&quot; + radio.value + &quot;</xsl:text>
+                                    <xsl:value-of
+                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
+                                    <xsl:text>&quot; ; </xsl:text>
+                                    <xsl:text>
+                                                    }
+                                                </xsl:text>
                                 </xsl:attribute>
-                            </input>
-                            <span class="input-group-btn">
-                                <button class="ds-button-field btn btn-primary" title="xmlui.general.go" i18n:attr="title">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"/>
-                                    <xsl:attribute name="onclick">
-                                                    <xsl:text>
-                                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
-                                                        if (radio != undefined &amp;&amp; radio.checked)
-                                                        {
-                                                        var form = document.getElementById(&quot;ds-search-form&quot;);
-                                                        form.action=
-                                                    </xsl:text>
-                                        <xsl:text>&quot;</xsl:text>
-                                        <xsl:value-of
-                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
-                                        <xsl:text>/handle/&quot; + radio.value + &quot;</xsl:text>
-                                        <xsl:value-of
-                                                select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='search'][@qualifier='simpleURL']"/>
-                                        <xsl:text>&quot; ; </xsl:text>
-                                        <xsl:text>
-                                                        }
-                                                    </xsl:text>
-                                    </xsl:attribute>
-                                </button>
-                            </span>
+                            </button>
+                        </span>
+                    </div>
+
+                    <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
+                        <div class="radio">
+                            <label>
+                                <input id="ds-search-form-scope-all" type="radio" name="scope" value=""
+                                       checked="checked"/>
+                                <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
+                            </label>
                         </div>
+                        <div class="radio">
+                            <label>
+                                <input id="ds-search-form-scope-container" type="radio" name="scope">
+                                    <xsl:attribute name="value">
+                                        <xsl:value-of
+                                                select="substring-after(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container'],':')"/>
+                                    </xsl:attribute>
+                                </input>
+                                <xsl:choose>
+                                    <xsl:when
+                                            test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='containerType']/text() = 'type:community'">
+                                        <i18n:text>xmlui.dri2xhtml.structural.search-in-community</i18n:text>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <i18n:text>xmlui.dri2xhtml.structural.search-in-collection</i18n:text>
+                                    </xsl:otherwise>
 
-                        <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container']">
-                            <div class="radio">
-                                <label>
-                                    <input id="ds-search-form-scope-all" type="radio" name="scope" value=""
-                                           checked="checked"/>
-                                    <i18n:text>xmlui.dri2xhtml.structural.search</i18n:text>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input id="ds-search-form-scope-container" type="radio" name="scope">
-                                        <xsl:attribute name="value">
-                                            <xsl:value-of
-                                                    select="substring-after(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='container'],':')"/>
-                                        </xsl:attribute>
-                                    </input>
-                                    <xsl:choose>
-                                        <xsl:when
-                                                test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='focus'][@qualifier='containerType']/text() = 'type:community'">
-                                            <i18n:text>xmlui.dri2xhtml.structural.search-in-community</i18n:text>
-                                        </xsl:when>
-                                        <xsl:otherwise>
-                                            <i18n:text>xmlui.dri2xhtml.structural.search-in-collection</i18n:text>
-                                        </xsl:otherwise>
-
-                                    </xsl:choose>
-                                </label>
-                            </div>
-                        </xsl:if>
-                    </fieldset>
-                </form> -->
+                                </xsl:choose>
+                            </label>
+                        </div>
+                    </xsl:if>
+                </fieldset>
+            </form> -->
             <!-- </div> -->
             <!-- </xsl:if> -->
             <!-- <xsl:apply-templates/> -->
@@ -151,7 +151,7 @@
                 <xsl:if test="(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/publishing') or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'costrequest')) or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'simple-review')))">
 
                     <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-utils"><i18n:text>xmlui.static.editors-authors.head</i18n:text></a>
-                    <a class="list-group-item ds-option nested" href="{$context-path}/costrequest"><i18n:text>xmlui.ArtifactBrowser.CostRequestForm.title</i18n:text></a>
+                    <a class="list-group-item ds-option nested" href="{$context-path}/publishingrequest"><i18n:text>xmlui.ArtifactBrowser.CostRequestForm.title</i18n:text></a>
                     <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-prices"><i18n:text>xmlui.static.price.head</i18n:text></a>
                     <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-policy"><i18n:text>xmlui.static.policy.head</i18n:text></a>
                     <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-reviewer"><i18n:text>xmlui.static.reviewer.head</i18n:text></a>
@@ -170,10 +170,10 @@
 
             </div>
             <xsl:apply-templates select="dri:list[@n='context']"/>
+            <xsl:apply-templates select="dri:list[@n='administrative']"/>
             <xsl:if test="//dri:userMeta/@authenticated='yes'">
                 <xsl:apply-templates select="dri:list[@n='account']"/>
             </xsl:if>
-            <xsl:apply-templates select="dri:list[@n='administrative']"/>
             <xsl:apply-templates select="dri:list[@n='discovery']"/>
             <xsl:apply-templates select="dri:list[@n='statistics']"/>
 

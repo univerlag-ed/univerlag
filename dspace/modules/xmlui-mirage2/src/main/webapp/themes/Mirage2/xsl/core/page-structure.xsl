@@ -14,7 +14,7 @@
     Rendering of the header, footer, trail and alerts
 
     Author: art.lowel at atmire.com
-    Author: lieven.droogmans at atmire.com
+    Author: lieven.droogmans at atmire.comfa
     Author: ben at atmire.com
     Author: Alexey Maslov
 
@@ -335,7 +335,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="header-image" href="/"><img src="/xmlui/themes/Mirage2/images/verlagslogo.png" class="visible-md visible-lg"/></a>
+                        <a class="header-image" href="/"><img src="/themes/Mirage2/images/verlagslogo.png" class="visible-md visible-lg"/></a>
                         <a href="{$context-path}/" class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg">
                             <img src="{$theme-path}images/logo.svg" />
                         </a>
@@ -623,7 +623,7 @@
             </xsl:for-each>
         </xsl:variable>
 
-        <xsl:if test="$ccLicenseName and $ccLicenseUri and contains($ccLicenseUri, 'creativecommons')">
+        <!-- <xsl:if test="$ccLicenseName and $ccLicenseUri and contains($ccLicenseUri, 'creativecommons')">
             <div about="{$handleUri}" class="row">
                 <div class="col-sm-3 col-xs-12">
                     <a rel="license"
@@ -643,7 +643,7 @@
                 </span>
             </div>
             </div>
-        </xsl:if>
+        </xsl:if> -->
     </xsl:template>
 
     <xsl:template name="cc-logo">
@@ -872,6 +872,10 @@
                   ga('send', 'pageview');
            </xsl:text></script>
         </xsl:if>
+
+        <!-- <script src="/static/shopping-cart.min.js" charset="UTF-8" type="text/javascript"> </script>
+        <script src="/static/js/addon.js" charset="UTF-8" type="text/javascript"> </script>-->
+
     </xsl:template>
 
     <!--The Language Selection-->

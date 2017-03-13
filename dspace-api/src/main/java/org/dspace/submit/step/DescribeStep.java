@@ -188,19 +188,6 @@ public class DescribeStep extends AbstractProcessingStep
 
         // Step 2:
 
-
-        // Creators want to write the future DOI in his work, so
-        // create university press DOI in advance and save it as special metadata
-        if (item.getMetadataByMetadataString("dc.intern.doi").length == 0)
-        {
-            item.addMetadata("dc", "intern", "doi", "en", createDOI(item));
-            // Save changes to database
-            subInfo.getSubmissionItem().update();
-
-            // commit changes
-            context.commit();
-
-        }
         // now update the item metadata.
         String fieldName;
         boolean moreInput = false;
@@ -1054,7 +1041,7 @@ public class DescribeStep extends AbstractProcessingStep
         Calendar cal = Calendar.getInstance();
         return (ConfigurationManager.getProperty("identifier.doi.prefix")
                 + "/" + ConfigurationManager.getProperty("identifier.doi.namespaceseparator")
-                + cal.get(Calendar.YEAR) + "." + it.getID());
+                + cal.get(Calendar.YEAR) + "-" + it.getID());
 
     }
 }

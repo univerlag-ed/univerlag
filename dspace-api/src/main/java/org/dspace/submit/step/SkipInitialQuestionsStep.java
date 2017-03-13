@@ -9,6 +9,7 @@ package org.dspace.submit.step;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Calendar;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.dspace.app.util.SubmissionInfo;
 import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.InProgressSubmission;
+import org.dspace.content.Item;
+import org.dspace.core.ConfigurationManager;
 import org.dspace.core.Context;
 import org.dspace.submit.AbstractProcessingStep;
 
@@ -53,7 +56,35 @@ public class SkipInitialQuestionsStep extends AbstractProcessingStep
         submissionItem.setMultipleTitles(true);
         submissionItem.setPublishedBefore(true);
         submissionItem.update();
+
+        // Creators want to write the future DOI in his work, so
+        // create university press DOI in advance and save it as special metadata
+        Item item = submissionItem.getItem();
+        System.out.println("INTERN DOI LÄNGE " + item.getMetadataByMetadataString("dc.intern.doi").length);
+        if (item.getMetadataByMetadataString("dc.intern.doi").length == 0)
+        {
+            item.addMetadata("dc", "intern", "doi", "en", createDOI(item));
+            // Save changes to database
+            submissionItem.update();
+
+        }
         return STATUS_COMPLETE;
+    }
+
+    /**
+     * Create DOI based on configured prefix and namespacseparator
+     * on year and itemid
+     *
+     * @param it
+     * @return created DOI
+     */
+    private String createDOI(Item it)
+    {
+        Calendar cal = Calendar.getInstance();
+        return (ConfigurationManager.getProperty("identifier.doi.prefix")
+                + "/" + ConfigurationManager.getProperty("identifier.doi.namespaceseparator")
+                + cal.get(Calendar.YEAR) + "-" + it.getID());
+
     }
 
     public int getNumberOfPages(HttpServletRequest request,

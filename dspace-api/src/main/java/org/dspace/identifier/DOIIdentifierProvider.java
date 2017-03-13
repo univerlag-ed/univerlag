@@ -817,7 +817,7 @@ public class DOIIdentifierProvider
             doiRow = DatabaseManager.create(context, "Doi");
 
             //check if advanced DOI existent
-            if (!(dso instanceof Item)) {
+            if (dso instanceof Item) {
                 Item item = (Item)dso;
                 if (item.getMetadata("dc", "intern", "doi", Item.ANY).length > 0) {
                     doi = item.getMetadataByMetadataString("dc.intern.doi")[0].value;
@@ -893,7 +893,7 @@ public class DOIIdentifierProvider
         Item item = (Item) dso;
 
         item.addMetadata(MD_SCHEMA, DOI_ELEMENT, DOI_QUALIFIER, null, DOI.DOIToExternalForm(doi));
-        item.addMetadata(MD_SCHEMA, DOI_ELEMENT, DOI_QUALIFIER, null, DOI.DOIToExternalForm(doi));
+
         try
         {
             item.update();

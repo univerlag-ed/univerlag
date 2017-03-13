@@ -1,0 +1,110 @@
+<form class="shopping-cart form">
+
+	<h2 data-en="Shopping Cart">Warenkorb <button class="close form">&times;</button></h2>
+
+	<div class="show-if-sent">
+		<p data-en="Your order has been submitted.">Ihre Bestellung wurde abgeschickt.</p>
+	</div>
+
+	<div class="show-if-empty">
+		<p data-en="Your shopping cart is empty.">Ihr Warenkorb ist leer.</p>
+	</div>
+
+	<div class="items show-if-filled">
+		<table>
+			<thead>
+				<tr>
+					<th class="narrow"></th>
+					<th class="wide align-left" data-en="Description">Bezeichnung</th>
+					<th class="align-center" data-en="Quantity">Anzahl</th>
+					<th data-en="Price">Einzelpreis</th>
+					<th data-en="Sum">Summe</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="item">
+					<td class="align-left"><button class="remove">&times;</button></td>
+					<td class="align-left"><p data-model="contributor"></p><p class="bold" data-model="title"></p><p data-model="description"></p></td>
+					<td class="align-center"><button class="less">&minus;</button> <span data-model="quantity"></span> <button class="more">+</button></td>
+					<td data-model="amount"></td>
+					<td data-model="sum"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan=4 data-en="Subtotal">Zwischensumme</td><td data-model="subtotal"></td>
+				</tr>
+				<tr>
+					<td colspan=4 data-en="Shipping">Versandkosten</td><td data-model="shipping"></td>
+				</tr>
+				<tr class="big bold">
+					<td colspan=4 data-en="Total">Gesamtpreis</td><td data-model="total"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<fieldset data-entity="customer">
+		<h3 data-en="Invoice Address">Rechnungsanschrift</h3>
+		<label data-en="First name">Vorname <input type="text" data-model="firstname" required></label>
+		<label data-en="Last name">Nachname <input type="text" data-model="lastname" required></label>
+		<label data-en="Company&nbsp;/ address affix">Firma&nbsp;/ Adresszusatz <input type="text" data-model="company"></label>
+		<label data-en="Street address">Stra&szlig;e und Hausnummer <input type="text" data-model="address" required></label>
+		<label class="narrow" data-en="Postal code">PLZ <input type="text" data-model="zipcode" required></label>
+		<label data-en="City">Ort <input type="text" data-model="city" required></label>
+		<label data-en="Country">Land
+			<select data-model="countrycode" data-default="DE" required></select>
+		</label>
+		<label data-en="E-mail">E-Mail <input type="email" data-model="email" required></label>
+		<label>
+			<input type="checkbox" data-model="equalsDelivery" checked>
+			<span data-en="The delivery address matches the invoice address.">Die Lieferanschrift entspricht der Rechnungsanschrift.</span>
+		</label>
+	</fieldset>
+
+	<fieldset data-entity="delivery" class="delivery">
+		<h3 data-en="Delivery address">Lieferanschrift</h3>
+		<label data-en="First name">Vorname <input type="text" data-model="firstname" required></label>
+		<label data-en="Last name">Nachname <input type="text" data-model="lastname" required></label>
+		<label data-en="Company/address affix">Firma/Adresszusatz <input type="text" data-model="company"></label>
+		<label data-en="Street address">Stra&szlig;e und Hausnummer <input type="text" data-model="address" required></label>
+		<label class="narrow" data-en="Postal code">PLZ <input type="text" data-model="zipcode" required></label>
+		<label data-en="City">Ort <input type="text" data-model="city" required></label>
+		<label data-en="Country">Land
+			<select data-model="countrycode" data-default="DE" required></select>
+		</label>
+	</fieldset>
+
+	<fieldset class="highlight">
+		<label>
+			<input type="checkbox" required>
+			<span data-en="I agree with the terms and conditions and have taken note of the cancellation policy.">
+				Ich stimme den Versandbedingungen und AGB zu und habe die Widerrufsbelehrung zur Kenntnis genommen.
+			</span>
+			(<a class="show conditions" data-en="show">anzeigen</a>).
+		</label>
+		<div class="conditions"><button class="close conditions">&times;</button></div>
+	</fieldset>
+
+	<div class="message" id="fillAllFields" data-en="Please fill the highlighted fields.">
+		Bitte f&uuml;llen Sie die markierten Felder aus
+	</div>
+	<div class="message" id="unexpectedSubmitError" data-en="Something went wrong. Either you are offline or our server is. Feel free to send us an email or give us a call. We are sorry for the inconvenience.">
+		Das ging leider schief. Entweder sind Sie offline, oder wir haben ein Serverproblem. In letzterem Fall w&auml;ren wir Ihnen sehr dankbar, wenn Sie uns eine E-Mail schrieben oder einfach anriefen.
+	</div>
+	<div class="message" id="orderInvalid" data-en="Your order seems to be incomplete. Please check these fields:">
+		Ihre Angaben scheinen noch nicht vollst&auml;ndig zu sein. Bitte pr&uuml;fen Sie folgende Felder:
+	</div>
+	<div class="message" id="orderReceived" data-en="We have received your order, thank you. You will receive an email shortly.">
+		Wir haben Ihre Bestellung erhalten, vielen Dank. Eine Bestellbest&auml;tigung erhalten Sie per E-Mail.
+	</div>
+	<div class="message" id="shippingCalculationError" data-en="Shipping costs cannot be calculated. You can submit your order nonetheless and we will contact you via e-mail.">
+		Versandkosten konnten nicht berechnet werden. Sie k&ouml;nnen Ihre Bestellung dennoch abschicken, wir melden uns dann per E-Mail bei Ihnen.
+	</div>
+	<div class="message" id="shippingUpdated" data-en="Shipping costs updated">
+		Versandkosten aktualisiert
+	</div>
+
+	<button class="submit disable-if-empty" disabled data-en="Send order (costs incurr)">Kostenpflichtig bestellen</button>
+
+</form>

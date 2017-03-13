@@ -34,10 +34,19 @@ header .navbar-default {
     background-color: #193364;
 }
 
+
+.first-page-header {
+  color: #193364;
+}
+
 .trail-wrapper {
     background-color: #193364;
     color: #fff;
     border-bottom: 0px;
+}
+
+.trail-wrapper .breadcrumb > .active {
+    color: #BCB6B6;
 }
 
 header .navbar-logo img {
@@ -106,4 +115,87 @@ a.list-group-item {
     background-color: #fff;
     color: #193364;
     z-index: 2;
+}
+
+.artifact-info span {
+    display: block;
+}
+
+.access {
+    float: right;
+//    margin-right: 5em;
+}
+
+.thumbnail .caption {
+    padding: 0;
+}
+
+.media .media-left .media-object {
+  max-width: 60px;
+}
+
+.access.order {
+    color: #607890;
+    cursor: pointer;
+}
+
+#details span {
+    font-weight: bold;
+    color: #565353;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view .page-header {
+    margin-top: 10px;
+}
+
+.secondary-data {
+    margin-bottom: 10px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h3 {
+    font-size: 20px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h4 {
+    font-size: 14px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.gray {
+    color: gray;
+}
+
+.relation {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dateissued {
+    display: inherit;
+}
+
+ul#myTab li a {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details a img {
+    max-width: 40px;
+    display: inline;
+    margin-left: 5px;
+}
+
+#abstract {
+    text-align: justify;
+}
+
+#ds-options .ds-option-set-head {
+    background-color: #7D8FB2;
+    color: #fff;
+    text-shadow: 0px 1px 0px #565252;
 }
