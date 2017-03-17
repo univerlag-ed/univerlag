@@ -199,3 +199,35 @@ ul#myTab li a {
     color: #fff;
     text-shadow: 0px 1px 0px #565252;
 }
+
+#aspect_discovery_Navigation_list_discovery .list-group-item.ds-option {
+    margin-left: 10px;
+}
+
+.item-wrapper {
+  margin-bottom: 5%;
+}
+
+.caption .artifact-title{
+  font-size: small;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#thumbnail {
+  max-width: 100%;
+}
+
+.thumbnail > img, .thumbnail > a > img
+{
+  max-width: 120px;
+  border: 1px solid #ddd;
+}
+
+
+
+.glyphicon {
+  color: gray;
+}

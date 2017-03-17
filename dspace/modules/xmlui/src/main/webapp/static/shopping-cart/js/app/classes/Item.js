@@ -1,1 +1,0 @@
-(function(){var t;t=function(){function t(t){this.uuid=t,this.amount=0,this.contributor=0,this.description="",this.id=0,this.part="",this.quantity=1,this.shipping=0,this.sum=0,this.title="&mdash;"}var i;return i=ShoppingCart,t.prototype.setAmount=function(t){return this.amount=t,this.sum=this.quantity*t},t}()}).call(this);

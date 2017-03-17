@@ -1,0 +1,229 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE and NOTICE files at the root of the source
+ * tree and available online at
+ *
+ * http://www.dspace.org/license/
+ */
+
+/**
+ * You can put your own style in this file.
+ * It will be included in all color schemes
+ */
+
+//example mixin to set the text-selection style
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+
+@include selection {
+    color: white;
+    background: hotpink;
+}
+
+#main-container .row-offcanvas {
+    background-color: #fff;
+}
+
+#main-container #sidebar {
+    background-color: #fff;
+}
+
+header .navbar-default {
+    background-color: #193364;
+}
+
+
+.first-page-header {
+  color: #193364;
+}
+
+.trail-wrapper {
+    background-color: #193364;
+    color: #fff;
+    border-bottom: 0px;
+}
+
+.trail-wrapper .breadcrumb > .active {
+    color: #BCB6B6;
+}
+
+header .navbar-logo img {
+    height: 90px;
+}
+
+.navbar-text {
+    font-size: 250%;
+    color: #fff !important;
+    // margin-top: 0.7em;
+    //  margin-left: 0;
+}
+
+.trail-bottom {
+    height: 2em;
+    background: #fff url('../images/raster.gif') repeat-x bottom;
+}
+
+.list-group {
+    margin-bottom: 20px;
+    padding-left: 0;
+    border: 1px solid #d8e8eb;
+}
+
+
+.list-group-item.ds-option.nested {
+    margin-left: 25px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+    margin-bottom: -1px;
+    background-color: white;
+    border: 0;
+}
+
+.list-group-item.active::before {
+    color: #193364;
+    font-weight: bold;
+    margin-left: -10px;
+    padding-right: 5px;
+}
+
+a.list-group-item {
+    color: #607890;
+}
+
+#ds-options .ds-option-set-head {
+    color: #193364;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    margin-bottom: 0px;
+    background-color: #f0f2f5;
+    padding: 5px;
+    border-top: 1px solid #d8e8eb;
+    border-left: 1px solid #d8e8eb;
+    border-right: 1px solid #d8e8eb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-color: #fff;
+    color: #193364;
+    z-index: 2;
+}
+
+.artifact-info span {
+    display: block;
+}
+
+.access {
+    float: right;
+//    margin-right: 5em;
+}
+
+.thumbnail .caption {
+    padding: 0;
+}
+
+.media .media-left .media-object {
+  max-width: 60px;
+}
+
+.access.order {
+    color: #607890;
+    cursor: pointer;
+}
+
+#details span {
+    font-weight: bold;
+    color: #565353;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view .page-header {
+    margin-top: 10px;
+}
+
+.secondary-data {
+    margin-bottom: 10px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h3 {
+    font-size: 20px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h4 {
+    font-size: 14px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.gray {
+    color: gray;
+}
+
+.relation {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dateissued {
+    display: inherit;
+}
+
+ul#myTab li a {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details a img {
+    max-width: 40px;
+    display: inline;
+    margin-left: 5px;
+}
+
+#abstract {
+    text-align: justify;
+}
+
+#ds-options .ds-option-set-head {
+    background-color: #7D8FB2;
+    color: #fff;
+    text-shadow: 0px 1px 0px #565252;
+}
+
+.item-wrapper {
+    margin-bottom: 5%;
+}
+
+.caption .artifact-title{
+    font-size: small;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#thumbnail {
+    max-width: 100%;
+}
+
+.thumbnail > img, .thumbnail > a > img
+{
+    max-width: 120px;
+    border: 1px solid #ddd;
+}
+
+
+
+.glyphicon {
+    color: gray;
+}

@@ -1,0 +1,843 @@
+<!--
+
+    The contents of this file are subject to the license and copyright
+    detailed in the LICENSE and NOTICE files at the root of the source
+    tree and available online at
+
+    http://www.dspace.org/license/
+
+-->
+<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+
+    <!--
+        The format used by all keys is as follows
+
+        xmlui.<Aspect>.<Java Class>.<name>
+
+        There are a few exceptions to this nameing format,
+        1) Some general keys are in the xmlui.general namespace
+           because they are used very frequently.
+        2) Some general keys which are specific to a particular aspect
+           may be found at xmlui.<Aspect> without specifiying a
+           particular java class.
+        -->
+
+
+    <!-- Ringvorlesungen common parts -->
+    <message key="xmlui.static.ring.list.head">Ringvorlesungen</message>
+    <message key="xmlui.static.ring.list.title">Ringvorlesungen</message>
+    <message key="xmlui.static.ring.list.trail">Ringvorlesungen</message>
+    <message key="xmlui.static.ring.list">Ringvorlesungen</message>
+
+    <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:</message>
+    <message key="xmlui.static.ring.preambel">
+        <p>
+            Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
+            Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a>
+            übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
+        </p>
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r">Playlist</a>.
+        </p>
+        <p>
+            Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
+            Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+        </p>
+    </message>
+
+    <message key="xmlui.static.ring.listall">
+        <!-- Liste der Ringvorlesungen -->
+
+        <!--<nav>
+            <ul class="pagination pagination-sm">
+                <li><a href="#2016">2016</a></li>
+                <li><a href="#2015">2015</a></li>
+                <li><a href="#2014">2014</a></li>
+                <li><a href="#2013">2013</a></li>
+                <li><a href="#2012">2012</a></li>
+                <li><a href="#2011">2011</a></li>
+                <li><a href="#2010">2010</a></li>
+                <li><a href="#2009">2009</a></li>
+                <li><a href="#2008">2008</a></li>
+                <li><a href="#2007">2007</a></li>
+                <li><a href="#2006">2006</a></li>
+                <li><a href="#2005">2005</a></li>
+                <li><a href="#2004">2004</a></li>.
+            </ul>
+        </nav> -->
+
+        <h3 class="page-header" id="2016">2016</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <p>Wintersemester</p>
+                <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+
+            </div>
+            <div class="col-sm-6">
+                <p>Sommersemester</p>
+                <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+            </div>
+        </div>
+
+        <h3 class="page-header" id="2015">2015</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <p>Wintersemester</p>
+                <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+
+            </div>
+            <div class="col-sm-6">
+                <p>Sommersemester</p>
+                <p><a href="/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+            </div>
+        </div>
+
+        <h3 class="page-header" id="2014">2014</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <p>Wintersemester</p>
+                <p><a href="/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
+
+            </div>
+            <div class="col-sm-6">
+                <p>Sommersemester</p>
+                <p><a href="/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
+                <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2016</strong></span>
+                <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2015/16</strong></span>
+                <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-15.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2015</strong></span>
+                <p><a href="/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-14-15.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2014/15</strong></span>
+                <p><a href="/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-14.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2014</strong></span>
+                <p><a href="/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-13-14.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
+                <p><a href="/info/13-14">Kommunikation &amp; Kulturtransfer in der Personalunion</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-13.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2013</strong></span>
+                <p><a href="/info/13">DIE GRIMMS...in Wort und Tat</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-12-13.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2012/13</strong></span>
+                <p><a href="/info/12-13">»Sie befruchtet und ziert«</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-12.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2012</strong></span>
+                <p><a href="/info/13">Tradition - Autonomie - Innovation</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-11-12.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2011/12</strong></span>
+                <p><a href="/info/11-12">Miteinander - Füreinander? Sozialverhalten von Affen und Menschen</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-11.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2011</strong></span>
+                <p><a href="/info/11">CHEMIE - unser Leben, unsere Zukunft!</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-10-11.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2010/11</strong></span>
+                <p><a href="/info/10-11">Vom Nutzen des Nutzlosen - Vom Spiel zum Produkt</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-10.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2010</strong></span>
+                <p><a href="/info/10">„Arbeit am Mythos“: Leistung und Grenze des Mythos in Antike und Gegenwart</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-09-10.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2009/10</strong></span>
+                <p><a href="/info/09-10">„Wozu Theologie?“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-09.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2009</strong></span>
+                <p><a href="/info/09">„Wissenschaftliche Politikberatung“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-08-09.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2008/09</strong></span>
+                <p><a href="/info/08-09">„300 Jahre Albrecht von Haller – Genialität, Internationalität, Exzellenz“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-08.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2008</strong></span>
+                <p><a href="/info/08">„Der Weg an die Universität - Höhere Frauenbildung vom Mittelalter bis zum Ende des Zweiten Weltkriegs“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-07-08.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2007/08</strong></span>
+                <p><a href="/info/07-08">„Evolution - Zufall und Zwangsläufigkeit der Schöpfung“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-07.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2007</strong></span>
+                <p><a href="/info/07">„Vorsehung, Schicksal und göttliche Macht“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-06-07.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2006/07</strong></span>
+                <p><a href="/info/06-07">„Bilderwelten — Vom farbigen Abglanz der Natur“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-06.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2006</strong></span>
+                <p><a href="/info/06">„Bildung - Lernen: Humanistische Ideale, gesellschaftliche Notwendigkeiten, wissenschaftliche Erkenntnisse“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-05-06.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2005/06</strong></span>
+                <p><a href="/info/05-06">„Materialien im Wandel der Zeit“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-05.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2005</strong></span>
+                <p><a href="/info/06">„Carl Friedrich Gauß - Werk und Wirkung“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-04-05.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Wintersemester 2004/05</strong></span>
+                <p><a href="/info/04-05">„»... sind eben alles Menschen« - Verhalten zwischen Zwang, Freiheit und Verantwortung“</a></p>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="media-left hidden-xs">
+                <img src="/static/images/ring/cover-04.jpg" class="media-object" alt="poster"></img>
+            </div>
+            <div class="media-body">
+                <span class="media-heading"><strong>Sommersemester 2004</strong></span>
+                <p><a href="/info/04">„Amerika und Deutschland - Ambivalente Begegnungen?“</a></p>
+            </div>
+        </div>
+
+        <p class="paragraph">
+            Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universität und auch zu den Video-Mitschnitten der einzelnen Vorträge finden Sie auf der Seite der aktuellen Vortragsreihe.
+        </p>
+    </message>
+
+    <!-- ********** WS 16-17 ******* -->
+    <message key="xmlui.static.ring-16-17.trail">
+        WS 2016 / 2017
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-16-17">
+        AUFKLÄRUNG 2.0
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-16-17">
+        <div class="media-right">
+            <img class="media-object" src="/static/images/ring/cover-16-17.jpg" alt="poster"></img><br />
+            <small><a class="extern" href="http://www.uni-goettingen.de/de/547325.html">Mehr Informationen der Universität...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-16-17">
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h4 class="panel-title">25. Oktober 2016</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Dr. Bernd Ludwig, Universität Göttingen
+                <h4>Wurzeln der Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <a href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> YouTube Video</a>
+                        <a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Audio Datei</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">1. November 2016</h3>
+            </header>
+            <div class="panel-body">
+                <p>Prof. Dr. Gerhard Lauer, Universität Göttingen</p>
+                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-01.mp3">Jüdische Aufklärung</a></p>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">8. November 2016</h3>
+            </header>
+            <div class="panel-body">
+                <p>Dr. Avi Lifschitz, University College London</p>
+                <p>Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</p>
+                <!--<a href="/static/audio/ring2016-11-08.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+            <h3 class="panel-title">15. November 2016</h3>
+            </header>
+            <div class="panel-body">
+                <p>Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen</p>
+                <p>Vortragender: Prof. Dr. Jens Peter Laut, Universität Göttingen</p>
+                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-15.mp3">Aufklärung im Islam und Aufklärung über den Islam</a></p></div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+            <h3 class="panel-title">22. November 2016</h3>
+            </header>
+            <div class="panel-body">
+                <p>Prof. Dr. Joachim Ringleben, Universität Göttingen</p>
+                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>  <a href="/static/audio/ring2016-11-22.mp3">
+                    Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+            <h3 class="panel-title">29. November 2016</h3>
+            </header>
+            <div class="panel-body">
+                <p>Prof. Dr. Wolfgang Eßbach, Universität Freiburg</p>
+                <p>Religionskritik der Aufklärung</p>
+                <!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+            </div>
+        </div>
+        <ul id="ring">
+            <li class="content"><strong>25. Oktober 2016</strong><br />
+                Prof. Dr. Bernd Ludwig, Universität Göttingen<br />
+                <a href="/static/audio/ring2016-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Wurzeln der Aufklärung</a></li>
+
+
+
+            <li class="content"><strong>1. November 2016</strong><br />
+                ACHTUNG! Veranstaltungsort: Adam-von-Trott-Saal, Alte Mensa, Wilhelmsplatz 3<br />
+                Prof. Dr. Gerhard Lauer, Universität Göttingen<br />
+                <a href="/static/audio/ring2016-11-01.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Jüdische Aufklärung</a></li>
+
+
+            <li class="content"><strong>8. November 2016</strong><br />
+                Dr. Avi Lifschitz, University College London<br />
+                Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</li>
+            <!--<a href="/static/audio/ring2016-11-08.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
+
+
+            <li class="content"><strong>15. November 2016</strong><br />
+                Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen<br />
+                Vortragender: Prof. Dr. Jens Peter Laut, Universität Göttingen<br />
+                <a href="/static/audio/ring2016-11-15.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung im Islam und Aufklärung über den Islam</a></li>
+
+            <li class="content"><strong>22. November 2016</strong><br />
+                Prof. Dr. Joachim Ringleben, Universität Göttingen<br />
+                <a href="/static/audio/ring2016-11-22.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</a></li>
+
+
+            <li class="content"><strong>29. November 2016</strong><br />
+                Prof. Dr. Wolfgang Eßbach, Universität Freiburg<br />
+                Religionskritik der Aufklärung</li>
+            <!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
+
+
+
+            <li class="content"><strong>6. Dezember 2016</strong><br />
+                Prof. Dr. H. Otto Sibum, Universität Uppsala<br />
+                Experimente in der Aufklärung</li>
+            <!--<a href="/static/audio/ring2016-12-06.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
+
+
+
+            <li class="content"><strong>13. Dezember 2016</strong><br />
+                Prof. Dr. Marc Föcking, Universität Hamburg<br />
+                Aufklärung und Aerostatik</li>
+            <!--<a href="/static/audio/ring2016-12-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
+
+
+
+            <li class="content"><strong>20. Dezember 2016</strong><br />
+                Prof. Dr. Isabel Schnabel, Universität Bonn<br />
+                <a href="/static/audio/ring2016-12-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung über die wirtschaftliche Lage</a></li>
+
+
+            <li class="content"><strong>10. Januar 2017</strong><br />
+                Prof. Dr. Werner Heun, Universität Göttingen<br />
+                <a href="/static/audio/ring2017-01-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung, Revolution und Menschenrechte</a></li>
+
+
+            <li class="content"><strong>17. Januar 2017</strong><br />
+                Dr. Hans Erich Bödeker, Universität Göttingen<br />
+                Globale Aufklärung</li>
+            <!--<a href="/static/audio/ring2017-01-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
+
+
+            <li class="content"><strong>24. Januar 2017</strong><br />
+                PD Dr. Martin Gierl, Universität Göttingen<br />
+                <a href="/static/audio/ring2017-01-24.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Lokale Aufklärung</a></li>
+
+
+            <li class="content"><strong>31. Januar 2017</strong><br />
+                Prof. Dr. Heyo Kroemer, Universitätsmedizin Göttingen<br />
+                <a href="/static/audio/ring2017-01-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung 2.0</a></li>
+        </ul>
+    </message>
+
+    <message key="xmlui.static.ring.contact-16-17">
+        <div id="contact">
+            <strong>Organisation / Kontakt: </strong><br />
+            Dr. Hans Erich Bödeker<br />
+            und <br />
+            Prof. Dr. Thomas Kaufmann<br />
+            Platz d. Göttinger Sieben 2<br />
+            37073 Göttingen<br />
+            Telefon: +49 551 39-10408<br />
+            Fax: +49 551 39 7488 <br />
+            <a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a><br />
+        </div>
+    </message>
+
+            <!-- ********************************************************************************************* -->
+
+            <!-- SS 2014 -->
+            <!-- Breadcrumbs -->
+    <message key="xmlui.static.ring-ss14.trail">SS 2014</message>
+            <!-- Title -->
+    <message key="xmlui.static.ring.title-ss14">
+    <br />Klassiker, Thriller, Ladenhüter<br />
+    Wie Texte gebaut sind und wie sie wirken
+    </message>
+
+            <!-- Poster -->
+    <message key="xmlui.static.ring.poster-ss14">
+    <p>
+        <img src="/static/images/ring/cover-14.jpg" alt="Coverabbildung" /><br />
+        <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
+    </p>
+    </message>
+
+            <!-- Audio Files -->
+    <message key="xmlui.static.ring.list-ss14">
+    <ul>
+        <li class="content"><strong>06. Mai 2014</strong><br />
+            Prof. Christiane Schildknecht, Luzern<br />
+            »Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>13. Mai 2014</strong><br />
+            Prof. Manfred Krifka, Berlin<br />
+            <a href="/static/audio/ring2014-05-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</a>
+        </li>
+
+        <li class="content"><strong>20. Mai 2014</strong><br />
+            Prof. Annekathrin Schacht, Göttingen<br />
+            <a href="/static/audio/ring2014-05-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</a>
+        </li>
+
+        <li class="content"><strong>27. Mai 2014</strong><br />
+            Prof. Edgar Onea, Göttingen<br />
+            Offene Fragen und spannende Texte
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>3. Juni 2014</strong><br />
+            Prof. Markus Steinbach und Dr. Annika Herrmann, Göttingen<br />
+            Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+
+        <li class="content"><strong>10. Juni 2014</strong><br />
+            Prof. Nivedita Mani, Göttingen<br />
+            Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>17. Juni 2014</strong><br />
+            Prof. Regine Eckardt, Göttingen<br />
+            Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte?
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>24. Juni 2014</strong><br />
+            Prof. Simone Winko und Anna Fenner MA, Göttingen<br />
+            More than words. Emotionen in literarischen Texten
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+
+        <li class="content"><strong>1. Juli 2014</strong><br />
+            Prof. Evelyn Ferstl, Freiburg<br />
+            Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>8. Juli 2014</strong><br />
+            Prof. Heinrich Detering, Göttingen<br />
+            Horror! Literatur der Angstlust
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        <li class="content"><strong>15. Juli 2014</strong><br />
+            Prof. Tilmann Köppe, Göttingen<br />
+            Angenehmes Grauen. Warum wir Thriller lieben
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+
+        <li class="content"><strong>22. Juli 2014</strong><br />
+            Prof. Anke Holler, Göttingen<br />
+            Signale im Text. Wie sprachliche Strukturen die Leser lenken
+        </li>
+        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+    </ul>
+    </message>
+
+
+            <!-- ************************************************************************************** -->
+
+
+            <!-- SS 2016 -->
+
+            <!-- Breadcrumbs -->
+
+    <message key="xmlui.static.ring-ss16.trail">SS 2016</message>
+
+            <!-- Title -->
+
+    <message key="xmlui.static.ring.title-ss16">
+
+    <br />LANDWIRTSCHAFT zwischen Idylle und Hightech
+
+
+
+    </message>
+
+
+
+            <!-- Poster -->
+
+    <message key="xmlui.static.ring.poster-ss16">
+
+    <p>
+
+        <img src="/static/images/ring/cover-16.jpg" alt="Coverabbildung" /><br />
+
+        <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
+
+    </p>
+
+    </message>
+
+
+
+            <!-- Audio Files -->
+
+    <message key="xmlui.static.ring.list-ss16">
+
+    <ul>
+
+        <li class="content"><strong>12. April 2016</strong><br />
+
+            Dr. Stephanie Franck, Vorsitzende des Bundesverbandes Deutscher Pflanzenzüchter e.V.<br />
+
+            <a href="/static/audio/ring2016-04-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Mit dem Saatgut fängt es an - Idylle und Wirklichkeit in der Pflanzenzüchtung</a></li>
+
+
+
+        <li class="content"><strong>19. April 2016</strong><br />
+
+            Carl-Albrecht Bartmer, Präsident der Deutschen Landwirtschaftsgesellschaft<br />
+
+            <a href="/static/audio/ring2016-04-19.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Betriebe zwischen Idylle und Hightech</a></li>
+
+
+
+        <li class="content"><strong>26. April 2016</strong><br />
+
+            Prof. Dr. Henner Simianer, Universität Göttingen<br />
+
+            <a href="/static/audio/ring2016-04-26.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Genomische und andere Revolutionen in der Tierzucht</a></li>
+
+
+
+        <li class="content"><strong>03. Mai 2016</strong><br />
+
+            Prof. Dr. Urs Niggli, Direktor des Forschungsinstitutes für ökologischen Landbau (FiBL)<br />
+
+            <a href="/static/audio/ring2016-05-03.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Ökologischer Landbau: Idylle oder Hightech?</a></li>
+
+
+
+        <li class="content"><strong>10. Mai 2016</strong><br />
+
+            Prof. Dr. Kay-Uwe Goetz, Bayrische Landesanstalt für Landwirtschaft<br />
+
+            <a href="/static/audio/ring2016-05-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nutztiere nur noch in Gut Aiderbichl? - Entwicklungen in Tierhaltung und Gesellschaft</a></li>
+
+
+
+        <li class="content"><strong>17. Mai 2016</strong><br />
+
+            Prof. Dr. Achim Spiller, Universität Göttingen<br />
+
+            <a href="/static/audio/ring2016-05-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Sind wir in 20 Jahren alle Vegetarier? Anforderungen an die landwirtschaftliche Tierhaltung aus Sicht der Gesellschaft</a></li>
+
+
+
+
+
+        <li class="content"><strong>31. Mai 2016</strong><br />
+
+            Prof. Dr. Dr. Andreas Hensel, Präsident des Bundesinstitutes für Risikobewertung (BfR)<br />
+
+            <a href="/static/audio/ring2016-05-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Gift auf dem Teller? - Von gefühlten und realen Ernährungsrisiken</a></li>
+
+
+
+
+        <li class="content"><strong>07. Juni 2016</strong><br />
+
+            Prof. Dr. Andreas von Tiedemann, Universität Göttingen<br />
+
+            <a href="/static/audio/ring2016-06-07.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech-Ängste und Idyllvorstellungen - warum wir den modernen Pflanzenschutz nicht schätzen, ihn aber schätzen sollten</a></li>
+
+
+
+        <li class="content"><strong>14. Juni 2016</strong><br />
+
+            Prof. Dr. Eva Schlecht, Universität Göttingen/Universität Kassel<br />
+
+            <a href="/static/audio/ring2016-06-14.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech Forschung in pastoralen Systemen Afrikas und Asiens - Anwendungsbereiche und Erkenntnisse</a></li>
+
+
+
+        <li class="content"><strong>28. Juni 2016</strong><br />
+
+            Prof. Dr. Matin Qaim, Universität Göttingen<br />
+
+            <a href="/static/audio/ring2016-06-28.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaft zwischen Idylle und Hightech: Welternährung und Armutsbekämpfung in den Entwicklungsländern</a></li>
+
+
+        <li class="content"><strong>05. Juli 2016</strong><br />
+
+            Dr. Clemens Dirscherl, EKD<br />
+
+            <a href="/static/audio/ring2016-07-05.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Tierhaltung in ethischer Verantwortung - eine christliche Perspektive</a></li>
+
+
+        <li class="content"><strong>12. Juli 2016</strong><br />
+
+            !Änderung! Prof. Dr. Klaus Dittert, Universität Göttingen<br />
+
+            <a href="/static/audio/ring2016-07-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nachhaltige Produktivitätssteigerung: Konsequenzen für Wissenschaft und Wirtschaft</a></li>
+
+
+
+
+
+
+    </ul>
+
+    </message>
+
+
+
+    <message key="xmlui.static.ring.contact-ss16">
+
+    <div id="contact">
+
+
+
+        <strong>Organisation/Kontakt:</strong><br />
+
+        Georg-August-Universität Göttingen<br />
+
+        Fakultät für Agrarwissenschaften<br />
+
+        Prof. Dr. Elke Pawelzik, Prof. Dr. Henner Simianer, Prof. Dr. Achim Spiller, Prof. Dr. Bernhard Brümmer, Prof. Dr. Andreas von Tiedemann<br />
+
+        Büsgenweg 5<br />
+
+        37077   Göttingen<br />
+
+        Tel.: +49 551 39 5530<br />
+
+        Fax:  +49 551 39 66034<br />
+
+    </div>
+
+    </message>
+
+</catalogue>

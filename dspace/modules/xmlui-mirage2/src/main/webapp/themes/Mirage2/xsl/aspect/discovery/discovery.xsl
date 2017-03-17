@@ -40,6 +40,17 @@
         <xsl:apply-templates select="*[not(name()='head')]" mode="dsoList"/>
     </xsl:template>
 
+    <xsl:template match="dri:p[@rend='recentSubmissionViewMore']">
+        <p>
+            <xsl:attribute name="id"><xsl:value-of select="@id" /></xsl:attribute>
+            <xsl:attribute name="class"><xsl:value-of select="concat('ds-paragraph ', @rend)" /></xsl:attribute>
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="concat(substring-before(./dri:xref/@target, 'recent-submissions'), 'browse?order=DESC&amp;sort_by=4&amp;type=dateissued')" /></xsl:attribute>
+                <i18n:text>xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more</i18n:text>
+            </a>
+        </p>
+    </xsl:template>
+
     <xsl:template match="dri:list/dri:list/dri:list" mode="dsoList" priority="8">
         <!--
             Retrieve the type from our name, the name contains the following format:
