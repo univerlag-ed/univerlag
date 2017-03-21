@@ -3076,87 +3076,185 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.editors-authors.head">Publizieren: Autorenhilfe</message>
     <message key="xmlui.static.editors-authors.navigation">Autorenhilfe</message>
     <message key="xmlui.static.editors-authors">
+        <h2 class="ds-head page-header first-page-header">Publizieren: Autorenhilfe</h2>
+
+
         <div>
+
             <p>Das Publizieren im Universitätsverlag erfolgt in der Regel auf Grundlage eines publikationsreifen PDF-Dokumentes. Dafür bitten wir Sie, ihr Manuskript anhand unserer Formatierungsvorlagen aufzubereiten. Dies senkt die Kosten für das Publizieren erheblich. Unten finden Sie eine Anleitung für die Formatierung und Formatierungsvorlagen für unterschiedliche  Formate. Die Gestaltung der einzelnen Seiten (Überschriften, Absätze etc.) können Sie den Formatvorlagen entnehmen.</p>
+
 
 
             <p>Üblicherweise werden unsere Bücher im Format 17x24cm produziert. Hat Ihr Dokument weniger als 80 21x29,7cm (DIN A4-)Seiten, so wählen Sie bitte das Format 14,8x21cm (DIN A5).  Andere Formate, wie das Format 21x29,7cm (DIN A4), sind nach Absprache ebenfalls möglich. Für die rein elektronische Veröffentlichung gelten die gleichen Vorgaben.</p>
 
 
+
             <p>Wenn Sie Ihr Dokument in LaTeX geschrieben haben, wählen Sie bitte die Einstellung „book". Achtung: unter LaTeX werden Anführungszeichen und Gedankenstriche nur korrekt wiedergegeben, wenn  Zusatzmodule installiert sind. Bitte halten Sie ggf. Rücksprache mit dem Verlag.</p>
+
 
 
             <p>Für die Arbeit mit Word stehen verschiedene Formatierungshilfen bereit. Die Formatvorlage „17x24cm, skaliert“ sollten Sie nur wählen, wenn Sie Ihr Dokument in 21x29,7cm (DIN A4) angelegt haben und bei der Verkleinerung des Satzspiegels auf 17x24cm Probleme auftreten (z.B. durch komplexe Tabellen oder Bilder).</p>
 
 
+            <h3>Usere Formatvorlagen</h3>
+            <div class="item">
+                <h4 class="section-heading">17x24cm</h4>
+                <hr class="light"></hr>
+                <pitem>Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
+                    17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
+                    Sie mit der Erfassung des Dokuments beginnen.<p></p>
+                    <div class="button-panel">
+                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+                    </div>
+                </pitem></div>
+
+            <div class="item">
+                <h4 class="section-heading">17x24cm: Beiträge in Sammelbänden</h4>
+                <hr class="light"></hr>
+                <pitem>Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.<p></p>
+                    <div class="button-panel">
+                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+                    </div>
+                </pitem></div>
+
+            <div class="item">
+                <h4 class="section-heading">17x24cm, skaliert </h4>
+                <hr class="light"></hr>
+                <pitem>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
+                    <div class="button-panel">
+                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+                    </div>
+                </pitem></div>
+
+            <div class="item">
+                <h4 class="section-heading">14,8x21cm (DIN A5) </h4>
+                <hr class="light"></hr>
+                <pitem>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.<p></p>
+                    <div class="button-panel">
+                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+                    </div>
+                </pitem></div>
+
+            <div class="item">
+                <h4 class="section-heading">LaTeX </h4>
+                <hr class="light"></hr>
+                <pitem>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.<p></p>
+                    <div class="button-panel">
+                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+                    </div>
+                </pitem></div>
+
             <ul class="unstyled">
-                <li><strong>Anleitung Autoren</strong> —
+
+                <li>
+                    <strong>Anleitung Autoren</strong> —
                     <a href="/documents/Anleitung_Autoren.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Anleitung Formatvorlage</strong> —
+
+                <li>
+                    <strong>Anleitung Formatvorlage</strong> —
 
                     Beschreibung, wie die angebotenen Formatvorlagen benutzt werden:
                     <a href="/documents/anleitung_formatvorlage.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Formatvorlage 17x24cm</strong> —
+
+                <li>
+                    <strong>Formatvorlage 17x24cm</strong> —
                     Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
                     17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
                     Sie mit der Erfassung des Dokuments beginnen.
                     <a href="/documents/formatvorlage_17x24.doc">[MS Word (doc)]</a>
                     <a href="/documents/formatvorlage_17x24.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Formatvorlage 17x24cm: Beiträge in Sammelbänden</strong> —
+
+                <li>
+                    <strong>Formatvorlage 17x24cm: Beiträge in Sammelbänden</strong> —
                     Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie
                     diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format
                     17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
                     Sie mit der Erfassung des Dokuments beginnen.<br />
+
                     <a href="/documents/formatvorlage_17x24_sammelband.dot">[MS Word (dot)]</a>
                     <a href="/documents/formatvorlage_17x24_sammelband.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Formatvorlage 17x24cm, skaliert</strong> —
+
+                <li>
+                    <strong>Formatvorlage 17x24cm, skaliert</strong> —
                     Diese Formatvorlage bitte nur nach Absprache verwenden.<br />
+
                     <a href="/documents/formatvorlage_17x24_skaliert.doc">[MS Word (doc)]</a>
                     <a href="/documents/formatvorlage_17x24_skaliert.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Formatvorlage 14,8x21cm (DIN A5)</strong> —
+
+                <li>
+                    <strong>Formatvorlage 14,8x21cm (DIN A5)</strong> —
 
                     Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5)
                     publiziert werden sollen.<br />
+
                     <a href="/documents/formatvorlage_DINA5.doc">[MS Word (doc)]</a>
                     <a href="/documents/formatvorlage_DINA5.pdf">[pdf]</a>
+
                 </li>
-                <li><strong>Formatvorlage LaTeX</strong> —
+
+                <li>
+                    <strong>Formatvorlage LaTeX</strong> —
                     Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm
                     publiziert werden sollen.<br />
+
                     <a href="/documents/formatvorlage_latex_proceedings_17x24.zip">[Zip Archiv (.zip)]</a>
+
                 </li>
-                <li><strong>Metadatenschema</strong> —
+
+                <li>
+                    <strong>Metadatenschema</strong> —
                     <a href="/documents/Metadatenschema.xls">[MS Excel (xls)]</a>
+
                 </li>
+
             </ul>
 
 
 
+
             <h3>VG-Wort</h3>
+
             <div>
+
                 <p>
                     Die VG-Wort verwaltet als nicht gewinnorientierte Organisation treuhänderisch die Urheberrechte von Autoren
                     und Herausgebern. Sie nimmt die gesetzlich festgeschriebenen Tantiemen aus den Zweitnutzungsrechten ein
                     und gibt sie an die Rechteinhaber der gemeldeten Werke weiter.
                     <a href="http://www.vgwort.de" target="blank">VG-Wort</a>
+
                 </p>
+
                 <p>
                     Autoren und Herausgebern von wissenschaftlichen Publikationen steht die Möglichkeit offen, für ihre Werke
                     (gedruckt und / oder online publiziert) Tantiemen-Ausschüttungen bei der VG-Wort zu beantragen.
                 </p>
+
                 <p>
                     Um Tantiemen zu erhalten müssen Sie als Autor sich bei der VG-Wort als Bezugsberechtigter anmelden:
                     <a href="http://www.vgwort.de/teilnahmemoeglichkeiten/bezugsberechtigte.html" target="blank">VG Wort Bezugsberechtigte</a>
+
                 </p>
+
                 <p>
                     Weitere Informationen erhalten Sie unter
                     <a href="http://www.vgwort.de/verguetungen/auszahlungen/wissenschaftliche-publikationen.html" target="blank">VG Wort Wissenschaftliche Publikationen</a>.
                 </p>
+
                 <p>
                     Für Ihre frei zugängliche Parallelpublikation Ihres Textdokuments als PDF-Datei im Internet besteht auch die Möglichkeit,
                     eine Tantiemen-Ausschüttung bei der VG-Wort zu beantragen.
@@ -3164,9 +3262,13 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     sogenannte „Sonderausschüttung“ bei Texten im Internet zur Verfügung.
                     Bitte beachten Sie auch hierzu die Informationsseiten der VG-Wort.
                     <a href="http://www.vgwort.de/verguetungen/auszahlungen/texte-im-internet.html" target="blank">Texte im Internet</a>
+
                 </p>
+
             </div>
+
         </div>
+
     </message>
 
     <message key="xmlui.static.price.head">Publizieren: Verlagspreise</message>
@@ -3326,25 +3428,36 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.policy.head">Leitlinien des Publizierens</message>
     <message key="xmlui.static.policy.trail">Leitlinien</message>
     <message key="xmlui.static.policy">
-        <span class="download"><a href="/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien als PDF</a></span>
-        <span class="date">Göttingen im Mai 2015</span>
-        <div>
-            <p>Der Universitätsverlag der Georg-August-Universität Göttingen veröffentlicht seit Sommer 2003 Fachpublikationen von Wissenschaftlern aller Disziplinen und bietet die Möglichkeit des Open Access-Publizierens, also eine für Nutzer kosten- und beschränkungsfreie Bereitstellung von Inhalten im Internet. Zumeist wird die elektronische Ausgabe durch ein gedrucktes Werk ergänzt, das über den Buchhandel erhältlich ist. Diese hybride Bereitstellung verbessert die Wahrnehmung und Nutzung von Publikationen und macht insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlerinnen und Wissenschaftlern weltweit sichtbar. Bei Open Access Publikationen behalten Autoren die Kontrolle über die Nutzungsrechte an ihren Publikationen. Die Georg-August-Universität unterstützt mit ihrer Resolution von 2005 das <a href="http://www.sub.uni-goettingen.de/elektronisches-publizieren/open-access/">Open Access</a> Prinzip. Der Universitätsverlag erwartet daher von seinen Autoren, sich auf das Open Access-Publizieren einzulassen. Die elektronischen Publikationen des Universitätsverlags liegen auf den von der SUB Göttingen betreuten Dokumentenservern der Universität Göttingen bereit. Publikationen aus der Sparte „Universitätsdrucke“ sind auf <a href="http://webdoc.sub.gwdg.de/">GOEDOC</a> archiviert, die begutachteten Publikationen in der Regel auf <a href="http://goedoc.uni-goettingen.de/goescholar/">GoeScholar</a></p>
+        <h2 class="ds-head page-header first-page-header">Leitlinien des Publizierens</h2>
 
-            <p>
-                Das Präsidium der Georg-August-Universität hat im Januar 2015 eine <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a> für den Universitätsverlag verabschiedet. Diese regelt transparent, wie und für wen der Verlag arbeitet. Mit dieser Nutzungsordnung können nun auch drittmittelfinanzierte Projekte verwirklicht werden, bei denen die Verwendungsrichtlinien der Förderer die Abrechnung von Open-Access-Dienstleistungen innerhalb der eigenen Einrichtung bisher nicht gestatteten. Wir freuen uns, dass wir zusammen mit den Förderern das Open-Access-Publizieren an der Universität weiter voran bringen können, vor allem für die buchorientierten Disziplinen.
+        <p>
+            <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Leitlinien als PDF</a>
+            <span class="pull-right">Göttingen im Mai 2015</span>
+        </p>
+        <p>
 
-            </p>
-            Open Access im Universitätsverlag Göttingen bedeutet:
-            <ol>
+            Der Universitätsverlag der Georg-August-Universität Göttingen veröffentlicht seit Sommer 2003 Fachpublikationen von Wissenschaftlern aller Disziplinen und bietet die Möglichkeit des Open Access-Publizierens, also eine für Nutzer kosten- und beschränkungsfreie Bereitstellung von Inhalten im Internet. Zumeist wird die elektronische Ausgabe durch ein gedrucktes Werk ergänzt, das über den Buchhandel erhältlich ist. Diese hybride Bereitstellung verbessert die Wahrnehmung und Nutzung von Publikationen und macht insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlerinnen und Wissenschaftlern weltweit sichtbar. Bei Open Access Publikationen behalten Autoren die Kontrolle über die Nutzungsrechte an ihren Publikationen. Die Georg-August-Universität unterstützt mit ihrer Resolution von 2005 das <a href="http://www.sub.uni-goettingen.de/elektronisches-publizieren/open-access/">Open Access</a> Prinzip. Der Universitätsverlag erwartet daher von seinen Autoren, sich auf das Open Access-Publizieren einzulassen. Die elektronischen Publikationen des Universitätsverlags liegen auf den von der SUB Göttingen betreuten Dokumentenservern der Universität Göttingen bereit. Publikationen aus der Sparte „Universitätsdrucke“ sind auf <a href="http://webdoc.sub.gwdg.de/">GOEDOC</a> archiviert, die begutachteten Publikationen in der Regel auf <a href="http://goedoc.uni-goettingen.de/goescholar/">GoeScholar</a>
+        </p>
 
-                <li>Das Werk wird allgemein und frei online über einen von der SUB betreuten Publikationsserver angeboten. Als solches darf es gelesen, heruntergeladen sowie als Privatkopie ausgedruckt werden. Es ist nicht gestattet, Kopien oder gedruckte Fassungen der freien Onlineversion zu veräußern.</li>
-                <li>Um das Werk online verfügbar zu machen, bedarf der Universitätsverlag einer Lizenz. Der Autor überträgt dem Verlag dauerhaft das einfache Verwertungsrecht für die Bereitstellung einer elektronischen Edition in öffentlichen Datennetzen und auf dem Dokumentenserver der SUB Göttingen und der Georg-August-Universität Göttingen. Da sich Formate im Laufe der Zeit ändern, benötigt der Universitätsverlag hierfür das ergänzende Recht, Formate anzupassen. In der Regel wird für die gedruckte Fassung als Investitionsschutz das ausschließliche Verwertungsrecht übertragen (Ausnahmen sind nach Absprache möglich).</li>
-                <li>Autoren und Herausgeber haben das Recht, das Werk in seiner Gesamtheit oder in Teilen auf persönlichen Homepages und in fachlichen oder institutionellen Online-Archiven in identischer Form der Öffentlichkeit zur Verfügung zu stellen. Darüber hinaus können nach Absprache mit dem Verlag Teile des Werkes auch anderweitig gedruckt veröffentlicht werden. Generell ist dabei auf die Erstveröffentlichung und Bezugsmöglichkeit der gedruckten Edition im Universitätsverlag hinzuweisen.</li>
-                <li>Die elektronische Ausgabe wird unter einer Publikationslizenz bereitgestellt. In der Regel wird im Universitätsverlag Göttingen die <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons License 4.0 (CC BY-SA 4.0) International</a> mit Pflicht zur Namensnennung und Weitergabe unter gleichen Bedingungen verwendet.</li>
-            </ol>
-        </div>
 
+        <p>
+            Das Präsidium der Georg-August-Universität hat im Januar 2015 eine <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a> für den Universitätsverlag verabschiedet. Diese regelt transparent, wie und für wen der Verlag arbeitet. Mit dieser Nutzungsordnung können nun auch drittmittelfinanzierte Projekte verwirklicht werden, bei denen die Verwendungsrichtlinien der Förderer die Abrechnung von Open-Access-Dienstleistungen innerhalb der eigenen Einrichtung bisher nicht gestatteten. Wir freuen uns, dass wir zusammen mit den Förderern das Open-Access-Publizieren an der Universität weiter voran bringen können, vor allem für die buchorientierten Disziplinen.
+
+        </p>
+        <p>
+            Open Access im Universitätsverlag Göttingen bedeutet:</p>
+        <ol>
+
+
+            <li>Das Werk wird allgemein und frei online über einen von der SUB betreuten Publikationsserver angeboten. Als solches darf es gelesen, heruntergeladen sowie als Privatkopie ausgedruckt werden. Es ist nicht gestattet, Kopien oder gedruckte Fassungen der freien Onlineversion zu veräußern.</li>
+
+            <li>Um das Werk online verfügbar zu machen, bedarf der Universitätsverlag einer Lizenz. Der Autor überträgt dem Verlag dauerhaft das einfache Verwertungsrecht für die Bereitstellung einer elektronischen Edition in öffentlichen Datennetzen und auf dem Dokumentenserver der SUB Göttingen und der Georg-August-Universität Göttingen. Da sich Formate im Laufe der Zeit ändern, benötigt der Universitätsverlag hierfür das ergänzende Recht, Formate anzupassen. In der Regel wird für die gedruckte Fassung als Investitionsschutz das ausschließliche Verwertungsrecht übertragen (Ausnahmen sind nach Absprache möglich).</li>
+
+            <li>Autoren und Herausgeber haben das Recht, das Werk in seiner Gesamtheit oder in Teilen auf persönlichen Homepages und in fachlichen oder institutionellen Online-Archiven in identischer Form der Öffentlichkeit zur Verfügung zu stellen. Darüber hinaus können nach Absprache mit dem Verlag Teile des Werkes auch anderweitig gedruckt veröffentlicht werden. Generell ist dabei auf die Erstveröffentlichung und Bezugsmöglichkeit der gedruckten Edition im Universitätsverlag hinzuweisen.</li>
+
+            <li>Die elektronische Ausgabe wird unter einer Publikationslizenz bereitgestellt. In der Regel wird im Universitätsverlag Göttingen die <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons License 4.0 (CC BY-SA 4.0) International</a> mit Pflicht zur Namensnennung und Weitergabe unter gleichen Bedingungen verwendet.</li>
+
+        </ol>
     </message>
 
     <message key="xmlui.static.openaccess.head">Open Access</message>
@@ -3359,7 +3472,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 der elektronischen Ausgaben eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
                 insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlern weltweit sichtbar. Daher werden möglichst alle Publikationen über den
                 Publikationsserver GOEDOC der Universität Göttingen online frei angeboten (Open Access). Hier finden Sie die
-                <a href="/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
+                <a href="/static/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
                 (In übersichtlicher Form finden Sie unsere Politik bezüglich der Archivierung von Pre- und Postprints in Open Access-Repositorien
                 im Verzeichnis <a href="http://www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all">Sherpa/RoMEO</a>.)
             </p>
@@ -3849,10 +3962,10 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             </tbody>
         </table>
 
-        <table class="table table-striped shipping">
+        <table class="table table-striped">
             <thead>
                 <tr>
-                    <th colsapn="2">Buchsendungen in USA / Rest der Welta</th>
+                    <th colsapn="2">Buchsendungen in USA / Rest der Welt</th>
                 </tr>
             </thead>
             <tbody>
@@ -3917,7 +4030,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <p class="address">Universitätsverlag Göttingen, </p><p class="address">Platz der Göttinger Sieben 1, </p><p class="address">37073 Göttingen</p><p>
                     Widerrufsfolgen:
                 </p><p>
-                    Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br>
+                    Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
                     (Ende der Widerrufsbelehrung)
                 </p>
                 </div>
