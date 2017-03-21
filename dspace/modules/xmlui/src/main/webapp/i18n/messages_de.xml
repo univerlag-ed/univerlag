@@ -11,15 +11,15 @@
 
 	<!--
 		The format used by all keys is as follows
-		
+
 		xmlui.<Aspect>.<Java Class>.<name>
-		
+
 		There are a few exceptions to this nameing format,
-		1) Some general keys are in the xmlui.general namespace 
+		1) Some general keys are in the xmlui.general namespace
 		   because they are used very frequently.
-		2) Some general keys which are specific to a particular aspect 
-		   may be found at xmlui.<Aspect> without specifiying a 
-		   particular java class. 
+		2) Some general keys which are specific to a particular aspect
+		   may be found at xmlui.<Aspect> without specifiying a
+		   particular java class.
 		-->
 
 	<!-- General keys -->
@@ -38,9 +38,9 @@
 	<message key="xmlui.general.queue">In die Warteschleife</message>
 
 
-	<!-- 
-		Page not found keys 
-		
+	<!--
+		Page not found keys
+
 		This is a special component that is not part of any aspect but is added
 		by manakin to all aspect chains.
 		-->
@@ -56,7 +56,7 @@
 	<message key="xmlui.utils.AuthenticationUtil.notAnotherAdmin">Sie können nicht die Identität eines anderen Administrators annehmen.</message>
 
 	<!--
-		This section is for feed syndications (RSS, atom, etc)  
+		This section is for feed syndications (RSS, atom, etc)
 	-->
 	<message key="xmlui.feed.general_description">Das digitale Repositorium erfasst, speichert, erhält, erschließt und verbreitet digitale Forschungsergebnisse.</message>
 	<message key="xmlui.feed.header">RSS Feeds</message>
@@ -64,16 +64,16 @@
 	<message key="xmlui.feed.untitled">Ohne Titel</message>
 
 	<!--
-		Default notice header 
+		Default notice header
 	 	-->
 	<message key="xmlui.general.notice.default_head">An Alle</message>
 
 
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  
+
 		             ArtifactBrowser Aspect
-	
+
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
 
@@ -332,9 +332,9 @@
 
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
+
 		                EPerson Aspect
-		
+
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
 
@@ -511,9 +511,9 @@
 
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
+
 		               Submission Aspect
-		
+
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
 
@@ -848,9 +848,9 @@
 
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
+
 		             Administrative Aspect
-		
+
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
 	<!-- action-generated messages. These are referenced from the sitemap rather than a transformer -->
@@ -1994,9 +1994,9 @@
 
 
 	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		
+
 		                  dri2xhtml
-		
+
 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
 
@@ -2412,6 +2412,7 @@
 
 	<message key="xmlui.Discovery.AbstractSearch.head2">Sammlungen, die Ihrer Suche entsprechen.</message>
 	<message key="xmlui.Discovery.AbstractSearch.head3">Dokumente, die Ihrer Suche entsprechen.</message>
+	<message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle anzeigen</message>
 	<!-- End Discovery -->
 
 	<!--   Start Sword Client  -->
@@ -2641,6 +2642,9 @@
 	<message key="xmlui.dri2xhtml.METS-1.0.request.copy">Eine Kopie anfordern</message>
 	<!-- End Request Copy -->
 
+
+	<!-- missing messages -->
+	<message key="xmlui.mirage2.itemSummaryView.Collections">Enthalten in</message>
 	<message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
 	<message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
 	<message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
@@ -2730,7 +2734,7 @@ Das Team vom Universitätsverlag Göttingen
 				<a href="/news">Aktuelles...</a>
 			</div>
 			<div class="col-xs-6">
-				<a class="pull-right" href="/info/publishing-catalog">Zu unserem Verlagskatalog...</a>
+				<a class="pull-right" href="/info/publishing-catalog">Verlagskatalog...</a>
 			</div>
 		</div>
 		<!-- <h2>Verlagsprogramm online</h2>
@@ -2984,7 +2988,15 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 		<div>
 			<p>
 
-				Sie können unsere Produkte auf unserer Webseite über den Warenkorb (ohne Registrierung), im lokalen Buchhandel oder aber über Onlinebuchhändler bestellen. Um den Inhalt Ihres Warenkorbes anzuzeigen oder zu korrigieren und die Bestellung abzuschicken, klicken Sie bitte oben rechts auf das blaue Kästchen mit dem Einkaufswagen.
+				Sie können unsere Produkte
+			</p>
+			<ul class="ol">
+				<li>auf unserer Webseite über den Warenkorb (ohne Registrierung),</li>
+				<li>im lokalen Buchhandel</li>
+				<li>oder aber über Onlinebuchhändler bestellen.</li>
+			</ul>
+			<p>
+				Um den Inhalt Ihres Warenkorbes anzuzeigen oder zu korrigieren und die Bestellung abzuschicken, klicken Sie bitte oben rechts auf das blaue Kästchen mit dem Einkaufswagen.
 			</p>
 			<p>
 				Für die Rückgabe erhaltener Ware gelten die Regelungen in der Widerrufbelehrung unserer <a href="/info/conditions">Allgemeinen Geschäftsbedingungen (AGB)</a>.
@@ -3052,7 +3064,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 		</div>
 	</message>
 	<message key="xmlui.static.publisher-catalog.link">Verlagskatalog</message>
-	<message key="xmlui.static.reviewer.head">Gutachterhilfe</message>
+	<message key="xmlui.static.reviewer.head">Publizieren: Gutachterhilfe</message>
+	<message key="xmlui.static.reviewer.navigation">Gutachterhilfe</message>
 	<message key="xmlui.static.reviewer">
 		<div>
 			<p>
@@ -3060,7 +3073,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 			</p>
 		</div>
 	</message>
-	<message key="xmlui.static.editors-authors.head">Autorenhilfe</message>
+	<message key="xmlui.static.editors-authors.head">Publizieren: Autorenhilfe</message>
+	<message key="xmlui.static.editors-authors.navigation">Autorenhilfe</message>
 	<message key="xmlui.static.editors-authors">
 		<div>
 			<p>Das Publizieren im Universitätsverlag erfolgt in der Regel auf Grundlage eines publikationsreifen PDF-Dokumentes. Dafür bitten wir Sie, ihr Manuskript anhand unserer Formatierungsvorlagen aufzubereiten. Dies senkt die Kosten für das Publizieren erheblich. Unten finden Sie eine Anleitung für die Formatierung und Formatierungsvorlagen für unterschiedliche  Formate. Die Gestaltung der einzelnen Seiten (Überschriften, Absätze etc.) können Sie den Formatvorlagen entnehmen.</p>
@@ -3075,7 +3089,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 			<p>Für die Arbeit mit Word stehen verschiedene Formatierungshilfen bereit. Die Formatvorlage „17x24cm, skaliert“ sollten Sie nur wählen, wenn Sie Ihr Dokument in 21x29,7cm (DIN A4) angelegt haben und bei der Verkleinerung des Satzspiegels auf 17x24cm Probleme auftreten (z.B. durch komplexe Tabellen oder Bilder).</p>
 
 
-			<ul>
+			<ul class="unstyled">
 				<li><strong>Anleitung Autoren</strong> —
 					<a href="/documents/Anleitung_Autoren.pdf">[pdf]</a>
 				</li>
@@ -3155,7 +3169,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 		</div>
 	</message>
 
-	<message key="xmlui.static.price.head">Verlagspreise</message>
+	<message key="xmlui.static.price.head">Publizieren: Verlagspreise</message>
+	<message key="xmlui.static.price.navigation">Verlagspreise</message>
 	<message key="xmlui.static.price">
 		<div>
 			<p>
@@ -3797,7 +3812,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 	<message key="xmlui.static.shipping.costs">
 
 
-		<table class="table table-striped">
+		<table class="table table-striped shipping">
 			<thead>
 				<tr>
 					<th colsapn="2">Buchsendungen in Deutschland</th>
@@ -3818,7 +3833,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 				</tr>
 			</tbody>
 		</table>
-		<table class="table table-striped">
+		<table class="table table-striped shipping">
 			<thead>
 				<tr>
 					<th colsapn="2">Buchsendungen in Europa</th>
@@ -3834,7 +3849,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 			</tbody>
 		</table>
 
-		<table class="table table-striped">
+		<table class="table table-striped shipping">
 			<thead>
 				<tr>
 					<th colsapn="2">Buchsendungen in USA / Rest der Welta</th>
@@ -3868,33 +3883,58 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 	<message key="xmlui.static.order-conditions.trail">AGB</message>
 	<message key="xmlui.static.order-conditions.head">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</message>
 	<message key="xmlui.static.order-conditions">
-		<div>
-			<p><strong>1.</strong><br />
-				Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.
-			</p>
+		<h2 class="ds-head page-header first-page-header">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</h2>
+		<ol>
+			<li>
 
-			<p>
-				Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware. Zu den Einzelpreisen der Waren berechnen wir übliche Versandkosten für den Warenversand aus Deutschland. Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.
-			</p>
+				<p>
+					Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.
+				</p>
 
-			<p><strong>2.</strong><br />
-				Ist der Vertragspartner ein Verbraucher (§13 BGB, Geschäftszweck weder gewerblicher noch selbständig beruflichen Tätigkeit zugeordnet) und beruht der Vertragsschluss auf einem Fernabsatzvertrag (§312b BGB, z.B. Bestellung über das Internet) gilt für die Bestellung von Waren folgende Widerrufsbestimmungen, über die der Vertragspartner hiermit wie gesetzlich vorgeschrieben belehrt wird:
-			</p>
-			<h2>Widerrufsbelehrung</h2>
-			<p>
-				<span class="italic">Widerrufsrecht:</span><br />
-				Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache. Der Widerruf ist zu richten an: Universitätsverlag Göttingen, Platz der Göttinger Sieben 1, 37073 Göttingen<br />
-				<span class="italic">Widerrufsfolgen:</span><br />
-				Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
-				(Ende der Widerrufsbelehrung)
-			</p>
-			<p><strong>3.</strong><br />
-				Der Vertragspartner erklärt sich einverstanden, dass personenbezogene Daten in dem Umfang gespeichert werden, in dem dies zur Erfüllung des Vertragsverhältnisses erforderlich ist. Eine Speicherung darüber hinaus oder Weitergabe der Daten erfolgt nicht.
-			</p>
-			<p><strong>4.</strong><br />
-				Sollte eine Bestimmung dieser allgemeinen Geschäftsbedingungen ganz oder teilweise unwirksam sein, bleiben hiervon andere Bedingungen, die von der unwirksamen Bestimmung unterscheidbar sind, unberührt und wirksam. An Stelle der unwirksamen Bedingungen gelten entsprechend die gesetzlichen Bestimmungen. Erfüllungsort und Gerichtsstand ist Göttingen.
-			</p>
-		</div>
+
+				<p>
+					Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware. Zu den Einzelpreisen der Waren berechnen wir übliche Versandkosten für den Warenversand aus Deutschland. Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.
+				</p>
+
+
+			</li>
+			<li>
+				<p>
+
+					Ist der Vertragspartner ein Verbraucher (§13 BGB, Geschäftszweck weder gewerblicher noch selbständig beruflichen Tätigkeit zugeordnet) und beruht der Vertragsschluss auf einem Fernabsatzvertrag (§312b BGB, z.B. Bestellung über das Internet) gilt für die Bestellung von Waren folgende Widerrufsbestimmungen, über die der Vertragspartner hiermit wie gesetzlich vorgeschrieben belehrt wird:
+				</p>
+
+				<div class="box">
+					<h3>Widerrufsbelehrung</h3>
+
+					<p>
+
+						Widerrufsrecht:</p><p>
+
+					Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
+				</p>
+					<p>Der Widerruf ist zu richten an: </p>
+					<p class="address">Universitätsverlag Göttingen, </p><p class="address">Platz der Göttinger Sieben 1, </p><p class="address">37073 Göttingen</p><p>
+					Widerrufsfolgen:
+				</p><p>
+					Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br>
+					(Ende der Widerrufsbelehrung)
+				</p>
+				</div>
+			</li>
+			<li>
+				<p>
+					Der Vertragspartner erklärt sich einverstanden, dass personenbezogene Daten in dem Umfang gespeichert werden, in dem dies zur Erfüllung des Vertragsverhältnisses erforderlich ist. Eine Speicherung darüber hinaus oder Weitergabe der Daten erfolgt nicht.
+				</p>
+
+				<p>
+				</p></li>
+			<li>
+				<p>
+					Sollte eine Bestimmung dieser allgemeinen Geschäftsbedingungen ganz oder teilweise unwirksam sein, bleiben hiervon andere Bedingungen, die von der unwirksamen Bestimmung unterscheidbar sind, unberührt und wirksam. An Stelle der unwirksamen Bedingungen gelten entsprechend die gesetzlichen Bestimmungen. Erfüllungsort und Gerichtsstand ist Göttingen.
+				</p>
+			</li>
+		</ol>
 	</message>
 
 
@@ -3942,10 +3982,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 			Sie können unser Verlagsprogramm <a href="/documents/verlagsprogramm_2016.pdf">als PDF herunterladen</a>. Falls Sie es in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei <a href="mailto:univerlag@uni-goettingen.de?subject=Verlagkatalog bestellen">hier</a>.
 		</p>
 		<div class="embed-responsive embed-responsive-16by9">
-			<object class="embed-responsive-item" data="/xmlui/documents/verlagsprogramm_2016.pdf" type="application/pdf" internalinstanceid="9" title="">
-				<p>Your browser isn't supporting embedded pdf files. You can download the file
-					<a href="/static/documents/verlagsprogramm_2016.pdf">here</a>.</p>
-			</object>
+			<iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2016.pdf"></iframe>
 		</div>
 
 		<!-- <p id="catalog">
@@ -4078,7 +4115,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
 	<message key="xmlui.ArtifactBrowser.CostRequestForm.title">Kostenanfrage</message>
 	<message key="xmlui.ArtifactBrowser.CostRequestForm.trail">Kostenanfrage</message>
-	<message key="xmlui.ArtifactBrowser.CostRequestForm.head">Kostenanfrage</message>
+	<message key="xmlui.ArtifactBrowser.CostRequestForm.head">Publizieren: Kostenanfrage</message>
+	<message key="xmlui.ArtifactBrowser.CostRequestForm.navigation">Kostenanfrage</message>
 	<message key="xmlui.ArtifactBrowser.CostRequestForm.para1">
 		<p>Bitte unterbreiten Sie mir ein schriftliches Angebot zur Publikation meiner Arbeit im Universitätsverlag.
 		</p>
@@ -4254,14 +4292,14 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
 				<!-- Last name
 
-                <div class="form-group">
-                  <label class="col-md-4 control-label" >Last Name</label>
-                  <div class="col-md-6  inputGroupContainer">
-                    <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                      <input name="lastname" placeholder="Last Name" class="form-control"  type="text">
-                    </div>
-                  </div>
-                </div>-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" >Last Name</label>
+                      <div class="col-md-6  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                          <input name="lastname" placeholder="Last Name" class="form-control"  type="text">
+                        </div>
+                      </div>
+                    </div>-->
 
 
 				<!-- Street-->
@@ -4275,14 +4313,14 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 				</div>
 
 				<!-- Number
-               <div class="form-group">
-                  <label class="col-md-4 control-label">Number</label>
-                  <div class="col-md-6  inputGroupContainer">
-                    <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
-                      <input name="number" placeholder="Number" class="form-control" type="text">
-                    </div>
-                  </div>
-                </div>-->
+                   <div class="form-group">
+                      <label class="col-md-4 control-label">Number</label>
+                      <div class="col-md-6  inputGroupContainer">
+                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                          <input name="number" placeholder="Number" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>-->
 
 				<!-- zip-->
 				<div class="form-group">

@@ -342,7 +342,6 @@
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
                             <ul class="nav nav-pills pull-left ">
-
                                 <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
                                     <li id="ds-language-selection-xs" class="dropdown">
                                         <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
@@ -415,7 +414,7 @@
 
                     <div class="navbar-header pull-right hidden-xs">
                         <div>
-                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover">
+                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover?scope=3%2FAll_Products">
                                 <fieldset>
                                     <div class="input-group">
                                         <input placeholder="Search" class="ds-text-field form-control" name="query" type="text"/><span class="input-group-btn"><button title="Go" class="ds-button-field btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>

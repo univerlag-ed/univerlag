@@ -415,7 +415,7 @@
 
                     <div class="navbar-header pull-right hidden-xs">
                         <div>
-                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover">
+                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover?scope=3%2FAll_Products">
                                 <fieldset>
                                     <div class="input-group">
                                         <input placeholder="Search" class="ds-text-field form-control" name="query" type="text"/><span class="input-group-btn"><button title="Go" class="ds-button-field btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>

@@ -150,11 +150,11 @@
                 <!-- show only if Publishing is activ -->
                 <xsl:if test="(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/publishing') or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'costrequest')) or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'simple-review')))">
 
-                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-utils"><i18n:text>xmlui.static.editors-authors.head</i18n:text></a>
-                    <a class="list-group-item ds-option nested" href="{$context-path}/costrequest"><i18n:text>xmlui.ArtifactBrowser.CostRequestForm.title</i18n:text></a>
-                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-prices"><i18n:text>xmlui.static.price.head</i18n:text></a>
+                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-utils"><i18n:text>xmlui.static.editors-authors.navigation</i18n:text></a>
+                    <a class="list-group-item ds-option nested" href="{$context-path}/costrequest"><i18n:text>xmlui.ArtifactBrowser.CostRequestForm.navigation</i18n:text></a>
+                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-prices"><i18n:text>xmlui.static.price.navigation</i18n:text></a>
                     <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-policy"><i18n:text>xmlui.static.policy.head</i18n:text></a>
-                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-reviewer"><i18n:text>xmlui.static.reviewer.head</i18n:text></a>
+                    <a class="list-group-item ds-option nested" href="{$context-path}/info/publishing-reviewer"><i18n:text>xmlui.static.reviewer.navigation</i18n:text></a>
 
                 </xsl:if>
                 <a class="list-group-item ds-option" href="{$context-path}/info/editors"><i18n:text>xmlui.static.editors.head</i18n:text></a>

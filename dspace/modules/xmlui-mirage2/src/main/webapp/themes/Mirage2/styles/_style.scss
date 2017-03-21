@@ -65,6 +65,10 @@ header .navbar-logo img {
     background: #fff url('../images/raster.gif') repeat-x bottom;
 }
 
+ul.unstyled {
+    list-style: none;
+}
+
 .list-group {
     margin-bottom: 20px;
     padding-left: 0;
@@ -123,7 +127,7 @@ a.list-group-item {
 
 .access {
     float: right;
-//    margin-right: 5em;
+    margin-right: 5em;
 }
 
 .thumbnail .caption {
@@ -230,4 +234,51 @@ ul#myTab li a {
 
 .glyphicon {
   color: gray;
+}
+
+.glyphicon.glyphicon-home {
+  font-size: small;
+}
+#file_news_div_news .row {
+    margin-bottom: 20px;
+}
+
+.artifact-info .abstract {
+    font-size: small;
+    text-align: justify;
+}
+
+.simple-item-view-collections.item-page-field-wrapper.table {
+  margin-top: 2em;
+}
+
+.box {
+  margin: 10px 50px 10px 30px;
+  text-align: justify;
+}
+
+.address {
+  margin: 0;
+}
+
+.dl-horizontal dt {
+  width: 360px;
+  white-space: normal;
+  overflow: visible;
+}
+
+.dl-horizontal dd {
+  margin-left: 380px;
+}
+
+.item {
+  padding: 10px 0 20px 0;
+}
+
+.contact h4 {
+  margin-top:30px;
+}
+
+.icon {
+  font-size: 20px;
 }

@@ -66,6 +66,8 @@ and searching the repository.
             <map:action name="NotModifiedAction" src="org.dspace.app.xmlui.aspect.general.NotModifiedAction" />
             <map:action name="ItemRequestResponseAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.ItemRequestResponseAction" />
             <map:action name="SendCostRequestAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.SendCostRequestAction"/>
+            <map:action name="SendOrderAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.SendOrderAction"/>
+            <map:action name="OrderAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.OrderAction"/>
         </map:actions>
 
 
@@ -104,15 +106,15 @@ and searching the repository.
                             along with a list of top level communities in DSpace.
                             -->
 
-            <!--     <map:match pattern="">
-                     <map:transform type="Include" src="resource://aspects/ViewArtifacts/dspace-home.xml" />
-                                 <map:act type="DSpacePropertyFileReader">
-                                 <map:parameter name="dspace.dir" value="dspace.dir" />
-                                 <map:transform type="Include" src="file://{dspace.dir}/config/news-xmlui.xml" />
-                         </map:act>
+            <map:match pattern="">
+                     <!-- <map:transform type="Include" src="resource://aspects/ViewArtifacts/dspace-home.xml" /> -->
+                <map:act type="DSpacePropertyFileReader">
+                    <map:parameter name="dspace.dir" value="dspace.dir" />
+                    <map:transform type="Include" src="file://{dspace.dir}/config/news-xmlui.xml" />
+                </map:act>
 
-                         <map:serialize type="xml"/>
-                 </map:match> -->
+                <map:serialize type="xml"/>
+            </map:match>
 
             <map:match pattern="editor-warning">
                 <map:act type="locale">
@@ -139,6 +141,16 @@ and searching the repository.
                 </map:act>
 
                 <map:serialize type="xml"/>
+            </map:match>
+
+            <map:match pattern="order">
+                <map:act type="OrderAction">
+                    <map:transform src="file:///opt/dspace/univerlag/config/orderResults.xsl">
+                        <map:parameter name="result" value="{result}"/>
+                    </map:transform>
+
+                </map:act>
+                <map:serialize type="text"/>
             </map:match>
 
             <!-- Handle static info pages -->
@@ -172,7 +184,7 @@ and searching the repository.
 
 
             <!-- CostRequest Form -->
-            <map:match pattern="publishingrequest">
+            <map:match pattern="costrequest">
                 <map:act type="SendCostRequestAction">
                     <map:transform type="CostRequestForm">
                         <map:parameter name="lastname" value="{lastname}"/>
