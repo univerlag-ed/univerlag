@@ -3996,7 +3996,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 	<message key="xmlui.static.order-conditions.trail">AGB</message>
 	<message key="xmlui.static.order-conditions.head">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</message>
 	<message key="xmlui.static.order-conditions">
-		<h2 class="ds-head page-header first-page-header">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</h2>
+
 		<ol>
 			<li>
 

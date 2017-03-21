@@ -551,6 +551,7 @@
                         </xsl:attribute>
                         <xsl:apply-templates />
                     </a>
+                    <xsl:text> →</xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="class">active</xsl:attribute>
