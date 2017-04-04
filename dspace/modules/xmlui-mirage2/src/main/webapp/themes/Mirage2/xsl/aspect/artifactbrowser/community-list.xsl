@@ -9,7 +9,7 @@
 -->
 
 <!--
-    Rendering of a list of collections (e.g. on a community homepage,
+    Rendering of a list of communities (e.g. on a community homepage,
     or on the community-list page)
 
     Author: art.lowel at atmire.com
@@ -38,8 +38,9 @@
 
     <xsl:output indent="yes"/>
 
-    <!-- A collection rendered in the summaryList pattern. Encountered on the community-list page -->
-    <xsl:template name="collectionSummaryList-DIM">
+    <!-- A community rendered in the summaryList pattern. Encountered on the community-list and on
+        on the front page. -->
+    <xsl:template name="communitySummaryList-DIM">
         <xsl:variable name="data" select="./mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim"/>
         <div class="artifact-description">
             <h4 class="artifact-title">
@@ -73,58 +74,46 @@
         </div>
     </xsl:template>
 
-    <!-- A collection rendered in the detailList pattern. Encountered on the item view page as
-        the "this item is part of these collections" list -->
-    <xsl:template name="collectionDetailList-DIM">
+    <!-- A community rendered in the detailList pattern. Not currently used. -->
+    <xsl:template name="communityDetailList-DIM">
         <xsl:variable name="data" select="./mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim"/>
-        <a href="{@OBJID}">
+        <span class="bold">
+            <a href="{@OBJID}">
+                <xsl:choose>
+                    <xsl:when test="string-length($data/dim:field[@element='title'][1]) &gt; 0">
+                        <xsl:value-of select="$data/dim:field[@element='title'][1]"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </a>
+            <!--Display community strengths (item counts) if they exist-->
+            <xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
+                <span class="badge">
+                    <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
+                </span>
+            </xsl:if>
+            <br/>
             <xsl:choose>
-                <xsl:when test="string-length($data/dim:field[@element='title'][1]) &gt; 0">
-                    <xsl:value-of select="$data/dim:field[@element='title'][1]"/>
+                <xsl:when test="$data/dim:field[@element='description' and @qualifier='abstract']">
+                    <xsl:copy-of select="$data/dim:field[@element='description' and @qualifier='abstract']/node()"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
+                    <xsl:copy-of select="$data/dim:field[@element='description'][1]/node()"/>
                 </xsl:otherwise>
             </xsl:choose>
-        </a>
-        <!--Display collection strengths (item counts) if they exist-->
-        <xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
-            <span class="badge">
-                <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
-            </span>
-        </xsl:if>
-        <br/>
-        <xsl:choose>
-            <xsl:when test="$data/dim:field[@element='description' and @qualifier='abstract']">
-                <xsl:copy-of select="$data/dim:field[@element='description' and @qualifier='abstract']/node()"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:copy-of select="$data/dim:field[@element='description'][1]/node()"/>
-            </xsl:otherwise>
-        </xsl:choose>
+        </span>
     </xsl:template>
 
-    <!-- A collection rendered in the detailList pattern. Encountered on the item view page as
-        the "this item is part of these collections" list -->
-    <xsl:template name="collectionItemPageSummaryList-DIM">
-        <xsl:variable name="data" select="./mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim"/>
-        <a href="{@OBJID}">
-            <xsl:choose>
-                <xsl:when test="string-length($data/dim:field[@element='title'][1]) &gt; 0">
-                    <xsl:value-of select="$data/dim:field[@element='title'][1]"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
-                </xsl:otherwise>
-            </xsl:choose>
-        </a>
-        <!--Display collection strengths (item counts) if they exist-->
-        <xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
-            <span class="badge">
-                <xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]"/>
-            </span>
-        </xsl:if>
-    </xsl:template>
+    <xsl:template match="dri:field[@rend = 'community-browser-toggle-button']">
+        <p class="toggler-wrap">
+            <a class="btn btn-default btn-sm toggler collapsed" href="javascript:void(0)" role="button"  data-target="{@value}">
+                <i class="glyphicon glyphicon-minus open-icon hidden" aria-hidden="true"/>
+                <i class="glyphicon glyphicon-plus closed-icon" aria-hidden="true"/>
+            </a>
+        </p>
 
+    </xsl:template>
 
 </xsl:stylesheet>

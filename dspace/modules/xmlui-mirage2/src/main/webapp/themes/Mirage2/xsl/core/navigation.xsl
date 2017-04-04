@@ -48,7 +48,7 @@
             <!--  <div id="ds-search-option" class="ds-option-set"> -->
             <!-- The form, complete with a text box and a button, all built from attributes referenced
          from under pageMeta. -->
-            <!-- <form id="ds-search-form" class="" method="post">
+            <form id="ds-search-form" class="visible-xs hidden-sm hidden-md hidden-lg" method="post">
                 <xsl:attribute name="action">
                     <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath']"/>
                     <xsl:value-of
@@ -119,7 +119,7 @@
                         </div>
                     </xsl:if>
                 </fieldset>
-            </form> -->
+            </form>
             <!-- </div> -->
             <!-- </xsl:if> -->
             <!-- <xsl:apply-templates/> -->
@@ -136,6 +136,10 @@
 
             <h1 class="ds-option-set-head h6"><i18n:text>xmlui.static.navigation.informations</i18n:text></h1>
             <div class="list-group" id="infonav">
+                <xsl:if test="//dri:userMeta[@authenticated='yes']">
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#checklist">Checkliste</button>
+                    <i18n:text>xmlui.administer.checklist</i18n:text>
+                </xsl:if>
                 <a class="list-group-item ds-option" href="{$context-path}/info/ordering"><i18n:text>xmlui.static.ordering.trail</i18n:text></a>
                 <!-- show only if ordering is activ -->
                 <xsl:if test="(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/ordering'))">
@@ -146,7 +150,10 @@
                 </xsl:if>
 
                 <a class="list-group-item ds-option" href="{$context-path}/info/publishing"><i18n:text>xmlui.static.publishing.trail</i18n:text></a>
-                <xsl:if test="//dri:userMeta[@authenticated='yes']"><xsl:text>  </xsl:text><span class="checklist">Checkliste</span></xsl:if>
+                <xsl:if test="//dri:userMeta[@authenticated='yes']">
+                    <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#checklist">Checkliste</button>
+                    <i18n:text>xmlui.administer.checklist</i18n:text>
+                </xsl:if>
                 <!-- show only if Publishing is activ -->
                 <xsl:if test="(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/publishing') or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'costrequest')) or (contains(//dri:metadata[@element='request'][@qualifier='URI'], 'simple-review')))">
 
@@ -303,7 +310,7 @@
 
     <xsl:template match="dri:options/dri:list/dri:head" priority="3">
         <xsl:call-template name="renderHead">
-            <xsl:with-param name="class">ds-option-set-head 6</xsl:with-param>
+            <xsl:with-param name="class">ds-option-set-head h6</xsl:with-param>
         </xsl:call-template>
     </xsl:template>
 

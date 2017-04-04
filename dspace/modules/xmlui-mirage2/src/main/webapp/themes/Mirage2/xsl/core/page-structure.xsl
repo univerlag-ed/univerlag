@@ -167,6 +167,7 @@
                 </xsl:attribute>
             </link>
 
+
             <meta name="Generator">
                 <xsl:attribute name="content">
                     <xsl:text>DSpace</xsl:text>
@@ -191,7 +192,7 @@
                     </xsl:attribute>
                 </link>
             </xsl:for-each>
-
+            <!-- <link rel="stylesheet" href="{concat($theme-path, 'styles/font-awesome-4.7.0/css/font-awesome.min.css')}"/> -->
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
 
             <!-- Add syndication feeds -->
@@ -257,6 +258,15 @@
                 else
                 return true;
                 }
+
+                function copyToClipboard(element) {
+                var $temp = $("<input></input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                }
+
             </script>
 
             <xsl:text disable-output-escaping="yes">&lt;!--[if lt IE 9]&gt;
@@ -335,7 +345,7 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="header-image" href="/"><img src="/themes/Mirage2/images/verlagslogo.png" class="visible-md visible-lg"/></a>
+                        <a class="header-image" href="/"><img src="/themes/Mirage2/images/verlagslogo.png" class="visible-sm visible-md visible-lg"/></a>
                         <a href="{$context-path}/" class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg">
                             <img src="{$theme-path}images/logo.svg" />
                         </a>
@@ -373,7 +383,7 @@
                                     </li>
                                 </xsl:if>
 
-                                <xsl:choose>
+                                <!--<xsl:choose>
                                     <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                                         <li class="dropdown">
                                             <button class="dropdown-toggle navbar-toggle navbar-link" id="user-dropdown-toggle-xs" href="#" role="button"  data-toggle="dropdown">
@@ -406,7 +416,7 @@
                                             </form>
                                         </li>
                                     </xsl:otherwise>
-                                </xsl:choose>
+                                </xsl:choose> -->
                             </ul>
                         </div>
                     </div>
@@ -540,7 +550,7 @@
         <!--put an arrow between the parts of the trail-->
         <li>
             <xsl:if test="position()=1">
-                <i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160;
+                <!--<i class="glyphicon glyphicon-home" aria-hidden="true"/>&#160; -->
             </xsl:if>
             <!-- Determine whether we are dealing with a link or plain text trail link -->
             <xsl:choose>
@@ -551,7 +561,6 @@
                         </xsl:attribute>
                         <xsl:apply-templates />
                     </a>
-                    <xsl:text> →</xsl:text>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:attribute name="class">active</xsl:attribute>
@@ -874,6 +883,7 @@
         </xsl:if>
 
         <script src="/static/shopping-cart.min.js" charset="UTF-8" type="text/javascript"> </script>
+
         <!-- <script src="/static/js/addon.js" charset="UTF-8" type="text/javascript"> </script>-->
 
     </xsl:template>

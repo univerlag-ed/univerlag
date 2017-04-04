@@ -31,17 +31,26 @@
 
     <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:</message>
     <message key="xmlui.static.ring.preambel">
+        <div class="media-body">
+            <h3 class="media-head">Audiomitschnitte Universität Göttingen</h3>
+            <p>
+                Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
+                Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a>
+                übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
+            </p>
+            <p>
+                Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r">Playlist</a>.
+            </p>
+            <p>
+                Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
+                Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+            </p>
+        </div>
+    </message>
+
+    <message key="xmlui.static.ring.list.preambel">
         <p>
-            Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
-            Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a>
-            übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
-        </p>
-        <p>
-            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r">Playlist</a>.
-        </p>
-        <p>
-            Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
-            Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+            Göttingen University Press presents in cooperation with the StadtRadio Göttingen the live recordings of the series of open lectures of the University of Göttingen. Each contribution is to be found within the proper semester program.
         </p>
     </message>
 
@@ -66,7 +75,7 @@
             </ul>
         </nav> -->
 
-        <h3 class="page-header" id="2016">2016</h3>
+        <h3 class="list-item-header">2016</h3>
 
         <div class="row">
             <div class="col-sm-6">
@@ -81,7 +90,7 @@
             </div>
         </div>
 
-        <h3 class="page-header" id="2015">2015</h3>
+        <h3 class="list-item-header">2015</h3>
 
         <div class="row">
             <div class="col-sm-6">
@@ -96,7 +105,7 @@
             </div>
         </div>
 
-        <h3 class="page-header" id="2014">2014</h3>
+        <h3 class="list-item-header">2014</h3>
 
         <div class="row">
             <div class="col-sm-6">
@@ -391,7 +400,7 @@
 
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-16-17">
-        <div class="media-right">
+        <div class="media-right hidden-xs">
             <img class="media-object" src="/static/images/ring/cover-16-17.jpg" alt="poster"></img><br />
             <small><a class="extern" href="http://www.uni-goettingen.de/de/547325.html">Mehr Informationen der Universität...</a></small>
         </div>
@@ -399,7 +408,7 @@
 
 
     <message key="xmlui.static.ring.list-16-17">
-        <div class="panel panel-default">
+        <div class="panel panel-default panel-first">
             <header class="panel-heading">
                 <h4 class="panel-title">25. Oktober 2016</h4>
             </header>
@@ -410,7 +419,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
 
-                        <a href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> YouTube Video</a>
                         <a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Audio Datei</a>
 
                     </div>
@@ -443,7 +452,7 @@
 
         <div class="panel panel-default">
             <header class="panel-heading">
-            <h3 class="panel-title">15. November 2016</h3>
+                <h3 class="panel-title">15. November 2016</h3>
             </header>
             <div class="panel-body">
                 <p>Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen</p>
@@ -454,7 +463,7 @@
 
         <div class="panel panel-default">
             <header class="panel-heading">
-            <h3 class="panel-title">22. November 2016</h3>
+                <h3 class="panel-title">22. November 2016</h3>
             </header>
             <div class="panel-body">
                 <p>Prof. Dr. Joachim Ringleben, Universität Göttingen</p>
@@ -467,7 +476,7 @@
 
         <div class="panel panel-default">
             <header class="panel-heading">
-            <h3 class="panel-title">29. November 2016</h3>
+                <h3 class="panel-title">29. November 2016</h3>
             </header>
             <div class="panel-body">
                 <p>Prof. Dr. Wolfgang Eßbach, Universität Freiburg</p>
@@ -475,210 +484,154 @@
                 <!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
             </div>
         </div>
+
         <ul id="ring">
             <li class="content"><strong>25. Oktober 2016</strong><br />
                 Prof. Dr. Bernd Ludwig, Universität Göttingen<br />
-                <a href="/static/audio/ring2016-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Wurzeln der Aufklärung</a></li>
+                <a href="/static/audio/ring2016-10-25.mp3"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>Wurzeln der Aufklärung</a></li>
 
 
 
             <li class="content"><strong>1. November 2016</strong><br />
                 ACHTUNG! Veranstaltungsort: Adam-von-Trott-Saal, Alte Mensa, Wilhelmsplatz 3<br />
                 Prof. Dr. Gerhard Lauer, Universität Göttingen<br />
-                <a href="/static/audio/ring2016-11-01.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Jüdische Aufklärung</a></li>
+                <a href="/static/audio/ring2016-11-01.mp3"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>Jüdische Aufklärung</a></li>
 
 
             <li class="content"><strong>8. November 2016</strong><br />
                 Dr. Avi Lifschitz, University College London<br />
                 Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</li>
-            <!--<a href="/static/audio/ring2016-11-08.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
 
-
-            <li class="content"><strong>15. November 2016</strong><br />
-                Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen<br />
-                Vortragender: Prof. Dr. Jens Peter Laut, Universität Göttingen<br />
-                <a href="/static/audio/ring2016-11-15.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung im Islam und Aufklärung über den Islam</a></li>
-
-            <li class="content"><strong>22. November 2016</strong><br />
-                Prof. Dr. Joachim Ringleben, Universität Göttingen<br />
-                <a href="/static/audio/ring2016-11-22.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</a></li>
-
-
-            <li class="content"><strong>29. November 2016</strong><br />
-                Prof. Dr. Wolfgang Eßbach, Universität Freiburg<br />
-                Religionskritik der Aufklärung</li>
-            <!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
-
-
-
-            <li class="content"><strong>6. Dezember 2016</strong><br />
-                Prof. Dr. H. Otto Sibum, Universität Uppsala<br />
-                Experimente in der Aufklärung</li>
-            <!--<a href="/static/audio/ring2016-12-06.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
-
-
-
-            <li class="content"><strong>13. Dezember 2016</strong><br />
-                Prof. Dr. Marc Föcking, Universität Hamburg<br />
-                Aufklärung und Aerostatik</li>
-            <!--<a href="/static/audio/ring2016-12-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
-
-
-
-            <li class="content"><strong>20. Dezember 2016</strong><br />
-                Prof. Dr. Isabel Schnabel, Universität Bonn<br />
-                <a href="/static/audio/ring2016-12-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung über die wirtschaftliche Lage</a></li>
-
-
-            <li class="content"><strong>10. Januar 2017</strong><br />
-                Prof. Dr. Werner Heun, Universität Göttingen<br />
-                <a href="/static/audio/ring2017-01-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung, Revolution und Menschenrechte</a></li>
-
-
-            <li class="content"><strong>17. Januar 2017</strong><br />
-                Dr. Hans Erich Bödeker, Universität Göttingen<br />
-                Globale Aufklärung</li>
-            <!--<a href="/static/audio/ring2017-01-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a></li> -->
-
-
-            <li class="content"><strong>24. Januar 2017</strong><br />
-                PD Dr. Martin Gierl, Universität Göttingen<br />
-                <a href="/static/audio/ring2017-01-24.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Lokale Aufklärung</a></li>
-
-
-            <li class="content"><strong>31. Januar 2017</strong><br />
-                Prof. Dr. Heyo Kroemer, Universitätsmedizin Göttingen<br />
-                <a href="/static/audio/ring2017-01-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Aufklärung 2.0</a></li>
         </ul>
     </message>
 
     <message key="xmlui.static.ring.contact-16-17">
-        <div id="contact">
-            <strong>Organisation / Kontakt: </strong><br />
-            Dr. Hans Erich Bödeker<br />
-            und <br />
-            Prof. Dr. Thomas Kaufmann<br />
-            Platz d. Göttinger Sieben 2<br />
-            37073 Göttingen<br />
-            Telefon: +49 551 39-10408<br />
-            Fax: +49 551 39 7488 <br />
-            <a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a><br />
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div> <strong>Dr. Hans Erich Bödeker</strong> und  <strong>Prof. Dr. Thomas Kaufmann</strong></div>
+        <div>
+            <p>Platz d. Göttinger Sieben 2</p>
+            <p>37073 Göttingen</p>
+            <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +49 551 39-10408</p>
+            <p><span class="icon" title="Fax">&#128439;</span> +49 551 39 7488</p>
+            <p><span class="icon" title="E-Mail">&#9993;</span><a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a></p>
         </div>
     </message>
 
-            <!-- ********************************************************************************************* -->
+    <!-- ********************************************************************************************* -->
 
-            <!-- SS 2014 -->
-            <!-- Breadcrumbs -->
+    <!-- SS 2014 -->
+    <!-- Breadcrumbs -->
     <message key="xmlui.static.ring-ss14.trail">SS 2014</message>
-            <!-- Title -->
+    <!-- Title -->
     <message key="xmlui.static.ring.title-ss14">
-    <br />Klassiker, Thriller, Ladenhüter<br />
-    Wie Texte gebaut sind und wie sie wirken
+        <br />Klassiker, Thriller, Ladenhüter<br />
+        Wie Texte gebaut sind und wie sie wirken
     </message>
 
-            <!-- Poster -->
+    <!-- Poster -->
     <message key="xmlui.static.ring.poster-ss14">
-    <p>
-        <img src="/static/images/ring/cover-14.jpg" alt="Coverabbildung" /><br />
-        <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
-    </p>
+        <p>
+            <img src="/static/images/ring/cover-14.jpg" alt="Coverabbildung" /><br />
+            <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
+        </p>
     </message>
 
-            <!-- Audio Files -->
+    <!-- Audio Files -->
     <message key="xmlui.static.ring.list-ss14">
-    <ul>
-        <li class="content"><strong>06. Mai 2014</strong><br />
-            Prof. Christiane Schildknecht, Luzern<br />
-            »Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+        <ul>
+            <li class="content"><strong>06. Mai 2014</strong><br />
+                Prof. Christiane Schildknecht, Luzern<br />
+                »Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-        <li class="content"><strong>13. Mai 2014</strong><br />
-            Prof. Manfred Krifka, Berlin<br />
-            <a href="/static/audio/ring2014-05-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</a>
-        </li>
+            <li class="content"><strong>13. Mai 2014</strong><br />
+                Prof. Manfred Krifka, Berlin<br />
+                <a href="/static/audio/ring2014-05-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</a>
+            </li>
 
-        <li class="content"><strong>20. Mai 2014</strong><br />
-            Prof. Annekathrin Schacht, Göttingen<br />
-            <a href="/static/audio/ring2014-05-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</a>
-        </li>
+            <li class="content"><strong>20. Mai 2014</strong><br />
+                Prof. Annekathrin Schacht, Göttingen<br />
+                <a href="/static/audio/ring2014-05-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</a>
+            </li>
 
-        <li class="content"><strong>27. Mai 2014</strong><br />
-            Prof. Edgar Onea, Göttingen<br />
-            Offene Fragen und spannende Texte
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>27. Mai 2014</strong><br />
+                Prof. Edgar Onea, Göttingen<br />
+                Offene Fragen und spannende Texte
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-        <li class="content"><strong>3. Juni 2014</strong><br />
-            Prof. Markus Steinbach und Dr. Annika Herrmann, Göttingen<br />
-            Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-
-        <li class="content"><strong>10. Juni 2014</strong><br />
-            Prof. Nivedita Mani, Göttingen<br />
-            Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-        <li class="content"><strong>17. Juni 2014</strong><br />
-            Prof. Regine Eckardt, Göttingen<br />
-            Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte?
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-        <li class="content"><strong>24. Juni 2014</strong><br />
-            Prof. Simone Winko und Anna Fenner MA, Göttingen<br />
-            More than words. Emotionen in literarischen Texten
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>3. Juni 2014</strong><br />
+                Prof. Markus Steinbach und Dr. Annika Herrmann, Göttingen<br />
+                Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
 
-        <li class="content"><strong>1. Juli 2014</strong><br />
-            Prof. Evelyn Ferstl, Freiburg<br />
-            Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>10. Juni 2014</strong><br />
+                Prof. Nivedita Mani, Göttingen<br />
+                Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-        <li class="content"><strong>8. Juli 2014</strong><br />
-            Prof. Heinrich Detering, Göttingen<br />
-            Horror! Literatur der Angstlust
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>17. Juni 2014</strong><br />
+                Prof. Regine Eckardt, Göttingen<br />
+                Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte?
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-        <li class="content"><strong>15. Juli 2014</strong><br />
-            Prof. Tilmann Köppe, Göttingen<br />
-            Angenehmes Grauen. Warum wir Thriller lieben
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>24. Juni 2014</strong><br />
+                Prof. Simone Winko und Anna Fenner MA, Göttingen<br />
+                More than words. Emotionen in literarischen Texten
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
 
-        <li class="content"><strong>22. Juli 2014</strong><br />
-            Prof. Anke Holler, Göttingen<br />
-            Signale im Text. Wie sprachliche Strukturen die Leser lenken
-        </li>
-        <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+            <li class="content"><strong>1. Juli 2014</strong><br />
+                Prof. Evelyn Ferstl, Freiburg<br />
+                Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-    </ul>
+            <li class="content"><strong>8. Juli 2014</strong><br />
+                Prof. Heinrich Detering, Göttingen<br />
+                Horror! Literatur der Angstlust
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+            <li class="content"><strong>15. Juli 2014</strong><br />
+                Prof. Tilmann Köppe, Göttingen<br />
+                Angenehmes Grauen. Warum wir Thriller lieben
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+
+            <li class="content"><strong>22. Juli 2014</strong><br />
+                Prof. Anke Holler, Göttingen<br />
+                Signale im Text. Wie sprachliche Strukturen die Leser lenken
+            </li>
+            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
+
+        </ul>
     </message>
 
 
-            <!-- ************************************************************************************** -->
+    <!-- ************************************************************************************** -->
 
 
-            <!-- SS 2016 -->
+    <!-- SS 2016 -->
 
-            <!-- Breadcrumbs -->
+    <!-- Breadcrumbs -->
 
     <message key="xmlui.static.ring-ss16.trail">SS 2016</message>
 
-            <!-- Title -->
+    <!-- Title -->
 
     <message key="xmlui.static.ring.title-ss16">
 
-    <br />LANDWIRTSCHAFT zwischen Idylle und Hightech
+        <br />LANDWIRTSCHAFT zwischen Idylle und Hightech
 
 
 
@@ -686,129 +639,129 @@
 
 
 
-            <!-- Poster -->
+    <!-- Poster -->
 
     <message key="xmlui.static.ring.poster-ss16">
 
-    <p>
+        <p>
 
-        <img src="/static/images/ring/cover-16.jpg" alt="Coverabbildung" /><br />
+            <img src="/static/images/ring/cover-16.jpg" alt="Coverabbildung" /><br />
 
-        <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
+            <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
 
-    </p>
+        </p>
 
     </message>
 
 
 
-            <!-- Audio Files -->
+    <!-- Audio Files -->
 
     <message key="xmlui.static.ring.list-ss16">
 
-    <ul>
+        <ul>
 
-        <li class="content"><strong>12. April 2016</strong><br />
+            <li class="content"><strong>12. April 2016</strong><br />
 
-            Dr. Stephanie Franck, Vorsitzende des Bundesverbandes Deutscher Pflanzenzüchter e.V.<br />
+                Dr. Stephanie Franck, Vorsitzende des Bundesverbandes Deutscher Pflanzenzüchter e.V.<br />
 
-            <a href="/static/audio/ring2016-04-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Mit dem Saatgut fängt es an - Idylle und Wirklichkeit in der Pflanzenzüchtung</a></li>
+                <a href="/static/audio/ring2016-04-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Mit dem Saatgut fängt es an - Idylle und Wirklichkeit in der Pflanzenzüchtung</a></li>
 
 
 
-        <li class="content"><strong>19. April 2016</strong><br />
+            <li class="content"><strong>19. April 2016</strong><br />
 
-            Carl-Albrecht Bartmer, Präsident der Deutschen Landwirtschaftsgesellschaft<br />
+                Carl-Albrecht Bartmer, Präsident der Deutschen Landwirtschaftsgesellschaft<br />
 
-            <a href="/static/audio/ring2016-04-19.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Betriebe zwischen Idylle und Hightech</a></li>
+                <a href="/static/audio/ring2016-04-19.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Betriebe zwischen Idylle und Hightech</a></li>
 
 
 
-        <li class="content"><strong>26. April 2016</strong><br />
+            <li class="content"><strong>26. April 2016</strong><br />
 
-            Prof. Dr. Henner Simianer, Universität Göttingen<br />
+                Prof. Dr. Henner Simianer, Universität Göttingen<br />
 
-            <a href="/static/audio/ring2016-04-26.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Genomische und andere Revolutionen in der Tierzucht</a></li>
+                <a href="/static/audio/ring2016-04-26.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Genomische und andere Revolutionen in der Tierzucht</a></li>
 
 
 
-        <li class="content"><strong>03. Mai 2016</strong><br />
+            <li class="content"><strong>03. Mai 2016</strong><br />
 
-            Prof. Dr. Urs Niggli, Direktor des Forschungsinstitutes für ökologischen Landbau (FiBL)<br />
+                Prof. Dr. Urs Niggli, Direktor des Forschungsinstitutes für ökologischen Landbau (FiBL)<br />
 
-            <a href="/static/audio/ring2016-05-03.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Ökologischer Landbau: Idylle oder Hightech?</a></li>
+                <a href="/static/audio/ring2016-05-03.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Ökologischer Landbau: Idylle oder Hightech?</a></li>
 
 
 
-        <li class="content"><strong>10. Mai 2016</strong><br />
+            <li class="content"><strong>10. Mai 2016</strong><br />
 
-            Prof. Dr. Kay-Uwe Goetz, Bayrische Landesanstalt für Landwirtschaft<br />
+                Prof. Dr. Kay-Uwe Goetz, Bayrische Landesanstalt für Landwirtschaft<br />
 
-            <a href="/static/audio/ring2016-05-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nutztiere nur noch in Gut Aiderbichl? - Entwicklungen in Tierhaltung und Gesellschaft</a></li>
+                <a href="/static/audio/ring2016-05-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nutztiere nur noch in Gut Aiderbichl? - Entwicklungen in Tierhaltung und Gesellschaft</a></li>
 
 
 
-        <li class="content"><strong>17. Mai 2016</strong><br />
+            <li class="content"><strong>17. Mai 2016</strong><br />
 
-            Prof. Dr. Achim Spiller, Universität Göttingen<br />
+                Prof. Dr. Achim Spiller, Universität Göttingen<br />
 
-            <a href="/static/audio/ring2016-05-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Sind wir in 20 Jahren alle Vegetarier? Anforderungen an die landwirtschaftliche Tierhaltung aus Sicht der Gesellschaft</a></li>
+                <a href="/static/audio/ring2016-05-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Sind wir in 20 Jahren alle Vegetarier? Anforderungen an die landwirtschaftliche Tierhaltung aus Sicht der Gesellschaft</a></li>
 
 
 
 
 
-        <li class="content"><strong>31. Mai 2016</strong><br />
+            <li class="content"><strong>31. Mai 2016</strong><br />
 
-            Prof. Dr. Dr. Andreas Hensel, Präsident des Bundesinstitutes für Risikobewertung (BfR)<br />
+                Prof. Dr. Dr. Andreas Hensel, Präsident des Bundesinstitutes für Risikobewertung (BfR)<br />
 
-            <a href="/static/audio/ring2016-05-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Gift auf dem Teller? - Von gefühlten und realen Ernährungsrisiken</a></li>
+                <a href="/static/audio/ring2016-05-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Gift auf dem Teller? - Von gefühlten und realen Ernährungsrisiken</a></li>
 
 
 
 
-        <li class="content"><strong>07. Juni 2016</strong><br />
+            <li class="content"><strong>07. Juni 2016</strong><br />
 
-            Prof. Dr. Andreas von Tiedemann, Universität Göttingen<br />
+                Prof. Dr. Andreas von Tiedemann, Universität Göttingen<br />
 
-            <a href="/static/audio/ring2016-06-07.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech-Ängste und Idyllvorstellungen - warum wir den modernen Pflanzenschutz nicht schätzen, ihn aber schätzen sollten</a></li>
+                <a href="/static/audio/ring2016-06-07.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech-Ängste und Idyllvorstellungen - warum wir den modernen Pflanzenschutz nicht schätzen, ihn aber schätzen sollten</a></li>
 
 
 
-        <li class="content"><strong>14. Juni 2016</strong><br />
+            <li class="content"><strong>14. Juni 2016</strong><br />
 
-            Prof. Dr. Eva Schlecht, Universität Göttingen/Universität Kassel<br />
+                Prof. Dr. Eva Schlecht, Universität Göttingen/Universität Kassel<br />
 
-            <a href="/static/audio/ring2016-06-14.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech Forschung in pastoralen Systemen Afrikas und Asiens - Anwendungsbereiche und Erkenntnisse</a></li>
+                <a href="/static/audio/ring2016-06-14.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech Forschung in pastoralen Systemen Afrikas und Asiens - Anwendungsbereiche und Erkenntnisse</a></li>
 
 
 
-        <li class="content"><strong>28. Juni 2016</strong><br />
+            <li class="content"><strong>28. Juni 2016</strong><br />
 
-            Prof. Dr. Matin Qaim, Universität Göttingen<br />
+                Prof. Dr. Matin Qaim, Universität Göttingen<br />
 
-            <a href="/static/audio/ring2016-06-28.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaft zwischen Idylle und Hightech: Welternährung und Armutsbekämpfung in den Entwicklungsländern</a></li>
+                <a href="/static/audio/ring2016-06-28.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaft zwischen Idylle und Hightech: Welternährung und Armutsbekämpfung in den Entwicklungsländern</a></li>
 
 
-        <li class="content"><strong>05. Juli 2016</strong><br />
+            <li class="content"><strong>05. Juli 2016</strong><br />
 
-            Dr. Clemens Dirscherl, EKD<br />
+                Dr. Clemens Dirscherl, EKD<br />
 
-            <a href="/static/audio/ring2016-07-05.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Tierhaltung in ethischer Verantwortung - eine christliche Perspektive</a></li>
+                <a href="/static/audio/ring2016-07-05.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Tierhaltung in ethischer Verantwortung - eine christliche Perspektive</a></li>
 
 
-        <li class="content"><strong>12. Juli 2016</strong><br />
+            <li class="content"><strong>12. Juli 2016</strong><br />
 
-            !Änderung! Prof. Dr. Klaus Dittert, Universität Göttingen<br />
+                !Änderung! Prof. Dr. Klaus Dittert, Universität Göttingen<br />
 
-            <a href="/static/audio/ring2016-07-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nachhaltige Produktivitätssteigerung: Konsequenzen für Wissenschaft und Wirtschaft</a></li>
+                <a href="/static/audio/ring2016-07-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nachhaltige Produktivitätssteigerung: Konsequenzen für Wissenschaft und Wirtschaft</a></li>
 
 
 
 
 
 
-    </ul>
+        </ul>
 
     </message>
 
@@ -816,27 +769,27 @@
 
     <message key="xmlui.static.ring.contact-ss16">
 
-    <div id="contact">
+        <div id="contact">
 
 
 
-        <strong>Organisation/Kontakt:</strong><br />
+            <strong>Organisation/Kontakt:</strong><br />
 
-        Georg-August-Universität Göttingen<br />
+            Georg-August-Universität Göttingen<br />
 
-        Fakultät für Agrarwissenschaften<br />
+            Fakultät für Agrarwissenschaften<br />
 
-        Prof. Dr. Elke Pawelzik, Prof. Dr. Henner Simianer, Prof. Dr. Achim Spiller, Prof. Dr. Bernhard Brümmer, Prof. Dr. Andreas von Tiedemann<br />
+            Prof. Dr. Elke Pawelzik, Prof. Dr. Henner Simianer, Prof. Dr. Achim Spiller, Prof. Dr. Bernhard Brümmer, Prof. Dr. Andreas von Tiedemann<br />
 
-        Büsgenweg 5<br />
+            Büsgenweg 5<br />
 
-        37077   Göttingen<br />
+            37077   Göttingen<br />
 
-        Tel.: +49 551 39 5530<br />
+            Tel.: +49 551 39 5530<br />
 
-        Fax:  +49 551 39 66034<br />
+            Fax:  +49 551 39 66034<br />
 
-    </div>
+        </div>
 
     </message>
 

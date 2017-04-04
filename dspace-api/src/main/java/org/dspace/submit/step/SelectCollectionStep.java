@@ -49,7 +49,7 @@ public class SelectCollectionStep extends AbstractProcessingStep
     // no collection was selected
     public static final int STATUS_NO_COLLECTION = 1;
 
-    // invalid collection or error finding collection
+    // invalid collection or error finding collectionf
     public static final int STATUS_INVALID_COLLECTION = 2;
 
     /**

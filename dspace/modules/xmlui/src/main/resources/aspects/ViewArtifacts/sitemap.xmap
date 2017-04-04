@@ -77,7 +77,7 @@ and searching the repository.
         </map:selectors>
         <map:serializers>
             <map:serializer name="text" src="org.apache.cocoon.serialization.TextSerializer" mime-type="text/plain; charset=utf8" logger="sitemap.serializer.text" >
-                        <omit-xml-declaration>true</omit-xml-declaration>
+                <omit-xml-declaration>true</omit-xml-declaration>
             </map:serializer>
         </map:serializers>
 
@@ -107,7 +107,7 @@ and searching the repository.
                             -->
 
             <map:match pattern="">
-                     <!-- <map:transform type="Include" src="resource://aspects/ViewArtifacts/dspace-home.xml" /> -->
+                <!-- <map:transform type="Include" src="resource://aspects/ViewArtifacts/dspace-home.xml" /> -->
                 <map:act type="DSpacePropertyFileReader">
                     <map:parameter name="dspace.dir" value="dspace.dir" />
                     <map:transform type="Include" src="file://{dspace.dir}/config/news-xmlui.xml" />
@@ -187,45 +187,33 @@ and searching the repository.
             <map:match pattern="costrequest">
                 <map:act type="SendCostRequestAction">
                     <map:transform type="CostRequestForm">
-                        <map:parameter name="lastname" value="{lastname}"/>
-                        <map:parameter name="firstname" value="{firstname}"/>
+                        <map:parameter name="name" value="{name}"/>
                         <map:parameter name="zip" value="{zip}"/>
                         <map:parameter name="city" value="{city}"/>
-                        <map:parameter name="street" value="{street}"/>
-                        <map:parameter name="number" value="{number}"/>
+                        <map:parameter name="address" value="{address}"/>
                         <map:parameter name="phone" value="{phone}"/>
                         <map:parameter name="customer_email" value="{customer_email}"/>
                         <map:parameter name="sponsor" value="{sponsor}"/>
-                        <map:parameter name="costcenter" value="{costcenter}"/>
+                        <map:parameter name="publ_type" value="{publ_type}"/>
                         <map:parameter name="creator_type" value="{creator_type}"/>
-                        <map:parameter name="creator_firstname" value="{creator_firstname}"/>
-                        <map:parameter name="creator_lastname" value="{creator_lastname}"/>
-                        <map:parameter name="creator_firstname2" value="{creator_firstname2}"/>
-                        <map:parameter name="creator_lastname2" value="{creator_lastname2}"/>
-                        <map:parameter name="creator_firstname3" value="{creator_firstname3}"/>
-                        <map:parameter name="creator_lastname3" value="{creator_lastname3}"/>
-                        <map:parameter name="creator_firstname4" value="{creator_firstname4}"/>
-                        <map:parameter name="creator_lastname4" value="{creator_lastname4}"/>
-                        <map:parameter name="creator_firstname5" value="{creator_firstname5}"/>
-                        <map:parameter name="creator_lastname5" value="{creator_lastname5}"/>
+                        <map:parameter name="creator1" value="{creator1}"/>
+                        <map:parameter name="creator2" value="{creator2}"/>
+                        <map:parameter name="creator3" value="{creator3}"/>
+                        <map:parameter name="creator4" value="{creator4}"/>
                         <map:parameter name="publ_title" value="{publ_title}"/>
                         <map:parameter name="subtitle" value="{subtitle}"/>
                         <map:parameter name="institute" value="{institute}"/>
-                        <map:parameter name="series_volume" value="{series_volume}"/>
-                        <map:parameter name="series_title" value="{series_title}"/>
+                        <map:parameter name="series" value="{series}"/>
                         <map:parameter name="template" value="{template}"/>
                         <map:parameter name="extent" value="{extent}"/>
                         <map:parameter name="cover" value="{cover}"/>
                         <map:parameter name="colored" value="{colored}"/>
                         <map:parameter name="copy" value="{copy}"/>
-                        <map:parameter name="delivery_year" value="{delivery_year}"/>
-                        <map:parameter name="delivery_month" value="{delivery_month}"/>
-                        <map:parameter name="delivery_day" value="{delivery_day}"/>
-                        <map:parameter name="issue_year" value="{issue_year}"/>
-                        <map:parameter name="issue_month" value="{issue_month}"/>
-                        <map:parameter name="issue_day" value="{issue_day}"/>
+                        <map:parameter name="delivery_date" value="{delivery_date}"/>
+                        <map:parameter name="issue_date" value="{issue_date}"/>
                         <map:parameter name="comments" value="{comments}"/>
                         <map:parameter name="page" value="{page}"/>
+                        <map:parameter name="error" value="{error}"/>
                     </map:transform>
                     <map:serialize type="xml"/>
                 </map:act>

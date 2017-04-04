@@ -115,7 +115,7 @@
                     </xsl:attribute>
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='title']">
-                            <xsl:value-of select="dim:field[@element='title'][1]/node()"/>
+                            <xsl:value-of select="dim:field[@element='title'][1]/node()" disable-output-escaping="yes"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>

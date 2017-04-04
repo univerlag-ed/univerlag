@@ -2032,7 +2032,7 @@
     <message key="xmlui.dri2xhtml.structural.search-in-collection">In dieser Sammlung</message>
 
     <message key="xmlui.dri2xhtml.structural.pagination-previous">Vorherige Seite</message>
-    <message key="xmlui.dri2xhtml.structural.pagination-info">Anzeige der Dokumente {0}-{1} von {2}</message>
+    <message key="xmlui.dri2xhtml.structural.pagination-info">{0}-{1} von {2} Titeln</message>
     <message key="xmlui.dri2xhtml.structural.pagination-next">Nächste Seite</message>
 
     <message key="xmlui.dri2xhtml.structural.link_cc">Creative Commons Lizenz</message>
@@ -2310,6 +2310,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Erscheinungsdatum</message>
 
     <!-- Site Leve Recently Added Content -->
+    <!-- <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Neuerscheinungen <a class="pull-right hidden-xs all" href="/browse?order=DESC&amp;sort_by=3&amp;type=dateissued">Alle Publikationen &#11166;</a></message> -->
     <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Neuerscheinungen</message>
 
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Kind</message>
@@ -2354,7 +2355,7 @@
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Schlagwort</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued">Erscheinungsdatum</message>
 
-    <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Anzeige der Dokumente {0}-{1}</message>
+    <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">{0}-{1} Titel</message>
 
     <message key="xmlui.Discovery.AbstractSearch.type_author">Filtern nach: Autor/Herausgeber</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Autor/Herausgeber</message>
@@ -2412,7 +2413,7 @@
 
     <message key="xmlui.Discovery.AbstractSearch.head2">Sammlungen, die Ihrer Suche entsprechen.</message>
     <message key="xmlui.Discovery.AbstractSearch.head3">Dokumente, die Ihrer Suche entsprechen.</message>
-    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle anzeigen</message>
+    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle Publikationen &#11166;</message>
     <!-- End Discovery -->
 
     <!--   Start Sword Client  -->
@@ -2712,7 +2713,7 @@
     <!-- home page -->
     <message key="xmlui.static.home.head">Univerlag</message>
     <message key="xmlui.static.home">
-        <h2>Willkommen beim Universitätsverlag Göttingen</h2>
+        <h2 class="first-page-header">Willkommen beim Universitätsverlag Göttingen</h2>
 
         <!--<p class="highlight">
 Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
@@ -2731,10 +2732,10 @@ Das Team vom Universitätsverlag Göttingen
         </p>
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">Aktuelles...</a>
+                <a href="/news">&#11164; Aktuelles</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog...</a>
+                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog &#11166;</a>
             </div>
         </div>
         <!-- <h2>Verlagsprogramm online</h2>
@@ -2877,7 +2878,9 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 Der Universitätsverlag Göttingen gehört zum Bereich <a href="http://www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
                 der Universität Göttingen anzubieten:
             </p>
-            <ul>
+
+
+            <ul class="styled">
                 <li>elektronisches Publizieren</li>
                 <li>hochwertige Druckausgabe als Print-on-Demand</li>
                 <li>persönliche Beratung vor Ort</li>
@@ -2901,15 +2904,43 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 Der Universitätsverlag ist eng mit anderen Aktivitäten der SUB Göttingen in Hinblick auf Open Access verbunden:
             </p>
 
-            <ul id="relatives">
-                <li><img src="/static/icons/goescholar.ico"/><a href="http://goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR - Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</a></li>
-                <li><img src="/static/icons/webdoc.ico"/><a href="http://webdoc.sub.gwdg.de/">GOEDOC - Dokumententenserver der Universität Göttingen</a></li>
-                <li><img src="/static/icons/ediss.ico"/><a href="http://ediss.uni-goettingen.de/">eDiss, Elektronische Dissertationen der Universität Göttingen</a></li>
-                <li><img src="/static/icons/gcdh.ico"/><a href="www.gcdh.de/">GCDH (Göttingen Centre for Digital Humanities) </a></li>
-                <li><img src="/static/icons/coar.ico"/><a href="http://coar-repositories.org/">COAR e.V. (Confederation of Open Access Repositories) </a></li>
-                <li><img src="/static/icons/openaire.ico"/><a href="http://www.openaire.eu/">OpenAIRE (Open Access Infrastructure for Research in Europe) </a></li>
-                <li class="last"><a href="http://rdd.sub.uni-goettingen.de">... weitere Projekte der SUB Göttingen</a></li>
-            </ul>
+            <div id="services" class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="/static/icons/goescholar.ico"></img>
+                        <h4><a href="http://goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
+                        <p>Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/static/icons/ediss.ico"></img>
+                        <h4><a href="http://ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
+                        <p>elektronische Dissertationen der Universität Göttingen</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/static/icons/gcdh.ico"></img>
+                        <h4><a href="www.gcdh.de/" target="_blank">GCDH</a></h4>
+                        <p>Göttingen Centre for Digital Humanities</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="/static/icons/openaire.ico"></img>
+                        <h4><a href="http://www.openaire.eu/" target="_blank">OPENAIRE</a></h4>
+                        <p>Open Access Infrastructure for Research in Europe</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/static/icons/coar-logo.png"></img>
+                        <h4><a href="http://coar-repositories.org/" target="_blank">COAR e.v.</a></h4>
+                        <p>Confederation of Open Access Repositories</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="iconplace">SUB</span>
+                        <h4><a href="http://rdd.sub.uni-goettingen.de/" target="_blank">SUB</a></h4>
+                        <p>Weitere Projekte der SUB</p>
+                    </div>
+                </div>
+            </div>
 
 
             <p>Die dauerhafte und weltweite Verfügbarkeit der Göttinger Publikationen ist
@@ -2990,7 +3021,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
                 Sie können unsere Produkte
             </p>
-            <ul class="ol">
+            <ul class="styled">
                 <li>auf unserer Webseite über den Warenkorb (ohne Registrierung),</li>
                 <li>im lokalen Buchhandel</li>
                 <li>oder aber über Onlinebuchhändler bestellen.</li>
@@ -3027,40 +3058,48 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.publishing.trail">Publizieren</message>
     <message key="xmlui.static.publishing">
         <div>
-            <p>
-                Als Mitglied der Georg-August-Universität Göttingen können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
-            </p>
-            <p>
-                Um einen ersten Überblick über die anfallenden Kosten für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
-            </p>
-            <p>
-                Wenn Sie sich entschieden haben, Ihre Arbeit in unserem Verlag zu veröffentlichen, <a href="/info/contact">kontaktieren</a>  Sie uns bitte.
-            </p>
-            <p>
-                Für das Erstellen der Druck- und Online-Ausgabe Ihres Werkes benötigen wir ein publikationsreifes PDF-Dokument. Dazu stehen Ihnen <a href="/info/publishing-utils">unsere Formatvorlagen</a> zur Verfügung. Wir möchten Sie bitten, diese entsprechend zu nutzen.
-            </p>
-            <!-- <p>
+            <blockquote class="blockquote">
+                <p>
+                    <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
+                </p>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p>
+                    Um einen ersten Überblick über die <strong>anfallenden Kosten</strong> für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
+                </p>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p>
+                    Wenn Sie sich entschieden haben, Ihre Arbeit in unserem Verlag zu veröffentlichen, <a href="/info/contact">kontaktieren</a>  Sie uns bitte.
+                </p>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p>
+                    Für das Erstellen der Druck- und Online-Ausgabe Ihres Werkes benötigen wir ein publikationsreifes PDF-Dokument. Dazu stehen Ihnen <a href="/info/publishing-utils"><strong>unsere Formatvorlagen</strong></a> zur Verfügung. Wir möchten Sie bitten, diese entsprechend zu nutzen.
+                </p>
+                <!-- <p>
 
-        Um Ihr Dokument zur Veröffentlichung einzureichen, <a href="/register">registrieren Sie sich</a> bitte beim Universitätsverlag, navigieren Sie zum Fachgebiet, in dem Ihre Publikation erscheinen soll und klicken Sie auf  „Hier veröffentlichen“. </p>-->
-            <p>
-                Im Universitätsverlag Göttingen gibt es zwei <a href="/info/divisions">Sparten</a> für das Publizieren, die „Universitätsdrucke“ für wissenschaftliche Werke von solider Qualität sowie die begutachtete Sparte „Universitätsverlag“ für Werke gehobener Qualität. <br />
-                Anhand der Qualität des Inhalts wird festgelegt, in welcher Sparte wir Ihr Dokument veröffentlichen. Wenn Sie und wir übereinstimmend Ihr Werk der Sparte „Universitätsverlag“ zuordnen, wird es dem Herausgebergremium vorgelegt, um eine inhaltliche Begutachtung zu erhalten. Bei der Sparte „Universitätsdrucke“ nehmen wir lediglich eine formale Prüfung der Datei vor.
-            </p>
-            <p>
-                Parallel dazu erarbeiten wir mit Ihnen die Gestaltung des Buches (im Corporate Design der Universität) und nehmen eine formale Prüfung der Datei vor.
-            </p>
-            <p>
-                Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die endgültige Druckfreigabe erteilt.
-            </p>
-            <p>
-                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess">open access</a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
-            </p>
-            <!--	<p>Der Universitätsverlag Göttingen ist Teil der Gruppe „<a href="http://www.sub.uni-goettingen.de/0_e-publishing.html.de">Elektronisches Publizieren</a>„ und bietet verlegerische Dienstleistung für die
-        Veröffentlichung wissenschaftlicher Informationen an. Der Verlag verbindet dabei die elektronische Bereitstellung im Internet mit der Herstellung hochwertiger Druckausgaben. Er bietet Wissenschaftlern die Möglichkeit, bei günstigem Preis-Leistungsverhältnis und weitgehender Bewahrung ihrer Rechte an der eigenen Veröffentlichung diese einer breiten
-        Öffentlichkeit bereitzustellen. Dafür steht zum einen die   nicht-gewinnorientierte Ausrichtung des Verlags (siehe <a href="/info/aboutus">Wir über uns</a>) sowie die   Möglichkeit für Autoren, über die gute Vorbereitung der Daten die Kosten der Publikation zu senken. Dazu halten wir ausführliche Autorenhilfen bereit, etwa Formatvorlagen für verschiedene Formate, Anleitungen zu Bildbearbeitung oder zur PDF-Erstellung.
-        </p>
-        <p>Alle Publikationen des Universitätsverlags durchlaufen eine Qualitätskontrolle, die Publikationen der Sparte „Universitätsverlag“ zusätzlich ein Begutachtungsverfahren gemäß den Standards der jeweiligen Disziplin. Die <a href="/info/publishing-policy">Leitlinien des Publizierens</a> im Universitätsverlag, die auch in der <a href="http|//www.dini.de/wiss-publizieren/sherparomeo/">SHERPA Romeo-Datenbank</a> veröffentlicht sind, sind mit <a href="/info/editors">dem Herausgebergremium des Verlags</a> festgelegt worden. Im Regelfall werden die elektronischen Publikationen im Universitätsverlag Göttingen mit einer <a href="http://creativecommons.org/licenses/by/3.0/de/">Creative Commons Lizenz 3.0 (Namensnennung)</a> bereitgestellt. Diese Lizenz verwenden auch kommerzielle Wissenschaftsverlage wie Walter de Gruyter, die ein Open Access Angebot haben.
-        </p> -->
+            Um Ihr Dokument zur Veröffentlichung einzureichen, <a href="/register">registrieren Sie sich</a> bitte beim Universitätsverlag, navigieren Sie zum Fachgebiet, in dem Ihre Publikation erscheinen soll und klicken Sie auf  „Hier veröffentlichen“. </p>-->
+            </blockquote>
+            <blockquote class="blockquote">
+                <p>
+                    Im Universitätsverlag Göttingen gibt es zwei <a href="/info/divisions">Sparten</a> für das Publizieren, die „<strong>Universitätsdrucke</strong>“ für wissenschaftliche Werke von solider Qualität sowie die begutachtete Sparte „<strong>Universitätsverlag</strong>“ für Werke gehobener Qualität. <br />
+                    Anhand der Qualität des Inhalts wird festgelegt, in welcher Sparte wir Ihr Dokument veröffentlichen. Wenn Sie und wir übereinstimmend Ihr Werk der Sparte „Universitätsverlag“ zuordnen, wird es dem Herausgebergremium vorgelegt, um eine inhaltliche Begutachtung zu erhalten. Bei der Sparte „Universitätsdrucke“ nehmen wir lediglich eine formale Prüfung der Datei vor.
+                </p>
+
+                <p>
+                    Parallel dazu erarbeiten wir mit Ihnen die Gestaltung des Buches (im Corporate Design der Universität) und nehmen eine formale Prüfung der Datei vor.
+                </p>
+                <p>
+                    Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die endgültige Druckfreigabe erteilt.
+                </p>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p>
+                    Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess">open access</a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
+                </p>
+            </blockquote>
+
         </div>
     </message>
     <message key="xmlui.static.publisher-catalog.link">Verlagskatalog</message>
@@ -3076,9 +3115,6 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.editors-authors.head">Publizieren: Autorenhilfe</message>
     <message key="xmlui.static.editors-authors.navigation">Autorenhilfe</message>
     <message key="xmlui.static.editors-authors">
-        <h2 class="ds-head page-header first-page-header">Publizieren: Autorenhilfe</h2>
-
-
         <div>
 
             <p>Das Publizieren im Universitätsverlag erfolgt in der Regel auf Grundlage eines publikationsreifen PDF-Dokumentes. Dafür bitten wir Sie, ihr Manuskript anhand unserer Formatierungsvorlagen aufzubereiten. Dies senkt die Kosten für das Publizieren erheblich. Unten finden Sie eine Anleitung für die Formatierung und Formatierungsvorlagen für unterschiedliche  Formate. Die Gestaltung der einzelnen Seiten (Überschriften, Absätze etc.) können Sie den Formatvorlagen entnehmen.</p>
@@ -3098,7 +3134,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
             <h3>Usere Formatvorlagen</h3>
             <div class="item">
-                <h4 class="section-heading">17x24cm</h4>
+                <h4 class="section-heading">17x24cm: Standard</h4>
                 <hr class="light"></hr>
                 <pitem>Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
                     17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
@@ -3120,7 +3156,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 </pitem></div>
 
             <div class="item">
-                <h4 class="section-heading">17x24cm, skaliert </h4>
+                <h4 class="section-heading">17x24cm: skaliert </h4>
                 <hr class="light"></hr>
                 <pitem>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
                     <div class="button-panel">
@@ -3279,10 +3315,12 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 Als Open-Access-Verlag sind wir darauf angewiesen, dass unsere Autoren und Herausgeber sich an den Kosten des Publizierens beteiligen, die im Universitätsverlag anfallen. Denn durch die freie Onlinebereitstellung unserer Publikationen können wir nur sehr bedingt über den Absatz gedruckter Werke Einnahmen generieren. Was wir ins Verlagsprogramm aufnehmen, sollte auch nicht der wirtschaftliche Erfolg eines Werkes entscheiden, sondern seine wissenschaftliche Relevanz.
             </p>
             <p>
-                Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel<a id="ftnref1" href="#ftn1">[1]</a> 790,00 € beträgt. Autoren von Dissertationen und Studierende erhalten einen Nachlass von 25% auf die Pauschale. Bei Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, reduziert sich die Verlagskostenpauschale um 40,00 €, weil der Bearbeitungsaufwand für das Cover geringer ist. Diese Pauschale beinhaltet die Unterstützung der Nutzer beim Erstellen der publikationsreifen Manuskripte, die formale Qualitätsprüfung, die Erstellung der Druckvorlagen (Covergestaltung, technische Überprüfung der Manuskripte), die Onlinebereitstellung, die Titelmeldung sowie das Marketing.
+                Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel 790,00 € beträgt.<a data-toggle="collapse" data-target="#ftn1"> <span class="icon"> &#128712;</span></a>
+                <spann class="footnote collapse" id="ftn1">Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%.</spann>
+                Autoren von Dissertationen und Studierende erhalten einen Nachlass von 25% auf die Pauschale. Bei Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, reduziert sich die Verlagskostenpauschale um 40,00 €, weil der Bearbeitungsaufwand für das Cover geringer ist. Diese Pauschale beinhaltet die Unterstützung der Nutzer beim Erstellen der publikationsreifen Manuskripte, die formale Qualitätsprüfung, die Erstellung der Druckvorlagen (Covergestaltung, technische Überprüfung der Manuskripte), die Onlinebereitstellung, die Titelmeldung sowie das Marketing.
             </p>
             <p>
-                Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<a id="ftnref2" href="#ftn2">[2]</a> bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<a id="ftnref3" href="#ftn3">[3]</a> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
+                Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<a data-toggle="collapse" data-target="#ftn2"> <span class="icon"> &#128712;</span></a><span class="footnote collapse" id="ftn2">Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare) </span> bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<a data-toggle="collapse" data-target="#ftn3"> <span class="icon"> &#128712;</span></a><span class="footnote collapse" id="ftn3">Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare) </span> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
             </p>
             <table id="prices" class="table table-sm">
 
@@ -3318,16 +3356,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     </tr>
                 </tbody>
             </table>
-            <hr />
-            <p>
-                <a id="ftn1" href="#ftnref1">[1]</a> Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%.<br /><br />
-            </p>
-            <p>
-                <a href="#ftnref2" id="ftn2">[2]</a> Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)
-            </p>
-            <p>
-                <a href="#ftnref3" id="ftn3">[3]</a> Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)
-            </p>
+
         </div>
     </message>
 
@@ -3428,8 +3457,6 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.policy.head">Leitlinien des Publizierens</message>
     <message key="xmlui.static.policy.trail">Leitlinien</message>
     <message key="xmlui.static.policy">
-        <h2 class="ds-head page-header first-page-header">Leitlinien des Publizierens</h2>
-
         <p>
             <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Leitlinien als PDF</a>
             <span class="pull-right">Göttingen im Mai 2015</span>
@@ -3444,8 +3471,9 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             Das Präsidium der Georg-August-Universität hat im Januar 2015 eine <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a> für den Universitätsverlag verabschiedet. Diese regelt transparent, wie und für wen der Verlag arbeitet. Mit dieser Nutzungsordnung können nun auch drittmittelfinanzierte Projekte verwirklicht werden, bei denen die Verwendungsrichtlinien der Förderer die Abrechnung von Open-Access-Dienstleistungen innerhalb der eigenen Einrichtung bisher nicht gestatteten. Wir freuen uns, dass wir zusammen mit den Förderern das Open-Access-Publizieren an der Universität weiter voran bringen können, vor allem für die buchorientierten Disziplinen.
 
         </p>
-        <p>
-            Open Access im Universitätsverlag Göttingen bedeutet:</p>
+        <h3>
+            Open Access im Universitätsverlag Göttingen bedeutet
+        </h3>
         <ol>
 
 
@@ -3501,7 +3529,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <div class="media">
             <div class="media-left">
                 <a href="http://creativecommons.org/">
-                    <img class="media-object" src="/static/images/cc.logo.large.png" alt="CreativeCommons logo"></img>
+                    <img class="media-object" src="/static/icons/cc.logo.large.png" alt="CreativeCommons logo"></img>
                 </a>
             </div>
             <div class="media-body">
@@ -3532,7 +3560,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <div class="media">
             <div class="media-left">
                 <a href="http://www.open-access.net/">
-                    <img class="media-object" src="/static/images/OpenAccess_Logo.gif" alt="OAR"></img>
+                    <img class="media-object" src="/static/icons/OpenAccess_Logo.gif" alt="OAR"></img>
                 </a>
             </div>
             <div class="media-body">
@@ -3560,8 +3588,13 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         </div>
 
 
-        <div>
-            Das Goettingen Journal for International Law (<a href="http://www.gojil.org">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="http://www.gojil.eu/about/people.html">GoJIL Advisory Board</a>, dem <a href="http://inteurlaw.uni-goettingen.de">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
+        <div class="media">
+            <div class="media-left">
+                <a href="http://www.gojil.org"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+            </div>
+            <div class="media-body">
+                Das Goettingen Journal for International Law (<a href="http://www.gojil.org">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="http://www.gojil.eu/about/people.html">GoJIL Advisory Board</a>, dem <a href="http://inteurlaw.uni-goettingen.de">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
+            </div>
         </div>
 
     </message>
@@ -3571,48 +3604,73 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <div>
             <p>Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung sowie wichtige rechtliche Hinweise zur Internetpräsenz des »Universitätsverlag Göttingen«.</p>
 
-            <h2>Anbieter</h2>
+            <h3>Anbieter</h3>
 
             <p>Anbieter dieser Internetpräsenz ist im Rechtssinne die Niedersächsische Staats- und Universitätsbibliothek Göttingen.</p>
 
             <p>
-                Niedersächsische Staats- und Universitätsbibliothek Göttingen<br />
-                Platz der Göttinger Sieben 1<br />
-                37073 Göttingen<br />
-                Tel.: +49(0)551/39-91188<br />
-                WWW: <a href="http://univerlag.uni-goettingen.de">http://univerlag.uni-goettingen.de</a><br />
-                E-Mail: <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a><br />
+            </p><p class="address">
+            <strong>Niedersächsische Staats- und Universitätsbibliothek Göttingen</strong>
+        </p>
+            <p class="address">
+                Platz der Göttinger Sieben 1
             </p>
-
-            <h2>Vertreter</h2>
-
-            <p>Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) wird vertreten durch den leitenden Direktor Dr. Wolfram Horstmann.</p>
-            <p>
-                E-Mail: <a href="mailto:horstmann_AT_sub.uni-goettingen.de">horstmann AT sub.uni-goettingen.de</a>
+            <p class="address">
+                37073 Göttingen
             </p>
+            <p class="address">
+                <span class="glyphicon glyphicon-earphone" title="Telefon"></span> +49(0)551/39-91188
+            </p>
+            <p class="address">
+                <a href="http://univerlag.uni-goettingen.de"><span class="glyphicon glyphicon-globe" title="Homepage"></span> http://univerlag.uni-goettingen.de</a>
+            </p>
+            <p class="address">
+                <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><span class="glyphicon glyphicon-envelope"></span> bargheer AT sub.uni-goettingen.de</a>
+
+            </p>
+            <p></p>
+
+            <h3>Vertreter</h3>
+
+            <p>Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) wird vertreten durch den leitenden Direktor <strong>Dr. Wolfram Horstmann</strong>.</p>
+
             <p>Die SUB Göttingen ist als zentrale Einrichtung eine organisatorische, rechtlich nicht selbständige Einheit der Georg-August-Universität Göttingen. Die Georg-August-Universität Göttingen ist eine Körperschaft des öffentlichen Rechts. Sie wird durch die Präsidentin Prof. Dr. Ulrike Beisiegel gesetzlich vertreten.
             </p>
 
-            <h2>Redaktionsverantwortliche</h2>
+            <h3>Redaktionsverantwortliche</h3>
             <p>Für die Redaktion der Internetpräsenz »Universitätsverlag Göttingen« ist verantwortlich:</p>
-            <p>
-                Margo Bargheer<br />
-                Niedersächsische Staats- und Universitätsbibliothek Göttingen<br />
-                Platz der Göttinger Sieben 1<br />
-                37073 Göttingen<br />
-                Tel.: +49(0)551/39-91188<br />
-                WWW: <a href="http://univerlag.uni-goettingen.de">http://univerlag.uni-goettingen.de</a><br />
-                E-Mail: <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a>
+
+            <p><p class="address"><strong>Margo Bargheer</strong></p>
+                <p class="address">
+                    <strong>Niedersächsische Staats- und Universitätsbibliothek Göttingen</strong>
+                </p>
+                <p class="address">
+                    Platz der Göttinger Sieben 1
+                </p>
+                <p class="address">
+                    37073 Göttingen
+                </p>
+                <p class="address">
+                    <span class="glyphicon glyphicon-earphone" title="Telefon"></span> +49(0)551/39-91188
+                </p>
+                <p class="address">
+                    <a href="http://univerlag.uni-goettingen.de"><span class="glyphicon glyphicon-globe" title="Homepage"></span> http://univerlag.uni-goettingen.de</a>
+                </p>
+                <p class="address">
+                    <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><span class="glyphicon glyphicon-envelope"></span> bargheer AT sub.uni-goettingen.de</a>
+
+                </p>
+
             </p>
 
-            <h2>Rechtliche Hinweise zum Urheberrecht</h2>
+            <h3>Rechtliche Hinweise zum Urheberrecht</h3>
 
             <p>Das Layout der Homepage, die verwendeten Grafiken sowie die sonstigen Inhalte sind urheberrechtlich geschützt.</p>
 
-            <h2>Rechtliche Hinweise zur Haftung</h2>
+            <h3>Rechtliche Hinweise zur Haftung</h3>
 
             <p>Bitte nehmen Sie unseren <a href="http://www.disclaimer.de/disclaimer.htm?farbe=FFFFFF/000000/000000/000000">Haftungsausschluss</a> zur Kenntnis.  (Der vorliegende Haftungssauschlusstext basiert auf dem kostenlosen Dienst von http://www.disclaimer.de).</p>
-            <h2>Datenschutzhinweis</h2>
+            <h3>Datenschutzhinweis</h3>
             <p>
                 Diese Website erfasst anonymisierte Daten zur Nutzung.<br />
                 Zustimmung verweigern: <a href="http://piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
@@ -3923,44 +3981,48 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.shipping.costs.trail">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.head">Versandkosten</message>
     <message key="xmlui.static.shipping.costs">
-
-
-        <table class="table table-striped shipping">
-            <thead>
-                <tr>
-                    <th colsapn="2">Buchsendungen in Deutschland</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="numeric">Unter 500 g:</td><td class="numeric">2,50 €</td>
-                </tr>
-                <tr>
-                    <td class="numeric">500 g - 1 kg:</td><td class="numeric">3,50 €</td>
-                </tr>
-                <tr>
-                    <td class="numeric">1 kg - 10 kg:</td><td class="numeric">4,50 €</td>
-                </tr>
-                <tr>
-                    <td class="numeric">10 kg 30 kg:</td><td class="numeric">7,50 €</td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-striped shipping">
-            <thead>
-                <tr>
-                    <th colsapn="2">Buchsendungen in Europa</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td  class="numeric">Unter 500 g:</td><td  class="numeric"> 4,50 €</td>
-                </tr>
-                <tr>
-                    <td  class="numeric">Über 500 g:</td><td  class="numeric"> 6,50 €</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-striped shipping">
+                    <thead>
+                        <tr>
+                            <th colsapn="2">Buchsendungen in Deutschland</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unter 500 g:</td><td class="numeric">2,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>500 g - 1 kg:</td><td class="numeric">3,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>1 kg - 10 kg:</td><td class="numeric">4,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>10 kg 30 kg:</td><td class="numeric">7,50 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-striped shipping">
+                    <thead>
+                        <tr>
+                            <th colsapn="2">Buchsendungen in Europa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Unter 500 g:</td><td class="numeric"> 4,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Über 500 g:</td><td class="numeric"> 6,50 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <table class="table table-striped">
             <thead>
@@ -3970,23 +4032,16 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             </thead>
             <tbody>
                 <tr>
-                    <td  class="numeric">1  Buch:</td><td  class="numeric">12,50 €</td>
+                    <td>1  Buch:</td><td class="numeric">12,50 €</td>
                 </tr>
                 <tr>
-                    <td  colspan="2" class="numeric">&gt; 1 Buch - Bitte setzen Sie sich (über Kontakt / Bestellungen) mit uns in Verbindung, damit wir für Sie die Versandkosten optimieren können!</td>
+                    <td colspan="2">&gt; 1 Buch - Bitte setzen Sie sich (über Kontakt / Bestellungen) mit uns in Verbindung, damit wir für Sie die Versandkosten optimieren können!</td>
                 </tr>
-
             </tbody>
         </table>
-
-
         <div class="alert alert-info">
-
             Bei Bestellungen im Wert von über 60,00 € innerhalb Deutschland bzw. über 70,00 € innerhalb der Europäischen Union liefert der Verlag versandkostenfrei.
         </div>
-
-
-
 
     </message>
 
@@ -4022,17 +4077,24 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
                     <p>
 
-                        Widerrufsrecht:</p><p>
+                        Widerrufsrecht:
+                    </p>
+                    <p>
 
-                    Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
-                </p>
+                        Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
+                    </p>
                     <p>Der Widerruf ist zu richten an: </p>
-                    <p class="address">Universitätsverlag Göttingen, </p><p class="address">Platz der Göttinger Sieben 1, </p><p class="address">37073 Göttingen</p><p>
-                    Widerrufsfolgen:
-                </p><p>
-                    Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
-                    (Ende der Widerrufsbelehrung)
-                </p>
+                    <p class="address">Universitätsverlag Göttingen</p>
+                    <p class="address">Platz der Göttinger Sieben 1</p>
+                    <p class="address">37073 Göttingen</p>
+                    <p></p>
+                    <p>
+                        Widerrufsfolgen:
+                    </p>
+                    <p>
+                        Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
+                        (Ende der Widerrufsbelehrung)
+                    </p>
                 </div>
             </li>
             <li>
@@ -4203,6 +4265,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.dri2xhtml.METS-1.0.item-language">Sprache</message>
     <message key="xmlui.ArtifactBrowser.Navigation.browse_series">Band</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-tableofcontents">Inhalt</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-contributors">Über die Autoren/Hrsg.</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.series">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.series">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.series.column_heading"></message>
@@ -4313,7 +4376,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.dri2xhtml.structural.order-link">Warenkorb</message>
 
     <message key="xmlui.item.part">Teil </message>
-    <message key="xmlui.list.all.publications">Alle Publikationen</message>
+    <message key="xmlui.list.all.publications">Alle Publikationen  &#11166;</message>
     <message key="xmlui.dri2xhtml.default.textarea.value">Ihr Text</message>
 
 
@@ -4378,7 +4441,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
 
 
-    <message key="costrequestform">
+    <message key="xmlui.costrequest.form">
         <h2 class="page-header  first-page-header">Kostenanfrage</h2>
 
         <p>Bitte unterbreiten Sie mir ein schriftliches Angebot zur Publikation meiner Arbeit im Universitätsverlag.</p>
@@ -4397,49 +4460,29 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Name</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <div class="input-group">
                             <input name="name" placeholder="First Name, Last Name" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
                 </div>
 
-                <!-- Last name
-
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" >Last Name</label>
-                      <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                          <input name="lastname" placeholder="Last Name" class="form-control"  type="text">
-                        </div>
-                      </div>
-                    </div>-->
 
 
                 <!-- Street-->
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Address</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                        <div class="input-group">
                             <input name="address" placeholder="Street Hausnumber" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
                 </div>
 
-                <!-- Number
-                   <div class="form-group">
-                      <label class="col-md-4 control-label">Number</label>
-                      <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
-                          <input name="number" placeholder="Number" class="form-control" type="text">
-                        </div>
-                      </div>
-                    </div>-->
-
                 <!-- zip-->
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Zip</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                        <div class="input-group">
                             <input name="zip" placeholder="zip" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
@@ -4449,7 +4492,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*City</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                        <div class="input-group">
                             <input name="city" placeholder="City" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
@@ -4459,7 +4502,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">Faculty / Institute</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
+                        <div class="input-group">
                             <input name="institute" placeholder="institute" class="form-control" type="text"></input>
                         </div>
                     </div>
@@ -4468,10 +4511,10 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <!-- Phone-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Phone #</label>
+                    <label class="col-md-4 control-label">*Phone</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></span>
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text"  required="true"></input>
+                        <div class="input-group">
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text"  required="true" pattern="^[()0-9-]*"></input>
                         </div>
                     </div>
                 </div>
@@ -4479,9 +4522,9 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <!-- EMail-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Email</label>
+                    <label class="col-md-4 control-label">*Email</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+                        <div class="input-group">
                             <input name="customer_email" placeholder="email" class="form-control" type="email" required="true"></input>
                         </div>
                     </div>
@@ -4494,11 +4537,11 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Assumption of costs by</label>
                     <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span></span>
+                        <div class="input-group">
                             <select name="sponsor" class="form-control selectpicker" required="true">
-                                <option value=" ">Please select</option>
+                                <option value="">Please select</option>
                                 <option>Autor</option>
-                                <option>Institut der Universität"&gt;Institut der Universität</option>
+                                <option>Institut der Universität</option>
                                 <option>Andere Geldgeber</option>
                             </select>
                         </div>
@@ -4508,14 +4551,14 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Type of work</label>
                     <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span></span>
-                            <select name="type" class="form-control selectpicker" required="true">
-                                <option value=" ">Please select</option>
+                        <div class="input-group">
+                            <select name="publ_type" class="form-control selectpicker" required="true">
+                                <option value="">Please select</option>
                                 <option>Monographie</option>
                                 <option>Tagungsband</option>
                                 <option>Sammelband</option>
                                 <option>Dissertation</option>
-                                <option>Lehrbuc</option>
+                                <option>Lehrbuch</option>
                                 <option>Sonstige Publikatione</option>
                             </select>
                         </div>
@@ -4527,9 +4570,9 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Creator role</label>
                     <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span></span>
+                        <div class="input-group">
                             <select name="creator_type" class="form-control selectpicker" required="true">
-                                <option value=" ">Please select</option>
+                                <option value="">Please select</option>
                                 <option>Autor</option>
                                 <option>Herausgeber</option>
                             </select>
@@ -4541,42 +4584,53 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <!-- Creator First name-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Creator's Name</label>
+                    <label class="col-md-4 control-label">*Creator's Name</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <div class="input-group">
                             <input name="creator1" placeholder="First Name, Last Name" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
+                    <div>
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#creator2">more ...</button>
+                    </div>
                 </div>
+
+
 
                 <!-- creator Last name-->
 
-                <div class="form-group">
+                <div class="form-group collapse" id="creator2">
                     <label class="col-md-4 control-label">Creator's Name</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <div class="input-group">
                             <input name="creator2" placeholder="First Name, Last Name" class="form-control" type="text"></input>
                         </div>
                     </div>
-                </div>
-
-                <!-- creator Last name-->
-
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Creator's Name</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input name="creator3" placeholder="First Name, Last Name" class="form-control" type="text"></input>
-                        </div>
+                    <div>
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#creator3">more ...</button>
                     </div>
                 </div>
 
                 <!-- creator Last name-->
 
-                <div class="form-group">
+                <div class="form-group  collapse" id="creator3">
                     <label class="col-md-4 control-label">Creator's Name</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <div class="input-group">
+                            <input name="creator3" placeholder="First Name, Last Name" class="form-control" type="text"></input>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#creator4">more ...</button>
+                    </div>
+                </div>
+
+                <!-- creator Last name-->
+
+                <div class="form-group collapse" id="creator4">
+                    <label class="col-md-4 control-label">Creator's Name</label>
+                    <div class="col-md-6  inputGroupContainer">
+                        <div class="input-group">
                             <input name="creator4" placeholder="First Name, Last Name" class="form-control" type="text"></input>
                         </div>
                     </div>
@@ -4591,7 +4645,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Title of work</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                        <div class="input-group">
                             <input name="publ_title" placeholder="T" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
@@ -4599,42 +4653,34 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
                 <!-- Subtitle of work-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">*Subtitle</label>
+                    <label class="col-md-4 control-label">Subtitle</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="subtitle" placeholder="T" class="form-control" type="text" required="true"></input>
+                        <div class="input-group">
+                            <input name="subtitle" placeholder="T" class="form-control" type="text"></input>
                         </div>
                     </div>
                 </div>
 
                 <!-- Series-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Title of Series</label>
+                    <label class="col-md-4 control-label">Series</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="series_title" placeholder="Serie, Volume" class="form-control" type="text"></input>
+                        <div class="input-group">
+                            <input name="series" placeholder="Serie, Volume" class="form-control" type="text"></input>
                             <div class="help-block with-errors">Falls Ihre Publikation in einer Reihe erscheint</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Volume-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Volume</label>
-                    <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="series_volume" placeholder="S" class="form-control" type="text"></input>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Quellfile-->
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Submittal from which to create a PDF:</label>
                     <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span></span>
-                            <select name="creator_type" class="form-control selectpicker" required="true">
-                                <option value=" ">Word</option>
+                        <div class="input-group">
+                            <select name="template" class="form-control selectpicker" required="true">
+                                <option value="">Please select</option>
+                                <option>Word</option>
                                 <option>OpenOffic</option>
                                 <option>LaTeX</option>
                             </select>
@@ -4646,8 +4692,22 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Estimated number of pages:</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="extent" placeholder="S" class="form-control" type="number" required="true"></input>
+                        <div class="input-group">
+                            <input name="extent" class="form-control" type="number" required="true"></input>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print product feature-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">*Print product feature:</label>
+                    <div class="col-md-6 selectContainer">
+                        <div class="input-group">
+                            <select name="cover" class="form-control selectpicker" required="true">
+                                <option value="">Please select</option>
+                                <option>Softcover</option>
+                                <option>Hardcover</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -4656,22 +4716,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">Number of pages with coloured elements in the print version:</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="colored" placeholder="S" class="form-control" type="number"></input>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Cover-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label">*Print product feature:</label>
-                    <div class="col-md-6 selectContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span></span>
-                            <select name="cover" class="form-control selectpicker" required="true">
-                                <option value=" ">Softcover</option>
-                                <option>Hardcover</option>
-                            </select>
+                        <div class="input-group">
+                            <input name="colored" class="form-control" type="number"></input>
                         </div>
                     </div>
                 </div>
@@ -4680,9 +4726,9 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">*Number of copies for your private use</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                            <input name="copy" placeholder="S" class="form-control" type="number" required="true"></input>
-                            <div class="help-block with-errors">Beiträger, Prüfungsämter etc</div>
+                        <div class="input-group">
+                            <input name="copy" class="form-control" type="number" required="true"></input>
+                            <div class="help-block with-errors">z.B. für Beiträger, Prüfungsämter etc.</div>
                         </div>
                     </div>
                 </div>
@@ -4703,7 +4749,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">*Desired date of publication</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="issueDatePicker">
-                            <input class="form-control" name="issue" type="text" required="true"></input>
+                            <input class="form-control" name="issue_date" type="text" required="true"></input>
                             <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
                         </div>
                     </div>
@@ -4722,18 +4768,26 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     </div>
                 </div>
 
-
+                <input id="aspect_artifactbrowser_CostRequestForm_field_page" class="ds-hidden-field" name="page" type="hidden" value="http://localhost:8080/costrequest" />
 
                 <!-- Button -->
                 <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4">
-                        <button type="submit" class="btn btn-warning">Send <span class="glyphicon glyphicon-send"></span></button>
+                        <button type="submit" class="btn btn-default">Send </button>
                     </div>
                 </div>
             </fieldset>
         </form>
 
+    </message>
+
+    <message key="xmlui.costrequest.error">Das Formular konnte leider nicht abgeschickt werden.</message>
+
+    <message key="xmlui.administer.checklist">
+        <div class="collapse" id="checklist">
+            Das Formular konnte leider nicht abgeschickt werden.
+        </div>
     </message>
 
 </catalogue>

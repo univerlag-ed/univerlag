@@ -110,19 +110,7 @@
 
     <xsl:template match="dim:dim" mode="itemSummaryView-DIM">
         <div class="item-summary-view-metadata">
-            <div class="primary-data page-header ">
-                <xsl:call-template name="itemSummaryView-DIM-title"/>
-                <xsl:call-template name="itemSummaryView-DIM-othertitle"/>
-                <xsl:call-template name="itemSummaryView-DIM-authors"/>
-            </div>
-            <div class="secondary-data">
-                <xsl:call-template name="itemSummaryView-DIM-events"/>
-                <xsl:call-template name="itemSummaryView-DIM-series"/>
-                <xsl:call-template name="itemSummaryView-DIM-date"/>
-                <!-- <span>
-                    <xsl:call-template name="itemSummaryView-DIM-more"/>
-                </span> -->
-            </div>
+
 
 
             <div class="row">
@@ -140,6 +128,19 @@
                     </xsl:if>
                 </div>
                 <div class="col-sm-8">
+                    <div class="primary-data page-header ">
+                        <xsl:call-template name="itemSummaryView-DIM-title"/>
+                        <xsl:call-template name="itemSummaryView-DIM-othertitle"/>
+                        <xsl:call-template name="itemSummaryView-DIM-authors"/>
+                    </div>
+                    <div class="secondary-data">
+                        <xsl:call-template name="itemSummaryView-DIM-events"/>
+                        <xsl:call-template name="itemSummaryView-DIM-series"/>
+                        <xsl:call-template name="itemSummaryView-DIM-date"/>
+                        <!-- <span>
+                            <xsl:call-template name="itemSummaryView-DIM-more"/>
+                        </span> -->
+                    </div>
                     <xsl:call-template name="itemSummaryView-DIM-URI"/>
                     <xsl:call-template name="itemSummaryView-DIM-format-section"/>
                     <xsl:call-template name="itemSummaryView-DIM-file-section"/>
@@ -155,13 +156,13 @@
         <xsl:choose>
             <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) &gt; 1">
                 <h2 class="page-header first-page-header">
-                    <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()"/>
+                    <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()" disable-output-escaping="yes"/>
                 </h2>
                 <div class="simple-item-view-other">
                     <p class="lead">
                         <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
                             <xsl:if test="not(position() = 1)">
-                                <xsl:value-of select="./node()"/>
+                                <xsl:value-of select="./node()" disable-output-escaping="yes"/>
                                 <xsl:if test="count(following-sibling::dim:field[@element='title'][not(@qualifier)]) != 0">
                                     <xsl:text>; </xsl:text>
                                     <br/>
@@ -174,7 +175,7 @@
             </xsl:when>
             <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) = 1">
                 <h2 class="first-page-header">
-                    <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()"/>
+                    <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()" disable-output-escaping="yes"/>
                 </h2>
             </xsl:when>
             <xsl:otherwise>
@@ -189,12 +190,12 @@
     <xsl:template name="itemSummaryView-DIM-othertitle">
         <xsl:if test="dim:field[@element='title'][@qualifier='alternative']">
             <xsl:for-each select="dim:field[@element='title'][@qualifier='alternative']">
-                <h3><xsl:value-of select="." /></h3>
+                <h3><xsl:value-of select="." disable-output-escaping="yes"/></h3>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="dim:field[@element='title'][@qualifier='translated']">
             <xsl:for-each select="dim:field[@element='title'][@qualifier='translated']">
-                <h3><xsl:value-of select="." /></h3>
+                <h3><xsl:value-of select="." disable-output-escaping="yes"/></h3>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
@@ -239,7 +240,7 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-thumbnail">
-        <div class="thumbnail">
+        <div class="thumbnail"  id="thumbnail">
             <xsl:choose>
                 <xsl:when test="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']">
                     <xsl:variable name="src">
@@ -360,11 +361,11 @@
 
     <xsl:template name="itemSummaryView-DIM-URI">
         <h4>
-            <xsl:text>DOI: </xsl:text>
+
             <xsl:choose>
                 <xsl:when test="starts-with(dim:field[@element='identifier' and @qualifier='uri' and descendant::text()], '10.007')">
-
-                    <a>
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘</a><xsl:text> DOI: </xsl:text>
+                    <a id="pid">
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
                         </xsl:attribute>
@@ -372,8 +373,22 @@
                     </a>
 
                 </xsl:when>
+                <xsl:when test="dim:field[@element='intern' and @qualifier='doi']">
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘</a><xsl:text> DOI: </xsl:text>
+                    <a id="pid">
+                        <xsl:attribute name="href">
+                            <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                        </xsl:attribute>
+
+                        <xsl:value-of select="dim:field[@element='intern' and @qualifier='doi']" />
+                    </a>
+                </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="dim:field[@element='intern' and @qualifier='doi']" />
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘ </a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></strong><xsl:text>: </xsl:text>
+                    <a  id="pid">
+                        <xsl:attribute name="href"><xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/></xsl:attribute>
+                        <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/>
+                    </a>
                 </xsl:otherwise>
             </xsl:choose>
         </h4>
@@ -436,7 +451,7 @@
                 </xsl:variable>
 
                 <div class="format">
-                    <span class="gray"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></span>
+                    <span class="icon">&#128366;</span>
                     <xsl:text>&#160;</xsl:text><i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
                     <xsl:if test="not($price = '-')">
                         <xsl:value-of select="concat($price, '&#160;€')" />
@@ -447,7 +462,7 @@
                                 <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                 <a target="_blank">
                                     <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> <i18n:text>xmlui.item.amazon.order</i18n:text>
+                                    <i class="fa fa-external-link" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.amazon.order</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="starts-with(//dim:field[@element='notes' and @qualifier='printaccess'], 'http')">
@@ -456,7 +471,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> <i18n:text>xmlui.item.publisher.order</i18n:text>
+                                    <i class="fa fa-external-link" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.publisher.order</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'http:')">
@@ -465,12 +480,12 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <span class="icon">&#x21E9;&#160;</span> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>  <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <span class="icon">&#128711;&#160;</span>  <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'notavailable')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
@@ -525,7 +540,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span><xsl:text>&#160;</xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
+                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.print.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -563,7 +578,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <div class="format">
-                    <span class="gray"><span class="glyphicon glyphicon-record" aria-hidden="true"></span></span>
+                    <span class="icon">&#8857;</span>
                     <xsl:text>&#160;</xsl:text>
                     <xsl:value-of select="concat('CD-ROM ', $price)"/>
 
@@ -571,7 +586,7 @@
                         <xsl:choose>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <span class="icon">&#128711;&#160;</span> <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'http:')">
                                 <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -579,7 +594,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <span class="icon">&#x21E9;&#160;</span>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -631,7 +646,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.cdrom.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -662,7 +677,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <div class="format">
-                    <span class="gray"><span class="glyphicon glyphicon-record" aria-hidden="true"></span></span>
+                    <span class="icon">&#8857;</span>
                     <xsl:text>&#160;</xsl:text>
                     <xsl:value-of select="concat('DVD-Video ', $price)"/>
 
@@ -670,7 +685,7 @@
                         <xsl:choose>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <span class="icon shop">&#128711;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'http:')">
                                 <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -678,7 +693,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <span class="icon shop">&#x21E9;</span><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -730,7 +745,7 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:attribute>
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.dvd.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -830,7 +845,7 @@
 
 
 
-                    <span aria-hidden="true" class="glyphicon glyphicon-download"></span><xsl:text>&#160;</xsl:text>Öffnen/Herunterladen
+                    <span class="icon">&#x21E9;&#160;</span><xsl:text>&#160;</xsl:text>Öffnen/Herunterladen
 
                 </a>
             </span>
@@ -1005,7 +1020,7 @@
         <xsl:param name="context" select="."/>
         <div class="file-wrapper row">
             <div class="col-xs-6 col-sm-3">
-                <div class="thumbnail">
+                <div class="thumbnail" id="thumbnail">
                     <a class="image-link">
                         <xsl:attribute name="href">
                             <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
@@ -1169,20 +1184,17 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
-        <span class="gray">
-            <i aria-hidden="true">
-                <xsl:attribute name="class">
-                    <xsl:text>glyphicon </xsl:text>
-                    <xsl:choose>
-                        <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
-                            <xsl:text> glyphicon-lock</xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text> glyphicon-file</xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:attribute>
-            </i>
+        <span class="icon"><xsl:text>&#128441;  </xsl:text>
+            <!--<xsl:attribute name="class">
+                <xsl:choose>
+                    <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
+                        <xsl:text> &#128274;</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text> &#128441;</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>-->
         </span>
         <xsl:text> </xsl:text>
     </xsl:template>
@@ -1365,20 +1377,24 @@
                     <br />
                     <xsl:if test="//dim:field[starts-with(@qualifier,'isbn')]">
                         <span>ISBN</span><xsl:text>: </xsl:text>
-                        <xsl:choose>
-                            <xsl:when test="//dim:field[@qualifier='isbn-13']">
-                                <xsl:value-of select="//dim:field[@qualifier='isbn-13']" />
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="//dim:field[@qualifier='isbn']" />
-                            </xsl:otherwise>
+                        <span id="isbn">
+                            <xsl:choose>
+                                <xsl:when test="//dim:field[@qualifier='isbn-13']">
+                                    <xsl:value-of select="//dim:field[@qualifier='isbn-13']" />
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="//dim:field[@qualifier='isbn']" />
+                                </xsl:otherwise>
 
-                        </xsl:choose>
-                        <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
+                            </xsl:choose>
+                        </span>
+                        <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><xsl:text> </xsl:text><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
+                        <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard" class="ccb"> ⎘</a>
+
                         <br />
                     </xsl:if>
 
-                    <span>URN</span><xsl:text>: </xsl:text><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" />
+                    <span> URN</span><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard" class="ccb"> ⎘</a>
                     <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
                 </small>
             </div>
@@ -1403,50 +1419,51 @@
 
     <xsl:template match="dim:dim" mode="recentSubmissionsView-DIM">
         <xsl:variable name="itemWithdrawn" select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim/@withdrawn" />
-        <div class="thumbnail">
-            <xsl:choose>
-                <xsl:when test="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']">
-                    <xsl:variable name="src">
-                        <xsl:choose>
-                            <xsl:when test="/mets:METS/mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file[@GROUPID=../../mets:fileGrp[@USE='CONTENT']/mets:file[@GROUPID=../../mets:fileGrp[@USE='THUMBNAIL']/mets:file/@GROUPID][1]/@GROUPID]">
-                                <xsl:value-of
-                                        select="/mets:METS/mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file[@GROUPID=../../mets:fileGrp[@USE='CONTENT']/mets:file[@GROUPID=../../mets:fileGrp[@USE='THUMBNAIL']/mets:file/@GROUPID][1]/@GROUPID]/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of
-                                        select="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:variable>
-                    <img alt="Thumbnail">
-                        <xsl:attribute name="src">
-                            <xsl:value-of select="$src"/>
-                        </xsl:attribute>
-                    </img>
-                </xsl:when>
-                <xsl:otherwise>
-                    <img alt="Thumbnail">
-                        <xsl:attribute name="data-src">
-                            <xsl:text>holder.js/100%x</xsl:text>
-                            <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
-                        </xsl:attribute>
-                    </img>
-                </xsl:otherwise>
-            </xsl:choose>
-            <div class="caption">
-                <h4 class="artifact-title">
-                    <xsl:element name="a">
-                        <xsl:attribute name="href">
+        <xsl:element name="a">
+            <xsl:attribute name="href">
+                <xsl:choose>
+                    <xsl:when test="$itemWithdrawn">
+                        <xsl:value-of select="ancestor::mets:METS/@OBJEDIT" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="ancestor::mets:METS/@OBJID" />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:attribute>
+            <div class="thumbnail artifact-preview">
+                <xsl:choose>
+                    <xsl:when test="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']">
+                        <xsl:variable name="src">
                             <xsl:choose>
-                                <xsl:when test="$itemWithdrawn">
-                                    <xsl:value-of select="ancestor::mets:METS/@OBJEDIT" />
+                                <xsl:when test="/mets:METS/mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file[@GROUPID=../../mets:fileGrp[@USE='CONTENT']/mets:file[@GROUPID=../../mets:fileGrp[@USE='THUMBNAIL']/mets:file/@GROUPID][1]/@GROUPID]">
+                                    <xsl:value-of
+                                            select="/mets:METS/mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file[@GROUPID=../../mets:fileGrp[@USE='CONTENT']/mets:file[@GROUPID=../../mets:fileGrp[@USE='THUMBNAIL']/mets:file/@GROUPID][1]/@GROUPID]/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:value-of select="ancestor::mets:METS/@OBJID" />
+                                    <xsl:value-of
+                                            select="//mets:fileSec/mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
                                 </xsl:otherwise>
                             </xsl:choose>
-                        </xsl:attribute>
+                        </xsl:variable>
+                        <img alt="Thumbnail">
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="$src"/>
+                            </xsl:attribute>
+                        </img>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <img alt="Thumbnail">
+                            <xsl:attribute name="data-src">
+                                <xsl:text>holder.js/100%x</xsl:text>
+                                <xsl:value-of select="$thumbnail.maxheight"/>
+                                <xsl:text>/text:No Thumbnail</xsl:text>
+                            </xsl:attribute>
+                        </img>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <div class="caption">
+                    <h4 class="artifact-title">
+
                         <xsl:choose>
                             <xsl:when test="dim:field[@element='title']">
                                 <xsl:value-of select="dim:field[@element='title'][1]/node()"/>
@@ -1455,90 +1472,91 @@
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </xsl:element>
 
-                    <span class="Z3988">
-                        <xsl:attribute name="title">
-                            <xsl:call-template name="renderCOinS"/>
-                        </xsl:attribute>
-                        &#xFEFF; <!-- non-breaking space to force separating the end tag -->
-                    </span></h4>
 
-                <xsl:choose>
-                    <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
-                        <p>
-                            <small>
-                                <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
-                                    <span>
-                                        <xsl:if test="@authority">
-                                            <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                        <span class="Z3988">
+                            <xsl:attribute name="title">
+                                <xsl:call-template name="renderCOinS"/>
+                            </xsl:attribute>
+                            &#xFEFF; <!-- non-breaking space to force separating the end tag -->
+                        </span></h4>
+
+                    <!--<xsl:choose>
+                        <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
+                            <p>
+                                <small>
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
+                                        <span>
+                                            <xsl:if test="@authority">
+                                                <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                                            </xsl:if>
+
+                                            <xsl:copy-of select="node()"/>
+
+                                        </span>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author']) != 0">
+                                            <xsl:text>; </xsl:text>
                                         </xsl:if>
-
+                                    </xsl:for-each>
+                                </small>
+                            </p>
+                        </xsl:when>
+                        <xsl:when test="dim:field[@element='contributor'][@qualifier='editor']">
+                            <p>
+                                <small>
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='editor']">
                                         <xsl:copy-of select="node()"/>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='editor']) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                </small>
+                            </p>
+                        </xsl:when>
+                        <xsl:when test="dim:field[@element='contributor'][@qualifier='corporation']">
+                            <p>
+                                <small>
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='corporation']">
+                                        <xsl:copy-of select="node()"/>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='corporation']) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> <xsl:text>)</xsl:text>
+                                </small>
+                            </p>
+                        </xsl:when>
+                        <xsl:when test="dim:field[@element='contributor'][@qualifier='other']">
+                            <p>
+                                <small>
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='other']">
+                                        <xsl:copy-of select="node()"/>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='other']) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
+                                </small>
+                            </p>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <p>
+                                <small>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
+                                </small>
+                            </p>
+                        </xsl:otherwise>
+                    </xsl:choose> -->
 
-                                    </span>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author']) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </small>
-                        </p>
-                    </xsl:when>
-                    <xsl:when test="dim:field[@element='contributor'][@qualifier='editor']">
-                        <p>
-                            <small>
-                                <xsl:for-each select="dim:field[@element='contributor'][@qualifier='editor']">
-                                    <xsl:copy-of select="node()"/>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='editor']) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
-                                <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
-                            </small>
-                        </p>
-                    </xsl:when>
-                    <xsl:when test="dim:field[@element='contributor'][@qualifier='corporation']">
-                        <p>
-                            <small>
-                                <xsl:for-each select="dim:field[@element='contributor'][@qualifier='corporation']">
-                                    <xsl:copy-of select="node()"/>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='corporation']) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
-                                <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> <xsl:text>)</xsl:text>
-                            </small>
-                        </p>
-                    </xsl:when>
-                    <xsl:when test="dim:field[@element='contributor'][@qualifier='other']">
-                        <p>
-                            <small>
-                                <xsl:for-each select="dim:field[@element='contributor'][@qualifier='other']">
-                                    <xsl:copy-of select="node()"/>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='other']) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
-                                <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
-                            </small>
-                        </p>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <p>
-                            <small>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
-                            </small>
-                        </p>
-                    </xsl:otherwise>
-                </xsl:choose>
-
-                <!-- <p>
-                    <small>
-                    <xsl:copy-of select="dim:field[@element='date' and @qualifier='issued']/node()"/>
-                    </small>
-                </p> -->
+                    <!-- <p>
+                        <small>
+                        <xsl:copy-of select="dim:field[@element='date' and @qualifier='issued']/node()"/>
+                        </small>
+                    </p> -->
+                </div>
             </div>
-        </div>
+        </xsl:element>
     </xsl:template>
 
 </xsl:stylesheet>

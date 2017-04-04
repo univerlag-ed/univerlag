@@ -41,7 +41,9 @@
     <!--these templates are modfied to support the 2 different item list views that
     can be configured with the property 'xmlui.theme.mirage.item-list.emphasis' in dspace.cfg-->
 
+
     <xsl:template name="itemSummaryList-DIM">
+
 
         <xsl:variable name="itemWithdrawn" select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim/@withdrawn" />
 
@@ -57,19 +59,20 @@
         </xsl:variable>
 
         <xsl:variable name="emphasis" select="confman:getProperty('xmlui.theme.mirage.item-list.emphasis')"/>
+
         <xsl:choose>
 
             <xsl:when test="'file' = $emphasis">
 
 
                 <div class="item-wrapper row">
-                    <div class="col-sm-3 hidden-xs">
+                    <div class="col-sm-2 hidden-xs">
                         <xsl:apply-templates select="./mets:fileSec" mode="artifact-preview">
                             <xsl:with-param name="href" select="$href"/>
                         </xsl:apply-templates>
                     </div>
 
-                    <div class="col-sm-9">
+                    <div class="col-sm-10">
                         <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim"
                                              mode="itemSummaryList-DIM-metadata">
                             <xsl:with-param name="href" select="$href"/>
@@ -79,10 +82,29 @@
                 </div>
             </xsl:when>
             <xsl:otherwise>
+
                 <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim"
                                      mode="itemSummaryList-DIM-metadata"><xsl:with-param name="href" select="$href"/></xsl:apply-templates>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="itemCoverList-DIM">
+        <xsl:variable name="itemWithdrawn" select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim/@withdrawn" />
+
+        <xsl:variable name="href">
+            <xsl:choose>
+                <xsl:when test="$itemWithdrawn">
+                    <xsl:value-of select="@OBJEDIT"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="@OBJID"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:apply-templates select="./mets:fileSec" mode="cover-preview">
+            <xsl:with-param name="href" select="$href"/>
+        </xsl:apply-templates>
     </xsl:template>
 
     <!--handles the rendering of a single item in a list in file mode-->
@@ -97,7 +119,7 @@
                     </xsl:attribute>
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='title']">
-                            <xsl:value-of select="dim:field[@element='title'][1]/node()"/>
+                            <xsl:value-of select="dim:field[@element='title'][1]/node()" disable-output-escaping="yes"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
@@ -114,7 +136,7 @@
             <xsl:if test="//dim:field[@element='title'][@qualifier='alternative']">
                 <xsl:for-each select="//dim:field[@element='title'][@qualifier='alternative']">
                     <div><small>
-                        <xsl:value-of select="node()"/>
+                        <xsl:value-of select="node()" disable-output-escaping="yes"/>
                     </small>
                     </div>
                 </xsl:for-each>
@@ -200,8 +222,8 @@
                     </xsl:variable>
 
                     <div class="format">
-                        <span class="gray"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></span>
-                        <xsl:text>&#160;</xsl:text><i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
+                        <span class="icon">&#x1f56e;&#160;</span>
+                        <i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
                         <xsl:if test="not($price = '-')">
                             <xsl:value-of select="concat($price, '&#160;€')" />
                         </xsl:if>
@@ -211,7 +233,8 @@
                                     <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                     <a target="_blank">
                                         <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"> </span> <i18n:text>xmlui.item.amazon.order</i18n:text>
+                                        <i class="fa fa-external-link" aria-hidden="true"></i><xsl:text> </xsl:text>
+                                        <i18n:text>xmlui.item.amazon.order</i18n:text>
                                     </a>
                                 </xsl:when>
                                 <xsl:when test="starts-with(//dim:field[@element='notes' and @qualifier='printaccess'], 'http')">
@@ -220,7 +243,8 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                         </xsl:attribute>
-                                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"> </span> <i18n:text>xmlui.item.publisher.order</i18n:text>
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        <i18n:text>xmlui.item.publisher.order</i18n:text>
                                     </a>
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'http:')">
@@ -229,12 +253,13 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                         </xsl:attribute>
-                                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"> </span> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
                                     <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>  <i18n:text>xmlui.item.outofstock</i18n:text>
+                                    <span class="icon">&#128711;&#160;</span>  <i18n:text>xmlui.item.outofstock</i18n:text>
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'notavailable')">
                                     <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
@@ -289,7 +314,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> </span><xsl:text>&#160;</xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
+                                    <span class="icon sc" >&#128717;&#160;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -326,7 +351,7 @@
                         </xsl:choose>
                     </xsl:variable>
                     <div class="format">
-                        <span class="gray"><span class="glyphicon glyphicon-record" aria-hidden="true"></span></span>
+                        <span class="icon">&#8857;</span>
                         <xsl:text>&#160;</xsl:text>
                         <xsl:value-of select="concat('CD-ROM ', $price)"/>
 
@@ -334,7 +359,7 @@
                             <xsl:choose>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'outofstock')">
                                     <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                    <span class="icon">&#128711;&#160;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'http:')">
                                     <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -342,7 +367,8 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                         </xsl:attribute>
-                                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span><xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        <xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
 
@@ -394,7 +420,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                    <span class="icon sc" >&#128717;&#160;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -425,7 +451,7 @@
                         </xsl:choose>
                     </xsl:variable>
                     <div class="format">
-                        <span class="gray"><span class="glyphicon glyphicon-record" aria-hidden="true"></span></span>
+                        <span class="icon">&#8857;&#160;</span>
                         <xsl:text>&#160;</xsl:text>
                         <xsl:value-of select="concat('DVD-Video ', $price)"/>
 
@@ -433,7 +459,7 @@
                             <xsl:choose>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'outofstock')">
                                     <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                    <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                    <span class="icon">&#128711;&#160;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'http:')">
                                     <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -441,7 +467,8 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                         </xsl:attribute>
-                                        <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                                        <xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
 
@@ -493,7 +520,7 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                    <span class="icon sc" >&#128717;&#160;</span> <i18n:text>xmlui.item.dvd.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -533,53 +560,53 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <div class="format">
-                            <span class="gray"><span class="glyphicon glyphicon-file" aria-hidden="true"> </span></span>
-                            <xsl:choose>
+                            <span class="icon">&#128441;&#160;&#160;</span>
+                            <!--<xsl:choose>
                                 <xsl:when test="mets:FLocat/@xlink:label != ''">
                                     <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:label"/>
                                 </xsl:when>
-                                <xsl:otherwise>
-                                    <i18n:text>xmlui.item.online.version</i18n:text><xsl:text>, </xsl:text>
-                                    <xsl:call-template name="getFileTypeDesc">
-                                        <xsl:with-param name="mimetype">
-                                            <xsl:value-of select="substring-before(@MIMETYPE,'/')"/>
-                                            <xsl:text>/</xsl:text>
-                                            <xsl:choose>
-                                                <xsl:when test="contains(@MIMETYPE,';')">
-                                                    <xsl:value-of select="substring-before(substring-after(@MIMETYPE,'/'),';')"/>
-                                                </xsl:when>
-                                                <xsl:otherwise>
-                                                    <xsl:value-of select="substring-after(@MIMETYPE,'/')"/>
-                                                </xsl:otherwise>
-                                            </xsl:choose>
-
-                                        </xsl:with-param>
-                                    </xsl:call-template>
-                                    <!--xsl:choose>
-                                        <xsl:when test="@SIZE &lt; 1024">
-                                            <xsl:value-of select="@SIZE"/>
-                                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
-                                        </xsl:when>
-                                        <xsl:when test="@SIZE &lt; 1024 * 1024">
-                                            <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
-                                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
-                                        </xsl:when>
-                                        <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
-                                            <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
-                                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
+                                <xsl:otherwise> -->
+                            <i18n:text>xmlui.item.online.version</i18n:text><xsl:text>, </xsl:text>
+                            <xsl:call-template name="getFileTypeDesc">
+                                <xsl:with-param name="mimetype">
+                                    <xsl:value-of select="substring-before(@MIMETYPE,'/')"/>
+                                    <xsl:text>/</xsl:text>
+                                    <xsl:choose>
+                                        <xsl:when test="contains(@MIMETYPE,';')">
+                                            <xsl:value-of select="substring-before(substring-after(@MIMETYPE,'/'),';')"/>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
-                                            <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
+                                            <xsl:value-of select="substring-after(@MIMETYPE,'/')"/>
                                         </xsl:otherwise>
-                                    </xsl:choose> -->
+                                    </xsl:choose>
 
+                                </xsl:with-param>
+                            </xsl:call-template>
+                            <!--xsl:choose>
+                                <xsl:when test="@SIZE &lt; 1024">
+                                    <xsl:value-of select="@SIZE"/>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
+                                </xsl:when>
+                                <xsl:when test="@SIZE &lt; 1024 * 1024">
+                                    <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
+                                </xsl:when>
+                                <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
+                                    <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
                                 </xsl:otherwise>
-                            </xsl:choose>
+                            </xsl:choose> -->
+
+                            <!-- </xsl:otherwise>
+                        </xsl:choose> -->
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+                                <span class="icon">&#x21E9;&#160;</span> <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
                             </span>
                         </div>
                     </xsl:otherwise>
@@ -587,10 +614,10 @@
                 </xsl:choose>
             </xsl:for-each>
             <!-- sometimes there are more files. Handle them too -->
-            <xsl:for-each select="$metsDoc/mets:file[position() &gt; 1]">
+            <!--<xsl:for-each select="$metsDoc/mets:file[position() &gt; 1]">
                 <xsl:if test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=y')">
                     <div class="format">
-                        <span class="gray"><span class="glyphicon glyphicon-file" aria-hidden="true"> </span></span>
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i><xsl:text> </xsl:text>
                         <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:label"/>
                         <i18n:text>xmlui.item.online.version</i18n:text><xsl:text>, </xsl:text>
                         <xsl:call-template name="getFileTypeDesc">
@@ -616,7 +643,7 @@
                         </span>
                     </div>
                 </xsl:if>
-            </xsl:for-each>
+            </xsl:for-each> -->
 
             <!-- <xsl:if test="//dim:field[@element='notes'][@qualifier='access'] = 'onlineonly'">
                 <span class="versioninfo">
@@ -636,6 +663,7 @@
     </xsl:template>
 
     <xsl:template name="itemDetailList-DIM">
+
         <xsl:call-template name="itemSummaryList-DIM"/>
     </xsl:template>
 
@@ -665,6 +693,33 @@
                 </xsl:choose>
             </a>
         </div>
+    </xsl:template>
+
+    <xsl:template match="mets:fileSec" mode="cover-preview">
+        <xsl:param name="href"/>
+        <p class="cover-preview">
+            <a class="image-link" href="{$href}">
+                <xsl:choose>
+                    <xsl:when test="mets:fileGrp[@USE='THUMBNAIL']">
+                        <img alt="thumbnail" i18n:attr="alt">
+                            <xsl:attribute name="src">
+                                <xsl:value-of
+                                        select="mets:fileGrp[@USE='THUMBNAIL']/mets:file/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
+                            </xsl:attribute>
+                        </img>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <img alt="thumbnail" i18n:attr="alt">
+                            <xsl:attribute name="data-src">
+                                <xsl:text>holder.js/100%x</xsl:text>
+                                <xsl:value-of select="$thumbnail.maxheight"/>
+                                <xsl:text>/text:No Thumbnail</xsl:text>
+                            </xsl:attribute>
+                        </img>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </a>
+        </p>
     </xsl:template>
 
 

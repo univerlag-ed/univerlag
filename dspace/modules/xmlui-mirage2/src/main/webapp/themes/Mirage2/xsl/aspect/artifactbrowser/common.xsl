@@ -21,27 +21,27 @@
 -->
 
 <xsl:stylesheet
-    xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
-    xmlns:dri="http://di.tamu.edu/DRI/1.0/"
-    xmlns:mets="http://www.loc.gov/METS/"
-    xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
-    xmlns:xlink="http://www.w3.org/TR/xlink/"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
-    xmlns:atom="http://www.w3.org/2005/Atom"
-    xmlns:ore="http://www.openarchives.org/ore/terms/"
-    xmlns:oreatom="http://www.openarchives.org/ore/atom/"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xalan="http://xml.apache.org/xalan"
-    xmlns:encoder="xalan://java.net.URLEncoder"
-    xmlns:confman="org.dspace.core.ConfigurationManager"
-    exclude-result-prefixes="i18n dri mets dim xlink xsl xalan encoder confman">
+        xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+        xmlns:dri="http://di.tamu.edu/DRI/1.0/"
+        xmlns:mets="http://www.loc.gov/METS/"
+        xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+        xmlns:xlink="http://www.w3.org/TR/xlink/"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+        xmlns:atom="http://www.w3.org/2005/Atom"
+        xmlns:ore="http://www.openarchives.org/ore/terms/"
+        xmlns:oreatom="http://www.openarchives.org/ore/atom/"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:xalan="http://xml.apache.org/xalan"
+        xmlns:encoder="xalan://java.net.URLEncoder"
+        xmlns:confman="org.dspace.core.ConfigurationManager"
+        exclude-result-prefixes="i18n dri mets dim xlink xsl xalan encoder confman">
 
     <xsl:output indent="yes"/>
 
-<!-- These templates are devoted to handling the referenceSet and reference elements. Although they are considered
-    structural elements, neither of the two contains actual content. Instead, references contain references
-    to object metadata under objectMeta, while referenceSets group references together.
--->
+    <!-- These templates are devoted to handling the referenceSet and reference elements. Although they are considered
+        structural elements, neither of the two contains actual content. Instead, references contain references
+        to object metadata under objectMeta, while referenceSets group references together.
+    -->
 
 
     <!-- Starting off easy here, with a summaryList -->
@@ -99,9 +99,11 @@
 
         <xsl:apply-templates select="dri:head"/>
         <!-- Here we decide whether we have a hierarchical list or a flat one -->
+
         <xsl:choose>
             <xsl:when test="descendant-or-self::dri:referenceSet/@rend='hierarchy' or ancestor::dri:referenceSet/@rend='hierarchy'">
                 <ul class="ds-artifact-list list-unstyled">
+
                     <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
                 </ul>
             </xsl:when>
@@ -111,9 +113,58 @@
                 </div>
             </xsl:when>
             <xsl:otherwise>
-                <ul class="ds-artifact-list list-unstyled">
-                    <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
-                </ul>
+                <xsl:choose>
+                    <xsl:when test="contains(//dri:metadata[@qualifier='queryString'], 'view=cover')" >
+                        <div class="hidden-xs visible-sm visible-md visible-lg">
+                            <a title="Deckblatt-Ansicht">
+
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'] )"/>
+                                </xsl:attribute>
+                                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                            </a><xsl:text> </xsl:text>
+                            <a title="Listen-Ansicht">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', substring-before(//dri:metadata[@qualifier='queryString'], 'view'))"/>
+                                </xsl:attribute>
+
+                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                            </a>
+
+                            <div class="container-fluid covers">
+                                <div class="row">
+                                    <xsl:apply-templates select="*[not(name()='head')]" mode="coverList"/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:if test="not(contains(//dri:metadata[@qualifier='queryString'], 'type=author'))">
+                            <div class="hidden-xs visible-sm visible-md visible-lg">
+                                <a title="Deckblatt-Ansicht">
+
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'], '&amp;view=cover')"/>
+                                    </xsl:attribute>
+                                    <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                </a><xsl:text> </xsl:text>
+                                <a title="Listen-Ansicht">
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'])"/>
+                                    </xsl:attribute>
+
+                                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </xsl:if>
+
+                        <ul class="ds-artifact-list list-unstyled">
+                            <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
+                        </ul>
+                    </xsl:otherwise>
+                </xsl:choose>
+
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -211,7 +262,22 @@
         is provided then the logical structType will be rendered, otherwise none will. The default operation is to
         render all structure types.
     -->
-
+    <xsl:template match="dri:reference" mode="coverList">
+        <xsl:variable name="externalMetadataURL">
+            <xsl:text>cocoon:/</xsl:text>
+            <xsl:value-of select="@url"/>
+            <!-- Since this is a summary only grab the descriptive metadata, and the thumbnails -->
+            <xsl:text>?sections=dmdSec,fileSec&amp;fileGrpTypes=THUMBNAIL</xsl:text>
+            <!-- An example of requesting a specific metadata standard (MODS and QDC crosswalks only work for items)->
+            <xsl:if test="@type='DSpace Item'">
+                <xsl:text>&amp;dmdTypes=DC</xsl:text>
+            </xsl:if>-->
+        </xsl:variable>
+        <xsl:comment> External Metadata URL: <xsl:value-of select="$externalMetadataURL"/> </xsl:comment>
+        <div class="col-xs-6 col-md-3">
+            <xsl:apply-templates select="document($externalMetadataURL)" mode="coverList"/>
+        </div>
+    </xsl:template>
     <!-- Then we resolve the reference tag to an external mets object -->
     <xsl:template match="dri:reference" mode="summaryList">
         <xsl:variable name="externalMetadataURL">
@@ -302,6 +368,10 @@
         </xsl:choose>
     </xsl:template>
 
+    <xsl:template match="mets:METS[mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']]" mode="coverList">
+        <xsl:call-template name="itemCoverList-DIM"/>
+    </xsl:template>
+
     <!--
         The detailList display type; used to generate simple surrogates for the item involved, but with
         a slightly higher level of information provided. Not commonly used.
@@ -331,6 +401,7 @@
     <xsl:template match="mets:METS[mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']]" mode="summaryView">
         <xsl:choose>
             <xsl:when test="@LABEL='DSpace Item'">
+
                 <xsl:call-template name="itemSummaryView-DIM"/>
             </xsl:when>
             <xsl:when test="@LABEL='DSpace Collection'">
@@ -379,8 +450,8 @@
             </xsl:if>-->
         </xsl:variable>
         <xsl:comment> External Metadata URL: <xsl:value-of select="$externalMetadataURL"/> </xsl:comment>
-            <xsl:apply-templates select="document($externalMetadataURL)" mode="recent-submissions-list"/>
-            <xsl:apply-templates />
+        <xsl:apply-templates select="document($externalMetadataURL)" mode="recent-submissions-list"/>
+        <xsl:apply-templates />
     </xsl:template>
 
     <xsl:template match="mets:METS[mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']]" mode="recent-submissions-list">

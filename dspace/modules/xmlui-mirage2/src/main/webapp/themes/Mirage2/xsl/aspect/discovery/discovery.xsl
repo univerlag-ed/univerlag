@@ -40,12 +40,14 @@
         <xsl:apply-templates select="*[not(name()='head')]" mode="dsoList"/>
     </xsl:template>
 
+
     <xsl:template match="dri:p[@rend='recentSubmissionViewMore']">
         <p>
             <xsl:attribute name="id"><xsl:value-of select="@id" /></xsl:attribute>
             <xsl:attribute name="class"><xsl:value-of select="concat('ds-paragraph ', @rend)" /></xsl:attribute>
             <a>
-                <xsl:attribute name="href"><xsl:value-of select="concat(substring-before(./dri:xref/@target, 'recent-submissions'), 'browse?order=DESC&amp;sort_by=4&amp;type=dateissued')" /></xsl:attribute>
+                <xsl:attribute name="class"><xsl:text>pull-right</xsl:text></xsl:attribute>
+                <xsl:attribute name="href"><xsl:value-of select="concat(substring-before(./dri:xref/@target, 'recent-submissions'), 'browse?order=DESC&amp;sort_by=3&amp;type=dateissued')" /></xsl:attribute>
                 <i18n:text>xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more</i18n:text>
             </a>
         </p>
@@ -209,7 +211,7 @@
                     </h4>
                 </xsl:element>
                 <div class="artifact-info">
-                    <span class="author h4">    <small>
+                    <span class="author">
                         <xsl:choose>
                             <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.author'))]">
                                 <span>
@@ -329,7 +331,7 @@
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </small></span>
+                    </span>
                     <xsl:text> </xsl:text>
                     <xsl:if test="dri:list[@n=(concat($handle, ':dc.date.issued'))]">
                         <span class="publisher-date h4">   <small>

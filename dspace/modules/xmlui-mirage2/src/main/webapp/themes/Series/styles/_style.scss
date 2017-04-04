@@ -36,7 +36,7 @@ header .navbar-default {
 
 
 .first-page-header {
-  color: #193364;
+    color: #193364;
 }
 
 .trail-wrapper {
@@ -63,6 +63,10 @@ header .navbar-logo img {
 .trail-bottom {
     height: 2em;
     background: #fff url('../images/raster.gif') repeat-x bottom;
+}
+
+ul.unstyled {
+    list-style: none;
 }
 
 .list-group {
@@ -131,7 +135,7 @@ a.list-group-item {
 }
 
 .media .media-left .media-object {
-  max-width: 60px;
+    max-width: 60px;
 }
 
 .access.order {
@@ -169,6 +173,7 @@ a.list-group-item {
 .relation {
     display: inline-block;
     font-weight: bold;
+    font-size: small;
 }
 
 .dateissued {
@@ -200,16 +205,17 @@ ul#myTab li a {
     text-shadow: 0px 1px 0px #565252;
 }
 
+#aspect_discovery_Navigation_list_discovery .list-group-item.ds-option {
+    margin-left: 10px;
+}
+
 .item-wrapper {
     margin-bottom: 5%;
 }
 
 .caption .artifact-title{
     font-size: small;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+//    width: 100%;
 }
 
 #thumbnail {
@@ -228,6 +234,66 @@ ul#myTab li a {
     color: gray;
 }
 
+.glyphicon.glyphicon-home {
+    font-size: small;
+}
+#file_news_div_news .row {
+    margin-bottom: 20px;
+}
+
+.artifact-info .abstract {
+    font-size: small;
+    text-align: justify;
+}
+
 .simple-item-view-collections.item-page-field-wrapper.table {
     margin-top: 2em;
+    border-top: 1px solid #eee;
+}
+
+.box {
+    margin: 10px 50px 10px 30px;
+    text-align: justify;
+}
+
+.address {
+    margin: 0;
+}
+
+.dl-horizontal dt {
+    width: 360px;
+    white-space: normal;
+    overflow: visible;
+}
+
+.dl-horizontal dd {
+    margin-left: 380px;
+}
+
+.item {
+    padding: 10px 0 20px 0;
+}
+
+.contact h4 {
+    margin-top:30px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+#static {
+    text-align: justify;
+    margin-left: -25px;
+    margin-right: 10px;
+}
+
+.numeric {
+    white-space: nowrap;
+}
+
+.alert-info {
+    background-color: #fff;
+    border-color: #193364;
+    color: #193364;
 }

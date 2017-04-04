@@ -31,7 +31,7 @@
                 exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc">
 
     <xsl:output indent="yes"/>
-
+    <xsl:param name="error"></xsl:param>
     <!-- First and foremost come the div elements, which are the only elements directly under body. Every
     document has a body and every body has at least one div, which may in turn contain other divs and
     so on. Divs can be of two types: interactive and non-interactive, as signified by the attribute of
@@ -50,9 +50,19 @@
             <xsl:with-param name="position">top</xsl:with-param>
         </xsl:apply-templates>
         <div>
-            <xsl:call-template name="standardAttributes">
-                <xsl:with-param name="class">ds-static-div</xsl:with-param>
-            </xsl:call-template>
+            <!-- do not overwrite class in static files -->
+            <xsl:choose>
+                <xsl:when test="@rend = 'copy'">
+                    <xsl:call-template name="copy-attributes"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:call-template name="standardAttributes">
+                        <xsl:with-param name="class">ds-static-div</xsl:with-param>
+                    </xsl:call-template>
+                </xsl:otherwise>
+            </xsl:choose>
+
+
             <xsl:choose>
                 <!--  does this element have any children -->
                 <xsl:when test="child::node()">
@@ -504,7 +514,12 @@
     <xsl:template match="dri:xref">
         <a>
             <xsl:if test="@target">
-                <xsl:attribute name="href"><xsl:value-of select="@target"/></xsl:attribute>
+                <xsl:attribute name="href"><xsl:value-of select="@target"/>
+                    <!-- handle cover view in alphabet menu -->
+                    <xsl:if test="contains(@target, 'type=title') and contains(//dri:metadata[@qualifier='queryString'], 'view=cover')">
+                        <xsl:text>&amp;view=cover</xsl:text>
+                    </xsl:if>
+                </xsl:attribute>
             </xsl:if>
 
             <xsl:if test="@rend">
@@ -565,7 +580,10 @@
     <xsl:template match="dri:div[@interactive='yes']" priority="2">
         <xsl:choose>
             <xsl:when test="@n='costrequest-form'">
-                <i18n:text>costrequestform</i18n:text>
+                <!-- <xsl:text>PARAMETER: [</xsl:text><xsl:value-of select="$error" /><xsl:text>]</xsl:text> -->
+
+                <i18n:text>xmlui.costrequest.form</i18n:text>
+
             </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates select="@pagination">
@@ -778,5 +796,13 @@
         <xsl:apply-templates select="dri:item/dri:field"/>
     </xsl:template>
 
-
+    <xsl:template name="copy-attributes">
+        <xsl:for-each select="@*">
+            <xsl:if test="name(.) != 'rend'">
+                <xsl:attribute name="{name(.)}">
+                    <xsl:value-of select="."/>
+                </xsl:attribute>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
 </xsl:stylesheet>

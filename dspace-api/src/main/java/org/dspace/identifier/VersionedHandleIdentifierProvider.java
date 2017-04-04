@@ -483,7 +483,16 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
         }
 
         if(handleId==null)
+        {
+            Item item = (Item)dso;
+             String internId = item.getDC("identifier", "intern", Item.ANY)[0].value;
+             String handlePrefix = getPrefix();
+             handleId =  handlePrefix + (handlePrefix.endsWith("/") ? "" : "/") + internId;
+        }
+        else {
             handleId = createId(handle.getIntColumn("handle_id"));
+        }
+
 
         modifyHandleRecord(context, dso, handle, handleId);
 
@@ -628,7 +637,9 @@ public class VersionedHandleIdentifierProvider extends IdentifierProvider {
     protected void populateHandleMetadata(Item item)
             throws SQLException, IOException, AuthorizeException
     {
-        String handleref = getCanonicalForm(getCanonical(item));
+        //String handleref = getCanonicalForm(getCanonical(item));
+        String handle = item.getDC("identifier", "intern", Item.ANY)[0].value;
+        String handleref = getCanonicalForm(handle);
 
         // Add handle as identifier.uri DC value.
         // First check that identifier doesn't already exist.
