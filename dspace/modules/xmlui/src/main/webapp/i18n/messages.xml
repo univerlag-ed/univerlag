@@ -2732,7 +2732,7 @@ Das Team vom Universitätsverlag Göttingen
         </p>
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">&#11164; Aktuelles</a>
+                <a href="/news">&#11164; Aktuelles</a>&#160;<i class="icon-attantion-circeled"></i>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog &#11166;</a>
@@ -2961,55 +2961,145 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             <p>Informationen zur Arbeit des Herausgebergremiums finden Sie im <a href="/documents/Definition der Sparten_110201.pdf">Text zur „Definition der Sparten“ [pdf]</a>.
             </p>
         </div>
-        <dl class="dl-horizontal">
-            <dt>Theologische Fakultät</dt>
-            <dd>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"></a><span class="glyphicon glyphicon-home">
-                <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;</a></span></dd>
 
-            <dt>Juristische Fakultät</dt>
-            <dd>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"> &#160;</a></dd>
-            <dd>Prof. Dr. Joachim Münch <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"> &#160;</a></span></dd>
+        <!--<dl class="dl-horizontal">
+			<dt>Theologische Fakultät</dt>
+			<dd>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"></a><span class="glyphicon glyphicon-home">
+				<a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;</a></span></dd>
 
-            <dt>Universitätsmedizin Göttingen (UMG)</dt>
-            <dd>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"> &#160;</a></dd>
+			<dt>Juristische Fakultät</dt>
+			<dd>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"> &#160;</a></dd>
+			<dd>Prof. Dr. Joachim Münch <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"> &#160;</a></span></dd>
 
-            <dt>Philosophische Fakultät</dt>
-            <dd>Prof. Dr. Manfred Jakubowski-Tiessen <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> &#160;</a></span></dd>
-            <dd>Prof. Dr. Regina Bendix <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"> &#160;</a><a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"> &#160;</a></span></dd>
+			<dt>Universitätsmedizin Göttingen (UMG)</dt>
+			<dd>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"> &#160;</a></dd>
 
-            <dt>Fakultät für Mathematik und Informatik</dt>
-            <dd>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"> &#160;</a></dd>
+			<dt>Philosophische Fakultät</dt>
+			<dd>Prof. Dr. Manfred Jakubowski-Tiessen <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> &#160;</a></span></dd>
+			<dd>Prof. Dr. Regina Bendix <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"> &#160;</a><a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"> &#160;</a></span></dd>
 
-            <dt>Fakultät für Physik</dt>
-            <dd>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="http://www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></dd>
+			<dt>Fakultät für Mathematik und Informatik</dt>
+			<dd>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"> &#160;</a></dd>
 
-            <dt>Fakultät für Chemie</dt>
-            <dd>Prof. Dr. Konrad Koszinowski <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"> &#160;</a></span></dd>
+			<dt>Fakultät für Physik</dt>
+			<dd>apl. Prof. Dr. Martin Rein </dd>
 
-            <dt>Fakultät für Geowissenschaften und Geographie</dt>
-            <dd>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"> &#160;</a>
-                <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"> &#160;</a></span></dd>
+	<dt>Fakultät für Chemie</dt>
+	<dd>Prof. Dr. Konrad Koszinowski <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"> &#160;</a></span></dd>
 
-            <dt>Fakultät für Biologie und Psychologie</dt>
-            <dd>Prof. Dr. Erwin Bergmeier <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"> &#160;</a></span></dd>
+	<dt>Fakultät für Geowissenschaften und Geographie</dt>
+	<dd>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"> &#160;</a>
+		<span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"> &#160;</a></span></dd>
 
-            <dt>Fakultät für Forstwissenschaften und Waldökologie</dt>
-            <dd>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"> &#160;</a></dd>
+	<dt>Fakultät für Biologie und Psychologie</dt>
+	<dd>Prof. Dr. Erwin Bergmeier <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"> &#160;</a></span></dd>
 
-            <dt>Fakultät für Agrarwissenschaften</dt>
-            <dd>Prof. Dr. Martina Gerken</dd>
+	<dt>Fakultät für Forstwissenschaften und Waldökologie</dt>
+	<dd>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"> &#160;</a></dd>
 
-            <dt>Wirtschaftswissenschaftliche Fakultät</dt>
-            <dd>Prof. Dr. Matthias Schumann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"> &#160;</a></span></dd>
+	<dt>Fakultät für Agrarwissenschaften</dt>
+	<dd>Prof. Dr. Martina Gerken</dd>
 
-            <dt>Sozialwissenschaftliche Fakultät</dt>
-            <dd>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></dd>
-            <dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></dd>
+	<dt>Wirtschaftswissenschaftliche Fakultät</dt>
+	<dd>Prof. Dr. Matthias Schumann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"> &#160;</a></span></dd>
 
-            <dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
-            <dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
-            </dd>
-        </dl>
+	<dt>Sozialwissenschaftliche Fakultät</dt>
+	<dd>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></dd>
+
+	<dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
+	<dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
+	</dd>
+</dl>
+-->
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Theologische Fakultät</h4>
+                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"></a>
+                    <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;<span class="glyphicon glyphicon-home"></span></a>
+                </p>
+            </div>
+            <div class="col-sm-6">
+
+                <h4 class="list-item-header">Juristische Fakultät</h4>
+                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"> &#160;</a></p>
+                <p>Prof. Dr. Joachim Münch <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"> &#160;</a></span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Universitätsmedizin Göttingen (UMG)</h4>
+                <p>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"> &#160;</a></p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Philosophische Fakultät</h4>
+                <p>Prof. Dr. Manfred Jakubowski-Tiessen <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> &#160;</a></span></p>
+                <p>Prof. Dr. Regina Bendix <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"> &#160;</a><a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"> &#160;</a></span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Mathematik und Informatik</h4>
+                <p>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"> &#160;</a></p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Physik</h4>
+                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="http://www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Chemie</h4>
+                <p>Prof. Dr. Konrad Koszinowski <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"> &#160;</a></span></p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Geowissenschaften und Geographie</h4>
+                <p>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"> &#160;</a>
+                    <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"> &#160;</a></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Biologie und Psychologie</h4>
+                <p>Prof. Dr. Erwin Bergmeier <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"> &#160;</a></span></p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Forstwissenschaften und Waldökologie</h4>
+                <p>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"> &#160;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Fakultät für Agrarwissenschaften</h4>
+                <p>Prof. Dr. Martina Gerken</p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Wirtschaftswissenschaftliche Fakultät</h4>
+                <p>Prof. Dr. Matthias Schumann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"> &#160;</a></span></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
+                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
+                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></p>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</h4>
+                <p>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span></p>
+            </div>
+        </div>
+
 
     </message>
 

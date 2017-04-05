@@ -75,18 +75,68 @@
             </ul>
         </nav> -->
 
+        <!-- TEMPLATE
+         <h3 class="list-item-header">2017</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
+                        <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2016</strong></span>
+                        <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        -->
+
         <h3 class="list-item-header">2016</h3>
 
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Wintersemester</p>
-                <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
+                        <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+                    </div>
+                </div>
 
             </div>
             <div class="col-sm-6">
-                <p>Sommersemester</p>
-                <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2016</strong></span>
+                        <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -95,13 +145,28 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Wintersemester</p>
-                <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-15-16.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2015/16</strong></span>
+                        <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+                    </div>
+                </div>
 
             </div>
             <div class="col-sm-6">
-                <p>Sommersemester</p>
-                <p><a href="/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-15.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2015</strong></span>
+                        <p><a href="/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -110,278 +175,299 @@
         <div class="row">
             <div class="col-sm-6">
 
-                <p>Wintersemester</p>
-                <p><a href="/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
-
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-14-15.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2014/15</strong></span>
+                        <p><a href="/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-6">
-                <p>Sommersemester</p>
-                <p><a href="/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-14.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2014</strong></span>
+                        <p><a href="/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
+        <h3 class="list-item-header">2013</h3>
 
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-13-14.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
+                        <p><a href="/info/13-14">Kommunikation &amp; Kulturtransfer in der Personalunion</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
-                <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-13.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2013</strong></span>
+                        <p><a href="/info/13">DIE GRIMMS...in Wort und Tat</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
+        <h3 class="list-item-header">2012</h3>
 
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-12-13.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2012/13</strong></span>
+                        <p><a href="/info/12-13">»Sie befruchtet und ziert«</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2016</strong></span>
-                <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-12.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2012</strong></span>
+                        <p><a href="/info/13">Tradition - Autonomie - Innovation</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2011</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-11-12.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2011/12</strong></span>
+                        <p><a href="/info/11-12">Miteinander - Füreinander? Sozialverhalten von Affen und Menschen</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2015/16</strong></span>
-                <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-11.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2011</strong></span>
+                        <p><a href="/info/11">CHEMIE - unser Leben, unsere Zukunft!</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
+        <h3 class="list-item-header">2010</h3>
 
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-15.jpg" class="media-object" alt="poster"></img>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-10-11.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2010/11</strong></span>
+                        <p><a href="/info/10-11">Vom Nutzen des Nutzlosen - Vom Spiel zum Produkt</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2015</strong></span>
-                <p><a href="/info/15">OSTASIEN und die Macht heiliger Klänge</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-10.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2010</strong></span>
+                        <p><a href="/info/10">„Arbeit am Mythos“: Leistung und Grenze des Mythos in Antike und Gegenwart</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-14-15.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2009</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-09-10.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2009/10</strong></span>
+                        <p><a href="/info/09-10">„Wozu Theologie?“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2014/15</strong></span>
-                <p><a href="/info/14-15">UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-09.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2009</strong></span>
+                        <p><a href="/info/09">„Wissenschaftliche Politikberatung“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-14.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2008</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-08-09.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2008/09</strong></span>
+                        <p><a href="/info/08-09">„300 Jahre Albrecht von Haller – Genialität, Internationalität, Exzellenz“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2014</strong></span>
-                <p><a href="/info/14">Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-08.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2008</strong></span>
+                        <p><a href="/info/08">„Der Weg an die Universität - Höhere Frauenbildung vom Mittelalter bis zum Ende des Zweiten Weltkriegs“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-13-14.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2007</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-07-08.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2007/08</strong></span>
+                        <p><a href="/info/07-08">„Evolution - Zufall und Zwangsläufigkeit der Schöpfung“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
-                <p><a href="/info/13-14">Kommunikation &amp; Kulturtransfer in der Personalunion</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-07.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2007</strong></span>
+                        <p><a href="/info/07">„Vorsehung, Schicksal und göttliche Macht“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-13.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2006</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-06-07.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2006/07</strong></span>
+                        <p><a href="/info/06-07">„Bilderwelten — Vom farbigen Abglanz der Natur“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2013</strong></span>
-                <p><a href="/info/13">DIE GRIMMS...in Wort und Tat</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-06.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2006</strong></span>
+                        <p><a href="/info/06">„Bildung - Lernen: Humanistische Ideale, gesellschaftliche Notwendigkeiten, wissenschaftliche Erkenntnisse“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-12-13.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2005</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-05-06.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2005/06</strong></span>
+                        <p><a href="/info/05-06">„Materialien im Wandel der Zeit“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2012/13</strong></span>
-                <p><a href="/info/12-13">»Sie befruchtet und ziert«</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-05.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2005</strong></span>
+                        <p><a href="/info/06">„Carl Friedrich Gauß - Werk und Wirkung“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-12.jpg" class="media-object" alt="poster"></img>
+        <h3 class="list-item-header">2004</h3>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-04-05.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2004/05</strong></span>
+                        <p><a href="/info/04-05">„»... sind eben alles Menschen« - Verhalten zwischen Zwang, Freiheit und Verantwortung“</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2012</strong></span>
-                <p><a href="/info/13">Tradition - Autonomie - Innovation</a></p>
+            <div class="col-sm-6">
+                <div class="media">
+                    <div class="media-left hidden-xs">
+                        <img src="/static/images/ring/cover-04.jpg" class="media-object" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2004</strong></span>
+                        <p><a href="/info/04">„Amerika und Deutschland - Ambivalente Begegnungen?“</a></p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-11-12.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2011/12</strong></span>
-                <p><a href="/info/11-12">Miteinander - Füreinander? Sozialverhalten von Affen und Menschen</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-11.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2011</strong></span>
-                <p><a href="/info/11">CHEMIE - unser Leben, unsere Zukunft!</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-10-11.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2010/11</strong></span>
-                <p><a href="/info/10-11">Vom Nutzen des Nutzlosen - Vom Spiel zum Produkt</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-10.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2010</strong></span>
-                <p><a href="/info/10">„Arbeit am Mythos“: Leistung und Grenze des Mythos in Antike und Gegenwart</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-09-10.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2009/10</strong></span>
-                <p><a href="/info/09-10">„Wozu Theologie?“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-09.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2009</strong></span>
-                <p><a href="/info/09">„Wissenschaftliche Politikberatung“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-08-09.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2008/09</strong></span>
-                <p><a href="/info/08-09">„300 Jahre Albrecht von Haller – Genialität, Internationalität, Exzellenz“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-08.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2008</strong></span>
-                <p><a href="/info/08">„Der Weg an die Universität - Höhere Frauenbildung vom Mittelalter bis zum Ende des Zweiten Weltkriegs“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-07-08.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2007/08</strong></span>
-                <p><a href="/info/07-08">„Evolution - Zufall und Zwangsläufigkeit der Schöpfung“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-07.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2007</strong></span>
-                <p><a href="/info/07">„Vorsehung, Schicksal und göttliche Macht“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-06-07.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2006/07</strong></span>
-                <p><a href="/info/06-07">„Bilderwelten — Vom farbigen Abglanz der Natur“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-06.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2006</strong></span>
-                <p><a href="/info/06">„Bildung - Lernen: Humanistische Ideale, gesellschaftliche Notwendigkeiten, wissenschaftliche Erkenntnisse“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-05-06.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2005/06</strong></span>
-                <p><a href="/info/05-06">„Materialien im Wandel der Zeit“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-05.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2005</strong></span>
-                <p><a href="/info/06">„Carl Friedrich Gauß - Werk und Wirkung“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-04-05.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Wintersemester 2004/05</strong></span>
-                <p><a href="/info/04-05">„»... sind eben alles Menschen« - Verhalten zwischen Zwang, Freiheit und Verantwortung“</a></p>
-            </div>
-        </div>
-
-        <div class="media">
-            <div class="media-left hidden-xs">
-                <img src="/static/images/ring/cover-04.jpg" class="media-object" alt="poster"></img>
-            </div>
-            <div class="media-body">
-                <span class="media-heading"><strong>Sommersemester 2004</strong></span>
-                <p><a href="/info/04">„Amerika und Deutschland - Ambivalente Begegnungen?“</a></p>
-            </div>
-        </div>
 
         <p class="paragraph">
             Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universität und auch zu den Video-Mitschnitten der einzelnen Vorträge finden Sie auf der Seite der aktuellen Vortragsreihe.

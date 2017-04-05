@@ -432,7 +432,7 @@ h6 .small,
   .table-striped > tbody > tr:nth-child(2n+1),
   .recent-submission,
   .thumbnail, .panel-default > .panel-heading,
-  div.ds-static-div.primary .ds-artifact-list .ds-artifact-item
+  div.ds-static-div.primary .ds-artifact-list .ds-artifact-item,
   .badge, .btn-default,
   .nav-tabs li.active a, .nav-tabs > li.active > a,
   .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
@@ -509,13 +509,21 @@ h6 .small,
     background-color: inherit;
     border:none;
   }
+  i {
+    font-size: 18px;
+    color: gray;
+  }
 
+  .icon-shopping-cart {
+    font-size: 22px;
+  }
 
 }
 .list-group-item-heading
 {
   font-weight:bold;
 }
+
 
 @media (min-width: 992px) {
   .container > .navbar-header {

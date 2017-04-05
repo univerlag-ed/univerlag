@@ -194,6 +194,7 @@
             </xsl:for-each>
             <!-- <link rel="stylesheet" href="{concat($theme-path, 'styles/font-awesome-4.7.0/css/font-awesome.min.css')}"/> -->
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
+            <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/main.css')}"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">

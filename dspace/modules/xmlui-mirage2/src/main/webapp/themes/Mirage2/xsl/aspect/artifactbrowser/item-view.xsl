@@ -364,7 +364,7 @@
 
             <xsl:choose>
                 <xsl:when test="starts-with(dim:field[@element='identifier' and @qualifier='uri' and descendant::text()], '10.007')">
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘</a><xsl:text> DOI: </xsl:text>
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><xsl:text> DOI: </xsl:text>
                     <a id="pid">
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
@@ -374,7 +374,7 @@
 
                 </xsl:when>
                 <xsl:when test="dim:field[@element='intern' and @qualifier='doi']">
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘</a><xsl:text> DOI: </xsl:text>
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><xsl:text> DOI: </xsl:text>
                     <a id="pid">
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
@@ -384,7 +384,7 @@
                     </a>
                 </xsl:when>
                 <xsl:otherwise>
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard" class="ccb">⎘ </a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></strong><xsl:text>: </xsl:text>
+                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></strong><xsl:text>: </xsl:text>
                     <a  id="pid">
                         <xsl:attribute name="href"><xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/></xsl:attribute>
                         <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/>
@@ -480,12 +480,12 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <span class="icon">&#x21E9;&#160;</span> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download"></i>&#160; <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="icon">&#128711;&#160;</span>  <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <i class="icon-block"></i>&#160;  <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'notavailable')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
@@ -540,7 +540,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.print.order</i18n:text>
+                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.print.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -578,7 +578,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <div class="format">
-                    <span class="icon">&#8857;</span>
+                    <i class="icon-cd"></i>&#160;
                     <xsl:text>&#160;</xsl:text>
                     <xsl:value-of select="concat('CD-ROM ', $price)"/>
 
@@ -586,7 +586,7 @@
                         <xsl:choose>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="icon">&#128711;&#160;</span> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <i class="icon-block"></i>&#160; <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='cdromaccess'], 'http:')">
                                 <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -594,7 +594,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                     </xsl:attribute>
-                                    <span class="icon">&#x21E9;&#160;</span>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -646,7 +646,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.cdrom.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -677,7 +677,7 @@
                     </xsl:choose>
                 </xsl:variable>
                 <div class="format">
-                    <span class="icon">&#8857;</span>
+                    <i class="icon-cd"></i>
                     <xsl:text>&#160;</xsl:text>
                     <xsl:value-of select="concat('DVD-Video ', $price)"/>
 
@@ -685,7 +685,7 @@
                         <xsl:choose>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <span class="icon shop">&#128711;</span><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <i class="icon-shoppint-block"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'http:')">
                                 <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -693,7 +693,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                     </xsl:attribute>
-                                    <span class="icon shop">&#x21E9;</span><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-shoppint-cart"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -745,7 +745,7 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:attribute>
-                                <span class="icon sc">&#128717;&#160;</span> <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.dvd.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -845,7 +845,7 @@
 
 
 
-                    <span class="icon">&#x21E9;&#160;</span><xsl:text>&#160;</xsl:text>Öffnen/Herunterladen
+                    <i class="icon-download"></i>&#160;<xsl:text>&#160;</xsl:text>Öffnen/Herunterladen
 
                 </a>
             </span>
@@ -1184,18 +1184,17 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
-        <span class="icon"><xsl:text>&#128441;  </xsl:text>
-            <!--<xsl:attribute name="class">
-                <xsl:choose>
-                    <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
-                        <xsl:text> &#128274;</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text> &#128441;</xsl:text>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:attribute>-->
-        </span>
+        <i class="icon-file-pdf"></i><xsl:text>  </xsl:text>
+        <!--<xsl:attribute name="class">
+            <xsl:choose>
+                <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
+                    <xsl:text> &#128274;</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text> &#128441;</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>-->
         <xsl:text> </xsl:text>
     </xsl:template>
 
@@ -1389,12 +1388,12 @@
                             </xsl:choose>
                         </span>
                         <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><xsl:text> </xsl:text><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
-                        <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard" class="ccb"> ⎘</a>
+                        <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard"><i class="icon-export"></i></a>
 
                         <br />
                     </xsl:if>
 
-                    <span> URN</span><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard" class="ccb"> ⎘</a>
+                    <span> URN</span><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a>
                     <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
                 </small>
             </div>
