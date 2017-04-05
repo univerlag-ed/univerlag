@@ -2732,7 +2732,7 @@ Das Team vom Universitätsverlag Göttingen
 		</p>
 		<div class="row">
 			<div class="col-xs-6">
-				<a href="/news">&#11164; Aktuelles</a>
+				<a href="/news">&#11164; Aktuelles</a>&#160;<i class="icon-attantion-circeled"></i>
 			</div>
 			<div class="col-xs-6">
 				<a class="pull-right" href="/info/publishing-catalog">Verlagskatalog &#11166;</a>
@@ -3222,136 +3222,73 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 			<p>Für die Arbeit mit Word stehen verschiedene Formatierungshilfen bereit. Die Formatvorlage „17x24cm, skaliert“ sollten Sie nur wählen, wenn Sie Ihr Dokument in 21x29,7cm (DIN A4) angelegt haben und bei der Verkleinerung des Satzspiegels auf 17x24cm Probleme auftreten (z.B. durch komplexe Tabellen oder Bilder).</p>
 
 
-			<h3>Usere Formatvorlagen</h3>
+			<h3>Anleitungen / Formatvorlagen</h3>
+
 			<div class="item">
-				<h4 class="section-heading">17x24cm: Standard</h4>
-				<hr class="light"></hr>
-				<pitem>Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
+				<h4 class="list-item-header section-heading">Anleitung Autoren</h4>
+				<p>Kurze Beschreibung<p></p>
+					<div class="button-panel">
+						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
+						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
+					</div>
+				</p>
+			</div>
+
+			<div class="item">
+				<h4 class="list-item-header section-heading">Anleitung Formatvorlage</h4>
+				<p>Beschreibung, wie die angebotenen Formatvorlagen benutzt werden<p></p>
+					<div class="button-panel">
+						<a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-xl">PDF</a>
+					</div>
+				</p>
+			</div>
+
+			<div class="item">
+				<h4 class="list-item-header section-heading">17x24cm: Standard</h4>
+				<p>Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
 					17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
 					Sie mit der Erfassung des Dokuments beginnen.<p></p>
 					<div class="button-panel">
 						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
 						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
 					</div>
-				</pitem></div>
+				</p>
+			</div>
 
 			<div class="item">
-				<h4 class="section-heading">17x24cm: Beiträge in Sammelbänden</h4>
-				<hr class="light"></hr>
-				<pitem>Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.<p></p>
+				<h4 class="list-item-header section-heading">17x24cm: Beiträge in Sammelbänden</h4>
+				<p>Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.<p></p>
+					<div class="button-panel">
+						<a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-xl">PDF</a>
+					</div>
+				</p></div>
+
+			<div class="item">
+				<h4 class="list-item-header section-heading">17x24cm: skaliert </h4>
+				<p>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
 					<div class="button-panel">
 						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
 						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
 					</div>
-				</pitem></div>
+				</p></div>
 
 			<div class="item">
-				<h4 class="section-heading">17x24cm: skaliert </h4>
-				<hr class="light"></hr>
-				<pitem>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
+				<h4 class="list-item-header section-heading">14,8x21cm (DIN A5) </h4>
+				<p>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.<p></p>
 					<div class="button-panel">
 						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
 						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
 					</div>
-				</pitem></div>
+				</p></div>
 
 			<div class="item">
-				<h4 class="section-heading">14,8x21cm (DIN A5) </h4>
-				<hr class="light"></hr>
-				<pitem>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.<p></p>
+				<h4 class="list-item-header section-heading">LaTeX </h4>
+				<p>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.<p></p>
 					<div class="button-panel">
 						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
 						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
 					</div>
-				</pitem></div>
-
-			<div class="item">
-				<h4 class="section-heading">LaTeX </h4>
-				<hr class="light"></hr>
-				<pitem>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.<p></p>
-					<div class="button-panel">
-						<a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-xl">MS-Word</a>
-						<a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-xl">PDF</a>
-					</div>
-				</pitem></div>
-
-			<ul class="unstyled">
-
-				<li>
-					<strong>Anleitung Autoren</strong> —
-					<a href="/documents/Anleitung_Autoren.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Anleitung Formatvorlage</strong> —
-
-					Beschreibung, wie die angebotenen Formatvorlagen benutzt werden:
-					<a href="/documents/anleitung_formatvorlage.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Formatvorlage 17x24cm</strong> —
-					Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
-					17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
-					Sie mit der Erfassung des Dokuments beginnen.
-					<a href="/documents/formatvorlage_17x24.doc">[MS Word (doc)]</a>
-					<a href="/documents/formatvorlage_17x24.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Formatvorlage 17x24cm: Beiträge in Sammelbänden</strong> —
-					Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie
-					diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format
-					17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
-					Sie mit der Erfassung des Dokuments beginnen.<br />
-
-					<a href="/documents/formatvorlage_17x24_sammelband.dot">[MS Word (dot)]</a>
-					<a href="/documents/formatvorlage_17x24_sammelband.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Formatvorlage 17x24cm, skaliert</strong> —
-					Diese Formatvorlage bitte nur nach Absprache verwenden.<br />
-
-					<a href="/documents/formatvorlage_17x24_skaliert.doc">[MS Word (doc)]</a>
-					<a href="/documents/formatvorlage_17x24_skaliert.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Formatvorlage 14,8x21cm (DIN A5)</strong> —
-
-					Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5)
-					publiziert werden sollen.<br />
-
-					<a href="/documents/formatvorlage_DINA5.doc">[MS Word (doc)]</a>
-					<a href="/documents/formatvorlage_DINA5.pdf">[pdf]</a>
-
-				</li>
-
-				<li>
-					<strong>Formatvorlage LaTeX</strong> —
-					Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm
-					publiziert werden sollen.<br />
-
-					<a href="/documents/formatvorlage_latex_proceedings_17x24.zip">[Zip Archiv (.zip)]</a>
-
-				</li>
-
-				<li>
-					<strong>Metadatenschema</strong> —
-					<a href="/documents/Metadatenschema.xls">[MS Excel (xls)]</a>
-
-				</li>
-
-			</ul>
-
-
-
+				</p></div>
 
 			<h3>VG-Wort</h3>
 
