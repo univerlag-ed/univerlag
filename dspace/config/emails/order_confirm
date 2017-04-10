@@ -1,0 +1,45 @@
+# E-mail sent with the information filled out in shopping cart.
+# Parameters: {0} current date
+#             {1} customer email
+#             {2} customer info (formatted name, address)
+#             {3} delivery info (formatted name, address)
+#             {4} order data (formatted; quantity, price, creators, title, description, isbn)
+#             {5} product price
+#             {6} shipping costs
+#             {7} total sum
+#
+# See org.dspace.core.Email for information on the format of this file.#
+#
+Subject: Ihre Bestellung beim Univerlag Göttingen
+
+Bestätigung Ihrer Bestellung beim Universitätsverlag Göttingen
+==================================================================
+{4} €
+-------------------------------------
+Produktpreis: 		  {5} €
+Versandkosten:		  Information auf Anfrage 
+Gesamtsumme:	 	  {5} €  zzgl. Versandkosten
+-------------------------------------
+
+
+Rechnungsadresse
+-------------------------------------
+{2}
+
+Lieferadresse 
+-------------------------------------
+{3}
+
+-------------------------------------
+Datum: {0}
+
+Die Ware wird Ihnen in den nächsten 2 bis 3 Werktagen zusammen mit der Rechnung per Post zugeschickt. 
+Informationen zur Rückgabe finden Sie unter http://www.univerlag.uni-gottingen.de/info/ordering.
+
+Bei Fragen, Korrekturwünschen etc. kontaktieren Sie uns bitte via http://www.univerlag.uni-goettingen.de/contact.
+
+Vielen Dank für Ihre Bestellung!
+Das Team vom Universitätsverlag Göttingen
+
+
+[Diese Nachricht wurde automatisch generiert.]

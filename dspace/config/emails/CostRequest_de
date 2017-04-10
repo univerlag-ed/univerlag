@@ -1,0 +1,34 @@
+# E-mail sent with the information filled out in a feedback form.
+#
+# Parameters: {0} current date
+#             {1} email address that the user provided
+#             {2} page that the user was on when they selected feedback
+#             {3} customer's data
+#             {4} publication
+#             {5} publication data
+#             {6} comments
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Kostenanfrage Univerlag Göttingen
+
+Auftraggeber
+-------------------
+{3}
+
+Publikation
+----------------------
+{4}
+
+
+Daten zur Publikation
+----------------------
+{5}
+
+
+Sonstiges:
+{6}
+
+
+Datum: {0}
+

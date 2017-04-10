@@ -12,10 +12,58 @@
  <!-- (which is never a collection), here mapped to "traditional". Any     -->
  <!-- collection which does not appear in this map will be associated with -->
  <!-- the mapping for handle "default".                                    -->
-
  <form-map>
-   <name-map collection-handle="default" form-name="traditional" />
+  <!-- <name-map collection-handle="default" form-name="traditional" /> -->
+   <!-- Form for Colletions without editorial workflow -->
+   <!-- fallback for collections without editorial workflow -->
+   <name-map collection-handle="default" form-name="fallback" />
+
+   <!-- univerlag default form -->
+   <name-map collection-handle="3/241" form-name="traditional" />
+   <name-map collection-handle="3/493" form-name="traditional" />
+   <name-map collection-handle="3/415" form-name="traditional" />
+   <name-map collection-handle="3/517" form-name="traditional" />
+   <name-map collection-handle="3/392" form-name="traditional" />
+   <name-map collection-handle="3/295" form-name="traditional" />
+   <name-map collection-handle="3/321" form-name="traditional" />
+   <name-map collection-handle="3/496" form-name="traditional" />
+   <name-map collection-handle="3/417" form-name="traditional" />
+   <name-map collection-handle="3/383" form-name="traditional" />
+   <name-map collection-handle="3/377" form-name="traditional" />
+   <name-map collection-handle="3/2" form-name="traditional" />
+   <name-map collection-handle="3/364" form-name="traditional" />
+   <name-map collection-handle="3/3" form-name="traditional" />
+   <name-map collection-handle="3/418" form-name="traditional" />
+   <name-map collection-handle="3/419" form-name="traditional" />
+   <name-map collection-handle="3/4" form-name="traditional" />
+   <name-map collection-handle="3/278" form-name="traditional" />
+   <name-map collection-handle="3/766" form-name="traditional" />
+   <name-map collection-handle="3/422" form-name="traditional" />
+   <name-map collection-handle="3/192" form-name="traditional" />
+   <name-map collection-handle="3/423" form-name="traditional" />
+   <name-map collection-handle="3/405" form-name="philologie" />
+   <name-map collection-handle="3/420" form-name="religionwiss" />
+   <name-map collection-handle="3/416" form-name="biblioinformmedien" />
+   <name-map collection-handle="3/69" form-name="physikchemie" />
+   <name-map collection-handle="3/215" form-name="geo" /> 
+   <name-map collection-handle="3/278" form-name="sozialwiss" />
+   <!-- out of program -->
+   <name-map collection-handle="3/SUB_publications_and_exhibition_guides" form-name="outOfProgram" />
+   <name-map collection-handle="3/Gauss_works" form-name="outOfProgram" />
+   <name-map collection-handle="3/Goettingen_contributions%20to%20education%20research" form-name="outOfProgram" />
+   <name-map collection-handle="3/Goettingen_library_writings" form-name="outOfProgram" />
+   <name-map collection-handle="3/Heinberg_writings_continuation" form-name="outOfProgram" />
+   <name-map collection-handle="3/Goettingen_library_archive_writings" form-name="outOfProgram" />
+   <name-map collection-handle="3/ZEM" form-name="outOfProgram" />
  </form-map>
+
+ <!-- <form-map>
+   <name-map collection-handle="default" form-name="traditional" />
+   <name-map collection-handle="3/study_of_religion" form-name="religionwiss" />
+   <name-map collection-handle="3/library_information_and_media_sciences" form-name="biblioinformgmedien" />
+   <name-map collection-handle="3/physics_and_chemistry" form-name="physikchemie" /> -->
+   <!-- <name-map collection-handle="3/353" form-name="outOfProgram" /> -->
+ <!--</form-map> -->
 
 
  <!-- The form-definitions map lays out the detailed definition of all the -->
@@ -36,108 +84,1896 @@
 
  <form-definitions>
 
-   <form name="traditional">
+      <form name="fallback">
      <page number="1">
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>contributor</dc-element>
-         <dc-qualifier>author</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Authors</label>
-         <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item.</hint>
-         <required></required>
-       </field>
 
        <field>
          <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier></dc-qualifier>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Title</label>
+         <label>Univerlag-DOI</label>
          <input-type>onebox</input-type>
-         <hint>Enter the main title of the item.</hint>
-         <required>You must enter a main title for this item.</required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>title</dc-element>
-         <dc-qualifier>alternative</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Other Titles</label>
-         <input-type>onebox</input-type>
-         <hint>If the item has any alternative titles, please enter them here.</hint>
+         <hint></hint>
          <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>date</dc-element>
-         <dc-qualifier>issued</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Date of Issue</label>
-         <input-type>date</input-type>
-         <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't
-                        applicable.</hint>
-         <required>You must enter at least the year.</required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>publisher</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Publisher</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier>citation</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Citation</label>
-         <input-type>onebox</input-type>
-         <hint>Enter the standard citation for the previously issued instance of this item.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>relation</dc-element>
-         <dc-qualifier>ispartofseries</dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Series/Report No.</label>
-         <input-type>series</input-type>
-         <hint>Enter the series and number assigned to this item by your community.</hint>
-         <required></required>
-       </field>
-
-       <field>
-         <dc-schema>dc</dc-schema>
-         <dc-element>identifier</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
-         <repeatable>true</repeatable>
-         <label>Identifiers</label>
-         <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-         <hint>If the item has any identification numbers or codes associated with
-it, please enter the types and the actual numbers or codes.</hint>
-         <required></required>
+         <visibility></visibility>
        </field>
 
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>type</dc-element>
          <dc-qualifier></dc-qualifier>
-         <repeatable>true</repeatable>
-         <label>Type</label>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
          <input-type value-pairs-name="common_types">dropdown</input-type>
-         <hint>Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+		 
+       <!-- <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken hängen Sie bitte die Teilangabe an! z.B. "Teil 2" oder "Band 1"</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+	 <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe/Band</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die nicht vom Univerlag publiziert wird, geben Sie hier bitte den Titel der Reihe und die Bandnummer an!</hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+      
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field> 
+
+
+                <!-- fields for editors -->
+                <!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+         <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+       </field>
+       
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>edition</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Edition</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required></required>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+       </field>
+       
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten, ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+     </page>
+   </form>
+
+   <form name="traditional">
+     <page number="1">
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+	 <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+		 
+	 <!--  <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+	 <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>	
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bite im nächsten Feld angeben. Auch wenn es zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+	 <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, geben Sie hier bitte die Bandnummer der Reihe  zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die nicht beim Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+ 	<field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+		<!-- fields for editors -->
+		<!-- identifiers -->
+	<field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	 <visibility>workflow</visibility>
+       </field>
+ 
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+	 <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+	 <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+		<!-- descriptions -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+<!--       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="descriptions">qualdrop_value</input-type>
+         <hint>Print: Softcover / Hardcover, 17x24;  DVD: Spielzeit 23:44 Min.; CD-DOM: Freitext</hint>
+         <required>Bitte geben Sie die Beschreibung der vorhandenen Medien an!</required>
+		 <visibility>workflow</visibility>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+		 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+	 <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+     </page>
+   </form>
+
+   <form name="philologie">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+
+	  <!-- <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, geben Sie hier bitte die Bandnummer der Reihe  zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die nicht beim Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+                <!-- fields for editors -->
+                <!-- identifiers -->
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+         <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>ddc</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*DDC</label>
+         <input-type value-pairs-name="philologie_ddc">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die DDC-Klasse aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+                <!-- descriptions -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+                 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+     </page>
+   </form>
+
+<form name="religionwiss">
+     <page number="1">
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+	  <!-- <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Fachgebiet</label>
+         <input-type value-pairs-name="subject_religion">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Fachgebiet genauer an!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>              
+         <hint>Falls Ihre Publikation Teil einer Univerlag-Reihe ist, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die nicht beim Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+
+		<!-- fields for editors -->
+		<!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+	 <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+	 <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+		<!-- descriptions -->
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+      <field> 
+	  <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+		 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailabe", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+     </page>
+   </form>
+
+<form name="biblioinformmedien">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+<!--		<field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Fachgebiet</label>
+         <input-type value-pairs-name="subject_biblio">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Fachgebiet genauer an!</required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>              
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlaf geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>andere Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
          <required></required>
        </field>
 
@@ -145,65 +1981,1659 @@ it, please enter the types and the actual numbers or codes.</hint>
          <dc-schema>dc</dc-schema>
          <dc-element>language</dc-element>
          <dc-qualifier>iso</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Language</label>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-         <hint>Select the language of the main content of the item.  If the language does not appear in the list, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+
+		<!-- fields for editors -->
+		<!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       
+       <!-- classification -->
+
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+	 <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+	 <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>vlb</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*VLB-Klassifikation</label>
+         <input-type value-pairs-name="biblioinform_vlb">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die VLB-Klassifikation aus!</required>
+	 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>ddc</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*DDC</label>
+         <input-type value-pairs-name="biblio_ddc">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie DDC-Klasse aus!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>bic</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*BIC</label>
+         <input-type value-pairs-name="biblio_bic">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie BIC-Klasse aus!</required>
+       </field>
+
+		<!-- descriptions -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required>Bitte mindestens ein Medium auswählen!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint>Falls keine Printausgabe angeboten wird, bitte ins Feld "Spezieller Zugang zur Printausgage" noprint eingaben!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+		 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+     </page>
+   </form>
+
+<form name="physikchemie">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
          <required></required>
        </field>
      </page>
 
      <page number="2">
+	  <!-- <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+       	 
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>subject</dc-element>
-         <dc-qualifier></dc-qualifier>
-         <!-- An input-type of twobox MUST be marked as repeatable -->
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Fachgebiet</label>
+         <input-type value-pairs-name="subject_physikchemie">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Fachgebiet genauer an!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+	 <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
          <repeatable>true</repeatable>
-         <label>Subject Keywords</label>
-         <input-type>twobox</input-type>
-         <hint>Enter appropriate subject keywords or phrases. </hint>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
          <required></required>
-         <vocabulary>srsc</vocabulary>
        </field>
 
        <field>
          <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
-         <dc-qualifier>abstract</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Abstract</label>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
          <input-type>textarea</input-type>
-         <hint>Enter the abstract of the item. </hint>
+         <hint></hint>
          <required></required>
        </field>
 
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
-         <dc-qualifier>sponsorship</dc-qualifier>
-         <repeatable>false</repeatable>
-         <label>Sponsors</label>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
          <input-type>textarea</input-type>
-         <hint>Enter the names of any sponsors and/or funding codes in the box. </hint>
+         <hint></hint>
          <required></required>
        </field>
 
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+		<!-- fields for editors -->
+		<!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+	 <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+	 <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+	<field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>vlb</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*VLB</label>
+         <input-type value-pairs-name="physikchemie_vlb">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die VLB Klassifikation aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>ddc</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*DDC</label>
+         <input-type value-pairs-name="physikchemie_ddc">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die DDC Klassifikation aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>bic</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*BIC</label>
+         <input-type value-pairs-name="physikchemie_bic">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die BIC Klassifikation aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>bisac</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*BISAC</label>
+         <input-type value-pairs-name="physikchemie_bisac">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die BISAC Klassifikation aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+
+		<!-- descriptions -->
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required>Bitte mindestens ein Medium auswählen!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
          <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+		 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
          <repeatable>false</repeatable>
-         <label>Description</label>
-         <input-type>textarea</input-type>
-         <hint>Enter any other description or comments in this box. </hint>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Nur falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
          <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
        </field>
      </page>
    </form>
 
+<form name="geo">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+	 <!--  <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+         <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Fachgebiet</label>
+         <input-type value-pairs-name="subject_geo">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Fachgebiet genauer an!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+         <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+                <!-- fields for editors -->
+                <!-- identifiers -->
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+         <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>vlb</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*VLB</label>
+         <input-type value-pairs-name="geo_vlb">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte wählen Sie die VLB Klassifikation aus!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+                <!-- descriptions -->
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required>Bitte mindestens ein Medium auswählen!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+                 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Nur falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+     </page>
+   </form>
+
+
+<form name="sozialwiss">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+	  <!-- <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>corporation</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Herausgeberinstitution</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+	 <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Fachgebiet</label>
+         <input-type value-pairs-name="subject_sozialwiss">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+         <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+                <!-- fields for editors -->
+                <!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+         <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+
+                <!-- descriptions -->
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required>Bitte mindestens ein Medium auswählen!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+                 <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Nur falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link (zum amazon oder zu einem anderen Verlag), "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+     </page>
+   </form>
+
+
    <form name="one">
      <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+
        <field>
          <dc-schema>dc</dc-schema>
          <dc-element>contributor</dc-element>
@@ -211,11 +3641,436 @@ it, please enter the types and the actual numbers or codes.</hint>
          <repeatable>true</repeatable>
          <label>One: Authors</label>
          <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item.</hint>
+         <hint>Enter the names of the authors of this item below.</hint>
          <required></required>
        </field>
       </page>
     </form>
+
+<form name="outOfProgram">
+
+
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility></visibility>
+       </field> 
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Doumenttyp</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint>Bitte wählen Sie den Type des Dokumentes aus!</hint>
+         <required></required>
+       </field>
+     </page>
+
+     <page number="2">
+<!--	   <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>intern</dc-element>
+         <dc-qualifier>doi</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-DOI</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field> -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Autor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Autor(en) der Dokumentes an!</required>
+         <type-bind>monograph,anthologyArticle,journalArticle,other</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>editor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Editor(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie die Editor(en) der Dokumentes an!</required>
+         <type-bind>anthology,anthologyArticle,conference</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Sonstige Person(en)</label>
+         <input-type>name</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel der Publikation</label>
+         <input-type>onebox</input-type>
+	 <hint>Bei mehrteiligen Werken Teilangabe bitte erst im nächsten Feld, auch wenn sie zum Titel gehört!</hint>
+         <required>Der Titel der Publikation fehlt!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>volume</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band/Teil</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes, geben Sie bitte hier die Teilangabe z.B. "Teil 2" oder "Band 1" an.</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Band-/Teiltitel</label>
+         <input-type>onebox</input-type>
+         <hint>Ist die Publikation Teil eines mehrbändigen Werkes und hat dieser Teil einen eigenen Titel, geben Sie bitte hier Titel des Bandes an.</hint>
+         <required></required>
+       </field>
+
+      <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Untertitel</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>supplement</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Titelergänzung</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. Ausstellung in Göttingen: 2007 10.02-12.06</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartof</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Titel des Sammelbandes</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie den Titel des Sammelbandes an, in dem die Publikation enthalten ist.</required>
+         <type-bind>anthologyArticle</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Univerlag-Reihe</label>
+         <input-type value-pairs-name="old_series">dropdown</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die beim Univerlag geführt wird, wählen Sie bitte den Titel der Reihe aus!</hint>
+         <required></required>
+       </field>
+
+
+	 <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>bibliographicCitation</dc-element>
+         <dc-qualifier>volume</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Bandnr. der Univerlag-Reihe</label>
+         <input-type>onebox</input-type>
+         <hint>Falls Ihre Publikation Teil einer Reihe ist, die vom Univerlag geführt wird, geben Sie hier bitte die Bandnummer zweistellig (z.B. 04) an!</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>series</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Reihe</label>
+         <input-type>series</input-type>
+         <hint>Falls Ihre Publikation Teil Reihe ist, die nicht bei Univerlag geführt wird, tragen Sie hier bitte den Namen der Reihe und das Bandnr. ein</hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>*Sprache der Publikation</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Um mehrere Sprachen auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Sprachen!</hint>
+         <required>Bitte geben Sie an, in welcher Sprache die Publikation verfasst wurde!</required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractger</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Deutsche Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstracteng</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Englische Zusammenfassung</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstractother</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Zusammenfassung in anderer Sprache</label>
+         <input-type>textarea</input-type>
+         <hint></hint>
+         <required></required>
+       </field>
+
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>subjectheading</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Fachegebiet</label>
+         <input-type value-pairs-name="subject_all">dropdown</input-type>
+         <hint></hint>
+         <required>Ordnen Sie bitte die Publikation in ein Fachgebiet ein!</required>
+         <visibility>workflow</visibility>
+       </field>
+       
+       		<!-- fields for editors -->
+		<!-- identifiers -->
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Erscheinungsjahr</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte geben Sie das Erscheinungsjahr an!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+        <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>event</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Event</label>
+         <input-type>onebox</input-type>
+         <hint>Ist der Anlass der Publikation eine Ausstellung, Konferenz, Workshop etc., bitte geben Sie hier die Veranstaltung nach GVK Syntax ein: Titel ; Zählung (Ort) : YYYY-MM-DD  </hint>
+         <required></required>
+	<visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>intern</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Interner Identifier</label>
+         <input-type>onebox</input-type>
+         <hint>z.B. isbn-978-3-86395-085-9 oder issn-1863-0197_annals12 oder HBS_Fs14</hint>
+         <required>Bitte vergeben Sie einen internen Identifier für die Publikation!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>articlenumber</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Artikel-Nummer</label>
+         <input-type>onebox</input-type>
+         <hint></hint>
+         <required>Bitte vergeben Sie der Publikation eine Artikel-Nummer!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+       
+       <!-- classification -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>division</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>*Sparte</label>
+	 <input-type value-pairs-name="common_division">dropdown</input-type>
+         <hint></hint>
+         <required>Bitte ordnen Sie die Publikation einer Sparte zu!</required>
+	 <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+
+		<!-- descriptions -->
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>medium</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Medium</label>
+         <input-type value-pairs-name="medium">dropdown</input-type>
+         <hint>Bitte wählen Sie alle Medienformen aus, in der die Publikation vorliegt! Um mehrere auszuwählen, drücken Sie "CTRL" und klicken Sie auf die Medien!</hint>
+         <required>Bitte mindestens ein Medium auswählen!</required>
+         <visibility>workflow</visibility>
+       </field>
+
+     <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>notes</dc-element>
+         <dc-qualifier>access</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Hinweis zu den Medienformate</label>
+         <input-type value-pairs-name="medienformats">dropdown</input-type>
+         <hint>Falls kein PDF existiert, bitte "Kein Dokument", falls nur das PDF vorliegt "Nur online" wählen</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>print</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Printausstattung</label>
+         <input-type value-pairs-name="printdescription">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>format</dc-element>
+         <dc-qualifier>extent</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Seitenzahl der Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Bitte nur die Zahl eintragen (ohne S.)</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>price</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Preis der Druckausgabe</label>
+         <input-type value-pairs-name="prices">qualdrop_value</input-type>
+         <hint>Zweistellig mit Komma als Dezimalstelle ohne Währungsangabe. z.B. 34,00.</hint>
+         <required>Bitte geben Sie den Preis der vorhandenen Median an!</required>
+		 <visibility>workflow</visibility>
+       </field>
+
+      <field>  
+	 <dc-element>notes</dc-element>
+         <dc-qualifier>printaccess</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Spezieller Zugang zur Printausgabe</label>
+         <input-type>onebox</input-type>
+         <hint>Nur falls die Printausgabe bei Univerlag nicht verkauft wird. Mögliche Eingaben: Link zum amazon, "outofstock", "notavailable", "epubli"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>cdrom</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>CD-ROM Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Optional z.B. Spielzeit in Minuten oder "Mit Manual und Traninigsprogramm"</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>dvd</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>DVD Beschreibung</label>
+         <input-type>onebox</input-type>
+         <hint>Spielzeit in Minuten ohne Angabe der Zeiteinheit z.B. 34:25</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier>subtype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Genauer Typ der Publikation</label>
+         <input-type value-pairs-name="common_subtype">dropdown</input-type>
+         <hint>Bitte bei Hochschulschrift unbedingt angeben, sonst falls sinnvoll, auswählen!</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <type-bind>anthology,monograph</type-bind>
+       </field>
+
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier>other</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Markierung für externe Sammlungen</label>
+         <input-type value-pairs-name="oai-marks">dropdown</input-type>
+         <hint></hint>
+         <required></required>
+         <visibility>workflow</visibility>
+         <!-- <vocabulary>srsc</vocabulary> -->
+       </field>
+     </page>
+
+   </form>
  </form-definitions>
 
 
@@ -259,29 +4114,155 @@ it, please enter the types and the actual numbers or codes.</hint>
        <stored-value>isbn</stored-value>
      </pair>
    </value-pairs>
+   
+   <value-pairs value-pairs-name="descriptions" dc-term="format_medium">
+     <pair>
+       <displayed-value>Print</displayed-value>
+       <stored-value>print</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>CD-ROM</displayed-value>
+       <stored-value>cdrom</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>DVD</displayed-value>
+       <stored-value>dvd</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Inhalt</displayed-value>
+       <stored-value>tableofcontents</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="medienformats" dc-term="notes_access">
+     <pair>
+       <displayed-value>Kein Dokument</displayed-value>
+       <stored-value>nodocument</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Nur online</displayed-value>
+       <stored-value>onlineonly</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="printdescription" dc-term="description_print">
+     <pair>
+       <displayed-value>-- wählen --</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover</displayed-value>
+       <stored-value>Softcover</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover, 17x24</displayed-value>
+       <stored-value>Softcover, 17x24</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover, 15x22</displayed-value>
+       <stored-value>Softcover, 15x22</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover, 20x20</displayed-value>
+       <stored-value>Softcover, 20x20</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover, DIN A4</displayed-value>
+       <stored-value>Softcover, DIN A4</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Softcover, DIN A5</displayed-value>
+       <stored-value>Softcover, DIN A5</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Hardcover</displayed-value>
+       <stored-value>Hardcover</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Hardcover, 17x24</displayed-value>
+       <stored-value>Hardcover, 17x24</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Hardcover, 15x22</displayed-value>
+       <stored-value>Hardcover, 15x22</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="prices" dc-term="price">
+     <pair>
+       <displayed-value>Print</displayed-value>
+       <stored-value>print</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>CD-ROM</displayed-value>
+       <stored-value>cdrom</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>DVD</displayed-value>
+       <stored-value>dvd</stored-value>
+     </pair>
+   </value-pairs>
+  
+   <value-pairs value-pairs-name="abstracts" dc-term="description">
+     <pair>
+       <displayed-value>Deutsch</displayed-value>
+       <stored-value>abstractger</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Englisch</displayed-value>
+       <stored-value>abstracteng</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Andere Sprache</displayed-value>
+       <stored-value>abstractother</stored-value>
+     </pair>
+   </value-pairs>
+ 
+    <value-pairs value-pairs-name="medium" dc-term="format_medium">
+     <pair>
+       <displayed-value>Print</displayed-value>
+       <stored-value>Print</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>CD-ROM</displayed-value>
+       <stored-value>CD-ROM</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>DVD</displayed-value>
+       <stored-value>DVD</stored-value>
+     </pair>
+   </value-pairs>
 
    <value-pairs value-pairs-name="common_types" dc-term="type">
      <pair>
-       <displayed-value>Animation</displayed-value>
-       <stored-value>Animation</stored-value>
+       <displayed-value>--- Bitte auswählen---</displayed-value>
+       <stored-value></stored-value>
+     </pair>	
+     <pair>
+       <displayed-value>Buch</displayed-value>
+       <stored-value>monograph</stored-value>
      </pair>
      <pair>
-       <displayed-value>Article</displayed-value>
-       <stored-value>Article</stored-value>
+       <displayed-value>Sammelband</displayed-value>
+       <stored-value>anthology</stored-value>
      </pair>
      <pair>
-       <displayed-value>Book</displayed-value>
-       <stored-value>Book</stored-value>
+       <displayed-value>Artikel im Sammelband</displayed-value>
+       <stored-value>anthologyArticle</stored-value>
      </pair>
      <pair>
-       <displayed-value>Book chapter</displayed-value>
-       <stored-value>Book chapter</stored-value>
+       <displayed-value>Zeitschriftenartikel</displayed-value>
+       <stored-value>journalArticle</stored-value>
      </pair>
      <pair>
-       <displayed-value>Dataset</displayed-value>
-       <stored-value>Dataset</stored-value>
+       <displayed-value>Konferenzband</displayed-value>
+       <stored-value>conference</stored-value>
      </pair>
      <pair>
+       <displayed-value>Andere (DVD, CDROM...)</displayed-value>
+       <stored-value>other</stored-value>
+     </pair>
+     <!-- <pair>
        <displayed-value>Learning Object</displayed-value>
        <stored-value>Learning Object</stored-value>
      </pair>
@@ -348,7 +4329,7 @@ it, please enter the types and the actual numbers or codes.</hint>
      <pair>
        <displayed-value>Other</displayed-value>
        <stored-value>Other</stored-value>
-     </pair>
+     </pair> -->
    </value-pairs>
 
    <!-- default language order: (from dspace 1.2.1)
@@ -356,51 +4337,605 @@ it, please enter the types and the actual numbers or codes.</hint>
      -->
    <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
      <pair>
-       <displayed-value>N/A</displayed-value>
-       <stored-value></stored-value>
-     </pair>
-     <pair>
-       <displayed-value>English (United States)</displayed-value>
-       <stored-value>en_US</stored-value>
+       <displayed-value>Deutsch</displayed-value>
+       <stored-value>ger</stored-value>
       </pair>
      <pair>
-       <displayed-value>English</displayed-value>
-       <stored-value>en</stored-value>
+       <displayed-value>Englisch</displayed-value>
+       <stored-value>eng</stored-value>
      </pair>
      <pair>
-       <displayed-value>Spanish</displayed-value>
-       <stored-value>es</stored-value>
+       <displayed-value>Spanisch</displayed-value>
+       <stored-value>spa</stored-value>
      </pair>
      <pair>
-       <displayed-value>German</displayed-value>
-       <stored-value>de</stored-value>
+       <displayed-value>Französisch</displayed-value>
+       <stored-value>fra</stored-value>
      </pair>
      <pair>
-       <displayed-value>French</displayed-value>
-       <stored-value>fr</stored-value>
+       <displayed-value>Italienisch</displayed-value>
+       <stored-value>ita</stored-value>
      </pair>
      <pair>
-       <displayed-value>Italian</displayed-value>
-       <stored-value>it</stored-value>
+       <displayed-value>Japanisch</displayed-value>
+       <stored-value>jpn</stored-value>
      </pair>
      <pair>
-       <displayed-value>Japanese</displayed-value>
-       <stored-value>ja</stored-value>
+       <displayed-value>Chinesisch</displayed-value>
+       <stored-value>chi</stored-value>
      </pair>
      <pair>
-       <displayed-value>Chinese</displayed-value>
-       <stored-value>zh</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>Turkish</displayed-value>
-       <stored-value>tr</stored-value>
-     </pair>
-     <pair>
-       <displayed-value>(Other)</displayed-value>
+       <displayed-value>(Andere)</displayed-value>
        <stored-value>other</stored-value>
      </pair>
    </value-pairs>
 
+
+	<!-- DDC-Classification -->
+
+   <value-pairs value-pairs-name="biblio_ddc" dc-term="subject_ddc">
+     <pair>
+       <displayed-value>Bibliotheks- und Informationswiss.</displayed-value>
+       <stored-value>020</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Dokumentarische-, publizisitsche- u. Unterrichtsmedien, Journalismu, Verlagswesen</displayed-value>
+       <stored-value>070</stored-value>
+     </pair>
+    </value-pairs>
+
+   <value-pairs value-pairs-name="physikchemie_ddc" dc-term="subject_ddc">
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>530</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>540</stored-value>
+     </pair>
+    </value-pairs>
+
+   <value-pairs value-pairs-name="philologie_ddc" dc-term="subject_ddc">
+     <pair>
+       <displayed-value>Sprache</displayed-value>
+       <stored-value>400</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Literatur</displayed-value>
+       <stored-value>800</stored-value>
+     </pair>
+    </value-pairs>
+
+	 <!-- BIC-Classification -->
+
+   <value-pairs value-pairs-name="biblio_bic" dc-term="subject_bic">
+     <pair>
+       <displayed-value>REFERENCE, INFORMATION AND INTERDISCIPLINARY SUBJECTS</displayed-value>
+       <stored-value>G</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>COMPUTING AND INFORMATION TECHNOLOGY</displayed-value>
+       <stored-value>U</stored-value>
+     </pair>
+    </value-pairs>
+
+
+   <value-pairs value-pairs-name="physikchemie_bic" dc-term="subject_bic">
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>PH</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>PN</stored-value>
+     </pair>
+    </value-pairs>
+
+	 <!-- BISAC-Classification -->
+
+   <value-pairs value-pairs-name="physikchemie_bisac" dc-term="subject_bisac">
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>SCI055000</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>SCI01300</stored-value>
+     </pair>
+    </value-pairs>
+
+   <!-- VBL-Klassifikation -->
+   <value-pairs value-pairs-name="geo_vlb" dc-term="subject_vlb">
+     <pair>
+       <displayed-value>Geowissenschaften</displayed-value>
+       <stored-value>660</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Geographie</displayed-value>
+       <stored-value>662</stored-value>
+     </pair>
+    </value-pairs>
+
+   <value-pairs value-pairs-name="biblioinform_vlb" dc-term="subject_vlb">
+     <pair>
+       <displayed-value>Bibliothekswissenschaften</displayed-value>
+       <stored-value>743</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Informationswissenschaften</displayed-value>
+       <stored-value>744</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Medienwissenschaften</displayed-value>
+       <stored-value>745</stored-value>
+     </pair>
+    </value-pairs>
+
+   <value-pairs value-pairs-name="physikchemie_vlb" dc-term="subject_vlb">
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>640</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>650</stored-value>
+     </pair>
+    </value-pairs>
+
+   <!-- Division   -->
+   <value-pairs value-pairs-name="common_division" dc-term="subject_division">
+     <pair>
+       <displayed-value>Universitätsverlag</displayed-value>
+       <stored-value>peerReviewed</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Universitätsdrucke</displayed-value>
+       <stored-value>surveyed</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Varia</displayed-value>
+       <stored-value>varia</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Sonstige</displayed-value>
+       <stored-value>other</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="common_subtype" dc-term="type_subtype">
+    <pair>
+       <displayed-value>--Bitte wählen--</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Dissertation</displayed-value>
+       <stored-value>thesis</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Habilitation</displayed-value>
+       <stored-value>habilitation</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Austellungskatalog</displayed-value>
+       <stored-value>catalog</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Wörterbuch</displayed-value>
+       <stored-value>dictionary</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Bibliografie</displayed-value>
+       <stored-value>bibliography</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Dokumentation</displayed-value>
+       <stored-value>documentation</stored-value>
+     </pair>
+   </value-pairs>
+
+   <!-- Subject heading within collection -->
+    <value-pairs value-pairs-name="subject_geo" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Geowissenschaft</displayed-value>
+       <stored-value>Geowissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Geographie</displayed-value>
+       <stored-value>Geographie</stored-value>
+     </pair>
+   </value-pairs>
+
+    <value-pairs value-pairs-name="subject_religion" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Theologie</displayed-value>
+       <stored-value>Theologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Religionswissenschaft</displayed-value>
+       <stored-value>Religionswissenschaft</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="subject_argrarforst" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Agrarwissenschaft</displayed-value>
+       <stored-value>Agarawissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Forstwissenschaft</displayed-value>
+       <stored-value>Forstwissenschaft</stored-value>
+     </pair>
+   </value-pairs>
+    <value-pairs value-pairs-name="subject_physikchemie" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>Physik</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>Chemie</stored-value>
+     </pair>
+   </value-pairs>
+
+    <value-pairs value-pairs-name="subject_sozialwiss" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Erziehungswissenschaft</displayed-value>
+       <stored-value>Erziehungswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Sportwissenschaft</displayed-value>
+       <stored-value>Sportwissenschaft</stored-value>
+     </pair>
+   </value-pairs>
+
+
+    <value-pairs value-pairs-name="subject_biblio" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Bibliothekswissenschaft</displayed-value>
+       <stored-value>Bibliothekswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Informationswissenschaft</displayed-value>
+       <stored-value>Informationswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Medienwissenschaft</displayed-value>
+       <stored-value>Medienwissenschaft</stored-value>
+     </pair>
+   </value-pairs>
+
+    <value-pairs value-pairs-name="subject_philology" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>Literaturwissenschaft</displayed-value>
+       <stored-value>Literaturwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Sprachwissenschaft</displayed-value>
+       <stored-value>Sprachwissenschaft</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="subject_all" dc-term="subject_subjectheading">
+     <pair>
+       <displayed-value>--Bitte wählen--</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Agrarwissenschaft</displayed-value>
+       <stored-value>Agrarwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Alte Kulturen</displayed-value>
+       <stored-value>Alte Kulturen</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Anglistik</displayed-value>
+       <stored-value>Anglistik</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Bibliothekswissenschaft</displayed-value>
+       <stored-value>Bibliothekswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Biologie</displayed-value>
+       <stored-value>Biologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Chemie</displayed-value>
+       <stored-value>Chemie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Erziehungswissenschaft</displayed-value>
+       <stored-value>Erziehungswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Ethnologoie</displayed-value>
+       <stored-value>Ethnologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Ethnologoie</displayed-value>
+       <stored-value>Ethnologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Forstwissenschaft</displayed-value>
+       <stored-value>Forstwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Geographie</displayed-value>
+       <stored-value>Geographie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Geowissenschaft</displayed-value>
+       <stored-value>Geowissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Germanistik</displayed-value>
+       <stored-value>Germanistik</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Geschichte</displayed-value>
+       <stored-value>Geschichte</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Göttingen</displayed-value>
+       <stored-value>Göttingen</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Informationswissenschaft</displayed-value>
+       <stored-value>Informationswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Kultur und Gesellschaft</displayed-value>
+       <stored-value>Kultur und Gesellschaft </stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Kulturwissenschaft</displayed-value>
+       <stored-value>Kulturwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Kunstgeschichte</displayed-value>
+       <stored-value>Kunstgeschichte</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Literaturwissenschaft</displayed-value>
+       <stored-value>Literaturwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Mathematik</displayed-value>
+       <stored-value>Mathematik</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Medienwissenschaft</displayed-value>
+       <stored-value>Medienwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Medizin</displayed-value>
+       <stored-value>Medizin</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Medizinrecht</displayed-value>
+       <stored-value>Medizinrecht</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Musikwissenschaft</displayed-value>
+       <stored-value>Musikwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Philologie</displayed-value>
+       <stored-value>Philologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Philosophie</displayed-value>
+       <stored-value>Philosophie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Physik</displayed-value>
+       <stored-value>Physik</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Psychologie</displayed-value>
+       <stored-value>Psychologie</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Rechtswissenschaft</displayed-value>
+       <stored-value>Rechtswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Religionswissenschaft</displayed-value>
+       <stored-value>Religionswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Sozialwissenschaft</displayed-value>
+       <stored-value>Sozialwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Sportwissenschaft</displayed-value>
+       <stored-value>Sportwissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Universitätsgeschichte</displayed-value>
+       <stored-value>Universitätsgeschichte</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Wirtschaftswissenschaft</displayed-value>
+       <stored-value>Wirtschaftswissenschaft</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Wissenschaftsgeschichte</displayed-value>
+       <stored-value>Wissenschaftsgeschichte</stored-value>
+     </pair>
+   </value-pairs>
+   
+       <value-pairs value-pairs-name="oai-marks" dc-term="subject_other">
+     <pair>
+       <displayed-value>-- wählen --</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     <pair>
+       <displayed-value>OAPEN</displayed-value>
+       <stored-value>OAPEN</stored-value>
+     </pair>
+   </value-pairs>
+
+   <value-pairs value-pairs-name="old_series" dc-term="relation_ispartofseries">
+     <pair>
+       <displayed-value>-- wählen --</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Göttinger Bibliotheksschriften</displayed-value>
+       <stored-value>Göttinger Bibliotheksschriften</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Hainbergschriften-Fortsetzung</displayed-value>
+       <stored-value>Hainbergschriften-Fortsetzung: Arbeiten aus der Niedersächsischen Staats- und Universitätsbibliothek Göttingen</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Schriften des Universitätsarchivs Göttingen</displayed-value>
+       <stored-value>Schriften des Universitätsarchivs Göttingen</stored-value>
+     </pair>
+     <pair>
+       <displayed-value>Göttinger Beiträge zur erziehungswissenschaftlichen Forschung</displayed-value>
+       <stored-value>Göttinger Beiträge zur erziehungswissenschaftlichen Forschung</stored-value>
+     </pair>
+
+   </value-pairs>
+
+   <value-pairs value-pairs-name="series" dc-term="relation_ispartofseries">
+     <pair>
+       <displayed-value>-- wählen --</displayed-value>
+       <stored-value></stored-value>
+     </pair>
+     		<pair>
+		<displayed-value>Annals of the History and Philosophy of Biology</displayed-value>
+		<stored-value>Annals of the History and Philosophy of Biology</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Beiträge aus der Nordwestdeutschen Forstlichen Versuchsanstalt</displayed-value>
+		<stored-value>Beiträge aus der Nordwestdeutschen Forstlichen Versuchsanstalt</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Biodiversity and Ecology Series</displayed-value>
+		<stored-value>Biodiversity and Ecology Series</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Erziehungswissenschaftliche Studien</displayed-value>
+		<stored-value>Erziehungswissenschaftliche Studien</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttingen Contributions to Geosciences</displayed-value>
+		<stored-value>Göttingen Contributions to Geosciences</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttingen Series in Social and Cultural Anthropology</displayed-value>
+		<stored-value>Göttingen Series in Social and Cultural Anthropology</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttingen Series in X-ray Physics</displayed-value>
+		<stored-value>Göttingen Series in X-ray Physics</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttingen Studies in Cultural Property - Göttinger Studien zu Cultural Property</displayed-value>
+		<stored-value>Göttingen Studies in Cultural Property - Göttinger Studien zu Cultural Property</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Beiträge zum Alten Orient</displayed-value>
+		<stored-value>Göttinger Beiträge zum Alten Orient</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Beiträge zur Ethnologie</displayed-value>
+		<stored-value>Göttinger Beiträge zur Ethnologie</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Bibliotheksschriften</displayed-value>
+		<stored-value>Göttinger Bibliotheksschriften</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Forstwissenschaften</displayed-value>
+		<stored-value>Göttinger Forstwissenschaften</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Juristische Schriften</displayed-value>
+		<stored-value>Göttinger Juristische Schriften</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Klassiker der Strömungsmechanik</displayed-value>
+		<stored-value>Göttinger Klassiker der Strömungsmechanik</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Schriften zum Medizinrecht</displayed-value>
+		<stored-value>Göttinger Schriften zum Medizinrecht</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Schriften zum Öffentlichen Recht</displayed-value>
+		<stored-value>Göttinger Schriften zum Öffentlichen Recht</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Schriften zur Englischen Philologie</displayed-value>
+		<stored-value>Göttinger Schriften zur Englischen Philologie</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Schriften zur Internetforschung</displayed-value>
+		<stored-value>Göttinger Schriften zur Internetforschung</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Studien zu den Kriminalwissenschaften</displayed-value>
+		<stored-value>Göttinger Studien zu den Kriminalwissenschaften</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Graduiertenkolleg Interdisziplinäre Umweltgeschichte</displayed-value>
+		<stored-value>Graduiertenkolleg Interdisziplinäre Umweltgeschichte</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Göttinger Studien zur Kulturanthropologie / Europäische Ethnologie (KAEE)</displayed-value>
+		<stored-value>Göttinger Studien zur Kulturanthropologie / Europäische Ethnologie (KAEE)</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Hochschulsport: Bildung und Wissenschaft</displayed-value>
+		<stored-value>Hochschulsport: Bildung und Wissenschaft</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>interKULTUR - European-Chinese Intercultural Studies</displayed-value>
+		<stored-value>interKULTUR - European-Chinese Intercultural Studies</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Materialien Deutsch als Fremdsprache - fadaf</displayed-value>
+		<stored-value>Materialien Deutsch als Fremdsprache - fadaf</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Mathematisches Institut. Seminare</displayed-value>
+		<stored-value>Mathematisches Institut. Seminare</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Schriftenreihe Didaxis</displayed-value>
+		<stored-value>Schriftenreihe Didaxis</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Schriften zur Göttinger Universitätsgeschichte</displayed-value>
+		<stored-value>Schriften zur Göttinger Universitätsgeschichte</stored-value>
+		</pair>
+		<pair>
+                <displayed-value>Serie CEDPAL</displayed-value>
+                <stored-value>Serie CEDPAL</stored-value>
+                </pair>
+		<pair>
+		<displayed-value>Species, Phylogeny and Evolution</displayed-value>
+		<stored-value>Species, Phylogeny and Evolution</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Studies in Euroculture</displayed-value>
+		<stored-value>Studies in Euroculture</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>Syngramma. Vorträge aus dem Althistorischen Seminar</displayed-value>
+		<stored-value>Syngramma. Vorträge aus dem Althistorischen Seminar</stored-value>
+		</pair>
+		<pair>
+		<displayed-value>ZELTForum - Göttinger Schriften zu Landschaftsinterpretation und Tourismus</displayed-value>
+		<stored-value>ZELTForum - Göttinger Schriften zu Landschaftsinterpretation und Tourismus</stored-value>
+		</pair>
+
+   </value-pairs>
  </form-value-pairs>
 
 </input-forms>

@@ -1,0 +1,598 @@
+<items>
+<item id="144" isbn="978-3-86395-073-6" status="lieferbar"/>
+<item id="884" isbn="978-3-86395-245-7" status="lieferbar"/>
+<item id="949" isbn="978-3-86395-254-9" status="lieferbar"/>
+<item id="499" isbn="978-3-941875-45-6" status="lieferbar"/>
+<item id="468" isbn="978-3-930457-50-2" status="lieferbar"/>
+<item id="70" isbn="978-3-930457-38-0" status="lieferbar"/>
+<item id="710" isbn="978-3-940344-61-8" status="lieferbar"/>
+<item id="49" isbn="978-3-938616-35-2" status="lieferbar"/>
+<item id="790" isbn="978-3-86395-193-1" status="lieferbar"/>
+<item id="383" isbn="978-3-940344-34-2" status="lieferbar"/>
+<item id="840" isbn="978-3-86395-217-4" status="lieferbar"/>
+<item id="271" isbn="978-3-940344-60-1" status="nicht lieferbar"/>
+<item id="434" isbn="978-3-86395-129-0" status="lieferbar"/>
+<item id="127" isbn="978-3-86395-011-8" status="lieferbar"/>
+<item id="464" isbn="978-3-86395-013-2" status="lieferbar"/>
+<item id="57" isbn="978-3-938616-77-2" status="lieferbar"/>
+<item id="825" isbn="978-3-86395-201-3" status="lieferbar"/>
+<item id="261" isbn="978-3-940344-07-6" status="lieferbar"/>
+<item id="789" isbn="978-3-86395-186-3" status="lieferbar"/>
+<item id="772" isbn="978-3-86395-153-5" status="lieferbar"/>
+<item id="277" isbn="978-3-941875-73-9" status="lieferbar"/>
+<item id="310" isbn="978-3-86395-124-5" status="lieferbar"/>
+<item id="642" isbn="978-3-930457-67-0" status="lieferbar"/>
+<item id="370" isbn="978-3-86395-091-0" status="lieferbar"/>
+<item id="134" isbn="978-3-86395-034-7" status="lieferbar"/>
+<item id="513" isbn="978-3-940344-01-4" status="lieferbar"/>
+<item id="400" isbn="978-3-941875-95-1" status="lieferbar"/>
+<item id="186" isbn="978-3-941875-37-1" status="lieferbar"/>
+<item id="610" isbn="978-3-941875-08-1" status="nicht lieferbar"/>
+<item id="62" isbn="978-3-940344-56-4" status="lieferbar"/>
+<item id="511" isbn="978-3-941875-65-4" status="lieferbar"/>
+<item id="36" isbn="978-3-940344-78-6" status="lieferbar"/>
+<item id="504" isbn="978-3-940344-10-6" status="lieferbar"/>
+<item id="782" isbn="978-3-86395-130-6" status="lieferbar"/>
+<item id="216" isbn="978-3-941875-22-7" status="lieferbar"/>
+<item id="244" isbn="978-3-930457-32-8" status="nicht lieferbar"/>
+<item id="108" isbn="978-3-941875-96-8" status="lieferbar"/>
+<item id="758" isbn="978-3-86395-167-2" status="lieferbar"/>
+<item id="153" isbn="978-3-86395-106-1" status="lieferbar"/>
+<item id="288" isbn="978-3-86395-067-5" status="lieferbar"/>
+<item id="150" isbn="978-3-86395-088-0" status="lieferbar"/>
+<item id="321" isbn="978-3-941875-51-7" status="lieferbar"/>
+<item id="93" isbn="978-3-86395-157-3" status="nicht lieferbar"/>
+<item id="241" isbn="978-3-941875-68-5" status="lieferbar"/>
+<item id="436" isbn="978-3-941875-02-9" status="lieferbar"/>
+<item id="111" isbn="978-3-938616-06-2" status="nicht lieferbar"/>
+<item id="209" isbn="978-3-938616-91-8" status="lieferbar"/>
+<item id="128" isbn="978-3-86395-012-5" status="lieferbar"/>
+<item id="595" isbn="978-3-88282-056-0" status="lieferbar"/>
+<item id="802" isbn="978-3-86395-181-8" status="lieferbar"/>
+<item id="135" isbn="978-3-86395-037-8" status="lieferbar"/>
+<item id="309" isbn="978-3-86395-089-7" status="lieferbar"/>
+<item id="265" isbn="978-3-940344-31-1" status="lieferbar"/>
+<item id="230" isbn="978-3-86395-137-5" status="lieferbar"/>
+<item id="741" isbn="978-3-86395-138-2" status="lieferbar"/>
+<item id="810" isbn="978-3-86395-209-9" status="lieferbar"/>
+<item id="100" isbn="978-3-941875-35-7" status="lieferbar"/>
+<item id="792" isbn="978-3-86395-190-0" status="lieferbar"/>
+<item id="406" isbn="978-3-86395-162-7" status="lieferbar"/>
+<item id="763" isbn="978-3-86395-179-5" status="lieferbar"/>
+<item id="491" isbn="978-3-941875-63-0" status="lieferbar"/>
+<item id="418" isbn="978-3-940344-80-9" status="lieferbar"/>
+<item id="488" isbn="978-3-941875-21-0" status="lieferbar"/>
+<item id="276" isbn="978-3-941875-60-9" status="lieferbar"/>
+<item id="494" isbn="978-3-938616-14-7" status="nicht lieferbar"/>
+<item id="505" isbn="978-3-940344-17-5" status="nicht lieferbar"/>
+<item id="137" isbn="978-3-86395-048-4" status="lieferbar"/>
+<item id="317" isbn="978-3-941875-05-0" status="lieferbar"/>
+<item id="279" isbn="978-3-941875-81-4" status="lieferbar"/>
+<item id="892" isbn="978-3-86395-239-6" status="lieferbar"/>
+<item id="467" isbn="978-3-940344-99-1" status="nicht lieferbar"/>
+<item id="156" isbn="978-3-86395-121-4" status="lieferbar"/>
+<item id="455" isbn="978-3-940344-91-5" status="lieferbar"/>
+<item id="204" isbn="978-3-86395-068-2" status="lieferbar"/>
+<item id="105" isbn="978-3-941875-74-6" status="lieferbar"/>
+<item id="55" isbn="978-3-86395-094-1" status="lieferbar"/>
+<item id="791" isbn="978-3-86395-187-0" status="lieferbar"/>
+<item id="891" isbn="978-3-86395-206-8" status="lieferbar"/>
+<item id="456" isbn="978-3-940344-92-2" status="lieferbar"/>
+<item id="627" isbn="978-3-930457-07-6" status="lieferbar"/>
+<item id="221" isbn="978-3-938616-10-9" status="lieferbar"/>
+<item id="950" isbn="978-3-86395-258-7" status="lieferbar"/>
+<item id="162" isbn="978-3-938616-72-7" status="nicht lieferbar"/>
+<item id="242" isbn="978-3-941875-98-2" status="lieferbar"/>
+<item id="450" isbn="978-3-86395-122-1" status="lieferbar"/>
+<item id="489" isbn="978-3-941875-23-4" status="nicht lieferbar"/>
+<item id="708" isbn="978-3-86395-155-9" status="lieferbar"/>
+<item id="767" isbn="978-3-86395-170-2" status="lieferbar"/>
+<item id="238" isbn="978-3-941875-09-8" status="lieferbar"/>
+<item id="958" isbn="978-3-86395-260-0" status="lieferbar"/>
+<item id="136" isbn="978-3-86395-046-0" status="lieferbar"/>
+<item id="158" isbn="978-3-86395-128-3" status="lieferbar"/>
+<item id="203" isbn="978-3-86395-056-9" status="lieferbar"/>
+<item id="67" isbn="978-3-938616-00-0" status="lieferbar"/>
+<item id="286" isbn="978-3-938616-37-6" status="lieferbar"/>
+<item id="761" isbn="978-3-86395-173-3" status="lieferbar"/>
+<item id="962" isbn="978-3-86395-264-8" status="lieferbar"/>
+<item id="520" isbn="978-3-941875-55-5" status="nicht lieferbar"/>
+<item id="619" isbn="978-3-940317-48-3" status="nicht lieferbar"/>
+<item id="639" isbn="978-3-930457-39-7" status="lieferbar"/>
+<item id="912" isbn="978-3-86395-231-0" status="lieferbar"/>
+<item id="183" isbn="978-3-941875-17-3" status="lieferbar"/>
+<item id="72" isbn="978-3-938616-33-8" status="lieferbar"/>
+<item id="293" isbn="978-3-938616-73-4" status="lieferbar"/>
+<item id="955" isbn="978-3-86395-256-3" status="lieferbar"/>
+<item id="56" isbn="978-3-938616-74-1" status="lieferbar"/>
+<item id="84" isbn="978-3-86395-059-0" status="lieferbar"/>
+<item id="706" isbn="978-3-940344-23-6" status="lieferbar"/>
+<item id="101" isbn="978-3-941875-36-4" status="lieferbar"/>
+<item id="603" isbn="978-3-86488-032-2" status="nicht lieferbar"/>
+<item id="776" isbn="978-3-86395-176-4" status="lieferbar"/>
+<item id="64" isbn="978-3-941875-32-6" status="lieferbar"/>
+<item id="166" isbn="978-3-938616-82-6" status="lieferbar"/>
+<item id="900" isbn="978-3-86395-242-6" status="lieferbar"/>
+<item id="320" isbn="978-3-941875-47-0" status="lieferbar"/>
+<item id="363" isbn="978-3-938616-42-0" status="lieferbar"/>
+<item id="361" isbn="978-3-86395-024-8" status="lieferbar"/>
+<item id="278" isbn="978-3-941875-76-0" status="lieferbar"/>
+<item id="143" isbn="978-3-86395-071-2" status="lieferbar"/>
+<item id="775" isbn="978-3-86395-183-2" status="lieferbar"/>
+<item id="262" isbn="978-3-940344-11-3" status="nicht lieferbar"/>
+<item id="493" isbn="978-3-938616-13-0" status="nicht lieferbar"/>
+<item id="121" isbn="978-3-86395-002-6" status="lieferbar"/>
+<item id="48" isbn="978-3-938616-17-8" status="lieferbar"/>
+<item id="760" isbn="978-3-86395-165-8" status="lieferbar"/>
+<item id="30" isbn="978-3-86395-150-4" status="lieferbar"/>
+<item id="808" isbn="978-3-86395-191-7" status="lieferbar"/>
+<item id="358" isbn="978-3-938616-21-5" status="lieferbar"/>
+<item id="601" isbn="978-3-86488-008-7" status="nicht lieferbar"/>
+<item id="399" isbn="978-3-86395-045-3" status="lieferbar"/>
+<item id="774" isbn="978-3-86395-171-9" status="lieferbar"/>
+<item id="188" isbn="978-3-941875-53-1" status="lieferbar"/>
+<item id="355" isbn="978-3-930457-75-5" status="nicht lieferbar"/>
+<item id="180" isbn="978-3-941875-01-2" status="lieferbar"/>
+<item id="110" isbn="978-3-930457-74-8" status="lieferbar"/>
+<item id="181" isbn="978-3-941875-06-7" status="lieferbar"/>
+<item id="116" isbn="978-3-938616-60-4" status="nicht lieferbar"/>
+<item id="151" isbn="978-3-86395-096-5" status="lieferbar"/>
+<item id="393" isbn="978-3-940344-79-3" status="lieferbar"/>
+<item id="27" isbn="978-3-86395-099-6" status="lieferbar"/>
+<item id="518" isbn="978-3-86395-093-4" status="lieferbar"/>
+<item id="669" isbn="978-3-930457-11-3" status="nicht lieferbar"/>
+<item id="92" isbn="978-3-86395-134-4" status="lieferbar"/>
+<item id="843" isbn="978-3-86395-240-2" status="lieferbar"/>
+<item id="360" isbn="978-3-86395-050-7" status="lieferbar"/>
+<item id="411" isbn="978-3-86395-077-4" status="lieferbar"/>
+<item id="628" isbn="978-3-930457-08-3" status="nicht lieferbar"/>
+<item id="475" isbn="978-3-86395-016-3" status="lieferbar"/>
+<item id="598" isbn="978-3-89355-134-7" status="lieferbar"/>
+<item id="409" isbn="978-3-86395-032-3" status="lieferbar"/>
+<item id="169" isbn="978-3-940344-06-9" status="lieferbar"/>
+<item id="290" isbn="978-3-86395-117-7" status="lieferbar"/>
+<item id="322" isbn="978-3-941875-69-2" status="lieferbar"/>
+<item id="599" isbn="978-3-924781-44-6" status="lieferbar"/>
+<item id="275" isbn="978-3-941875-34-0" status="lieferbar"/>
+<item id="391" isbn="978-3-938616-66-6" status="lieferbar"/>
+<item id="485" isbn="978-3-940344-69-4" status="lieferbar"/>
+<item id="385" isbn="978-3-938616-24-6" status="lieferbar"/>
+<item id="289" isbn="978-3-86395-108-5" status="lieferbar"/>
+<item id="804" isbn="978-3-86395-194-8" status="lieferbar"/>
+<item id="419" isbn="978-3-941875-03-6" status="lieferbar"/>
+<item id="421" isbn="978-3-941875-88-3" status="lieferbar"/>
+<item id="780" isbn="978-3-86395-175-7" status="lieferbar"/>
+<item id="956" isbn="978-3-86395-212-9" status="lieferbar"/>
+<item id="795" isbn="978-3-86488-077-3" status="nicht lieferbar"/>
+<item id="449" isbn="978-3-86395-062-0" status="lieferbar"/>
+<item id="472" isbn="978-3-86395-104-7" status="lieferbar"/>
+<item id="254" isbn="978-3-86395-055-2" status="lieferbar"/>
+<item id="66" isbn="978-3-940344-36-6" status="lieferbar"/>
+<item id="251" isbn="978-3-938616-59-8" status="lieferbar"/>
+<item id="818" isbn="978-3-86395-215-0" status="lieferbar"/>
+<item id="85" isbn="978-3-86395-065-1" status="lieferbar"/>
+<item id="125" isbn="978-3-86395-007-1" status="lieferbar"/>
+<item id="274" isbn="978-3-941875-25-8" status="lieferbar"/>
+<item id="414" isbn="978-3-86395-132-0" status="lieferbar"/>
+<item id="215" isbn="978-3-941875-18-0" status="lieferbar"/>
+<item id="766" isbn="978-3-86395-178-8" status="nicht lieferbar"/>
+<item id="177" isbn="978-3-940344-62-5" status="lieferbar"/>
+<item id="155" isbn="978-3-86395-119-1" status="lieferbar"/>
+<item id="211" isbn="978-3-940344-25-0" status="nicht lieferbar"/>
+<item id="245" isbn="978-3-930457-42-7" status="lieferbar"/>
+<item id="597" isbn="978-3-89244-452-7" status="lieferbar"/>
+<item id="207" isbn="978-3-86395-143-6" status="lieferbar"/>
+<item id="751" isbn="978-3-86395-180-1" status="lieferbar"/>
+<item id="157" isbn="978-3-86395-123-8" status="lieferbar"/>
+<item id="258" isbn="978-3-86395-079-8" status="lieferbar"/>
+<item id="379" isbn="978-3-938616-56-7" status="nicht lieferbar"/>
+<item id="441" isbn="978-3-86395-027-9" status="lieferbar"/>
+<item id="210" isbn="978-3-940344-09-0" status="lieferbar"/>
+<item id="387" isbn="978-3-86395-047-7" status="lieferbar"/>
+<item id="32" isbn="978-3-940344-29-8" status="lieferbar"/>
+<item id="410" isbn="978-3-86395-064-4" status="lieferbar"/>
+<item id="479" isbn="978-3-86395-144-3" status="lieferbar"/>
+<item id="887" isbn="978-3-86395-220-4" status="lieferbar"/>
+<item id="273" isbn="978-3-940344-74-8" status="lieferbar"/>
+<item id="112" isbn="978-3-938616-08-6" status="lieferbar"/>
+<item id="498" isbn="978-3-940344-98-4" status="lieferbar"/>
+<item id="407" isbn="978-3-941875-48-7" status="lieferbar"/>
+<item id="60" isbn="978-3-940344-15-1" status="lieferbar"/>
+<item id="480" isbn="978-3-86395-151-1" status="lieferbar"/>
+<item id="78" isbn="978-3-86395-015-6" status="lieferbar"/>
+<item id="97" isbn="978-3-938616-96-3" status="lieferbar"/>
+<item id="237" isbn="978-3-940344-77-9" status="lieferbar"/>
+<item id="756" isbn="978-3-86395-159-7" status="lieferbar"/>
+<item id="175" isbn="978-3-940344-54-0" status="lieferbar"/>
+<item id="624" isbn="978-3-930457-05-2" status="lieferbar"/>
+<item id="817" isbn="978-3-86395-211-2" status="lieferbar"/>
+<item id="886" isbn="978-3-86395-249-5" status="lieferbar"/>
+<item id="300" isbn="978-3-930457-14-4" status="lieferbar"/>
+<item id="477" isbn="978-3-86395-041-5" status="lieferbar"/>
+<item id="319" isbn="978-3-941875-46-3" status="lieferbar"/>
+<item id="821" isbn="978-3-86395-221-1" status="lieferbar"/>
+<item id="324" isbn="978-3-941875-86-9" status="lieferbar"/>
+<item id="189" isbn="978-3-941875-57-9" status="nicht lieferbar"/>
+<item id="226" isbn="978-3-86395-019-4" status="lieferbar"/>
+<item id="784" isbn="978-3-86395-185-6" status="lieferbar"/>
+<item id="126" isbn="978-3-86395-009-5" status="lieferbar"/>
+<item id="174" isbn="978-3-940344-48-9" status="lieferbar"/>
+<item id="131" isbn="978-3-86395-021-7" status="lieferbar"/>
+<item id="636" isbn="978-3-930457-24-3" status="lieferbar"/>
+<item id="908" isbn="978-3-86395-251-8" status="lieferbar"/>
+<item id="133" isbn="978-3-86395-029-3" status="lieferbar"/>
+<item id="362" isbn="978-3-941875-10-4" status="lieferbar"/>
+<item id="371" isbn="978-3-86395-063-7" status="lieferbar"/>
+<item id="307" isbn="978-3-86395-044-6" status="lieferbar"/>
+<item id="757" isbn="978-3-86395-149-8" status="lieferbar"/>
+<item id="459" isbn="978-3-86395-069-9" status="lieferbar"/>
+<item id="159" isbn="978-3-86395-136-8" status="lieferbar"/>
+<item id="382" isbn="978-3-940344-18-2" status="nicht lieferbar"/>
+<item id="52" isbn="978-3-86395-042-2" status="lieferbar"/>
+<item id="37" isbn="978-3-941875-27-2" status="lieferbar"/>
+<item id="501" isbn="978-3-930457-30-4" status="lieferbar"/>
+<item id="395" isbn="978-3-941875-40-1" status="lieferbar"/>
+<item id="606" isbn="978-3-938616-27-7" status="lieferbar"/>
+<item id="753" isbn="978-3-86395-174-0" status="lieferbar"/>
+<item id="437" isbn="978-3-941875-49-4" status="lieferbar"/>
+<item id="630" isbn="978-3-930457-16-8" status="lieferbar"/>
+<item id="299" isbn="978-3-941875-71-5" status="lieferbar"/>
+<item id="522" isbn="978-3-930457-82-3" status="nicht lieferbar"/>
+<item id="894" isbn="978-3-86395-223-5" status="lieferbar"/>
+<item id="641" isbn="978-3-930457-65-6" status="nicht lieferbar"/>
+<item id="90" isbn="978-3-86395-112-2" status="nicht lieferbar"/>
+<item id="824" isbn="978-3-86395-213-6" status="lieferbar"/>
+<item id="193" isbn="978-3-941875-82-1" status="lieferbar"/>
+<item id="212" isbn="978-3-940344-28-1" status="lieferbar"/>
+<item id="637" isbn="978-3-930457-27-4" status="lieferbar"/>
+<item id="228" isbn="978-3-86395-105-4" status="lieferbar"/>
+<item id="517" isbn="978-3-941875-85-2" status="lieferbar"/>
+<item id="957" isbn="978-3-86395-263-1" status="lieferbar"/>
+<item id="75" isbn="978-3-86395-008-8" status="lieferbar"/>
+<item id="416" isbn="978-3-940344-12-0" status="lieferbar"/>
+<item id="208" isbn="978-3-938616-75-8" status="lieferbar"/>
+<item id="711" isbn="978-3-86395-115-3" status="lieferbar"/>
+<item id="256" isbn="978-3-86395-070-5" status="lieferbar"/>
+<item id="445" isbn="978-3-940344-43-4" status="lieferbar"/>
+<item id="626" isbn="978-3-930457-06-9" status="nicht lieferbar"/>
+<item id="381" isbn="978-3-86395-146-7" status="lieferbar"/>
+<item id="465" isbn="978-3-86395-039-2" status="lieferbar"/>
+<item id="285" isbn="978-3-930457-71-7" status="lieferbar"/>
+<item id="448" isbn="978-3-941875-24-1" status="lieferbar"/>
+<item id="206" isbn="978-3-86395-142-9" status="lieferbar"/>
+<item id="168" isbn="978-3-938616-86-4" status="lieferbar"/>
+<item id="440" isbn="978-3-938616-03-1" status="lieferbar"/>
+<item id="816" isbn="978-3-86395-210-5" status="lieferbar"/>
+<item id="87" isbn="978-3-86395-092-7" status="lieferbar"/>
+<item id="502" isbn="978-3-938616-30-7" status="nicht lieferbar"/>
+<item id="617" isbn="978-3-201-01676-6" status="lieferbar"/>
+<item id="200" isbn="978-3-938616-36-9" status="nicht lieferbar"/>
+<item id="287" isbn="978-3-86395-020-0" status="lieferbar"/>
+<item id="120" isbn="978-3-86395-001-9" status="lieferbar"/>
+<item id="160" isbn="978-3-86395-147-4" status="lieferbar"/>
+<item id="190" isbn="978-3-941875-77-7" status="lieferbar"/>
+<item id="644" isbn="978-3-930457-78-6" status="lieferbar"/>
+<item id="447" isbn="978-3-941875-38-8" status="lieferbar"/>
+<item id="510" isbn="978-3-941875-19-7" status="lieferbar"/>
+<item id="777" isbn="978-3-86395-148-1" status="lieferbar"/>
+<item id="368" isbn="978-3-940344-81-6" status="lieferbar"/>
+<item id="46" isbn="978-3-930457-70-0" status="lieferbar"/>
+<item id="98" isbn="978-3-940344-14-4" status="lieferbar"/>
+<item id="295" isbn="978-3-938616-98-7" status="lieferbar"/>
+<item id="650" isbn="978-3-930457-81-6" status="lieferbar"/>
+<item id="268" isbn="978-3-940344-40-3" status="lieferbar"/>
+<item id="185" isbn="978-3-941875-29-6" status="lieferbar"/>
+<item id="893" isbn="978-3-86395-250-1" status="lieferbar"/>
+<item id="506" isbn="978-3-940344-70-0" status="nicht lieferbar"/>
+<item id="323" isbn="978-3-941875-79-1" status="lieferbar"/>
+<item id="661" isbn="978-3-938616-26-0" status="lieferbar"/>
+<item id="951" isbn="978-3-86395-261-7" status="lieferbar"/>
+<item id="850" isbn="978-3-86395-229-7" status="lieferbar"/>
+<item id="798" isbn="978-3-86395-196-2" status="lieferbar"/>
+<item id="118" isbn="978-3-938616-65-9" status="lieferbar"/>
+<item id="282" isbn="978-3-941875-94-4" status="lieferbar"/>
+<item id="427" isbn="978-3-940344-04-5" status="nicht lieferbar"/>
+<item id="405" isbn="978-3-86395-114-6" status="lieferbar"/>
+<item id="376" isbn="978-3-930457-45-8" status="lieferbar"/>
+<item id="823" isbn="978-3-86395-224-2" status="lieferbar"/>
+<item id="423" isbn="978-3-938616-19-2" status="nicht lieferbar"/>
+<item id="172" isbn="978-3-940344-41-0" status="lieferbar"/>
+<item id="229" isbn="978-3-86395-135-1" status="lieferbar"/>
+<item id="496" isbn="978-3-86395-140-5" status="lieferbar"/>
+<item id="634" isbn="978-3-930457-21-2" status="lieferbar"/>
+<item id="61" isbn="978-3-940344-50-2" status="nicht lieferbar"/>
+<item id="294" isbn="978-3-938616-79-6" status="lieferbar"/>
+<item id="428" isbn="978-3-940344-42-7" status="lieferbar"/>
+<item id="596" isbn="978-3-89244-204-2" status="lieferbar"/>
+<item id="178" isbn="978-3-940344-63-2" status="lieferbar"/>
+<item id="33" isbn="978-3-940344-46-5" status="lieferbar"/>
+<item id="907" isbn="978-3-86395-255-6" status="lieferbar"/>
+<item id="593" isbn="978-3-598-11443-4" status="lieferbar"/>
+<item id="622" isbn="978-3-930457-04-5" status="lieferbar"/>
+<item id="890" isbn="978-3-86395-244-0" status="lieferbar"/>
+<item id="198" isbn="978-3-938616-25-3" status="lieferbar"/>
+<item id="263" isbn="978-3-940344-21-2" status="lieferbar"/>
+<item id="809" isbn="978-3-86395-197-9" status="lieferbar"/>
+<item id="141" isbn="978-3-86395-060-6" status="lieferbar"/>
+<item id="638" isbn="978-3-930457-36-6" status="lieferbar"/>
+<item id="841" isbn="978-3-86395-234-1" status="lieferbar"/>
+<item id="844" isbn="978-3-86395-235-8" status="lieferbar"/>
+<item id="765" isbn="978-3-86395-154-2" status="lieferbar"/>
+<item id="45" isbn="978-3-930457-64-9" status="lieferbar"/>
+<item id="490" isbn="978-3-941875-52-4" status="lieferbar"/>
+<item id="199" isbn="978-3-938616-29-1" status="nicht lieferbar"/>
+<item id="770" isbn="978-3-86395-158-0" status="lieferbar"/>
+<item id="119" isbn="978-3-938616-67-3" status="nicht lieferbar"/>
+<item id="384" isbn="978-3-930457-62-5" status="nicht lieferbar"/>
+<item id="702" isbn="978-3-940344-22-9" status="lieferbar"/>
+<item id="662" isbn="978-3-938616-44-4" status="lieferbar"/>
+<item id="826" isbn="978-3-86395-227-3" status="lieferbar"/>
+<item id="315" isbn="978-3-940344-83-0" status="lieferbar"/>
+<item id="195" isbn="978-3-941875-93-7" status="lieferbar"/>
+<item id="374" isbn="978-3-930457-48-9" status="lieferbar"/>
+<item id="460" isbn="978-3-86395-085-9" status="lieferbar"/>
+<item id="815" isbn="978-3-86395-184-9" status="lieferbar"/>
+<item id="147" isbn="978-3-86395-078-1" status="lieferbar"/>
+<item id="712" isbn="978-3-938616-76-5" status="lieferbar"/>
+<item id="633" isbn="978-3-930457-20-5" status="nicht lieferbar"/>
+<item id="154" isbn="978-3-86395-116-0" status="lieferbar"/>
+<item id="314" isbn="978-3-940344-76-2" status="lieferbar"/>
+<item id="390" isbn="978-3-86395-145-0" status="lieferbar"/>
+<item id="769" isbn="978-3-86395-160-3" status="lieferbar"/>
+<item id="106" isbn="978-3-941875-75-3" status="lieferbar"/>
+<item id="187" isbn="978-3-941875-50-0" status="lieferbar"/>
+<item id="88" isbn="978-3-86395-097-2" status="lieferbar"/>
+<item id="438" isbn="978-3-941875-62-3" status="lieferbar"/>
+<item id="192" isbn="978-3-941875-80-7" status="lieferbar"/>
+<item id="367" isbn="978-3-930457-29-8" status="lieferbar"/>
+<item id="83" isbn="978-3-86395-058-3" status="nicht lieferbar"/>
+<item id="58" isbn="978-3-938616-89-5" status="lieferbar"/>
+<item id="113" isbn="978-3-938616-31-4" status="lieferbar"/>
+<item id="466" isbn="978-3-86395-133-7" status="lieferbar"/>
+<item id="252" isbn="978-3-86395-014-9" status="lieferbar"/>
+<item id="452" isbn="978-3-940344-88-5" status="lieferbar"/>
+<item id="115" isbn="978-3-938616-45-1" status="lieferbar"/>
+<item id="425" isbn="978-3-86395-120-7" status="lieferbar"/>
+<item id="236" isbn="978-3-940344-53-3" status="nicht lieferbar"/>
+<item id="735" isbn="978-3-86395-182-5" status="lieferbar"/>
+<item id="123" isbn="978-3-86395-004-0" status="lieferbar"/>
+<item id="471" isbn="978-3-941875-20-3" status="lieferbar"/>
+<item id="176" isbn="978-3-940344-59-5" status="nicht lieferbar"/>
+<item id="392" isbn="978-3-940344-00-7" status="nicht lieferbar"/>
+<item id="173" isbn="978-3-940344-45-8" status="lieferbar"/>
+<item id="481" isbn="978-3-938616-90-1" status="nicht lieferbar"/>
+<item id="424" isbn="978-3-938616-50-5" status="nicht lieferbar"/>
+<item id="201" isbn="978-3-938616-53-6" status="lieferbar"/>
+<item id="122" isbn="978-3-86395-003-3" status="lieferbar"/>
+<item id="435" isbn="978-3-940344-75-5" status="lieferbar"/>
+<item id="812" isbn="978-3-86395-192-4" status="lieferbar"/>
+<item id="217" isbn="978-3-941875-31-9" status="lieferbar"/>
+<item id="213" isbn="978-3-940344-67-0" status="lieferbar"/>
+<item id="500" isbn="978-3-941875-64-7" status="lieferbar"/>
+<item id="401" isbn="978-3-86395-051-4" status="lieferbar"/>
+<item id="906" isbn="978-3-86395-214-3" status="lieferbar"/>
+<item id="298" isbn="978-3-940344-33-5" status="lieferbar"/>
+<item id="219" isbn="978-3-930457-66-3" status="lieferbar"/>
+<item id="35" isbn="978-3-940344-71-7" status="lieferbar"/>
+<item id="631" isbn="978-3-930457-18-2" status="nicht lieferbar"/>
+<item id="632" isbn="978-3-930457-19-9" status="lieferbar"/>
+<item id="259" isbn="978-3-86395-110-8" status="lieferbar"/>
+<item id="612" isbn="978-3-943363-00-5" status="nicht lieferbar"/>
+<item id="648" isbn="978-3-930457-79-3" status="lieferbar"/>
+<item id="740" isbn="978-3-86395-111-5" status="lieferbar"/>
+<item id="820" isbn="978-3-86395-200-6" status="lieferbar"/>
+<item id="519" isbn="978-3-938616-23-9" status="nicht lieferbar"/>
+<item id="280" isbn="978-3-941875-84-5" status="lieferbar"/>
+<item id="797" isbn="978-3-86395-188-7" status="lieferbar"/>
+<item id="222" isbn="978-3-938616-40-6" status="lieferbar"/>
+<item id="442" isbn="978-3-86395-095-8" status="lieferbar"/>
+<item id="102" isbn="978-3-941875-39-5" status="nicht lieferbar"/>
+<item id="469" isbn="978-3-938616-54-3" status="lieferbar"/>
+<item id="605" isbn="978-3-86488-054-4" status="nicht lieferbar"/>
+<item id="422" isbn="978-3-930457-43-4" status="lieferbar"/>
+<item id="246" isbn="978-3-938616-16-1" status="lieferbar"/>
+<item id="608" isbn="978-3-938616-41-3" status="lieferbar"/>
+<item id="308" isbn="978-3-86395-061-3" status="lieferbar"/>
+<item id="429" isbn="978-3-941875-43-2" status="lieferbar"/>
+<item id="196" isbn="978-3-930457-68-7" status="lieferbar"/>
+<item id="249" isbn="978-3-938616-57-4" status="nicht lieferbar"/>
+<item id="117" isbn="978-3-938616-64-2" status="nicht lieferbar"/>
+<item id="167" isbn="978-3-938616-83-3" status="lieferbar"/>
+<item id="476" isbn="978-3-86395-040-8" status="lieferbar"/>
+<item id="668" isbn="978-3-938616-02-4" status="lieferbar"/>
+<item id="700" isbn="978-3-941875-97-5" status="lieferbar"/>
+<item id="260" isbn="978-3-938616-92-5" status="lieferbar"/>
+<item id="394" isbn="978-3-941875-26-5" status="lieferbar"/>
+<item id="594" isbn="978-3-598-40470-2" status="lieferbar"/>
+<item id="4" isbn="978-3-941875-58-6" status="lieferbar"/>
+<item id="718" isbn="978-3-941875-56-2" status="lieferbar"/>
+<item id="104" isbn="978-3-941875-42-5" status="lieferbar"/>
+<item id="738" isbn="978-3-86395-152-8" status="lieferbar"/>
+<item id="86" isbn="978-3-86395-074-3" status="lieferbar"/>
+<item id="220" isbn="978-3-938616-07-9" status="lieferbar"/>
+<item id="743" isbn="978-3-938616-85-7" status="lieferbar"/>
+<item id="292" isbn="978-3-938616-71-0" status="lieferbar"/>
+<item id="6" isbn="978-3-86395-125-2" status="lieferbar"/>
+<item id="47" isbn="978-3-930457-76-2" status="nicht lieferbar"/>
+<item id="247" isbn="978-3-938616-20-8" status="lieferbar"/>
+<item id="851" isbn="978-3-86395-225-9" status="lieferbar"/>
+<item id="79" isbn="978-3-86395-023-1" status="lieferbar"/>
+<item id="663" isbn="978-3-940344-05-2" status="lieferbar"/>
+<item id="38" isbn="978-3-941875-30-2" status="lieferbar"/>
+<item id="91" isbn="978-3-86395-127-6" status="lieferbar"/>
+<item id="316" isbn="978-3-941875-04-3" status="lieferbar"/>
+<item id="80" isbn="978-3-86395-036-1" status="lieferbar"/>
+<item id="171" isbn="978-3-940344-30-4" status="lieferbar"/>
+<item id="163" isbn="978-3-938616-80-2" status="lieferbar"/>
+<item id="446" isbn="978-3-940344-49-6" status="lieferbar"/>
+<item id="698" isbn="978-3-86395-022-4" status="lieferbar"/>
+<item id="484" isbn="978-3-940344-65-6" status="lieferbar"/>
+<item id="444" isbn="978-3-940344-26-7" status="lieferbar"/>
+<item id="21" isbn="978-3-938616-49-9" status="lieferbar"/>
+<item id="44" isbn="978-3-930457-51-9" status="lieferbar"/>
+<item id="305" isbn="978-3-938616-51-2" status="lieferbar"/>
+<item id="397" isbn="978-3-938616-38-3" status="nicht lieferbar"/>
+<item id="667" isbn="978-3-86395-082-8" status="lieferbar"/>
+<item id="129" isbn="978-3-86395-017-0" status="lieferbar"/>
+<item id="845" isbn="978-3-86395-230-3" status="lieferbar"/>
+<item id="74" isbn="978-3-938616-34-5" status="lieferbar"/>
+<item id="822" isbn="978-3-86395-218-1" status="lieferbar"/>
+<item id="205" isbn="978-3-86395-113-9" status="lieferbar"/>
+<item id="778" isbn="978-3-86395-177-1" status="lieferbar"/>
+<item id="224" isbn="978-3-938616-52-9" status="lieferbar"/>
+<item id="223" isbn="978-3-938616-47-5" status="lieferbar"/>
+<item id="439" isbn="978-3-941875-91-3" status="lieferbar"/>
+<item id="486" isbn="978-3-940344-97-7" status="lieferbar"/>
+<item id="755" isbn="978-3-86395-166-5" status="lieferbar"/>
+<item id="457" isbn="978-3-940344-93-9" status="lieferbar"/>
+<item id="194" isbn="978-3-941875-92-0" status="lieferbar"/>
+<item id="386" isbn="978-3-86395-031-6" status="lieferbar"/>
+<item id="640" isbn="978-3-930457-40-3" status="lieferbar"/>
+<item id="248" isbn="978-3-938616-28-4" status="lieferbar"/>
+<item id="752" isbn="978-3-86395-169-6" status="lieferbar"/>
+<item id="71" isbn="978-3-938616-11-6" status="nicht lieferbar"/>
+<item id="961" isbn="978-3-86395-265-5" status="lieferbar"/>
+<item id="413" isbn="978-3-86395-100-9" status="lieferbar"/>
+<item id="454" isbn="978-3-940344-90-8" status="lieferbar"/>
+<item id="833" isbn="978-3-86395-203-7" status="lieferbar"/>
+<item id="658" isbn="978-3-940344-02-1" status="nicht lieferbar"/>
+<item id="615" isbn="978-3-86488-043-8" status="nicht lieferbar"/>
+<item id="3" isbn="978-3-941875-59-3" status="lieferbar"/>
+<item id="369" isbn="978-3-86395-118-4" status="lieferbar"/>
+<item id="670" isbn="978-3-940344-85-4" status="lieferbar"/>
+<item id="95" isbn="978-3-930457-72-4" status="nicht lieferbar"/>
+<item id="645" isbn="978-3-930457-55-7" status="lieferbar"/>
+<item id="130" isbn="978-3-86395-018-7" status="lieferbar"/>
+<item id="787" isbn="978-3-86395-189-4" status="lieferbar"/>
+<item id="764" isbn="978-3-86395-168-9" status="lieferbar"/>
+<item id="225" isbn="978-3-938616-55-0" status="nicht lieferbar"/>
+<item id="838" isbn="978-3-86395-238-9" status="lieferbar"/>
+<item id="103" isbn="978-3-941875-41-8" status="lieferbar"/>
+<item id="109" isbn="978-3-930457-58-8" status="nicht lieferbar"/>
+<item id="380" isbn="978-3-938616-69-7" status="lieferbar"/>
+<item id="250" isbn="978-3-938616-58-1" status="lieferbar"/>
+<item id="515" isbn="978-3-86395-006-4" status="lieferbar"/>
+<item id="389" isbn="978-3-86395-084-2" status="lieferbar"/>
+<item id="82" isbn="978-3-86395-054-5" status="lieferbar"/>
+<item id="227" isbn="978-3-86395-030-9" status="lieferbar"/>
+<item id="302" isbn="978-3-938616-18-5" status="lieferbar"/>
+<item id="24" isbn="978-3-86395-025-5" status="lieferbar"/>
+<item id="184" isbn="978-3-941875-28-9" status="lieferbar"/>
+<item id="832" isbn="978-3-86395-226-6" status="lieferbar"/>
+<item id="81" isbn="978-3-86395-043-9" status="lieferbar"/>
+<item id="284" isbn="978-3-930457-69-4" status="nicht lieferbar"/>
+<item id="266" isbn="978-3-940344-32-8" status="lieferbar"/>
+<item id="138" isbn="978-3-86395-049-1" status="lieferbar"/>
+<item id="306" isbn="978-3-86395-000-2" status="lieferbar"/>
+<item id="453" isbn="978-3-940344-89-2" status="lieferbar"/>
+<item id="240" isbn="978-3-941875-33-3" status="lieferbar"/>
+<item id="301" isbn="978-3-938616-15-4" status="lieferbar"/>
+<item id="142" isbn="978-3-86395-066-8" status="lieferbar"/>
+<item id="50" isbn="978-3-938616-61-1" status="lieferbar"/>
+<item id="235" isbn="978-3-940344-52-6" status="lieferbar"/>
+<item id="281" isbn="978-3-941875-87-6" status="lieferbar"/>
+<item id="911" isbn="978-3-86395-259-4" status="lieferbar"/>
+<item id="814" isbn="978-3-86395-204-4" status="lieferbar"/>
+<item id="253" isbn="978-3-86395-038-5" status="lieferbar"/>
+<item id="433" isbn="978-3-86395-033-0" status="lieferbar"/>
+<item id="839" isbn="978-3-86395-232-7" status="lieferbar"/>
+<item id="396" isbn="978-3-930457-59-5" status="nicht lieferbar"/>
+<item id="507" isbn="978-3-941875-00-5" status="lieferbar"/>
+<item id="953" isbn="978-3-86395-237-2" status="lieferbar"/>
+<item id="473" isbn="978-3-938616-62-8" status="lieferbar"/>
+<item id="848" isbn="978-3-86395-241-9" status="lieferbar"/>
+<item id="514" isbn="978-3-930457-37-3" status="lieferbar"/>
+<item id="214" isbn="978-3-940344-68-7" status="lieferbar"/>
+<item id="63" isbn="978-3-940344-96-0" status="lieferbar"/>
+<item id="404" isbn="978-3-86395-107-8" status="lieferbar"/>
+<item id="739" isbn="978-3-938616-39-0" status="lieferbar"/>
+<item id="99" isbn="978-3-940344-73-1" status="nicht lieferbar"/>
+<item id="487" isbn="978-3-941875-12-8" status="lieferbar"/>
+<item id="508" isbn="978-3-941875-11-1" status="nicht lieferbar"/>
+<item id="707" isbn="978-3-938616-05-5" status="lieferbar"/>
+<item id="451" isbn="978-3-940344-86-1" status="lieferbar"/>
+<item id="704" isbn="978-3-940344-57-1" status="lieferbar"/>
+<item id="354" isbn="978-3-940344-16-8" status="lieferbar"/>
+<item id="191" isbn="978-3-941875-78-4" status="lieferbar"/>
+<item id="483" isbn="978-3-940344-39-7" status="lieferbar"/>
+<item id="408" isbn="978-3-941875-90-6" status="lieferbar"/>
+<item id="132" isbn="978-3-86395-028-6" status="lieferbar"/>
+<item id="412" isbn="978-3-86395-081-1" status="lieferbar"/>
+<item id="148" isbn="978-3-86395-080-4" status="lieferbar"/>
+<item id="462" isbn="978-3-930457-63-2" status="lieferbar"/>
+<item id="474" isbn="978-3-940344-82-3" status="lieferbar"/>
+<item id="762" isbn="978-3-86395-161-0" status="lieferbar"/>
+<item id="470" isbn="978-3-941875-14-2" status="lieferbar"/>
+<item id="202" isbn="978-3-938616-63-5" status="nicht lieferbar"/>
+<item id="901" isbn="978-3-86395-252-5" status="lieferbar"/>
+<item id="771" isbn="978-3-86395-163-4" status="lieferbar"/>
+<item id="139" isbn="978-3-86395-053-8" status="lieferbar"/>
+<item id="107" isbn="978-3-941875-89-0" status="nicht lieferbar"/>
+<item id="197" isbn="978-3-938616-22-2" status="nicht lieferbar"/>
+<item id="478" isbn="978-3-86395-076-7" status="lieferbar"/>
+<item id="417" isbn="978-3-940344-19-9" status="lieferbar"/>
+<item id="25" isbn="978-3-86395-035-4" status="lieferbar"/>
+<item id="649" isbn="978-3-930457-80-9" status="lieferbar"/>
+<item id="403" isbn="978-3-86395-102-3" status="lieferbar"/>
+<item id="516" isbn="978-3-86395-090-3" status="lieferbar"/>
+<item id="39" isbn="978-3-941875-72-2" status="lieferbar"/>
+<item id="53" isbn="978-3-86395-072-9" status="lieferbar"/>
+<item id="849" isbn="978-3-86395-243-3" status="lieferbar"/>
+<item id="847" isbn="978-3-86395-228-0" status="lieferbar"/>
+<item id="218" isbn="978-3-930457-22-9" status="lieferbar"/>
+<item id="269" isbn="978-3-940344-44-1" status="lieferbar"/>
+<item id="910" isbn="978-3-86395-257-0" status="lieferbar"/>
+<item id="819" isbn="978-3-86395-205-1" status="lieferbar"/>
+<item id="482" isbn="978-3-938616-95-6" status="lieferbar"/>
+<item id="291" isbn="978-3-86395-126-9" status="lieferbar"/>
+<item id="495" isbn="978-3-86395-139-9" status="lieferbar"/>
+<item id="512" isbn="978-3-938616-99-4" status="lieferbar"/>
+<item id="233" isbn="978-3-938616-93-2" status="nicht lieferbar"/>
+<item id="813" isbn="978-3-86395-207-5" status="lieferbar"/>
+<item id="885" isbn="978-3-86395-233-4" status="lieferbar"/>
+<item id="161" isbn="978-3-938616-68-0" status="nicht lieferbar"/>
+<item id="234" isbn="978-3-940344-03-8" status="nicht lieferbar"/>
+<item id="430" isbn="978-3-941875-44-9" status="lieferbar"/>
+<item id="497" isbn="978-3-940344-20-5" status="lieferbar"/>
+<item id="31" isbn="978-3-940344-08-3" status="lieferbar"/>
+<item id="635" isbn="978-3-930457-23-6" status="lieferbar"/>
+<item id="398" isbn="978-3-938616-48-2" status="lieferbar"/>
+<item id="909" isbn="978-3-86395-253-2" status="lieferbar"/>
+<item id="960" isbn="978-3-86395-236-5" status="lieferbar"/>
+<item id="492" isbn="978-3-941875-99-9" status="lieferbar"/>
+<item id="270" isbn="978-3-940344-51-9" status="nicht lieferbar"/>
+<item id="318" isbn="978-3-941875-07-4" status="lieferbar"/>
+<item id="313" isbn="978-3-940344-66-3" status="lieferbar"/>
+<item id="402" isbn="978-3-86395-083-5" status="lieferbar"/>
+<item id="312" isbn="978-3-940344-58-8" status="lieferbar"/>
+<item id="366" isbn="978-3-940344-84-7" status="lieferbar"/>
+<item id="267" isbn="978-3-940344-37-3" status="lieferbar"/>
+<item id="124" isbn="978-3-86395-005-7" status="lieferbar"/>
+<item id="304" isbn="978-3-938616-46-8" status="nicht lieferbar"/>
+<item id="458" isbn="978-3-941875-61-6" status="lieferbar"/>
+<item id="372" isbn="978-3-938616-32-1" status="lieferbar"/>
+<item id="461" isbn="978-3-930457-31-1" status="nicht lieferbar"/>
+<item id="811" isbn="978-3-86395-202-0" status="lieferbar"/>
+<item id="231" isbn="978-3-86395-141-2" status="lieferbar"/>
+<item id="509" isbn="978-3-941875-13-5" status="nicht lieferbar"/>
+<item id="503" isbn="978-3-86395-026-2" status="lieferbar"/>
+<item id="629" isbn="978-3-930457-61-8" status="lieferbar"/>
+<item id="378" isbn="978-3-930457-41-0" status="lieferbar"/>
+<item id="164" isbn="978-3-938616-81-9" status="lieferbar"/>
+<item id="463" isbn="978-3-938616-01-7" status="lieferbar"/>
+<item id="773" isbn="978-3-86395-172-6" status="lieferbar"/>
+<item id="96" isbn="978-3-938616-84-0" status="lieferbar"/>
+<item id="89" isbn="978-3-86395-101-6" status="lieferbar"/>
+<item id="152" isbn="978-3-86395-103-0" status="lieferbar"/>
+<item id="420" isbn="978-3-941875-83-8" status="lieferbar"/>
+<item id="432" isbn="978-3-940344-13-7" status="lieferbar"/>
+<item id="170" isbn="978-3-940344-24-3" status="lieferbar"/>
+<item id="272" isbn="978-3-940344-72-4" status="lieferbar"/>
+<item id="34" isbn="978-3-940344-47-2" status="lieferbar"/>
+<item id="364" isbn="978-3-930457-77-9" status="lieferbar"/>
+<item id="179" isbn="978-3-940344-64-9" status="lieferbar"/>
+<item id="426" isbn="978-3-938616-70-3" status="lieferbar"/>
+<item id="232" isbn="978-3-930457-60-1" status="lieferbar"/>
+<item id="140" isbn="978-3-86395-057-6" status="lieferbar"/>
+<item id="311" isbn="978-3-940344-38-0" status="lieferbar"/>
+</items>

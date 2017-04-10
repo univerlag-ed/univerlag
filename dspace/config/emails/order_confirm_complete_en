@@ -1,0 +1,44 @@
+# E-mail sent with the information filled out in shopping cart.
+#
+# Parameters: {0} current date
+#             {1} customer email
+#             {2} customer info (formatted name, address)
+#             {3} delivery info (formatted name, address)
+#             {4} order data (formatted; quantity, price, creators, title, description, isbn)
+#             {5} product price
+#             {6} shipping costs
+#             {7} total sum
+#
+# See org.dspace.core.Email for information on the format of this file.#
+#
+Subject: Ordering confirmation: Göttingen University Press
+
+Confirmation for your order at the University Press Göttingen
+==============================================================
+
+{4} €
+
+----------------------------------
+Product price: 		{5} €
+Shipping costs:		{6} €
+Sum to pay: 		{7} €
+----------------------------------
+
+Customer Address
+-----------------
+{2}
+
+Delivery Address 
+-----------------
+{3}
+
+----------------------------------------------------------------
+Date: {0}
+
+We will send you the products inclusive invoice by post in the next 2 to 3 days.
+
+Thank you for the order!
+The University Press Team.
+
+
+[These message is authomatically generated.]

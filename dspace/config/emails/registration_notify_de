@@ -1,0 +1,17 @@
+# Registration notification email
+#
+# Parameters: {0} The name of the DSpace instance
+#             {1} The URL of the DSpace instance 
+#             {2} Name:
+#             {3} Email:
+#             {4} Registration Date:
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Univerlag Göttingen: Registrierungsbenachrichtigung
+
+Ein neuer Nutzer wurde registriert bei {0} {1}:
+
+Name:                   {2}
+Email:                  {3}
+Datum:                   {4}

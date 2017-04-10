@@ -1,0 +1,42 @@
+# E-mail sent with the information filled out in shopping cart.
+#
+# Parameters: {0} current date
+#             {1} customer email
+#             {2} customer info (formatted name, address)
+#             {3} delivery info (formatted name, address)
+#             {4} order data (formatted; quantity, price, creators, title, description, isbn)
+#             {5} product price
+#             {6} shipping costs
+#             {7} total sum
+#
+# See org.dspace.core.Email for information on the format of this file.
+#
+Subject: Neue Univerlag-Bestellung 
+
+Es liegt eine neue Bestellung vor:
+
+E-Mail-Adresse des Bestellers
+-----------------------------
+{1}
+
+Rechnungsadresse
+----------------
+{2}
+
+Lieferadresse
+-------------
+{3}
+
+Bestelleung:
+=====================================================================
+{4}
+
+
+Produktpreis:		{5} €
+Versandkosten:		{6} €
+Gesamtsumme:	        {7} €
+---------------------------------------------------------------------
+
+
+Datum: {0}
+Diese Nachricht wurde automatisch generiert.
