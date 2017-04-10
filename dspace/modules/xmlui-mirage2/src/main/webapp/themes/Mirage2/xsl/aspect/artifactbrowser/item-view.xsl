@@ -1393,11 +1393,10 @@
                 </xsl:if>
                 <xsl:call-template name="itemSummaryView-DIM-events"/>
                 <xsl:if test="//dim:field[@qualifier='edition']">
-                    <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></span>
+                    <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></p>
                 </xsl:if>
 
-                <span><strong><i18n:text>xmlui.Discovery.AdvancedSearch.type_type</i18n:text></strong><xsl:text>: </xsl:text>
-
+                <p><strong><i18n:text>xmlui.Discovery.AdvancedSearch.type_type</i18n:text></strong><xsl:text>: </xsl:text>
 
                     <xsl:choose>
                         <xsl:when test="//dim:field[@qualifier='subtype']">
@@ -1407,19 +1406,19 @@
                             <i18n:text><xsl:value-of select="//dim:field[@element='type']" /></i18n:text>
                         </xsl:otherwise>
                     </xsl:choose>
-                </span>
+                </p>
 
-                <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-division</i18n:text></strong><xsl:text>: </xsl:text><i18n:text><xsl:value-of select="//dim:field[@element='subject'][@qualifier='division']" /></i18n:text></span>
+                <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-division</i18n:text></strong><xsl:text>: </xsl:text><i18n:text><xsl:value-of select="//dim:field[@element='subject'][@qualifier='division']" /></i18n:text></p>
 
-                <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-language</i18n:text></strong><xsl:text>: </xsl:text>
+                <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-language</i18n:text></strong><xsl:text>: </xsl:text>
                     <xsl:for-each select="//dim:field[@element='language'][@qualifier='iso']">
                         <i18n:text><xsl:value-of select="." /></i18n:text>
                         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
                     </xsl:for-each>
-                </span>
+                </p>
 
                 <xsl:if test="//dim:field[starts-with(@qualifier,'isbn')]">
-                    <span><strong>ISBN</strong><xsl:text>: </xsl:text>
+                    <p><strong>ISBN</strong><xsl:text>: </xsl:text>
                         <span id="isbn">
                             <xsl:choose>
                                 <xsl:when test="//dim:field[@qualifier='isbn-13']">
@@ -1435,10 +1434,10 @@
                         <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><xsl:text> </xsl:text><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
                         <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard"><i class="icon-export"></i></a>
 
-                    </span>
+                    </p>
                 </xsl:if>
 
-                <span><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a></span>
+                <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a></p>
                 <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
             </div>
             <!-- <div id="cite">

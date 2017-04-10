@@ -4,7 +4,7 @@
 }
 
 /* line 33, _style.scss */
-header .navbar-default, .trail-wrapper, .alert-info {
+header .navbar-default, .trail-wrapper, .alert-info, #login > li > a {
     background-color: #193364;
 }
 
@@ -185,6 +185,7 @@ a.list-group-item {
 ul#myTab li a {
     cursor: pointer;
     font-weight: bold;
+    font-size: small;
 }
 
 /* line 191, _style.scss */
@@ -338,7 +339,7 @@ h6 .small,
 @media (min-width: 481px) {
     /* line 319, _style.scss */
     body, .main-content, #main-container #sidebar, #ds-options .list-group-item.ds-option,
-    #main-container .horizontal-slider, .panel-default > .panel-body,
+    #main-container .horizontal-slider, .panel-default > .panel-body, .thumbnail,
     .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus,
     #myTab.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
         background-color: #F8F3F3;
@@ -463,7 +464,7 @@ h6 .small,
     /* line 432, _style.scss */
     .table-striped > tbody > tr:nth-child(2n+1),
     .recent-submission,
-    .thumbnail, .panel-default > .panel-heading,
+    .panel-default > .panel-heading,
     div.ds-static-div.primary .ds-artifact-list .ds-artifact-item,
     .badge, .btn-default,
     .nav-tabs li.active a, .nav-tabs > li.active > a,
@@ -646,7 +647,7 @@ h6 .small,
     max-width: 50px;
 }
 
-#login > a, #login > a {
+#login > li > a {
     color: #193364;
 }
 
@@ -689,7 +690,6 @@ a.tooltip {
 .container-fluid.covers {
     margin-top: 5px;
 }
-
 .news .list-item-header {
     margin-top: 30px;
 }

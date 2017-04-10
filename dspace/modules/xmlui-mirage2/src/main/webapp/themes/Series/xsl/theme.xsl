@@ -32,7 +32,7 @@
     <xsl:import href="../../Mirage2/xsl/core/global-variables.xsl"/>
     <xsl:import href="../../Mirage2/xsl/core/elements.xsl"/>
     <xsl:import href="../../Mirage2/xsl/core/forms.xsl"/>
-    <xsl:import href="core/page-structure.xsl"/>
+    <xsl:import href="../../Mirage2/xsl/core/page-structure.xsl"/>
     <xsl:import href="../../Mirage2/xsl/core/navigation.xsl"/>
     <xsl:import href="../../Mirage2/xsl/core/attribute-handlers.xsl"/>
     <xsl:import href="../../Mirage2/xsl/core/utils.xsl"/>

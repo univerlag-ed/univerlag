@@ -2650,6 +2650,11 @@
     <message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
     <message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Suche einschränken</message>
+    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Filter ausblenden</message>
+    <message key="xmlui.mirage2.discovery.reset">Zurücksetzen</message>
+
+
 
 
     <!-- different views of lists -->
@@ -2679,40 +2684,40 @@
         <div class="contact">
             <h3>Autorenbetreuung</h3>
             <h4>Jutta Pabst</h4>
-            <p><i class="icon-call"></i>0551 / 39-52 43</p>
-            <p><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
-            <p><i class="icon-mail"></i> <a href="mailto:pabst_AT_sub.uni-goettingen.de">pabst AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call"></i>0551 / 39-52 43</p>
+            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail"></i> <a href="mailto:pabst_AT_sub.uni-goettingen.de">pabst AT sub.uni-goettingen.de</a></p>
 
             <h4>Petra Lepschy</h4>
-            <p><i class="icon-call"></i>0551 / 39-90 97</p>
-            <p><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
-            <p><i class="icon-mail"></i> <a href="mailto:lepschy_AT_sub.uni-goettingen.de">lepschy AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call"></i>0551 / 39-90 97</p>
+            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail"></i> <a href="mailto:lepschy_AT_sub.uni-goettingen.de">lepschy AT sub.uni-goettingen.de</a></p>
 
 
             <h3>Open Access und Publikationskonzepte</h3>
 
             <h4>Margo Bargheer</h4>
-            <p><i class="icon-call"></i>0551 / 39-9 11 88</p>
-            <p><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
-            <p><i class="icon-mail"></i> <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call"></i>0551 / 39-9 11 88</p>
+            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail"></i> <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a></p>
 
 
             <h3>Bestellungen</h3>
 
             <h4>Holger Jendral</h4>
-            <p><i class="icon-call"></i>0551 / 39-53 83</p>
-            <p><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
-            <p><i class="icon-mail"></i> <a href="mailto:univerlag_AT_uni-goettingen.de">univerlag AT uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call"></i>0551 / 39-53 83</p>
+            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail"></i> <a href="mailto:univerlag_AT_uni-goettingen.de">univerlag AT uni-goettingen.de</a></p>
 
-            <p>
+            <p class="address">
                 Sprechzeiten: Mo.-Fr. 9:00 - 13:30 Uhr, nach Vereinbarung auch außerhalb dieser Zeiten
             </p>
             <br />
             <h2>Postanschrift</h2>
-            <p><a target="_blank" href="https://goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
-            <p><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
-            <p><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p class="address"><a target="_blank" href="https://goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
+            <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
+            <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
+            <p class="address"><span class="icon-body">37073 Göttingen</span></p>
 
 
         </div>
@@ -4233,6 +4238,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
+    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.)</message>
     <message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
     <message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>

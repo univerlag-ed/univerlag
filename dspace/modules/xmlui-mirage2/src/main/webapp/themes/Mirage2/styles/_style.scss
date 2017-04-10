@@ -4,7 +4,7 @@
 }
 
 /* line 33, _style.scss */
-header .navbar-default, .trail-wrapper, .alert-info {
+header .navbar-default, .trail-wrapper, .alert-info, #login > li > a {
   background-color: #193364;
 }
 
@@ -185,6 +185,7 @@ a.list-group-item {
 ul#myTab li a {
   cursor: pointer;
   font-weight: bold;
+  font-size: small;
 }
 
 /* line 191, _style.scss */
@@ -471,6 +472,11 @@ h6 .small,
     background-color: #EAE9E7;
   }
 
+  #aspect_discovery_SiteRecentSubmissions_div_site-recent-submission > div > div > a > div.thumbnail.artifact-preview {
+    min-height: 280px;
+  }
+
+
   .recent-submission, .ds-artifact-item {
     padding: 5px 0 0 5px;
     -webkit-border-radius: 5px;
@@ -646,7 +652,7 @@ h6 .small,
   max-width: 50px;
 }
 
-#login > a, #login > a {
+#login > li > a {
   color: #193364;
 }
 
@@ -693,9 +699,6 @@ a.tooltip {
   margin-top: 30px;
 }
 
-.strech-top {
+.strech-top, #myTab {
   margin-top: 20px;
-}
-.thumbnail.artifact-preview {
-  min-height: 280px;
 }
