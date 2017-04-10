@@ -2054,7 +2054,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-preview">Vorschau</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-title">Titel</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Zusammenfassung</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Beschreibung</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-uri">Zitierbarer Link</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Erschienen</message>
@@ -2658,8 +2658,9 @@
 
 
     <!-- item view page -->
-    <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Zugehörige Publikationen</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-related.edition">Edition</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Verwandtes</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-details">Details</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-edition">Edition</message>
     <!-- static sites -->
 
     <message key="xmlui.static.navigation.informations">Informationen</message>
@@ -2671,7 +2672,7 @@
     <message key="xmlui.static.contact">
         <p>
             Bitte benutzen Sie das Kontaktformular, um uns eine Nachricht zukommen zu lassen. Wenn Sie uns telefonisch, postalisch oder per E-Mail erreichen wollen, nutzen Sie bitte die unten angegebenen Daten. Bitte ersetzen Sie das "_AT_" durch ein "@", wenn Sie unsere E-Mail-Adressen verwenden.	<br /><br />
-            <a href="/feedback">zum Kontaktformular...</a>
+            <a href="/feedback">Kontaktformular &#11166;</a>
         </p>
         <p>
             <h2>Ansprechpartner</h2>
@@ -2716,7 +2717,7 @@
 
 
         </div>
-        <p>
+        <p class="strech-top">
             <a href="/info/conditions">Allgemeine Geschäftsbedingungen (AGB)</a>
         </p>
     </message>
@@ -4465,7 +4466,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
 
     <!-- Aktuelles -->
-
+    <message key="xmlui.static.news.title">Aktuellesy</message>
     <message key="xmlui.static.news">
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
@@ -4486,7 +4487,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             <span class="contributor">Bargheer, Margo; Pabst, Jutta</span>
             <span class="title">&#8217;Being small is not a fault&#8217;: Making sense of the newer generation of German-language university presses.</span>
             <span class="biblio"> Learned Publishing, Vol. 29, Issue S1 (2016), p. 335-341</span>
-            <p>Zugänglich auf <a href="http://resolver.sub.uni-goettingen.de/purl?gs-1/13814" target="_blank">GoeScholar</a> oder direkt beim Verlag in der <a href="http://onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" target="_blank">Wiley Online Library</a>.</p>
+            <p class="strech-top">Zugänglich auf <a href="http://resolver.sub.uni-goettingen.de/purl?gs-1/13814" target="_blank">GoeScholar</a> oder direkt beim Verlag in der <a href="http://onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" target="_blank">Wiley Online Library</a>.</p>
 
             <p class="strech-top">
                 Zusammenfassung: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
