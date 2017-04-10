@@ -194,7 +194,7 @@
             </xsl:for-each>
             <!-- <link rel="stylesheet" href="{concat($theme-path, 'styles/font-awesome-4.7.0/css/font-awesome.min.css')}"/> -->
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
-            <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/main.css')}"/>
+            <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/fontello.css')}"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
@@ -433,7 +433,11 @@
                                 </fieldset>
                             </form>
                         </div>
+
                         <ul class="nav navbar-nav pull-left">
+                            <xsl:call-template name="languageSelection"/>
+                        </ul>
+                        <ul class="nav navbar-nav pull-left" id="login">
                             <xsl:choose>
                                 <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                                     <li class="dropdown">
@@ -477,9 +481,6 @@
                                     </li>
                                 </xsl:otherwise>
                             </xsl:choose>
-                        </ul>
-                        <ul class="nav navbar-nav pull-left">
-                            <xsl:call-template name="languageSelection"/>
                         </ul>
                         <button data-toggle="offcanvas" class="navbar-toggle visible-sm" type="button">
                             <span class="sr-only"><i18n:text>xmlui.mirage2.page-structure.toggleNavigation</i18n:text></span>

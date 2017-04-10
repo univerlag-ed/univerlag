@@ -136,10 +136,6 @@
 
             <h1 class="ds-option-set-head h6"><i18n:text>xmlui.static.navigation.informations</i18n:text></h1>
             <div class="list-group" id="infonav">
-                <xsl:if test="//dri:userMeta[@authenticated='yes']">
-                    <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#checklist">Checkliste</button>
-                    <i18n:text>xmlui.administer.checklist</i18n:text>
-                </xsl:if>
                 <a class="list-group-item ds-option" href="{$context-path}/info/ordering"><i18n:text>xmlui.static.ordering.trail</i18n:text></a>
                 <!-- show only if ordering is activ -->
                 <xsl:if test="(contains(//dri:metadata[@element='request'][@qualifier='URI'], 'info/ordering'))">

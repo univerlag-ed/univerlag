@@ -505,8 +505,8 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
 
-                        <a target="_blank" href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> YouTube Video</a>
-                        <a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        <a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
 
                     </div>
                 </div>
@@ -519,7 +519,7 @@
             </header>
             <div class="panel-body">
                 <p>Prof. Dr. Gerhard Lauer, Universität Göttingen</p>
-                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-01.mp3">Jüdische Aufklärung</a></p>
+                <p><i class="icon-sound" aria-hidden="true"></i> <a href="/static/audio/ring2016-11-01.mp3">Jüdische Aufklärung</a></p>
             </div>
         </div>
 

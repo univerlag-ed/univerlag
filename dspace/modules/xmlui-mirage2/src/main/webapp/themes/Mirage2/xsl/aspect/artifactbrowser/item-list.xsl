@@ -222,7 +222,7 @@
                     </xsl:variable>
 
                     <div class="format">
-                        <span class="icon">&#x1f56e;&#160;</span>
+                        <i class="icon-book-2"></i>
                         <i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
                         <xsl:if test="not($price = '-')">
                             <xsl:value-of select="concat($price, '&#160;€')" />
@@ -233,7 +233,7 @@
                                     <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                     <a target="_blank">
                                         <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                        <i class="icon-link-ext"></i><xsl:text> </xsl:text>
+                                        <i class="icon-amazon"></i><xsl:text> </xsl:text>
                                         <i18n:text>xmlui.item.amazon.order</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -253,7 +253,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-download"></i>
+                                        <i class="icon-eye"></i>
                                         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -263,7 +263,7 @@
                                 </xsl:when>
                                 <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'notavailable')">
                                     <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                    <i18n:text>xmlui.item.notavailable</i18n:text>
+                                    <i class="icon-block"></i> <i18n:text>xmlui.item.notavailable</i18n:text>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <xsl:attribute name="class"><xsl:text>access order</xsl:text></xsl:attribute>
@@ -314,7 +314,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <i class="icon-shopping-cart"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
+                                    <i class="icon-basket"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -352,7 +352,7 @@
                     </xsl:variable>
                     <div class="format">
                         <i class="icon-cd"></i>
-                        <xsl:text>&#160;</xsl:text>
+
                         <xsl:value-of select="concat('CD-ROM ', $price)"/>
 
                         <span>
@@ -367,7 +367,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-download"></i>
+                                        <i class="icon-eye"></i>
                                         <xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -420,7 +420,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <i class="icon-shopping-cart"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                    <i class="icon-basket"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -452,7 +452,7 @@
                     </xsl:variable>
                     <div class="format">
                         <i class="icon-cd"></i>
-                        <xsl:text>&#160;</xsl:text>
+
                         <xsl:value-of select="concat('DVD-Video ', $price)"/>
 
                         <span>
@@ -467,7 +467,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-download"></i>
+                                        <i class="icon-eye"></i>
                                         <xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -520,7 +520,7 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:attribute>
-                                    <i class="icon-shopping-cart"></i> <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                    <i class="icon-basket"></i> <i18n:text>xmlui.item.dvd.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -560,7 +560,7 @@
                     </xsl:when>
                     <xsl:otherwise>
                         <div class="format">
-                            <i class="icon-file-pdf"></i>&#160;&#160;
+                            <i class="icon-file-pdf"></i>
                             <!--<xsl:choose>
                                 <xsl:when test="mets:FLocat/@xlink:label != ''">
                                     <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:label"/>
@@ -606,7 +606,7 @@
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <i class="icon-download"></i>&#160; <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+                                <i class="icon-eye"></i><a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
                             </span>
                         </div>
                     </xsl:otherwise>

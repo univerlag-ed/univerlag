@@ -1,91 +1,71 @@
-/**
- * The contents of this file are subject to the license and copyright
- * detailed in the LICENSE and NOTICE files at the root of the source
- * tree and available online at
- *
- * http://www.dspace.org/license/
- */
-
-/**
- * You can put your own style in this file.
- * It will be included in all color schemes
- */
-
-//example mixin to set the text-selection style
-/*@mixin selection {
-    ::-moz-selection { @content; }
-    ::selection { @content; }
-}
-
-@include selection {
-    color: white;
-    background: hotpink;
-}
-
-#main-container .row-offcanvas {
-    background-color: #fff;
-}
-*/
+/* line 29, _style.scss */
 #main-container #sidebar {
   background-color: #fff;
 }
 
+/* line 33, _style.scss */
 header .navbar-default, .trail-wrapper, .alert-info {
   background-color: #193364;
 }
 
-
+/* line 38, _style.scss */
 .first-page-header, .list-group-item.active::before,
 #ds-options .ds-option-set-head,
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus
-{
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   color: #193364;
 }
 
-.ds-static-div  .list-item-header {
+/* line 45, _style.scss */
+.list-item-header, .page-header {
   border-bottom: 1px solid #ddd;
 }
 
+/* line 49, _style.scss */
 .trail-wrapper {
   color: #fff;
   border-bottom: 0px;
 }
 
+/* line 54, _style.scss */
 .trail-wrapper .breadcrumb > .active {
   color: #BCB6B6;
 }
 
+/* line 58, _style.scss */
 header .navbar-logo img {
   height: 90px;
 }
 
+/* line 62, _style.scss */
 .navbar-text {
   font-size: 250%;
   color: #fff !important;
-  // margin-top: 0.7em;
-  //  margin-left: 0;
 }
 
+/* line 69, _style.scss */
 .trail-bottom {
   height: 2em;
-  background: #fff url('../images/raster.gif') repeat-x bottom;
+  background: white url("../images/raster.gif") repeat-x bottom;
 }
 
+/* line 74, _style.scss */
 ul.unstyled {
   list-style: none;
 }
 
+/* line 78, _style.scss */
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
   border: 1px solid #d8e8eb;
 }
 
-
+/* line 85, _style.scss */
 .list-group-item.ds-option.nested {
   margin-left: 25px;
 }
 
+/* line 89, _style.scss */
 .list-group-item {
   position: relative;
   display: block;
@@ -95,16 +75,19 @@ ul.unstyled {
   border: 0;
 }
 
+/* line 98, _style.scss */
 .list-group-item.active::before {
   font-weight: bold;
   margin-left: -10px;
   padding-right: 5px;
 }
 
+/* line 104, _style.scss */
 a.list-group-item {
   color: #607890;
 }
 
+/* line 108, _style.scss */
 #ds-options .ds-option-set-head {
   text-transform: uppercase;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -119,118 +102,142 @@ a.list-group-item {
   font-weight: bold;
 }
 
+/* line 122, _style.scss */
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   background-color: #fff;
   z-index: 2;
 }
 
+/* line 127, _style.scss */
 .artifact-info span {
   display: block;
 }
 
+/* line 131, _style.scss */
 .access {
   float: right;
   margin-right: 5em;
 }
 
+/* line 136, _style.scss */
 .thumbnail .caption {
   padding: 0;
 }
 
+/* line 140, _style.scss */
 .media .media-left .media-object {
   max-width: 60px;
 }
 
+/* line 144, _style.scss */
 .access.order {
   color: #607890;
   cursor: pointer;
 }
 
+/* line 149, _style.scss */
 #details span {
   font-weight: bold;
   color: #565353;
 }
 
+/* line 154, _style.scss */
 #aspect_artifactbrowser_ItemViewer_div_item-view .page-header {
   margin-top: 10px;
 }
 
+/* line 158, _style.scss */
 .secondary-data {
   margin-bottom: 10px;
 }
 
+/* line 162, _style.scss */
 #aspect_artifactbrowser_ItemViewer_div_item-view h3 {
   font-size: 20px;
 }
 
+/* line 166, _style.scss */
 #aspect_artifactbrowser_ItemViewer_div_item-view h4 {
   font-size: 14px;
   margin-bottom: 40px;
   margin-top: 0;
 }
 
+/* line 172, _style.scss */
 .gray {
   color: gray;
 }
 
+/* line 176, _style.scss */
 .relation {
   display: inline-block;
   font-weight: bold;
   font-size: small;
+  color: gray;
 }
 
+/* line 182, _style.scss */
 .dateissued {
   display: inherit;
 }
 
+/* line 186, _style.scss */
 ul#myTab li a {
   cursor: pointer;
   font-weight: bold;
 }
 
+/* line 191, _style.scss */
 .details {
   margin-bottom: 20px;
 }
 
+/* line 195, _style.scss */
 .details a img {
   max-width: 40px;
   display: inline;
   margin-left: 5px;
 }
 
+/* line 201, _style.scss */
 #abstract {
   text-align: justify;
 }
 
+/* line 205, _style.scss */
 #ds-options .ds-option-set-head {
   background-color: #7D8FB2;
   color: #fff;
   text-shadow: 0px 1px 0px #565252;
 }
 
+/* line 211, _style.scss */
 #aspect_discovery_Navigation_list_discovery .list-group-item.ds-option {
   margin-left: 10px;
 }
 
+/* line 215, _style.scss */
 .item-wrapper {
   margin-bottom: 5%;
 }
 
+/* line 219, _style.scss */
 .caption .artifact-title {
   font-size: small;
-  //  width: 100%;
 }
 
+/* line 224, _style.scss */
 #thumbnail {
   max-width: 100%;
 }
 
-.thumbnail > img, .thumbnail > a > img
-{
+/* line 228, _style.scss */
+.thumbnail > img, .thumbnail > a > img {
   /*  max-width: 120px;*/
-border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
+/* line 234, _style.scss */
 h1 small,
 h1 .small, h2 small,
 h2 .small, h3 small,
@@ -248,74 +255,88 @@ h6 .small,
   color: #595656;
 }
 
-
-
+/* line 253, _style.scss */
 .glyphicon.glyphicon-home {
   font-size: small;
   color: gray;
 }
+
+/* line 257, _style.scss */
 #file_news_div_news .row {
   margin-bottom: 20px;
 }
 
+/* line 261, _style.scss */
 .artifact-info .abstract {
   font-size: small;
   text-align: justify;
 }
 
+/* line 266, _style.scss */
 .simple-item-view-collections.item-page-field-wrapper.table {
   margin-top: 2em;
   border-top: 1px solid #eee;
 }
 
+/* line 271, _style.scss */
 .box {
   margin: 10px 50px 10px 30px;
   text-align: justify;
 }
 
+/* line 276, _style.scss */
 .address {
   margin: 0;
 }
 
+/* line 280, _style.scss */
 .dl-horizontal dt {
   width: 360px;
   white-space: normal;
   overflow: visible;
 }
 
+/* line 286, _style.scss */
 .dl-horizontal dd {
   margin-left: 380px;
 }
 
+/* line 290, _style.scss */
 .item {
   padding: 10px 0 20px 0;
 }
 
+/* line 294, _style.scss */
 .contact h4 {
-  margin-top:30px;
+  margin-top: 30px;
 }
 
+/* line 298, _style.scss */
 .icon {
   font-size: 20px;
 }
 
+/* line 302, _style.scss */
 #agb {
   text-align: justify;
   margin-left: -25px;
   margin-right: 10px;
 }
 
+/* line 308, _style.scss */
 .numeric {
   white-space: nowrap;
 }
 
+/* line 312, _style.scss */
 .alert-info {
-  background-color: #fff;
+  background-color: #f8f3f3;
   color: #193364;
+  border-color: #193364;
 }
 
 @media (min-width: 481px) {
-
+  /* line 319, _style.scss */
   body, .main-content, #main-container #sidebar, #ds-options .list-group-item.ds-option,
   #main-container .horizontal-slider, .panel-default > .panel-body,
   .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus,
@@ -323,14 +344,14 @@ h6 .small,
     background-color: #F8F3F3;
   }
 
-
+  /* line 327, _style.scss */
   #main-container #sidebar {
     border-left: 1px dotted #08204A;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-
+  /* line 334, _style.scss */
   #ds-options .ds-option-set-head {
     color: #08204A;
     text-shadow: none;
@@ -340,42 +361,49 @@ h6 .small,
     border-right: none;
   }
 
-
+  /* line 344, _style.scss */
   .list-group {
     border: none;
   }
 
-
+  /* line 349, _style.scss */
   a.list-group-item {
     color: #4A6392;
   }
 
+  /* line 353, _style.scss */
   #copyright {
     font-size: small;
     text-align: justify;
   }
 
-
+  /* line 359, _style.scss */
   footer .row > div {
     padding-top: 10px;
     border-top: 1px solid #193364;
   }
 
-
+  /* line 365, _style.scss */
   .thumbnail .caption {
     color: #08204A;
   }
 
-
-  .panel-default
-  {
+  /* line 370, _style.scss */
+  .panel-default {
     box-shadow: 3px 3px 3px #9b9797;
   }
 
+  /* line 375, _style.scss */
   .ds-static-div > .panel-default.panel-first {
     margin-top: 30px;
   }
 
+  #aspect_artifactbrowser_CommunityViewer_div_community-view > ul > li.ds-artifact-item {
+    background: #F8F3F3;
+    margin-bottom: 0;
+  }
+
+  /* line 379, _style.scss */
   div.ds-static-div.primary .ds-artifact-list .ds-artifact-item {
     width: 95%;
     border: 1px solid #EAE9E7;
@@ -384,116 +412,132 @@ h6 .small,
     padding-left: 5px;
   }
 
-
+  /* line 388, _style.scss */
   div.ds-static-div.secondary .ds-artifact-list .ds-artifact-item {
     background-color: inherit;
     border: none;
   }
 
+  /* line 393, _style.scss */
   #thumbnail {
     padding: 0;
   }
 
-
+  /* line 398, _style.scss */
   #thumbnail > img {
     width: 100% !important;
   }
 
-
+  /* line 403, _style.scss */
   .thumbnail > img, .thumbnail > a > img {
     box-shadow: 3px 3px 3px #9b9797;
   }
 
-
+  /* line 408, _style.scss */
   .fa {
     color: #5c5757;
   }
 
-
+  /* line 413, _style.scss */
   ul {
     list-style-type: none;
   }
 
+  /* line 417, _style.scss */
   ul.styled li::before {
     color: #193364;
     content: "\0025A0 \00200B";
     margin-right: 5px;
   }
 
+  /* line 423, _style.scss */
   #aspect_artifactbrowser_ItemViewer_div_item-view {
     margin-top: 10px;
   }
 
-
+  /* line 428, _style.scss */
   #aspect_artifactbrowser_ItemViewer_div_item-view .page-header {
     margin-top: 0;
   }
 
+  /* line 432, _style.scss */
   .table-striped > tbody > tr:nth-child(2n+1),
   .recent-submission,
   .thumbnail, .panel-default > .panel-heading,
   div.ds-static-div.primary .ds-artifact-list .ds-artifact-item,
   .badge, .btn-default,
   .nav-tabs li.active a, .nav-tabs > li.active > a,
-  .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     background-color: #EAE9E7;
   }
 
+  .recent-submission, .ds-artifact-item {
+    padding: 5px 0 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+  }
+
+  /* line 442, _style.scss */
   hr {
     border-top: 1px solid #ddd;
   }
 
-
-
-
+  /* line 449, _style.scss */
   #ds-search-form fieldset {
     margin-top: 5px;
   }
 
+  /* line 453, _style.scss */
   #aspect_artifactbrowser_CommunityViewer_div_community-view h3 {
     display: none;
   }
 
-
+  /* line 458, _style.scss */
   a, a.list-group-item {
     color: #2d487b;
   }
 
-
+  /* line 463, _style.scss */
   a.all {
     color: #607890;
     font-size: 14px;
     margin-top: 10px;
   }
 
+  /* line 469, _style.scss */
   .badge {
     margin: 0 5px;
     color: #555;
     border: 1px solid #ccc;
   }
 
-
+  /* line 476, _style.scss */
   #pid {
     white-space: nowrap;
   }
 
+  /* line 480, _style.scss */
   .breadcrumb li a {
     color: #fff;
   }
 
-  .rs
-  {
+  /* line 484, _style.scss */
+  .rs {
     max-width: 120px !important;
   }
 
+  /* line 489, _style.scss */
   .recentSubmissionViewMore {
     margin-top: 5px;
   }
 
+  /* line 493, _style.scss */
   .btn-default {
     color: #000;
   }
 
+  /* line 497, _style.scss */
   .author h4, publishing-date h4
   .icon.shop, .icon.sc {
     line-height: 25px;
@@ -501,75 +545,94 @@ h6 .small,
     color: #2c2a2a;
   }
 
-
+  /* line 505, _style.scss */
   .pagination > li > a, .pagination > li > span,
   .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus,
-  .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus
-  {
+  .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
     background-color: inherit;
-    border:none;
-  }
-  i {
-    font-size: 18px;
-    color: gray;
+    border: none;
   }
 
+  /* line 512, _style.scss */
+  i {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* line 517, _style.scss */
   .icon-shopping-cart {
     font-size: 22px;
   }
-
 }
-.list-group-item-heading
-{
-  font-weight:bold;
+/* line 522, _style.scss */
+.list-group-item-heading {
+  font-weight: bold;
 }
-
 
 @media (min-width: 992px) {
+  /* line 529, _style.scss */
   .container > .navbar-header {
     width: 24%;
   }
-
 }
-
+/* line 535, _style.scss */
 .cover-preview > a > img {
   max-height: 240px;
   border: 1px solid #ccc;
   box-shadow: 3px 3px 3px #9b9797;
 }
 
+/* line 541, _style.scss */
 .recent-submission > div > div > a > div > img {
   max-height: 220px;
 }
 
 /* line 500, _style.scss */
+/* line 546, _style.scss */
 .list-group-item-heading {
   font-weight: bold;
 }
 
+/* line 550, _style.scss */
 .input-group {
   width: 100%;
 }
 
 @media (min-width: 481px) and (max-width: 992px) {
+  /* line 555, _style.scss */
   .header-image img {
     width: 400px;
   }
+
+
 }
+@media (min-width: 769px) {
+  div.ds-logo-wrapper {
+    max-width: 150px;
+    margin-top: -18%;
+  }
+
+  .logo.img-circle {
+    max-width: 150px;
+  }
+}
+/* line 559, _style.scss */
 .breadcrumb {
   padding: 8px 0;
 }
 
+/* line 563, _style.scss */
 .input-group {
   width: 100%;
 }
 
-
+/* line 568, _style.scss */
 .trail-wrapper .breadcrumb > li + li::before {
   color: #fff;
   content: "\00a0>";
 }
 
+/* line 573, _style.scss */
 .footnote {
   text-align: justify;
   color: #193364;
@@ -578,6 +641,61 @@ h6 .small,
   font-size: small;
 }
 
+/* line 581, _style.scss */
 #services > div > div > img {
   max-width: 50px;
+}
+
+#login > a, #login > a {
+  color: #193364;
+}
+
+.navbar-nav:hover {
+  background-color: #193364;
+}
+
+.news span {
+  display: inline-block;
+}
+
+.title, .biblio {
+  font-weight: bold;
+}
+
+.biblio {
+  color: #999;
+}
+
+.icon-attention-circled {
+  color: #A80C24;
+}
+
+.ds-static-div {
+  padding-right: 2%;
+}
+
+a.tooltip {
+  text-decoration: none;
+}
+
+.icon-body {
+  padding-left: 2em;
+}
+
+.tab-content > .active {
+  font-size: small;
+}
+
+.container-fluid.covers {
+  margin-top: 5px;
+}
+.news .list-item-header {
+  margin-top: 30px;
+}
+
+.strech-top {
+  margin-top: 20px;
+}
+.thumbnail.artifact-preview {
+  min-height: 280px;
 }

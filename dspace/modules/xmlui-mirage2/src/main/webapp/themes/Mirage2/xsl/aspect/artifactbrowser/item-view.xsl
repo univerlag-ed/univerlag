@@ -126,6 +126,8 @@
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
                     </xsl:if>
+
+
                 </div>
                 <div class="col-sm-8">
                     <div class="primary-data page-header ">
@@ -134,8 +136,8 @@
                         <xsl:call-template name="itemSummaryView-DIM-authors"/>
                     </div>
                     <div class="secondary-data">
-                        <xsl:call-template name="itemSummaryView-DIM-events"/>
                         <xsl:call-template name="itemSummaryView-DIM-series"/>
+                        <!-- <xsl:call-template name="itemSummaryView-DIM-edition"/> -->
                         <xsl:call-template name="itemSummaryView-DIM-date"/>
                         <!-- <span>
                             <xsl:call-template name="itemSummaryView-DIM-more"/>
@@ -158,6 +160,7 @@
                 <h2 class="page-header first-page-header">
                     <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()" disable-output-escaping="yes"/>
                 </h2>
+
                 <div class="simple-item-view-other">
                     <p class="lead">
                         <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
@@ -184,6 +187,16 @@
                 </h2>
             </xsl:otherwise>
         </xsl:choose>
+        <xsl:if test="//dim:field[@element='volume'][not(@qualifier)]">
+            <h2>
+                <small>
+                    <xsl:value-of select="//dim:field[@element='volume'][not(@qualifier)]" />
+                    <xsl:if test="//dim:field[@element='title'][@qualifier='volume']">
+                        <xsl:text>. </xsl:text><xsl:value-of select="//dim:field[@element='title'][@qualifier='volume']" />
+                    </xsl:if>
+                </small>
+            </h2>
+        </xsl:if>
 
     </xsl:template>
 
@@ -201,18 +214,24 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-events">
-        <xsl:if test="dim:field[@element='relation'][@qualifier='event']">
-            <xsl:for-each select="dim:field[@element='relation'][@qualifier='event']">
-                <span class="relation gray">
+        <xsl:if test="//dim:field[@element='relation'][@qualifier='event']">
+            <xsl:for-each select="//dim:field[@element='relation'][@qualifier='event']">
+                <span class="event">
                     <xsl:value-of select="." />
                 </span>
             </xsl:for-each>
         </xsl:if>
     </xsl:template>
 
+    <xsl:template name="itemSummaryView-DIM-edition">
+        <xsl:if test="//dim:field[@element='description'][@qualifier='edition']">
+            <xsl:value-of select="//dim:field[@element='description'][@qualifier='edition']"/>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template name="itemSummaryView-DIM-series">
         <xsl:if test="dim:field[@element='relation'][@qualifier='ispartofseries']">
-            <span class="relation gray">
+            <span class="relation">
                 <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
                 <xsl:choose>
                     <xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '0')">
@@ -396,25 +415,20 @@
 
     <xsl:template name="itemSummaryView-DIM-date">
         <xsl:if test="dim:field[@element='date' and @qualifier='issued' and descendant::text()]">
-            <xsl:for-each select="dim:field[@element='date' and @qualifier='issued']">
-                <span class="dateissued">
-                    <i18n:text>xmlui.dri2xhtml.item.dateissued</i18n:text><xsl:text>: </xsl:text>
-                    <xsl:copy-of select="substring(./node(),1,10)"/>
-                    <xsl:if test="count(following-sibling::dim:field[@element='date' and @qualifier='issued']) != 0">
-                    </xsl:if>
-                </span>
-            </xsl:for-each>
+            <span class="dateissued">
+                <i18n:text>xmlui.dri2xhtml.item.dateissued</i18n:text><xsl:text>: </xsl:text>
+                <xsl:copy-of select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
+                <!-- <xsl:if test="dim:field[@element='description'][@qualifier='edition']">
+                    <xsl:value-of select="concat(' (', dim:field[@element='description'][@qualifier='edition'], ')')"/>
+                </xsl:if> -->
+            </span>
         </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-show-full">
         <span class="simple-item-view-show-full item-page-field-wrapper table">
 
-            <a>
-                <xsl:attribute name="href"><xsl:value-of select="$ds_item_view_toggle_url"/></xsl:attribute>
-                <!-- <i18n:text>xmlui.ArtifactBrowser.ItemViewer.show_full</i18n:text> -->
-                <xsl:text>&#160;</xsl:text>
-            </a>
+
         </span>
     </xsl:template>
 
@@ -451,8 +465,8 @@
                 </xsl:variable>
 
                 <div class="format">
-                    <span class="icon">&#128366;</span>
-                    <xsl:text>&#160;</xsl:text><i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
+                    <i class="icon-book-2"></i>
+                    <i18n:text>xmlui.item.print.version</i18n:text><xsl:text> </xsl:text>
                     <xsl:if test="not($price = '-')">
                         <xsl:value-of select="concat($price, '&#160;€')" />
                     </xsl:if>
@@ -462,7 +476,7 @@
                                 <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                 <a target="_blank">
                                     <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                    <i class="fa fa-external-link" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.amazon.order</i18n:text>
+                                    <i class="icon-amazon" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.amazon.order</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="starts-with(//dim:field[@element='notes' and @qualifier='printaccess'], 'http')">
@@ -471,7 +485,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <i class="fa fa-external-link" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.publisher.order</i18n:text>
+                                    <i class="icon-link-ext" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.publisher.order</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'http:')">
@@ -480,7 +494,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download"></i>&#160; <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-eye"></i> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
@@ -540,7 +554,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.print.order</i18n:text>
+                                <i class="icon-basket"></i> <i18n:text>xmlui.item.print.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -646,7 +660,7 @@
                                     </xsl:choose>
                                 </xsl:attribute>
                                 <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                <i class="icon-basket"></i> <i18n:text>xmlui.item.cdrom.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -685,7 +699,7 @@
                         <xsl:choose>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <i class="icon-shoppint-block"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <i class="icon-block"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='dvdaccess'], 'http:')">
                                 <xsl:attribute name="class"><xsl:text>access online</xsl:text></xsl:attribute>
@@ -693,7 +707,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-shoppint-cart"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-eye"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -745,7 +759,7 @@
                                         </xsl:otherwise>
                                     </xsl:choose>
                                 </xsl:attribute>
-                                <i class="icon-shopping-cart"></i>&#160; <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                <i class="icon-basket"></i> <i18n:text>xmlui.item.dvd.order</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
                     </span>
@@ -845,7 +859,7 @@
 
 
 
-                    <i class="icon-download"></i>&#160;<xsl:text>&#160;</xsl:text>Öffnen/Herunterladen
+                    <i class="icon-eye"></i><xsl:text>&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 
                 </a>
             </span>
@@ -1235,39 +1249,58 @@
 
         <!-- <div class="simple-item-view-description"> -->
         <ul class="nav nav-tabs" id="myTab">
+            <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']">
+                <li class="active"><a data-target="#related" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-related.items</i18n:text></a></li>
+            </xsl:if>
             <xsl:if test="//dim:field[@element='description' and starts-with(@qualifier, 'abstract')]">
-                <li class="active"><a data-target="#abstract" data-toggle="tab"><small><i18n:text>xmlui.dri2xhtml.METS-1.0.item-abstract</i18n:text></small></a></li>
+                <li>
+                    <xsl:if test="not(//dim:field[@element='relation'][@qualifier='otherparts'])"><xsl:attribute name="class">active</xsl:attribute></xsl:if>
+                    <a data-target="#abstract" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-abstract</i18n:text></a>
+                </li>
             </xsl:if>
             <xsl:if test="//dim:field[@qualifier='isreferencedby']">
-                <li><a data-target="#reviews" data-toggle="tab"><small><i18n:text>xmlui.dri2xhtml.METS-1.0.item-reviewed</i18n:text></small></a></li>
+                <li><a data-target="#reviews" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-reviewed</i18n:text></a></li>
             </xsl:if>
             <xsl:if test="//dim:field[@qualifier='tableofcontents']">
-                <li><a data-target="#toc" data-toggle="tab"><small><i18n:text>xmlui.dri2xhtml.METS-1.0.item-tableofcontents</i18n:text></small></a></li>
+                <li><a data-target="#toc" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-tableofcontents</i18n:text></a></li>
             </xsl:if>
             <li>
                 <xsl:if test="not(//dim:field[@element='description' and starts-with(@qualifier, 'abstract')] or //dim:field[@qualifier='isreferencedby'] or //dim:field[@qualifier='tableofcontents'])">
                     <xsl:attribute name="class">active</xsl:attribute>
                 </xsl:if>
-                <a data-target="#details" data-toggle="tab"><small>Produktdetails</small></a>
+                <a data-target="#details" data-toggle="tab">Produktdetails</a>
             </li>
 
             <!-- <li><a href="#cite">Zitieren</a></li> -->
         </ul>
         <!-- </div> -->
         <div class="tab-content">
+            <div id="related">
+                <xsl:attribute name="class">tab-pane active</xsl:attribute>
+                <xsl:for-each select="//dim:field[@element='relation'][@qualifier='otherparts']">
+                    <span>
+                        <a>
+                            <xsl:attribute name="href"><xsl:value-of select="substring-after(., ': ')" /></xsl:attribute>
+                            <xsl:value-of select="substring-before(., ': ')" /><xsl:text> &#11166;</xsl:text>
+                        </a>
+                    </span>
+                </xsl:for-each>
+            </div>
             <div id="abstract">
-                <xsl:if test="//dim:field[@element='description' and starts-with(@qualifier, 'abstract')]">
-                    <xsl:attribute name="class">tab-pane active</xsl:attribute>
-                </xsl:if>
+                <xsl:attribute name="class"><xsl:text>tab-pane</xsl:text>
+                    <xsl:if test="(//dim:field[@element='description' and starts-with(@qualifier, 'abstract')]) and not(//dim:field[@element='relation'][@qualifier='otherparts'])">
+                        <xsl:text> active</xsl:text>
+                    </xsl:if>
+                </xsl:attribute>
                 <xsl:choose>
                     <xsl:when test="$locale = 'de'">
                         <xsl:choose>
                             <xsl:when test="//dim:field[@element='description' and @qualifier='abstractger']">
-                                <small><xsl:value-of select="//dim:field[@element='description' and @qualifier='abstractger']" disable-output-escaping="yes" /></small>
+                                <xsl:value-of select="//dim:field[@element='description' and @qualifier='abstractger']" disable-output-escaping="yes" />
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="//dim:field[@element='description' and @qualifier='abstracteng']">
-                                    <small><xsl:value-of select="//dim:field[@element='description' and @qualifier='abstracteng']" disable-output-escaping="yes" /></small>
+                                    <xsl:value-of select="//dim:field[@element='description' and @qualifier='abstracteng']" disable-output-escaping="yes" />
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -1275,11 +1308,11 @@
                     <xsl:otherwise>
                         <xsl:choose>
                             <xsl:when test="//dim:field[@element='description' and @qualifier='abstracteng']">
-                                <small><xsl:value-of select="//dim:field[@element='description' and @qualifier='abstracteng']" disable-output-escaping="yes" /></small>
+                                <xsl:value-of select="//dim:field[@element='description' and @qualifier='abstracteng']" disable-output-escaping="yes" />
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:if test="//dim:field[@element='description' and @qualifier='abstractger']">
-                                    <small><xsl:value-of select="//dim:field[@element='description' and @qualifier='abstractger']" disable-output-escaping="yes" /></small>
+                                    <xsl:value-of select="//dim:field[@element='description' and @qualifier='abstractger']" disable-output-escaping="yes" />
                                 </xsl:if>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -1290,7 +1323,7 @@
                     <br /><br />
                     <xsl:choose>
                         <xsl:when test="node()">
-                            <small><xsl:value-of select="node()" disable-output-escaping="yes" /></small>
+                            <xsl:value-of select="node()" disable-output-escaping="yes" />
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:text>&#160;</xsl:text>
@@ -1304,7 +1337,7 @@
                 <xsl:for-each select="//dim:field[@element='description' and @qualifier='abstract']">
                     <xsl:choose>
                         <xsl:when test="node()">
-                            <small><xsl:value-of select="node()" disable-output-escaping="yes" /></small>
+                            <xsl:value-of select="node()" disable-output-escaping="yes" />
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:text>&#160;</xsl:text>
@@ -1339,7 +1372,7 @@
                                 </a>
                             </xsl:when>
                             <xsl:otherwise>
-                                <small><xsl:copy-of select="node()"/></small>
+                                <xsl:copy-of select="node()"/>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:if test="position() != last()">
@@ -1350,32 +1383,43 @@
             </xsl:if>
             <xsl:if test="//dim:field[@qualifier='tableofcontents']">
                 <div class="tab-pane" id="toc">
-                    <small><xsl:value-of select="//dim:field[@qualifier='tableofcontents']" disable-output-escaping="yes" /></small>
+                    <xsl:value-of select="//dim:field[@qualifier='tableofcontents']" disable-output-escaping="yes" />
                 </div>
             </xsl:if>
             <div  class="tab-pane" id="details">
+
                 <xsl:if test="not(//dim:field[starts-with(@qualifier, 'abstract')])">
                     <xsl:attribute name="class">tab-pane active</xsl:attribute>
                 </xsl:if>
-                <small>
-                    <span><i18n:text>xmlui.Discovery.AdvancedSearch.type_type</i18n:text><xsl:text>: </xsl:text></span>
+                <xsl:call-template name="itemSummaryView-DIM-events"/>
+                <xsl:if test="//dim:field[@qualifier='edition']">
+                    <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></span>
+                </xsl:if>
+
+                <span><strong><i18n:text>xmlui.Discovery.AdvancedSearch.type_type</i18n:text></strong><xsl:text>: </xsl:text>
+
+
                     <xsl:choose>
                         <xsl:when test="//dim:field[@qualifier='subtype']">
-                            <i18n:text><xsl:value-of select="//dim:field[@qualifier='subtype']" /></i18n:text><br />
+                            <i18n:text><xsl:value-of select="//dim:field[@qualifier='subtype']" /></i18n:text>
                         </xsl:when>
                         <xsl:otherwise>
-                            <i18n:text><xsl:value-of select="//dim:field[@element='type']" /></i18n:text><br />
+                            <i18n:text><xsl:value-of select="//dim:field[@element='type']" /></i18n:text>
                         </xsl:otherwise>
                     </xsl:choose>
-                    <span><i18n:text>xmlui.dri2xhtml.METS-1.0.item-division</i18n:text></span><xsl:text>: </xsl:text><i18n:text><xsl:value-of select="//dim:field[@element='subject'][@qualifier='division']" /></i18n:text><br />
-                    <span><i18n:text>xmlui.dri2xhtml.METS-1.0.item-language</i18n:text></span><xsl:text>: </xsl:text>
+                </span>
+
+                <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-division</i18n:text></strong><xsl:text>: </xsl:text><i18n:text><xsl:value-of select="//dim:field[@element='subject'][@qualifier='division']" /></i18n:text></span>
+
+                <span><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-language</i18n:text></strong><xsl:text>: </xsl:text>
                     <xsl:for-each select="//dim:field[@element='language'][@qualifier='iso']">
                         <i18n:text><xsl:value-of select="." /></i18n:text>
                         <xsl:if test="position() != last()"><xsl:text>, </xsl:text></xsl:if>
                     </xsl:for-each>
-                    <br />
-                    <xsl:if test="//dim:field[starts-with(@qualifier,'isbn')]">
-                        <span>ISBN</span><xsl:text>: </xsl:text>
+                </span>
+
+                <xsl:if test="//dim:field[starts-with(@qualifier,'isbn')]">
+                    <span><strong>ISBN</strong><xsl:text>: </xsl:text>
                         <span id="isbn">
                             <xsl:choose>
                                 <xsl:when test="//dim:field[@qualifier='isbn-13']">
@@ -1387,15 +1431,15 @@
 
                             </xsl:choose>
                         </span>
+
                         <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><xsl:text> </xsl:text><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
                         <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard"><i class="icon-export"></i></a>
 
-                        <br />
-                    </xsl:if>
+                    </span>
+                </xsl:if>
 
-                    <span> URN</span><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a>
-                    <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
-                </small>
+                <span><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a></span>
+                <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
             </div>
             <!-- <div id="cite">
 

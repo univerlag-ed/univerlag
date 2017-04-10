@@ -143,6 +143,20 @@ and searching the repository.
                 <map:serialize type="xml"/>
             </map:match>
 
+            <map:match pattern="news-archive">
+                <map:act type="locale">
+                    <map:transform type="IncludePageMeta">
+                        <map:parameter name="locale" value="{locale}"/>
+                    </map:transform>
+                </map:act>
+                <map:act type="DSpacePropertyFileReader">
+                    <map:parameter name="dspace.dir" value="dspace.dir" />
+                    <map:transform type="Include" src="file://{dspace.dir}/config/news-archive.xml" />
+                </map:act>
+
+                <map:serialize type="xml"/>
+            </map:match>
+
             <map:match pattern="order">
                 <map:act type="OrderAction">
                     <map:transform src="file:///opt/dspace/univerlag/config/orderResults.xsl">

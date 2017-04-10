@@ -173,7 +173,16 @@
                     <xsl:value-of select="@cols"/>
                 </xsl:attribute>
             </xsl:if>
-            <xsl:apply-templates />
+            <!-- show browse counts with badge -->
+            <xsl:choose>
+                <xsl:when test="starts-with(normalize-space(text()), '[')">
+                    <xsl:apply-templates select="dri:xref"/>
+                    <span class="badge"><xsl:value-of select="translate(text(), '[]', '')" /></span>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates />
+                </xsl:otherwise>
+            </xsl:choose>
         </td>
     </xsl:template>
 
@@ -512,6 +521,7 @@
     </xsl:template>
 
     <xsl:template match="dri:xref">
+
         <a>
             <xsl:if test="@target">
                 <xsl:attribute name="href"><xsl:value-of select="@target"/>
@@ -535,6 +545,7 @@
             </xsl:if>
 
             <xsl:choose>
+
                 <xsl:when test="contains(@target, 'filtertype') and (contains(@target, 'division') or contains(@target, 'type') or contains(@target, 'language') or contains(@target, 'subjectheading'))">
                     <i18n:text><xsl:value-of select="substring-before(.,' ')" /></i18n:text><xsl:value-of select="concat(' ', substring-after(., ' ')) "/>
                 </xsl:when>

@@ -116,19 +116,19 @@
                 <xsl:choose>
                     <xsl:when test="contains(//dri:metadata[@qualifier='queryString'], 'view=cover')" >
                         <div class="hidden-xs visible-sm visible-md visible-lg">
-                            <a title="Deckblatt-Ansicht">
+                            <a title="xmlui.mirage2.listview.cover" i18n:attr="title">
 
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'] )"/>
                                 </xsl:attribute>
-                                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                <i class="icon-th" aria-hidden="true"></i>
                             </a><xsl:text> </xsl:text>
-                            <a title="Listen-Ansicht">
+                            <a title="xmlui.mirage2.listview.list" i18n:attr="title">
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', substring-before(//dri:metadata[@qualifier='queryString'], 'view'))"/>
                                 </xsl:attribute>
 
-                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                <i class="icon-th-list" aria-hidden="true"></i>
                             </a>
 
                             <div class="container-fluid covers">
@@ -140,21 +140,21 @@
                         </div>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:if test="not(contains(//dri:metadata[@qualifier='queryString'], 'type=author'))">
+                        <xsl:if test="not(contains(//dri:metadata[@qualifier='queryString'], 'type=author') or contains(//dri:metadata[@qualifier='URI'], 'series'))">
                             <div class="hidden-xs visible-sm visible-md visible-lg">
-                                <a title="Deckblatt-Ansicht">
+                                <a title="xmlui.mirage2.listview.cover" i18n:attr="title">
 
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'], '&amp;view=cover')"/>
                                     </xsl:attribute>
-                                    <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                    <i class="icon-th" aria-hidden="true"></i>
                                 </a><xsl:text> </xsl:text>
-                                <a title="Listen-Ansicht">
+                                <a title="xmlui.mirage2.listview.list" i18n:attr="title">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'])"/>
                                     </xsl:attribute>
 
-                                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                                    <i class="icon-th-list" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </xsl:if>

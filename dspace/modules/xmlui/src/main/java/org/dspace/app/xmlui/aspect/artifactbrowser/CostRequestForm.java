@@ -41,6 +41,9 @@ public class CostRequestForm extends AbstractDSpaceTransformer implements Cachea
     private static final Message T_dspace_home =
             message("xmlui.general.dspace_home");
 
+    private static final Message T_dspace_publishing =
+            message("xmlui.static.publishing.trail");
+
     private static final Message T_trail =
             message("xmlui.ArtifactBrowser.CostRequestForm.trail");
 
@@ -75,6 +78,7 @@ public class CostRequestForm extends AbstractDSpaceTransformer implements Cachea
         pageMeta.addMetadata("title").addContent(T_title);
 
         pageMeta.addTrailLink(contextPath + "/",T_dspace_home);
+        pageMeta.addTrailLink(contextPath + "/info/publishing",T_dspace_publishing);
         pageMeta.addTrail().addContent(T_trail);
     }
 
