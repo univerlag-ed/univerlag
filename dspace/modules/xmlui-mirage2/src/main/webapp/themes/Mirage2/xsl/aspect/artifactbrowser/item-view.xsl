@@ -427,8 +427,17 @@
 
     <xsl:template name="itemSummaryView-show-full">
         <span class="simple-item-view-show-full item-page-field-wrapper table">
-
-
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="$ds_item_view_toggle_url"/></xsl:attribute>
+                <i18n:text>xmlui.ArtifactBrowser.ItemViewer.show_full</i18n:text>
+            </a>
+        </span>
+        <br />
+        <span class="simple-item-view-show-full item-page-field-wrapper table">
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="concat('/metadata/' , $document//dri:metadata[@element='request' and @qualifier='URI'], '/mets.xml')"/></xsl:attribute>
+                &#160;
+            </a>
         </span>
     </xsl:template>
 

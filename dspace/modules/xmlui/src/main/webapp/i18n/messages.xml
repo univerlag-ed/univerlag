@@ -249,7 +249,7 @@
     <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Dokumentanzeige</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Das Dokument erscheint in:</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Zur Kurzanzeige</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Zur Langanzeige</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#160;</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Diese Dokument wurde zurückgezogen und steht nicht mehr zur Verfügung.</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
@@ -2650,11 +2650,6 @@
     <message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
     <message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
-    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Suche einschränken</message>
-    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Filter ausblenden</message>
-    <message key="xmlui.mirage2.discovery.reset">Zurücksetzen</message>
-
-
 
 
     <!-- different views of lists -->
@@ -4238,7 +4233,6 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
-    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.)</message>
     <message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
     <message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>
