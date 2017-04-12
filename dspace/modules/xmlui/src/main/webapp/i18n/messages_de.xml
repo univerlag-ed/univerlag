@@ -2311,7 +2311,7 @@
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Erscheinungsdatum</message>
 
     <!-- Site Leve Recently Added Content -->
-    <!-- <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Neuerscheinungen <a class="pull-right hidden-xs all" href="/browse?order=DESC&amp;sort_by=3&amp;type=dateissued">Alle Publikationen &#11166;</a></message> -->
+    <!-- <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Neuerscheinungen <a class="pull-right hidden-xs all" href="/browse?order=DESC&amp;sort_by=3&amp;type=dateissued">Alle Publikationen <i class="icon-arrow-right"></i></a></message> -->
     <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Neuerscheinungen</message>
 
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Kind</message>
@@ -2414,7 +2414,7 @@
 
     <message key="xmlui.Discovery.AbstractSearch.head2">Sammlungen, die Ihrer Suche entsprechen.</message>
     <message key="xmlui.Discovery.AbstractSearch.head3">Dokumente, die Ihrer Suche entsprechen.</message>
-    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle Publikationen &#11166;</message>
+    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle Publikationen <i class="icon-arrow-right"></i></message>
     <!-- End Discovery -->
 
     <!--   Start Sword Client  -->
@@ -2672,7 +2672,7 @@
     <message key="xmlui.static.contact">
         <p>
             Bitte benutzen Sie das Kontaktformular, um uns eine Nachricht zukommen zu lassen. Wenn Sie uns telefonisch, postalisch oder per E-Mail erreichen wollen, nutzen Sie bitte die unten angegebenen Daten. Bitte ersetzen Sie das "_AT_" durch ein "@", wenn Sie unsere E-Mail-Adressen verwenden.	<br /><br />
-            <a href="/feedback">Kontaktformular &#11166;</a>
+            <a href="/feedback">Kontaktformular <i class="icon-arrow-right"></i></a>
         </p>
         <p>
             <h2>Ansprechpartner</h2>
@@ -2744,10 +2744,10 @@ Das Team vom Universitätsverlag Göttingen
         </p>
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">&#11164; Aktuelles</a>&#160;<i class="icon-attention-circled"></i>
+                <a href="/news"><i class="icon-arrow-left"></i>Aktuelles</a>&#160;<i class="icon-attention-circled"></i>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog &#11166;</a>
+                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog<i class="icon-arrow-right"></i></a>
             </div>
         </div>
         <!-- <h2>Verlagsprogramm online</h2>
@@ -4431,7 +4431,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.dri2xhtml.structural.order-link">Warenkorb</message>
 
     <message key="xmlui.item.part">Teil </message>
-    <message key="xmlui.list.all.publications">Alle Publikationen  &#11166;</message>
+    <message key="xmlui.list.all.publications">Alle Publikationen  <i class="icon-arrow-right"></i></message>
     <message key="xmlui.dri2xhtml.default.textarea.value">Ihr Text</message>
 
 

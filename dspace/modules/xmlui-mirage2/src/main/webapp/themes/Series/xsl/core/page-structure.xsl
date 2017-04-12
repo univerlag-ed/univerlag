@@ -437,7 +437,7 @@
                         <ul class="nav navbar-nav pull-left">
                             <xsl:call-template name="languageSelection"/>
                         </ul>
-                        <ul class="nav navbar-nav pull-left" id="login">
+                        <ul class="nav navbar-nav pull-left">
                             <xsl:choose>
                                 <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                                     <li class="dropdown">
@@ -473,7 +473,7 @@
                                 <xsl:otherwise>
                                     <li>
                                         <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}">
+                            dri:metadata[@element='identifier' and @qualifier='loginURL']}"  id="login">
                                             <span class="hidden-xs">
                                                 <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
                                             </span>

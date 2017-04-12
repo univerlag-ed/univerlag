@@ -1,14 +1,17 @@
+$(function () {
+    $('#deliveryDatePicker').datetimepicker(
+        {format: 'YYYY-MM-DD'}
+    );
+});
+
+$(function () {
+    $('#issueDatePicker').datetimepicker(
+        {format: 'YYYY-MM-DD'}
+    );
+});
+
 (function($)
 {
-    $('#issueDate').datepicker({
-        format: 'mm/dd/yyyy',
-        startDate: '-3d'
-    });
-    $('#deliveryDate').datepicker({
-        format: 'mm/dd/yyyy',
-        startDate: '-3d'
-    });
-
     if ($("#ds-language-selection > a").text() == '[de]')
     {
         $("a, a > span").each(function ()

@@ -195,6 +195,7 @@
             <!-- <link rel="stylesheet" href="{concat($theme-path, 'styles/font-awesome-4.7.0/css/font-awesome.min.css')}"/> -->
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
             <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/fontello.css')}"/>
+            <link rel="stylesheet" href="{concat($theme-path, 'styles/bootstrap-datetimepicker.css')}"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
@@ -437,7 +438,7 @@
                         <ul class="nav navbar-nav pull-left">
                             <xsl:call-template name="languageSelection"/>
                         </ul>
-                        <ul class="nav navbar-nav pull-left" id="login">
+                        <ul class="nav navbar-nav pull-left">
                             <xsl:choose>
                                 <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                                     <li class="dropdown">
@@ -473,7 +474,7 @@
                                 <xsl:otherwise>
                                     <li>
                                         <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}">
+                            dri:metadata[@element='identifier' and @qualifier='loginURL']}"  id="login">
                                             <span class="hidden-xs">
                                                 <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
                                             </span>

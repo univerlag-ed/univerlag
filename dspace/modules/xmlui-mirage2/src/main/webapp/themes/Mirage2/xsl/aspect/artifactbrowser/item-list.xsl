@@ -314,7 +314,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <i class="icon-basket"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
+                                    <i class="icon-shopping-cart-1"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.print.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -420,7 +420,7 @@
                                         </xsl:choose>
                                     </xsl:attribute>
                                     <!-- <xsl:attribute name="data-shipping"><xsl:text>0</xsl:text></xsl:attribute> -->
-                                    <i class="icon-basket"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
+                                    <i class="icon-shopping-cart-1"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.cdrom.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
@@ -520,7 +520,7 @@
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:attribute>
-                                    <i class="icon-basket"></i> <i18n:text>xmlui.item.dvd.order</i18n:text>
+                                    <i class="icon-shopping-cart-1"></i> <i18n:text>xmlui.item.dvd.order</i18n:text>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </span>
