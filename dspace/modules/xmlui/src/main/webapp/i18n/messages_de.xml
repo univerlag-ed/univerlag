@@ -3160,50 +3160,41 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.publishing.trail">Publizieren</message>
     <message key="xmlui.static.publishing">
         <div>
-            <blockquote class="blockquote">
-                <h4>Wer kann publizieren?</h4>
                 <p>
-                    <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
+
                     <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
                 </p>
-            </blockquote>
-            <blockquote class="blockquote">
-                <h4>Kosten</h4>
                 <p>
                     Um einen ersten Überblick über die <strong>anfallenden Kosten</strong> für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
                 </p>
-            </blockquote>
-            <blockquote class="blockquote">
+
                 <p>
                     Wenn Sie sich entschieden haben, Ihre Arbeit in unserem Verlag zu veröffentlichen, <a href="/info/contact">kontaktieren</a>  Sie uns bitte.
                 </p>
-            </blockquote>
-            <blockquote class="blockquote">
+
                 <p>
                     Für das Erstellen der Druck- und Online-Ausgabe Ihres Werkes benötigen wir ein publikationsreifes PDF-Dokument. Dazu stehen Ihnen <a href="/info/publishing-utils"><strong>unsere Formatvorlagen</strong></a> zur Verfügung. Wir möchten Sie bitten, diese entsprechend zu nutzen.
                 </p>
                 <!-- <p>
 
             Um Ihr Dokument zur Veröffentlichung einzureichen, <a href="/register">registrieren Sie sich</a> bitte beim Universitätsverlag, navigieren Sie zum Fachgebiet, in dem Ihre Publikation erscheinen soll und klicken Sie auf  „Hier veröffentlichen“. </p>-->
-            </blockquote>
-            <blockquote class="blockquote">
+
                 <p>
                     Im Universitätsverlag Göttingen gibt es zwei <a href="/info/divisions">Sparten</a> für das Publizieren, die „<strong>Universitätsdrucke</strong>“ für wissenschaftliche Werke von solider Qualität sowie die begutachtete Sparte „<strong>Universitätsverlag</strong>“ für Werke gehobener Qualität. <br />
                     Anhand der Qualität des Inhalts wird festgelegt, in welcher Sparte wir Ihr Dokument veröffentlichen. Wenn Sie und wir übereinstimmend Ihr Werk der Sparte „Universitätsverlag“ zuordnen, wird es dem Herausgebergremium vorgelegt, um eine inhaltliche Begutachtung zu erhalten. Bei der Sparte „Universitätsdrucke“ nehmen wir lediglich eine formale Prüfung der Datei vor.
                 </p>
 
                 <p>
-                    Parallel dazu erarbeiten wir mit Ihnen die Gestaltung des Buches (im Corporate Design der Universität) und nehmen eine formale Prüfung der Datei vor.
+                    Parallel dazu erarbeiten wir mit Ihnen <strong>die Gestaltung des Buches</strong> (im Corporate Design der Universität) und nehmen eine <strong>formale Prüfung</strong> der Datei vor.
                 </p>
                 <p>
-                    Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die endgültige Druckfreigabe erteilt.
+                    Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die <strong>endgültige Druckfreigabe</strong> erteilt.
                 </p>
-            </blockquote>
-            <blockquote class="blockquote">
+
                 <p>
-                    Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess">open access</a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
+                    Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
                 </p>
-            </blockquote>
+
 
         </div>
     </message>
@@ -4801,7 +4792,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">Voraussichtlicher Termin Ihrer Manuskriptabgabe</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="deliveryDatePicker">
-                            <input class="form-control" name="delivery_date" type="text"></input>
+                            <input class="form-control" name="delivery_date" type="text"  placeholder="JJJJ-MM-DD"></input>
                             <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
                         </div>
                     </div>
@@ -4812,7 +4803,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">*Gewünschter Termin der Veröffentlichung</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="issueDatePicker">
-                            <input class="form-control" name="issue_date" type="text" required="true"></input>
+                            <input class="form-control" name="issue_date" type="text" required="true" placeholder="JJJJ-MM-DD"></input>
                             <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
                         </div>
                     </div>
@@ -4825,7 +4816,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <div class="form-group">
                     <label class="col-md-4 control-label">Fragen/Kommentare</label>
                     <div class="col-md-6  inputGroupContainer">
-                        <div class="input-group"> <span class="input-group-addon"><i class="icon-pencil"></i></span>
+                        <div class="input-group">
+                            <!-- <span class="input-group-addon"><i class="icon-pencil"></i></span> -->
                             <textarea class="form-control" name="comments" placeholder="Ihre Nachricht"></textarea>
                         </div>
                     </div>

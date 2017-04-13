@@ -33,9 +33,10 @@
         xmlns:encoder="xalan://java.net.URLEncoder"
         exclude-result-prefixes="xalan encoder i18n dri mets dim  xlink xsl">
 
+    <xsl:output indent="yes"/>
+
     <!-- The summaryView of communities and collections is undefined. -->
     <xsl:template name="collectionSummaryView-DIM">
-        Query: <xsl:value-of select="//dri:metadata[@qualifier='queryString']" />
         <i18n:text>xmlui.dri2xhtml.METS-1.0.collection-not-implemented</i18n:text>
     </xsl:template>
 
@@ -52,10 +53,10 @@
 
     <!-- Generate the info about the collection from the metadata section -->
     <xsl:template match="dim:dim" mode="collectionDetailView-DIM">
-
         <xsl:if test="string-length(dim:field[@element='description'][not(@qualifier)])&gt;0">
             <p class="intro-text">
-                <i18n:text><xsl:copy-of select="dim:field[@element='description'][not(@qualifier)]/node()"/></i18n:text>
+                <xsl:variable name="id"><xsl:copy-of select="dim:field[@element='description'][not(@qualifier)]/node()"/></xsl:variable>
+                <i18n:text><xsl:value-of select="$id" /></i18n:text>
             </p>
         </xsl:if>
 

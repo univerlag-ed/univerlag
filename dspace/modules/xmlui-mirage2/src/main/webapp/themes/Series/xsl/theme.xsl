@@ -43,6 +43,7 @@
     <xsl:import href="aspect/artifactbrowser/item-list.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/item-view.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/community-list.xsl"/>
+    <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/community-view.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/collection-list.xsl"/>
     <xsl:import href="aspect/artifactbrowser/collection-view.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/browse.xsl"/>

@@ -380,8 +380,14 @@
 
     <xsl:template name="itemSummaryView-DIM-URI">
         <h4>
-
-            <xsl:choose>
+            <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
+            <a id="pid">
+                <xsl:attribute name="href">
+                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
+                </xsl:attribute>
+                <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
+            </a>
+            <!--<xsl:choose>
                 <xsl:when test="starts-with(dim:field[@element='identifier' and @qualifier='uri' and descendant::text()], '10.007')">
                     <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><xsl:text> DOI: </xsl:text>
                     <a id="pid">
@@ -409,7 +415,7 @@
                         <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/>
                     </a>
                 </xsl:otherwise>
-            </xsl:choose>
+            </xsl:choose> -->
         </h4>
     </xsl:template>
 
@@ -858,8 +864,7 @@
                     <xsl:value-of select="substring-after($mimetype,'/')"/>
                 </xsl:with-param>
             </xsl:call-template>
-
-            <xsl:text>&#160;</xsl:text><i18n:text>xmlui.item.online.version</i18n:text>
+            <i18n:text>xmlui.item.online.version</i18n:text>
             <span class="access">
                 <a>
                     <xsl:attribute name="href">
@@ -1207,7 +1212,7 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
-        <i class="icon-file-pdf"></i><xsl:text>  </xsl:text>
+        <i class="icon-file-pdf"></i>
         <!--<xsl:attribute name="class">
             <xsl:choose>
                 <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
@@ -1218,7 +1223,6 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:attribute>-->
-        <xsl:text> </xsl:text>
     </xsl:template>
 
     <!-- Generate the license information from the file section -->
@@ -1294,6 +1298,7 @@
                         </a>
                     </p>
                 </xsl:for-each>
+
             </div>
             <div id="abstract">
                 <xsl:attribute name="class"><xsl:text>tab-pane</xsl:text>
@@ -1301,6 +1306,14 @@
                         <xsl:text> active</xsl:text>
                     </xsl:if>
                 </xsl:attribute>
+                <xsl:for-each select="//dim:field[@element='description'][@qualifier='other']">
+                    <p>
+                        <a target="_blank">
+                            <xsl:attribute name="href"><xsl:value-of select="." /></xsl:attribute>
+                            <i class="icon-link-ext"></i><i18n:text>xmlui.item.relation.online</i18n:text>
+                        </a>
+                    </p>
+                </xsl:for-each>
                 <p>
                     <xsl:choose>
                         <xsl:when test="$locale = 'de'">
@@ -1401,6 +1414,9 @@
                 <xsl:if test="not(//dim:field[starts-with(@qualifier, 'abstract')])">
                     <xsl:attribute name="class">tab-pane active</xsl:attribute>
                 </xsl:if>
+                <xsl:for-each select="//dim:field[@qualifier='supplement']">
+                    <p><xsl:value-of select="." /></p>
+                </xsl:for-each>
                 <xsl:call-template name="itemSummaryView-DIM-events"/>
                 <xsl:if test="//dim:field[@qualifier='edition']">
                     <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></p>
@@ -1445,12 +1461,12 @@
                         </span>
 
                         <xsl:if test="//dim:field[@qualifier='medium'] = 'Print'"><xsl:text> </xsl:text><i18n:text>xmlui.item.info.print</i18n:text></xsl:if>
-                        <a href="#" onclick="copyToClipboard('#isbn')" title="copy to clipboard"><i class="icon-export"></i></a>
+                        <a href="#" onclick="copyToClipboard('#isbn')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
                     </p>
                 </xsl:if>
 
-                <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" title="copy to clipboard"><i class="icon-export"></i></a></p>
+                <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a></p>
                 <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
             </div>
             <!-- <div id="cite">
