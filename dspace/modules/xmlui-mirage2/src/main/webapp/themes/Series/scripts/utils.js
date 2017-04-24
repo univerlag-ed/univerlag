@@ -6,6 +6,14 @@
  * http://www.dspace.org/license/
  */
 (function($) {
+    $("#main-container").append('<button id="totop">&uarr;</button>');
+    $(window).scroll( function(){
+        $(window).scrollTop()>300?($("#totop:hidden").fadeIn(),$("#totop").css("top",$(window).scrollTop()+$(window).height()-100)):$("#totop:visible").fadeOut()
+    });
+    $("#totop").click(function(){
+        $("html, body").animate({scrollTop:0})
+    });
+
     DSpace.getTemplate = function(name) {
         if (DSpace.dev_mode || DSpace.templates === undefined || DSpace.templates[name] === undefined) {
             $.ajax({

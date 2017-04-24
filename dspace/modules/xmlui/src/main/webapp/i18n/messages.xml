@@ -2650,6 +2650,11 @@
     <message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
     <message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
+    <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">löschen</message>
+
 
 
     <!-- different views of lists -->

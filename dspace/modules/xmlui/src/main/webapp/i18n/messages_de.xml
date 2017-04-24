@@ -2650,6 +2650,11 @@
     <message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
     <message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
+    <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">löschen</message>
+
 
 
     <!-- different views of lists -->
@@ -3160,40 +3165,40 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.publishing.trail">Publizieren</message>
     <message key="xmlui.static.publishing">
         <div>
-                <p>
+            <p>
 
-                    <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
-                </p>
-                <p>
-                    Um einen ersten Überblick über die <strong>anfallenden Kosten</strong> für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
-                </p>
+                <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
+            </p>
+            <p>
+                Um einen ersten Überblick über die <strong>anfallenden Kosten</strong> für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
+            </p>
 
-                <p>
-                    Wenn Sie sich entschieden haben, Ihre Arbeit in unserem Verlag zu veröffentlichen, <a href="/info/contact">kontaktieren</a>  Sie uns bitte.
-                </p>
+            <p>
+                Wenn Sie sich entschieden haben, Ihre Arbeit in unserem Verlag zu veröffentlichen, <a href="/info/contact">kontaktieren</a>  Sie uns bitte.
+            </p>
 
-                <p>
-                    Für das Erstellen der Druck- und Online-Ausgabe Ihres Werkes benötigen wir ein publikationsreifes PDF-Dokument. Dazu stehen Ihnen <a href="/info/publishing-utils"><strong>unsere Formatvorlagen</strong></a> zur Verfügung. Wir möchten Sie bitten, diese entsprechend zu nutzen.
-                </p>
-                <!-- <p>
+            <p>
+                Für das Erstellen der Druck- und Online-Ausgabe Ihres Werkes benötigen wir ein publikationsreifes PDF-Dokument. Dazu stehen Ihnen <a href="/info/publishing-utils"><strong>unsere Formatvorlagen</strong></a> zur Verfügung. Wir möchten Sie bitten, diese entsprechend zu nutzen.
+            </p>
+            <!-- <p>
 
-            Um Ihr Dokument zur Veröffentlichung einzureichen, <a href="/register">registrieren Sie sich</a> bitte beim Universitätsverlag, navigieren Sie zum Fachgebiet, in dem Ihre Publikation erscheinen soll und klicken Sie auf  „Hier veröffentlichen“. </p>-->
+        Um Ihr Dokument zur Veröffentlichung einzureichen, <a href="/register">registrieren Sie sich</a> bitte beim Universitätsverlag, navigieren Sie zum Fachgebiet, in dem Ihre Publikation erscheinen soll und klicken Sie auf  „Hier veröffentlichen“. </p>-->
 
-                <p>
-                    Im Universitätsverlag Göttingen gibt es zwei <a href="/info/divisions">Sparten</a> für das Publizieren, die „<strong>Universitätsdrucke</strong>“ für wissenschaftliche Werke von solider Qualität sowie die begutachtete Sparte „<strong>Universitätsverlag</strong>“ für Werke gehobener Qualität. <br />
-                    Anhand der Qualität des Inhalts wird festgelegt, in welcher Sparte wir Ihr Dokument veröffentlichen. Wenn Sie und wir übereinstimmend Ihr Werk der Sparte „Universitätsverlag“ zuordnen, wird es dem Herausgebergremium vorgelegt, um eine inhaltliche Begutachtung zu erhalten. Bei der Sparte „Universitätsdrucke“ nehmen wir lediglich eine formale Prüfung der Datei vor.
-                </p>
+            <p>
+                Im Universitätsverlag Göttingen gibt es zwei <a href="/info/divisions">Sparten</a> für das Publizieren, die „<strong>Universitätsdrucke</strong>“ für wissenschaftliche Werke von solider Qualität sowie die begutachtete Sparte „<strong>Universitätsverlag</strong>“ für Werke gehobener Qualität. <br />
+                Anhand der Qualität des Inhalts wird festgelegt, in welcher Sparte wir Ihr Dokument veröffentlichen. Wenn Sie und wir übereinstimmend Ihr Werk der Sparte „Universitätsverlag“ zuordnen, wird es dem Herausgebergremium vorgelegt, um eine inhaltliche Begutachtung zu erhalten. Bei der Sparte „Universitätsdrucke“ nehmen wir lediglich eine formale Prüfung der Datei vor.
+            </p>
 
-                <p>
-                    Parallel dazu erarbeiten wir mit Ihnen <strong>die Gestaltung des Buches</strong> (im Corporate Design der Universität) und nehmen eine <strong>formale Prüfung</strong> der Datei vor.
-                </p>
-                <p>
-                    Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die <strong>endgültige Druckfreigabe</strong> erteilt.
-                </p>
+            <p>
+                Parallel dazu erarbeiten wir mit Ihnen <strong>die Gestaltung des Buches</strong> (im Corporate Design der Universität) und nehmen eine <strong>formale Prüfung</strong> der Datei vor.
+            </p>
+            <p>
+                Sind alle Kriterien für die Veröffentlichung erfüllt, erhalten Sie einen Probedruck des Buches. Wenn beide Parteien diesen geprüft haben, wird die <strong>endgültige Druckfreigabe</strong> erteilt.
+            </p>
 
-                <p>
-                    Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
-                </p>
+            <p>
+                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
+            </p>
 
 
         </div>

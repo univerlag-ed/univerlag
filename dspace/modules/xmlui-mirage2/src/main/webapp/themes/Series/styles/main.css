@@ -10098,3 +10098,23 @@ ul#myTab li a {
   color: #fff;
   text-shadow: 0px 1px 0px #565252;
 }
+
+#totop {
+  background: #ccc;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-shadow: rgba(0,0,0,0.2) 0 2px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.2) 0 2px 3px;
+  box-shadow: rgba(0,0,0,0.2) 0 2px 3px;
+  color: #163776;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  z-index: 999;
+}
