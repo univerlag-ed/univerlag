@@ -848,12 +848,25 @@ a.tooltip {
   background-color: #94c294;
   border: #94c294;
   border-radius: 15px;
-  color: white;
   font-size: small;
   margin-left: 2px;
 }
 
 .gnd a i {
-/*  color: #7D8FB2; */
+  /*  color: #7D8FB2; */
   color: #B5B8BF;
+}
+
+.orcid a, .gnd a {
+  color: white;
+}
+
+.extern-link::after {
+  content: "\f08e ";
+  font-family: fontello;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  padding-left: 5px;
 }

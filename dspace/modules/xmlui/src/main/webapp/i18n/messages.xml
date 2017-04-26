@@ -4267,6 +4267,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
+    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.)</message>
     <message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
     <message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>
