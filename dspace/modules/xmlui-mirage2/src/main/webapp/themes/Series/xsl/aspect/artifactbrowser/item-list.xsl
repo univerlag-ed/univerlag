@@ -140,11 +140,13 @@
             </xsl:if> -->
             <div class="artifact-info">
                 <span class="author h4">
+
                     <small>
+
                         <xsl:choose>
                             <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                                 <span>
-                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
+                                    <xsl:for-each select="dim:field[@qualifier='author']">
 
                                         <xsl:if test="@authority">
                                             <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
@@ -159,9 +161,10 @@
                             </xsl:when>
                             <xsl:when test="dim:field[@element='contributor']">
                                 <span>
-                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='editor']">
+                                    <xsl:for-each select="dim:field[@qualifier='editor']">
                                         <xsl:copy-of select="node()"/>
-                                        <xsl:if test="count(following-sibling::dim:field[@element='editor']) != 0">
+
+                                        <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='editor']) != 0">
                                             <xsl:text>; </xsl:text>
                                         </xsl:if>
                                     </xsl:for-each>

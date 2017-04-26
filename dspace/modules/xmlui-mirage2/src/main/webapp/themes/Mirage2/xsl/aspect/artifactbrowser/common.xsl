@@ -112,6 +112,14 @@
                     <xsl:apply-templates select="*[not(name()='head')]" mode="recent-submissions"/>
                 </div>
             </xsl:when>
+            <xsl:when test="@n='item-related-items'">
+                <div id="relitems" class="collapse">
+                    <ul class="ds-artifact-list list-unstyled">
+
+                        <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
+                    </ul>
+                </div>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:choose>
                     <xsl:when test="contains(//dri:metadata[@qualifier='queryString'], 'view=cover')" >

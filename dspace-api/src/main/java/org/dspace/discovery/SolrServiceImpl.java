@@ -2125,7 +2125,8 @@ public class SolrServiceImpl implements SearchService, IndexingService {
                 public Object transform(Object input)
                 {
                     //Add the mlt appendix !
-                    return input + "_mlt";
+                    //return input + "_mlt";
+                    return input;
                 }
             });
 

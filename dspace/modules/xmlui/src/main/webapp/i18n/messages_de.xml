@@ -918,6 +918,7 @@
     <message key="xmlui.administrative.Navigation.administrative_withdrawn">Verworfene Dokumente</message>
     <message key="xmlui.administrative.Navigation.administrative_private">Nicht sichtbare Dokumente</message>
     <message key="xmlui.administrative.Navigation.administrative_control_panel">Systemdaten</message>
+    <message key="xmlui.administrative.Navigation.administrative_content">Inhalt-Administration</message>
     <message key="xmlui.administrative.Navigation.statistics">Statistiken</message>
     <message key="xmlui.administrative.Navigation.administrative_import_metadata">Metadaten Importieren</message>
     <message key="xmlui.administrative.Navigation.administrative_curation">Datenpflege - Aufgaben</message>
@@ -1326,13 +1327,48 @@
     <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_collectionIds">Bitte wählen Sie mindestens eine Sammlung aus.</message>
 
     <!-- org.dspace.app.xmlui.administrative.authorization.DeletePoliciesConfirm -->
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Löschung der Autorisierung bestätigen</message>
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.trail">Löschung bestätigen</message>
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_head">Löschung bestätigen</message>
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_para">Die folgenden Rechte werden gelöscht: </message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Confirm Policy Deletion</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.trail">Confirm Delete</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_head">Confirm Deletion</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_para">The following Policies will be removed: </message>
     <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_id">ID</message>
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_action">Aktion</message>
-    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_group">Gruppe</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_action">Action</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_group">Group</message>
+
+
+    <!-- Batch Import Tool -->
+    <!-- org.dspace.app.xmlui.administrative.batchimport -->
+    <message key="xmlui.administrative.batchimport.general.select_collection">Select a collection</message>
+    <message key="xmlui.administrative.batchimport.general.collection">Collection</message>
+    <message key="xmlui.administrative.batchimport.general.collection_help">Select the collection you wish to submit an item to.</message>
+    <message key="xmlui.administrative.batchimport.general.collection_default">Select a collection...</message>
+
+    <message key="xmlui.administrative.batchimport.general.title">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.head1">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.trail">Import Batch Load (ZIP)</message>
+    <message key="xmlui.administrative.batchimport.general.changes">changes</message>
+    <message key="xmlui.administrative.batchimport.general.no_changes">No changes were detected</message>
+    <message key="xmlui.administrative.batchimport.general.new_item">New item</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_successful">Upload successful</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_failed">Upload failed or no file selected</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_badschema">Unknown metadata schema in heading</message>
+    <message key="xmlui.administrative.batchimport.flow.upload_badelement">Unknown metadata element in heading</message>
+    <message key="xmlui.administrative.batchimport.flow.import_successful">Import successful</message>
+    <message key="xmlui.administrative.batchimport.flow.import_failed">Import failed</message>
+    <message key="xmlui.administrative.batchimport.flow.failed_no_collection">No Destination Collection Specified</message>
+
+    <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportConfirm -->
+    <message key="xmlui.administrative.batchimport.BatchmportMain.submit_upload">Upload SimpleArchiveFormat ZIP</message>
+
+    <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportConfirm -->
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.success">Successfully processed</message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.changes_committed">Changes applied to item</message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_added">Added: </message>
+    <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_removed">Removed: </message>
+
+    <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportUpload -->
+    <message key="xmlui.administrative.batchimport.BatchImportUpload.item_add">Add: </message>
+    <message key="xmlui.administrative.batchimport.BatchImportUpload.item_remove">Remove: </message>
 
     <!-- general edit item messages -->
     <message key="xmlui.administrative.item.general.item_trail">Dokumente</message>
@@ -2405,8 +2441,8 @@
     <message key="xmlui.Discovery.SimpleSearch.filter.notequals">entspricht nicht</message>
     <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">Keine Kennung</message>
 
-    <message key="xmlui.Discovery.RelatedItems.head">Verwandte Dokumente</message>
-    <message key="xmlui.Discovery.RelatedItems.help">Andere Dokumente von diesem Autor/Herausgeber</message>
+    <message key="xmlui.Discovery.RelatedItems.head">Weitere Publikationen von diesen Autoren</message>
+    <message key="xmlui.Discovery.RelatedItems.help"></message>
 
     <message key="xmlui.Discovery.AbstractSearch.head1_community">Anzeige von {0} der {1} Treffer für den Bereich: {2}. <span class="searchTime">({3} Sekunden)</span></message>
     <message key="xmlui.Discovery.AbstractSearch.head1_collection">Anzeige von {0} der {1} Treffer für die Sammlung: {2}. <span class="searchTime">({3} Sekunden)</span></message>
@@ -2654,6 +2690,7 @@
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
     <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">löschen</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">löschen</message>
 
 
 

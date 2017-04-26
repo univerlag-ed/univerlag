@@ -376,6 +376,15 @@
             </xsl:if>
             <xsl:copy-of select="node()"/>
         </span>
+        <xsl:choose>
+            <xsl:when test="starts-with(@authority, 'orcid')">
+                <span class="orcid"><a target="_blank" href="{concat('//orcid.org/',substring-after(@authority, '/'))}" title="ORCID Profil"><small>ID</small></a></span>
+            </xsl:when>
+            <xsl:when test="starts-with(@authority, 'gnd')">
+                <span class="gnd"><a target="_blank" href="{concat('//d-nb.info/',@authority)}" title="DNB Profil"><small><i class="icon-info"></i></small></a></span>
+            </xsl:when>
+        </xsl:choose>
+
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-URI">
@@ -1283,7 +1292,11 @@
                 </xsl:if>
                 <a data-target="#details" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-details</i18n:text></a>
             </li>
-
+            <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
+                <li>
+                    RELATED ITEMS
+                </li>
+            </xsl:if>
             <!-- <li><a href="#cite">Zitieren</a></li> -->
         </ul>
         <!-- </div> -->

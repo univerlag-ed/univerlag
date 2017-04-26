@@ -67,7 +67,7 @@ public class SendCostRequestAction extends AbstractAction
         String publ_title	= request.getParameter("publ_title");
         String subtitle	= request.getParameter("subtitle");
         String institute	= request.getParameter("institute");
-        String series	= request.getParameter("seriese");
+        String series	= request.getParameter("series");
         String template	= request.getParameter("template");
         String extent	= request.getParameter("extent");
         String cover	= request.getParameter("cover");

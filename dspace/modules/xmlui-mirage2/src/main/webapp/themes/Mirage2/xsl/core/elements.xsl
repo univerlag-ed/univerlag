@@ -689,9 +689,16 @@
 
 
     <xsl:template match="dri:div/dri:head" priority="3">
-        <xsl:call-template name="renderHead">
-            <xsl:with-param name="class">ds-div-head</xsl:with-param>
-        </xsl:call-template>
+        <xsl:choose>
+            <xsl:when test="../@n = 'item-related'">
+                <h3><a href="#" data-toggle="collapse" data-target="#relitems"><xsl:apply-templates /></a> <i class="icon-arrow-right"></i></h3>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="renderHead">
+                    <xsl:with-param name="class">ds-div-head</xsl:with-param>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- The second case is the header on tables, which always creates an HTML h3 element -->
