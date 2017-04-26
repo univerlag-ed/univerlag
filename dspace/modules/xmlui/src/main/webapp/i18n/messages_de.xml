@@ -2691,9 +2691,7 @@
     <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">löschen</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">löschen</message>
-
-
-
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Filter hinzufügen</message>
     <!-- different views of lists -->
     <message key="xmlui.mirage2.listview.cover">Deckblatt-Ansicht</message>
     <message key="xmlui.mirage2.listview.list">Listen-Ansicht (mit Details)</message>
@@ -3276,8 +3274,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">Anleitung Autoren</h4>
                 <p>Kurze Beschreibung<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                        <a href="/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p>
             </div>
@@ -3286,7 +3284,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">Anleitung Formatvorlage</h4>
                 <p>Beschreibung, wie die angebotenen Formatvorlagen benutzt werden<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p>
             </div>
@@ -3297,8 +3295,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
                     Sie mit der Erfassung des Dokuments beginnen.<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                        <a href="/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p>
             </div>
@@ -3307,7 +3305,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">17x24cm: Beiträge in Sammelbänden</h4>
                 <p>Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p></div>
 
@@ -3315,8 +3313,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">17x24cm: skaliert </h4>
                 <p>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                        <a href="/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p></div>
 
@@ -3324,8 +3322,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">14,8x21cm (DIN A5) </h4>
                 <p>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                        <a href="/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p></div>
 
@@ -3333,8 +3331,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 <h4 class="list-item-header section-heading">LaTeX </h4>
                 <p>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.<p></p>
                     <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                        <a href="/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                        <a href="/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                     </div>
                 </p></div>
 
@@ -3535,7 +3533,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.policy">
         <div class="ds-static-div">
             <p>
-                <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Leitlinien als PDF</a>
+                <a href="/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Leitlinien als PDF</a>
                 <span class="pull-right">Göttingen im Mai 2015</span>
             </p>
             <p>
@@ -3578,7 +3576,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 der elektronischen Ausgaben eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
                 insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlern weltweit sichtbar. Daher werden möglichst alle Publikationen über den
                 Publikationsserver GOEDOC der Universität Göttingen online frei angeboten (Open Access). Hier finden Sie die
-                <a href="/static/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
+                <a href="/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
                 (In übersichtlicher Form finden Sie unsere Politik bezüglich der Archivierung von Pre- und Postprints in Open Access-Repositorien
                 im Verzeichnis <a href="http://www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all">Sherpa/RoMEO</a>.)
             </p>
@@ -4245,7 +4243,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             Sie können unser Verlagsprogramm <a href="/documents/verlagsprogramm_2016.pdf">als PDF herunterladen</a>. Falls Sie es in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei <a href="mailto:univerlag@uni-goettingen.de?subject=Verlagkatalog bestellen">hier</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2016.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/documents/verlagsprogramm_2016.pdf"></iframe>
         </div>
 
         <!-- <p id="catalog">
@@ -4267,6 +4265,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
+    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.)</message>
     <message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
     <message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>

@@ -161,7 +161,7 @@
                                     </xsl:for-each>
                                 </span>
                             </xsl:when>
-                            <xsl:when test="dim:field[@element='contributor']">
+                            <xsl:when test="dim:field[@element='contributor'][@qualifier='editor' or @qualifier='corporation']">
                                 <span>
                                     <xsl:for-each select="dim:field[@element='contributor'][@qualifier='editor']">
                                         <xsl:copy-of select="node()"/>
@@ -178,6 +178,18 @@
                                         </xsl:for-each>
                                     </xsl:if>
                                     <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                </span>
+                            </xsl:when>
+                            <xsl:when test="dim:field[@element='contributor'][@qualifier='other']">
+
+                                <span>
+                                    <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
+                                        <xsl:value-of select="."/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
                                 </span>
                             </xsl:when>
                             <xsl:otherwise>
