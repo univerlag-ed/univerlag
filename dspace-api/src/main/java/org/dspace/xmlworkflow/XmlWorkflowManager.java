@@ -519,7 +519,7 @@ public class XmlWorkflowManager {
         grantUserAllItemPolicies(c, wi.getItem(), e);
     }
 
-    private static void grantUserAllItemPolicies(Context context, Item item, EPerson epa) throws AuthorizeException, SQLException {
+    public static void grantUserAllItemPolicies(Context context, Item item, EPerson epa) throws AuthorizeException, SQLException {
         if(epa != null){
             //A list of policies the user has for this item
             List<Integer>  userHasPolicies = new ArrayList<Integer>();
@@ -597,7 +597,7 @@ public class XmlWorkflowManager {
         }
     }
 
-    private static void removeUserItemPolicies(Context context, Item item, EPerson e) throws SQLException, AuthorizeException {
+    public static void removeUserItemPolicies(Context context, Item item, EPerson e) throws SQLException, AuthorizeException {
         if(e != null){
             //Also remove any lingering authorizations from this user
             AuthorizeManager.removeEPersonPolicies(context, item, e);
