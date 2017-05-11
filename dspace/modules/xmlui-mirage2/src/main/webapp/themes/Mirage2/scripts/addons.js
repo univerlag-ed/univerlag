@@ -12,9 +12,19 @@
         {format: 'YYYY-MM-DD'}
     );
 
+    $('#issue_date').focus(function() {
+        $('#issueDatePicker').data("DateTimePicker").show();
+    });
+
+
     $('#deliveryDatePicker').datetimepicker(
         {format: 'YYYY-MM-DD'}
     );
+
+    $('#delivery_date').focus(function() {
+        $('#deliveryDatePicker').data("DateTimePicker").show();
+    });
+
 
     if ($("#ds-language-selection > a").text() == '[de]')
     {

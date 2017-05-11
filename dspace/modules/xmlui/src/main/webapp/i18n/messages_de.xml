@@ -162,7 +162,7 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">aufsteigend</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">absteigend</message>
 
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">&#160;</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Autoren/Herausgeber</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">&#160;</message>
 
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">{0}</message>
@@ -2697,7 +2697,8 @@
     <!-- different views of lists -->
     <message key="xmlui.mirage2.listview.cover">Deckblatt-Ansicht</message>
     <message key="xmlui.mirage2.listview.list">Listen-Ansicht (mit Details)</message>
-
+    <message key="xml.author.profile.dnb.label">DNB Profil</message>
+    <message key="xml.author.profile.orcid.label">ORCID Profil</message>
 
     <!-- item view page -->
     <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Verwandtes</message>
@@ -3087,7 +3088,14 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Universitätsmedizin Göttingen (UMG)</h4>
-                <p>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Claudia Wiesemann
+                    <span class="orcid">
+                        <a href="//orcid.org/0000-0002-8260-0346" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
+                            <small>ID</small>
+                        </a>
+                    </span>
+
+                    <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Philosophische Fakultät</h4>
@@ -3150,7 +3158,13 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</h4>
-                <p>Dr. Wolfram Horstmann <a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Dr. Wolfram Horstmann
+                    <span class="orcid">
+                        <a href="//orcid.org/0000-0001-8673-6104" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
+                            <small>ID</small>
+                        </a>
+                    </span>
+                    <a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
@@ -4743,7 +4757,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">*Titel der Arbeit</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="publ_title" placeholder="T" class="form-control" type="text" required="true"></input>
+                            <input name="publ_title" placeholder="Titel" class="form-control" type="text" required="true"></input>
                         </div>
                     </div>
                 </div>
@@ -4753,7 +4767,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">Untertitel</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="subtitle" placeholder="T" class="form-control" type="text"></input>
+                            <input name="subtitle" placeholder="Untertitel" class="form-control" type="text"></input>
                         </div>
                     </div>
                 </div>
@@ -4763,7 +4777,40 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">Serie</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="series" placeholder="Serie, Bandnr." class="form-control" type="text"></input>
+                            <!-- <input name="series" placeholder="Serie, Bandnr." class="form-control" type="text"></input> -->
+                            <select name="series" class="form-control selectpicker">
+                                <option value="">Bitte wählen</option>
+                                <option>Annals of the History and Philosophy of Biology</option>
+                                <option>Beiträge aus der Nordwestdeutschen Forstlichen Versuchsanstalt</option>
+                                <option>Biodiversity and Ecology Series</option>
+                                <option>Erziehungswissenschaftliche Studien</option>
+                                <option>Göttingen Contributions to Geosciences</option>
+                                <option>Göttingen Series in X-ray Physics</option>
+                                <option>Göttingen Studies in Cultural Property</option>
+                                <option>Göttinger Beiträge zum Alten Orient</option>
+                                <option>Göttinger Beiträge zur Ethnologie</option>
+                                <option>Göttinger Bibliotheksschriften</option>
+                                <option>Göttinger Forstwissenschaften</option>
+                                <option>Göttinger Juristische Schriften</option>
+                                <option>Göttinger Klassiker der Strömungsmechanik</option>
+                                <option>Göttinger Reihe zur Ethnologie</option>
+                                <option>Göttinger Schriften zum Medizinrecht</option>
+                                <option>Göttinger Schriften zum Öffentlichen Recht</option>
+                                <option>Göttinger Schriften zur Englischen Philologie</option>
+                                <option>Göttinger Schriften zur Internetforschung</option>
+                                <option>Göttinger Studien zu den Kriminalwissenschaften</option>
+                                <option>Göttinger Studien zur Kulturanthropologie</option>
+                                <option>Hochschulsport: Bildung und Wissenschaft</option>
+                                <option>Materialien Deutsch als Fremdsprache</option>
+                                <option>Schriftenreihe Didaxis</option>
+                                <option>Schriften zur Göttinger Universitätsgeschichte</option>
+                                <option>Serie CEDPAL</option>
+                                <option>Species, Phylogeny and Evolution</option>
+                                <option>Studies in Euroculture</option>
+                                <option>Syngramma. Vorträge aus dem Althistorischen Seminar</option>
+                                <option>Türkisch-Deutsche Studien : Jahrbuch</option>
+                                <option>ZELTForum</option>
+                            </select>
                             <div class="help-block with-errors">Falls Ihre Publikation in einer Reihe erscheint</div>
                         </div>
                     </div>
@@ -4835,7 +4882,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">Voraussichtlicher Termin Ihrer Manuskriptabgabe</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="deliveryDatePicker">
-                            <input class="form-control" name="delivery_date" type="text"  placeholder="JJJJ-MM-DD"></input>
+                            <input id="delivery_date" class="form-control" name="delivery_date" type="text"  placeholder="JJJJ-MM-DD"></input>
                             <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
                         </div>
                     </div>
@@ -4846,7 +4893,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <label class="col-md-4 control-label">*Gewünschter Termin der Veröffentlichung</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="issueDatePicker">
-                            <input class="form-control" name="issue_date" type="text" required="true" placeholder="JJJJ-MM-DD"></input>
+                            <input id="issue_date" class="form-control" name="issue_date" type="text" required="true" placeholder="JJJJ-MM-DD"></input>
                             <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
                         </div>
                     </div>
