@@ -157,6 +157,7 @@
     <!-- Just a plain old table cell -->
     <xsl:template match="dri:cell" priority="1">
         <td>
+
             <xsl:call-template name="standardAttributes">
                 <xsl:with-param name="class">ds-table-cell
                     <xsl:if test="(position() mod 2 = 0)">even</xsl:if>
@@ -174,10 +175,27 @@
                 </xsl:attribute>
             </xsl:if>
             <!-- show browse counts with badge -->
+
             <xsl:choose>
                 <xsl:when test="starts-with(normalize-space(text()), '[')">
                     <xsl:apply-templates select="dri:xref"/>
-                    <span class="badge"><xsl:value-of select="translate(text(), '[]', '')" /></span>
+                    <xsl:if test="contains(dri:xref/@target, 'authority=gnd')">
+                        <span class="gnd">
+                            <a target="_blank" i18n:attr="title" title="xml.author.profile.dnb.label">
+                                <xsl:attribute name="href"><xsl:value-of select="concat('//d-nb.info/gnd/', substring-before(substring-after(dri:xref/@target, '2F'), '&#38;type=author'))" /></xsl:attribute>
+                                <small><i class="icon-info-circled"></i></small>
+                            </a>
+                        </span>
+                    </xsl:if>
+                    <xsl:if test="contains(dri:xref/@target, 'authority=orcid')">
+                        <span class="orcid">
+                            <a target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
+                                <xsl:attribute name="href"><xsl:value-of select="concat('//orcid.org/', substring-before(substring-after(dri:xref/@target, '2F'), '&#38;type=author'))" /></xsl:attribute>
+                                <small>ID</small>
+                            </a>
+                        </span>
+                    </xsl:if>
+                    <!-- <span class="badge"><xsl:value-of select="translate(text(), '[]', '')" /></span> -->
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:apply-templates />

@@ -537,7 +537,7 @@
     <message key="xmlui.Submission.general.workflow.title">Dokument veröffentlichen</message>
     <message key="xmlui.Submission.general.workflow.trail">Dokument veröffentlichen</message>
     <message key="xmlui.Submission.general.workflow.head">Dokument veröffentlichen</message>
-    <message key="xmlui.Submission.general.showfull">Zur Langanzeige</message>
+    <message key="xmlui.Submission.general.showfull">&#32;</message>
     <message key="xmlui.Submission.general.showsimple">Zur Kurzanzeige</message>
 
     <!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
@@ -2104,7 +2104,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Anzeige</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Beschreibung</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Öffnen/Herunterladen</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Öffnen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Zu diesem Dokument gibt es keine Dateien.</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">Bytes</message>
@@ -2714,22 +2714,29 @@
     <message key="xmlui.static.contact.title">Kontakt</message>
     <message key="xmlui.static.contact">
         <p>
-            Bitte benutzen Sie das Kontaktformular, um uns eine Nachricht zukommen zu lassen. Wenn Sie uns telefonisch, postalisch oder per E-Mail erreichen wollen, nutzen Sie bitte die unten angegebenen Daten. Bitte ersetzen Sie das "_AT_" durch ein "@", wenn Sie unsere E-Mail-Adressen verwenden.	<br /><br />
-            <a href="/feedback">Kontaktformular <i class="icon-arrow-right"></i></a>
+            Bitte benutzen Sie das Kontaktformular, um uns eine Nachricht zukommen zu lassen. Wenn Sie uns telefonisch, postalisch oder per E-Mail erreichen wollen, nutzen Sie bitte die unten angegebenen Daten. Bitte ersetzen Sie das "_AT_" durch ein "@", wenn Sie unsere E-Mail-Adressen verwenden.
         </p>
         <p>
-            <h2>Ansprechpartner</h2>
+            <a href="/feedback">Kontaktformular <i class="icon-arrow-right"></i></a>
         </p>
+        <h2>Sprechzeiten</h2>
+        <p class="address">
+            Mo.-Fr. 9:00 - 13:30 Uhr, nach Vereinbarung auch außerhalb dieser Zeiten
+        </p>
+
+        <h2>Ansprechpartner</h2>
+
+
         <div class="contact">
             <h3>Autorenbetreuung</h3>
             <h4>Jutta Pabst</h4>
             <p class="address"><i class="icon-call"></i>0551 / 39-52 43</p>
-            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
             <p class="address"><i class="icon-mail"></i> <a href="mailto:pabst_AT_sub.uni-goettingen.de">pabst AT sub.uni-goettingen.de</a></p>
 
             <h4>Petra Lepschy</h4>
             <p class="address"><i class="icon-call"></i>0551 / 39-90 97</p>
-            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
             <p class="address"><i class="icon-mail"></i> <a href="mailto:lepschy_AT_sub.uni-goettingen.de">lepschy AT sub.uni-goettingen.de</a></p>
 
 
@@ -2737,7 +2744,7 @@
 
             <h4>Margo Bargheer</h4>
             <p class="address"><i class="icon-call"></i>0551 / 39-9 11 88</p>
-            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
             <p class="address"><i class="icon-mail"></i> <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a></p>
 
 
@@ -2745,13 +2752,10 @@
 
             <h4>Holger Jendral</h4>
             <p class="address"><i class="icon-call"></i>0551 / 39-53 83</p>
-            <p class="address"><span class="icon" title="Fax">&#128439;</span> 0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
             <p class="address"><i class="icon-mail"></i> <a href="mailto:univerlag_AT_uni-goettingen.de">univerlag AT uni-goettingen.de</a></p>
 
-            <p class="address">
-                Sprechzeiten: Mo.-Fr. 9:00 - 13:30 Uhr, nach Vereinbarung auch außerhalb dieser Zeiten
-            </p>
-            <br />
+
             <h2>Postanschrift</h2>
             <p class="address"><a target="_blank" href="https://goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
@@ -2782,151 +2786,22 @@ Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit un
 Das Team vom Universitätsverlag Göttingen
 </p>-->
 
-        <p class="paragraph justify">
-            Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören. Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren. Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.<br /><br />
+        <p class="paragraph justify strech-bottom">
+            Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
+            Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
+            Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.
         </p>
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><i class="icon-arrow-left"></i>Aktuelles</a>&#160;<i class="icon-attention-circled"></i>
+                <a href="/news"><i class="icon-arrow-left"></i>News</a>&#160;<i class="icon-attention-circled"></i>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog<i class="icon-arrow-right"></i></a>
+                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog<i class="icon-arrow-right"></i></a>
             </div>
         </div>
-        <!-- <h2>Verlagsprogramm online</h2>
-<p class="paragraph">
-    <a target="_blank" href="http://demo.multivio.org/client/#get&amp;url=http://www.univerlag.uni-goettingen.de/downloads/verlagsprogramm_2013.pdf"><img class="tplogo“ src="/static/FrontCover_Verlagsprogramm2013.jpg" alt="FrontCover_Verlagsprogramm2013“ width="141“ height="90“ hspace="10“ align="left"/></a>
-    Wenn Sie unser Verlagsprogramm gern als PDF lesen wollen, finden Sie es hier zum Herunterladen. In unserem Verlagsprogramm finden Sie Neuerscheinungen sowie ausgewählte Titel aus unserem Gesamtprogramm. Im Verlagsprogramm führen wir die Reihen des Universitätsverlags komplett mit allen erschienenen Titeln auf. Wenn Sie das Verlagsprogramm in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei hier.
-</p>-->
-        <!-- <h2>Ringvorlesungen</h2>
-<p class="paragraph">
-    Der Universitätsverlag Göttingen präsentiert in Zusammenarbeit mit dem StadtRadio Göttingen Audio-Mitschnitte der Ringvorlesungsreihen der Universität Göttingen. Das Angebot finden Sie auf den Seiten der jeweiligen Ringvorlesung</p>
-    <ul id="ring"><span>[+]</span>Liste der Ringvorlesungen
-
-<li><a href="/info/15">Sommersemester 2015<br />OSTASIEN und die Macht heiliger Klänge</a></li>
-
-<li><a href="/info/14-15">Wintersemester 2014/15<br />UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></li>
-
-<li><a href="/info/14">Sommersemester 2014<br />Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></li>
-
-<li><a href="/info/13-14">Wintersemester 2013/14<br />Kommunikation &amp; Kulturtransfer in der Personalunion</a></li>
-
-<li><a href="/info/13">Sommersemester 2013<br />DIE GRIMMS...in Wort und Tat</a></li>
-
-<li><a href="/info/12-13">Wintersemester 2012/13<br />»Sie befruchtet und ziert«</a></li>
-
-<li><a href="/info/12">Sommersemester 2012<br />Tradition - Autonomie - Innovation</a></li>
-
-<li><a href="/info/11-12">Wintersemester 2011/12<br />Miteinander - Füreinander? Sozialverhalten von Affen und Menschen</a></li>
-
-<li><a href="/info/11">Sommersemester 2011<br />CHEMIE - unser Leben, unsere Zukunft!</a></li>
-
-<li><a href="/info/10-11">Wintersemester 2010/11<br />Vom Nutzen des Nutzlosen - Vom Spiel zum Produkt</a></li>
-
-<li><a href="/info/10">Sommersemester 2010<br />„Arbeit am Mythos“: Leistung und Grenze des Mythos in Antike und Gegenwart</a></li>
-
-<li><a href="/info/09-10">Wintersemester 2009/10<br />„Wozu Theologie?“</a></li>
-
-<li><a href="/info/09">Sommersemester 2009<br />„Wissenschaftliche Politikberatung“</a></li>
-
-<li><a href="/info/08-09">Wintersemester 2008/09<br />„300 Jahre Albrecht von Haller – Genialität, Internationalität, Exzellenz“</a></li>
-
-<li><a href="/info/08">Sommersemester 2008<br />„Der Weg an die Universität - Höhere Frauenbildung vom Mittelalter bis zum Ende des Zweiten Weltkriegs“</a></li>
-
-<li><a href="/info/07-08">Wintersemester 2007/08<br />„Evolution - Zufall und Zwangsläufigkeit der Schöpfung“</a></li>
-
-<li><a href="/info/07">Sommersemester 2007<br />„Vorsehung, Schicksal und göttliche Macht“</a></li>
-
-<li><a href="/info/06-07">Wintersemester 2006/07<br />„Bilderwelten — Vom farbigen Abglanz der Natur“</a></li>
-
-<li><a href="/info/06">Sommersemester 2006<br />„Bildung - Lernen: Humanistische Ideale, gesellschaftliche Notwendigkeiten, wissenschaftliche Erkenntnisse“</a></li> -->
-
-        <!-- (ed: „Ringvorlesung Paulinerkirche - nicht einstellen")<li><a href="/info/-maerchen">»Märchenrezeption im europäischen Vergleich«</a></li> -->
-
-        <!--<li><a href="/info/05-06">Wintersemester 2005/06<br />„Materialien im Wandel der Zeit“</a></li>
-
-<li><a href="/info/05">Sommersemester 2005<br />„Carl Friedrich Gauß - Werk und Wirkung“</a></li>
-
-<li><a href="/info/04-05">Wintersemester 2004/05<br />„»... sind eben alles Menschen« - Verhalten zwischen Zwang, Freiheit und Verantwortung“</a></li>
-
-<li><a href="/info/04">Sommersemester 2004<br />„Amerika und Deutschland - Ambivalente Begegnungen?“</a></li>
-
-</ul>
-<p class="paragraph">
-Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universität und auch zu den Video-Mitschnitten der einzelnen Vorträge finden Sie auf der Seite der aktuellen Vortragsreihe.
-</p> -->
-
-
     </message>
 
-    <!--<message key="xmlui.static.ringlist">
-<div>
-        <h2>Ringvorlesungen</h2>
-        <p class="paragraph">
-                Der Universitätsverlag Göttingen präsentiert in Zusammenarbeit mit dem StadtRadio Göttingen Audio-Mitschnitte der Ringvorlesungsreihen der Universität Göttingen. Das Angebot finden Sie auf den Seiten der jeweiligen Ringvorlesung</p>
-                <ul id="ring"><span>[+]</span>Liste der Ringvorlesungen
-
-<li><a href="/info/15-16">Wintersemester 2015/16<br />WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></li>
-
-<li><a href="/info/15">Sommersemester 2015<br />OSTASIEN und die Macht heiliger Klänge</a></li>
-
-<li><a href="/info/14-15">Wintersemester 2014/15<br />UMBRÜCHE - Auslöser für Evolution und Fortschritt</a></li>
-
-<li><a href="/info/14">Sommersemester 2014<br />Klassiker, Thriller, Ladenhüter - Wie Texte gebaut sind und wie sie wirken</a></li>
-
-<li><a href="/info/13-14">Wintersemester 2013/14<br />Kommunikation &amp; Kulturtransfer in der Personalunion</a></li>
-
-<li><a href="/info/13">Sommersemester 2013<br />DIE GRIMMS...in Wort und Tat</a></li>
-
-<li><a href="/info/12-13">Wintersemester 2012/13<br />»Sie befruchtet und ziert«</a></li>
-
-<li><a href="/info/12">Sommersemester 2012<br />Tradition - Autonomie - Innovation</a></li>
-
-<li><a href="/info/11-12">Wintersemester 2011/12<br />Miteinander - Füreinander? Sozialverhalten von Affen und Menschen</a></li>
-
-<li><a href="/info/11">Sommersemester 2011<br />CHEMIE - unser Leben, unsere Zukunft!</a></li>
-
-<li><a href="/info/10-11">Wintersemester 2010/11<br />Vom Nutzen des Nutzlosen - Vom Spiel zum Produkt</a></li>
-
-<li><a href="/info/10">Sommersemester 2010<br />„Arbeit am Mythos“: Leistung und Grenze des Mythos in Antike und Gegenwart</a></li>
-
-<li><a href="/info/09-10">Wintersemester 2009/10<br />„Wozu Theologie?“</a></li>
-
-<li><a href="/info/09">Sommersemester 2009<br />„Wissenschaftliche Politikberatung“</a></li>
-
-<li><a href="/info/08-09">Wintersemester 2008/09<br />„300 Jahre Albrecht von Haller – Genialität, Internationalität, Exzellenz“</a></li>
-
-<li><a href="/info/08">Sommersemester 2008<br />„Der Weg an die Universität - Höhere Frauenbildung vom Mittelalter bis zum Ende des Zweiten Weltkriegs“</a></li>
-
-<li><a href="/info/07-08">Wintersemester 2007/08<br />„Evolution - Zufall und Zwangsläufigkeit der Schöpfung“</a></li>
-
-<li><a href="/info/07">Sommersemester 2007<br />„Vorsehung, Schicksal und göttliche Macht“</a></li>
-
-<li><a href="/info/06-07">Wintersemester 2006/07<br />„Bilderwelten — Vom farbigen Abglanz der Natur“</a></li>
-
-<li><a href="/info/06">Sommersemester 2006<br />„Bildung - Lernen: Humanistische Ideale, gesellschaftliche Notwendigkeiten, wissenschaftliche Erkenntnisse“</a></li>
-
-
-
-<li><a href="/info/05-06">Wintersemester 2005/06<br />„Materialien im Wandel der Zeit“</a></li>
-
-<li><a href="/info/05">Sommersemester 2005<br />„Carl Friedrich Gauß - Werk und Wirkung“</a></li>
-
-<li><a href="/info/04-05">Wintersemester 2004/05<br />„»... sind eben alles Menschen« - Verhalten zwischen Zwang, Freiheit und Verantwortung“</a></li>
-
-<li><a href="/info/04">Sommersemester 2004<br />„Amerika und Deutschland - Ambivalente Begegnungen?“</a></li>
-
-</ul>
-<p class="paragraph">
-        Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universität und auch zu den Video-Mitschnitten der einzelnen Vorträge finden Sie auf der Seite der aktuellen Vortragsreihe.
-</p>
-
-
-</div>
-
-</message> -->
-
-    <message key="xmlui.static.aboutus.head">Über uns</message>
+    <message key="xmlui.static.aboutus.head">About us</message>
     <message key="xmlui.static.aboutus">
         <div>
             <p>
@@ -3158,7 +3033,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</h4>
-                <p>Dr. Wolfram Horstmann
+                <p><nobr>Dr. Wolfram Horstmann</nobr>
                     <span class="orcid">
                         <a href="//orcid.org/0000-0001-8673-6104" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
                             <small>ID</small>
@@ -3260,7 +3135,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.static.reviewer">
         <div>
             <p>
-                <a href="/documents/simple-review_extern_130204.pdf">Begutachtungsbogen</a> zum Herunterladen.
+                <i class="icon-file-pdf"></i><a href="/documents/simple-review_extern_130204.pdf">Begutachtungsbogen</a> zum Herunterladen.
             </p>
         </div>
     </message>
@@ -3288,69 +3163,74 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
             <div class="item">
                 <h4 class="list-item-header section-heading">Anleitung Autoren</h4>
-                <p>Kurze Beschreibung<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p>
+                <p>Kurze Beschreibung</p>
+                <div class="button-panel">
+                    <a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
             </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">Anleitung Formatvorlage</h4>
-                <p>Beschreibung, wie die angebotenen Formatvorlagen benutzt werden<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p>
+                <p>Beschreibung, wie die angebotenen Formatvorlagen benutzt werden</p>
+                <div class="button-panel">
+                    <a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
             </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">17x24cm: Standard</h4>
                 <p>Dies ist unsere Standardformatvorlage. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Publikation im Format
                     17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor
-                    Sie mit der Erfassung des Dokuments beginnen.<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
+                    Sie mit der Erfassung des Dokuments beginnen.
                 </p>
+                <div class="button-panel">
+                    <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
             </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">17x24cm: Beiträge in Sammelbänden</h4>
-                <p>Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p></div>
+                <p>
+                    Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.
+                </p>
+                <div class="button-panel">
+                    <a href="/static/documents/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/static/documents/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
+            </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">17x24cm: skaliert </h4>
-                <p>Diese Formatvorlage bitte nur nach Absprache verwenden.<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p></div>
+                <p>Diese Formatvorlage bitte nur nach Absprache verwenden.</p>
+                <div class="button-panel">
+                    <a href="/static/documents/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/static/documents/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
+            </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">14,8x21cm (DIN A5) </h4>
-                <p>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p></div>
+                <p>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.</p>
+                <div class="button-panel">
+                    <a href="/static/documents/formatvorlage_DINA5.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/static/documents/formatvorlage_DINA5.pdf" class="btn btn-default btn-sm">PDF</a>
+                </div>
+            </div>
 
             <div class="item">
                 <h4 class="list-item-header section-heading">LaTeX </h4>
-                <p>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.<p></p>
-                    <div class="button-panel">
-                        <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                        <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
-                    </div>
-                </p></div>
+                <p>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.</p>
+                <div class="button-panel">
+                    <a href="/static/documents/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archiv (.zip)</a>
+                </div>
+            </div>
+            <div class="item">
+                <h4 class="list-item-header section-heading">Metadatenschema</h4>
+                <div class="button-panel">
+                    <a href="/static/documents/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
+                </div>
+            </div>
 
             <h3>VG-Wort</h3>
 
@@ -3391,9 +3271,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 </p>
 
             </div>
-
         </div>
-
     </message>
 
     <message key="xmlui.static.price.head">Publizieren: Verlagspreise</message>
@@ -3404,14 +3282,13 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 Als Open-Access-Verlag sind wir darauf angewiesen, dass unsere Autoren und Herausgeber sich an den Kosten des Publizierens beteiligen, die im Universitätsverlag anfallen. Denn durch die freie Onlinebereitstellung unserer Publikationen können wir nur sehr bedingt über den Absatz gedruckter Werke Einnahmen generieren. Was wir ins Verlagsprogramm aufnehmen, sollte auch nicht der wirtschaftliche Erfolg eines Werkes entscheiden, sondern seine wissenschaftliche Relevanz.
             </p>
             <p>
-                Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel  <i class="icon-attention-circled" data-toggle="popover" data-content="Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%."></i>
-                790,00 € beträgt.<a href="#" class="tooltip" data-toggle="tooltip" title="Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%."> <span class="icon"> &#128712;</span></a>
+                Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel <i class="icon-info-circled" data-toggle="popover" date-content="Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%."></i> 790,00 € beträgt.
 
                 Autoren von Dissertationen und Studierende erhalten einen Nachlass von 25% auf die Pauschale. Bei Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, reduziert sich die Verlagskostenpauschale um 40,00 €, weil der Bearbeitungsaufwand für das Cover geringer ist. Diese Pauschale beinhaltet die Unterstützung der Nutzer beim Erstellen der publikationsreifen Manuskripte, die formale Qualitätsprüfung, die Erstellung der Druckvorlagen (Covergestaltung, technische Überprüfung der Manuskripte), die Onlinebereitstellung, die Titelmeldung sowie das Marketing.
             </p>
             <p>
-                Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<a href="#" class="tooltip" data-toggle="tooltip" title="Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"> <span class="icon"> &#128712;</span></a>
-                bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<a href="#" class="tooltip" data-toggle="tooltip" title="Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"> <span class="icon"> &#128712;</span></a> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
+                Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i>
+                bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
             </p>
             <table id="prices" class="table table-sm">
 
@@ -3495,7 +3372,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <tr>
 
                         <th>Vorlagen</th>
-                        <td>Konvertierbare Manuskripte und aufbereitete Formate (PS, PDF, TEX etc.</td>
+                        <td>Konvertierbare Manuskripte und aufbereitete Formate (PS, PDF, TEX etc.)</td>
                         <td>Konvertierbare Manuskripte und aufbereitete Formate (PS, PDF, TEX etc.)</td>
 
                     </tr>
@@ -3614,7 +3491,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
             <p>
                 Die Deutsche UNESCO-Kommission, das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (hbz) und Wikimedia Deutschland haben im November 2014
-                einen <a href="http://www.unesco.de/leitfaden_open_content.html">"Open Content-Leitfaden" (PDF)</a> in englischer Sprache herausgegeben. Darin werden Nutzer und Urheber von online-Publikationen über ihre Rechte und Pflichten
+                einen <a href="http://www.unesco.de/leitfaden_open_content.html">"Open Content-Leitfaden"</a> in englischer Sprache herausgegeben. Darin werden Nutzer und Urheber von online-Publikationen über ihre Rechte und Pflichten
                 informiert. Ein Schwerpunkt liegt dabei auf der international weit verbreiteten Lizenz Creative Commons.
             </p>
         </div>
@@ -3816,7 +3693,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>
             Diese Reihe ist die Fortsetzung von "<a href="http://univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
         </p>
-        <p>ISSN: 2199-5346</p>
+        <p>ISSN (Print): 2199-5346</p>
+        <p>ISSN (Online): 2512-6881</p>
     </message>
 
 
@@ -3824,14 +3702,16 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>
             Die Reihe umfasst geowissenschaftliche Arbeiten aus unterschiedlichsten Disziplinen wie Geologie, Sedimentologie, Tektonik, Mineralogie, Geochemie, Paläontologie und Geobiologie, der Wissenschaftsgeschichte und Museumskunde. Veröffentlicht werden können: Sammelbände (mit Beiträgen von Tagungen, Workshops oder Festkolloquien) und Monographien (bspw. Qualifikationsarbeiten oder Exkursionsführer). Die Arbeiten werden in der Regel auf Deutsch oder Englisch publiziert. Die Reihe bildet die Fortsetzung der Zeitschrift "Göttinger Arbeiten zur Geologie und Paläontologie (GAGP)" (ISSN 0534-0403), die im Selbstverlag (herausgegeben vom IMGP: Institut und Museum für Geologie und Paläontologie sowie später zusätzlich IGDL: Institut für die Geologie und Dynamik der Lithosphäre) zwischen 1969 und 2003 mit insgesamt 76 Bänden und 5 Sonderbänden erschienen ist.
         </p>
-        <p>ISSN: 2199-1324</p>
+        <p>ISSN (Print): 2199-1324</p>
+        <p>ISSN (Online): 2512-6237</p>
     </message>
 
     <message key="xmlui.collection.es.introduction">
         <p>
             Die Buchreihe "Erziehungswissenschaftliche Studien" wird von den aktiven Professorinnen und Professoren des Instituts für Erziehungswissenschaft der Georg-August-Universität Göttingen herausgegeben. Sie beinhaltet Monografien und Sammelbände von Mitgliedern des Instituts für Erziehungswissenschaft, ist aber auch für Publikationsvorhaben von außerhalb geöffnet. Thematisch ist das gesamte Spektrum erziehungswissenschaftlicher Fragestellungen und Forschung angesprochen, wobei, dem Profil des Instituts für Erziehungswissenschaft geschuldet, die Bereiche der Allgemeinen und Historischen Erziehungswissenschaft, der Schulpädagogik, der Schul- und Unterrichtsforschung sowie der Sozialisationsforschung im Vordergrund stehen.
         </p>
-        <p>ISSN: 2199-5133</p>
+        <p>ISSN (Print): 2199-5133</p>
+        <p>ISSN (Online): 2512-6024</p>
     </message>
 
     <message key="xmlui.collection.zeltf.introduction">
@@ -3844,7 +3724,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>
             Die <a href="http://www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
         </p>
-        <p>ISSN: 1863-0197</p>
+        <p>ISSN (Print): 1863-0197</p>
+        <p>ISSN (Online): 2512-5923</p>
     </message>
 
 
@@ -3864,22 +3745,29 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>Im Jahre 2001 wurde das Göttinger Zentrum für <a href="http://www.biodiversitaet.gwdg.de/index_deutsch.html" target="_blank">Biodiversitätsforschung und Ökologie</a> gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
             Das Spektrum reicht von der Genetik bis zur Landschaftsökologie, jeweils mit einem interdisziplinären Ansatz. Die Evolution der Biodiversität, die Rolle der Biodiversität bei Funktionen und Prozessen in Ökosystemen und die Voraussetzungen für ein nachhaltiges Management der Biodiversität soll mit Hilfe moderner Methoden erforscht werden.
             Diese Forschungsergebnisse werden in der <em>„Biodiversity and Ecology Series - A“</em> veröffentlicht.</p>
-        <p>ISSN: 1863-3935</p>
-        <p>In der Reihe <em>„Biodiversity and Ecology Series - B“</em> werden Dissertationen veröffentlicht, die an diesem Zentrum geschrieben wurden und online zur Verfügung stehen (jedoch nicht in einem Verlag publiziert). Eine Liste dieser Dissertationen steht <a href="http://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">hier</a> zur Verfügung.</p>
+
+        <p>
+            In der Reihe <em>„Biodiversity and Ecology Series - B“</em> werden Dissertationen veröffentlicht, die an diesem Zentrum geschrieben wurden und online zur Verfügung stehen (jedoch nicht in einem Verlag publiziert). Eine Liste dieser Dissertationen steht <a href="http://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">hier</a> zur Verfügung.
+        </p>
+        <p>ISSN (Print): 1863-3935</p>
+        <p>ISSN (Online): 2512-5974</p>
     </message>
 
     <message key="xmlui.collection.nfv.introduction">
         <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
             (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
         </p>
-        <p>ISSN: 1865-6994</p>
+        <p>ISSN (Print): 1865-6994</p>
+        <p>ISSN (Online): 2512-594X</p>
     </message>
 
     <message key="xmlui.collection.gsxp.introduction">
         <p>
             In der Reihe „Göttingen Series in X-ray Physics“ erscheinen sehr gute Dissertationen und angenommene Habilitationen, geeignete wissenschaftliche Studien und Sammelbände sowie besonders herausragende Bachelor- und Master-Arbeiten aus den Forschungbereichen der Röntgenoptik und Röntgenbildgebung. Die Arbeiten können auch an anderen Universitäten oder Großforschungseinrichtungen entstanden sein. In der Regel werden die Arbeiten auf Englisch veröffentlicht.
         </p>
-        <p>ISSN: 2191-9860</p>
+        <p><a href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p>ISSN (Print): 2191-9860</p>
+        <p>ISSN (Online): 2512-6326</p>
     </message>
 
 
@@ -3887,7 +3775,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>
             Ab Juni 2008 arbeiteten zunächst Wissenschaftler/innen der Universitäten Göttingen und Hamburg, seit 2011 der Universitäten Göttingen und Tübingen, aus den Bereichen Kulturanthropologie/ Europäische Ethnologie, Volkswirtschaft, Ethnologie, Wirtschafts- und Völkerrecht zu Cultural Property (kulturelles Eigentum). Mittlerweile befindet sich das Projekt in der zweiten Phase. Mit einem interdisziplinären Ansatz untersucht die aus Mitteln der Deutschen Forschungsgemeinschaft geförderte Forschergruppe die Konstituierung von Cultural Property, seinen Akteuren, Diskursen, Kontexten und Regeln. Die Bände dieser Reihe dokumentieren die Ergebnisse aus der laufenden Forschung.
         </p>
-        <p>ISSN: 2190-8672</p>
+        <p>ISSN (Print): 2190-8672</p>
+        <p>ISSN (Online): 2512-6342</p>
     </message>
 
     <message key="xmlui.collection.gbao.introduction">
@@ -3899,22 +3788,28 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
 
     <message key="xmlui.collection.gbe.introduction">
-        <span>
+        <p>
             Diese Reihe ist die Fortsetzung zu „<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>“, die ursprünglich im LIT-Verlag publiziert wurde.
-        </span>
-        <span>ISSN: 1866-0711</span>
+        </p>
+        <p>ISSN (Print): 1866-0711</p>
+        <p>ISSN (Online): 2512-6814</p>
     </message>
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
             Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
         </p>
-        <p>ISSN: 0943-951X</p>
+        <p>ISSN (Print): 0943-951X</p>
+        <p>ISSN (Online): 2512-6822</p>
     </message>
 
-    <message key="xmlui.collection.gfw.introduction">
+    <message key="xmlui.collection.gf.introduction">
         <p>
-            Die neue Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="http://www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie der Georg-August-Universität Göttingen</a>. Sie fasst die Reihen <em>„Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“</em> und die <em>Reihe A der „Berichte des Forschungszentrums Waldökosysteme“</em> zusammen. Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
+            „Göttinger Forstwissensschaften“ is the new series of the <a href="http://www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
+            It merges the series „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt” and
+            series A of the „Berichte des Forschungszentrums Waldökosysteme”.
+            The series reflects the wide thematic range of the faculty and of the „Nordwestdeutschen Forstlichen Versuchsanstalt”.
+            All publications are being provided as print-copies and as online-copies.
         </p>
         <p>ISSN: 1867-6731</p>
     </message>
@@ -3923,28 +3818,35 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>
             Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
-        <p>ISSN: 1864-2128</p>
+        <p>ISSN (Print): 1864-2128</p>
+        <p>ISSN (Online): 2512-6849</p>
     </message>
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
             Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="http://de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
         </p>
-        <p>ISSN: 1863-1088</p>
+        <p>ISSN (Print): 1863-1088</p>
+        <p>ISSN (Online): 2512-6865</p>
     </message>
 
     <message key="xmlui.collection.gsmr.introduction">
         <p>
             Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="http://www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
-        <p>ISSN: 1864-2144</p>
+        <p>
+            <a href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a>
+        </p>
+        <p>ISSN (Print): 1864-2144</p>
+        <p>ISSN (Online): 2512-689X</p>
     </message>
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
             Diese Reihe der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
         </p>
-        <p>ISSN: 2191-4583</p>
+        <p>ISSN (Print): 2191-4583</p>
+        <p>ISSN (Online): 2512-6911</p>
     </message>
 
     <message key="xmlui.collection.gsep.introduction">
@@ -3953,7 +3855,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         </p>
         <p>Es werden Staatsarbeiten, Magisterarbeiten, BA- und MA-Arbeiten von herausragender Qualität veröffentlicht. Zusätzlich können in der Reihe Sammelbände beispielsweise mit den Arbeitsergebnissen aus Kolloquien oder Workshops veröffentlicht werden. Die Werke werden auf Deutsch oder Englisch publiziert.
         </p>
-        <p>ISSN: 1868-3878</p>
+        <p>ISSN (Print): 1868-3878</p>
+        <p>ISSN (Online): 2512-6970</p>
     </message>
 
     <message key="xmlui.collection.gsif.introduction">
@@ -3961,7 +3864,8 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             Das vom BMBF im Rahmen des Schwerpunktes »Internetökonomie« bis Ende 2007 geförderte Göttinger Forschungsvorhaben »Mediaconomy« widmet sich den durch Internettechnologien hervorgerufenen Veränderungen in der Medienbranche aus der Sicht der fünf verschiedenen Disziplinen Bibliothekswissenschaft, Informatik, Jura, Soziologie und Wirtschaftsinformatik. In der Reihe »Göttinger Schriften zur Internetforschung« werden die Ergebnisse der interdisziplinären Forschung von Mediaconomy präsentiert.
             Die Reihe wird herausgegeben von Svenja Hagenhoff, Dieter Hogrefe, Elmar Mittler, Matthias Schumann, Gerald Spindler und Volker Wittke (†).
         </p>
-        <p>ISSN: 1863-0944</p>
+        <p>ISSN (Print): 1863-0944</p>
+        <p>ISSN (Online): 2512-6989</p>
     </message>
 
     <message key="xmlui.collection.gskw.introduction">
@@ -3983,18 +3887,21 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
 
     <message key="xmlui.collection.hbw.introduction">
         <p>
-            Die Auseinandersetzung mit dem weit reichenden Reformprozess der deutschen Hochschullandschaft und seinen Folgen insbesondere für den deutschen Hochschulsport soll in der ADH-Schriftenreihe „Hochschulsport: Bildung und Wissenschaft“ nachhaltige Einblicke in Hintergründe und Kontexte der gegenwärtigen Entwicklungen geben und damit zu einer vertiefenden Diskussion anregen. Es soll damit auch ein Beitrag zur Sportentwicklung in Hochschulen und Vereinen geleistet werden.
+            Die Auseinandersetzung mit dem weit reichenden Reformprozess der deutschen Hochschullandschaft und seinen Folgen insbesondere für den deutschen Hochschulsport soll
+            in der ADH-Schriftenreihe „Hochschulsport: Bildung und Wissenschaft“ nachhaltige Einblicke in Hintergründe und Kontexte der gegenwärtigen Entwicklungen geben und damit zu einer vertiefenden Diskussion anregen. Es soll damit auch ein Beitrag zur Sportentwicklung in Hochschulen und Vereinen geleistet werden.
         </p>
         <p>Mit diesem Hochschulsport-Periodikum wird die ehemalige "ADH-Schriftenreihe des Hochschulsports" nach einer längeren Pause wieder belebt.
         </p>
-        <p>ISSN: 1864-189X</p>
+        <p>ISSN (Print): 1864-189X</p>
+        <p>ISSN (Online): 2512-7063</p>
     </message>
 
     <message key="xmlui.collection.fadaf.introduction">
         <p>
             Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF) In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen.
         </p>
-        <p>ISSN: 1866-8283</p>
+        <p>ISSN (Print): 1866-8283</p>
+        <p>ISSN (Online): 2512-7071</p>
     </message>
 
     <message key="xmlui.collection.mis.introduction">
@@ -4003,15 +3910,6 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         </p>
     </message>
 
-    <message key="xmlui.collection.sgu.introduction">
-        <p>
-            Die Herausgeber (Prof. Dr. Hermann Wellenreuther Prof. Dr. Nicolaas Rupke vom Institut für Wissenschaftsgeschichte der Georg-August-Universität Göttingen) haben sich entschlossen, die Gelegenheit der Veröffentlichung einer Dissertation zur Geschichte der Universität während des Ersten Weltkrieges zu nutzen und eine neue Reihe zur Göttinger Universitätsgeschichte ins Leben zu rufen. Sie soll nicht nur Arbeiten, die in Göttingen entstehen, sondern auch solchen, die an anderen Orten zur Göttinger Universitätsgeschichtegeschrieben wurden, eine Heimstatt bieten.
-        </p>
-        <p>
-            Dabei wird der Begriff „Universitätsgeschichte“ nicht eng, sondern weit verstanden: Arbeiten zu Forschungstrends in naturwissenschaftlichen wie geistes- und sozialwissenschaftlichen Bereichen sollen darunter ebenso verstanden werden wie Untersuchungen kultur- und mentalitätsgeschichtlicher Fragen vom 18. bis zum 21. Jahrhundert. Die Reihe soll natürlich auch Quelleneditionen aufnehmen.
-        </p>
-        <p>ISSN: 1866-5144</p>
-    </message>
 
     <message key="xmlui.collection.sdidaxis.introduction">
         <p>
@@ -4037,18 +3935,13 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         <p>ISSN: 2193-486X</p>
     </message>
 
-    <message key="xmlui.collection.gslt.introduction">
-        <p>
-            Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="http://www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen. Die Reihe erscheint erst ab Band 4 im Universitätsverlag Göttingen.
-        </p>
-    </message>
 
-    <message key="xmlui.collection.giu.introduction">
+    <!-- <message key="xmlui.collection.giu.introduction">
         <p>
             Das Graduiertenkolleg „Interdisziplinäre Umweltgeschichte. Naturale Umwelt und gesellschaftliches Handeln in Mitteleuropa“ besteht seit 2004 und wird von der Deutschen Forschungsgesellschaft (DFG) bis 2013 gefördert. Im Diskurs werden von den Mitgliedern des Kollegs kulturgeschichtliche Fragen und naturwissenschaftliche Problemlagen und Erkenntnisinteressen anhand konkreter Projektstudien und metatheoretischer Untersuchungen zusammengeführt. Eine Auswahl projektbezogener Publikationen erscheint in dieser Reihe.
         </p>
 
-    </message>
+    </message> -->
 
 
     <message key="xmlui.collection.sgug.introduction">
@@ -4058,16 +3951,10 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
             Dabei wird der Begriff „Universitätsgeschichte“ nicht eng, sondern weit verstanden: Arbeiten zu Forschungstrends in naturwissenschaftlichen wie geistes- und sozialwissenschaftlichen Bereichen sollen darunter ebenso verstanden werden wie Untersuchungen kultur- und mentalitätsgeschichtlicher Fragen vom 18. bis zum 21. Jahrhundert. Die Reihe soll natürlich auch Quelleneditionen aufnehmen.
         </p>
         <p>
-            ISSN: 1866-5144
-        </p>
-    </message>
-
-    <message key="xmlui.collection.gf.introduction">
-        <p>
-            Die neue Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen Fakultät für Forstwissenschaften und Waldökologie der Georg-August-Universität Göttingen. Sie fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
+            ISSN (Print): 1866-5144
         </p>
         <p>
-            ISSN: 1867-6731
+            ISSN (Online): 2512-708X
         </p>
     </message>
 
@@ -4077,6 +3964,21 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
         </p>
         <p>
             ISSN: 2196-3851
+        </p>
+    </message>
+
+    <message key="xmlui.collection.euethnology.introduction">
+        <p>
+            In der Reihe "Göttinger Studien zur Kulturanthropologie/Europäischen Ethnologie" werden Dissertationen, Habilitationen,
+            herausragende Master-Arbeiten sowie Tagungsbände veröffentlicht. Die Reihe ist zudem offen für Anthologien aus dem Forschungsbereich der KAEE und deren
+            interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
+            Anlage ebenso wie fachhistorische und theoretische Studien.
+        </p>
+        <p><a href="/static/documents/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p>
+            ISSN (Print): 2365-3191
+        </p>
+        <p>ISSN (Online): 2512-7055
         </p>
     </message>
 
@@ -4138,7 +4040,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <td>1  Buch:</td><td class="numeric">12,50 €</td>
                 </tr>
                 <tr>
-                    <td colspan="2">&gt; 1 Buch - Bitte setzen Sie sich (über Kontakt / Bestellungen) mit uns in Verbindung, damit wir für Sie die Versandkosten optimieren können!</td>
+                    <td colspan="2">&gt; 1 Buch - Bitte setzen Sie sich (über <a href="/info/contact">Kontakt / Bestellungen</a>) mit uns in Verbindung, damit wir für Sie die Versandkosten optimieren können!</td>
                 </tr>
             </tbody>
         </table>
@@ -4315,7 +4217,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Band</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">nach Band</message>
 
-    <message key="xmlui.static.copyright">&#169; 2015 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
+    <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
     <message key="de">deutsch</message>
     <message key="ger">deutsch</message>
@@ -4643,7 +4545,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                 </div>
             </fieldset>
             <fieldset>
-                <legend> Publication Data</legend>
+                <legend>Angaben zur Publikation</legend>
                 <!-- Select Basic -->
 
                 <div class="form-group">
@@ -4671,7 +4573,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                                 <option>Sammelband</option>
                                 <option>Dissertation</option>
                                 <option>Lehrbuch</option>
-                                <option>Sonstige Publikatione</option>
+                                <option>Sonstige Publikation</option>
                             </select>
                         </div>
                     </div>
@@ -4849,7 +4751,7 @@ Hinweise zu weiteren Ringvorlesungen der Fakultäten der Georg-August-Universit�
                     <div class="col-md-6 selectContainer">
                         <div class="input-group">
                             <select name="cover" class="form-control selectpicker" required="true">
-                                <option value="">Please select</option>
+                                <option value="">Bitte wählen</option>
                                 <option>Softcover</option>
                                 <option>Hardcover</option>
                             </select>

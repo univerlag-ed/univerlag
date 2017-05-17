@@ -25,6 +25,7 @@
         $('#deliveryDatePicker').data("DateTimePicker").show();
     });
 
+    $('[data-toggle="popover"]').popover();
 
     if ($("#ds-language-selection > a").text() == '[de]')
     {

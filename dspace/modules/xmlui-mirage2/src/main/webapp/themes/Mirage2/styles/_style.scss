@@ -105,16 +105,9 @@ a.list-group-item {
 
 
 #ds-options .ds-option-set-head {
-  text-transform: uppercase;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
   margin-bottom: 0px;
   background-color: #f0f2f5;
   padding: 5px;
-  border-top: 1px solid #d8e8eb;
-  border-left: 1px solid #d8e8eb;
-  border-right: 1px solid #d8e8eb;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   font-weight: bold;
 }
 
@@ -155,7 +148,7 @@ a.list-group-item {
 
 
 .access.order {
-  color: #2d487b;
+  color: #2d487b !important;
   cursor: pointer;
 }
 
@@ -240,14 +233,6 @@ ul#myTab li a {
 
 #abstract {
   text-align: justify;
-}
-
-
-
-#ds-options .ds-option-set-head {
-  background-color: #7D8FB2;
-  color: #fff;
-  text-shadow: 0px 1px 0px #565252;
 }
 
 
@@ -366,13 +351,18 @@ h6 .small,
   margin-top: 30px;
 }
 
-
+.contact p {
+  margin-bottom: 0;
+}
 
 .icon {
   font-size: 20px;
 }
 
-
+.icon-info-circled {
+  color: #7D8FB2;
+  cursor: pointer;
+}
 
 #agb {
   text-align: justify;
@@ -415,12 +405,13 @@ h6 .small,
 
 
   #ds-options .ds-option-set-head {
+    text-transform: uppercase;
     color: #08204A;
     text-shadow: none;
     border-bottom: 1px solid #2D487B;
     background-color: inherit;
-    border-top: none;
-    border-right: none;
+    font-weight: bold;
+    padding: 5px;
   }
 
 
@@ -802,7 +793,6 @@ a.tooltip {
 
 
 .tab-content > .active {
-  font-size: small;
   padding-bottom: 5em;
 }
 
@@ -855,10 +845,6 @@ a.tooltip {
   margin-left: 2px;
 }
 
-.gnd a i {
-  /*  color: #7D8FB2; */
-  color: #B5B8BF;
-}
 
 .orcid a, .gnd a {
   color: white;

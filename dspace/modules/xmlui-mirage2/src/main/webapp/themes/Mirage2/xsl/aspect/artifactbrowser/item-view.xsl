@@ -518,7 +518,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-eye"></i> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
@@ -731,7 +731,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-eye"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -882,7 +882,7 @@
 
 
 
-                    <i class="icon-eye"></i><xsl:text>&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                    <i class="icon-download-5"></i><xsl:text>&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 
                 </a>
             </span>
@@ -1302,7 +1302,8 @@
         <!-- </div> -->
         <div class="tab-content">
             <div id="related">
-                <xsl:attribute name="class">tab-pane active</xsl:attribute>
+                <xsl:attribute name="class">tab-pane</xsl:attribute>
+                <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']"><xsl:text> active</xsl:text></xsl:if>
                 <xsl:for-each select="//dim:field[@element='relation'][@qualifier='otherparts']">
                     <p>
                         <a>

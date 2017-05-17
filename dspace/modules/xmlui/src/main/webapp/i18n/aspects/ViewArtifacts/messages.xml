@@ -4,10 +4,10 @@
     detailed in the LICENSE and NOTICE files at the root of the source
     tree and available online at
 
-    http://www.dspace.org/license/
+    //www.dspace.org/license/
 
 -->
-<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<catalogue xml:lang="de" xmlns:i18n="//apache.org/cocoon/i18n/2.1">
 
     <!--
         The format used by all keys is as follows
@@ -29,17 +29,17 @@
     <message key="xmlui.static.ring.list.trail">Ringvorlesungen</message>
     <message key="xmlui.static.ring.list">Ringvorlesungen</message>
 
-    <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:</message>
+    <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:<br /></message>
     <message key="xmlui.static.ring.preambel">
         <div class="media-body">
             <h3 class="media-head">Audiomitschnitte Universität Göttingen</h3>
             <p>
                 Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
-                Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="http://www.stadtradio-goettingen.de/">Stadtradio Göttingen</a>
+                Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="//www.stadtradio-goettingen.de/" class="extern-link" target="_blank">Stadtradio Göttingen</a>
                 übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
             </p>
             <p>
-                Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r">Playlist</a>.
+                Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r"><i class="icon-youtube"></i>Playlist</a>.
             </p>
             <p>
                 Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
@@ -54,60 +54,10 @@
         </p>
     </message>
 
+
+    <!-- Liste der Ringvorlesungen -->
+
     <message key="xmlui.static.ring.listall">
-        <!-- Liste der Ringvorlesungen -->
-
-        <!--<nav>
-            <ul class="pagination pagination-sm">
-                <li><a href="#2016">2016</a></li>
-                <li><a href="#2015">2015</a></li>
-                <li><a href="#2014">2014</a></li>
-                <li><a href="#2013">2013</a></li>
-                <li><a href="#2012">2012</a></li>
-                <li><a href="#2011">2011</a></li>
-                <li><a href="#2010">2010</a></li>
-                <li><a href="#2009">2009</a></li>
-                <li><a href="#2008">2008</a></li>
-                <li><a href="#2007">2007</a></li>
-                <li><a href="#2006">2006</a></li>
-                <li><a href="#2005">2005</a></li>
-                <li><a href="#2004">2004</a></li>.
-            </ul>
-        </nav> -->
-
-        <!-- TEMPLATE
-         <h3 class="list-item-header">2017</h3>
-
-        <div class="row">
-            <div class="col-sm-6">
-
-                <div class="media">
-
-                    <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-16-17.jpg" class="media-object" alt="poster"></img>
-                    </div>
-                    <div class="media-body">
-                        <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
-                        <p><a href="/info/16-17">AUFKLÄRUNG 2.0</a></p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-6">
-                <div class="media">
-
-                    <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-16.jpg" class="media-object" alt="poster"></img>
-                    </div>
-                    <div class="media-body">
-                        <span class="media-heading"><strong>Sommersemester 2016</strong></span>
-                        <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        -->
 
         <h3 class="list-item-header">2016</h3>
 
@@ -208,7 +158,7 @@
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
-                        <p><a href="/info/13-14">Kommunikation &amp; Kulturtransfer in der Personalunion</a></p>
+                        <p><a href="/info/13-14">Kommunikation &#38; Kulturtransfer in der Personalunion</a></p>
                     </div>
                 </div>
             </div>
@@ -474,6 +424,2036 @@
         </div>
     </message>
 
+
+    <!-- ********** WS 12-13 ******* -->
+    <message key="xmlui.static.ring-12-13.trail">
+        WS 12-13
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-12-13">
+        „Sie befruchtet and ziert“
+        Die Akademie der Wissenschaften zu Göttingen - damals and heute
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-12-13">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-12-13.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/wintersemester-2013-2014/481743.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-12-13">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">16. Oktober 2012</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Dr. Christian Stark (Göttingen)
+                <h4>Die Akademie and der Staat</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-10-16.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">23. Oktober 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Tammo tom Dieck (Göttingen)
+                <h4>Göttinger Mathematiker: Gauß, Riemann, Klein, Hilbert</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-10-23.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">30. Oktober 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Rudolf Smend (Göttingen)
+                <h4>Fünf Generationen Bibel and Orient: Michaelis, Eichhorn, Ewald, Lagarde, Wellhausen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-10-30.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!-- <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">6. November 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Werner Lehfeldt (Göttingen)
+                <h4>Albrecht von Haller and die Decouverten</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-11-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!-- <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">13. November 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Kurt Schönhammer (Göttingen)
+                <h4>Göttingen and die Quantenmechanik: Born, Heisenberg, Hand</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-11-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!-- <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">27. November 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Hedwig Röckelein (Göttingen)
+                <h4>Wissenschaftliche Preisfragen and Nachwuchsförderung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-11-27.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!-- <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">4. Dezember 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Jürgen Troe (Göttingen)
+                <h4>Große Göttinger Chemiker: Wallach, Nernst, Tammann, Szigmondi, Windaus</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-12-04.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">11. Dezember 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Frank Rexroth (Göttingen)
+                <h4>Göttinger Historiker im 20. Jahrhandert: Schramm, Heimpel, Heuss</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-12-11.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>-->
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">18. Dezember 2012</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Stefan Tangermann (Göttingen)
+                <h4>konomische Preisfragen: Die Akademie and die Nützlichkeit</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2012-12-18.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">8. Januar 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Adolf Lehmann (Göttingen)
+                <h4>Göttingische Gelehrte Anzeigen im 19. Jahrhandert - Von Napoleon bis zum Bismarck-Reich</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-01-08.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">15. Januar 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Stephan Robbert Gradstein (Paris)
+                <h4>Von den Alpen zu den Anden: Göttinger Beiträge zur Geobotanik</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-01-15.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">22. Januar 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Heinz-Günter Nesselrath (Göttingen)
+                <h4>Klassische Philologie in Göttingen im 19. Jahrhandert: Karl Otfried Müller, Ulrich von Wilamowitz-Moellendorff, Friedrich Leo</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2013-01-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">29. Januar 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Reinhard Feldmeier (Göttingen)
+                <h4>Die großen Forschungsunternehmen der Akademie: Wörterbücher and Editionen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-01-29.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">5. Februar 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Christian Stark (Göttingen)
+                <h4>Die Akademie der Wissenschaften in der Zukunft</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2013-02-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-12-13">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <p>Georg-August-Universität Göttingen</p>
+            <p>Presse, Kommunikation and Marketing</p>
+            <p><a target="_blank" href="//goo.gl/maps/1eEkdSx2osT2"><i class="icon-location"></i></a>Wilhelmsplatz 1 (Aulagebäude)</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-4342</p>
+            <p><i class="icon-fax"></i>+49 551 39-4251</p>
+            <p>Mit Unterstützung des Universitysbandes Göttingen e. V.</p>
+        </div>
+    </message>
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- ********** SS 13 ******* -->
+    <message key="xmlui.static.ring-13.trail">
+        SS 13
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-13">
+        DIE GRIMMS ... <br />
+        in Wort and Tat
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-13">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-13.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/sommersemester-2013/445609.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-13">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">23. April 2013</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Dr. Dr. h.c. Heinrich Detering (Göttingen)
+                <h4>Märchen gegen Grimm - von Georg Büchner bis Bob Dylan</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2013-04-23.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                       <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">30. April 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Dr. h.c. Kaspar H. Spinner (Augsburg)
+                <h4>Der Wolf and die sieben Geißlein - von der Fabel zum Märchen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-04-30.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">7. Mai 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Steffen Martus (Berlin)
+                <h4>Die Göttinger Sieben and das politische Leben der Brüder Grimm</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-05-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">21. Mai 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Wilhelm Heizmann (München)
+                <h4>Jacob Grimms `deutsche mythologie´</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2013-05-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">28. Mai 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. PerØhrgaard (Copenhagen)
+                <h4>Germanistik and Nationalstreit - die Grimms and Dänemark</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2013-05-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">04. Juni 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Ingrid Tomkowiak (Zürich)
+                <h4>Märchenbilder im Stile der Zeit - zur Illustrationsgeschichte der `Kinder- and Hausmärchen´ von Jacob and Wilhelm Grimm</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-06-04.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">11. Juni 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Karin Hoff (Göttingen)
+                <h4>Die Brüder Grimm, Andersen and Strindberg</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-06-11.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">18. Juni 2013</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Christoph Bräuer (Göttingen)
+                <h4>Grimms im Kopf - Märchen-Lesarten zwischen Kindheit and Adoleszenz</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-06-218.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-13">
+
+        <h3>Organisation / Kontakt: </h3>
+        <div class="contact">
+
+            <strong>Prof. Dr. Dr. h. c. Heinrich Detering</strong> und <strong>Prof. Dr. Christoph Bräuer</strong>
+            <p>Georg-August-Universität Göttingen</p>
+            <p>Seminar für Deutsche Philologie</p>
+            <p>Jacob-Grimm-Haus</p>
+            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3</p>
+            <p><span class="icon-body">337073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-12450 und</p>
+            <p><i class="icon-call"></i>+49 551 39-20239</p>
+            <p><i class="icon-fax"></i>+49 551 39 9204</p>
+            <p><i class="icon-mail"></i><a href="mailto:detering@phil.uni-goettingen.de">detering@phil.uni-goettingen.de</a></p>
+            <p><i class="icon-mail"></i><a href="mailto:christoph.braeuer@phil.uni-goettingen.de">Christoph.Braeuer@phil.uni-goettingen.de</a></p>
+        </div>
+        und
+        <div class="contact">
+            <strong>Prof. Dr. Annekathrin Schacht</strong>
+            <p>Musikwissenschaftliches Seminar</p>
+            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-20022</p>
+        </div>
+
+    </message>
+
+
+
+
+    <!-- ********** WS 13-14 ******* -->
+    <message key="xmlui.static.ring-13-14.trail">
+        WS 13-14
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-13-14">
+        Kommunikation &#38; Kulturtransfer in der Personalunion
+        »(…) to prove that Hanover and England are not entirely synonymous.«
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-13-14">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-13-14.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/wintersemester-2013-2014/481743.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-13-14">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">22. Oktober 2013</h4>
+            </header>
+
+            <div class="panel-body">
+                Arnd Reitemeier (Göttingen)
+                <h4>Kurfürst oder König: Zur Legitimation des Januskopfes</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-10-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=o-SUlEb_VDE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">29. Oktober 2013</h3>
+            </header>
+            <div class="panel-body">
+                Barbara Schaff (Göttingen)
+                <h4>Die Hannoveraner Könige im Zerrspiegel der britischen Karikatur</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-10-29.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ynHK9827ToM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">5. November 2013</h3>
+            </header>
+            <div class="panel-body">
+                Volker Depkat (Regensburg)
+                <h4>Von Georg III. zu George Washington: Überlegungen zur Visualisierung von Legitimität im Übergang von Monarchie zu Demokratie</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-11-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=vOuX-lbY4Vw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">12. November 2013</h3>
+            </header>
+            <div class="panel-body">
+                Marian Füssel (Göttingen)
+                <h4>Zwischen Reich und Empire. Der Siebenjährige Krieg und die Personalunion</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-11-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=6vi6rFnstUM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">19. November 2013</h3>
+            </header>
+            <div class="panel-body">
+                Jürgen Elvert (Köln)
+                <h4>Von ungleichen Schwestern und ungeliebten Kindern. Die Formierung der anglo-schottisch-irischen Union im 18. Jahrhundert</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-11-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=T6Blu4g1qPM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">26. November 2013</h3>
+            </header>
+            <div class="panel-body">
+                Stephen Conway (London)
+                <h4>Continental Europe and the Eighteenth-Century British Empire</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-11-26.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=O_IeXCDmrls" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">3. Dezember 2013</h3>
+            </header>
+            <div class="panel-body">
+                Manfred Jakubowski-Tiessen (Göttingen)
+                <h4>Zwischen Union und Devianz. Der Transfer religiöser Ideen im Raum der Personalunion</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-12-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=XUjtA6a2Nu4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">10. Dezember 2013</h3>
+            </header>
+            <div class="panel-body">
+                Christian Scholl (Göttingen)
+                <h4>Künstlerischer Austausch zwischen England und Hannover um 1800</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2013-12-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ucOR8s3M4hg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">17. Dezember 2013</h3>
+            </header>
+            <div class="panel-body">
+                Andreas Waczkat (Göttingen)
+                <h4>Doctor scientiae musicae: Musik als Wissenschaft im Raum der Personalunion</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2013-12-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="https://www.youtube.com/watch?v=_UzOH6O-vJw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">7. Januar 2014</h3>
+            </header>
+            <div class="panel-body">
+                Peter Aufgebauer (Göttingen)
+                <h4>Kooperation oder Konkurrenz? Die Göttinger Königliche Gesellschaft der Wissenschaften und die Royal Society im 18. Jahrhundert</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-01-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=Rzhv0omIEqE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">14. Januar 2014</h3>
+            </header>
+            <div class="panel-body">
+                Wilfried Enderle (Göttingen)
+                <h4>Ein König – viele Wege zum Bücherwissen. Die Göttinger Universitätsbibliothek im Kontext der europäisch-britischen Bibliothekslandschaften</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2014-01-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>-->
+                        <a target="_blank" href="https://www.youtube.com/watch?v=8gMuxxBivO0" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">21. Januar 2014</h3>
+            </header>
+            <div class="panel-body">
+                Dominik Collet (Heidelberg)
+                <h4>Im Netz der Dinge – Kulturen des gelehrten Sammelns in der Personalunion</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-01-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=BdeMCEvan24" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">28. Januar 2014</h3>
+            </header>
+            <div class="panel-body">
+                Michaela Kipp (Göttingen)
+                <h4>Hofrath Blumenbach im Königlich Academischen Museum zu Göttingen – Ein Knotenpunkt im europäischen Gelehrtennetzwerk</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-01-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=79A7VffgtCA" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-13-14">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <strong>Prof. Dr. Arnd Reitemeier</strong>
+
+            <p>Georg-August-Universität Göttingen</p>
+            <p>Seminar für Mittlere und Neuere Geschichte</p>
+        </div>
+
+    </message>
+
+    <!-- ********************************************************************************************* -->
+
+    <!-- ********** SS 14 ******* -->
+    <message key="xmlui.static.ring-14.trail">
+        SS 14
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-14">
+        Klassiker, Thriller, Ladenhüter Wie Texte gebaut sind und wie sie wirken
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-14">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-14.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-14">
+
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">06. Mai 2014</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Christiane Schildknecht (Luzern)
+                <h4>»Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht </h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2014-05-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">13. Mai 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Manfred Krifka (Berlin)
+                <h4>Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-05-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=2F3-zXNiDjs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">20. Mai 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Annekathrin Schacht (Göttingen)
+                <h4>Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-05-20.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!-- <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">27. Mai 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Edgar Onea (Göttingen)
+                <h4>Offene Fragen und spannende Texte </h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--  <a href="/static/audio/ring2014-05-27.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">3. Juni 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Markus Steinbach und Dr. Annika Herrmann (Göttingen)
+                <h4>Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--
+                        <a href="/static/audio/ring2014-06-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">10. Juni 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Nivedita Mani (Göttingen)
+                <h4>Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--<a href="/static/audio/ring2014-06-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="https://www.youtube.com/watch?v=DHxkTCz1bwQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">17. Juni 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Regine Eckardt (Göttingen)
+                <h4>Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte? </h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2014-06-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">24. Juni 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Simone Winko und Anna Fenner MA (Göttingen)
+                <h4>More than words. Emotionen in literarischen Texten</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2014-06-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">1. Juli 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Evelyn Ferstl (Freiburg)
+                <h4>Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2014-07-01.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">8. Juli 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Heinrich Detering (Göttingen)
+                <h4>Horror! Literatur der Angstlust </h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-07-08.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">15. Juli 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Tilmann Köppe (Göttingen)
+                <h4>Angenehmes Grauen. Warum wir Thriller lieben</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-07-15.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">22. Juli 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Anke Holler (Göttingen)
+                <h4>Signale im Text. Wie sprachliche Strukturen die Leser lenken</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-07-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-14">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <strong>Prof. Dr. Regine Eckardt</strong>
+
+            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-7576</p>
+            <p><i class="icon-fax"></i>+49 551 39 14651</p>
+            <p><i class="icon-mail"></i><a href="mailto:regine.eckardt@phil.uni-goettingen.de">regine.eckardt@phil.uni-goettingen.de</a></p>
+        </div>
+        und
+        <div class="contact">
+            <strong>Prof. Dr. Annekathrin Schacht</strong>
+            <p>Musikwissenschaftliches Seminar</p>
+            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39 20022</p>
+        </div>
+
+    </message>
+
+
+
+
+    <!-- ********** WS 14-15 ******* -->
+    <message key="xmlui.static.ring-14-15.trail">
+        WS 14-15
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-14-15">
+        UMBRÜCHE - Auslöser für Evolution und Fortschritt
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-14-15">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-15-16.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/509590.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-14-15">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">21. Oktober 2014</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Gerhard Wörner (Göttingen)
+                <h4>Vulkanausbrüche, Erdbeben, Klimawandel: Wie innere Kräfte der Erde den Lauf der Evolution und unsere Geschichte prägen</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-10-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=eI9HHCr4vXU" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">28. Oktober 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Joachim Reitner (Göttingen)
+                <h4>Die "Kambrische Explosion" vor 540 Millionen Jahren</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-10-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=KNK4VHuDbQw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">4. November 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Katerina Harvati-Papatheodorou (Tübingen)
+                <h4>Out of Africa: Der Aufbruch des Homo Sapiens</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2014-11-04.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">11. November 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Jürgen Richter (Köln)
+                <h4>Prähistorische Revolutionen: von Sammlern und Jägern zu Schrift und Zahl</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+
+                        <a href="/static/audio/ring2014-11-11.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=YocyH0r2CQc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">18. November 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Thomas Kaufmann (Göttingen)
+                <h4>Reformation: Eine Medienrevolution verändert die Welt</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-11-18.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=sPB5JkejV6w" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">25. November 2014</h3>
+            </header>
+            <div class="panel-body">
+                Dr. Dr. Erich Bödeker (Göttingen)
+                <h4>Aufklärung: Ende Alteuropas und Beginn der Moderne?</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-11-25.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=VBjAkjXp_TM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">2. Dezember 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Gudrun Gersmann (Köln)
+                <h4>Ursache und Wirkung geschichtlicher Umbrüche: Die Französische Revolution</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-12-02.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=0beXynWLobM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">9. Dezember 2014</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Ansgar Reiner (Göttingen)
+                <h4>Von der Astrologie zur Astrophysik: Kopernikanische Wende und unser Verständnis des Universums</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2014-12-09.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=jhA1pdeo1dg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">6. Januar 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Renate Ohr (Göttingen)
+                <h4>EU-Osterweiterung und Euro - Umbrüche im europäischen Integrationsprozess der Nachkriegszeit</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-01-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=jyItW7PdRcg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">13. Januar 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Bettina Schöne-Seifert (Münster)
+                <h4>Umbrüche in der Medizin: Wie sollen wir in Zukunft richtig mit unserem Lebensende umgehen?</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-01-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=Rsv2ncgweOc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">20. Januar 2015</h3>
+                </header>
+                <div class="panel-body">
+                    Prof. Rainer Ulbrich (Göttingen)
+                    <h4>Die Schrift, der Druck und das Netz: Von Technik zu Kultur?</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2015-01-20.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=rD2YVqdLr-Q" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">27. Januar 2015</h3>
+                </header>
+                <div class="panel-body">
+                    Prof. Mojib Latif (Kiel)
+                    <h4>Der Globale Wandel und die Zukunft der Klimapolitik</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2015-01-27.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=F2wfPV68zxU" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">3. Februar 2015</h3>
+                </header>
+                <div class="panel-body">
+                    Prof. Eberhard Umbach (Würzburg)
+                    <h4>Energiewende - Chancen und Risiken</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2015-02-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=u6rgRpyaAx4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-14-15">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <p><strong>Prof. Thomas Kaufmann</strong></p>
+            <p><strong>Prof. Joachim Reitner</strong></p>
+            <p><strong>Prof. Kurt Schönhammer</strong></p>
+            <p><strong> Prof. Gerhard Wörner</strong></p>
+            <p>Georg-August-Universität Göttingen</p>
+
+        </div>
+    </message>
+
+    <!-- ************************************************************** -->
+
+    <!-- ********** SS 15 ******* -->
+    <message key="xmlui.static.ring-15.trail">
+        SS 15
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-15">
+        OSTASIEN und die Macht heiliger Klänger
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-15">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-15.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-15">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">28. April 2015</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Dr. Steven Nelson (Tokyo)
+                <h4>Music and Liturgy in Japanese Esoteric Buddhism: Mandala in Sound</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!-- <a href="/static/audio/ring2015-04-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">05. Mai 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Lars-Christian Koch (Köln)
+                <h4>Buddhistische Musik in Korea: Sutra-Rezitation und die musikalische Umsetzung ritueller Texte im Gesamtkomplex eines Ritus</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2015-05-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=O0sLgpMqPcg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">12. Mai 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Toru Takenaka (Osaka)
+                <h4>Suzuki spielt Cello: Wie hat westliche Musik den Habitus der Japaner beeinflusst?</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2015-05-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=A6dlyON_23I" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">19. Mai 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Keith Howard (London)
+                <h4>Soul Music in Seoul: Korean Shaman Music, in Rituals and on Stages</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2015-05-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=KqMmav58cbw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">26. Mai 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Andreas Waczkat (Göttingen)
+                <h4>Begeistert vom Nô-Theater: Benjamin Brittens Parable for Church Perfomance "Curlew River" (1964) nach Juro Motomasas "Sumidagawa"</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2015-05-26.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>-->
+                        <a target="_blank" href="//www.youtube.com/watch?v=D7euR085M7E" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">02. Juni 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Barbara Mittler (Heidelberg)
+                <h4>Von Yao bis Mao: China und die Macht der Musik</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!-- <a href="/static/audio/ring2015-06-02.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">09. Juni 2015</h3>
+            </header>
+            <div class="panel-body">
+                Nan Nan (Göttingen) &#38; Katja Pessl (Göttingen)
+                <h4>Zwischen Himmel und Erde: Musikalische Landschaften aus China. Ein Konzertabend mit der chinesischen Zither</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-06-09.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">16. Juni 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Ingrid Fritsch (Köln)
+                <h4>Werden und Vergehen: zum Klangideal traditioneller japanischer Musik</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2016-06-16.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">23. Juni 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Katja Triplett (Göttingen) &#38; Yoshiro Shimizu, M.A. (Köln)
+                <h4>1200 Jahre musikalische Eleganz: Gagaku in Japan und anderswo</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2016-06-23.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">30. Juni 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Adelheid Herrmann-Pfandt (Marburg)
+                <h4>Schädeltrommeln und Knochentrompeten: Musik in den tibetisch-buddhistischen Klöstern</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-06-30.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-15">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <strong>Prof. Dr. Katja Triplett</strong>
+            <p>Georg-August-Universität Göttingen</p>
+            <p>Centre for Modern East Asian Studies (CeMEAS)</p>
+            <p><a target="_blank" href="//goo.gl/maps/jxNHtAzh7hE2"><i class="icon-location"></i></a>Heinrich-Düker-Weg 14</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-21275</p>
+            <p><i class="icon-mail"></i><a href="mailto:triplett@uni-goettingen.de">triplett@uni-goettingen.de</a></p>
+        </div>
+        und
+        <div class="contact">
+            <strong>Prof. Dr. Birgit Abels </strong>
+            <p>Musikwissenschaftliches Seminar</p>
+            <p><a target="_blank" href="//goo.gl/maps/swn6XpK16Sm"><i class="icon-location"></i></a>Kurze-Geismar-Straße 1</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39 20139</p>
+            <p><i class="icon-fax"></i>+49 551 39 9353</p>
+            <p><i class="icon-mail"></i><a href="mailto:babels@uni-goettingen.de">babels@uni-goettingen.de</a></p>
+        </div>
+
+    </message>
+
+    <!-- *************************************************************** -->
+    <!-- ********** WS 15-16 ******* -->
+    <message key="xmlui.static.ring-15-16.trail">
+        WS 15-16
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-15-16">
+        WISSENSORT MUSEUM Traditionen – Positionen – Perspektiven
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-15-16">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-15-16.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/ringvorlesung-wintersemester-15-16/54374.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-15-16">
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">27. Oktober 2015</h4>
+            </header>
+
+            <div class="panel-body">
+                Prof. Dr. Sharon Macdonald (Berlin und York)
+                <h4>What museums (can) do</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-10-27.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=864-Bf44P3E" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">3. November 2015</h3>
+            </header>
+            <div class="panel-body">
+                PD Dr. Mike Reich (München)
+                <h4>Das Akademische Museum Göttingen: Ein Vorbild der Moderne?</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-11-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=KpYbymQXSmo" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">10. November 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Rebekka Habermas (Göttingen)
+                <h4>Weltsichten: Museale Sammlungen im Kolonialen Zeitalter</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2015-11-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=Raz7b98GE9A" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">17. November 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Arnulf Quadt (Göttingen)
+                <h4>PiA – Physik im Advent und Zauberhafte Physik: Neue Ansätze Wissen zu vermitteln</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-11-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ZaVdNRsrrHU" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">24. November 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Joachim Block (Göttingen)
+                <h4>Luft- und Raumfahrtforschung im Museum: Eine Balance zwischen Exponaten, Experimenten und Science Fiction</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-11-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=fzvrtYTaYgc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">1. Dezember 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. David Gaimster (Glasgow)
+                <h4>The Hunterian: Scotland's public university museum</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2015-12-01.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">8. Dezember 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Johannes Vogel (Berlin)
+                <h4>Innovation mit Partizipation: Wissenschaft braucht Öffentlichkeit und vice versa</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2015-12-08.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=HjV_jFoBgQU" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">15. Dezember 2015</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Marion Ruisinger (Ingolstadt)
+                <h4>Medizinische Objekte: Grenzgänger zwischen Hörsaal, Klinik und Museum</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2016-05-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">12. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Sabine Hess (Göttingen)
+                <h4>Musealisierung der Migration: Fallstricke und Potenziale</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-01-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=MPMYH-_NZw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">19. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Eva-Maria Neher und Dr. Gilbert Heß (Göttingen)
+                <h4>Hands-on! Potenzial und neue Wege der Wissensvermittlung: Brücken zwischen Schule und Hochschule</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-01-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">26. Januar 2016</h3>
+                </header>
+                <div class="panel-body">
+                    Prof. Dr. Brigitta Hauser-Schäublin (Göttingen)
+                    <h4>Von kulturellen Kostbarkeiten zu Dingen zweifelhafter Herkunft: Veränderte Perspektiven auf außereuropäische Sammlungen in westlichen Museen</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2016-01-26.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=HNyph6u9DMY" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">2. Februar 2016</h3>
+                </header>
+                <div class="panel-body">
+                    Martha Fleming (London)
+                    <h4>From manuscript catalogue to DNA barcode: The relevance of Enlightenment natural history collections in a genomic era</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+
+                            <a href="/static/audio/ring2016-02-02.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=HgLRCAGd2hs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">9. Februar 2016</h3>
+                </header>
+                <div class="panel-body">
+                    Dr. Wilhelm Krull (Hannover)
+                    <h4>Bewahren, erschließen, vermitteln: Museen und Sammlungen als Orte des Erkenntnisgewinns</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2016-02-09.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=y2N7TtAMZyc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <header class="panel-heading">
+                    <h3 class="panel-title">16. Februar 2016</h3>
+                </header>
+                <div class="panel-body">
+                    Dr. Marie Luisa Allemeyer (Göttingen) und Dr. Joachim Baur (Berlin)
+                    <h4>Wissen-Schaffen sichtbar machen: Konzept und Perspektive des »Forum Wissen« Göttingen</h4>
+                    <div class="pull-right">
+                        <div class="btn-toolbar">
+                            <a href="/static/audio/ring2016-02-16.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                            <a target="_blank" href="//www.youtube.com/watch?v=me7_ULO8FUQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-15-16">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <p>Zentrale Kustodie</p>
+            <p><a target="_blank" href="//goo.gl/maps/BfTBZbR47J92"><i class="icon-location"></i></a>Weender Landstraße 2</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-20735</p>
+            <p><i class="icon-mail"></i><a href="mailto:kustodie@gwdg.de">kustodie@gwdg.de</a></p>
+
+        </div>
+
+    </message>
+
+    <!-- ********************************************************** -->
+
+    <!-- ********** SS 16 ******* -->
+    <message key="xmlui.static.ring-16.trail">
+        SS 2016
+    </message>
+
+    <!-- Title -->
+    <message key="xmlui.static.ring.title-16">
+        LANDWIRTSCHAFT zwischen Idylle und Hightech
+    </message>
+
+    <!-- Poster -->
+    <message key="xmlui.static.ring.poster-16">
+        <div class="media-right hidden-xs">
+            <img class="media-object" src="/static/images/ring/cover-16.jpg" alt="poster"></img><br />
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">Mehr Informationen ...</a></small>
+        </div>
+    </message>
+
+
+    <message key="xmlui.static.ring.list-16">
+
+        <div class="panel panel-default panel-first">
+            <header class="panel-heading">
+                <h4 class="panel-title">12. April 2016</h4>
+            </header>
+
+            <div class="panel-body">
+                Dr. Stephanie Franck, Vorsitzende des Bundesverbandes Deutscher Pflanzenzüchter e.V.
+                <h4>Mit dem Saatgut fängt es an - Idylle und Wirklichkeit in der Pflanzenzüchtung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-04-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=TK0kDXf0c9k" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">19. April 2016</h3>
+            </header>
+            <div class="panel-body">
+                Carl-Albrecht Bartmer, Präsident der Deutschen Landwirtschaftsgesellschaft
+                <h4>Landwirtschaftliche Betriebe zwischen Idylle und Hightech</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-04-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=Bd6LRlmsy4k" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">26. April 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Henner Simianer (Göttingen)
+                <h4>Genomische und andere Revolutionen in der Tierzucht</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2016-11-08.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=dL90mzzRgCo" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">03. Mai 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Urs Niggli, Direktor des Forschungsinstitutes für ökologischen Landbau (FiBL)
+                <h4>Ökologischer Landbau: Idylle oder Hightech?</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-05-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ieixgmx5bl4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">10. Mai 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Kay-Uwe Goetz, Bayrische Landesanstalt für Landwirtschaft
+                <h4>Nutztiere nur noch in Gut Aiderbichl? - Entwicklungen in Tierhaltung und Gesellschaft</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-05-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">17. Mai 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Achim Spiller (Göttingen)
+                <h4>Sind wir in 20 Jahren alle Vegetarier? Anforderungen an die landwirtschaftliche Tierhaltung aus Sicht der Gesellschaft</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- a href="/static/audio/ring2016-05-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=cyTgDcWuKCM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">31. Mai 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Dr. Andreas Hensel, Präsident des Bundesinstitutes für Risikobewertung (BfR)
+                <h4>Gift auf dem Teller? - Von gefühlten und realen Ernährungsrisiken</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2016-05-31.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>  -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=i_LR2mc7QD4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">07. Juni 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Andreas von Tiedemann (Göttingen)
+                <h4>Hightech-Ängste und Idyllvorstellungen - warum wir den modernen Pflanzenschutz nicht schätzen, ihn aber schätzen sollten</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-05-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=RhX07lVoNfg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">14. Juni 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Eva Schlecht (Kassel)
+                <h4>Hightech Forschung in pastoralen Systemen Afrikas und Asiens - Anwendungsbereiche und Erkenntnisse</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <a href="/static/audio/ring2016-06-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <!--<a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">28. Juni 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Matin Qaim (Göttingen)
+                <h4>Welternährung und Armutsbekämpfung in den Entwicklungsländern</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-06-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=uDDqu6IU4VU" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">05. Juli 2016</h3>
+            </header>
+            <div class="panel-body">
+                Dr. Clemens Dirscherl, EKD
+                <h4>Landwirtschaftliche Nutztierhaltung in ethischer Verantwortung - eine christliche Perspektive</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--<a href="/static/audio/ring2016-07-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>-->
+                        <a target="_blank" href="//www.youtube.com/watch?v=i3rbUJULnBQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">12. Juli 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Klaus Dittert (Göttingen)
+                <h4>Nachhaltige Produktivitätssteigerung: Konsequenzen für Wissenschaft und Wirtschaft</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-07-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=Goa4IiZvN5Y" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </message>
+
+    <message key="xmlui.static.ring.contact-16">
+
+        <h3>Organisation / Kontakt: </h3>
+
+        <div class="contact">
+            <p><strong>Prof. Dr. Elke Pawelzik</strong>, <strong>Prof. Dr. Henner Simianer</strong>, </p>
+            <p><strong>Prof. Dr. Achim Spiller</strong>, <strong>Prof. Dr. Bernhard Brümmer</strong>, </p>
+            <p><strong>Prof. Dr. Andreas von Tiedemann</strong></p>
+            <p>Georg-August-Universität Göttingen</p>
+            <p>Fakultät für Agrarwissenschaften</p>
+            <p><a target="_blank" href="//goo.gl/maps/PZz8Mqvrf6x"><i class="icon-location"></i></a>Büsgenweg 5</p>
+            <p><span class="icon-body">37077 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39 5530</p>
+            <p><i class="icon-fax"></i>+49 551 39 66034</p>
+        </div>
+    </message>
+
+    <!-- ********************************************************************************************* -->
+
     <!-- ********** WS 16-17 ******* -->
     <message key="xmlui.static.ring-16-17.trail">
         WS 2016 / 2017
@@ -488,7 +2468,7 @@
     <message key="xmlui.static.ring.poster-16-17">
         <div class="media-right hidden-xs">
             <img class="media-object" src="/static/images/ring/cover-16-17.jpg" alt="poster"></img><br />
-            <small><a class="extern" href="http://www.uni-goettingen.de/de/547325.html">Mehr Informationen der Universität...</a></small>
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/547325.html">Mehr Informationen ...</a></small>
         </div>
     </message>
 
@@ -500,14 +2480,12 @@
             </header>
 
             <div class="panel-body">
-                Prof. Dr. Bernd Ludwig, Universität Göttingen
+                Prof. Dr. Bernd Ludwig (Göttingen)
                 <h4>Wurzeln der Aufklärung</h4>
                 <div class="pull-right">
                     <div class="btn-toolbar">
-
-                        <a target="_blank" href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
                         <a href="/static/audio/ring2016-10-25.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
-
+                        <a target="_blank" href="//www.youtube.com/watch?v=GQjNSy9uNlk" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -518,8 +2496,15 @@
                 <h3 class="panel-title">1. November 2016</h3>
             </header>
             <div class="panel-body">
-                <p>Prof. Dr. Gerhard Lauer, Universität Göttingen</p>
-                <p><i class="icon-sound" aria-hidden="true"></i> <a href="/static/audio/ring2016-11-01.mp3">Jüdische Aufklärung</a></p>
+                Prof. Dr. Gerhard Lauer (Göttingen)
+                <h4>Jüdische Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-11-01.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=lwYiipDyiwI" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -529,9 +2514,18 @@
                 <h3 class="panel-title">8. November 2016</h3>
             </header>
             <div class="panel-body">
-                <p>Dr. Avi Lifschitz, University College London</p>
-                <p>Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</p>
-                <!--<a href="/static/audio/ring2016-11-08.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+                Dr. Avi Lifschitz (London)
+                <h4>Toleration, Naturalization, Improvement: Enlightenment Debates over Civic Rights for Jews</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                         <a href="/static/audio/ring2016-11-08.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                         -->
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -541,9 +2535,16 @@
                 <h3 class="panel-title">15. November 2016</h3>
             </header>
             <div class="panel-body">
-                <p>Prof. Dr. Tilman Nagel, Akademie der Wissenschaften zu Göttingen</p>
-                <p>Vortragender: Prof. Dr. Jens Peter Laut, Universität Göttingen</p>
-                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <a href="/static/audio/ring2016-11-15.mp3">Aufklärung im Islam und Aufklärung über den Islam</a></p></div>
+                Prof. Dr. Tilman Nagel (Göttingen)<br />
+                Vortragender: Prof. Dr. Jens Peter Laut (Göttingen)
+                <h4>Aufklärung im Islam und Aufklärung über den Islam</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-11-15.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=490qp07M784" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -552,12 +2553,16 @@
                 <h3 class="panel-title">22. November 2016</h3>
             </header>
             <div class="panel-body">
-                <p>Prof. Dr. Joachim Ringleben, Universität Göttingen</p>
-                <p><span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>  <a href="/static/audio/ring2016-11-22.mp3">
-                    Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</a></p>
+                Prof. Dr. Joachim Ringleben (Göttingen)
+                <h4>Das anstößige Thema Sünde – oder wie die Aufklärung zur Vernunft kommt</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-11-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=v4deq-hOfwE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
             </div>
         </div>
-
 
 
         <div class="panel panel-default">
@@ -565,11 +2570,133 @@
                 <h3 class="panel-title">29. November 2016</h3>
             </header>
             <div class="panel-body">
-                <p>Prof. Dr. Wolfgang Eßbach, Universität Freiburg</p>
-                <p>Religionskritik der Aufklärung</p>
-                <!--<a href="/static/audio/ring2016-11-29.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />xxxxxxxxxxxx</a> -->
+                Prof. Dr. Wolfgang Eßbach (Freiburg)
+                <h4>Religionskritik der Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- a href="/static/audio/ring2016-11-29.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a> -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=VIaYFz9YbU4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">6. Dezember 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. H. Otto Sibum (Uppsala)
+                <h4>Experimente in der Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!-- <a href="/static/audio/ring2016-12-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>  -->
+                        <a target="_blank" href="//www.youtube.com/watch?v=LU2q_St4sq8" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">13. Dezember 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Marc Föcking (Hamburg)
+                <h4>Aufklärung und Aerostatik</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-12-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">20. Dezember 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Isabel Schnabel (Bonn)
+                <h4>Aufklärung über die wirtschaftliche Lage</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+
+                        <!--
+                        <a href="/static/audio/ring2016-12-20.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">10. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Werner Heun (Göttingen)
+                <h4>Aufklärung, Revolution und Menschenrechte</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-01-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">17. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                Dr. Hans Erich Bödeker (Göttingen)
+                <h4>Globale Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <!--<a href="/static/audio/ring2016-01-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>-->
+                        <a target="_blank" href="//www.youtube.com/watch?v=IXqK4bFXzbs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">24. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                PD Dr. Martin Gierl (Göttingen)
+                <h4>Lokale Aufklärung</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-01-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=CfF60YU_P5M" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">31. Januar 2016</h3>
+            </header>
+            <div class="panel-body">
+                Prof. Dr. Heyo Kroemer (Göttingen)
+                <h4>Aufklärung 2.0</h4>
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/static/audio/ring2016-01-31.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-sound" aria-hidden="true"></i> Audio Datei</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=49n1OiNDg4M" class="btn btn-default btn-xs" role="button"><i class="icon-videocam" aria-hidden="true"></i> YouTube Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
     </message>
@@ -578,288 +2705,22 @@
 
         <h3>Organisation / Kontakt: </h3>
 
-        <div> <strong>Dr. Hans Erich Bödeker</strong> und  <strong>Prof. Dr. Thomas Kaufmann</strong></div>
-        <div>
-            <p>Platz d. Göttinger Sieben 2</p>
-            <p>37073 Göttingen</p>
-            <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +49 551 39-10408</p>
-            <p><span class="icon" title="Fax">&#128439;</span> +49 551 39 7488</p>
-            <p><span class="icon" title="E-Mail">&#9993;</span><a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a></p>
+        <div class="contact">
+            <strong>Dr. Hans Erich Bödeker</strong> und  <strong>Prof. Dr. Thomas Kaufmann</strong>
+
+            <p><a target="_blank" href="//goo.gl/maps/S6N9MBZNSxD2"><i class="icon-location"></i></a>Platz der Göttinger Sieben 2</p>
+            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><i class="icon-call"></i>+49 551 39-10408</p>
+            <p><i class="icon-fax"></i>+49 551 39 7488</p>
+            <p><i class="icon-mail"></i><a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a></p>
         </div>
     </message>
 
     <!-- ********************************************************************************************* -->
 
-    <!-- SS 2014 -->
-    <!-- Breadcrumbs -->
-    <message key="xmlui.static.ring-ss14.trail">SS 2014</message>
-    <!-- Title -->
-    <message key="xmlui.static.ring.title-ss14">
-        <br />Klassiker, Thriller, Ladenhüter<br />
-        Wie Texte gebaut sind und wie sie wirken
-    </message>
 
-    <!-- Poster -->
-    <message key="xmlui.static.ring.poster-ss14">
-        <p>
-            <img src="/static/images/ring/cover-14.jpg" alt="Coverabbildung" /><br />
-            <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
-        </p>
-    </message>
 
-    <!-- Audio Files -->
-    <message key="xmlui.static.ring.list-ss14">
-        <ul>
-            <li class="content"><strong>06. Mai 2014</strong><br />
-                Prof. Christiane Schildknecht, Luzern<br />
-                »Modrige Pilze«. Literarische Erkenntnis aus philosophischer Sicht
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
 
-            <li class="content"><strong>13. Mai 2014</strong><br />
-                Prof. Manfred Krifka, Berlin<br />
-                <a href="/static/audio/ring2014-05-13.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Vom Erzählen zum Text: Schrift und Sprache des Geschichtenerzählens in Daakie (Vanuatu)</a>
-            </li>
 
-            <li class="content"><strong>20. Mai 2014</strong><br />
-                Prof. Annekathrin Schacht, Göttingen<br />
-                <a href="/static/audio/ring2014-05-20.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Krieg – Frieden – Sinn – Sinnlichkeit: Was wir fühlen, wenn wir lesen</a>
-            </li>
-
-            <li class="content"><strong>27. Mai 2014</strong><br />
-                Prof. Edgar Onea, Göttingen<br />
-                Offene Fragen und spannende Texte
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-            <li class="content"><strong>3. Juni 2014</strong><br />
-                Prof. Markus Steinbach und Dr. Annika Herrmann, Göttingen<br />
-                Wenn die Spannung mit den Händen zu greifen ist. Geschichten in Gebärdensprachen
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-
-            <li class="content"><strong>10. Juni 2014</strong><br />
-                Prof. Nivedita Mani, Göttingen<br />
-                Lesen, Denken, Sprechen: Wie Lesen unsere Sprachverarbeitung beeinflussen kann
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-            <li class="content"><strong>17. Juni 2014</strong><br />
-                Prof. Regine Eckardt, Göttingen<br />
-                Der guten Mär bring ich so viel – Wer erzählt uns literarische Texte?
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-            <li class="content"><strong>24. Juni 2014</strong><br />
-                Prof. Simone Winko und Anna Fenner MA, Göttingen<br />
-                More than words. Emotionen in literarischen Texten
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-
-            <li class="content"><strong>1. Juli 2014</strong><br />
-                Prof. Evelyn Ferstl, Freiburg<br />
-                Vom Wort zum Text: Neurowissenschaftliche Forschung zum Sprachverstehen
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-            <li class="content"><strong>8. Juli 2014</strong><br />
-                Prof. Heinrich Detering, Göttingen<br />
-                Horror! Literatur der Angstlust
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-            <li class="content"><strong>15. Juli 2014</strong><br />
-                Prof. Tilmann Köppe, Göttingen<br />
-                Angenehmes Grauen. Warum wir Thriller lieben
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-
-            <li class="content"><strong>22. Juli 2014</strong><br />
-                Prof. Anke Holler, Göttingen<br />
-                Signale im Text. Wie sprachliche Strukturen die Leser lenken
-            </li>
-            <!---<a href="/static/audio/ring2011-10-25.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" /> &#160;xxxxxTitel</a></li>-->
-
-        </ul>
-    </message>
-
-
-    <!-- ************************************************************************************** -->
-
-
-    <!-- SS 2016 -->
-
-    <!-- Breadcrumbs -->
-
-    <message key="xmlui.static.ring-ss16.trail">SS 2016</message>
-
-    <!-- Title -->
-
-    <message key="xmlui.static.ring.title-ss16">
-
-        <br />LANDWIRTSCHAFT zwischen Idylle und Hightech
-
-
-
-    </message>
-
-
-
-    <!-- Poster -->
-
-    <message key="xmlui.static.ring.poster-ss16">
-
-        <p>
-
-            <img src="/static/images/ring/cover-16.jpg" alt="Coverabbildung" /><br />
-
-            <a href="http://www.uni-goettingen.de/de/54374.html">Mehr Informationen der Universität...</a>
-
-        </p>
-
-    </message>
-
-
-
-    <!-- Audio Files -->
-
-    <message key="xmlui.static.ring.list-ss16">
-
-        <ul>
-
-            <li class="content"><strong>12. April 2016</strong><br />
-
-                Dr. Stephanie Franck, Vorsitzende des Bundesverbandes Deutscher Pflanzenzüchter e.V.<br />
-
-                <a href="/static/audio/ring2016-04-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Mit dem Saatgut fängt es an - Idylle und Wirklichkeit in der Pflanzenzüchtung</a></li>
-
-
-
-            <li class="content"><strong>19. April 2016</strong><br />
-
-                Carl-Albrecht Bartmer, Präsident der Deutschen Landwirtschaftsgesellschaft<br />
-
-                <a href="/static/audio/ring2016-04-19.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Betriebe zwischen Idylle und Hightech</a></li>
-
-
-
-            <li class="content"><strong>26. April 2016</strong><br />
-
-                Prof. Dr. Henner Simianer, Universität Göttingen<br />
-
-                <a href="/static/audio/ring2016-04-26.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Genomische und andere Revolutionen in der Tierzucht</a></li>
-
-
-
-            <li class="content"><strong>03. Mai 2016</strong><br />
-
-                Prof. Dr. Urs Niggli, Direktor des Forschungsinstitutes für ökologischen Landbau (FiBL)<br />
-
-                <a href="/static/audio/ring2016-05-03.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Ökologischer Landbau: Idylle oder Hightech?</a></li>
-
-
-
-            <li class="content"><strong>10. Mai 2016</strong><br />
-
-                Prof. Dr. Kay-Uwe Goetz, Bayrische Landesanstalt für Landwirtschaft<br />
-
-                <a href="/static/audio/ring2016-05-10.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nutztiere nur noch in Gut Aiderbichl? - Entwicklungen in Tierhaltung und Gesellschaft</a></li>
-
-
-
-            <li class="content"><strong>17. Mai 2016</strong><br />
-
-                Prof. Dr. Achim Spiller, Universität Göttingen<br />
-
-                <a href="/static/audio/ring2016-05-17.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Sind wir in 20 Jahren alle Vegetarier? Anforderungen an die landwirtschaftliche Tierhaltung aus Sicht der Gesellschaft</a></li>
-
-
-
-
-
-            <li class="content"><strong>31. Mai 2016</strong><br />
-
-                Prof. Dr. Dr. Andreas Hensel, Präsident des Bundesinstitutes für Risikobewertung (BfR)<br />
-
-                <a href="/static/audio/ring2016-05-31.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Gift auf dem Teller? - Von gefühlten und realen Ernährungsrisiken</a></li>
-
-
-
-
-            <li class="content"><strong>07. Juni 2016</strong><br />
-
-                Prof. Dr. Andreas von Tiedemann, Universität Göttingen<br />
-
-                <a href="/static/audio/ring2016-06-07.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech-Ängste und Idyllvorstellungen - warum wir den modernen Pflanzenschutz nicht schätzen, ihn aber schätzen sollten</a></li>
-
-
-
-            <li class="content"><strong>14. Juni 2016</strong><br />
-
-                Prof. Dr. Eva Schlecht, Universität Göttingen/Universität Kassel<br />
-
-                <a href="/static/audio/ring2016-06-14.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Hightech Forschung in pastoralen Systemen Afrikas und Asiens - Anwendungsbereiche und Erkenntnisse</a></li>
-
-
-
-            <li class="content"><strong>28. Juni 2016</strong><br />
-
-                Prof. Dr. Matin Qaim, Universität Göttingen<br />
-
-                <a href="/static/audio/ring2016-06-28.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaft zwischen Idylle und Hightech: Welternährung und Armutsbekämpfung in den Entwicklungsländern</a></li>
-
-
-            <li class="content"><strong>05. Juli 2016</strong><br />
-
-                Dr. Clemens Dirscherl, EKD<br />
-
-                <a href="/static/audio/ring2016-07-05.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Landwirtschaftliche Tierhaltung in ethischer Verantwortung - eine christliche Perspektive</a></li>
-
-
-            <li class="content"><strong>12. Juli 2016</strong><br />
-
-                !Änderung! Prof. Dr. Klaus Dittert, Universität Göttingen<br />
-
-                <a href="/static/audio/ring2016-07-12.mp3"><img src="/static/images/sound.gif" alt="Klangdatei" />Nachhaltige Produktivitätssteigerung: Konsequenzen für Wissenschaft und Wirtschaft</a></li>
-
-
-
-
-
-
-        </ul>
-
-    </message>
-
-
-
-    <message key="xmlui.static.ring.contact-ss16">
-
-        <div id="contact">
-
-
-
-            <strong>Organisation/Kontakt:</strong><br />
-
-            Georg-August-Universität Göttingen<br />
-
-            Fakultät für Agrarwissenschaften<br />
-
-            Prof. Dr. Elke Pawelzik, Prof. Dr. Henner Simianer, Prof. Dr. Achim Spiller, Prof. Dr. Bernhard Brümmer, Prof. Dr. Andreas von Tiedemann<br />
-
-            Büsgenweg 5<br />
-
-            37077   Göttingen<br />
-
-            Tel.: +49 551 39 5530<br />
-
-            Fax:  +49 551 39 66034<br />
-
-        </div>
-
-    </message>
 
 </catalogue>

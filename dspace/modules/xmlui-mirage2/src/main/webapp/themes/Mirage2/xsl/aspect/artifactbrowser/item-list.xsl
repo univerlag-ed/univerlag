@@ -265,7 +265,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-eye"></i>
+                                        <i class="icon-download-5"></i>
                                         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -379,7 +379,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-eye"></i>
+                                        <i class="icon-download-5"></i>
                                         <xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -479,7 +479,7 @@
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                         </xsl:attribute>
-                                        <i class="icon-eye"></i>
+                                        <i class="icon-download-5"></i>
                                         <xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -618,7 +618,7 @@
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <i class="icon-eye"></i><a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+                                <i class="icon-download-5"></i><a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
                             </span>
                         </div>
                     </xsl:otherwise>

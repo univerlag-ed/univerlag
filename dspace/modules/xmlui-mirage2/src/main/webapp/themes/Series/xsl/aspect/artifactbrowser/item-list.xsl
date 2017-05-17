@@ -144,7 +144,7 @@
                         <xsl:choose>
                             <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                                 <span>
-                                    <xsl:for-each select="dim:field[@qualifier='author']">
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
 
                                         <xsl:if test="@authority">
                                             <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
@@ -157,11 +157,10 @@
                                     </xsl:for-each>
                                 </span>
                             </xsl:when>
-                            <xsl:when test="dim:field[@element='contributor'][@qualifier='editor']">
+                            <xsl:when test="dim:field[@element='contributor'][@qualifier='editor' or @qualifier='corporation']">
                                 <span>
-                                    <xsl:for-each select="dim:field[@qualifier='editor']">
+                                    <xsl:for-each select="dim:field[@element='contributor'][@qualifier='editor']">
                                         <xsl:copy-of select="node()"/>
-
                                         <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='editor']) != 0">
                                             <xsl:text>; </xsl:text>
                                         </xsl:if>
@@ -178,6 +177,7 @@
                                 </span>
                             </xsl:when>
                             <xsl:when test="dim:field[@element='contributor'][@qualifier='other']">
+
                                 <span>
                                     <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
                                         <xsl:value-of select="."/>
@@ -611,7 +611,7 @@
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <i class="icon-eye"></i> <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+                                <i class="icon-download-5"></i> <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
                             </span>
                         </div>
                     </xsl:otherwise>
