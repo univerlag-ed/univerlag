@@ -2697,8 +2697,8 @@
     <!-- different views of lists -->
     <message key="xmlui.mirage2.listview.cover">Deckblatt-Ansicht</message>
     <message key="xmlui.mirage2.listview.list">Listen-Ansicht (mit Details)</message>
-    <message key="xml.author.profile.dnb.label">DNB Profil</message>
-    <message key="xml.author.profile.orcid.label">ORCID Profil</message>
+    <message key="xml.author.profile.dnb.label">Personen-Profil (DNB)</message>
+    <message key="xml.author.profile.orcid.label">Personen-Profil (ORCID)</message>
 
     <!-- item view page -->
     <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Verwandtes</message>

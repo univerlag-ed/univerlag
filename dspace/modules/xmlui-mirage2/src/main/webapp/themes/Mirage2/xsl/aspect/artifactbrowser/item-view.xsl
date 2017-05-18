@@ -378,10 +378,10 @@
         </span>
         <xsl:choose>
             <xsl:when test="starts-with(@authority, 'orcid')">
-                <span class="orcid"><a target="_blank" href="{concat('//orcid.org/',substring-after(@authority, '/'))}" title="ORCID Profil"><small>ID</small></a></span>
+                <span class="orcid"><a target="_blank" href="{concat('//orcid.org/',substring-after(@authority, '/'))}" i18n:attr="title" title="xml.author.profile.orcid.label"><small>ID</small></a></span>
             </xsl:when>
             <xsl:when test="starts-with(@authority, 'gnd')">
-                <span class="gnd"><a target="_blank" href="{concat('//d-nb.info/',@authority)}" title="DNB Profil"><small><i class="icon-info"></i></small></a></span>
+                <span class="gnd"><a target="_blank" href="{concat('//d-nb.info/',@authority)}" i18n:attr="title" title="xml.author.profile.dnb.label"><small><i class="icon-info-circled"></i></small></a></span>
             </xsl:when>
         </xsl:choose>
 
@@ -565,7 +565,7 @@
 
                                 <xsl:attribute name="data-title"><xsl:value-of select="//dim:field[@element='title'][not(@qualifier)][1]" /></xsl:attribute>
                                 <xsl:attribute name="data-amount"><xsl:value-of select="$price" /></xsl:attribute>
-                                <xsl:attribute name="data-description"><xsl:value-of select="concat(. ,', ', $extent, ' S.')" /></xsl:attribute>
+                                <xsl:attribute name="data-description"><xsl:value-of select="concat(. ,'; ', $extent, ' S.')" /></xsl:attribute>
                                 <!-- <xsl:attribute name="data-amount"><xsl:value-of select="$price" /></xsl:attribute> -->
                                 <xsl:attribute name="data-part">
                                     <xsl:choose>
@@ -584,7 +584,7 @@
                     </span>
                 </div>
                 <div class="details">
-                    <small><xsl:value-of select="concat($descr, ', ', $extent, ' ')" /><i18n:text>xmlui.item.info.pages</i18n:text></small>
+                    <small><xsl:value-of select="concat($descr, '; ', $extent, ' ')" /><i18n:text>xmlui.item.info.pages</i18n:text></small>
                 </div>
 
             </xsl:for-each>
@@ -920,21 +920,46 @@
                     </xsl:otherwise>
                 </xsl:choose>
                 <xsl:text> </xsl:text><i18n:text>xmlui.dri2xhtml.mimetype.<xsl:value-of select="$mimetype"/></i18n:text><xsl:text> </xsl:text>
+
                 <xsl:choose>
-                    <xsl:when test="$size &lt; 1024">
-                        <xsl:value-of select="$size"/>
+                    <xsl:when test="@SIZE &lt; 1024">
+                        <xsl:value-of select="@SIZE"/>
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
                     </xsl:when>
-                    <xsl:when test="$size &lt; 1024 * 1024">
-                        <xsl:value-of select="substring(string($size div 1024),1,5)"/>
+                    <xsl:when test="@SIZE &lt; 1024 * 1024">
+                        <xsl:choose>
+                            <xsl:when test="$locale='de'">
+                                <xsl:value-of select="translate(substring(string(@SIZE div 1024),1,5), '.', ',')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
                     </xsl:when>
-                    <xsl:when test="$size &lt; 1024 * 1024 * 1024">
-                        <xsl:value-of select="substring(string($size div (1024 * 1024)),1,5)"/>
+                    <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
+                        <xsl:choose>
+                            <xsl:when test="$locale='de'">
+                                <xsl:value-of select="translate(substring(string(@SIZE div (1024 * 1024)),1,5), '.', ',')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="substring(string($size div (1024 * 1024 * 1024)),1,5)"/>
+                        <xsl:choose>
+                            <xsl:when test="$locale='de'">
+                                <xsl:value-of select="translate(substring(string(@SIZE div (1024 * 1024 * 1024)),1,5), '.', ',')"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
                     </xsl:otherwise>
                 </xsl:choose>
@@ -1104,21 +1129,46 @@
                         <xsl:text>:</xsl:text>
                     </dt>
                     <dd class="word-break">
+
                         <xsl:choose>
                             <xsl:when test="@SIZE &lt; 1024">
                                 <xsl:value-of select="@SIZE"/>
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.size-bytes</i18n:text>
                             </xsl:when>
                             <xsl:when test="@SIZE &lt; 1024 * 1024">
-                                <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
+                                <xsl:choose>
+                                    <xsl:when test="$locale='de'">
+                                        <xsl:value-of select="translate(substring(string(@SIZE div 1024),1,5), '.', ',')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="substring(string(@SIZE div 1024),1,5)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.size-kilobytes</i18n:text>
                             </xsl:when>
                             <xsl:when test="@SIZE &lt; 1024 * 1024 * 1024">
-                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
+                                <xsl:choose>
+                                    <xsl:when test="$locale='de'">
+                                        <xsl:value-of select="translate(substring(string(@SIZE div (1024 * 1024)),1,5), '.', ',')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="substring(string(@SIZE div (1024 * 1024)),1,5)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.size-megabytes</i18n:text>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
+                                <xsl:choose>
+                                    <xsl:when test="$locale='de'">
+                                        <xsl:value-of select="translate(substring(string(@SIZE div (1024 * 1024 * 1024)),1,5), '.', ',')"/>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="substring(string(@SIZE div (1024 * 1024 * 1024)),1,5)"/>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.size-gigabytes</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>

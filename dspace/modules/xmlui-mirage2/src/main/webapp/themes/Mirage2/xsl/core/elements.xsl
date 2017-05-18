@@ -705,7 +705,6 @@
         </xsl:element>
     </xsl:template>
 
-
     <xsl:template match="dri:div/dri:head" priority="3">
         <xsl:choose>
             <xsl:when test="../@n = 'item-related'">
