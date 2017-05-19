@@ -7,7 +7,10 @@
 			<i18n:text>xmlui.static.ring.title-06-07</i18n:text>
 		</head>
 		<div class="media" rend="copy">
-			<i18n:text>xmlui.static.ring.preambel</i18n:text>	
+			<div class="media-body" rend="copy">
+				<i18n:text>xmlui.static.ring.preambel</i18n:text>
+				<!--<i18n:text>xmlui.static.ring.playlist-06-07</i18n:text> -->
+			</div>		
 			<i18n:text>xmlui.static.ring.poster-06-07</i18n:text>
 		</div>
 		<div>

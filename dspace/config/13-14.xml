@@ -8,6 +8,10 @@
 		</head>
 		<div class="media" rend="copy">
 			<i18n:text>xmlui.static.ring.preambel</i18n:text>	
+			<div class="media-body" rend="copy">
+				<i18n:text>xmlui.static.ring.preambel</i18n:text>
+				<i18n:text>xmlui.static.ring.playlist-13-14</i18n:text>
+			</div>	
 			<i18n:text>xmlui.static.ring.poster-13-14</i18n:text>
 		</div>
 		<div>
