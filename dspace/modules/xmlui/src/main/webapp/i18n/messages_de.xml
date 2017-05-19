@@ -4,10 +4,10 @@
     detailed in the LICENSE and NOTICE files at the root of the source
     tree and available online at
 
-    http://www.dspace.org/license/
+    //www.dspace.org/license/
 
 -->
-<catalogue xml:lang="de" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<catalogue xml:lang="de" xmlns:i18n="//apache.org/cocoon/i18n/2.1">
 
     <!--
 		The format used by all keys is as follows
@@ -794,7 +794,7 @@
     <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
     <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Ein Fehler ist aufgetreten ... {0}</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.head">Creative Commons Lizenz</message>
-    <message key="xmlui.Submission.submit.CCLicenseStep.info1">Wenn Sie eine  <a href="http://creativecommons.org/">Creative Commons</a> Lizenz zu Ihrem Dokument hinzufügen: <strong>Creative Commons Lizenzen legen fest, wie ihr Werk genutzt werden kann.</strong> Wenn Sie eine Creative Commons Lizenz hinzufügen möchten, klicken sie auf die untere Schaltfläche. Sie werden dann zur Creative Commons Seite weitergeleite, wo Sie aus verschiedenen Lizenzmodellen auswählen können.  Nachdem Sie eine Lizenz ausgewählt haben, kehren Sie zu dieser Seite zurück.</message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.info1">Wenn Sie eine  <a href="//creativecommons.org/">Creative Commons</a> Lizenz zu Ihrem Dokument hinzufügen: <strong>Creative Commons Lizenzen legen fest, wie ihr Werk genutzt werden kann.</strong> Wenn Sie eine Creative Commons Lizenz hinzufügen möchten, klicken sie auf die untere Schaltfläche. Sie werden dann zur Creative Commons Seite weitergeleite, wo Sie aus verschiedenen Lizenzmodellen auswählen können.  Nachdem Sie eine Lizenz ausgewählt haben, kehren Sie zu dieser Seite zurück.</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Wählen Sie eine Lizenz</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Weiter zur Creative Commons Seite, um eine Lizenz auszuwählen.</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.license">Lizenz</message>
@@ -2041,15 +2041,15 @@
 
     <!-- structural.xsl -->
     <message key="xmlui.dri2xhtml.structural.footer-promotional">
-        <a href="http://di.tamu.edu" id="ds-logo-link">
+        <a href="//di.tamu.edu" id="ds-logo-link">
             <span id="ds-footer-logo">&#160;</span>
         </a>
         <p>
             Diese Seite verwendet Manakin, das neue Univerlag Front-End, welches von den Texas A&amp;M University
             Libraries entwickelt wurde. Das Front-End ist extrem flexibel und kann über Manakin Aspekte und XLS basierte Themen angepasst werden.
             Weiterführende Informationen finden Sie unter:
-            <a href="http://di.tamu.edu">http://di.tamu.edu</a> und
-            <a href="http://dspace.org">http://dspace.org</a>
+            <a href="//di.tamu.edu">//di.tamu.edu</a> und
+            <a href="//dspace.org">//dspace.org</a>
         </p>
     </message>
     <message key="xmlui.dri2xhtml.structural.contact-link">Kontakt</message>
@@ -2104,7 +2104,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Anzeige</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Beschreibung</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Öffnen</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Zum Dokument</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Zu diesem Dokument gibt es keine Dateien.</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">Bytes</message>
@@ -2685,13 +2685,12 @@
     <message key="xmlui.mirage2.itemSummaryView.Collections">Enthalten in</message>
     <message key="xmlui.dri2xhtml.structural.login_register">Anmelden</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-otherparts">Zugehörige Veröffentlichungen</message>
-    <message key="xmlui.item.publisher.order">Beim Verlag bestellen</message>
+    <message key="xmlui.item.publisher.order">Beim Fremdverlag bestellen</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.add">+</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">+</message>
     <message key="xmlui.ChoiceLookupTransformer.lookup">Lookup</message>
     <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">löschen</message>
     <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">löschen</message>
-
 
 
     <!-- different views of lists -->
@@ -2757,7 +2756,7 @@
 
 
             <h2>Postanschrift</h2>
-            <p class="address"><a target="_blank" href="https://goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
+            <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
             <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
             <p class="address"><span class="icon-body">37073 Göttingen</span></p>
@@ -2805,7 +2804,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.static.aboutus">
         <div>
             <p>
-                Der Universitätsverlag Göttingen gehört zum Bereich <a  class="extern-link" target="_blank" href="http://www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
+                Der Universitätsverlag Göttingen gehört zum Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
                 der Universität Göttingen anzubieten:
             </p>
 
@@ -2823,7 +2822,7 @@ Das Team vom Universitätsverlag Göttingen
 
             <p>Der Universitätsverlag Göttingen offeriert ein innovatives Publikationsmodell, das Ihnen als Autor neue Wahlfreiheiten bzgl. der freien Verfügbarmachung der elektronischen
                 Ausgabe eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
-                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Daher machen wir parallel  alle Publikationen über den <a class="extern-link" target="_blank" href="http://webdoc.sub.gwdg.de/" title="GOEDOC">GOEDOC</a> Server online frei zugänglich (Open Access), bei denen die Rechtslage dies erlaubt. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden außerdem über den Publikationsserver <a  class="extern-link" href="http://goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
+                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Daher machen wir parallel  alle Publikationen über den <a class="extern-link" target="_blank" href="//webdoc.sub.gwdg.de/" title="GOEDOC">GOEDOC</a> Server online frei zugänglich (Open Access), bei denen die Rechtslage dies erlaubt. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden außerdem über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
             </p>
 
             <p>Alle Publikationen im Universitätsverlag Göttingen sind über den OPAC der SUB erschlossen und
@@ -2838,12 +2837,12 @@ Das Team vom Universitätsverlag Göttingen
                 <div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/goescholar.ico"></img>
-                        <h4><a class="extern-link" href="http://goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
+                        <h4><a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
                         <p>Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/ediss.ico"></img>
-                        <h4><a  class="extern-link" href="http://ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
+                        <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
                         <p>elektronische Dissertationen der Universität Göttingen</p>
                     </div>
                     <div class="col-sm-4">
@@ -2856,17 +2855,17 @@ Das Team vom Universitätsverlag Göttingen
                 <div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/openaire.ico"></img>
-                        <h4><a href="http://www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
+                        <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
                         <p>Open Access Infrastructure for Research in Europe</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/coar-logo.png"></img>
-                        <h4><a href="http://coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
+                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
                         <p>Confederation of Open Access Repositories</p>
                     </div>
                     <div class="col-sm-4">
                         <span class="iconplace">SUB</span>
-                        <h4><a href="http://rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">SUB</a></h4>
+                        <h4><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">SUB</a></h4>
                         <p>Weitere Projekte der SUB</p>
                     </div>
                 </div>
@@ -2894,51 +2893,51 @@ Das Team vom Universitätsverlag Göttingen
 
         <!--<dl class="dl-horizontal">
 			<dt>Theologische Fakultät</dt>
-			<dd>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"></a><span class="glyphicon glyphicon-home">
-				<a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;</a></span></dd>
+			<dd>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Martin_Tamcke"></a><span class="glyphicon glyphicon-home">
+				<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/55424.html"> &#160;</a></span></dd>
 
 			<dt>Juristische Fakultät</dt>
-			<dd>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"> &#160;</a></dd>
-			<dd>Prof. Dr. Joachim Münch <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"> &#160;</a></span></dd>
+			<dd>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"> &#160;</a></dd>
+			<dd>Prof. Dr. Joachim Münch <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"> &#160;</a></span></dd>
 
 			<dt>Universitätsmedizin Göttingen (UMG)</dt>
-			<dd>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"> &#160;</a></dd>
+			<dd>Prof. Dr. Claudia Wiesemann <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"> &#160;</a></dd>
 
 			<dt>Philosophische Fakultät</dt>
-			<dd>Prof. Dr. Manfred Jakubowski-Tiessen <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> &#160;</a></span></dd>
-			<dd>Prof. Dr. Regina Bendix <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"> &#160;</a><a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"> &#160;</a></span></dd>
+			<dd>Prof. Dr. Manfred Jakubowski-Tiessen <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> &#160;</a></span></dd>
+			<dd>Prof. Dr. Regina Bendix <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"> &#160;</a><a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"> &#160;</a></span></dd>
 
 			<dt>Fakultät für Mathematik und Informatik</dt>
-			<dd>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"> &#160;</a></dd>
+			<dd>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"> &#160;</a><a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"> &#160;</a></dd>
 
 			<dt>Fakultät für Physik</dt>
 			<dd>apl. Prof. Dr. Martin Rein </dd>
 
 	<dt>Fakultät für Chemie</dt>
-	<dd>Prof. Dr. Konrad Koszinowski <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Konrad Koszinowski <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"> &#160;</a></span></dd>
 
 	<dt>Fakultät für Geowissenschaften und Geographie</dt>
-	<dd>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"> &#160;</a>
-		<span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"> &#160;</a>
+		<span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"> &#160;</a></span></dd>
 
 	<dt>Fakultät für Biologie und Psychologie</dt>
-	<dd>Prof. Dr. Erwin Bergmeier <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Erwin Bergmeier <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"> &#160;</a></span></dd>
 
 	<dt>Fakultät für Forstwissenschaften und Waldökologie</dt>
-	<dd>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"> &#160;</a><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"> &#160;</a></dd>
+	<dd>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Norbert_Bartsch"> &#160;</a><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76117.html"> &#160;</a></dd>
 
 	<dt>Fakultät für Agrarwissenschaften</dt>
 	<dd>Prof. Dr. Martina Gerken</dd>
 
 	<dt>Wirtschaftswissenschaftliche Fakultät</dt>
-	<dd>Prof. Dr. Matthias Schumann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Matthias Schumann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"> &#160;</a></span></dd>
 
 	<dt>Sozialwissenschaftliche Fakultät</dt>
-	<dd>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></dd>
-	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></dd>
+	<dd>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> &#160;</a></span></dd>
+	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></dd>
 
 	<dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
-	<dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
+	<dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
 	</dd>
 </dl>
 -->
@@ -2946,15 +2945,15 @@ Das Team vom Universitätsverlag Göttingen
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Theologische Fakultät</h4>
-                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
-                    <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;<span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
+                    <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/55424.html"> &#160;<span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
             <div class="col-sm-6">
 
                 <h4 class="list-item-header">Juristische Fakultät</h4>
-                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
-                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
         </div>
@@ -2964,41 +2963,39 @@ Das Team vom Universitätsverlag Göttingen
             <div class="col-sm-6">
                 <h4 class="list-item-header">Universitätsmedizin Göttingen (UMG)</h4>
                 <p>Prof. Dr. Claudia Wiesemann
-                    <span class="orcid">
-                        <a href="//orcid.org/0000-0002-8260-0346" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
-                            <small>ID</small>
-                        </a>
-                    </span>
+                    <a href="//orcid.org/0000-0002-8260-0346" target="_blank" title="Personen-Profil (ORCID)">
+                        <i class="icon-info-circled orcid"></i>
+                    </a>
 
-                    <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
+                    <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Philosophische Fakultät</h4>
-                <p>Prof. Dr. Manfred Jakubowski-Tiessen <a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Manfred Jakubowski-Tiessen <a title="Homepage" target="_blank" href="//www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> <span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Mathematik und Informatik</h4>
-                <p>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Physik</h4>
-                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="http://www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
+                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Chemie</h4>
-                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Geowissenschaften und Geographie</h4>
-                <p>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
-                    <a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
+                    <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
         </div>
@@ -3006,11 +3003,11 @@ Das Team vom Universitätsverlag Göttingen
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Biologie und Psychologie</h4>
-                <p>Prof. Dr. Erwin Bergmeier <a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Erwin Bergmeier <a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Forstwissenschaften und Waldökologie</h4>
-                <p>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Norbert_Bartsch"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76117.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
@@ -3021,25 +3018,25 @@ Das Team vom Universitätsverlag Göttingen
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Wirtschaftswissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
-                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></p>
+                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
+                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</h4>
                 <p><nobr>Dr. Wolfram Horstmann</nobr>
-                    <span class="orcid">
-                        <a href="//orcid.org/0000-0001-8673-6104" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
-                            <small>ID</small>
-                        </a>
-                    </span>
-                    <a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
+
+                    <a href="//orcid.org/0000-0001-8673-6104" target="_blank" itle="Personen-Profil (ORCID)">
+                        <i class="icon-info-circled orcid"></i>
+                    </a>
+
+                    <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
@@ -3077,7 +3074,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.static.user.rights">
         <div>
             <p>
-                Die frei zugänglichen elektronischen Ausgaben unserer Publikationen sind in der Regel unter der <a href="http://creativecommons.org/licenses/by/4.0/deed.de" class="extern-link" target="_blank">Creatve Commons License mit Pflicht zur Namensnennung</a> bereitgestellt. Wenn nicht anders gekennzeichnet, dürfen die Nutzer diese Dokumente unentgeltlich herunterladen, speichern und kopieren. Bei Weiterverwendung des Materials müssen angemessene Urheber- und Rechteangaben gemacht und Änderungen gekennzeichnet werden.
+                Die frei zugänglichen elektronischen Ausgaben unserer Publikationen sind in der Regel unter der <a href="//creativecommons.org/licenses/by/4.0/deed.de" class="extern-link" target="_blank">Creatve Commons License mit Pflicht zur Namensnennung</a> bereitgestellt. Wenn nicht anders gekennzeichnet, dürfen die Nutzer diese Dokumente unentgeltlich herunterladen, speichern und kopieren. Bei Weiterverwendung des Materials müssen angemessene Urheber- und Rechteangaben gemacht und Änderungen gekennzeichnet werden.
             </p>
             <p>
                 Diese Regel gelten nicht, wenn einer Publikation eine andere Creative Commons License explizit beigefügt ist.
@@ -3123,7 +3120,7 @@ Das Team vom Universitätsverlag Göttingen
             </p>
 
             <p>
-                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="http://creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
+                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="//creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
             </p>
 
 
@@ -3240,7 +3237,7 @@ Das Team vom Universitätsverlag Göttingen
                     Die VG-Wort verwaltet als nicht gewinnorientierte Organisation treuhänderisch die Urheberrechte von Autoren
                     und Herausgebern. Sie nimmt die gesetzlich festgeschriebenen Tantiemen aus den Zweitnutzungsrechten ein
                     und gibt sie an die Rechteinhaber der gemeldeten Werke weiter.
-                    <a href="http://www.vgwort.de"  class="extern-link" target="_blank">VG-Wort</a>
+                    <a href="//www.vgwort.de"  class="extern-link" target="_blank">VG-Wort</a>
 
                 </p>
 
@@ -3251,13 +3248,13 @@ Das Team vom Universitätsverlag Göttingen
 
                 <p>
                     Um Tantiemen zu erhalten müssen Sie als Autor sich bei der VG-Wort als Bezugsberechtigter anmelden:
-                    <a href="http://www.vgwort.de/teilnahmemoeglichkeiten/bezugsberechtigte.html"  class="extern-link" target="_blank">VG Wort Bezugsberechtigte</a>
+                    <a href="//www.vgwort.de/teilnahmemoeglichkeiten/bezugsberechtigte.html"  class="extern-link" target="_blank">VG Wort Bezugsberechtigte</a>
 
                 </p>
 
                 <p>
                     Weitere Informationen erhalten Sie unter
-                    <a href="http://www.vgwort.de/verguetungen/auszahlungen/wissenschaftliche-publikationen.html" target="blank">VG Wort Wissenschaftliche Publikationen</a>.
+                    <a href="//www.vgwort.de/verguetungen/auszahlungen/wissenschaftliche-publikationen.html" target="blank">VG Wort Wissenschaftliche Publikationen</a>.
                 </p>
 
                 <p>
@@ -3266,7 +3263,7 @@ Das Team vom Universitätsverlag Göttingen
                     Da der Universitätsverlag derzeit nicht an dem Zählverfahren der VG-Wort teilnimmt, steht Ihnen als Autor eine
                     sogenannte „Sonderausschüttung“ bei Texten im Internet zur Verfügung.
                     Bitte beachten Sie auch hierzu die Informationsseiten der VG-Wort.
-                    <a href="http://www.vgwort.de/verguetungen/auszahlungen/texte-im-internet.html" class="extern-link" target="_blank">Texte im Internet</a>
+                    <a href="//www.vgwort.de/verguetungen/auszahlungen/texte-im-internet.html" class="extern-link" target="_blank">Texte im Internet</a>
 
                 </p>
 
@@ -3427,12 +3424,12 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.static.policy">
         <div class="ds-static-div">
             <p>
-                <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Leitlinien als PDF</a>
+                <i class="icon-file-pdf"></i><a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien</a>
                 <span class="pull-right">Göttingen im Mai 2015</span>
             </p>
             <p>
 
-                Der Universitätsverlag der Georg-August-Universität Göttingen veröffentlicht seit Sommer 2003 Fachpublikationen von Wissenschaftlern aller Disziplinen und bietet die Möglichkeit des Open Access-Publizierens, also eine für Nutzer kosten- und beschränkungsfreie Bereitstellung von Inhalten im Internet. Zumeist wird die elektronische Ausgabe durch ein gedrucktes Werk ergänzt, das über den Buchhandel erhältlich ist. Diese hybride Bereitstellung verbessert die Wahrnehmung und Nutzung von Publikationen und macht insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlerinnen und Wissenschaftlern weltweit sichtbar. Bei Open Access Publikationen behalten Autoren die Kontrolle über die Nutzungsrechte an ihren Publikationen. Die Georg-August-Universität unterstützt mit ihrer Resolution von 2005 das <a href="http://www.sub.uni-goettingen.de/elektronisches-publizieren/open-access/" class="extern-link" target="_blank">Open Access</a> Prinzip. Der Universitätsverlag erwartet daher von seinen Autoren, sich auf das Open Access-Publizieren einzulassen. Die elektronischen Publikationen des Universitätsverlags liegen auf den von der SUB Göttingen betreuten Dokumentenservern der Universität Göttingen bereit. Publikationen aus der Sparte „Universitätsdrucke“ sind auf <a href="http://webdoc.sub.gwdg.de/">GOEDOC</a> archiviert, die begutachteten Publikationen in der Regel auf <a href="http://goedoc.uni-goettingen.de/goescholar/" class="extern-link" target="_blank">GoeScholar</a>
+                Der Universitätsverlag der Georg-August-Universität Göttingen veröffentlicht seit Sommer 2003 Fachpublikationen von Wissenschaftlern aller Disziplinen und bietet die Möglichkeit des Open Access-Publizierens, also eine für Nutzer kosten- und beschränkungsfreie Bereitstellung von Inhalten im Internet. Zumeist wird die elektronische Ausgabe durch ein gedrucktes Werk ergänzt, das über den Buchhandel erhältlich ist. Diese hybride Bereitstellung verbessert die Wahrnehmung und Nutzung von Publikationen und macht insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlerinnen und Wissenschaftlern weltweit sichtbar. Bei Open Access Publikationen behalten Autoren die Kontrolle über die Nutzungsrechte an ihren Publikationen. Die Georg-August-Universität unterstützt mit ihrer Resolution von 2005 das <a href="//www.sub.uni-goettingen.de/elektronisches-publizieren/open-access/" class="extern-link" target="_blank">Open Access</a> Prinzip. Der Universitätsverlag erwartet daher von seinen Autoren, sich auf das Open Access-Publizieren einzulassen. Die elektronischen Publikationen des Universitätsverlags liegen auf den von der SUB Göttingen betreuten Dokumentenservern der Universität Göttingen bereit. Publikationen aus der Sparte „Universitätsdrucke“ sind auf <a href="//webdoc.sub.gwdg.de/">GOEDOC</a> archiviert, die begutachteten Publikationen in der Regel auf <a href="//goedoc.uni-goettingen.de/goescholar/" class="extern-link" target="_blank">GoeScholar</a>
             </p>
 
 
@@ -3452,7 +3449,7 @@ Das Team vom Universitätsverlag Göttingen
 
                 <li>Autoren und Herausgeber haben das Recht, das Werk in seiner Gesamtheit oder in Teilen auf persönlichen Homepages und in fachlichen oder institutionellen Online-Archiven in identischer Form der Öffentlichkeit zur Verfügung zu stellen. Darüber hinaus können nach Absprache mit dem Verlag Teile des Werkes auch anderweitig gedruckt veröffentlicht werden. Generell ist dabei auf die Erstveröffentlichung und Bezugsmöglichkeit der gedruckten Edition im Universitätsverlag hinzuweisen.</li>
 
-                <li>Die elektronische Ausgabe wird unter einer Publikationslizenz bereitgestellt. In der Regel wird im Universitätsverlag Göttingen die <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons License 4.0 (CC BY-SA 4.0) International</a> mit Pflicht zur Namensnennung und Weitergabe unter gleichen Bedingungen verwendet.</li>
+                <li>Die elektronische Ausgabe wird unter einer Publikationslizenz bereitgestellt. In der Regel wird im Universitätsverlag Göttingen die <a href="//creativecommons.org/licenses/by-sa/4.0/deed.de">Creative Commons License 4.0 (CC BY-SA 4.0) International</a> mit Pflicht zur Namensnennung und Weitergabe unter gleichen Bedingungen verwendet.</li>
 
             </ol>
         </div>
@@ -3472,13 +3469,13 @@ Das Team vom Universitätsverlag Göttingen
                 Publikationsserver GOEDOC der Universität Göttingen online frei angeboten (Open Access). Hier finden Sie die
                 <a href="/static/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
                 (In übersichtlicher Form finden Sie unsere Politik bezüglich der Archivierung von Pre- und Postprints in Open Access-Repositorien
-                im Verzeichnis <a href="http://www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" class="extern-link" target="_blank">Sherpa/RoMEO</a>.)
+                im Verzeichnis <a href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" class="extern-link" target="_blank">Sherpa/RoMEO</a>.)
             </p>
         </div>
         <div>
             <p>
                 Resolution des Präsidiums der Georg-August-Universität Göttingen:
-                <a href="http://www.sub.uni-goettingen.de/fileadmin/media/texte/informationsversorgung_z/epu/oa-policy_goettingen-edu_de_110211.pdf">
+                <a href="//www.sub.uni-goettingen.de/fileadmin/media/texte/informationsversorgung_z/epu/oa-policy_goettingen-edu_de_110211.pdf">
                     »Die Open Access-Politik der Universität Göttingen« (PDF)</a>
 
             </p>
@@ -3491,35 +3488,35 @@ Das Team vom Universitätsverlag Göttingen
 
             <p>
                 Die Deutsche UNESCO-Kommission, das Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (hbz) und Wikimedia Deutschland haben im November 2014
-                einen <a href="http://www.unesco.de/leitfaden_open_content.html">"Open Content-Leitfaden"</a> in englischer Sprache herausgegeben. Darin werden Nutzer und Urheber von online-Publikationen über ihre Rechte und Pflichten
+                einen <a href="//www.unesco.de/leitfaden_open_content.html">"Open Content-Leitfaden"</a> in englischer Sprache herausgegeben. Darin werden Nutzer und Urheber von online-Publikationen über ihre Rechte und Pflichten
                 informiert. Ein Schwerpunkt liegt dabei auf der international weit verbreiteten Lizenz Creative Commons.
             </p>
         </div>
 
         <div class="media">
             <div class="media-left">
-                <a href="http://creativecommons.org/" target="_blank">
+                <a href="//creativecommons.org/" target="_blank">
                     <img class="media-object" src="/static/icons/cc.logo.large.png" alt="CreativeCommons logo"></img>
                 </a>
             </div>
             <div class="media-body">
                 <h4 class="media-heading">Creative Commons Lizenz</h4>
                 <p>Die elektronische Ausgabe Ihrer Verlagspublikation wird in der Regel unter einer Publikationslizenz wie
-                    z.B. der  <a href="http://creativecommons.org/" class="extern-link" target="_blank">Creative Commons Lizenz</a> bereitgestellt. In der Regel wird im Universitätsverlag Göttingen
-                    die <a href="http://creativecommons.org/licenses/by-sa/4.0/" class="extern-link" target="_blank">Creative Commons License 4.0</a> (Namensnennung - Weitergabe unter gleichen Bedingungen) verwendet..</p>
+                    z.B. der  <a href="//creativecommons.org/" class="extern-link" target="_blank">Creative Commons Lizenz</a> bereitgestellt. In der Regel wird im Universitätsverlag Göttingen
+                    die <a href="//creativecommons.org/licenses/by-sa/4.0/" class="extern-link" target="_blank">Creative Commons License 4.0</a> (Namensnennung - Weitergabe unter gleichen Bedingungen) verwendet..</p>
             </div>
         </div>
 
         <h3>Weiteres zu Open Access</h3>
         <div class="media">
             <div class="media-left">
-                <a href="http://oaspa.org/" class="extern-link" target="_blank">
+                <a href="//oaspa.org/" class="extern-link" target="_blank">
                     <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
                 </a>
             </div>
             <div class="media-body">
                 <h4 class="media-heading">Open Access Scholarly Publishers Association</h4>
-                <p>Die internationale Vereinigung der wissenschaftlichen Open Access Verlage (<a href="http://oaspa.org/" class="extern-link" target="_blank">OASPA</a>) setzt sich zum Ziel, die Interessen der OA-Zeitschriften- und Buchverlage aller Wissensschaftsdisziplinen weltweit zu unterstützen und zu repräsentieren.
+                <p>Die internationale Vereinigung der wissenschaftlichen Open Access Verlage (<a href="//oaspa.org/" class="extern-link" target="_blank">OASPA</a>) setzt sich zum Ziel, die Interessen der OA-Zeitschriften- und Buchverlage aller Wissensschaftsdisziplinen weltweit zu unterstützen und zu repräsentieren.
                     Dafür stellt die Vereinigung ein Forum zum Austausch für alle wichtigen Informationen und Erfahrungswerte bereit, setzt Standards bei OA, entwickelt und verbessert Geschäfts- und Publikationsmodelle für OA, plädiert für den Gold OA-Weg, unterrichtet die Wissenschaftsgemeinden und die breite Öffentlichkeit über die Vorteile von OA und treibt mit Innovationen im Bereich OA diese Form der wissenschaftlichen Publikationsweise voran.</p>
                 ...
             </div>
@@ -3529,13 +3526,13 @@ Das Team vom Universitätsverlag Göttingen
 
         <div class="media">
             <div class="media-left">
-                <a href="http://www.open-access.net/" target="_blank">
+                <a href="//www.open-access.net/" target="_blank">
                     <img class="media-object extern-link" src="/static/icons/OpenAccess_Logo.gif" alt="OAR"></img>
                 </a>
             </div>
             <div class="media-body">
                 <h4 class="media-heading">Open Access Plattform</h4>
-                <p>Die Informationsplattform <a href="http://open-access.net" class="extern-link" target="_blank">open-access.net</a> unterstützt mit
+                <p>Die Informationsplattform <a href="//open-access.net" class="extern-link" target="_blank">open-access.net</a> unterstützt mit
                     praxisnahen Handreichungen Wissenschaftler(innen) und Institutionen bei der konkreten Umsetzung
                     von Open Access. Sie wird von den Universitäten Bielefeld, Göttingen und Konstanz sowie der Freien Universität
                     Berlin betrieben. open-access.net wird anhand der Rückmeldungen und Bedürfnisse der Nutzerinnen und Nutzer weiterentwickelt - und
@@ -3545,13 +3542,13 @@ Das Team vom Universitätsverlag Göttingen
         </div>
         <div class="media">
             <div class="media-left">
-                <a href="http://www.oapen.org/" target="_blank">
+                <a href="//www.oapen.org/" target="_blank">
                     <img class="media-object" src="/static/icons/oapen.logo.png" alt="OAPEN"></img>
                 </a>
             </div>
             <div class="media-body">
                 <h4 class="media-heading">Open Access Publishing in European Networks</h4>
-                <p>Sechs europäische Universitätsverlage, darunter auch der Universitätsverlag Göttingen, haben sich im EU-geförderten Projekt <a href="http://www.oapen.org/" class="extern-link" target="_blank">OAPEN</a> zusammengeschlossen und bereits zahlreiche <a href="http://www.oapen.org/join.asp" class="extern-link" target="_blank">Kooperationspartner</a> gewonnen. Im Rahmen von OAPEN wollen die beteiligten Verlage das Open Access Publizieren von Büchern, speziell aus den Geistes-, Sozial- und Gesellschaftswissen voranbringen. Die praktischen Entwicklungen wie eine Plattform oder Geschäfts- und Erlösmodelle für qualitätsgeprüfte Open Access Medien werden durch verschiedene wissenschaftliche Studien ergänzt. Die Studien sollen Aufschluss darüber bringen, wie Open Access in den genannten Wissenschaftsbereichen gefördert und wie den Chancen und Risiken des Open Access Publizierens angemessen begegnet werden kann.
+                <p>Sechs europäische Universitätsverlage, darunter auch der Universitätsverlag Göttingen, haben sich im EU-geförderten Projekt <a href="//www.oapen.org/" class="extern-link" target="_blank">OAPEN</a> zusammengeschlossen und bereits zahlreiche <a href="//www.oapen.org/join.asp" class="extern-link" target="_blank">Kooperationspartner</a> gewonnen. Im Rahmen von OAPEN wollen die beteiligten Verlage das Open Access Publizieren von Büchern, speziell aus den Geistes-, Sozial- und Gesellschaftswissen voranbringen. Die praktischen Entwicklungen wie eine Plattform oder Geschäfts- und Erlösmodelle für qualitätsgeprüfte Open Access Medien werden durch verschiedene wissenschaftliche Studien ergänzt. Die Studien sollen Aufschluss darüber bringen, wie Open Access in den genannten Wissenschaftsbereichen gefördert und wie den Chancen und Risiken des Open Access Publizierens angemessen begegnet werden kann.
                 </p>
 
             </div>
@@ -3560,10 +3557,10 @@ Das Team vom Universitätsverlag Göttingen
 
         <div class="media">
             <div class="media-left">
-                <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+                <a href="//www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
             </div>
             <div class="media-body">
-                Das Goettingen Journal for International Law (<a href="http://www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="http://www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>, dem <a href="http://inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
+                Das Goettingen Journal for International Law (<a href="//www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="//www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>, dem <a href="//inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
             </div>
         </div>
 
@@ -3592,7 +3589,7 @@ Das Team vom Universitätsverlag Göttingen
                 <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
             </p>
             <p class="address">
-                <a href="http://univerlag.uni-goettingen.de"><i class="icon-globe"></i> http://univerlag.uni-goettingen.de</a>
+                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
             </p>
             <p class="address">
                 <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3624,7 +3621,7 @@ Das Team vom Universitätsverlag Göttingen
                     <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
                 </p>
                 <p class="address">
-                    <a href="http://univerlag.uni-goettingen.de"><i class="icon-globe"></i> http://univerlag.uni-goettingen.de</a>
+                    <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
                 </p>
                 <p class="address">
                     <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3639,11 +3636,11 @@ Das Team vom Universitätsverlag Göttingen
 
             <h3>Rechtliche Hinweise zur Haftung</h3>
 
-            <p>Bitte nehmen Sie unseren <a href="http://www.disclaimer.de/disclaimer.htm?farbe=FFFFFF/000000/000000/000000" class="extern-link" target="_blank">Haftungsausschluss</a> zur Kenntnis.  (Der vorliegende Haftungssauschlusstext basiert auf dem kostenlosen Dienst von http://www.disclaimer.de).</p>
+            <p>Bitte nehmen Sie unseren <a href="//www.disclaimer.de/disclaimer.htm?farbe=FFFFFF/000000/000000/000000" class="extern-link" target="_blank">Haftungsausschluss</a> zur Kenntnis.  (Der vorliegende Haftungssauschlusstext basiert auf dem kostenlosen Dienst von //www.disclaimer.de).</p>
             <h3>Datenschutzhinweis</h3>
             <p>
                 Diese Website erfasst anonymisierte Daten zur Nutzung.<br />
-                Zustimmung verweigern: <a href="http://piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de"  class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
+                Zustimmung verweigern: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de"  class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
             </p>
         </div>
     </message>
@@ -3661,23 +3658,26 @@ Das Team vom Universitätsverlag Göttingen
 
     <!-- Collection texts -->
     <message key="xmlui.collection.serieCEDPAL.introduction">
-        <h3>CEDPAL Series</h3>
+        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanisch"></img></a> <a href="#" data-toggle="collapse" data-target="#port"><img  class="flag" src="/static/icons/portugal-flag.png" title="portugiesisch"></img></a></h3>
         <p>
 
-            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty's Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
+            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty's Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
             The Cedpal Series seeks to make accessible the Centre´s research projects (transnational, national and individual ones) and other academic activities (such as its series of lectures and seminars as well as its teaching courses on criminal law and justice) to criminal law students, researchers, professors and lawyers. The Series also provides a place to publish high quality works of researchers somehow linked to the Centre.
         </p>
-        <h3>Serie CEDPAL</h3>
-        <p>
-            El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
-            Con la Serie de publicaciones CEDPAL, iniciada en febrero de 2016, se busca poner al alcance de estudiantes, investigadores, profesores y prácticos de las ciencias criminales los resultados de las investigaciones del Centro (proyectos transnacionales, nacionales e individuales), así como de sus actividades de enseñanza ("Escuela de Verano en Ciencias Criminales y Dogmática Penal alemana"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Asimismo, la Serie ofrece un espacio propicio para que investigadores externos al Centro, pero vinculados a él, publiquen sus trabajos de investigación.<br />
-        </p>
-
-        <h3>Série CEDPAL</h3>
-        <p>
-            O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
-            Com a Série de publicações CEDPAL, iniciada em fevereiro de 2016, busca-se colocar ao alcance de estudantes, pesquisadores, professores e profissionais das ciências criminais os resultados das pesquisas do Centro (projetos transnacionais, nacionais e individuais), assim como de sus atividades de ensino ("Escola de Verão em Ciências Criminais e Dogmática Penal alemã"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Outrossim, a Série oferece um espaço propício para que pesquisadores externos ao Centro, mas vinculados a ele, publiquem seus trabalhos de pesquisa.<br />
-        </p>
+        <div id="spain" class="collapse">
+            <h3>Serie CEDPAL</h3>
+            <p>
+                El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
+                Con la Serie de publicaciones CEDPAL, iniciada en febrero de 2016, se busca poner al alcance de estudiantes, investigadores, profesores y prácticos de las ciencias criminales los resultados de las investigaciones del Centro (proyectos transnacionales, nacionales e individuales), así como de sus actividades de enseñanza ("Escuela de Verano en Ciencias Criminales y Dogmática Penal alemana"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Asimismo, la Serie ofrece un espacio propicio para que investigadores externos al Centro, pero vinculados a él, publiquen sus trabajos de investigación.<br />
+            </p>
+        </div>
+        <div id="port" class="collapse">
+            <h3>Série CEDPAL</h3>
+            <p>
+                O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
+                Com a Série de publicações CEDPAL, iniciada em fevereiro de 2016, busca-se colocar ao alcance de estudantes, pesquisadores, professores e profissionais das ciências criminais os resultados das pesquisas do Centro (projetos transnacionais, nacionais e individuais), assim como de sus atividades de ensino ("Escola de Verão em Ciências Criminais e Dogmática Penal alemã"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Outrossim, a Série oferece um espaço propício para que pesquisadores externos ao Centro, mas vinculados a ele, publiquem seus trabalhos de pesquisa.<br />
+            </p>
+        </div>
         <div class="address">
             <p>
                 Editor-in-Chief / Director of the Series:
@@ -3691,7 +3691,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gssca.introduction">
         <p>
-            Diese Reihe ist die Fortsetzung von "<a href="http://univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
+            Diese Reihe ist die Fortsetzung von "<a href="//univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
         </p>
         <p>ISSN (Print): 2199-5346</p>
         <p>ISSN (Online): 2512-6881</p>
@@ -3716,13 +3716,13 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.zeltf.introduction">
         <p>
-            Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="http://www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen.
+            Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen.
         </p>
     </message>
 
     <message key="xmlui.collection.annalsBiologie.introduction">
         <p>
-            Die <a href="http://www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
+            Die <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
         </p>
         <p>ISSN (Print): 1863-0197</p>
         <p>ISSN (Online): 2512-5923</p>
@@ -3734,7 +3734,7 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             The series „interKULTUR European -Chinese Intercultural Studies“ consists of teaching material for intercultural studies in higher education and research results of such studies. Languages covered are German, Chinese and English. Topics range as wide as translations in economics, intercultural mass communication or the cultural concept of „the Other". The overall focus of the series' volumes lies on their intercultural approach.
         </p>
-        <p>Except the Online course Volume 3 all publications will be available in print through the German booktrade. Due to licensing restrictions not all publications will be available as an Open Access version. However they can be browsed through <a class="extern-link" target="_blank" href="http://books.google.de">Google Book Search</a>. They have been developed during the project <a target="_blank" href="http://interkultur-asialink.de">„interKULTUR“</a> under the programme Asia-Link* that was launched by the European Commission to foster regional and multilateral networking between higher education institutions in EU member States and South Asia, South-East Asia and China.
+        <p>Except the Online course Volume 3 all publications will be available in print through the German booktrade. Due to licensing restrictions not all publications will be available as an Open Access version. However they can be browsed through <a class="extern-link" target="_blank" href="//books.google.de">Google Book Search</a>. They have been developed during the project <a target="_blank" href="//interkultur-asialink.de">„interKULTUR“</a> under the programme Asia-Link* that was launched by the European Commission to foster regional and multilateral networking between higher education institutions in EU member States and South Asia, South-East Asia and China.
         </p>
         <p>The Asia-Link Programme was launched at the beginning of 2002 as an initiative by the European Union (EU) to foster regional and multilateral networking between higher education institutions in EU Member States and South Asia, South-East Asia and China. Asia-Link has been a five-year programme with a total budget of 42,8 million EUR. All publications have been produced with the financial assistance of the European Union. The contents of this series are the sole responsibility of the editors and authors and can under no circumstances be regarded as reflecting the position of the European Union.
         </p>
@@ -3742,12 +3742,12 @@ Das Team vom Universitätsverlag Göttingen
     </message>
 
     <message key="xmlui.collection.biodiversity.introduction">
-        <p>Im Jahre 2001 wurde das Göttinger Zentrum für <a href="http://www.biodiversitaet.gwdg.de/index_deutsch.html" target="_blank">Biodiversitätsforschung und Ökologie</a> gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
+        <p>Im Jahre 2001 wurde das Göttinger Zentrum für <a href="//www.biodiversitaet.gwdg.de/index_deutsch.html" target="_blank">Biodiversitätsforschung und Ökologie</a> gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
             Das Spektrum reicht von der Genetik bis zur Landschaftsökologie, jeweils mit einem interdisziplinären Ansatz. Die Evolution der Biodiversität, die Rolle der Biodiversität bei Funktionen und Prozessen in Ökosystemen und die Voraussetzungen für ein nachhaltiges Management der Biodiversität soll mit Hilfe moderner Methoden erforscht werden.
             Diese Forschungsergebnisse werden in der <em>„Biodiversity and Ecology Series - A“</em> veröffentlicht.</p>
 
         <p>
-            In der Reihe <em>„Biodiversity and Ecology Series - B“</em> werden Dissertationen veröffentlicht, die an diesem Zentrum geschrieben wurden und online zur Verfügung stehen (jedoch nicht in einem Verlag publiziert). Eine Liste dieser Dissertationen steht <a href="http://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">hier</a> zur Verfügung.
+            In der Reihe <em>„Biodiversity and Ecology Series - B“</em> werden Dissertationen veröffentlicht, die an diesem Zentrum geschrieben wurden und online zur Verfügung stehen (jedoch nicht in einem Verlag publiziert). Eine Liste dieser Dissertationen steht <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">hier</a> zur Verfügung.
         </p>
         <p>ISSN (Print): 1863-3935</p>
         <p>ISSN (Online): 2512-5974</p>
@@ -3781,7 +3781,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gbao.introduction">
         <p>
-            Die Reihe »Göttinger Beiträge zun Alten Orient« setzt die erfolgreichen »<a href="http://books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Arbeitshefte zur Altorientalischen Literatur</a>« fort. Die Reihe wird vom <a href="http://www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar für Altorientalistik der Georg-August-Universität Göttingen</a> herausgegeben und behandelt die Erschließung und Deutung der reichhaltigen Schriftdenkmäler in akkadischer oder sumerischer Sprache aus der Zeit von ca. 3100 - 500 v. Chr.
+            Die Reihe »Göttinger Beiträge zun Alten Orient« setzt die erfolgreichen »<a href="//books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Arbeitshefte zur Altorientalischen Literatur</a>« fort. Die Reihe wird vom <a href="//www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar für Altorientalistik der Georg-August-Universität Göttingen</a> herausgegeben und behandelt die Erschließung und Deutung der reichhaltigen Schriftdenkmäler in akkadischer oder sumerischer Sprache aus der Zeit von ca. 3100 - 500 v. Chr.
         </p>
         <p>ISSN: 1866-2595</p>
     </message>
@@ -3789,7 +3789,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gbe.introduction">
         <p>
-            Diese Reihe ist die Fortsetzung zu „<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>“, die ursprünglich im LIT-Verlag publiziert wurde.
+            Diese Reihe ist die Fortsetzung zu „<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>“, die ursprünglich im LIT-Verlag publiziert wurde.
         </p>
         <p>ISSN (Print): 1866-0711</p>
         <p>ISSN (Online): 2512-6814</p>
@@ -3805,7 +3805,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gf.introduction">
         <p>
-            „Göttinger Forstwissensschaften“ is the new series of the <a href="http://www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
+            „Göttinger Forstwissensschaften“ is the new series of the <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
             It merges the series „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt” and
             series A of the „Berichte des Forschungszentrums Waldökosysteme”.
             The series reflects the wide thematic range of the faculty and of the „Nordwestdeutschen Forstlichen Versuchsanstalt”.
@@ -3816,7 +3816,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
-            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
+            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
         <p>ISSN (Print): 1864-2128</p>
         <p>ISSN (Online): 2512-6849</p>
@@ -3824,7 +3824,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
-            Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="http://de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
+            Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
         </p>
         <p>ISSN (Print): 1863-1088</p>
         <p>ISSN (Online): 2512-6865</p>
@@ -3832,7 +3832,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gsmr.introduction">
         <p>
-            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="http://www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
+            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
         <p>
             <a href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a>
@@ -3843,7 +3843,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
-            Diese Reihe der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
+            Diese Reihe der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
         </p>
         <p>ISSN (Print): 2191-4583</p>
         <p>ISSN (Online): 2512-6911</p>
@@ -3870,7 +3870,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gskw.introduction">
         <p>
-            Die Schriftenreihe des <a href="http://www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a> will ein Spiegel wissenschaftlicher Arbeit des Instituts sein und ein Forum für bedeutsame Forschungsarbeiten auf dem Gebiet der Kriminalwissenschaften bieten.
+            Die Schriftenreihe des <a href="//www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a> will ein Spiegel wissenschaftlicher Arbeit des Instituts sein und ein Forum für bedeutsame Forschungsarbeiten auf dem Gebiet der Kriminalwissenschaften bieten.
         </p>
         <p>ISSN: 1864-2136</p>
         <h3>Geleitwort zur Schriftenreihe</h3>
@@ -3923,7 +3923,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.spe.introduction">
         <p>
-            Mehr Informationen zur Zeitschrift finden Sie auf der separaten <a href="http://www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">Homepage der Zeitschrift</a>.
+            Mehr Informationen zur Zeitschrift finden Sie auf der separaten <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">Homepage der Zeitschrift</a>.
         </p>
         <p>ISSN: 1864-211X</p>
     </message>
@@ -4167,7 +4167,7 @@ Das Team vom Universitätsverlag Göttingen
 
         <!-- <p id="catalog">
         <img src="/static/images/FrontCover_Verlagsprogramm2016.jpg" alt="FrontCover_Verlagsprogramm2016"/>
-        <a target="_blank" href="http://demo.multivio.org/client/#get&amp;url=http://www.univerlag.uni-goettingen.de/documents/verlagsprogramm_2016.pdf">Vorschau</a>
+        <a target="_blank" href="//demo.multivio.org/client/#get&amp;url=//www.univerlag.uni-goettingen.de/documents/verlagsprogramm_2016.pdf">Vorschau</a>
         </p> -->
 
     </message>
@@ -4427,7 +4427,7 @@ Das Team vom Universitätsverlag Göttingen
                 Der Physiker Dr. Martin Krenkel erhielt im Dezember 2016 Dissertationspreis des Universitätsbundes Göttingen.
             </p>
             <p>
-                Die Dissertation ist <a href="https://www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-251-8">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
+                Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-251-8">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
             </p>
             <p>
             </p>
@@ -4438,7 +4438,7 @@ Das Team vom Universitätsverlag Göttingen
             <span class="contributor">Bargheer, Margo; Pabst, Jutta</span>
             <span class="title">&#8217;Being small is not a fault&#8217;: Making sense of the newer generation of German-language university presses.</span>
             <span class="biblio"> Learned Publishing, Vol. 29, Issue S1 (2016), p. 335-341</span>
-            <p class="strech-top">Zugänglich auf <a href="http://resolver.sub.uni-goettingen.de/purl?gs-1/13814" class="extern-link" target="_blank">GoeScholar</a> oder direkt beim Verlag in der <a href="http://onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" class="extern-link" target="_blank">Wiley Online Library</a>.</p>
+            <p class="strech-top">Zugänglich auf <a href="//resolver.sub.uni-goettingen.de/purl?gs-1/13814" class="extern-link" target="_blank">GoeScholar</a> oder direkt beim Verlag in der <a href="//onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" class="extern-link" target="_blank">Wiley Online Library</a>.</p>
 
             <p class="strech-top">
                 Zusammenfassung: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
@@ -4816,7 +4816,7 @@ Das Team vom Universitätsverlag Göttingen
                     </div>
                 </div>
 
-                <input id="aspect_artifactbrowser_CostRequestForm_field_page" class="ds-hidden-field" name="page" type="hidden" value="http://localhost:8080/costrequest" />
+                <input id="aspect_artifactbrowser_CostRequestForm_field_page" class="ds-hidden-field" name="page" type="hidden" value="//localhost:8080/costrequest" />
 
                 <!-- Button -->
                 <div class="form-group">

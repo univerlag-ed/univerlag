@@ -31,29 +31,20 @@
 
     <message key="xmlui.static.ring.head">Öffentliche Ringvorlesung:<br /></message>
     <message key="xmlui.static.ring.preambel">
-        <div class="media-body">
-            <h3 class="media-head">Audiomitschnitte Universität Göttingen</h3>
-            <p>
-                Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
-                Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="//www.stadtradio-goettingen.de/" class="extern-link" target="_blank">Stadtradio Göttingen</a>
-                übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
-            </p>
-            <p>
-                Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r"><i class="icon-youtube"></i>Playlist</a>.
-            </p>
-            <p>
-                Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
-                Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
-            </p>
-        </div>
-    </message>
-
-    <message key="xmlui.static.ring.list.preambel">
+        <!-- <div class="media-body"> -->
+        <h3 class="media-head">Audiomitschnitte Universität Göttingen</h3>
         <p>
-            Göttingen University Press presents in cooperation with the StadtRadio Göttingen the live recordings of the series of open lectures of the University of Göttingen. Each contribution is to be found within the proper semester program.
+            Die folgend laufend eingestellten Mitschnitte sind im Rahmen der Ringvorlesung in der Aula der Universität Göttingen am Wilhelmsplatz 1 entstanden.
+            Die Vorlesungen fanden jeweils dienstags, 18 Uhr c.t., statt und wurden auch am Folgetag durch das <a href="//www.stadtradio-goettingen.de/" class="extern-link" target="_blank">Stadtradio Göttingen</a>
+            übertragen. Die Audiodateien der Vorträge sind urheberrechtlich geschützt, jede Weiterverarbeitung und Weiterverbreitung ist untersagt.
         </p>
-    </message>
 
+        <p>
+            Im folgenden finden Sie die Mitschnitte der aufgezeichneten Vorlesungen im MP3-Format (jew. 60-90MB).
+            Bitte beachten Sie, dass manche Vorlesungen aus technischen Gründen leider nicht aufgezeichnet werden konnten.
+        </p>
+        <!-- </div> -->
+    </message>
 
     <!-- Liste der Ringvorlesungen -->
 
@@ -196,7 +187,7 @@
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2012</strong></span>
-                        <p><a href="/info/13">Tradition - Autonomie - Innovation</a></p>
+                        <p><a href="/info/12">Tradition - Autonomie - Innovation</a></p>
                     </div>
                 </div>
             </div>
@@ -426,6 +417,8 @@
 
 
     <!-- ********** WS 12-13 ******* -->
+
+
     <message key="xmlui.static.ring-12-13.trail">
         WS 12-13
     </message>
@@ -699,6 +692,11 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** SS 13 ******* -->
+    <message key="xmlui.static.ring.playlist-13">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrc_N2snDBeXkdT41cbIbuIH"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
     <message key="xmlui.static.ring-13.trail">
         SS 13
     </message>
@@ -892,6 +890,11 @@
 
 
     <!-- ********** WS 13-14 ******* -->
+    <message key="xmlui.static.ring.playlist-13-14">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreaAzI4XjlkOcejnOdP2W8D"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
     <message key="xmlui.static.ring-13-14.trail">
         WS 13-14
     </message>
@@ -923,7 +926,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-10-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=o-SUlEb_VDE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=o-SUlEb_VDE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -940,7 +943,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-10-29.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=ynHK9827ToM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ynHK9827ToM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -957,7 +960,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=vOuX-lbY4Vw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=vOuX-lbY4Vw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -974,7 +977,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=6vi6rFnstUM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=6vi6rFnstUM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -991,7 +994,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=T6Blu4g1qPM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=T6Blu4g1qPM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1007,7 +1010,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-26.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=O_IeXCDmrls" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=O_IeXCDmrls" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1023,7 +1026,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-12-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=XUjtA6a2Nu4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=XUjtA6a2Nu4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1039,7 +1042,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-12-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=ucOR8s3M4hg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ucOR8s3M4hg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1055,7 +1058,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!-- <a href="/static/audio/ring2013-12-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=_UzOH6O-vJw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=_UzOH6O-vJw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1070,7 +1073,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=Rzhv0omIEqE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=Rzhv0omIEqE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1086,7 +1089,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!-- <a href="/static/audio/ring2014-01-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>-->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=8gMuxxBivO0" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=8gMuxxBivO0" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1102,7 +1105,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=BdeMCEvan24" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=BdeMCEvan24" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1118,7 +1121,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=79A7VffgtCA" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=79A7VffgtCA" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1142,6 +1145,11 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** SS 14 ******* -->
+    <message key="xmlui.static.ring.playlist-14">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrdegsRwk8FgC_UGXsO7OIVF"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
     <message key="xmlui.static.ring-14.trail">
         SS 14
     </message>
@@ -1192,7 +1200,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-05-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=2F3-zXNiDjs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=2F3-zXNiDjs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1262,7 +1270,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!--<a href="/static/audio/ring2014-06-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=DHxkTCz1bwQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=DHxkTCz1bwQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                     </div>
                 </div>
             </div>
@@ -1280,7 +1288,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-06-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                         -->
 
                     </div>
@@ -1300,7 +1308,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-06-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                          -->
 
                     </div>
@@ -1320,7 +1328,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-07-01.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> YouTube Video</a>
                          -->
 
                     </div>
@@ -1414,6 +1422,11 @@
 
 
     <!-- ********** WS 14-15 ******* -->
+    <message key="xmlui.static.ring.playlist-14-15">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrfuLMZjNmMqU5JyMk-yB1aU"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
     <message key="xmlui.static.ring-14-15.trail">
         WS 14-15
     </message>
@@ -1678,6 +1691,12 @@
     <!-- ************************************************************** -->
 
     <!-- ********** SS 15 ******* -->
+    <message key="xmlui.static.ring.playlist-15">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreyOxFM_zGBVEjYvHpWlAY8"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-15.trail">
         SS 15
     </message>
@@ -1912,6 +1931,12 @@
 
     <!-- *************************************************************** -->
     <!-- ********** WS 15-16 ******* -->
+    <message key="xmlui.static.ring.playlist-15-16">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreS4M5mv4hWdT52LYrdhEoY"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-15-16.trail">
         WS 15-16
     </message>
@@ -2203,6 +2228,12 @@
     <!-- ********************************************************** -->
 
     <!-- ********** SS 16 ******* -->
+    <message key="xmlui.static.ring.playlist-16">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-16.trail">
         SS 2016
     </message>
@@ -2455,6 +2486,13 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** WS 16-17 ******* -->
+
+    <message key="xmlui.static.ring.playlist-16-17">
+        <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrdora7S2dOKnW8asiISF-v8"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-16-17.trail">
         WS 2016 / 2017
     </message>

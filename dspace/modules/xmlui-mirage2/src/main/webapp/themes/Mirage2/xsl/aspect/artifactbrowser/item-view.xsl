@@ -43,6 +43,14 @@
         <xsl:value-of select="//dri:metadata[@qualifier='currentLocale']" />
     </xsl:variable>
 
+    <xsl:variable name="serie">
+        <xsl:for-each select="//dri:reference[@type='DSpace Collection']">
+            <xsl:if test="contains(./@url, '_series')">
+                <xsl:value-of select="substring-after(substring-before(@url, '/mets.xml'), 'metadata')" />
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:variable>
+
     <xsl:template name="itemSummaryView-DIM">
         <!-- Generate the info about the item from the metadata section -->
         <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim"
@@ -231,8 +239,11 @@
 
     <xsl:template name="itemSummaryView-DIM-series">
         <xsl:if test="dim:field[@element='relation'][@qualifier='ispartofseries']">
+
             <span class="relation">
-                <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
+                <a href="{$serie}">
+                    <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
+                </a>
                 <xsl:choose>
                     <xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '0')">
                         <xsl:value-of select="concat('; ', substring(dim:field[@element='bibliographicCitation'][@qualifier='volume'], 2))"/>
@@ -370,21 +381,22 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-authors-entry">
-        <span>
-            <xsl:if test="@authority">
-                <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
-            </xsl:if>
-            <xsl:copy-of select="node()"/>
-        </span>
-        <xsl:choose>
-            <xsl:when test="starts-with(@authority, 'orcid')">
-                <span class="orcid"><a target="_blank" href="{concat('//orcid.org/',substring-after(@authority, '/'))}" i18n:attr="title" title="xml.author.profile.orcid.label"><small>ID</small></a></span>
-            </xsl:when>
-            <xsl:when test="starts-with(@authority, 'gnd')">
-                <span class="gnd"><a target="_blank" href="{concat('//d-nb.info/',@authority)}" i18n:attr="title" title="xml.author.profile.dnb.label"><small><i class="icon-info-circled"></i></small></a></span>
-            </xsl:when>
-        </xsl:choose>
-
+        <nobr>
+            <span>
+                <xsl:if test="@authority">
+                    <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                </xsl:if>
+                <xsl:copy-of select="node()"/>
+            </span>
+            <xsl:choose>
+                <xsl:when test="starts-with(@authority, 'orcid')">
+                    <a target="_blank" href="{concat('//orcid.org/',substring-after(@authority, '/'))}" i18n:attr="title" title="xml.author.profile.orcid.label"><i class="icon-info-circled orcid"></i></a>
+                </xsl:when>
+                <xsl:when test="starts-with(@authority, 'gnd')">
+                    <span class="gnd"><a target="_blank" href="{concat('//d-nb.info/',@authority)}" i18n:attr="title" title="xml.author.profile.dnb.label"><small><i class="icon-info-circled"></i></small></a></span>
+                </xsl:when>
+            </xsl:choose>
+        </nobr>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-URI">
@@ -1352,8 +1364,9 @@
         <!-- </div> -->
         <div class="tab-content">
             <div id="related">
-                <xsl:attribute name="class">tab-pane</xsl:attribute>
-                <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']"><xsl:text> active</xsl:text></xsl:if>
+                <xsl:attribute name="class">tab-pane
+                    <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']"><xsl:text> active</xsl:text></xsl:if>
+                </xsl:attribute>
                 <xsl:for-each select="//dim:field[@element='relation'][@qualifier='otherparts']">
                     <p>
                         <a>
@@ -1440,12 +1453,11 @@
                             <xsl:choose>
                                 <xsl:when test="contains(., 'http:')">
 
-                                    <a class="extern" target="_blank">
+                                    <a class="extern-link" target="_blank">
                                         <xsl:choose>
                                             <xsl:when test="contains(node(), ': ')">
                                                 <xsl:variable name="url"><xsl:value-of select="substring-before(node(), ': ')" /></xsl:variable>
-                                                <xsl:variable name="linktext"><xsl:value-of select="substring-after(node(), ': ')" /></xsl:variable>
-                                                <xsl:attribute name="href"><xsl:value-of select="substring-before(node(), ': ')" /></xsl:attribute>
+                                                <xsl:attribute name="href"><xsl:value-of select="substring-after($url, ':')" /></xsl:attribute>
                                                 <xsl:value-of select="substring-after(node(), ': ')" />
                                             </xsl:when>
 

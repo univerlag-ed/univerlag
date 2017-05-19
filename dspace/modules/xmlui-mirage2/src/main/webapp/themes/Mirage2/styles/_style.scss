@@ -194,7 +194,7 @@ a.list-group-item {
 
 
 
-.relation, .event {
+.relation, .relation a, .event {
   display: inline-block;
   font-weight: bold;
   font-size: small;
@@ -362,6 +362,7 @@ h6 .small,
 .icon-info-circled {
   color: #7D8FB2;
   cursor: pointer;
+  font-size: small;
 }
 
 #agb {
@@ -414,7 +415,9 @@ h6 .small,
     padding: 5px;
   }
 
-
+  #ds-options > h2.ds-option-set-head.h6.page-header.h6 {
+    border-bottom: 1px solid #2D487B;
+  }
 
   .list-group {
     border: none;
@@ -840,12 +843,7 @@ a.tooltip {
 }
 
 .orcid {
-  padding: 0 5px;
-  background-color: #94c294;
-  border: #94c294;
-  border-radius: 15px;
-  font-size: small;
-  margin-left: 2px;
+  color: #94c294;
 }
 
 
@@ -865,4 +863,8 @@ a.tooltip {
 
 .simple-item-view-collections {
   display: none;
+}
+
+.flag {
+  padding: 0 5px 0 0;
 }

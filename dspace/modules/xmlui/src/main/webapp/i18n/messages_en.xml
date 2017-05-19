@@ -5,10 +5,10 @@
     detailed in the LICENSE and NOTICE files at the root of the source
     tree and available online at
 
-    http://www.dspace.org/license/
+    //www.dspace.org/license/
 
 -->
-<catalogue xml:lang="en" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+<catalogue xml:lang="en" xmlns:i18n="//apache.org/cocoon/i18n/2.1">
 
     <!--
 		The format used by all keys is as follows
@@ -51,7 +51,7 @@
 		-->
     <message key="xmlui.PageNotFound.title">Page not found</message>
     <message key="xmlui.PageNotFound.head">Page not found</message>
-    <message key="xmlui.PageNotFound.para1">We can't find the page you asked for.</message>
+    <message key="xmlui.PageNotFound.para1">We can&#39;t find the page you asked for.</message>
 
 
     <!--
@@ -85,13 +85,13 @@
         they are used by other aspects.
 	!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AbstractSearch has been removed. -->
-    <!-- The following keys are still in use by Discovery's AbstractSearch -->
+    <!-- The following keys are still in use by Discovery&#39;s AbstractSearch -->
     <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
     <message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
-    <!-- The following "type_*" i18n keys will be left as is as they're referenced by the Discovery's SidebarFacetsTransformer
+    <!-- The following "type_*" i18n keys will be left as is as they&#39;re referenced by the Discovery&#39;s SidebarFacetsTransformer
          but in future, they should be refactored to a more relevant key prefix -->
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Author</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Title</message>
@@ -243,7 +243,7 @@
 
     <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.Navigation has been removed. -->
-    <!-- The following i18n keys will be left as is as they're referenced by the Discovery's Navigation
+    <!-- The following i18n keys will be left as is as they&#39;re referenced by the Discovery&#39;s Navigation
          but in future, they should be refactored to a more relevant key prefix -->
     <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Browse</message>
     <message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">All of DSpace</message>
@@ -258,7 +258,7 @@
 
     <!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.SimpleSearch has been removed. -->
-    <!-- The following i18n keys will be left as is as they're referenced by the Discovery's SimpleSearch
+    <!-- The following i18n keys will be left as is as they&#39;re referenced by the Discovery&#39;s SimpleSearch
          but in future, they should be refactored to a more relevant key prefix -->
     <message key="xmlui.ArtifactBrowser.SimpleSearch.title">Search</message>
     <message key="xmlui.ArtifactBrowser.SimpleSearch.trail">Search</message>
@@ -341,12 +341,12 @@
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.title">Document copy request</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.trail">Document copy request</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Document copy request</message>
-    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE AUTHOR (OR AN AUTHOR) OF DOCUMENT "{0}" use the buttons to answer the user's request.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">IF YOU ARE THE AUTHOR (OR AN AUTHOR) OF DOCUMENT "{0}" use the buttons to answer the user&#39;s request.</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">This repository will propose an appropriate model reply, which you may edit.</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Initial reply to requester</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Author permission request</message>
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Send copy</message>
-    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Don't send copy</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Don&#39;t send copy</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseTrueForm.java -->
     <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.title">Document copy request</message>
@@ -483,7 +483,7 @@
     <message key="xmlui.EPerson.InvalidToken.trail">Invalid token</message>
     <message key="xmlui.EPerson.InvalidToken.head">Invalid token</message>
     <message key="xmlui.EPerson.InvalidToken.para1">The URL you provided is invalid. The URL may have been broken across multiple lines in your email client, like this:</message>
-    <message key="xmlui.EPerson.InvalidToken.para2">If so, copy and paste the entire URL directly into your browser's address bar, rather than simply clicking on the link. The address bar should then contain something like:</message>
+    <message key="xmlui.EPerson.InvalidToken.para2">If so, copy and paste the entire URL directly into your browser&#39;s address bar, rather than simply clicking on the link. The address bar should then contain something like:</message>
 
     <!-- org.dspace.app.xmlui.eperson.Navigation.java -->
     <message key="xmlui.EPerson.Navigation.my_account">My Account</message>
@@ -547,7 +547,7 @@
     <!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
     <message key="xmlui.EPerson.RegistrationFinished.title">Registration finished</message>
     <message key="xmlui.EPerson.RegistrationFinished.head">Registration Finished</message>
-    <message key="xmlui.EPerson.RegistrationFinished.para1">You're now registered to use the DSpace system.  You can subscribe to collections to receive email updates about new items.</message>
+    <message key="xmlui.EPerson.RegistrationFinished.para1">You&#39;re now registered to use the DSpace system.  You can subscribe to collections to receive email updates about new items.</message>
 
     <!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
     <message key="xmlui.EPerson.ResetPassword.title">Reset password</message>
@@ -674,11 +674,11 @@
     <message key="xmlui.Submission.Submissions.progress_column3">Status</message>
     <!-- Same transformer, workflow status -->
     <message key="xmlui.Submission.Submissions.status_0">Submitted</message>
-    <message key="xmlui.Submission.Submissions.status_1">Awaiting reviewer's attention</message>
+    <message key="xmlui.Submission.Submissions.status_1">Awaiting reviewer&#39;s attention</message>
     <message key="xmlui.Submission.Submissions.status_2">Submission being reviewed</message>
-    <message key="xmlui.Submission.Submissions.status_3">Awaiting editor's attention</message>
+    <message key="xmlui.Submission.Submissions.status_3">Awaiting editor&#39;s attention</message>
     <message key="xmlui.Submission.Submissions.status_4">Submission being edited</message>
-    <message key="xmlui.Submission.Submissions.status_5">Awaiting final editor's attention</message>
+    <message key="xmlui.Submission.Submissions.status_5">Awaiting final editor&#39;s attention</message>
     <message key="xmlui.Submission.Submissions.status_6">Submission being edited</message>
     <message key="xmlui.Submission.Submissions.status_7">Submission has been archived</message>
     <message key="xmlui.Submission.Submissions.status_unknown">Unknown state</message>
@@ -688,7 +688,7 @@
     <message key="xmlui.Submission.Submissions.completed.column1">Date accepted</message>
     <message key="xmlui.Submission.Submissions.completed.column2">Title</message>
     <message key="xmlui.Submission.Submissions.completed.column3">Collection</message>
-    <message key="xmlui.Submission.Submissions.completed.limit">We've only listed 50 of your archived submissions above. </message>
+    <message key="xmlui.Submission.Submissions.completed.limit">We&#39;ve only listed 50 of your archived submissions above. </message>
     <message key="xmlui.Submission.Submissions.completed.displayall">Display all my archived submissions.</message>
 
     <!-- submission progress bar messages -->
@@ -715,7 +715,7 @@
     <message key="xmlui.Submission.submit.SaveOrRemoveStep.head">Save or cancel your submission?</message>
     <message key="xmlui.Submission.submit.SaveOrRemoveStep.info1">Do you want the submission removed, or do you want to carry on working on it later?  You may return to the submission process if you clicked Exit by accident.</message>
     <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_back">Oops, continue submission</message>
-    <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_save">Save it, I'll work on it later</message>
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_save">Save it, I&#39;ll work on it later</message>
     <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_remove">Remove the submission</message>
 
 
@@ -772,11 +772,11 @@
     <message key="xmlui.Submission.submit.AccessStep.error_missing_date">When Embargo selected, date is required</message>
     <message key="xmlui.Submission.submit.AccessStep.error_duplicated_policy">An identical policy for this group and this action is already in place.</message>
     <message key="xmlui.Submission.submit.AccessStep.table_policies">Group policies</message>
-    <message key="xmlui.Submission.submit.AccessStep.policies_help">Policies listed in this section override any default policies for the collection you're submitting to. If you wish to set an embargo but the target collection allows access for any user, you must set a policy that allows access for the Anonymous group only from a specific date onwards.</message>
+    <message key="xmlui.Submission.submit.AccessStep.policies_help">Policies listed in this section override any default policies for the collection you&#39;re submitting to. If you wish to set an embargo but the target collection allows access for any user, you must set a policy that allows access for the Anonymous group only from a specific date onwards.</message>
     <message key="xmlui.Submission.submit.AccessStep.no_policies">No group policies have been set up for this item.</message>
     <message key="xmlui.Submission.submit.AccessStep.new_policy_head">Embargo</message>
     <message key="xmlui.Submission.submit.AccessStep.private_settings">Private item</message>
-    <message key="xmlui.Submission.submit.AccessStep.private_settings_help">If selected, the item won't be searchable</message>
+    <message key="xmlui.Submission.submit.AccessStep.private_settings_help">If selected, the item won&#39;t be searchable</message>
     <message key="xmlui.Submission.submit.AccessStep.private_settings_label">Private</message>
     <message key="xmlui.Submission.submit.AccessStep.column0">Name</message>
     <message key="xmlui.Submission.submit.AccessStep.column1">Action</message>
@@ -786,7 +786,7 @@
     <message key="xmlui.Submission.submit.AccessStep.table_edit_button">Edit</message>
     <message key="xmlui.Submission.submit.AccessStep.table_delete_button">Remove</message>
     <message key="xmlui.administrative.authorization.AccessStep.label_date_help">The first day from which access is allowed. Accepted format: yyyy, yyyy-mm, yyyy-mm-dd</message>
-    <message key="xmlui.administrative.authorization.AccessStep.label_date_displayonly_help">The first day from which access is allowed. <b>This date cannot be modified on this form.</b> To set an embargo date for a bitstream, go to the <i>Item Status</i> tab, click <i>Authorizations...</i>, create or edit the bitstream's <i>READ</i> policy, and set the <i>Start Date</i> as desired.</message>
+    <message key="xmlui.administrative.authorization.AccessStep.label_date_displayonly_help">The first day from which access is allowed. <b>This date cannot be modified on this form.</b> To set an embargo date for a bitstream, go to the <i>Item Status</i> tab, click <i>Authorizations...</i>, create or edit the bitstream&#39;s <i>READ</i> policy, and set the <i>Start Date</i> as desired.</message>
     <message key="xmlui.Submission.submit.AccessStep.review_policy_line">Name: {0}; action: {1}, group: {2}, start date: {3}, end date: {4}</message>
     <message key="xmlui.Submission.submit.AccessStep.review_public_item">The item will be searchable</message>
     <message key="xmlui.Submission.submit.AccessStep.review_private_item">The item will not be searchable</message>
@@ -864,9 +864,9 @@
     <message key="xmlui.Submission.submit.EditFileStep.format_detected">Detected Format</message>
     <message key="xmlui.Submission.submit.EditFileStep.format_selected">Selected Format</message>
     <message key="xmlui.Submission.submit.EditFileStep.format_default">Format not in list</message>
-    <message key="xmlui.Submission.submit.EditFileStep.info2">If the format is not in the above list, <strong>select "format not in list" above</strong> and describe the file's format in the box below.</message>
+    <message key="xmlui.Submission.submit.EditFileStep.info2">If the format is not in the above list, <strong>select "format not in list" above</strong> and describe the file&#39;s format in the box below.</message>
     <message key="xmlui.Submission.submit.EditFileStep.format_user">Other Format</message>
-    <message key="xmlui.Submission.submit.EditFileStep.format_user_help">The application's name you used to create the file, and the version number (for example, "<i>ACMESoft SuperApp version 1.5</i>").</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_user_help">The application&#39;s name you used to create the file, and the version number (for example, "<i>ACMESoft SuperApp version 1.5</i>").</message>
 
     <!-- org.dspace.app.xmlui.Submission.submit.EditBitstreamPolicies -->
     <message key="xmlui.Submission.submit.EditBitstreamPolicies.head">Bitstream Access</message>
@@ -891,7 +891,7 @@
     <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
     <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">An error occurred ... {0}</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.head">License Your Work</message>
-    <message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="http://creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong></message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="//creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong></message>
     <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Choose a license</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
     <message key="xmlui.Submission.submit.CCLicenseStep.license">License Type</message>
@@ -902,11 +902,11 @@
     <!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
     <message key="xmlui.Submission.submit.LicenseStep.head">Distribution License</message>
     <message key="xmlui.Submission.submit.LicenseStep.info1"><strong>There is one last step:</strong> In order for DSpace to reproduce, translate and distribute your submission worldwide, you must agree to the following terms.</message>
-    <message key="xmlui.Submission.submit.LicenseStep.info2">Grant the standard distribution license by selecting 'I Grant the License'; and then click 'Complete Submission'.</message>
+    <message key="xmlui.Submission.submit.LicenseStep.info2">Grant the standard distribution license by selecting &#39;I Grant the License&#39;; and then click &#39;Complete Submission&#39;.</message>
     <message key="xmlui.Submission.submit.LicenseStep.info3">If you have questions regarding this license please contact the system administrators.</message>
     <message key="xmlui.Submission.submit.LicenseStep.decision_label">Distribution license</message>
     <message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">I Grant the License</message>
-    <message key="xmlui.Submission.submit.LicenseStep.decision_error">You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission by clicking the 'Save &amp; Exit' button below.</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_error">You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission by clicking the &#39;Save &amp; Exit&#39; button below.</message>
 
     <!-- org.dspace.app.xmlui.Submission.submit.RemovedStep -->
     <message key="xmlui.Submission.submit.RemovedStep.head">Submission removed</message>
@@ -927,11 +927,11 @@
     <message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit">Leave task</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">If you have reviewed the item and it is suitable for inclusion in the collection, select "Approve".</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit">Approve item</message>
-    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Once you've edited the item, use this option to commit the item to the archive.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Once you&#39;ve edited the item, use this option to commit the item to the archive.</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit">Commit to archive</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">If you have reviewed the item and found it is <strong>not</strong> suitable for inclusion in the collection, select "Reject".  You will then be asked to enter a message indicating why the item is unsuitable, and whether the submitter should change something and resubmit.</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit">Reject item</message>
-    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Select this option to change the item's metadata.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Select this option to change the item&#39;s metadata.</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Edit metadata</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Return the task to the pool so that another user may perform the task.</message>
     <message key="xmlui.Submission.workflow.PerformTaskStep.return_submit">Return task to pool</message>
@@ -972,7 +972,7 @@
     <message key="xmlui.administrative.FlowRegistryUtils.delete_metadata_field_success_notice">The field(s) were successfully deleted.</message>
     <message key="xmlui.administrative.FlowRegistryUtils.edit_bitstream_format_success_notice">The format was successfully saved.</message>
     <message key="xmlui.administrative.FlowRegistryUtils.delete_bitstream_format_success_notice">The format(s) were successfully deleted.</message>
-    <message key="xmlui.administrative.FlowItemUtils.metadata_updated">The item's metadata was successfully updated.</message>
+    <message key="xmlui.administrative.FlowItemUtils.metadata_updated">The item&#39;s metadata was successfully updated.</message>
     <message key="xmlui.administrative.FlowItemUtils.metadata_added">New metadata was added.</message>
     <message key="xmlui.administrative.FlowItemUtils.item_withdrawn">The item has been withdrawn.</message>
     <message key="xmlui.administrative.FlowItemUtils.item_reinstated">The item has been reinstated.</message>
@@ -1035,9 +1035,9 @@
     <message key="xmlui.administrative.ItemExport.item.not.found">The item requested was not found.</message>
     <message key="xmlui.administrative.ItemExport.collection.not.found">The collection requested was not found.</message>
     <message key="xmlui.administrative.ItemExport.community.not.found">The community requested was not found.</message>
-    <message key="xmlui.administrative.ItemExport.item.success">The item was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
-    <message key="xmlui.administrative.ItemExport.collection.success">The collection was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
-    <message key="xmlui.administrative.ItemExport.community.success">The community was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the 'My Exports' link to view a list of your available archives.</message>
+    <message key="xmlui.administrative.ItemExport.item.success">The item was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the &#39;My Exports&#39; link to view a list of your available archives.</message>
+    <message key="xmlui.administrative.ItemExport.collection.success">The collection was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the &#39;My Exports&#39; link to view a list of your available archives.</message>
+    <message key="xmlui.administrative.ItemExport.community.success">The community was exported successfully.  You should receive an e-mail when the archive is ready for download.  You can also use the &#39;My Exports&#39; link to view a list of your available archives.</message>
     <message key="xmlui.administrative.ItemExport.available.head">Available export archives for download:</message>
 
 
@@ -1052,7 +1052,7 @@
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse_link">Click here to browse all E-People.</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_search">Search for E-People</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help">E-People are searched by any partial match on email or name</message>
-    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">Below is the list of E-People that matched your search query. Select the E-People you want to delete and click the delete button to continue or click on an E-Person's email or name to edit them.</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">Below is the list of E-People that matched your search query. Select the E-People you want to delete and click the delete button to continue or click on an E-Person&#39;s email or name to edit them.</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Search results</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"></message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
@@ -1067,7 +1067,7 @@
     <message key="xmlui.administrative.eperson.AddEPersonForm.trail">Add E-Person</message>
     <message key="xmlui.administrative.eperson.AddEPersonForm.head1">Create a new user</message>
     <message key="xmlui.administrative.eperson.AddEPersonForm.email_taken">That email address is in use by another E-Person. Emails must be unique.</message>
-    <message key="xmlui.administrative.eperson.AddEPersonForm.head2">New E-Person's information:</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.head2">New E-Person&#39;s information:</message>
     <message key="xmlui.administrative.eperson.AddEPersonForm.error_email_unique">Email address must be unique</message>
     <message key="xmlui.administrative.eperson.AddEPersonForm.error_email">Email address is required</message>
     <message key="xmlui.administrative.eperson.AddEPersonForm.error_fname">First name is required</message>
@@ -1081,7 +1081,7 @@
     <message key="xmlui.administrative.eperson.EditEPersonForm.trail">Edit E-Person</message>
     <message key="xmlui.administrative.eperson.EditEPersonForm.head1">Edit an E-Person</message>
     <message key="xmlui.administrative.eperson.EditEPersonForm.email_taken">That email address is in use by another E-Person. Emails must be unique.</message>
-    <message key="xmlui.administrative.eperson.EditEPersonForm.head2">{0}'s information:</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.head2">{0}&#39;s information:</message>
     <message key="xmlui.administrative.eperson.EditEPersonForm.error_email_unique">Email address must be unique</message>
     <message key="xmlui.administrative.eperson.EditEPersonForm.error_email">Email address is required</message>
     <message key="xmlui.administrative.eperson.EditEPersonForm.error_fname">First name is required</message>
@@ -1268,16 +1268,16 @@
     <message key="xmlui.administrative.registries.EditMetadataSchema.submit_update">Update field</message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.error">Error</message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.error_duplicate_field">The field name is already in use, all element and qualifiers must be unique.</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_empty">The field's element is required.</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_badchar">The field's element contains a bad character. The element may NOT contain: periods, underscores, or spaces.</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_tolong">The field's element is to long, it must be less than 32 characters.</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_tolong">The field's qualifier is to long, it must be less than 32 characters.</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_badchar">The field's qualifier contains a bad character. The qualifier may NOT contain: periods, underscores, or spaces.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_empty">The field&#39;s element is required.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_badchar">The field&#39;s element contains a bad character. The element may NOT contain: periods, underscores, or spaces.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_tolong">The field&#39;s element is to long, it must be less than 32 characters.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_tolong">The field&#39;s qualifier is to long, it must be less than 32 characters.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_badchar">The field&#39;s qualifier contains a bad character. The qualifier may NOT contain: periods, underscores, or spaces.</message>
 
     <!-- org.dspace.app.xmlui.administrative.registries.FormatRegistryMain.java -->
     <message key="xmlui.administrative.registries.FormatRegistryMain.title">Format Registry</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.head">Bitstream format registry</message>
-    <message key="xmlui.administrative.registries.FormatRegistryMain.para1">This list of bitstream formats provides information about known formats and their support level. You can edit or add new bitstream formats with this tool. Formats marked as 'internal' are hidden from the user, and are used for administrative purposes.</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.para1">This list of bitstream formats provides information about known formats and their support level. You can edit or add new bitstream formats with this tool. Formats marked as &#39;internal&#39; are hidden from the user, and are used for administrative purposes.</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Add a new bitstream format</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.column1"></message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.column2">ID</message>
@@ -1304,7 +1304,7 @@
     <message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_help">Namespace should be an established URI location for the new schema.</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_error">This field is required.</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.name">Name</message>
-    <message key="xmlui.administrative.registries.MetadataRegistryMain.name_help">Shorthand notation for the schema. This will be used to prefix a field's name (e.g. dc.element.qualifier). The name must be less than 32 characters and cannot include spaces, periods or underscores.</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.name_help">Shorthand notation for the schema. This will be used to prefix a field&#39;s name (e.g. dc.element.qualifier). The name must be less than 32 characters and cannot include spaces, periods or underscores.</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.name_error">This field is required and must be less than 32 characters and cannot contain any spaces, periods, or underscores.</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.submit_add">Add new schema</message>
 
@@ -1360,7 +1360,7 @@
 
 
     <!-- org.dspace.app.xmlui.administrative.authorization.EditItemPolicies -->
-    <message key="xmlui.administrative.authorization.EditItemPolicies.title">Edit Item's Policies</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.title">Edit Item&#39;s Policies</message>
     <message key="xmlui.administrative.authorization.EditItemPolicies.trail">Policies List</message>
     <message key="xmlui.administrative.authorization.EditItemPolicies.main_head">Policies for Item {0} (ID={1})</message>
     <message key="xmlui.administrative.authorization.EditItemPolicies.main_para1">With this editor you can view and alter the policies of an item, plus alter policies of individual item components: bundles and bitstreams. Briefly, an item is a container of bundles, and bundles are containers of bitstreams. Containers usually have ADD/REMOVE/READ/WRITE policies, while bitstreams only have READ/WRITE policies.</message>
@@ -1603,7 +1603,7 @@
     <message key="xmlui.administrative.item.EditItemStatusForm.label_modified">Last Modified</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_in">In Collections</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_page">Item Page</message>
-    <message key="xmlui.administrative.item.EditItemStatusForm.label_auth">Edit item's authorization policies</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_auth">Edit item&#39;s authorization policies</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_withdraw">Withdraw item from the repository</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_reinstate">Reinstate item into the repository</message>
     <message key="xmlui.administrative.item.EditItemStatusForm.label_move">Move item to another collection</message>
@@ -1736,7 +1736,7 @@
     <message key="xmlui.administrative.collection.AssignCollectionRoles.create">Create...</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.restrict">Restrict...</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.help_admins">Collection administrators decide who can submit items to the collection, edit item metadata (after submission), and add (map) existing items from other collections to this collection (subject to authorization for that collection).</message>
-    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step1">The people responsible for this step are able to accept or reject incoming submissions. However, they are not able to edit the submission's metadata.</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step1">The people responsible for this step are able to accept or reject incoming submissions. However, they are not able to edit the submission&#39;s metadata.</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step2">The people responsible for this step are able to edit the metadata of incoming submissions, and then accept or reject them.</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step3">The people responsible for this step are able to edit the metadata of incoming submissions, but will not be able to reject them.</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.help_submitters">The E-People and Groups that have permission to submit new items to this collection.</message>
@@ -1769,7 +1769,7 @@
     <message key="xmlui.administrative.collection.DeleteCollectionConfirm.trail">Confirm</message>
     <message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Confirm deletion for collection {0}</message>
     <message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_para">Are you sure collection {0} should be deleted? This will delete:</message>
-    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Any items and incomplete submissions in this collection that aren't contained in other collections</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Any items and incomplete submissions in this collection that aren&#39;t contained in other collections</message>
     <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item2">The contents of those items</message>
     <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item3">All associated authorization policies</message>
 
@@ -1822,7 +1822,7 @@
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_oai_provider">OAI Provider</message>
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_setid">OAI Set id</message>
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_metadata_format">Metadata Format</message>
-    <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaiurl">The url of the target repository's OAI provider service</message>
+    <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaiurl">The url of the target repository&#39;s OAI provider service</message>
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaiurl">You must provide a set id of the target collection.</message>
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaisetid">The persistent identifier used by the OAI provider to designate the target collection</message>
     <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaisetid">You must provide a set id of the target collection.</message>
@@ -1908,7 +1908,7 @@
     <message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Confirm deletion for community {0}</message>
     <message key="xmlui.administrative.community.DeleteCommunityConfirm.main_para">Are you sure community {0} should be deleted? This will delete:</message>
     <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item1">Any collections in the community that are not contained in other communities</message>
-    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Any items and incomplete submissions in this community that aren't contained in other communities</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Any items and incomplete submissions in this community that aren&#39;t contained in other communities</message>
     <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item3">The contents of those items</message>
     <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item4">All associated authorization policies</message>
 
@@ -2039,7 +2039,7 @@
     <message key="xmlui.administrative.NotAuthorized.title">Not Authorized</message>
     <message key="xmlui.administrative.NotAuthorized.trail">Not authorized</message>
     <message key="xmlui.administrative.NotAuthorized.head">Insufficient privileges</message>
-    <message key="xmlui.administrative.NotAuthorized.para1a">Your account has insufficient privileges to perform the requested action. If you feel this is an error or have questions about your privileges, please contact the site's </message>
+    <message key="xmlui.administrative.NotAuthorized.para1a">Your account has insufficient privileges to perform the requested action. If you feel this is an error or have questions about your privileges, please contact the site&#39;s </message>
     <message key="xmlui.administrative.NotAuthorized.para1b">system administrators</message>
     <message key="xmlui.administrative.NotAuthorized.para1c">.</message>
     <message key="xmlui.administrative.NotAuthorized.para2">Login as another user</message>
@@ -2153,15 +2153,15 @@
 
     <!-- structural.xsl -->
     <message key="xmlui.dri2xhtml.structural.footer-promotional">
-        <a href="http://di.tamu.edu" id="ds-logo-link">
+        <a href="//di.tamu.edu" id="ds-logo-link">
             <span id="ds-footer-logo">&#160;</span>
         </a>
         <p>
             This website is using Manakin, a new front end for DSpace created by Texas A&amp;M University
             Libraries. The interface can be extensively modified through Manakin Aspects and XSL based Themes.
             For more information visit
-            <a href="http://di.tamu.edu">http://di.tamu.edu</a> and
-            <a href="http://dspace.org">http://dspace.org</a>
+            <a href="//di.tamu.edu">//di.tamu.edu</a> and
+            <a href="//dspace.org">//dspace.org</a>
         </p>
     </message>
     <message key="xmlui.dri2xhtml.structural.contact-link">Contact Us</message>
@@ -2214,7 +2214,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-name">Name</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-size">Size</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">View Document</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">view document</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
     <!-- <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message> -->
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View Document</message>
@@ -2226,19 +2226,19 @@
     <message key="xmlui.dri2xhtml.METS-1.0.size-gigabytes">Gb</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.license-text">The following license files are associated with this item:</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Except where otherwise noted, this item's license is described as </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.cc-license-text">Except where otherwise noted, this item&#39;s license is described as </message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.collection-not-implemented">
         The summaryView of a collection is not currently used or implemented. This can be fixed
-        by overriding the dri2xhtml's template named collectionSummaryView.
+        by overriding the dri2xhtml&#39;s template named collectionSummaryView.
     </message>
     <message key="xmlui.dri2xhtml.METS-1.0.community-not-implemented">
         The summaryView of a community is not currently used or implemented. This can be fixed
-        by overriding the dri2xhtml's template named communitySummaryView.
+        by overriding the dri2xhtml&#39;s template named communitySummaryView.
     </message>
 
-    <message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">The collection's logo</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">The community's logo</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">The collection&#39;s logo</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">The community&#39;s logo</message>
     <message key="xmlui.dri2xhtml.METS-1.0.no-logo-alt">No logo</message>
     <message key="xmlui.dri2xhtml.METS-1.0.news">News</message>
 
@@ -2454,7 +2454,7 @@
     <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.workflow_version_head">Notice</message>
     <message key="xmlui.aspect.versioning.VersionNoticeTransformer.notice.workflow_version_help">A more recent version of this item is in the Workflow.</message>
 
-    <message key="xmlui.aspect.sherpa.submission.consult">To check the copyright and self-archiving policies per journal or publisher, please consult <a href="http://www.sherpa.ac.uk/">SHERPA/RoMEO</a>.</message>
+    <message key="xmlui.aspect.sherpa.submission.consult">To check the copyright and self-archiving policies per journal or publisher, please consult <a href="//www.sherpa.ac.uk/">SHERPA/RoMEO</a>.</message>
     <message key="xmlui.aspect.sherpa.submission.title">Publisher information</message>
     <message key="xmlui.aspect.sherpa.submission.journal">Journal: </message>
     <message key="xmlui.aspect.sherpa.submission.publisher">Publisher information: </message>
@@ -2726,7 +2726,7 @@
 
 
             <h2>Postal address</h2>
-            <p class="address"><a target="_blank" href="https://goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
+            <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
             <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
             <p class="address"><span class="icon-body">37073 Göttingen</span></p>
@@ -2784,8 +2784,8 @@
             <ul class="styled">
                 <li>Electronic Publications in Open Access,
                     <ul>
-                        <li>more information on Open Access at <a class="extern-link" href="http://www.open-access.net//DE-EN">open-access.net</a></li>
-                        <li>see our <a class="extern-link" href="http://www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all%22">publication policy</a> at the <a href="http://www.dini.de/wiss-publizieren/sherparomeo/">SHERPA/RoMEO</a> list</li>
+                        <li>more information on Open Access at <a class="extern-link" href="//www.open-access.net//DE-EN">open-access.net</a></li>
+                        <li>see our <a class="extern-link" href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all%22">publication policy</a> at the <a href="//www.dini.de/wiss-publizieren/sherparomeo/">SHERPA/RoMEO</a> list</li>
                     </ul>
                 </li>
                 <li>High quality print on demand, hardcover and softcover</li>
@@ -2797,7 +2797,7 @@
                 <li>ong term archiving, Storage</li>
             </ul>
 
-            <p>All publications from the program "Universitätsverlag" that have undergone additional peer review are stored on the university's publication server <a class="extern-link" href="http://goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a>.
+            <p>All publications from the program "Universitätsverlag" that have undergone additional peer review are stored on the university&#39;s publication server <a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a>.
 
             </p>
 
@@ -2813,27 +2813,27 @@
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/coar-logo.png"></img>
-                        <h4><a href="http://coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
+                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
                         <p>Confederation of Open Access Repositories</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/openaire.ico"></img>
-                        <h4><a href="http://www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
+                        <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
                         <p>Open Access Infrastructure for Research in Europe</p>
                     </div>
                 </div>
             </div>
 
 
-            <p><a href="http://rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">more projects at the SUB Göttingen ...</a>
+            <p><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">more projects at the SUB Göttingen ...</a>
             </p>
         </div>
     </message>
     <message key="xmlui.static.editors.head">Editorial Board</message>
     <message key="xmlui.static.editors">
         <div>
-            <p>Each of the university's faculties appoint one or two members to the editorial board of Göttingen University Press.
-                The editorial board guides the University Press' programmatic orientation and cares for the quality assurance of the "Universitaetsverlag" <a href="/info/divisions">publication division</a>.
+            <p>Each of the university&#39;s faculties appoint one or two members to the editorial board of Göttingen University Press.
+                The editorial board guides the University Press&#39; programmatic orientation and cares for the quality assurance of the "Universitaetsverlag" <a href="/info/divisions">publication division</a>.
             </p>
         </div>
         <div>
@@ -2842,15 +2842,15 @@
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Theology</h4>
-                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
-                    <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/55424.html"> &#160;<span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
+                    <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/55424.html"> &#160;<span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
             <div class="col-sm-6">
 
                 <h4 class="list-item-header">Faculty of Law</h4>
-                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
-                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
         </div>
@@ -2860,41 +2860,41 @@
             <div class="col-sm-6">
                 <h4 class="list-item-header">University Medical Center Göttingen</h4>
                 <p>Prof. Dr. Claudia Wiesemann
-                    <span class="orcid">
-                        <a href="//orcid.org/0000-0002-8260-0346" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
-                            <small>ID</small>
-                        </a>
-                    </span>
 
-                    <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
+                    <a href="//orcid.org/0000-0002-8260-0346" target="_blank" title="Person Profile (ORCID)">
+                        <i class="icon-info-circled orcid"></i>
+                    </a>
+
+
+                    <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Humanities</h4>
-                <p>Prof. Dr. Manfred Jakubowski-Tiessen <a title="Homepage" target="_blank" href="http://www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="https://en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Manfred Jakubowski-Tiessen <a title="Homepage" target="_blank" href="//www.goettingen.studip.de/extern.php?module=Persondetails&amp;range_id=f01cb6ad89f913e65369bf4078cb36f3&amp;username=jakubowski"> <span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Mathematics and Computer Science</h4>
-                <p>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="http://www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Ina Kersten <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Physics</h4>
-                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="http://www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
+                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Chemistry</h4>
-                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Geoscience and Geography</h4>
-                <p>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
-                    <a title="Homepage" target="_blank" href="http://www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Joachim Reitner <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
+                    <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
         </div>
@@ -2902,11 +2902,11 @@
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Biology and Psychology</h4>
-                <p>Prof. Dr. Erwin Bergmeier <a title="Homepage" target="_blank" href="http://www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Erwin Bergmeier <a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Forest Sciences and Forest Ecology</h4>
-                <p>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="http://de.wikipedia.org/wiki/Norbert_Bartsch"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/76117.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Dr. Norbert Bartsch <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Norbert_Bartsch"><i class="icon-wikipedia"></i></a>&#160;<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76117.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
@@ -2917,25 +2917,25 @@
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Economics</h4>
-                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Social Sciences</h4>
-                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
-                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="http://www.uni-goettingen.de/de/94296.html"></a></span></p>
+                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
+                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Göttingen State and University Library (Chair)</h4>
                 <p><nobr>Dr. Wolfram Horstmann</nobr>
-                    <span class="orcid">
-                        <a href="//orcid.org/0000-0001-8673-6104" target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
-                            <small>ID</small>
-                        </a>
-                    </span>
-                    <a title="Homepage" target="_blank" href="http://www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
+
+                    <a href="//orcid.org/0000-0001-8673-6104" target="_blank" title="Person Profile (ORCID)">
+                        <i class="icon-info-circled orcid"></i>
+                    </a>
+
+                    <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
 
@@ -2972,7 +2972,7 @@
     <message key="xmlui.static.user.rights">
         <div>
             <p>
-                The online version of our publications are usually available by terms of <a href="http://creativecommons.org/licenses/by/4.0/deed.de" class="extern-link" target="_blank">Creatve Commons License CC By 4.0</a>.
+                The online version of our publications are usually available by terms of <a href="//creativecommons.org/licenses/by/4.0/deed.de" class="extern-link" target="_blank">Creatve Commons License CC By 4.0</a>.
                 User are entitled to make use of these documents at no cost; in particular, to download documents, to copy and redistribute them.
                 In case of re-distribution you have to make adequate copyright disclosures.
             </p>
@@ -3018,7 +3018,7 @@
             </p>
 
             <p>
-                After publication your book will be available online <a href="/info/openaccess">open access</a> on our website, endowed with a <a href="http://creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Licence 4.0</a>.
+                After publication your book will be available online <a href="/info/openaccess">open access</a> on our website, endowed with a <a href="//creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Licence 4.0</a>.
                 We also report your work to important databases and catalogues (e. g. GVK, DNB). The printed version will be listed in the "German Books in Print" ("Verzeichnis lieferbarer Bücher (VLB)") and with Amazon.
 
             </p>
@@ -3152,8 +3152,8 @@
             </p>
             <p class="strech-bottom">
                 Authors and editors will need to bear the costs of the first print run.
-                The average price per page <i class="icon-info-circled" data-toggle="popover" data-content="This price estimate is based on 250 pages in digital print and a print run of 50 copies (35 author's copies and 15 copies for the publisher)."></i>
-                for b/w production is 1.26 €, in case of coloured pagese <i class="icon-info-circled" data-toggle="popover" data-content="This price estimate is based on 250 pages including 10 coloured pages in digital print and a print run of 50 copies (35 author's copies and 15 copies for the publisher)."></i> the average price per page for simple paper quality comes up to 1.67 € and for fine paper quality 1.78 €.
+                The average price per page <i class="icon-info-circled" data-toggle="popover" data-content="This price estimate is based on 250 pages in digital print and a print run of 50 copies (35 author&#39;s copies and 15 copies for the publisher)."></i>
+                for b/w production is 1.26 €, in case of coloured pagese <i class="icon-info-circled" data-toggle="popover" data-content="This price estimate is based on 250 pages including 10 coloured pages in digital print and a print run of 50 copies (35 author&#39;s copies and 15 copies for the publisher)."></i> the average price per page for simple paper quality comes up to 1.67 € and for fine paper quality 1.78 €.
                 The following examples illustrate our pricing, however actual prices for publication projects may vary for individual reasons.
             </p>
             <table id="prices" class="table table-sm">
@@ -3169,7 +3169,7 @@
                 <tbody>
                     <tr>
                         <td>
-                            Your manuscript consists of 180 pages,  &#173;the publisher's effort to process your manuscript is medium,  &#173;you receive 35 free copies
+                            Your manuscript consists of 180 pages,  &#173;the publisher&#39;s effort to process your manuscript is medium,  &#173;you receive 35 free copies
                         </td>
                         <td class="numeric">950.00 €</td>
                         <td class=" numeric">180 x 1.26  = 227,00 €</td>
@@ -3178,7 +3178,7 @@
                     </tr>
                     <tr>
                         <td>
-                            Your anthology consists of 450 pages, &#173;the publisher's effort to process your manuscript is considerably high, &#173;you receive 35 free copies
+                            Your anthology consists of 450 pages, &#173;the publisher&#39;s effort to process your manuscript is considerably high, &#173;you receive 35 free copies
                         </td>
                         <td class="numeric">1,300.00 €</td>
                         <td class="numeric">450 x 1.67 = 751.50 €</td>
@@ -3187,7 +3187,7 @@
                     <tr>
                         <td>
                             Your PhD thesis will be part of a series and consists of 250 pages with 10 coloured pages,
-                            &#173;print run will be in fine paper quality, the publisher's effort to process your manuscript is low,
+                            &#173;print run will be in fine paper quality, the publisher&#39;s effort to process your manuscript is low,
                             &#173;you receive 35 free copies
                         </td>
                         <td class="numeric">516.00 €</td>
@@ -3295,6 +3295,64 @@
         </div>
     </message>
 
+    <message key="xmlui.static.policy.head">Publishing Policy</message>
+    <message key="xmlui.static.policy.trail">Publishing Policy</message>
+    <message key="xmlui.static.policy">
+        <div class="ds-static-div">
+            <p>
+                <i class="icon-file-pdf"></i><a href="/static/documents/Verlagspolicy-en_UVG_Stand161115.pdf">Publishing Policy</a>
+                <span class="pull-right">May 2015, Göttingen</span>
+            </p>
+            <p>
+                Since summer 2003 the University Press of the Georg-August-Universität Göttingen publishes research results of the university&#39;s disciplines.
+                Providing those results in Open Access—free online access to readers worldwide — is a guiding principle for the press.
+                In our Open Access publishing model, owners of intellectual property rights (authors and editors) stay in control of their publications as the press receives only those rights necessary for publishing.
+                With the 2005 adoption of its Open Access resolution, the University of Göttingen clearly supports the <a href="//www.sub.uni-goettingen.de/elektronisches-publizieren/open-access/" class="extern-link" target="_blank">Open Access</a> principle.
+                Therefore, the press expects authors and editors to comply with Open Access publishing.
+                The vast majority of our publications get published as a free online edition, together with a printed volume available through the book trade.
+                This form of hybrid publishing improves impact and dissemination of publications thus showcasing the quality of the underlying research.
+                Göttingen University Press operates on a non-profit basis, relying for most publications on financial contributions from authors or editors to make Open Access possible while maintaining low retail prices.
+                We provide access to our online editions via the trusted repository of the press Göttingen University Press, peer-reviewed publications also via the university&#39;s institutional repository <a href="//goedoc.uni-goettingen.de/goescholar/" class="extern-link" target="_blank">GoeScholar</a>.
+            </p>
+
+
+            <p>
+                In January 2015 the presidential board of the Georg-August-Universität Göttingen approved the <a href="/documents/Nutzungsordnung-2015-01-09.pdf">terms of entitlement</a> (available in German only) for the Göttingen University Press.
+                These terms clarify how the press publishes and which target groups it is meant to serve.
+                The terms of entitlement enable the press to become active for third-party-funded projects whose strict funding guidelines would normally exclude an inhouse service such as the university press as a beneficiary.
+                We appreciate that our terms of entitlement help us to promote Open Access especially in those disciplines that rely on publishing their research results in books—especially against the backdrop of little or no uptake of Open Access among the disci-plines&#39; commercial publishing houses.
+            </p>
+            <h3>
+                Open Access publishing in the Göttingen University Press covers the following aspects
+            </h3>
+            <ol>
+
+
+                <li> Publications from Göttingen University Press are available worldwide to anyone via the trusted repositories of the University of Göttingen.
+                    As such, they can be read, downloaded, printed and offered by third-parties. If the work is licensed under a Creative Commons license their respective agreements apply.
+                </li>
+
+                <li>
+                    To grant Open Access to the respective work, the university press needs rights holders (authors and editors) to transfer certain rights.
+                    The press needs permanent and non-exclusive rights to publish an electronic edition in public data networks and on the repositories of the Georg-August-Universität Göttingen.
+                    As data formats change over time, the university press also needs the right to migrate or emulate.
+                    As a protection for the press&#39; investment into the printed version exclusive rights for print should be transferred. Exceptions are usually possible upon request.
+                </li>
+
+                <li>
+                    Authors and publishers may put the work online in identical form on personal homepages and in sub-ject-specific or institutional repositories, either as a whole or in part.
+                    Upon arrangement with the press parts of the work can also be re-printed elsewhere. However reference to the primary publication and the Open Access version should be provided.
+                </li>
+
+                <li>
+                    Generally all publications of Göttingen University Press are assigned with the <a href="//creativecommons.org/licenses/by-sa/4.0/deed.de" class="extern-link" target="_blank">Creative Commons License 4.0</a> (CC BY-SA 4.0) International with the obligation of the right attribution and the possibility of sharing alike.
+                </li>
+
+            </ol>
+        </div>
+    </message>
+
+
     <message key="xmlui.static.openaccess.trail">Open Access</message>
 
     <message key="xmlui.static.openacces.head">Open Access</message>
@@ -3303,31 +3361,31 @@
         <div class="ds-static-div">
             <p>
                 We offer an innovative model of publication that focuses on optimal usage of modern ways of publication and gives choices to the authors regarding free online publication.
-                The focus of our publication work is broad awareness and accessibility for the publications in order to illustrate the scholarly performance of Goettingen's Scholars.
-                For that reason, we are aiming to make most of our publications available on the university's Institutional Repository (GOEDOC) by terms of Open Access.
+                The focus of our publication work is broad awareness and accessibility for the publications in order to illustrate the scholarly performance of Goettingen&#39;s Scholars.
+                For that reason, we are aiming to make most of our publications available on the university&#39;s Institutional Repository (GOEDOC) by terms of Open Access.
                 Here you can find our <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><i class="icon-file-pdf"></i>publication policy (in German)</a>.
-                (In a concise form you can find our policy for the deposit of pre- and postprints in Open Access repositories in the <a href="http://www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" target="_blank" class="extern-link">Sherpa/RoMEO database</a>.)
+                (In a concise form you can find our policy for the deposit of pre- and postprints in Open Access repositories in the <a href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" target="_blank" class="extern-link">Sherpa/RoMEO database</a>.)
             </p>
             <p>
                 Göttingen University Press provides some recommendations <a href="/documents/UVG_lizenzen_141124.pdf"><i class="icon-file-pdf"></i>Open-Access-Lizenzen im Universitätsverlag Göttingen"</a> relating to open access licenses.
                 Please note that this text is only available in German.
             </p>
             <p>
-                The German UNESCO commission, the Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (hbz) and Wikimedia Deutschland published a <a href="http://www.unesco.de/leitfaden_open_content.html" target="_blank" class="extern-link">Open Content-Leitfaden"</a> in November 2014.
+                The German UNESCO commission, the Hochschulbibliothekszentrum des Landes Nordrhein-Westfalen (hbz) and Wikimedia Deutschland published a <a href="//www.unesco.de/leitfaden_open_content.html" target="_blank" class="extern-link">Open Content-Leitfaden"</a> in November 2014.
                 Authors are informed about their rights and duties concerning their online publications.
                 The main focus is directed towards the international widespread license Creative Commons.
             </p>
 
             <div class="media">
                 <div class="media-left">
-                    <a href="http://creativecommons.org/" target="_blank">
+                    <a href="//creativecommons.org/" target="_blank">
                         <img class="media-object" src="/static/icons/cc.logo.large.png" alt="CreativeCommons logo"></img>
                     </a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Creative Commons Lizenz</h4>
-                    <p>The electronic version of your publication is provided with a publication license, e.g. <a href="http://creativecommons.org/" class="extern-link" target="_blank">Creative Commons Lizense</a>.
-                        Göttingen University Press makes use of the <a href="http://creativecommons.org/licenses/by-sa/4.0/" class="extern-link" target="_blank">Creative Commons License 4.0</a> which includes the duty to give appropriate credit.
+                    <p>The electronic version of your publication is provided with a publication license, e.g. <a href="//creativecommons.org/" class="extern-link" target="_blank">Creative Commons Lizense</a>.
+                        Göttingen University Press makes use of the <a href="//creativecommons.org/licenses/by-sa/4.0/" class="extern-link" target="_blank">Creative Commons License 4.0</a> which includes the duty to give appropriate credit.
                     </p>
                 </div>
             </div>
@@ -3335,14 +3393,14 @@
             <h3>More on Open Access</h3>
             <div class="media">
                 <div class="media-left">
-                    <a href="http://oaspa.org/" target="_blank">
+                    <a href="//oaspa.org/" target="_blank">
                         <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
                     </a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Open Access Scholarly Publishers Association</h4>
                     <p>
-                        The mission of the Open Access Scholarly Publishers Association (<a href="http://oaspa.org/" class="extern-link" target="_blank">OASPA</a>) is to support and represent the interests of Open Access (OA) journal and book publishers globally in all scientific, technical, and scholarly disciplines.
+                        The mission of the Open Access Scholarly Publishers Association (<a href="//oaspa.org/" class="extern-link" target="_blank">OASPA</a>) is to support and represent the interests of Open Access (OA) journal and book publishers globally in all scientific, technical, and scholarly disciplines.
                         To accomplish its mission, the Association will exchange Information (provide a forum for the exchange of information and experiences related to OA delivery of scientific content),
                         set standards (promote a uniform definition of OA publishing, best practices for maintaining and disseminating OA scholarly communications,
                         and ethical standards), advance models (support the development of business and publishing models that support OA journal and book publishing),
@@ -3359,14 +3417,14 @@
 
             <div class="media">
                 <div class="media-left">
-                    <a href="http://www.open-access.net/" target="_blank">
+                    <a href="//www.open-access.net/" target="_blank">
                         <img class="media-object extern-link" src="/static/icons/OpenAccess_Logo.gif" alt="OAR"></img>
                     </a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Open Access Plattform</h4>
                     <p>
-                        The platform <a href="http://open-access.net" class="extern-link" target="_blank">open-access.net</a> supports scientists and research institutions to implement open access in practice and offers information on publishing
+                        The platform <a href="//open-access.net" class="extern-link" target="_blank">open-access.net</a> supports scientists and research institutions to implement open access in practice and offers information on publishing
                         strategies, costs and legal aspects.
                         The Universities of Bielefeld, Goettingen, Constance and the Free University of Berlin who belong to the pioneers of the open access movement in
                         Germany jointly operate the platform open-access.net. Questions and contributions are more than welcome!
@@ -3376,14 +3434,14 @@
             </div>
             <div class="media">
                 <div class="media-left">
-                    <a href="http://www.oapen.org/" target="_blank">
+                    <a href="//www.oapen.org/" target="_blank">
                         <img class="media-object" src="/static/icons/oapen.logo.png" alt="OAPEN"></img>
                     </a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Open Access Publishing in European Networks</h4>
                     <p>
-                        The University Press of Göttingen is partner in the joint European project <a href="http://www.oapen.org/" class="extern-link" target="_blank">OAPEN</a>.
+                        The University Press of Göttingen is partner in the joint European project <a href="//www.oapen.org/" class="extern-link" target="_blank">OAPEN</a>.
                         Six university presses specialised in high-quality publishing of scientific literature and
                         two dutch universities have started the project to gather information on how Open Access publishing of books can be fostered and to build up the
                         largest European collection of Open Access books in the Humanities and Social Sciences.
@@ -3395,11 +3453,11 @@
 
             <div class="media">
                 <div class="media-left">
-                    <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+                    <a href="//www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Goettingen Journal of International Law (GoJIL)</h4>
-                    Founded in 2007, the Goettingen Journal of International Law (<a href="http://www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) is an initiative
+                    Founded in 2007, the Goettingen Journal of International Law (<a href="//www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) is an initiative
                     with the primary objective of publishing an e-journal of legal scholarship focusing on International Law.
                     Since then the Göttingen University Press supports the journal with bibliographic and archiving services.
                     The aim of the journal is to foster debate among scholars of the diverse fields within international law, while, at the same time,
@@ -3410,8 +3468,8 @@
                     It is the first German International Law journal where the responsibility for the editing and publishing process as a whole is primarily carried by students.
                     It is published exclusively in English.
                     The journal is available online and free of charge, since open access to the results of academic research is essential for the future of legal scholarship.
-                    The journal is being published in cooperation with the <a href="http://www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>,
-                    with the <a href="http://inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> and with support of the
+                    The journal is being published in cooperation with the <a href="//www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>,
+                    with the <a href="//inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> and with support of the
                     Göttingen University Press.
                 </div>
             </div>
@@ -3446,7 +3504,7 @@
                 <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
             </p>
             <p class="address">
-                <a href="/"><i class="icon-globe"></i> http://univerlag.uni-goettingen.de</a>
+                <a href="/"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
             </p>
             <p class="address">
                 <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3481,7 +3539,7 @@
                 <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
             </p>
             <p class="address">
-                <a href="http://univerlag.uni-goettingen.de"><i class="icon-globe"></i> http://univerlag.uni-goettingen.de</a>
+                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
             </p>
             <p class="address">
                 <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3489,14 +3547,14 @@
             </p>
 
             <p>
-                German users please switch the web site's language in order to see the German text.
+                German users please switch the web site&#39;s language in order to see the German text.
             </p>
 
             <h3>Privacy</h3>
 
             <p>The Repository may collect anonymized information on the use.</p>
             <p>
-                Out opt: <a href="http://piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en" target="_blank" class="extern-link">Do not count my visits.</a>
+                Out opt: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en" target="_blank" class="extern-link">Do not count my visits.</a>
             </p>
         </div>
     </message>
@@ -3523,23 +3581,28 @@
 
     <!-- Collection texts -->
     <message key="xmlui.collection.serieCEDPAL.introduction">
-        <h3>CEDPAL Series</h3>
+        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanish"></img></a> <a href="#" data-toggle="collapse" data-target="#port"><img  class="flag" src="/static/icons/spain-flag.png" title="portuguese"></img></a></h3>
         <p>
 
-            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty's Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
+            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty&#39;s Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
             The Cedpal Series seeks to make accessible the Centre´s research projects (transnational, national and individual ones) and other academic activities (such as its series of lectures and seminars as well as its teaching courses on criminal law and justice) to criminal law students, researchers, professors and lawyers. The Series also provides a place to publish high quality works of researchers somehow linked to the Centre.
         </p>
-        <h3>Serie CEDPAL</h3>
-        <p>
-            El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
-            Con la Serie de publicaciones CEDPAL, iniciada en febrero de 2016, se busca poner al alcance de estudiantes, investigadores, profesores y prácticos de las ciencias criminales los resultados de las investigaciones del Centro (proyectos transnacionales, nacionales e individuales), así como de sus actividades de enseñanza ("Escuela de Verano en Ciencias Criminales y Dogmática Penal alemana"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Asimismo, la Serie ofrece un espacio propicio para que investigadores externos al Centro, pero vinculados a él, publiquen sus trabajos de investigación.<br />
-        </p>
 
-        <h3>Série CEDPAL</h3>
-        <p>
-            O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="http://cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="http://cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
-            Com a Série de publicações CEDPAL, iniciada em fevereiro de 2016, busca-se colocar ao alcance de estudantes, pesquisadores, professores e profissionais das ciências criminais os resultados das pesquisas do Centro (projetos transnacionais, nacionais e individuais), assim como de sus atividades de ensino ("Escola de Verão em Ciências Criminais e Dogmática Penal alemã"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Outrossim, a Série oferece um espaço propício para que pesquisadores externos ao Centro, mas vinculados a ele, publiquem seus trabalhos de pesquisa.<br />
-        </p>
+        <div id="spain" class="collapse">
+            <h3>Serie CEDPAL</h3>
+            <p>
+                El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
+                Con la Serie de publicaciones CEDPAL, iniciada en febrero de 2016, se busca poner al alcance de estudiantes, investigadores, profesores y prácticos de las ciencias criminales los resultados de las investigaciones del Centro (proyectos transnacionales, nacionales e individuales), así como de sus actividades de enseñanza ("Escuela de Verano en Ciencias Criminales y Dogmática Penal alemana"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Asimismo, la Serie ofrece un espacio propicio para que investigadores externos al Centro, pero vinculados a él, publiquen sus trabajos de investigación.<br />
+            </p>
+        </div>
+
+        <div id="port" class="collapse">
+            <h3>Série CEDPAL</h3>
+            <p>
+                O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
+                Com a Série de publicações CEDPAL, iniciada em fevereiro de 2016, busca-se colocar ao alcance de estudantes, pesquisadores, professores e profissionais das ciências criminais os resultados das pesquisas do Centro (projetos transnacionais, nacionais e individuais), assim como de sus atividades de ensino ("Escola de Verão em Ciências Criminais e Dogmática Penal alemã"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Outrossim, a Série oferece um espaço propício para que pesquisadores externos ao Centro, mas vinculados a ele, publiquem seus trabalhos de pesquisa.<br />
+            </p>
+        </div>
         <div class="address">
             <p>
                 Editor-in-Chief / Director of the Series:
@@ -3554,7 +3617,7 @@
     <message key="xmlui.collection.gssca.introduction">
         <p>
             This series is the continuation of "<a href="/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>",
-            (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), which originally had been issued as "<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" by the LIT publishing company
+            (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), which originally had been issued as "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" by the LIT publishing company
             (Vol. 1-17, 2001-2007).
         </p>
         <p>ISSN (Print): 2199-5346</p>
@@ -3588,14 +3651,14 @@
         <p>
             The "Göttinger Schriften zu Landschaftsinterpretation und Tourismus” present a sample of the works of the independent non-profit organization ZELT,
             who aims at supporting the interpretation of landscapes in context with a sustainable development in the fields of tourism and regional issues.
-            <a href="http://www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
+            <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
             This series is being published by Goettingen University Press from volume 4 onwards.
         </p>
     </message>
 
     <message key="xmlui.collection.annalsBiologie.introduction">
         <p>
-            Die <a href="http://www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">"Deutsche Gesellschaft für Geschichte und Theorie der Biologie"</a>
+            Die <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">"Deutsche Gesellschaft für Geschichte und Theorie der Biologie"</a>
             wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet.
             Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen.
             Dafür wurde das eigene "Jahrbuch für Geschichte und Theorie der Biologie" genutzt.
@@ -3611,9 +3674,9 @@
     <message key="xmlui.collection.interkultur.introduction">
         <!-- <span>Die Serie "interKULTUR European-Chinese Intercultural Studies" wurde während des Projekts interKULTUR erarbeitet und besteht sowohl aus modernen Unterrichtsmaterialien für interkulturelle Studien, als auch aus Ergebnissen von Feldstudien.</span><br /> -->
         <p>
-            The series "interKULTUR European -Chinese Intercultural Studies" consists of teaching material for intercultural studies in higher education and research results of such studies. Languages covered are German, Chinese and English. Topics range as wide as translations in economics, intercultural mass communication or the cultural concept of "the Other". The overall focus of the series' volumes lies on their intercultural approach.
+            The series "interKULTUR European -Chinese Intercultural Studies" consists of teaching material for intercultural studies in higher education and research results of such studies. Languages covered are German, Chinese and English. Topics range as wide as translations in economics, intercultural mass communication or the cultural concept of "the Other". The overall focus of the series&#39; volumes lies on their intercultural approach.
         </p>
-        <p>Except the Online course Volume 3 all publications will be available in print through the German booktrade. Due to licensing restrictions not all publications will be available as an Open Access version. However they can be browsed through <a class="extern-link" target="_blank" href="http://books.google.de">Google Book Search</a>. They have been developed during the project <a target="_blank" href="http://interkultur-asialink.de">"interKULTUR"</a> under the programme Asia-Link* that was launched by the European Commission to foster regional and multilateral networking between higher education institutions in EU member States and South Asia, South-East Asia and China.
+        <p>Except the Online course Volume 3 all publications will be available in print through the German booktrade. Due to licensing restrictions not all publications will be available as an Open Access version. However they can be browsed through <a class="extern-link" target="_blank" href="//books.google.de">Google Book Search</a>. They have been developed during the project <a target="_blank" href="//interkultur-asialink.de">"interKULTUR"</a> under the programme Asia-Link* that was launched by the European Commission to foster regional and multilateral networking between higher education institutions in EU member States and South Asia, South-East Asia and China.
         </p>
         <p>The Asia-Link Programme was launched at the beginning of 2002 as an initiative by the European Union (EU) to foster regional and multilateral networking between higher education institutions in EU Member States and South Asia, South-East Asia and China. Asia-Link has been a five-year programme with a total budget of 42,8 million EUR. All publications have been produced with the financial assistance of the European Union. The contents of this series are the sole responsibility of the editors and authors and can under no circumstances be regarded as reflecting the position of the European Union.
         </p>
@@ -3629,7 +3692,7 @@
             The results are being published in the "<em>Biodiversity and Ecology Series - A</em>".
         </p>
         Within the "<em>Biodiversity and Ecology Series - B</em>" dissertations are being published which have been written at the GCBE and are available online but not in print.
-        <a href="http://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">List of these dissertations</a>.
+        <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">List of these dissertations</a>.
         <p>
         </p>
         <p>ISSN (Print): 1863-3935</p>
@@ -3676,8 +3739,8 @@
 
     <message key="xmlui.collection.gbao.introduction">
         <p>
-            The series "<a href="http://books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Beiträge zum Alten Orient</a>" is the continuation of the succesful "Göttinger Arbeitshefte zur Altorientalischen Literatur”.
-            It is being published by the <a href="http://www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar of Altorientalistik of the Georg-August-Universität Göttingen</a>.
+            The series "<a href="//books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Beiträge zum Alten Orient</a>" is the continuation of the succesful "Göttinger Arbeitshefte zur Altorientalischen Literatur”.
+            It is being published by the <a href="//www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar of Altorientalistik of the Georg-August-Universität Göttingen</a>.
             Main theme of this series is the indexing and interpretation of the comprehensive paleography of the Accadian and Sumerian language from about 3100 - 500. B.C.
         </p>
         <p>ISSN (Print): 1866-2595</p>
@@ -3687,7 +3750,7 @@
 
     <message key="xmlui.collection.gbe.introduction">
         <p>
-            This series is the continuation of "<a href="http://www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>",
+            This series is the continuation of "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>",
             which originally had been issued by the LIT publishing company.
         </p>
         <p>ISSN (Print): 1866-0711</p>
@@ -3704,7 +3767,7 @@
 
     <message key="xmlui.collection.gf.introduction">
         <p>
-            "Göttinger Forstwissensschaften" is the new series of the <a href="http://www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
+            "Göttinger Forstwissensschaften" is the new series of the <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
             It merges the series "Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt” and
             series A of the "Berichte des Forschungszentrums Waldökosysteme”.
             The series reflects the wide thematic range of the faculty and of the "Nordwestdeutschen Forstlichen Versuchsanstalt”.
@@ -3715,7 +3778,7 @@
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
-            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
+            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
         <p>ISSN (Print): 1864-2128</p>
         <p>ISSN (Online): 2512-6849</p>
@@ -3723,7 +3786,7 @@
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
-            The series "Göttinger Klassiker der Strömungslehre" makes once again available publications from the Göttingen school of <a href="http://de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> or historically related works.
+            The series "Göttinger Klassiker der Strömungslehre" makes once again available publications from the Göttingen school of <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> or historically related works.
         </p>
         <p>ISSN (Print): 1863-1088</p>
         <p>ISSN (Online): 2512-6865</p>
@@ -3732,7 +3795,7 @@
     <message key="xmlui.collection.gsmr.introduction">
         <p>
             The new series "Göttinger Schriften zum Medizinrecht" presents a forum to the interested general public in order
-            to make all new research results of the newly created "<a href="http://www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
+            to make all new research results of the newly created "<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
         </p>
         <p>
             <a href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a>
@@ -3743,7 +3806,7 @@
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
-            This new series in public law, published by the <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristische Fakultät der Georg-August-Universität Göttingen</a>, consists of dissertation theses, significant research works and anthologies with special attention to constituional and administrative law.
+            This new series in public law, published by the <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristische Fakultät der Georg-August-Universität Göttingen</a>, consists of dissertation theses, significant research works and anthologies with special attention to constituional and administrative law.
         </p>
         <p>ISSN (Print): 2191-4583</p>
         <p>ISSN (Online): 2512-6911</p>
@@ -3775,7 +3838,7 @@
 
     <message key="xmlui.collection.gskw.introduction">
         <p>
-            The aim of the series "Göttinger Studien zu den Kriminalwissenschaften”, published by the <a href="http://www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Institut für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a>,
+            The aim of the series "Göttinger Studien zu den Kriminalwissenschaften”, published by the <a href="//www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Institut für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a>,
             is to reflect the activities of the institute and to offer a platform for significant research works in the field of criminal law and justice.
         </p>
         <p>ISSN (Print): 1864-2136</p>
@@ -3788,7 +3851,7 @@
             especially its consequences for the German college sports is the focus of the adh-series "Bildung und Wissenschaft”.
             The intention is to present insights into backgrounds and contexts of the current developments and to initiate discussion about the process.
             The publishers hope to contribute to the developments in sports in academia and in clubs.
-            With this serial "<a href="http://www.fachportal-paedagogik.de/guide-bildungsforschung/mlesen.html?Id=39105" target="_blank" class="external-link">Abschied von Humboldt – Reformprozesse an den deutschen Hochschulen und ihre Bedeutung für den Hochschulsport</a>" the former adh-series is being
+            With this serial "<a href="//www.fachportal-paedagogik.de/guide-bildungsforschung/mlesen.html?Id=39105" target="_blank" class="external-link">Abschied von Humboldt – Reformprozesse an den deutschen Hochschulen und ihre Bedeutung für den Hochschulsport</a>" the former adh-series is being
             revived after an extended period of silence.
         </p>
         <p>Mit diesem Hochschulsport-Periodikum wird die ehemalige "ADH-Schriftenreihe des Hochschulsports" nach einer längeren Pause wieder belebt.
@@ -3825,7 +3888,7 @@
 
     <message key="xmlui.collection.spe.introduction">
         <p>
-            For more information on the publications, please also see the <a href="http://www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">homepage</a> of the journal.
+            For more information on the publications, please also see the <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">homepage</a> of the journal.
         </p>
         <p>ISSN: 1864-211X</p>
     </message>
@@ -3981,7 +4044,7 @@
             Please note that we add shipping and handling costs to the displayed cost of the items.
             Shipping and handling costs for Germany and countries of the Eruopean Union appear on your order once you have put items into the shopping cart.
             Please use the contact form in order to find out about the exact costs for shipping outside the European Union or in case that you have special needs,
-            e.g. delivery by air mail. We don't archive or share personal data that you transmit on our web site except for the purpose of billing and delivery and
+            e.g. delivery by air mail. We don&#39;t archive or share personal data that you transmit on our web site except for the purpose of billing and delivery and
             only as it is actually required.
         </p>
 
@@ -4096,7 +4159,7 @@
 
         <!-- <p id="catalog">
                 <img src="/static/images/FrontCover_Verlagsprogramm2016.jpg" alt="FrontCover_Verlagsprogramm2016"/>
-                <a target="_blank" href="http://demo.multivio.org/client/#get&amp;url=http://www.univerlag.uni-goettingen.de/documents/verlagsprogramm_2016.pdf">Vorschau</a>
+                <a target="_blank" href="//demo.multivio.org/client/#get&amp;url=//www.univerlag.uni-goettingen.de/documents/verlagsprogramm_2016.pdf">Vorschau</a>
                 </p> -->
 
     </message>
@@ -4324,7 +4387,7 @@
     <message key="xmlui.page-not-found.text">
         <div>
             <p>
-                We're sorry, but we could not find the page you requested. Please check the URL or <a href="/info/contact">contact us</a>.
+                We&#39;re sorry, but we could not find the page you requested. Please check the URL or <a href="/info/contact">contact us</a>.
             </p>
         </div>
     </message>
@@ -4363,7 +4426,7 @@
             <span class="contributor">Bargheer, Margo; Pabst, Jutta</span>
             <span class="title">&#8217;Being small is not a fault&#8217;: Making sense of the newer generation of German-language university presses.</span>
             <span class="biblio"> Learned Publishing, Vol. 29, Issue S1 (2016), p. 335-341</span>
-            <p class="strech-top">Accessible on <a href="http://resolver.sub.uni-goettingen.de/purl?gs-1/13814" class="extern-link" target="_blank">GoeScholar</a> or directly at <a href="http://onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" class="extern-link" target="_blank">Wiley Online Library</a>.</p>
+            <p class="strech-top">Accessible on <a href="//resolver.sub.uni-goettingen.de/purl?gs-1/13814" class="extern-link" target="_blank">GoeScholar</a> or directly at <a href="//onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" class="extern-link" target="_blank">Wiley Online Library</a>.</p>
 
             <p class="strech-top">
                 Abstract: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
@@ -4743,7 +4806,7 @@
                     </div>
                 </div>
 
-                <input id="aspect_artifactbrowser_CostRequestForm_field_page" class="ds-hidden-field" name="page" type="hidden" value="http://localhost:8080/costrequest" />
+                <input id="aspect_artifactbrowser_CostRequestForm_field_page" class="ds-hidden-field" name="page" type="hidden" value="//localhost:8080/costrequest" />
 
                 <!-- Button -->
                 <div class="form-group">

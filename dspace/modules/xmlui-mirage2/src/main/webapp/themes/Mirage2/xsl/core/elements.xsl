@@ -191,7 +191,7 @@
                         <span class="orcid">
                             <a target="_blank" i18n:attr="title" title="xml.author.profile.orcid.label">
                                 <xsl:attribute name="href"><xsl:value-of select="concat('//orcid.org/', substring-before(substring-after(dri:xref/@target, '2F'), '&#38;type=author'))" /></xsl:attribute>
-                                <small>ID</small>
+                                <i class="icon-info-circled orcid"></i>
                             </a>
                         </span>
                     </xsl:if>

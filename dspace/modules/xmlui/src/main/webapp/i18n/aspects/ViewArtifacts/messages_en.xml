@@ -31,16 +31,14 @@
 
     <message key="xmlui.static.ring.head">Series of open lectures:<br /></message>
     <message key="xmlui.static.ring.preambel">
-        <div class="media-body">
-            <h3 class="media-head">Audio records University Göttingen</h3>
-            <p>
-                This centralised public lecture series takes place every Tuesday at 18:15 CET in the "Aula am Wilhelmsplatz". Recordings of each lecture will be broadcast by <a href="//www.stadtradio-goettingen.de/" class="extern-link" target="_blank">StadtRadio Göttingen</a> (107.1 MHz) on the subsequent Wednesday at 12:00 CET and then accessible on this website. Please note: all of these audio files are subject to German copyright law. Any form of processing or distribution is prohibited.
+        <!-- <div class="media-body"> -->
+        <h3 class="media-head">Audio records University Göttingen</h3>
+        <p>
+            This centralised public lecture series takes place every Tuesday at 18:15 CET in the "Aula am Wilhelmsplatz". Recordings of each lecture will be broadcast by <a href="//www.stadtradio-goettingen.de/" class="extern-link" target="_blank">StadtRadio Göttingen</a> (107.1 MHz) on the subsequent Wednesday at 12:00 CET and then accessible on this website. Please note: all of these audio files are subject to German copyright law. Any form of processing or distribution is prohibited.
 
-            </p>
-            <p>
-                The video recordings may be found within the current <a class="extern-link" target="_blank" href="https://youtu.be/TK0kDXf0c9k?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r"><i class="icon-youtube"></i>Playlist</a>.
-            </p>
-        </div>
+        </p>
+
+        <!-- </div> -->
     </message>
 
     <message key="xmlui.static.ring.list.preambel">
@@ -191,7 +189,7 @@
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Summer term 2012</strong></span>
-                        <p><a href="/info/13">Tradition - Autonomie - Innovation</a></p>
+                        <p><a href="/info/12">Tradition - Autonomie - Innovation</a></p>
                     </div>
                 </div>
             </div>
@@ -683,8 +681,7 @@
         <div class="contact">
             <p>Georg-August-University Göttingen</p>
             <p>Presse, Kommunikation and Marketing</p>
-            <p><a target="_blank" href="//goo.gl/maps/1eEkdSx2osT2"><i class="icon-location"></i></a>Wilhelmsplatz 1 (Aulagebäude)</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/1eEkdSx2osT2"><i class="icon-location"></i></a>Wilhelmsplatz 1 (Aula), 37073 Göttingen)</p>
             <p><i class="icon-call"></i>+49 551 39-4342</p>
             <p><i class="icon-fax"></i>+49 551 39-4251</p>
             <p>Mit Unterstützung des Universitätdsbandes Göttingen e. V.</p>
@@ -694,6 +691,12 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** SS 13 ******* -->
+    <message key="xmlui.static.ring.playlist-13">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrc_N2snDBeXkdT41cbIbuIH"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-13.trail">
         SS 13
     </message>
@@ -864,8 +867,7 @@
             <p>Georg-August-University Göttingen</p>
             <p>Seminar für Deutsche Philologie</p>
             <p>Jacob-Grimm-Haus</p>
-            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3</p>
-            <p><span class="icon-body">337073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-12450 und</p>
             <p><i class="icon-call"></i>+49 551 39-20239</p>
             <p><i class="icon-fax"></i>+49 551 39 9204</p>
@@ -876,17 +878,22 @@
         <div class="contact">
             <strong>Prof. Dr. Annekathrin Schacht</strong>
             <p>Musikwissenschaftliches Seminar</p>
-            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-20022</p>
         </div>
 
     </message>
 
-
+    <!-- ********************************* -->
 
 
     <!-- ********** WS 13-14 ******* -->
+    <message key="xmlui.static.ring.playlist-13-14">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreaAzI4XjlkOcejnOdP2W8D"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-13-14.trail">
         WS 13-14
     </message>
@@ -918,7 +925,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-10-22.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=o-SUlEb_VDE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=o-SUlEb_VDE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -935,7 +942,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-10-29.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=ynHK9827ToM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ynHK9827ToM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -952,7 +959,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=vOuX-lbY4Vw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=vOuX-lbY4Vw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -969,7 +976,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=6vi6rFnstUM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=6vi6rFnstUM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -986,7 +993,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-19.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=T6Blu4g1qPM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=T6Blu4g1qPM" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1002,7 +1009,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-11-26.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=O_IeXCDmrls" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=O_IeXCDmrls" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1018,7 +1025,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-12-03.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=XUjtA6a2Nu4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=XUjtA6a2Nu4" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1034,7 +1041,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2013-12-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=ucOR8s3M4hg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=ucOR8s3M4hg" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1050,7 +1057,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!-- <a href="/static/audio/ring2013-12-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=_UzOH6O-vJw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=_UzOH6O-vJw" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1065,7 +1072,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=Rzhv0omIEqE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=Rzhv0omIEqE" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1081,7 +1088,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!-- <a href="/static/audio/ring2014-01-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>-->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=8gMuxxBivO0" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=8gMuxxBivO0" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1097,7 +1104,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=BdeMCEvan24" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=BdeMCEvan24" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1113,7 +1120,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-01-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=79A7VffgtCA" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=79A7VffgtCA" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1137,6 +1144,12 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** SS 14 ******* -->
+    <message key="xmlui.static.ring.playlist-14">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrdegsRwk8FgC_UGXsO7OIVF"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-14.trail">
         SS 14
     </message>
@@ -1187,7 +1200,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <a href="/static/audio/ring2014-05-13.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=2F3-zXNiDjs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=2F3-zXNiDjs" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1257,7 +1270,7 @@
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!--<a href="/static/audio/ring2014-06-10.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
-                        <a target="_blank" href="https://www.youtube.com/watch?v=DHxkTCz1bwQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=DHxkTCz1bwQ" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -1275,7 +1288,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-06-17.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                         -->
 
                     </div>
@@ -1295,7 +1308,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-06-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                          -->
 
                     </div>
@@ -1315,7 +1328,7 @@
 
                         <!--
                         <a href="/static/audio/ring2014-07-01.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=AcjJGYGKycc" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i> Watch on YouTube</a>
                          -->
 
                     </div>
@@ -1388,8 +1401,7 @@
         <div class="contact">
             <strong>Prof. Dr. Regine Eckardt</strong>
 
-            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/VUquE34pqPL2"><i class="icon-location"></i></a>Käte-Hamburger-Weg 3, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-7576</p>
             <p><i class="icon-fax"></i>+49 551 39 14651</p>
             <p><i class="icon-mail"></i><a href="mailto:regine.eckardt@phil.uni-goettingen.de">regine.eckardt@phil.uni-goettingen.de</a></p>
@@ -1398,8 +1410,7 @@
         <div class="contact">
             <strong>Prof. Dr. Annekathrin Schacht</strong>
             <p>Musikwissenschaftliches Seminar</p>
-            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/kX6rhNhwvqu"><i class="icon-location"></i></a>Nikolausbergerweg 23, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39 20022</p>
         </div>
 
@@ -1409,6 +1420,12 @@
 
 
     <!-- ********** WS 14-15 ******* -->
+    <message key="xmlui.static.ring.playlist-14-15">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrfuLMZjNmMqU5JyMk-yB1aU"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-14-15.trail">
         WS 14-15
     </message>
@@ -1673,6 +1690,12 @@
     <!-- ************************************************************** -->
 
     <!-- ********** SS 15 ******* -->
+    <message key="xmlui.static.ring.playlist-15">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreyOxFM_zGBVEjYvHpWlAY8"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-15.trail">
         SS 15
     </message>
@@ -1887,8 +1910,7 @@
             <strong>Prof. Dr. Katja Triplett</strong>
             <p>Georg-August-University Göttingen</p>
             <p>Centre for Modern East Asian Studies (CeMEAS)</p>
-            <p><a target="_blank" href="//goo.gl/maps/jxNHtAzh7hE2"><i class="icon-location"></i></a>Heinrich-Düker-Weg 14</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/jxNHtAzh7hE2"><i class="icon-location"></i></a>Heinrich-Düker-Weg 14, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-21275</p>
             <p><i class="icon-mail"></i><a href="mailto:triplett@uni-goettingen.de">triplett@uni-goettingen.de</a></p>
         </div>
@@ -1896,8 +1918,7 @@
         <div class="contact">
             <strong>Prof. Dr. Birgit Abels </strong>
             <p>Musikwissenschaftliches Seminar</p>
-            <p><a target="_blank" href="//goo.gl/maps/swn6XpK16Sm"><i class="icon-location"></i></a>Kurze-Geismar-Straße 1</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/swn6XpK16Sm"><i class="icon-location"></i></a>Kurze-Geismar-Straße 1, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39 20139</p>
             <p><i class="icon-fax"></i>+49 551 39 9353</p>
             <p><i class="icon-mail"></i><a href="mailto:babels@uni-goettingen.de">babels@uni-goettingen.de</a></p>
@@ -1907,6 +1928,12 @@
 
     <!-- *************************************************************** -->
     <!-- ********** WS 15-16 ******* -->
+    <message key="xmlui.static.ring.playlist-15-16">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zreS4M5mv4hWdT52LYrdhEoY"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-15-16.trail">
         WS 15-16
     </message>
@@ -2186,8 +2213,7 @@
 
         <div class="contact">
             <p>Zentrale Kustodie</p>
-            <p><a target="_blank" href="//goo.gl/maps/BfTBZbR47J92"><i class="icon-location"></i></a>Weender Landstraße 2</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/BfTBZbR47J92"><i class="icon-location"></i></a>Weender Landstraße 2, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-20735</p>
             <p><i class="icon-mail"></i><a href="mailto:kustodie@gwdg.de">kustodie@gwdg.de</a></p>
 
@@ -2198,6 +2224,12 @@
     <!-- ********************************************************** -->
 
     <!-- ********** SS 16 ******* -->
+    <message key="xmlui.static.ring.playlist-16">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrffNPz415vTr8ncKJAgMN5r"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-16.trail">
         SS 2016
     </message>
@@ -2442,8 +2474,7 @@
             <p><strong>Prof. Dr. Andreas von Tiedemann</strong></p>
             <p>Georg-August-University Göttingen</p>
             <p>Fakultät für Agrarwissenschaften</p>
-            <p><a target="_blank" href="//goo.gl/maps/PZz8Mqvrf6x"><i class="icon-location"></i></a>Büsgenweg 5</p>
-            <p><span class="icon-body">37077 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/PZz8Mqvrf6x"><i class="icon-location"></i></a>Büsgenweg 5, 37077 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39 5530</p>
             <p><i class="icon-fax"></i>+49 551 39 66034</p>
         </div>
@@ -2452,6 +2483,13 @@
     <!-- ********************************************************************************************* -->
 
     <!-- ********** WS 16-17 ******* -->
+
+    <message key="xmlui.static.ring.playlist-16-17">
+        <p>
+            The video recordings may be found within the current <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrdora7S2dOKnW8asiISF-v8"><i class="icon-youtube"></i>Playlist</a>.
+        </p>
+    </message>
+
     <message key="xmlui.static.ring-16-17.trail">
         WS 2016 / 2017
     </message>
@@ -2705,8 +2743,7 @@
         <div class="contact">
             <strong>Dr. Hans Erich Bödeker</strong> and  <strong>Prof. Dr. Thomas Kaufmann</strong>
 
-            <p><a target="_blank" href="//goo.gl/maps/S6N9MBZNSxD2"><i class="icon-location"></i></a>Platz der Göttinger Sieben 2</p>
-            <p><span class="icon-body">37073 Göttingen</span></p>
+            <p><a target="_blank" href="//goo.gl/maps/S6N9MBZNSxD2"><i class="icon-location"></i></a>Platz der Göttinger Sieben 2, 37073 Göttingen</p>
             <p><i class="icon-call"></i>+49 551 39-10408</p>
             <p><i class="icon-fax"></i>+49 551 39 7488</p>
             <p><i class="icon-mail"></i><a href="mailto:thomas.kaufmann@theologie.uni-goettingen.de">thomas.kaufmann@theologie.uni-goettingen.de</a></p>
