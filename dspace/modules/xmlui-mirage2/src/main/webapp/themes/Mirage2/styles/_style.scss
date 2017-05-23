@@ -54,7 +54,7 @@ header .navbar-logo img {
 
 .trail-bottom {
   height: 2em;
-  background: white url("../images/raster.gif") repeat-x bottom;
+  background: #F8F3F3 url("../images/raster.gif") repeat-x bottom;
 }
 
 
@@ -451,8 +451,8 @@ h6 .small,
 
 
 
-  .panel-default {
-    box-shadow: 3px 3px 3px #9b9797;
+  .panel-default, .media-object.poster {
+    box-shadow: 3px 3px 3px #c0bebe;
   }
 
 
@@ -654,6 +654,10 @@ h6 .small,
   .icon-shopping-cart {
     font-size: 22px;
   }
+}
+
+.shoping-cart.infobox h2 {
+  margin: 0;
 }
 
 
@@ -867,4 +871,102 @@ a.tooltip {
 
 .flag {
   padding: 0 5px 0 0;
+}
+
+#trail-dropdown-toggle {
+  color: white;
+}
+
+
+#ds-search-form-sm {
+  margin-bottom: 10px;
+}
+
+#trail-dropdown-toggle {
+  color: white;
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  h2, .h2 {
+    font-size: 20px;
+  }
+
+  header .navbar-brand img {
+    height: auto;
+  }
+
+  .artifact-description i, .item-summary-view-metadata i {
+    display: none;
+  }
+
+  .navbar-brand {
+    padding: 15px 0 0 15px;
+  }
+
+  .navbar-toggle {
+    margin-right: 0;
+  }
+
+  header .navbar-brand img {
+    width: 140px;
+  }
+
+  .badge {
+    background-color: #445F91;
+    margin-left: 5px;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+
+  #aspect_discovery_SimpleSearch_div_search-results .ds-artifact-item {
+    margin-bottom: 10px;
+    border-bottom: 1px #ccc solid;
+  }
+
+  #aspect_discovery_SimpleSearch_div_search-controls-gear, .show-advanced-filters {
+    display: none;
+  }
+
+  .badge {
+    background-color: #445F91;
+    margin-left: 5px;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+
+  #aspect_discovery_SimpleSearch_div_search-results .ds-artifact-item {
+    margin-bottom: 10px;
+    border-bottom: 1px #ccc solid;
+  }
+
+  #aspect_discovery_SimpleSearch_div_search-controls-gear, .show-advanced-filters {
+    display: none;
+  }
+}
+
+#ds-search-form-sm {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .breadcrumb li a {
+    color: #fff;
+  }
+
+  #ds-options > h2.ds-option-set-head.h6.page-header.h6 {
+    border-bottom: 1px solid #2D487B;
+  }
+
+  .shopping-cart.infobox h2 {
+    margin:0;
+  }
+}
+
+.alone {
+  padding-left: 15px;
 }

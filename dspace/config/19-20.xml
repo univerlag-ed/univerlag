@@ -4,20 +4,20 @@
 <body>
 	<div>
         <head><i18n:text>xmlui.static.ring.head</i18n:text>
-			<i18n:text>xmlui.static.ring.title-16-17</i18n:text>
+			<i18n:text>xmlui.static.ring.title-19-20</i18n:text>
 	</head>
         <div class="media" rend="copy">
 			<div class="media-body" rend="copy">
 				<i18n:text>xmlui.static.ring.preambel</i18n:text>   
-				<i18n:text>xmlui.static.ring.playlist-16-17</i18n:text>
+				<i18n:text>xmlui.static.ring.playlist-19-20</i18n:text>
 			</div> 
-            <i18n:text>xmlui.static.ring.poster-16-17</i18n:text>
+            <i18n:text>xmlui.static.ring.poster-19-20</i18n:text>
         </div>
 
-			<i18n:text>xmlui.static.ring.list-16-17</i18n:text>
+			<i18n:text>xmlui.static.ring.list-19-20</i18n:text>
 
         <div id="contact" rend="copy">
-			<i18n:text>xmlui.static.ring.contact-16-17</i18n:text>
+			<i18n:text>xmlui.static.ring.contact-19-20</i18n:text>
         </div>
     </div>
 </body>
@@ -27,10 +27,10 @@
 <meta>
 <userMeta/>
 <pageMeta>
-        <metadata element="title"><i18n:text>xmlui.static.ring-16-17.trail</i18n:text></metadata>
+        <metadata element="title"><i18n:text>xmlui.static.ring-19-20.trail</i18n:text></metadata>
         <trail target="/"><i18n:text>xmlui.general.dspace_home</i18n:text></trail>
         <trail target="/info/list"><i18n:text>xmlui.static.ring.list</i18n:text></trail>
-        <trail><i18n:text>xmlui.static.ring-16-17.trail</i18n:text></trail>
+        <trail><i18n:text>xmlui.static.ring-19-20.trail</i18n:text></trail>
 </pageMeta>
 <repositoryMeta/>
 </meta>

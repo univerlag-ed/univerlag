@@ -2,6 +2,7 @@
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 
 <body>
+	<div>
 		<head>
 			<i18n:text>xmlui.static.ring.head</i18n:text>
 			<i18n:text>xmlui.static.ring.title-09-10</i18n:text>
@@ -13,12 +14,13 @@
 			</div>		
 			<i18n:text>xmlui.static.ring.poster-09-10</i18n:text>
 		</div>
-		<div>
+
 			<i18n:text>xmlui.static.ring.list-09-10</i18n:text>
-		</div>
+
 		<div  rend="copy">
 			<i18n:text>xmlui.static.ring.contact-09-10</i18n:text>
 		</div>
+	</div>
 </body>
 
 <options/>

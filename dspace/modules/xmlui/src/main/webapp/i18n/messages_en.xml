@@ -4301,59 +4301,59 @@
             Requered fields are marked with *.
         </p>
     </message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_data">Persönliche Daten</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.publication_data">Daten zur Publikation</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.required_field">Bitte füllen Sie das Feld aus!</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_name">*Auftraggeber</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.lastname_help">Name</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.firstname_help">Vorname</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.address">*Adresse</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.address_help">(Gegebenenfalls Institutadresse)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.street_help">Straße</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.number_help">Hausnummer</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.place">*Ort</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.zip_help">Postleitzahl</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.city_help">Stadt</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.phone">*Telefon</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email">*E-Mail-Adresse</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_data">Person data</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.publication_data">Publication data</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.required_field">Please fill in this field!</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_name">*Contracting Client</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.lastname_help">Lastname</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.firstname_help">Firstname</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.address">*Address</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.address_help">(Faculty / Institute)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.street_help">Street</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.number_help">Hausnumber</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.place">*Place</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.zip_help">ZiP-Code</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.city_help">Sity</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.phone">*Phone</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email">*E-Mail</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email_help"></message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.sponsor">*Kostenübernahme durch</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter">Kostenstelle</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter_help">(Nur ausfüllen, falls Kostenübernahme durch Universität bzw. Institut)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.pubilcation_type">*Art der Arbeit</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator_type">*Rolle der Mitwirkenden</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator">*Autor(en)/Herausgeber</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator_help">Autor bzw. Herausgeber der Arbeit<br />bei mehreren Verfassern abtrennen durch Schrägstrich /<br />bei Herausgebern hinter dem letzten Namen den Zusatz (Hg.) oder (Ed.) hinzufügen. </message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.publ_title">*Titel der Arbeit</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.sponsor">*Spnosor</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter">Assumption of costs by</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter_help">(Only if university or institute)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.pubilcation_type">*Type of work</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator_type">*Creator's role</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator">*Creator(s)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.creator_help">Creator(s)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.publ_title">*Title of word</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.title_help"></message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle">Untertitel</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle">Subtitle</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle_help"></message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.institute">Fakultät / Institut</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.institute">Faculty / Institute</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.institute_help"></message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.series">Reihe</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_help">(Nur ausfüllen falls Ihre Publikation in einer Reihe erscheint)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_title">Titel der Reihe</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_volume">Band</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_title_help">(Nur ausfüllen falls Ihre Publikation in einer Reihe erscheint)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.template">*Form der Vorlage, aus der ein PDF erstellt wird</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.extent">*Vorläufige Seitenzahl</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.colored">Anzahl Seiten mit farbigen Elementen in der Druckausgabe</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.cover">*Ausstattung des Bandes</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.copy">*Anzahl der Exemplare für Ihren eigenen Gebrauch</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.copy_help">(Beiträger, Prüfungsämter etc.)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.delivery">Voraussichtlicher Termin Ihrer Manuskriptabgabe</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.issue_date">*Gewünschter Termin der Veröffentlichung</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.comments">Sonstiges</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.year">Jahr (YYYY)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.month">Monat</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.day">Tag</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.comments_help">(Fragen, Kommentare)</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.submit">Absenden</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.series">Series</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_help">(Only if your work will be part of a series)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_title">Title of series</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_volume">Volume</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.series_title_help">(Only if your work will be part of a series)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.template">*Submittal from which to create a PDF</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.extent">*Estimated number of pages</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.colored">Number of pages with coloured elements in the print version</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.cover">*Print product features</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.copy">*Number of copies for your private use</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.copy_help">(e.g. Contributors, Examination Office)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.delivery">Expected date of the delivery of manuscript</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.issue_date">*Desired date of publication</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.comments">Commtents</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.year">Year (YYYY)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.month">Month</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.day">Day</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.comments_help">(Questions, Remarks)</message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.submit">Submit</message>
 
     <!-- shopping cart texts -->
-    <message key="xmlui.ArtifactBrowser.ShoppingForm.title">Bestellung</message>
-    <message key="xmlui.ArtifactBrowser.ShoppingForm.trail">Bestellung</message>
-    <message key="xmlui.ArtifactBrowser.ShoppingForm.head">Bestellung</message>
+    <message key="xmlui.ArtifactBrowser.ShoppingForm.title">Order</message>
+    <message key="xmlui.ArtifactBrowser.ShoppingForm.trail">Order</message>
+    <message key="xmlui.ArtifactBrowser.ShoppingForm.head">Order</message>
     <message key="xmlui.ArtifactBrowser.ShoppingForm.para1">Bitte tragen Sie für die Lieferung Ihre Anschrift sowie eine E-Mail-Adresse für eventuelle Rückfragen und den Versand einer Bestätigung ein.<br />
         Sie müssen außerdem die Lieferbedingungen akzeptieren.</message>
     <message key="xmlui.ArtifactBrowser.ShoppingForm.email">Ihre E-Mail-Adresse</message>
@@ -4368,20 +4368,20 @@
     <message key="xmlui.ArtifactBrowser.ShoppingForm.submit">Bestellung verbindlich abschicken</message>
     <message key="xmlui.ArtifactBrowser.ShoppingForm.submit_cancel">abbrechen</message>
 
-    <message key="xmlui.ArtifactBrowser.OrderSent.title">Bestelleung</message>
-    <message key="xmlui.ArtifactBrowser.OrderSent.trail">Bestelleung</message>
-    <message key="xmlui.ArtifactBrowser.OrderSent.head">Bestelleung gesendet</message>
-    <message key="xmlui.ArtifactBrowser.OrderSent.para1">Danke für Ihre Bestellung! Sie erhalten von uns eine Bestätigung per E-Mail.</message>
-    <message key="xmlui.dri2xhtml.structural.order-link">Warenkorb</message>
+    <message key="xmlui.ArtifactBrowser.OrderSent.title">Order</message>
+    <message key="xmlui.ArtifactBrowser.OrderSent.trail">Order</message>
+    <message key="xmlui.ArtifactBrowser.OrderSent.head">Order sent</message>
+    <message key="xmlui.ArtifactBrowser.OrderSent.para1">Thank you for your order! Sie erhalten von uns eine Bestätigung per E-Mail.</message>
+    <message key="xmlui.dri2xhtml.structural.order-link">Shopping cart</message>
 
-    <message key="xmlui.item.part">Teil </message>
-    <message key="xmlui.list.all.publications">Alle Publikationen  <i class="icon-arrow-right"></i></message>
+    <message key="xmlui.item.part">Part </message>
+    <message key="xmlui.list.all.publications">All pubications  <i class="icon-arrow-right"></i></message>
     <message key="xmlui.dri2xhtml.default.textarea.value">Ihr Text</message>
 
 
 
 
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.index.info">Zu einem Punkt in der Liste springen</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.index.info">Jump to a point in the index</message>
 
     <!-- error pages -->
     <message key="xmlui.page-not-found.text">
@@ -4822,16 +4822,6 @@
 
     <message key="xmlui.costrequest.error">The request could not be sent. Please try again later.</message>
 
-    <message key="xmlui.administer.checklist">
-        <div class="collapse" id="checklist">
-            <h1>BEI NEUPUBLIKATIONEN BITTE NICHT VERGESSEN!</h1>
-            <ul class="styled">
-                <li>Wenn sie einer Reihe angehört, <strong>in die Reihe spiegeln</strong></li>
-                <li>Wenn sie mehrteilig ist, <strong>Teile</strong> miteinander <strong>verlinken</strong>.</li>
-                <li>Wenn sie nicht lieferbar ist, <strong>Lieferbarkeitsstatus ändern</strong>.</li>
-                <li>Wenn sie für <strong>OAPEN</strong> ist, <strong>englische Zusammenfassung</strong> und <strong> drei keywords</strong> hinzufügen. </li>
-            </ul>
-        </div>
-    </message>
+
 
 </catalogue>

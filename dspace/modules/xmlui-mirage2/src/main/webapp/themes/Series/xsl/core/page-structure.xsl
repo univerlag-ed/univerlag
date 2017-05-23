@@ -195,6 +195,7 @@
             <!-- <link rel="stylesheet" href="{concat($theme-path, 'styles/font-awesome-4.7.0/css/font-awesome.min.css')}"/> -->
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
             <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/fontello.css')}"/>
+            <link rel="stylesheet" href="{concat($theme-path, 'styles/bootstrap-datetimepicker.css')}"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
@@ -348,7 +349,7 @@
 
                         <a class="header-image" href="/"><img src="/themes/Mirage2/images/verlagslogo.png" class="visible-sm visible-md visible-lg"/></a>
                         <a href="{$context-path}/" class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg">
-                            <img src="{$theme-path}images/logo.svg" />
+                            <img src="{$theme-path}images/verlagslogo_small.png" />
                         </a>
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
@@ -771,6 +772,7 @@
     -->
     <xsl:template match="dri:body">
         <div>
+
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='alert'][@qualifier='message']">
                 <div class="alert">
                     <button type="button" class="close" data-dismiss="alert">&#215;</button>

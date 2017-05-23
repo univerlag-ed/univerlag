@@ -349,7 +349,7 @@
 
                         <a class="header-image" href="/"><img src="/themes/Mirage2/images/verlagslogo.png" class="visible-sm visible-md visible-lg"/></a>
                         <a href="{$context-path}/" class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg">
-                            <img src="{$theme-path}images/logo.svg" />
+                            <img src="{$theme-path}images/verlagslogo_small.png" />
                         </a>
 
                         <div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
