@@ -52,7 +52,9 @@ dl {
 }
 
 #aspect_discovery_SimpleSearch_div_search-results .ds-artifact-item {
-    margin-bottom: 50px;
+    padding-bottom: 15px;
+    background-color: #EAE9E7;
+    border-bottom: 1px #ccc solid;
 
     &:last-child{
         margin-bottom: 0;

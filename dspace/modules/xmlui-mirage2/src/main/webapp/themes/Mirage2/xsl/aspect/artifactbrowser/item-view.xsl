@@ -530,12 +530,12 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download-5"></i> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'outofstock')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
-                                <i class="icon-block"></i>&#160;  <i18n:text>xmlui.item.outofstock</i18n:text>
+                                <i class="icon-block"></i><i18n:text>xmlui.item.outofstock</i18n:text>
                             </xsl:when>
                             <xsl:when test="contains(//dim:field[@element='notes' and @qualifier='printaccess'], 'notavailable')">
                                 <xsl:attribute name="class"><xsl:text>access</xsl:text></xsl:attribute>
@@ -644,7 +644,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download-5"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -743,7 +743,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download-5"></i><xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -894,7 +894,7 @@
 
 
 
-                    <i class="icon-download-5"></i><xsl:text>&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                    <i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 
                 </a>
             </span>
@@ -982,12 +982,18 @@
                     <a rel="license"
                        href="{//dim:field[@element='rights'][@qualifier='uri']}"
                        alt="{//dim:field[@element='rights'][@qualifier='uri']}"
-                       title="{//dim:field[@element='rights'][@qualifier='uri']}"
+                       i18n:attr="title"
+                       title="xmlui.item.license"
                     >
+                        <xsl:variable name="license"><xsl:value-of select="substring-before(substring-after(//dim:field[@element='rights'][@qualifier='uri'], 'licenses/'), '/')" /></xsl:variable>
+                        <xsl:variable name="cc-version"><xsl:value-of select="substring-before(substring-after(//dim:field[@element='rights'][@qualifier='uri'], concat($license, '/')), '/')" /></xsl:variable>
+                        <span class="license"><xsl:value-of select="concat(' (CC ', $license, ' ', $cc-version, ')')" /></span>
+                        <!--
                         <xsl:call-template name="cc-logo">
                             <xsl:with-param name="ccLicenseName" select="//dim:field[@element='rights'][@qualifier='uri']"/>
                             <xsl:with-param name="ccLicenseUri" select="//dim:field[@element='rights'][@qualifier='uri']"/>
                         </xsl:call-template>
+                        -->
                     </a>
                     <!-- </div>
                     <div class="col-sm-8">
