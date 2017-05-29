@@ -210,6 +210,15 @@
                         </span>
                     </h4>
                 </xsl:element>
+                <div>
+                    <xsl:if test="dri:list[@n=(concat($handle, ':dc.volume'))]">
+                        <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.volume'))]/dri:item"/>
+                        <xsl:text>. </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="dri:list[@n=(concat($handle, ':dc.title.volume'))]">
+                        <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.title.volume'))]/dri:item"/>
+                    </xsl:if>
+                </div>
                 <div class="artifact-info">
                     <span class="author">
                         <xsl:choose>

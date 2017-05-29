@@ -644,7 +644,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                 </a>
                             </xsl:when>
 

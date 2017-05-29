@@ -2104,7 +2104,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Anzeige</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Beschreibung</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Zum Dokument</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Öffnen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Zu diesem Dokument gibt es keine Dateien.</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">Bytes</message>
@@ -2790,12 +2790,19 @@ Das Team vom Universitätsverlag Göttingen
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
             Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.
         </p>
+        <!-- <div class="btn-toolbar">
+            <div class="wrapper pull-right">
+                <a href="/news" class="btn btn-default btn-xs" role="button">Aktuelles</a>
+                <a target="_blank" href="/info/publishing-catalog" class="btn btn-default btn-xs" role="button">Verlagskatalog</a>
+            </div>
+
+        </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><i class="icon-arrow-left"></i>News</a>&#160;<i class="icon-attention-circled"></i>
+                <a href="/news">News</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog<i class="icon-arrow-right"></i></a>
+                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
             </div>
         </div>
     </message>
@@ -3589,7 +3596,7 @@ Das Team vom Universitätsverlag Göttingen
                 <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
             </p>
             <p class="address">
-                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
+                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> univerlag.uni-goettingen.de</a>
             </p>
             <p class="address">
                 <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3621,7 +3628,7 @@ Das Team vom Universitätsverlag Göttingen
                     <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
                 </p>
                 <p class="address">
-                    <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> //univerlag.uni-goettingen.de</a>
+                    <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> univerlag.uni-goettingen.de</a>
                 </p>
                 <p class="address">
                     <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
@@ -3641,6 +3648,30 @@ Das Team vom Universitätsverlag Göttingen
             <p>
                 Diese Website erfasst anonymisierte Daten zur Nutzung.<br />
                 Zustimmung verweigern: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de"  class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
+            </p>
+
+            <h3>Urheberrecht</h3>
+            <h4>Icon Fonts:</h4>
+            <p class="narrow">
+                Modern Pictograms/©2012 by John Caserta, License: SIL
+            </p>
+            <p class="narrow">
+                Font Awesome/©2016 by Dave Gandy, License: SIL
+            </p>
+            <p class="narrow">
+                Entypo/©2012 by Daniel Bruce, License: SIL
+            </p>
+            <p class="narrow">
+                Linecons/©2013 by Designmodo, License: CC BY
+            </p>
+            <p class="narrow">
+                Iconic/©2012 by P.J. Onori, License: SIL
+            </p>
+            <p class="narrow">
+                Elusive/©2013 by Aristeides Stathopoulos, License: SIL
+            </p>
+            <p class="narrow">
+                MFG Labs/©2012 by by Daniel Bruce, License: SIL
             </p>
         </div>
     </message>
@@ -3686,15 +3717,16 @@ Das Team vom Universitätsverlag Göttingen
                 Prof. Dr. Kai Ambos, Judge District Court
             </p>
         </div>
-        <p>ISSN: 2366-7788</p>
+        <p class="narrow">ISSN (Print): 2366-7788</p>
+        <p class="narrow">ISSN (Online): 2512-7098</p>
     </message>
 
     <message key="xmlui.collection.gssca.introduction">
         <p>
             Diese Reihe ist die Fortsetzung von "<a href="//univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
         </p>
-        <p>ISSN (Print): 2199-5346</p>
-        <p>ISSN (Online): 2512-6881</p>
+        <p class="narrow">ISSN (Print): 2199-5346</p>
+        <p class="narrow">ISSN (Online): 2512-6881</p>
     </message>
 
 
@@ -3702,21 +3734,27 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Die Reihe umfasst geowissenschaftliche Arbeiten aus unterschiedlichsten Disziplinen wie Geologie, Sedimentologie, Tektonik, Mineralogie, Geochemie, Paläontologie und Geobiologie, der Wissenschaftsgeschichte und Museumskunde. Veröffentlicht werden können: Sammelbände (mit Beiträgen von Tagungen, Workshops oder Festkolloquien) und Monographien (bspw. Qualifikationsarbeiten oder Exkursionsführer). Die Arbeiten werden in der Regel auf Deutsch oder Englisch publiziert. Die Reihe bildet die Fortsetzung der Zeitschrift "Göttinger Arbeiten zur Geologie und Paläontologie (GAGP)" (ISSN 0534-0403), die im Selbstverlag (herausgegeben vom IMGP: Institut und Museum für Geologie und Paläontologie sowie später zusätzlich IGDL: Institut für die Geologie und Dynamik der Lithosphäre) zwischen 1969 und 2003 mit insgesamt 76 Bänden und 5 Sonderbänden erschienen ist.
         </p>
-        <p>ISSN (Print): 2199-1324</p>
-        <p>ISSN (Online): 2512-6237</p>
+        <p class="narrow">ISSN (Print): 2199-1324</p>
+        <p class="narrow">ISSN (Online): 2512-6237</p>
     </message>
 
     <message key="xmlui.collection.es.introduction">
         <p>
             Die Buchreihe "Erziehungswissenschaftliche Studien" wird von den aktiven Professorinnen und Professoren des Instituts für Erziehungswissenschaft der Georg-August-Universität Göttingen herausgegeben. Sie beinhaltet Monografien und Sammelbände von Mitgliedern des Instituts für Erziehungswissenschaft, ist aber auch für Publikationsvorhaben von außerhalb geöffnet. Thematisch ist das gesamte Spektrum erziehungswissenschaftlicher Fragestellungen und Forschung angesprochen, wobei, dem Profil des Instituts für Erziehungswissenschaft geschuldet, die Bereiche der Allgemeinen und Historischen Erziehungswissenschaft, der Schulpädagogik, der Schul- und Unterrichtsforschung sowie der Sozialisationsforschung im Vordergrund stehen.
         </p>
-        <p>ISSN (Print): 2199-5133</p>
-        <p>ISSN (Online): 2512-6024</p>
+        <p class="narrow">ISSN (Print): 2199-5133</p>
+        <p class="narrow">ISSN (Online): 2512-6024</p>
     </message>
 
     <message key="xmlui.collection.zeltf.introduction">
         <p>
             Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen.
+        </p>
+        <p class="narrow">
+            ISSN (Print): 2512-7128
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2512-7136
         </p>
     </message>
 
@@ -3724,8 +3762,8 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Die <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
         </p>
-        <p>ISSN (Print): 1863-0197</p>
-        <p>ISSN (Online): 2512-5923</p>
+        <p class="narrow">ISSN (Print): 1863-0197</p>
+        <p class="narrow">ISSN (Online): 2512-5923</p>
     </message>
 
 
@@ -3742,32 +3780,32 @@ Das Team vom Universitätsverlag Göttingen
     </message>
 
     <message key="xmlui.collection.biodiversity.introduction">
-        <p>Im Jahre 2001 wurde das Göttinger Zentrum für <a href="//www.biodiversitaet.gwdg.de/index_deutsch.html" target="_blank">Biodiversitätsforschung und Ökologie</a> gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
+        <p><a href="//www.uni-goettingen.de/de/524600.html" target="_blank">Zentrum für Biodiversität und Nachhaltige Landnutzung</a> wurde im Jahre 2001 (ursprünglich als "Göttinger Zentrum für Biodiversitätsforschung und Ökologie") gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
             Das Spektrum reicht von der Genetik bis zur Landschaftsökologie, jeweils mit einem interdisziplinären Ansatz. Die Evolution der Biodiversität, die Rolle der Biodiversität bei Funktionen und Prozessen in Ökosystemen und die Voraussetzungen für ein nachhaltiges Management der Biodiversität soll mit Hilfe moderner Methoden erforscht werden.
             Diese Forschungsergebnisse werden in der <em>„Biodiversity and Ecology Series - A“</em> veröffentlicht.</p>
 
         <p>
             In der Reihe <em>„Biodiversity and Ecology Series - B“</em> werden Dissertationen veröffentlicht, die an diesem Zentrum geschrieben wurden und online zur Verfügung stehen (jedoch nicht in einem Verlag publiziert). Eine Liste dieser Dissertationen steht <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">hier</a> zur Verfügung.
         </p>
-        <p>ISSN (Print): 1863-3935</p>
-        <p>ISSN (Online): 2512-5974</p>
+        <p class="narrow">ISSN (Print): 1863-3935</p>
+        <p class="narrow">ISSN (Online): 2512-5974</p>
     </message>
 
     <message key="xmlui.collection.nfv.introduction">
         <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
             (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
         </p>
-        <p>ISSN (Print): 1865-6994</p>
-        <p>ISSN (Online): 2512-594X</p>
+        <p class="narrow">ISSN (Print): 1865-6994</p>
+        <p class="narrow">ISSN (Online): 2512-594X</p>
     </message>
 
     <message key="xmlui.collection.gsxp.introduction">
         <p>
             In der Reihe „Göttingen Series in X-ray Physics“ erscheinen sehr gute Dissertationen und angenommene Habilitationen, geeignete wissenschaftliche Studien und Sammelbände sowie besonders herausragende Bachelor- und Master-Arbeiten aus den Forschungbereichen der Röntgenoptik und Röntgenbildgebung. Die Arbeiten können auch an anderen Universitäten oder Großforschungseinrichtungen entstanden sein. In der Regel werden die Arbeiten auf Englisch veröffentlicht.
         </p>
-        <p><a href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
-        <p>ISSN (Print): 2191-9860</p>
-        <p>ISSN (Online): 2512-6326</p>
+
+        <p class="narrow">ISSN (Print): 2191-9860</p>
+        <p class="narrow">ISSN (Online): 2512-6326</p>
     </message>
 
 
@@ -3775,15 +3813,17 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Ab Juni 2008 arbeiteten zunächst Wissenschaftler/innen der Universitäten Göttingen und Hamburg, seit 2011 der Universitäten Göttingen und Tübingen, aus den Bereichen Kulturanthropologie/ Europäische Ethnologie, Volkswirtschaft, Ethnologie, Wirtschafts- und Völkerrecht zu Cultural Property (kulturelles Eigentum). Mittlerweile befindet sich das Projekt in der zweiten Phase. Mit einem interdisziplinären Ansatz untersucht die aus Mitteln der Deutschen Forschungsgemeinschaft geförderte Forschergruppe die Konstituierung von Cultural Property, seinen Akteuren, Diskursen, Kontexten und Regeln. Die Bände dieser Reihe dokumentieren die Ergebnisse aus der laufenden Forschung.
         </p>
-        <p>ISSN (Print): 2190-8672</p>
-        <p>ISSN (Online): 2512-6342</p>
+        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 2190-8672</p>
+        <p class="narrow">ISSN (Online): 2512-6342</p>
     </message>
 
     <message key="xmlui.collection.gbao.introduction">
         <p>
             Die Reihe »Göttinger Beiträge zun Alten Orient« setzt die erfolgreichen »<a href="//books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Arbeitshefte zur Altorientalischen Literatur</a>« fort. Die Reihe wird vom <a href="//www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar für Altorientalistik der Georg-August-Universität Göttingen</a> herausgegeben und behandelt die Erschließung und Deutung der reichhaltigen Schriftdenkmäler in akkadischer oder sumerischer Sprache aus der Zeit von ca. 3100 - 500 v. Chr.
         </p>
-        <p>ISSN: 1866-2595</p>
+        <p class="narrow">ISSN (Print): 1866-2595</p>
+        <p class="narrow">ISSN (Online): 2512-6423</p>
     </message>
 
 
@@ -3791,16 +3831,16 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Diese Reihe ist die Fortsetzung zu „<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>“, die ursprünglich im LIT-Verlag publiziert wurde.
         </p>
-        <p>ISSN (Print): 1866-0711</p>
-        <p>ISSN (Online): 2512-6814</p>
+        <p class="narrow">ISSN (Print): 1866-0711</p>
+        <p class="narrow">ISSN (Online): 2512-6814</p>
     </message>
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
             Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
         </p>
-        <p>ISSN (Print): 0943-951X</p>
-        <p>ISSN (Online): 2512-6822</p>
+        <p class="narrow">ISSN (Print): 0943-951X</p>
+        <p class="narrow">ISSN (Online): 2512-6822</p>
     </message>
 
     <message key="xmlui.collection.gf.introduction">
@@ -3811,42 +3851,42 @@ Das Team vom Universitätsverlag Göttingen
             The series reflects the wide thematic range of the faculty and of the „Nordwestdeutschen Forstlichen Versuchsanstalt”.
             All publications are being provided as print-copies and as online-copies.
         </p>
-        <p>ISSN: 1867-6731</p>
+        <p class="narrow">ISSN (Print): 1867-6731</p>
+        <p class="narrow">ISSN (Online): 2512-6830</p>
     </message>
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
             Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
-        <p>ISSN (Print): 1864-2128</p>
-        <p>ISSN (Online): 2512-6849</p>
+        <p class="narrow">ISSN (Print): 1864-2128</p>
+        <p class="narrow">ISSN (Online): 2512-6849</p>
     </message>
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
             Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
         </p>
-        <p>ISSN (Print): 1863-1088</p>
-        <p>ISSN (Online): 2512-6865</p>
+        <p class="narrow">ISSN (Print): 1863-1088</p>
+        <p class="narrow">ISSN (Online): 2512-6865</p>
     </message>
 
     <message key="xmlui.collection.gsmr.introduction">
         <p>
             Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
-        <p>
-            <a href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a>
-        </p>
-        <p>ISSN (Print): 1864-2144</p>
-        <p>ISSN (Online): 2512-689X</p>
+        <p><a class="flyer" target="_blank" href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 1864-2144</p>
+        <p class="narrow">ISSN (Online): 2512-689X</p>
+
     </message>
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
             Diese Reihe der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
         </p>
-        <p>ISSN (Print): 2191-4583</p>
-        <p>ISSN (Online): 2512-6911</p>
+        <p class="narrow">ISSN (Print): 2191-4583</p>
+        <p class="narrow">ISSN (Online): 2512-6911</p>
     </message>
 
     <message key="xmlui.collection.gsep.introduction">
@@ -3855,8 +3895,8 @@ Das Team vom Universitätsverlag Göttingen
         </p>
         <p>Es werden Staatsarbeiten, Magisterarbeiten, BA- und MA-Arbeiten von herausragender Qualität veröffentlicht. Zusätzlich können in der Reihe Sammelbände beispielsweise mit den Arbeitsergebnissen aus Kolloquien oder Workshops veröffentlicht werden. Die Werke werden auf Deutsch oder Englisch publiziert.
         </p>
-        <p>ISSN (Print): 1868-3878</p>
-        <p>ISSN (Online): 2512-6970</p>
+        <p class="narrow">ISSN (Print): 1868-3878</p>
+        <p class="narrow">ISSN (Online): 2512-6970</p>
     </message>
 
     <message key="xmlui.collection.gsif.introduction">
@@ -3872,7 +3912,8 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Die Schriftenreihe des <a href="//www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a> will ein Spiegel wissenschaftlicher Arbeit des Instituts sein und ein Forum für bedeutsame Forschungsarbeiten auf dem Gebiet der Kriminalwissenschaften bieten.
         </p>
-        <p>ISSN: 1864-2136</p>
+        <p class="narrow">ISSN (Print): 1864-2136</p>
+        <p class="narrow">ISSN (Online): 2512-7047</p>
         <h3>Geleitwort zur Schriftenreihe</h3>
         <p>Im Mai 2007 ist die Schriftenreihe des Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen eröffnet worden - unter dem Namen »Göttinger Studien zu den Kriminalwissenschaften«.</p><br />
         <p>Diese Benennung hat programmatischen Charakter: Der Fächerverbund Kriminalwissenschaften, der auch einen besonderen Schwerpunkt des juristischen Studiums in Göttingen bezeichnet, umfasst die dogmatischen Disziplinen des Strafrechts wie seiner Bezugswissenschaften und bezieht damit auch Erkenntnisse aus den Human- und Sozialwissenschaften mit ein. Das dahinter stehende Konzept knüpft an länger bestehende Traditionen an, wie sie insbesondere in der »gesamten Strafrechtswissenschaft« von Liszt'scher Prägung oder in der angloamerikanischen Disziplin »Criminal Justice« zum Ausdruck kommen. Letzteres zeigt sich auch in der Wahl des englischen Institutsnamens: »Institute of Criminal Law and Criminal Justice«.</p>
@@ -3892,16 +3933,16 @@ Das Team vom Universitätsverlag Göttingen
         </p>
         <p>Mit diesem Hochschulsport-Periodikum wird die ehemalige "ADH-Schriftenreihe des Hochschulsports" nach einer längeren Pause wieder belebt.
         </p>
-        <p>ISSN (Print): 1864-189X</p>
-        <p>ISSN (Online): 2512-7063</p>
+        <p class="narrow">ISSN (Print): 1864-189X</p>
+        <p class="narrow">ISSN (Online): 2512-7063</p>
     </message>
 
     <message key="xmlui.collection.fadaf.introduction">
         <p>
             Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF) In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen.
         </p>
-        <p>ISSN (Print): 1866-8283</p>
-        <p>ISSN (Online): 2512-7071</p>
+        <p class="narrow">ISSN (Print): 1866-8283</p>
+        <p class="narrow">ISSN (Online): 2512-7071</p>
     </message>
 
     <message key="xmlui.collection.mis.introduction">
@@ -3918,21 +3959,23 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Die Reihe wird von Ulrike Egelhaaf-Gaiser und Thorsten Fuchs herausgegeben.
         </p>
-        <p>ISSN: 1863-0952</p>
+        <p class="narrow">ISSN: 1863-0952</p>
     </message>
 
     <message key="xmlui.collection.spe.introduction">
-        <p>
+        <!-- <p>
             Mehr Informationen zur Zeitschrift finden Sie auf der separaten <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">Homepage der Zeitschrift</a>.
-        </p>
-        <p>ISSN: 1864-211X</p>
+        </p> -->
+        <p class="narrow">ISSN (Print): 1864-211X</p>
+        <p class="narrow">ISSN (Online): 2513-1273</p>
     </message>
 
     <message key="xmlui.collection.svas.introduction">
         <p>
             Unter dem Titel „Syngramma. Vorträge aus dem Althistorischen Seminar“ möchten die Herausgeber Prof. Dr. Lehmann, Dr. Engster und Herr Nuss eine Plattform für die Veröffentlichung der jährlich im Stile einer Ringvorlesung stattfindenden Veranstaltung schaffen, bei der WissenschaftlerInnen auch anderer Universitäten und Einrichtungen Auszüge aus ihren aktuellen Projekten und Forschungen in Form von Vorträgen präsentieren. Dabei soll der gesamte Bereich des Faches Alte Geschichte abgedeckt werden.
         </p>
-        <p>ISSN: 2193-486X</p>
+        <p class="narrow">ISSN (Print): 2193-486X</p>
+        <p class="narrow">ISSN (Online): 2512-711X</p>
     </message>
 
 
@@ -3950,10 +3993,10 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Dabei wird der Begriff „Universitätsgeschichte“ nicht eng, sondern weit verstanden: Arbeiten zu Forschungstrends in naturwissenschaftlichen wie geistes- und sozialwissenschaftlichen Bereichen sollen darunter ebenso verstanden werden wie Untersuchungen kultur- und mentalitätsgeschichtlicher Fragen vom 18. bis zum 21. Jahrhundert. Die Reihe soll natürlich auch Quelleneditionen aufnehmen.
         </p>
-        <p>
+        <p class="narrow">
             ISSN (Print): 1866-5144
         </p>
-        <p>
+        <p class="narrow">
             ISSN (Online): 2512-708X
         </p>
     </message>
@@ -3962,8 +4005,11 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Diese Serie bezieht ihren Namen von dem Erasmus Mundus Master of Excellence Euroculture Programm "Europe in the Wider World". Dieses Zweijahresprogramm wird von einem Konsortium acht europäischer Universitäten in Zusammenarbeit mit vier weiteren außereuropäischen Universitäten angeboten. Dieser Masterstudiengang beleuchtet die regionalen, nationalen und supranationalen Dimensionen der europäischen Demokratieentwicklung; Mobilität, Migration und Inter-, Multi- und  Transkulturalität. Der Einfluß der Kultur wird als ein Element der politischen und sozialen Entwicklung innerhalb Europas angesehen.
         </p>
-        <p>
-            ISSN: 2196-3851
+        <p class="narrow">
+            ISSN (Print): 2196-3851
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2512-7101
         </p>
     </message>
 
@@ -3974,12 +4020,9 @@ Das Team vom Universitätsverlag Göttingen
             interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
             Anlage ebenso wie fachhistorische und theoretische Studien.
         </p>
-        <p><a href="/static/documents/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
-        <p>
-            ISSN (Print): 2365-3191
-        </p>
-        <p>ISSN (Online): 2512-7055
-        </p>
+        <p><a class="flyer" target="_blank" href="KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 2365-3191</p>
+        <p class="narrow">ISSN (Online): 2512-7055</p>
     </message>
 
     <message key="xmlui.static.shipping.costs.title">Versandkosten</message>
@@ -4202,7 +4245,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.item.info.pages">Seiten</message>
 
     <message key="xmlui.item.online.version">Online</message>
-    <message key="xmlui.item.access.document">Zum Dokument</message>
+    <message key="xmlui.item.access.document">Öffnen</message>
     <message key="xmlui.item.outofstock">Vergriffen</message>
     <message key="xmlui.item.fileformat.pdf">PDF</message>
 
@@ -4212,6 +4255,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.item.review.online">Online Rezension</message>
     <message key="xmlui.item.onlineonly">Nur Online verfügbar.</message>
     <message key="xmlui.item.pages"> S.</message>
+    <message key="xmlui.item.license">Nutzungslizenz</message>
     <message key="xmlui.dri2xhtml.item.series.volume">Band</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.volume">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Band</message>

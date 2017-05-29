@@ -120,6 +120,7 @@ a.list-group-item {
 
 #ds-options > h2.ds-option-set-head.h6.page-header.h6 {
     border-bottom: 1px solid #2D487B;
+    padding-bottom: 5px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -981,4 +982,12 @@ a.tooltip {
 
 .alone {
     padding-left: 15px;
+}
+
+.narrow {
+    margin-bottom:0;
+}
+
+.license {
+    text-transform: uppercase;
 }

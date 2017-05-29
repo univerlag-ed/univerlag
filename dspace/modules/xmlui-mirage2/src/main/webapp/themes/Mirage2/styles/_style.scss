@@ -960,6 +960,7 @@ a.tooltip {
 
   #ds-options > h2.ds-option-set-head.h6.page-header.h6 {
     border-bottom: 1px solid #2D487B;
+    padding-bottom: 5px;
   }
 
   .shopping-cart.infobox h2 {
@@ -969,4 +970,12 @@ a.tooltip {
 
 .alone {
   padding-left: 15px;
+}
+
+.narrow {
+  margin-bottom:0;
+}
+
+.license {
+  text-transform: uppercase;
 }

@@ -237,7 +237,7 @@
     <message key="xmlui.ArtifactBrowser.ItemViewer.trail">View Item</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">This item appears in the following Collection(s)</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Show simple item record</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Show full item record</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#32;</message>
 
     <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">This item has been withdrawn and is no longer available.</message>
 
@@ -2763,12 +2763,19 @@
             Our aim is to offer free access to as many publications as possible.
             The Göttingen University Press also seeks to publish reviewed high-quality books that due to their specialised nature will not easily be accepted by commercial publishing houses.
         </p>
+        <!--<div class="btn-toolbar">
+            <div class="wrapper pull-right">
+                <a href="/news" class="btn btn-default btn-xs" role="button">News</a>
+                <a target="_blank" href="/info/publishing-catalog" class="btn btn-default btn-xs" role="button">Publishing Catalog</a>
+            </div>
+
+        </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><i class="icon-arrow-left"></i>News</a>&#160;<i class="icon-attention-circled"></i>
+                <a href="/news">News</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog<i class="icon-arrow-right"></i></a>
+                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
             </div>
         </div>
     </message>
@@ -3556,6 +3563,30 @@
             <p>
                 Out opt: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en" target="_blank" class="extern-link">Do not count my visits.</a>
             </p>
+
+            <h3>Copyright</h3>
+            <h4>Icon Fonts</h4>
+            <p class="narrow">
+                Modern Pictograms / ©2012 by John Caserta, License: SIL
+            </p>
+            <p class="narrow">
+                Font Awesome / ©2016 by Dave Gandy, License: SIL
+            </p>
+            <p class="narrow">
+                Entypo / ©2012 by Daniel Bruce, License: SIL
+            </p>
+            <p class="narrow">
+                Linecons /©2013 by Designmodo, License: CC BY
+            </p>
+            <p class="narrow">
+                Iconic/©2012 by P.J. Onori, License: SIL
+            </p>
+            <p class="narrow">
+                Elusive/©2013 by Aristeides Stathopoulos, License: SIL
+            </p>
+            <p class="narrow">
+                MFG Labs/©2012 by by Daniel Bruce, License: SIL
+            </p>
         </div>
     </message>
 
@@ -3581,7 +3612,7 @@
 
     <!-- Collection texts -->
     <message key="xmlui.collection.serieCEDPAL.introduction">
-        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanish"></img></a> <a href="#" data-toggle="collapse" data-target="#port"><img  class="flag" src="/static/icons/spain-flag.png" title="portuguese"></img></a></h3>
+        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanish"></img></a> <a href="#" data-toggle="collapse" data-target="#port"><img  class="flag" src="/static/icons/portugal-flag.png" title="portuguese"></img></a></h3>
         <p>
 
             The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty&#39;s Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
@@ -3611,7 +3642,8 @@
                 Prof. Dr. Kai Ambos, Judge District Court
             </p>
         </div>
-        <p>ISSN: 2366-7788</p>
+        <p class="narrow">ISSN (Print): 2366-7788</p>
+        <p class="narrow">ISSN (Online): 2512-7098</p>
     </message>
 
     <message key="xmlui.collection.gssca.introduction">
@@ -3620,8 +3652,8 @@
             (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), which originally had been issued as "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" by the LIT publishing company
             (Vol. 1-17, 2001-2007).
         </p>
-        <p>ISSN (Print): 2199-5346</p>
-        <p>ISSN (Online): 2512-6881</p>
+        <p class="narrow">ISSN (Print): 2199-5346</p>
+        <p class="narrow">ISSN (Online): 2512-6881</p>
     </message>
 
 
@@ -3632,8 +3664,8 @@
             The journal intends to cover the wide range of different geo-scientific subjects and is dedicated to disseminate and share selected research achievements,
             offering a convenient access to interested researchers in geoscience and related communities.
         </p>
-        <p>ISSN (Print): 2199-1324</p>
-        <p>ISSN (Online): 2512-6237</p>
+        <p class="narrow">ISSN (Print): 2199-1324</p>
+        <p class="narrow">ISSN (Online): 2512-6237</p>
     </message>
 
     <message key="xmlui.collection.es.introduction">
@@ -3643,8 +3675,8 @@
             Basically the whole scope of educational studies will be presented, but due to the profile of the institute the focus will be on general and
             historical educational science, school-pedagogy, school- and teaching research as well as on socialization-research.
         </p>
-        <p>ISSN (Print): 2199-5133</p>
-        <p>ISSN (Online): 2512-6024</p>
+        <p class="narrow">ISSN (Print): 2199-5133</p>
+        <p class="narrow">ISSN (Online): 2512-6024</p>
     </message>
 
     <message key="xmlui.collection.zeltf.introduction">
@@ -3653,6 +3685,12 @@
             who aims at supporting the interpretation of landscapes in context with a sustainable development in the fields of tourism and regional issues.
             <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
             This series is being published by Goettingen University Press from volume 4 onwards.
+        </p>
+        <p class="narrow">
+            ISSN (Print): 2512-7128
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2512-7136
         </p>
     </message>
 
@@ -3666,8 +3704,9 @@
             Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in "Annals of the History and Philosophy of Biology",
             um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
         </p>
-        <p>ISSN (Print): 1863-0197</p>
-        <p>ISSN (Online): 2512-5923</p>
+        <p class="narrow">ISSN (Print): 1863-0197</p>
+        <p class="narrow">ISSN (Online): 2512-5923</p>
+
     </message>
 
 
@@ -3691,20 +3730,20 @@
             and the pre-conditions for a sustainable management of biodiversity shall be investigated using modern research methods.
             The results are being published in the "<em>Biodiversity and Ecology Series - A</em>".
         </p>
-        Within the "<em>Biodiversity and Ecology Series - B</em>" dissertations are being published which have been written at the GCBE and are available online but not in print.
-        <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">List of these dissertations</a>.
         <p>
+            Within the "<em>Biodiversity and Ecology Series - B</em>" dissertations are being published which have been written at the GCBE and are available online but not in print.
+            <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">List of these dissertations</a>.
         </p>
-        <p>ISSN (Print): 1863-3935</p>
-        <p>ISSN (Online): 2512-5974</p>
+        <p class="narrow">ISSN (Print): 1863-3935</p>
+        <p class="narrow">ISSN (Online): 2512-5974</p>
     </message>
 
     <message key="xmlui.collection.nfv.introduction">
         <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
             (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe "Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt" veröffentlicht.
         </p>
-        <p>ISSN (Print): 1865-6994</p>
-        <p>ISSN (Online): 2512-594X</p>
+        <p class="narrow">ISSN (Print): 1865-6994</p>
+        <p class="narrow">ISSN (Online): 2512-594X</p>
     </message>
 
     <message key="xmlui.collection.gsxp.introduction">
@@ -3718,8 +3757,9 @@
             unded by the same research networks.
             We hope that the series will also help to enhance the visibility of the research carried out here and help others in the field to advance similar projects.
         </p>
-        <p>ISSN (Print): 2191-9860</p>
-        <p>ISSN (Online): 2512-6326</p>
+        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 2191-9860</p>
+        <p class="narrow">ISSN (Online): 2512-6326</p>
     </message>
 
 
@@ -3732,9 +3772,9 @@
             These six linked projects are devoted to the question of how cultural property is constituted, focusing on actors, discourses, contexts and rules.
             The volumes of this series document the results of the research in progress.
         </p>
-        <p><a href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
-        <p>ISSN (Print): 2190-8672</p>
-        <p>ISSN (Online): 2512-6342</p>
+        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 2190-8672</p>
+        <p class="narrow">ISSN (Online): 2512-6342</p>
     </message>
 
     <message key="xmlui.collection.gbao.introduction">
@@ -3743,8 +3783,8 @@
             It is being published by the <a href="//www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar of Altorientalistik of the Georg-August-Universität Göttingen</a>.
             Main theme of this series is the indexing and interpretation of the comprehensive paleography of the Accadian and Sumerian language from about 3100 - 500. B.C.
         </p>
-        <p>ISSN (Print): 1866-2595</p>
-        <p>ISSN (Online): 2512-6423</p>
+        <p class="narrow">ISSN (Print): 1866-2595</p>
+        <p class="narrow">ISSN (Online): 2512-6423</p>
     </message>
 
 
@@ -3753,16 +3793,16 @@
             This series is the continuation of "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>",
             which originally had been issued by the LIT publishing company.
         </p>
-        <p>ISSN (Print): 1866-0711</p>
-        <p>ISSN (Online): 2512-6814</p>
+        <p class="narrow">ISSN (Print): 1866-0711</p>
+        <p class="narrow">ISSN (Online): 2512-6814</p>
     </message>
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
             Nach gut sechs Jahren "schöpferischer Pause" wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
         </p>
-        <p>ISSN (Print): 0943-951X</p>
-        <p>ISSN (Online): 2512-6822</p>
+        <p class="narrow">ISSN (Print): 0943-951X</p>
+        <p class="narrow">ISSN (Online): 2512-6822</p>
     </message>
 
     <message key="xmlui.collection.gf.introduction">
@@ -3773,23 +3813,24 @@
             The series reflects the wide thematic range of the faculty and of the "Nordwestdeutschen Forstlichen Versuchsanstalt”.
             All publications are being provided as print-copies and as online-copies.
         </p>
-        <p>ISSN: 1867-6731</p>
+        <p class="narrow">ISSN (Print): 1867-6731</p>
+        <p class="narrow">ISSN (Online): 2512-6830</p>
     </message>
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
             Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
-        <p>ISSN (Print): 1864-2128</p>
-        <p>ISSN (Online): 2512-6849</p>
+        <p class="narrow">ISSN (Print): 1864-2128</p>
+        <p class="narrow">ISSN (Online): 2512-6849</p>
     </message>
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
             The series "Göttinger Klassiker der Strömungslehre" makes once again available publications from the Göttingen school of <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> or historically related works.
         </p>
-        <p>ISSN (Print): 1863-1088</p>
-        <p>ISSN (Online): 2512-6865</p>
+        <p class="narrow">ISSN (Print): 1863-1088</p>
+        <p class="narrow">ISSN (Online): 2512-6865</p>
     </message>
 
     <message key="xmlui.collection.gsmr.introduction">
@@ -3797,19 +3838,17 @@
             The new series "Göttinger Schriften zum Medizinrecht" presents a forum to the interested general public in order
             to make all new research results of the newly created "<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
         </p>
-        <p>
-            <a href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a>
-        </p>
-        <p>ISSN (Print): 1864-2144</p>
-        <p>ISSN (Online): 2512-689X</p>
+        <p><a class="flyer" target="_blank" href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 1864-2144</p>
+        <p class="narrow">ISSN (Online): 2512-689X</p>
     </message>
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
             This new series in public law, published by the <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristische Fakultät der Georg-August-Universität Göttingen</a>, consists of dissertation theses, significant research works and anthologies with special attention to constituional and administrative law.
         </p>
-        <p>ISSN (Print): 2191-4583</p>
-        <p>ISSN (Online): 2512-6911</p>
+        <p class="narrow">ISSN (Print): 2191-4583</p>
+        <p class="narrow">ISSN (Online): 2512-6911</p>
     </message>
 
     <message key="xmlui.collection.gsep.introduction">
@@ -3820,8 +3859,8 @@
         <p>
             Only BA and MA exam papers of outstanding quality are being published in this series, and in addition research results from colloquia or workshops. There is the option to publish either in English or in German.
         </p>
-        <p>ISSN (Print): 1868-3878</p>
-        <p>ISSN (Online): 2512-6970</p>
+        <p class="narrow">ISSN (Print): 1868-3878</p>
+        <p class="narrow">ISSN (Online): 2512-6970</p>
     </message>
 
     <message key="xmlui.collection.gsif.introduction">
@@ -3841,8 +3880,8 @@
             The aim of the series "Göttinger Studien zu den Kriminalwissenschaften”, published by the <a href="//www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Institut für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a>,
             is to reflect the activities of the institute and to offer a platform for significant research works in the field of criminal law and justice.
         </p>
-        <p>ISSN (Print): 1864-2136</p>
-        <p>ISSN (Online): 2512-7047</p>
+        <p class="narrow">ISSN (Print): 1864-2136</p>
+        <p class="narrow">ISSN (Online): 2512-7047</p>
     </message>
 
     <message key="xmlui.collection.hbw.introduction">
@@ -3856,8 +3895,8 @@
         </p>
         <p>Mit diesem Hochschulsport-Periodikum wird die ehemalige "ADH-Schriftenreihe des Hochschulsports" nach einer längeren Pause wieder belebt.
         </p>
-        <p>ISSN (Print): 1864-189X</p>
-        <p>ISSN (Online): 2512-7063</p>
+        <p class="narrow">ISSN (Print): 1864-189X</p>
+        <p class="narrow">ISSN (Online): 2512-7063</p>
     </message>
 
     <message key="xmlui.collection.fadaf.introduction">
@@ -3866,8 +3905,8 @@
             It comprises research results from the annual meetings and symposia of the research group as well as theses papers and other important reports.
             This series is being published by Goettingen University Press from volume 78 onwards.
         </p>
-        <p>ISSN (Print): 1866-8283</p>
-        <p>ISSN (Online): 2512-7071</p>
+        <p class="narrow">ISSN (Print): 1866-8283</p>
+        <p class="narrow">ISSN (Online): 2512-7071</p>
     </message>
 
     <message key="xmlui.collection.mis.introduction">
@@ -3887,9 +3926,11 @@
     </message>
 
     <message key="xmlui.collection.spe.introduction">
+        <!--
         <p>
             For more information on the publications, please also see the <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">homepage</a> of the journal.
         </p>
+        -->
         <p>ISSN: 1864-211X</p>
     </message>
 
@@ -3900,7 +3941,8 @@
             but also of those given by scientists from other universities. All contributors present their special projects or their current research.
             The range of the publications will cover the whole of the subject "old history".
         </p>
-        <p>ISSN: 2193-486X</p>
+        <<p class="narrow">ISSN (Print): 1864-211X</p>
+        <p class="narrow">ISSN (Online): 2513-1273</p>
     </message>
 
     <!-- <message key="xmlui.collection.giu.introduction">
@@ -3919,10 +3961,10 @@
             They should deal with trends in research in the natural and social sciences, as well as with research in the fields of historical cultural and mentality questions
             from the 18th to the 21st centuries. Editions of text-sources are also welcome.
         </p>
-        <p>
+        <p class="narrow">
             ISSN (Print): 1866-5144
         </p>
-        <p>
+        <p class="narrow">
             ISSN (Online): 2512-708X
         </p>
     </message>
@@ -3934,8 +3976,11 @@
             This master highlights regional, national and supranational dimensions of the European democratic development; mobility, migration and inter-, multi- and
             transculturality. The impact of culture is understood as an element of political and social development within Europe.
         </p>
-        <p>
-            ISSN: 2196-3851
+        <p class="narrow">
+            ISSN (Print): 2196-3851
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2512-7101
         </p>
     </message>
 
@@ -3946,12 +3991,9 @@
             interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
             Anlage ebenso wie fachhistorische und theoretische Studien.
         </p>
-        <p><a href="/static/documents/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
-        <p>
-            ISSN (Print): 2365-3191
-        </p>
-        <p>ISSN (Online): 2512-7055
-        </p>
+        <p><a class="flyer" target="_blank"  href="/static/documents/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p class="narrow">ISSN (Print): 2365-3191</p>
+        <p class="narrow">ISSN (Online): 2512-7055</p>
     </message>
 
     <message key="xmlui.static.shipping.costs.title">Ordering: Shipping costs</message>
@@ -4204,6 +4246,7 @@
     <message key="xmlui.item.review.online">Online review</message>
     <message key="xmlui.item.onlineonly">Only online available.</message>
     <message key="xmlui.item.pages"> P.</message>
+    <message key="xmlui.item.license">User License</message>
     <message key="xmlui.dri2xhtml.item.series.volume">Vol.</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.volume">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Vol.</message>
