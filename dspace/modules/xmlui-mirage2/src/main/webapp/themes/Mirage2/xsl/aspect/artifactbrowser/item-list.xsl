@@ -245,7 +245,7 @@
                                     <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                     <a target="_blank">
                                         <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                        <i class="icon-amazon"></i><xsl:text> </xsl:text>
+                                        <i class="icon-amazon-1"></i>
                                         <i18n:text>xmlui.item.amazon.order</i18n:text>
                                     </a>
                                 </xsl:when>
@@ -380,7 +380,7 @@
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                         </xsl:attribute>
                                         <i class="icon-download-5"></i>
-                                        <xsl:text> </xsl:text>  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
 
@@ -480,7 +480,7 @@
                                             <xsl:value-of select="//dim:field[@element='notes' and @qualifier='dvdaccess']"/>
                                         </xsl:attribute>
                                         <i class="icon-download-5"></i>
-                                        <xsl:text> </xsl:text> <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
                                     </a>
                                 </xsl:when>
 

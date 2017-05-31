@@ -848,9 +848,9 @@ a.tooltip {
   }
 
 
-  header .navbar-brand img {
+  /*header .navbar-brand img {
     width: 140px;
-  }
+  }*/
 
 
   .badge {
@@ -930,4 +930,8 @@ a.tooltip {
 
 .pagination-masked.clearfix.top {
   margin: 15px;
+}
+
+.cover-preview {
+  overflow: hidden;
 }

@@ -920,6 +920,7 @@
     <message key="xmlui.administrative.Navigation.administrative_control_panel">Systemdaten</message>
     <message key="xmlui.administrative.Navigation.administrative_content">Inhalt-Administration</message>
     <message key="xmlui.administrative.Navigation.statistics">Statistiken</message>
+    <message key="xmlui.administrative.Navigation.administrative_batch_import">Batch Import (ZIP)</message>
     <message key="xmlui.administrative.Navigation.administrative_import_metadata">Metadaten Importieren</message>
     <message key="xmlui.administrative.Navigation.administrative_curation">Datenpflege - Aufgaben</message>
 
@@ -2338,6 +2339,10 @@
     <!-- End Versioning -->
 
     <!-- Start Discovery -->
+    <message key="xmlui.mirage2.discovery.reset">Reset</message>
+    <message key="xmlui.mirage2.discovery.newFilter">Add New Filter</message>
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Show Advanced Filters</message>
+    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.contributor.author_filter">Autor/Herausgeber</message>
@@ -2894,7 +2899,7 @@ Das Team vom Universitätsverlag Göttingen
             <p>Das Herausgebergremium des Universitätsverlages Göttingen besteht aus Vertretern aller Fakultäten der Universität Göttingen, die von den Fakultäten selbst benannt wurden. Es steuert die programmatische Ausrichtung des Verlages und die Qualitätsprüfung seiner Sparte „Universitätsverlag".
             </p>
 
-            <p>Informationen zur Arbeit des Herausgebergremiums finden Sie im <a href="/documents/Definition der Sparten_110201.pdf">Text zur „Definition der Sparten“ [pdf]</a>.
+            <p>Informationen zur Arbeit des Herausgebergremiums finden Sie im <a href="/dokumente/texts/Definition der Sparten_110201.pdf">Text zur „Definition der Sparten“ [pdf]</a>.
             </p>
         </div>
 
@@ -3097,7 +3102,7 @@ Das Team vom Universitätsverlag Göttingen
         <div>
             <p>
 
-                <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
+                <strong>Als Mitglied der Georg-August-Universität Göttingen</strong> können Sie Ihre wissenschaftliche Arbeit über den Universitätsverlag Göttingen weltweit veröffentlichen. Näheres regelt die <a href="/dokumente/texts/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a>, die im Januar 2015 in Kraft getreten ist.
             </p>
             <p>
                 Um einen ersten Überblick über die <strong>anfallenden Kosten</strong> für Ihre Publikation zu erhalten (der Autor selbst trägt den Anteil des Produktionskostenzuschusses) nutzen Sie bitte unser <a href="/costrequest">Kostenanfrageformular</a>.
@@ -3139,7 +3144,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.static.reviewer">
         <div>
             <p>
-                <i class="icon-file-pdf"></i><a href="/documents/simple-review_extern_130204.pdf">Begutachtungsbogen</a> zum Herunterladen.
+                <i class="icon-file-pdf"></i><a href="/dokumente/texts/simple-review_extern_130204.pdf">Begutachtungsbogen</a> zum Herunterladen.
             </p>
         </div>
     </message>
@@ -3169,7 +3174,7 @@ Das Team vom Universitätsverlag Göttingen
                 <h4 class="list-item-header section-heading">Anleitung Autoren</h4>
                 <p>Kurze Beschreibung</p>
                 <div class="button-panel">
-                    <a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3177,7 +3182,7 @@ Das Team vom Universitätsverlag Göttingen
                 <h4 class="list-item-header section-heading">Anleitung Formatvorlage</h4>
                 <p>Beschreibung, wie die angebotenen Formatvorlagen benutzt werden</p>
                 <div class="button-panel">
-                    <a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3188,8 +3193,8 @@ Das Team vom Universitätsverlag Göttingen
                     Sie mit der Erfassung des Dokuments beginnen.
                 </p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3199,8 +3204,8 @@ Das Team vom Universitätsverlag Göttingen
                     Dies ist unsere Standardformatvorlage für Beiträge in Sammelbänden. Bitte nutzen Sie diese Formatvorlage, wenn Sie eine Sammlung von Texten verschiedener Autoren im Format 17x24cm erstellen. Zur Wahl des Formats kontaktieren Sie uns bitte, bevor Sie mit der Erfassung des Dokuments beginnen.
                 </p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3208,8 +3213,8 @@ Das Team vom Universitätsverlag Göttingen
                 <h4 class="list-item-header section-heading">17x24cm: skaliert </h4>
                 <p>Diese Formatvorlage bitte nur nach Absprache verwenden.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3217,8 +3222,8 @@ Das Team vom Universitätsverlag Göttingen
                 <h4 class="list-item-header section-heading">14,8x21cm (DIN A5) </h4>
                 <p>Diese Formatvorlage ist für Publikationen gedacht, die im Format 14,8x21cm (DIN A5) publiziert werden sollen.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_DINA5.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_DINA5.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_DINA5.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_DINA5.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3226,13 +3231,13 @@ Das Team vom Universitätsverlag Göttingen
                 <h4 class="list-item-header section-heading">LaTeX </h4>
                 <p>Diese Formatvorlage ist für Sammelbände wie Proceedings gedacht, die im Format 17x24cm publiziert werden sollen.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archiv (.zip)</a>
+                    <a href="/dokumente/texts/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archiv (.zip)</a>
                 </div>
             </div>
             <div class="item">
                 <h4 class="list-item-header section-heading">Metadatenschema</h4>
                 <div class="button-panel">
-                    <a href="/static/documents/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
+                    <a href="/dokumente/texts/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
                 </div>
             </div>
 
@@ -3332,7 +3337,7 @@ Das Team vom Universitätsverlag Göttingen
         </div>
     </message>
 
-    <message key="xmlui.static.reviewform.link"><a href="/documents/simple-review_extern_130204.pdf">Begutachtungsbogen</a></message>
+    <message key="xmlui.static.reviewform.link"><a href="/dokumente/texts/simple-review_extern_130204.pdf">Begutachtungsbogen</a></message>
 
     <message key="xmlui.static.divisions.head">Verlagssparten</message>
 
@@ -3431,7 +3436,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.static.policy">
         <div class="ds-static-div">
             <p>
-                <i class="icon-file-pdf"></i><a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien</a>
+                <i class="icon-file-pdf"></i><a href="/dokumente/texts/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien</a>
                 <span class="pull-right">Göttingen im Mai 2015</span>
             </p>
             <p>
@@ -3441,7 +3446,7 @@ Das Team vom Universitätsverlag Göttingen
 
 
             <p>
-                Das Präsidium der Georg-August-Universität hat im Januar 2015 eine <a href="/documents/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a> für den Universitätsverlag verabschiedet. Diese regelt transparent, wie und für wen der Verlag arbeitet. Mit dieser Nutzungsordnung können nun auch drittmittelfinanzierte Projekte verwirklicht werden, bei denen die Verwendungsrichtlinien der Förderer die Abrechnung von Open-Access-Dienstleistungen innerhalb der eigenen Einrichtung bisher nicht gestatteten. Wir freuen uns, dass wir zusammen mit den Förderern das Open-Access-Publizieren an der Universität weiter voran bringen können, vor allem für die buchorientierten Disziplinen.
+                Das Präsidium der Georg-August-Universität hat im Januar 2015 eine <a href="/dokumente/texts/Nutzungsordnung-2015-01-09.pdf">Nutzungsordnung</a> für den Universitätsverlag verabschiedet. Diese regelt transparent, wie und für wen der Verlag arbeitet. Mit dieser Nutzungsordnung können nun auch drittmittelfinanzierte Projekte verwirklicht werden, bei denen die Verwendungsrichtlinien der Förderer die Abrechnung von Open-Access-Dienstleistungen innerhalb der eigenen Einrichtung bisher nicht gestatteten. Wir freuen uns, dass wir zusammen mit den Förderern das Open-Access-Publizieren an der Universität weiter voran bringen können, vor allem für die buchorientierten Disziplinen.
 
             </p>
             <h3>
@@ -3474,7 +3479,7 @@ Das Team vom Universitätsverlag Göttingen
                 der elektronischen Ausgaben eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
                 insbesondere die Leistungsfähigkeit von Göttinger Wissenschaftlern weltweit sichtbar. Daher werden möglichst alle Publikationen über den
                 Publikationsserver GOEDOC der Universität Göttingen online frei angeboten (Open Access). Hier finden Sie die
-                <a href="/static/documents/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
+                <a href="/dokumente/texts/Verlagspolicy-de_UVG_150529.pdf">Leitlinien des Publizierens</a> im Universitätsverlag Göttingen.
                 (In übersichtlicher Form finden Sie unsere Politik bezüglich der Archivierung von Pre- und Postprints in Open Access-Repositorien
                 im Verzeichnis <a href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" class="extern-link" target="_blank">Sherpa/RoMEO</a>.)
             </p>
@@ -3490,7 +3495,7 @@ Das Team vom Universitätsverlag Göttingen
 
         <div>
             <p>
-                Der Universitätsverlag Göttingen stellt Ihnen mit <a href="/documents/UVG_lizenzen_141124.pdf">
+                Der Universitätsverlag Göttingen stellt Ihnen mit <a href="/dokumente/texts/UVG_lizenzen_141124.pdf">
                 "Open-Access-Lizenzen im Universitätsverlag Göttingen" (PDF)</a> Empfehlungen zu Open-Access-Lizenzen zur Verfügung.</p>
 
             <p>
@@ -3813,7 +3818,7 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Ab Juni 2008 arbeiteten zunächst Wissenschaftler/innen der Universitäten Göttingen und Hamburg, seit 2011 der Universitäten Göttingen und Tübingen, aus den Bereichen Kulturanthropologie/ Europäische Ethnologie, Volkswirtschaft, Ethnologie, Wirtschafts- und Völkerrecht zu Cultural Property (kulturelles Eigentum). Mittlerweile befindet sich das Projekt in der zweiten Phase. Mit einem interdisziplinären Ansatz untersucht die aus Mitteln der Deutschen Forschungsgemeinschaft geförderte Forschergruppe die Konstituierung von Cultural Property, seinen Akteuren, Diskursen, Kontexten und Regeln. Die Bände dieser Reihe dokumentieren die Ergebnisse aus der laufenden Forschung.
         </p>
-        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2190-8672</p>
         <p class="narrow">ISSN (Online): 2512-6342</p>
     </message>
@@ -3875,7 +3880,7 @@ Das Team vom Universitätsverlag Göttingen
         <p>
             Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
-        <p><a class="flyer" target="_blank" href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 1864-2144</p>
         <p class="narrow">ISSN (Online): 2512-689X</p>
 
@@ -4020,7 +4025,7 @@ Das Team vom Universitätsverlag Göttingen
             interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
             Anlage ebenso wie fachhistorische und theoretische Studien.
         </p>
-        <p><a class="flyer" target="_blank" href="KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
     </message>
@@ -4202,16 +4207,12 @@ Das Team vom Universitätsverlag Göttingen
 
         </p>
         <p>
-            Sie können unser Verlagsprogramm <a href="/documents/verlagsprogramm_2016.pdf">als PDF herunterladen</a>. Falls Sie es in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei <a href="mailto:univerlag@uni-goettingen.de?subject=Verlagkatalog bestellen">hier</a>.
+            Sie können unser Verlagsprogramm <a href="/dokumente/texts/verlagsprogramm_2016.pdf">als PDF herunterladen</a>. Falls Sie es in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei <a href="mailto:univerlag@uni-goettingen.de?subject=Verlagkatalog bestellen">hier</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2016.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm_2016.pdf"></iframe>
         </div>
 
-        <!-- <p id="catalog">
-        <img src="/static/images/FrontCover_Verlagsprogramm2016.jpg" alt="FrontCover_Verlagsprogramm2016"/>
-        <a target="_blank" href="//demo.multivio.org/client/#get&amp;url=//www.univerlag.uni-goettingen.de/documents/verlagsprogramm_2016.pdf">Vorschau</a>
-        </p> -->
 
     </message>
     <message key="xmlui.static.publishing.catalog.head">Verlagskatalog</message>

@@ -151,6 +151,9 @@
              More info: h5bp.com/i/378 -->
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
+            <!-- For google webmaster -->
+            <meta content="LIW-IxIo_2yZemsXW2SW5x0maQdjkAZ0iJNZLQy_Xkw" name="google-site-verification" />
+
             <!-- Mobile viewport optimized: h5bp.com/viewport -->
             <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
@@ -886,6 +889,23 @@
         </xsl:if>
 
         <script src="/static/shopping-cart.min.js" charset="UTF-8" type="text/javascript"> </script>
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.gwdg.de/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 238]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+            g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <noscript>
+            <p>
+                <img alt="" style="border:0;" src="http://piwik.gwdg.de/piwik.php?idsite=238" />
+            </p>
+        </noscript>
 
         <!-- <script src="/static/js/addon.js" charset="UTF-8" type="text/javascript"> </script>-->
 

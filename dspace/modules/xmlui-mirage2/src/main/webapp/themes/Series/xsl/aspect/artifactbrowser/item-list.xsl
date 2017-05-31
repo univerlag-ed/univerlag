@@ -243,7 +243,7 @@
                                     <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                     <a target="_blank">
                                         <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                        <i class="icon-amazon"></i> <i18n:text>xmlui.item.amazon.order</i18n:text>
+                                        <i class="icon-amazon-1"></i> <i18n:text>xmlui.item.amazon.order</i18n:text>
                                     </a>
                                 </xsl:when>
                                 <xsl:when test="starts-with(//dim:field[@element='notes' and @qualifier='printaccess'], 'http')">

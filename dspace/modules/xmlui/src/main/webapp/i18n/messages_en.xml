@@ -3039,7 +3039,7 @@
     <message key="xmlui.static.reviewer">
         <div>
             <p>
-                <i class="icon-file-pdf"></i><a href="/documents/simple-review_extern_130204.pdf">Review Form</a> for download.
+                <i class="icon-file-pdf"></i><a href="/dockumente/texts/simple-review_extern_130204.pdf">Review Form</a> for download.
             </p>
         </div>
     </message>
@@ -3073,7 +3073,7 @@
             <div class="item">
                 <h4 class="list-item-header section-heading">Instructions for authors</h4>
                 <div class="button-panel">
-                    <a href="/static/documents/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dockumente/texts/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3081,7 +3081,7 @@
                 <h4 class="list-item-header section-heading">Instructions stylesheet</h4>
                 <p>Description of how the available stylesheets should be used.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dockumente/texts/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3089,8 +3089,8 @@
                 <h4 class="list-item-header section-heading">Stylesheet 17x24cm, Standard</h4>
                 <p>This is our standard stylesheet. Please use this stylesheet if you plan to submit your work in size 17x24cm</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3100,8 +3100,8 @@
                     Please use this stylesheet if the work is a collection of articles of different authors, which is to be published in size 17x24cm.
                     Please contact us before bringing together the separate articles.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3109,8 +3109,8 @@
                 <h4 class="list-item-header section-heading">Stylesheet 17x24cm, scaled</h4>
                 <p>Please use this stylesheet only in consultation with us.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dockumente/texts/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3757,7 +3757,7 @@
             unded by the same research networks.
             We hope that the series will also help to enhance the visibility of the research carried out here and help others in the field to advance similar projects.
         </p>
-        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2191-9860</p>
         <p class="narrow">ISSN (Online): 2512-6326</p>
     </message>
@@ -3772,7 +3772,7 @@
             These six linked projects are devoted to the question of how cultural property is constituted, focusing on actors, discourses, contexts and rules.
             The volumes of this series document the results of the research in progress.
         </p>
-        <p><a class="flyer" target="_blank" href="/static/documents/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2190-8672</p>
         <p class="narrow">ISSN (Online): 2512-6342</p>
     </message>
@@ -3838,7 +3838,7 @@
             The new series "Göttinger Schriften zum Medizinrecht" presents a forum to the interested general public in order
             to make all new research results of the newly created "<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
         </p>
-        <p><a class="flyer" target="_blank" href="/static/documents/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 1864-2144</p>
         <p class="narrow">ISSN (Online): 2512-689X</p>
     </message>
@@ -3941,7 +3941,7 @@
             but also of those given by scientists from other universities. All contributors present their special projects or their current research.
             The range of the publications will cover the whole of the subject "old history".
         </p>
-        <<p class="narrow">ISSN (Print): 1864-211X</p>
+        <p class="narrow">ISSN (Print): 1864-211X</p>
         <p class="narrow">ISSN (Online): 2513-1273</p>
     </message>
 
@@ -3991,7 +3991,7 @@
             interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
             Anlage ebenso wie fachhistorische und theoretische Studien.
         </p>
-        <p><a class="flyer" target="_blank"  href="/static/documents/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank"  href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
     </message>
