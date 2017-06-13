@@ -496,6 +496,11 @@
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
+            <!-- changed isbn-9 to isbn-13 -->
+            <map:match pattern="handle/3/isbn-3-938616-32-6">
+                <map:redirect-to uri="/handle/3/isbn-978-3-938616-32-1" permanent="yes"/>
+            </map:match>
+
 
             <!-- For permanent links to old website -->
 
