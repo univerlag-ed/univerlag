@@ -1041,7 +1041,7 @@ public class DescribeStep extends AbstractProcessingStep
         Calendar cal = Calendar.getInstance();
         return (ConfigurationManager.getProperty("identifier.doi.prefix")
                 + "/" + ConfigurationManager.getProperty("identifier.doi.namespaceseparator")
-                + cal.get(Calendar.YEAR) + "." + it.getID());
+                + cal.get(Calendar.YEAR) + ConfigurationManager.getProperty("identifier.doi.yearseparator") + it.getID());
 
     }
 }
