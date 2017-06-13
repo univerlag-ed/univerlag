@@ -126,6 +126,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-12">
                             <xsl:call-template name="itemSummaryView-DIM-thumbnail"/>
+                            <xsl:call-template name="itemSummaryView-DIM-DOI"/>
                         </div>
 
                     </div>
@@ -400,44 +401,42 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-URI">
-        <h4>
-            <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
-            <a id="pid">
-                <xsl:attribute name="href">
-                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
-                </xsl:attribute>
-                <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
-            </a>
-            <!--<xsl:choose>
-                <xsl:when test="starts-with(dim:field[@element='identifier' and @qualifier='uri' and descendant::text()], '10.007')">
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><xsl:text> DOI: </xsl:text>
+        <xsl:choose>
+            <xsl:when test="not(dim:field[@element='identifier' and @qualifier='doi'])">
+                <h4>
+                    <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
+
+                    <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
                     <a id="pid">
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
                         </xsl:attribute>
-                        <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/>
+                        <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
                     </a>
 
-                </xsl:when>
-                <xsl:when test="dim:field[@element='intern' and @qualifier='doi']">
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><xsl:text> DOI: </xsl:text>
-                    <a id="pid">
-                        <xsl:attribute name="href">
-                            <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
-                        </xsl:attribute>
+                </h4>
+            </xsl:when>
+            <xsl:otherwise>
+                <div>&#130;</div>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
-                        <xsl:value-of select="dim:field[@element='intern' and @qualifier='doi']" />
-                    </a>
-                </xsl:when>
-                <xsl:otherwise>
-                    <a href="#" onclick="copyToClipboard('#pid')" title="copy to clipboard"><i class="icon-export"></i></a><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text></strong><xsl:text>: </xsl:text>
-                    <a  id="pid">
-                        <xsl:attribute name="href"><xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/></xsl:attribute>
-                        <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']/node()"/>
-                    </a>
-                </xsl:otherwise>
-            </xsl:choose> -->
-        </h4>
+    <xsl:template name="itemSummaryView-DIM-DOI">
+        <xsl:if test="dim:field[@element='identifier' and @qualifier='doi']">
+            <h4>
+                <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
+
+                <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-doi</i18n:text><xsl:text>: </xsl:text></strong>
+                <span  id="pid" class="hidden"><xsl:value-of select="concat('https://doi.org/', dim:field[@element='identifier' and @qualifier='doi'])"/></span>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="concat('https://doi.org/', dim:field[@element='identifier' and @qualifier='doi'])"/>
+                    </xsl:attribute>
+                    <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='doi']" />
+                </a>
+            </h4>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-date">

@@ -2094,6 +2094,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Beschreibung</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-uri">Zitierbarer Link</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-doi">DOI</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Verlag</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Schlagwort</message>
@@ -4261,6 +4262,7 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.volume">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Band</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">nach Band</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">Link in die Zwischenablage kopieren</message>
 
     <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
@@ -4464,7 +4466,7 @@ Das Team vom Universitätsverlag Göttingen
     <!-- Aktuelles -->
     <message key="xmlui.static.news.title">Aktuelles</message>
     <message key="xmlui.static.news">
-        <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
+        <h2 class="first-page-header">Aktuelles<!-- <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a>--></h2>
         <div class="news">
 
             <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>

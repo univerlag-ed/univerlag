@@ -89,6 +89,11 @@
     <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Search produced no results.</message>
     <message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">All</message>
 
+    <message key="xmlui.mirage2.discovery.reset">Reset</message>
+    <message key="xmlui.mirage2.discovery.newFilter">Add New Filter</message>
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Show Advanced Filters</message>
+    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Hide Advanced Filters</message>
+
     <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
     <!-- Note: As of DSpace 6.0, org.dspace.app.xmlui.aspect.artifactbrowser.AdvancedSearch has been removed. -->
     <!-- The following "type_*" i18n keys will be left as is as they&#39;re referenced by the Discovery&#39;s SidebarFacetsTransformer
@@ -2205,6 +2210,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-doi">DOI</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Subject</message>
@@ -2507,7 +2513,7 @@
 
     <!--   Start Sword Client  -->
     <message key="xmlui.swordclient.Navigation.context_head">Sword Kopie</message>
-    <message key="xmlui.swordclient.Navigation.context_copy">Dokument in ein anderes Repositorium kopieren</message>
+    <message key="xmlui.swordclient.Navigation.context_copy">Dokument in Fein anderes Repositorium kopieren</message>
     <message key="xmlui.swordclient.general.SwordCopy_trail">Sword Kopie</message>
     <message key="xmlui.swordclient.general.main_head">Kopie von Dokument: {0}</message>
 
@@ -4251,6 +4257,7 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.volume">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Vol.</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">Volume</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">Copy link to clipboard</message>
 
     <message key="xmlui.static.copyright">&#169; 2017 Göttingen State and University Library</message>
     <!-- search facet values -->
