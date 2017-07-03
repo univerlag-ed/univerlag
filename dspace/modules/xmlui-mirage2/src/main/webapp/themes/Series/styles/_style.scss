@@ -492,6 +492,10 @@ h6 .small,
         background-color: #EAE9E7;
     }
 
+    .view-more {
+        background-color: #F8F3F3;
+    }
+
 
     .recent-submission {
         padding: 15px 0 0 15px;
@@ -537,6 +541,7 @@ h6 .small,
 
     #pid {
         white-space: nowrap;
+        font-size: small;
     }
 
 
@@ -825,7 +830,7 @@ a.tooltip {
     color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     body {
         font-size: 12px;
     }
@@ -855,6 +860,12 @@ a.tooltip {
         margin-right: 0;
     }
 
+    a#login:hover {
+      background-color: #193364;
+    }
+    .view-more {
+      background-color: #F8F3F3;
+    }
 
     /*header .navbar-brand img {
         width: 140px;
@@ -896,6 +907,9 @@ a.tooltip {
 
 }
 
+.glyphicon-globe {
+  font-size: 16px;
+}
 
 #ds-search-form-sm {
     margin-bottom: 10px;
