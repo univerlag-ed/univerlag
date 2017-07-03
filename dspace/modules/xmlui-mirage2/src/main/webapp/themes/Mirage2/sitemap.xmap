@@ -66,6 +66,9 @@
                 <encoding>UTF-8</encoding>
                 <indent>yes</indent>
             </map:serializer>
+            <map:serializer name="csv" src="org.apache.cocoon.serialization.TextSerializer" mime-type="text/csv; charset=utf8" logger="sitemap.serializer.text" >
+                <omit-xml-declaration>true</omit-xml-declaration>
+            </map:serializer>
         </map:serializers>
     </map:components>
 
@@ -128,6 +131,29 @@
                 <theme-name>${item}</theme-name>
             </global-variables>
         </map:component-configurations>
+
+        <!-- Pipe for vlb export -->
+        <map:pipeline>
+            <map:match pattern="vlb-list/*">
+                <map:act type="set-header">
+                    <map:parameter name="Content-Disposition" value="attachment; filename=V_5219158_{1}_Lieferstatus.csv"/>
+                </map:act>
+                <map:generate  type="file" src="vlb/vlb-liste.xml"/>
+                <map:transform src="vlb/vlb2csv.xsl" />
+                <map:serialize type="csv" />
+            </map:match>
+
+                        <!-- <map:match pattern="ris/**">
+                                <map:act type="set-header">
+                                        <map:parameter name="Content-Disposition" value="attachment; filename={1}.ris"/>
+                                </map:act>
+                                <map:generate type="file" src="cocoon://DRI/{1}" />
+                                <map:transform src="Ris.xsl" />
+                                <map:serialize type="text" />
+                        </map:match> -->
+
+        </map:pipeline>
+
 
         <map:pipeline internal-only="true">
             <map:parameter name="expires" value="access plus 1 hours"/>

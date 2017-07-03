@@ -49,11 +49,25 @@
 							<xsl:value-of select="concat($baseURL, '/handle/','3/', $lpi)" />
 						</xsl:otherwise>
 				</xsl:choose>
+
 				</url>
 				<mime>text/html</mime>
                                 <version>1.0</version>
                                 <access>free</access>
 			</xsl:when>
+			<xsl:when test="contains($query, 'isbn-')">
+                                <xsl:variable name="lpi"><xsl:value-of select="substring-after($query, 'isbn-')" /></xsl:variable>
+                                <url>
+
+
+
+                                                        <xsl:value-of select="concat($baseURL, '/handle/','3/isbn-', $lpi)" />
+                                </url>
+                                <mime>text/html</mime>
+                                <version>1.0</version>
+                                <access>free</access>
+             </xsl:when>
+
 			<xsl:otherwise>
 				<URL />
 			</xsl:otherwise>

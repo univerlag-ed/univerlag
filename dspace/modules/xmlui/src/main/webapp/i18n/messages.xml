@@ -2095,6 +2095,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Beschreibung</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-uri">Zitierbarer Link</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-doi">DOI</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">In die Zwischenablage kopieren</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Verlag</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Schlagwort</message>
@@ -2796,6 +2797,16 @@ Das Team vom Universitätsverlag Göttingen
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
             Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.
         </p>
+	<div class="alert alert-info">
+	<p>Sehr geehrte Kundinnen und Kunden,</p>
+
+<p>wir haben derzeit keine Möglichkeit, unser Verkäuferkonto bei amazon adäquat zu bedienen. Daher möchten wir Sie bitten, nicht über amazon zu bestellen. Auf dem Wege haben wir im Moment keine Liefermöglichkeit.
+</p>
+<p>
+Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
+</p>
+</div>
+
         <!-- <div class="btn-toolbar">
             <div class="wrapper pull-right">
                 <a href="/news" class="btn btn-default btn-xs" role="button">Aktuelles</a>
@@ -2805,15 +2816,15 @@ Das Team vom Universitätsverlag Göttingen
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">News</a>
+                <a href="/news">Aktuelles</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
+                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog</a>
             </div>
         </div>
     </message>
 
-    <message key="xmlui.static.aboutus.head">About us</message>
+    <message key="xmlui.static.aboutus.head">Über uns</message>
     <message key="xmlui.static.aboutus">
         <div>
             <p>
@@ -3843,7 +3854,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
-            Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
+	    Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
         </p>
         <p class="narrow">ISSN (Print): 0943-951X</p>
         <p class="narrow">ISSN (Online): 2512-6822</p>
@@ -3851,11 +3862,10 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gf.introduction">
         <p>
-            „Göttinger Forstwissensschaften“ is the new series of the <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">faculty of forest science and forest ecology</a> at the Georg-August-Universität Göttingen.
-            It merges the series „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt” and
-            series A of the „Berichte des Forschungszentrums Waldökosysteme”.
-            The series reflects the wide thematic range of the faculty and of the „Nordwestdeutschen Forstlichen Versuchsanstalt”.
-            All publications are being provided as print-copies and as online-copies.
+	    Die neue Schriftenreihe <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">„Göttinger Forstwissensschaften“</a> der traditionsreichen Fakultät für Forstwissenschaften und Waldökologie der Georg-August-Universität Göttingen. 
+	    Sie fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
+	    Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. 
+	    Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
         </p>
         <p class="narrow">ISSN (Print): 1867-6731</p>
         <p class="narrow">ISSN (Online): 2512-6830</p>
@@ -3863,7 +3873,7 @@ Das Team vom Universitätsverlag Göttingen
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
-            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
+            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
         <p class="narrow">ISSN (Print): 1864-2128</p>
         <p class="narrow">ISSN (Online): 2512-6849</p>
@@ -3969,9 +3979,13 @@ Das Team vom Universitätsverlag Göttingen
     </message>
 
     <message key="xmlui.collection.spe.introduction">
-        <!-- <p>
-            Mehr Informationen zur Zeitschrift finden Sie auf der separaten <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">Homepage der Zeitschrift</a>.
-        </p> -->
+         <p>
+	In der Systematischen Biologie spielt die Artenbeschreibung nach wie vor eine entscheidende Rolle. 
+	Mikrobiologische Ansätze haben das phänotypische Vorgehen um die genotypische Betrachtungsweise ergänzt. 
+	Die mehrsprachig und international ausgerichtete Zeitschrift „Species, Phylogeny and Evolution“ führt die Stränge der Taxonomie, der individuellen Artenentstehung und 
+	der Evolutionsgeschichte zusammen und kommt damit zur transdisziplinären Betrachtungsweise von Biodiversität. 
+	Die Zeitschrift wird durch ein wissenschaftliches Herausgebergremium begutachtet. Die jeweiligen Ausgaben setzen dabei Themenschwerpunkte.
+        </p>
         <p class="narrow">ISSN (Print): 1864-211X</p>
         <p class="narrow">ISSN (Online): 2513-1273</p>
     </message>
@@ -4029,6 +4043,21 @@ Das Team vom Universitätsverlag Göttingen
         <p><a class="flyer" target="_blank" href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
+    </message>
+
+    <message key="xmlui.collection.tdsjb.introduction">
+	<p>
+        Das 2010 etablierte und seit 2017 im Universitätsverlag Göttingen erscheinende Jahrbuch Türkisch-deutsche Studien bietet eine Plattform zum internationalen disziplinenübergreifenden
+Wissensaustausch von etablierten Wissenschaftlern und Nachwuchswissenschaftlern, die zu türkisch-deutschen Themen arbeiten. Es wurden zwar die Begriffe "türkisch" und "deutsch" gewählt,
+diese sind jedoch programmatisch offen und nicht essentialistisch, nicht homogenisierend und nicht ausschließlich gemeint. Neben zeitgenössischen Themen wie Repräsentationen aktueller
+Migrationskultur werden auch Untersuchungen veröffentlicht, die sich mit der historischen Dimension von türkisch-deutschem Kulturkontakt im weitesten Sinne beschäftigen.
+Publikationen aus Bereichen wie Literatur-, Medien- und Sprachwissenschaft, Germanistik und Turkologie sowie Soziologie, Politik, Geschichte, Kulturwissenschaft und Didaktik erscheinen
+in deutscher, englischer und türkischer Sprache. Informationen über bisherige Publikationen finden sich unter: <a href="//www.v-r.de/de/tuerkisch_deutsche_studien_jahrbuch/sd-0/3091" class="extern-link" target="_blank">www.v-r.de/de/tuerkisch_deutsche_studien_jahrbuch/sd-0/3091</a>.
+Über die Veröffentlichung der Beiträge entscheidet der wissenschaftliche Beirat, der sich aus renommierten Wissenschaftlern aus Deutschland, der Türkei und den USA zusammensetzt,
+in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen und Berichte veröffentlicht.
+	</p>
+	<p class="narrow">ISSN (Print): 2198-5286</p>
+        <p class="narrow">ISSN (Online): 2197-4993</p>
     </message>
 
     <message key="xmlui.static.shipping.costs.title">Versandkosten</message>
@@ -4262,7 +4291,6 @@ Das Team vom Universitätsverlag Göttingen
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.volume">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Band</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">nach Band</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">Link in die Zwischenablage kopieren</message>
 
     <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
@@ -4466,7 +4494,7 @@ Das Team vom Universitätsverlag Göttingen
     <!-- Aktuelles -->
     <message key="xmlui.static.news.title">Aktuelles</message>
     <message key="xmlui.static.news">
-        <h2 class="first-page-header">Aktuelles<!-- <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a>--></h2>
+        <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
 
             <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>

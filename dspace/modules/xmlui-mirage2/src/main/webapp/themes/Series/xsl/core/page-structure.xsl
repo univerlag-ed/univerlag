@@ -154,7 +154,6 @@
             <!-- For google webmaster -->
             <meta content="LIW-IxIo_2yZemsXW2SW5x0maQdjkAZ0iJNZLQy_Xkw" name="google-site-verification" />
 
-
             <!-- Mobile viewport optimized: h5bp.com/viewport -->
             <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
@@ -776,7 +775,6 @@
     -->
     <xsl:template match="dri:body">
         <div>
-
             <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='alert'][@qualifier='message']">
                 <div class="alert">
                     <button type="button" class="close" data-dismiss="alert">&#215;</button>

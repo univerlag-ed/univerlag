@@ -2209,7 +2209,8 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-author">Author</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-description">Description</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-uri">Permanent Link</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">Copy link to clipboard</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-doi">DOI</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-date">Date</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
@@ -2769,6 +2770,12 @@
             Our aim is to offer free access to as many publications as possible.
             The Göttingen University Press also seeks to publish reviewed high-quality books that due to their specialised nature will not easily be accepted by commercial publishing houses.
         </p>
+	<div class="alert alert-info">
+
+		<p>Dear customers,</p>
+
+		<p>at the moment it is impossible for us to meet any amazon obligations. We would like to ask you not to order via amazon at the moment. Please excuse any inconveniences.</p>
+	</div>
         <!--<div class="btn-toolbar">
             <div class="wrapper pull-right">
                 <a href="/news" class="btn btn-default btn-xs" role="button">News</a>
@@ -3598,6 +3605,16 @@
 
     <!-- Publikationen aus der Universität texts -->
 
+    <message key="xmlui.collection.nfv.introduction">
+        <p>
+	The Nordwestdeutsche Forstliche Versuchsanstalt is in charge of practical forestry research and has the advisory function to all types of forestry holdings in Lower Saxony, 
+	Hesse and Saxony-Anhalt. The NFV covers a wide range of research areas, including the fields forest growth, forest protection, forest-gene-ressources and environmental control. 	 Working on and distributing practical research results is based on a comprehensive network of sample areas and natural forests. Part of these research results 
+	are published in this series "Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt".
+        </p>
+        <p class="narrow">ISSN (Print): 1865-6994</p>
+        <p class="narrow">ISSN (Online): 2512-594X</p>
+    </message>
+
     <message key="xmlui.collection.GBeF.introduction">
         <p>
             Die Göttinger Beiträge zur erziehungswissenschaftlichen Forschung wurden 1991 gegründet, um für kleinere Studien und explorative empirische Arbeiten,
@@ -3702,13 +3719,9 @@
 
     <message key="xmlui.collection.annalsBiologie.introduction">
         <p>
-            Die <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">"Deutsche Gesellschaft für Geschichte und Theorie der Biologie"</a>
-            wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet.
-            Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen.
-            Dafür wurde das eigene "Jahrbuch für Geschichte und Theorie der Biologie" genutzt.
-            Inzwischen sind die parallel zum Jahrbuch erscheinenden "Verhandlungen zur Geschichte und Theorie der Biologie" zu dem Medium zur Veröffentlichung der
-            Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in "Annals of the History and Philosophy of Biology",
-            um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
+	    In 1991, in the wake of German reunification, the <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">"Deutsche Gesellschaft für Geschichte und Theorie der Biologie"</a> was founded. From the start, the Society has been committed to bringing studies in the history and philosophy of biology to a wide audience, using for this purpose its Jahrbuch für Geschichte und Theorie der Biologie. Parallel to the Jahrbuch, the Verhandlungen zur Geschichte und Theorie der Biologie has become the by now traditional medium for the publication of papers delivered at the Society‘s annual meetings.</p>
+	<p>
+	    In 2005 the Jahrbuch was renamed Annals of the History and Philosophy of Biology, reflecting the Society‘s internationalist aspirations in addressing comparative biology as a subject of historical and philosophical studies.	
         </p>
         <p class="narrow">ISSN (Print): 1863-0197</p>
         <p class="narrow">ISSN (Online): 2512-5923</p>
@@ -3805,7 +3818,7 @@
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
-            Nach gut sechs Jahren "schöpferischer Pause" wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
+	    After about six years of a creative break the trusted tradition of publishing exhibitions and research results of the Niedersächsischen Staats- und Universitätsbibliothek Göttingen in book format has been revived, starting with volume 38.
         </p>
         <p class="narrow">ISSN (Print): 0943-951X</p>
         <p class="narrow">ISSN (Online): 2512-6822</p>
@@ -3825,7 +3838,9 @@
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
-            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
+		The series “Göttinger Juristische Schriften” is being published by the <a target="_blank" class="extern-link" href="http://www.jura.uni-goettingen.de/">
+		Juristischen Fakultät der Georg-August-Universität Göttingen</a> and makes available lectures held at the faculty for
+		the interested general public.
         </p>
         <p class="narrow">ISSN (Print): 1864-2128</p>
         <p class="narrow">ISSN (Online): 2512-6849</p>
@@ -3932,12 +3947,20 @@
     </message>
 
     <message key="xmlui.collection.spe.introduction">
-        <!--
+        
         <p>
-            For more information on the publications, please also see the <a href="//www.univerlag.uni-goettingen.de/journals/spe" class="extern-link" target="_blank">homepage</a> of the journal.
+	    Biodiversity, the diversity of organisms from the genetic to the landscape level, is an essential element of the earth's ecosystems. 
+	    Since, according to scientific estimates, up to 90 percent of all existing biological species are still unknown to science, and since 
+	    the role of many species for processes and functions of ecosystems is still not understood, a better knowledge of biodiversity and its 
+	    interrelation with the environment is crucially important.
+
+	The international and multilingual journal "Species, Phylogeny and Evolution" focusses on taxonomy and ontogeny as well as on phylogeny and 
+	the framework set by evolutionary processes. This offers a true interdisciplinary perspective on biodiversity. 
+	The journal is peer-reviewed by its high-ranking editorial board and published by the Georg-August-Universitiy Göttingen. 
+	Volumes usually contain articles around specific topics, however monographes within the journal's scope can be published as special issues.
         </p>
-        -->
-        <p>ISSN: 1864-211X</p>
+    	<p class="narrow">ISSN (Print): 1864-211X</p>
+        <p class="narrow">ISSN (Online): 2513-1273</p>
     </message>
 
     <message key="xmlui.collection.svas.introduction">
@@ -3947,8 +3970,8 @@
             but also of those given by scientists from other universities. All contributors present their special projects or their current research.
             The range of the publications will cover the whole of the subject "old history".
         </p>
-        <p class="narrow">ISSN (Print): 1864-211X</p>
-        <p class="narrow">ISSN (Online): 2513-1273</p>
+	<p class="narrow">ISSN (Print): 2193-486X</p>
+        <p class="narrow">ISSN (Online): 2512-711X</p>
     </message>
 
     <!-- <message key="xmlui.collection.giu.introduction">
@@ -3992,14 +4015,19 @@
 
     <message key="xmlui.collection.euethnology.introduction">
         <p>
-            In der Reihe "Göttinger Studien zur Kulturanthropologie/Europäischen Ethnologie" werden Dissertationen, Habilitationen,
-            herausragende Master-Arbeiten sowie Tagungsbände veröffentlicht. Die Reihe ist zudem offen für Anthologien aus dem Forschungsbereich der KAEE und deren
-            interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
-            Anlage ebenso wie fachhistorische und theoretische Studien.
+	   The (new) series "KAEE" will display dissertations, habilitations and outstanding master theses as well as conference notes and anthologies 
+	   from the wide ranging field of cultural anthropology and European Ethnology, as well as it´s neighbouring, interdisciplinary fields of 
+	   resarch - including historical and modern aspects.
         </p>
         <p><a class="flyer" target="_blank"  href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
+    </message>
+
+	
+    <message key="xmlui.collection.tdsjb.introduction">
+	<p class="narrow">ISSN (Print): 2198-5286</p>
+        <p class="narrow">ISSN (Online): 2197-4993</p>
     </message>
 
     <message key="xmlui.static.shipping.costs.title">Ordering: Shipping costs</message>

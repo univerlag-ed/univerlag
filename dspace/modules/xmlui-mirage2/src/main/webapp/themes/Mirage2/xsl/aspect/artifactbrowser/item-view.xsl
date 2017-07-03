@@ -126,11 +126,9 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-12">
                             <xsl:call-template name="itemSummaryView-DIM-thumbnail"/>
-                            <xsl:call-template name="itemSummaryView-DIM-DOI"/>
                         </div>
-
                     </div>
-
+                    <xsl:call-template name="itemSummaryView-DIM-DOI"/>
 
                     <xsl:if test="$ds_item_view_toggle_url != ''">
                         <xsl:call-template name="itemSummaryView-show-full"/>
@@ -402,7 +400,7 @@
 
     <xsl:template name="itemSummaryView-DIM-URI">
         <xsl:choose>
-            <xsl:when test="not(dim:field[@element='identifier' and @qualifier='doi'])">
+            <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))">
                 <h4>
                     <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
@@ -423,17 +421,17 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-DOI">
-        <xsl:if test="dim:field[@element='identifier' and @qualifier='doi']">
-            <h4>
+        <xsl:if test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')">
+            <h4 class="doi">
                 <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
-                <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-doi</i18n:text><xsl:text>: </xsl:text></strong>
-                <span  id="pid" class="hidden"><xsl:value-of select="concat('https://doi.org/', dim:field[@element='identifier' and @qualifier='doi'])"/></span>
-                <a>
+                <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
+                <br />
+                <a id="pid">
                     <xsl:attribute name="href">
-                        <xsl:value-of select="concat('https://doi.org/', dim:field[@element='identifier' and @qualifier='doi'])"/>
+                        <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']"/>
                     </xsl:attribute>
-                    <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='doi']" />
+                    <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
                 </a>
             </h4>
         </xsl:if>
@@ -1548,6 +1546,17 @@
                 </xsl:if>
 
                 <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a></p>
+                <xsl:for-each select="//dim:field[@element='description'][@qualifier='sponsorship']">
+                    <xsl:if test="string-length(./@authority) &gt; 0">
+                        <p>
+                            <strong>Sponsor</strong><xsl:text>: </xsl:text>
+                            <a target="_blank" class="extern-link">
+                                <xsl:attribute name="href"><xsl:value-of select="concat('http://search.crossref.org/funding?q=', ./@authority)" /></xsl:attribute>
+                                <xsl:value-of select="." />
+                            </a>
+                        </p>
+                    </xsl:if>
+                </xsl:for-each>
                 <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
             </div>
             <!-- <div id="cite">

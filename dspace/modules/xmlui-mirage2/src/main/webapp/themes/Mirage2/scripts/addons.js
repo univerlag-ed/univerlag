@@ -89,6 +89,9 @@
             if ($(this).text() == "Medizin") {
                 $(this).text("Medicine");
             }
+            if ($(this).text() == "Musikwissenschaften") {
+                $(this).text("Music sciences");
+            }
             if ($(this).text() == "Medizinrecht") {
                 $(this).text("Medical law");
             }

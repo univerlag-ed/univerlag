@@ -912,7 +912,7 @@
     </xsl:template>
 
     <!--The Language Selection-->
-    <!--<xsl:template name="languageSelection">
+    <xsl:template name="languageSelection">
         <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
             <li id="ds-language-selection" class="dropdown">
                 <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
@@ -928,29 +928,31 @@
                     <xsl:for-each
                             select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']">
                         <xsl:variable name="locale" select="."/>
-                        <li role="presentation">
-                            <xsl:if test="$locale = $active-locale">
-                                <xsl:attribute name="class">
-                                    <xsl:text>disabled</xsl:text>
-                                </xsl:attribute>
-                            </xsl:if>
-                            <a>
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="$current-uri"/>
-                                    <xsl:text>?locale-attribute=</xsl:text>
-                                    <xsl:value-of select="$locale"/>
-                                </xsl:attribute>
-                                <xsl:value-of
-                                        select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/>
-                            </a>
-                        </li>
+                        <xsl:if test="$locale != $active-locale">
+                            <li role="presentation">
+                                <xsl:if test="$locale = $active-locale">
+                                    <xsl:attribute name="class">
+                                        <xsl:text>disabled</xsl:text>
+                                    </xsl:attribute>
+                                </xsl:if>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="$current-uri"/>
+                                        <xsl:text>?locale-attribute=</xsl:text>
+                                        <xsl:value-of select="$locale"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of
+                                            select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/>
+                                </a>
+                            </li>
+                        </xsl:if>
                     </xsl:for-each>
                 </ul>
             </li>
         </xsl:if>
-    </xsl:template> -->
+    </xsl:template>
 
-
+    <!--
     <xsl:template name="languageSelection">
         <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
             <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
@@ -975,5 +977,5 @@
                 </xsl:for-each>
             </li>
         </xsl:if>
-    </xsl:template>
+    </xsl:template>-->
 </xsl:stylesheet>

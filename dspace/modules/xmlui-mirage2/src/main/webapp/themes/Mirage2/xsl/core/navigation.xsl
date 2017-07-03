@@ -164,11 +164,11 @@
                 <a class="list-group-item ds-option" href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/openaccess">Open Access</a>
                 <xsl:if test="//dri:userMeta/@authenticated='yes'">
-                    <a class="list-group-item ds-option" >
-                        <!--  <xsl:attribute name="href"><xsl:value-of select="concat('/vlb-list/', $date)" /></xsl:attribute> -->
-                        VLB Export
-                    </a>
-
+                        <xsl:variable name="date"><xsl:value-of select="document('../../vlb/current-date.xml')/date"/></xsl:variable>
+                                <a class="list-group-item ds-option">
+                                        <xsl:attribute name="href"><xsl:value-of select="concat('/vlb-list/', $date)" /></xsl:attribute>
+                                        VLB Export
+                                </a>
                 </xsl:if>
 
             </div>

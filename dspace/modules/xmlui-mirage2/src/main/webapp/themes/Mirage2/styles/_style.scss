@@ -585,6 +585,14 @@ h6 .small,
   .icon-shopping-cart {
     font-size: 22px;
   }
+
+  a#login:hover {
+    background-color: #193364;
+  }
+  .view-more {
+    background-color: #F8F3F3;
+  }
+
 }
 
 
@@ -595,6 +603,13 @@ h6 .small,
 
 .list-group-item-heading {
   font-weight: bold;
+}
+
+.navbar-toggle{
+  padding:9px 5px;
+}
+.glyphicon-globe {
+  font-size: 16px;
 }
 
 @media (min-width: 992px) {
@@ -631,6 +646,10 @@ h6 .small,
 
 
 }
+@media (min-width: 481px) and (max-width: 768px){
+  ul#myTab li.active a,.breadcrumb li a{
+    color:#555}
+}
 
 @media (min-width: 769px) {
 
@@ -643,6 +662,15 @@ h6 .small,
   .logo.img-circle {
     max-width: 150px;
   }
+
+  .container .navbar-header {
+    margin-top: 10px;
+  }
+
+  #copyright {
+    white-space: nowrap;
+  }
+
 }
 
 
@@ -907,6 +935,12 @@ a.tooltip {
 
   .shopping-cart.infobox h2 {
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px){
+  .doi{
+    background: #EAE9E7;border: 1px solid #EAE9E7;padding: 5px;border-radius: 5px;
   }
 }
 
