@@ -54,10 +54,6 @@
             <transformer name="strip-namespaces" src="org.apache.cocoon.transformation.StripNameSpacesTransformer"/>
         </map:transformers>
 
-        <map:actions>
-            <map:action name="OrderAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.OrderAction"/>
-        </map:actions>
-
         <map:serializers>
             <map:serializer name="html-no-doctype" logger="sitemap.serializer.xhtml"
                             src="org.apache.cocoon.serialization.HTMLSerializer"
@@ -66,7 +62,8 @@
                 <encoding>UTF-8</encoding>
                 <indent>yes</indent>
             </map:serializer>
-            <map:serializer name="csv" src="org.apache.cocoon.serialization.TextSerializer" mime-type="text/csv; charset=utf8" logger="sitemap.serializer.text" >
+
+	    <map:serializer name="csv" src="org.apache.cocoon.serialization.TextSerializer" mime-type="text/csv; charset=utf8" logger="sitemap.serializer.text" >
                 <omit-xml-declaration>true</omit-xml-declaration>
             </map:serializer>
         </map:serializers>
@@ -127,12 +124,12 @@
         -->
         <map:component-configurations>
             <global-variables>
-                <theme-path>${item}</theme-path>
-                <theme-name>${item}</theme-name>
+                <theme-path>Mirage2</theme-path>
+                <theme-name>Mirage2</theme-name>
             </global-variables>
         </map:component-configurations>
 
-        <!-- Pipe for vlb export -->
+	<!-- Pipe for vlb export -->
         <map:pipeline>
             <map:match pattern="vlb-list/*">
                 <map:act type="set-header">
@@ -142,18 +139,7 @@
                 <map:transform src="vlb/vlb2csv.xsl" />
                 <map:serialize type="csv" />
             </map:match>
-
-                        <!-- <map:match pattern="ris/**">
-                                <map:act type="set-header">
-                                        <map:parameter name="Content-Disposition" value="attachment; filename={1}.ris"/>
-                                </map:act>
-                                <map:generate type="file" src="cocoon://DRI/{1}" />
-                                <map:transform src="Ris.xsl" />
-                                <map:serialize type="text" />
-                        </map:match> -->
-
-        </map:pipeline>
-
+	</map:pipeline>
 
         <map:pipeline internal-only="true">
             <map:parameter name="expires" value="access plus 1 hours"/>
@@ -198,18 +184,6 @@
             <!-- Static content -->
             <map:match pattern="themes/*/**">
                 <map:read type="ThemeResourceReader" src="{2}"/>
-            </map:match>
-
-            <!-- Return JSON -->
-            <map:match pattern="order">
-                <map:generate type="file" src="protodocument.xml"/>
-                <map:act type="OrderAction">
-                    <map:transform src="orderResults.xsl">
-                        <map:parameter name="result" value="{result}"/>
-                    </map:transform>
-
-                </map:act>
-                <map:serialize type="text"/>
             </map:match>
         </map:pipeline>
 

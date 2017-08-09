@@ -47,7 +47,7 @@
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/collection-list.xsl"/>
     <xsl:import href="aspect/artifactbrowser/collection-view.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/browse.xsl"/>
-    <xsl:import href="../../Mirage2/xsl/aspect/discovery/discovery.xsl"/>
+    <xsl:import href="aspect/discovery/discovery.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/artifactbrowser/one-offs.xsl"/>
     <xsl:import href="../../Mirage2/xsl/aspect/submission/submission.xsl"/>
     <xsl:output indent="yes"/>

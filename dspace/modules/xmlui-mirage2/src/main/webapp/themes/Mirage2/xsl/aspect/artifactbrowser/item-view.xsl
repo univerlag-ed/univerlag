@@ -425,7 +425,7 @@
             <h4 class="doi">
                 <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
-                <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
+                <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-doi</i18n:text><xsl:text>: </xsl:text></strong>
                 <br />
                 <a id="pid">
                     <xsl:attribute name="href">
