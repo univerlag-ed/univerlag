@@ -249,7 +249,7 @@
     <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Dokumentanzeige</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Das Dokument erscheint in:</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Zur Kurzanzeige</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#160;</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#160;&#160;</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Diese Dokument wurde zurückgezogen und steht nicht mehr zur Verfügung.</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
@@ -2797,7 +2797,7 @@ Das Team vom Universitätsverlag Göttingen
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
             Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.
         </p>
-	<div class="alert alert-info">
+<!--	<div class="alert alert-info">
 	<p>Sehr geehrte Kundinnen und Kunden,</p>
 
 <p>wir haben derzeit keine Möglichkeit, unser Verkäuferkonto bei amazon adäquat zu bedienen. Daher möchten wir Sie bitten, nicht über amazon zu bestellen. Auf dem Wege haben wir im Moment keine Liefermöglichkeit.
@@ -2805,7 +2805,7 @@ Das Team vom Universitätsverlag Göttingen
 <p>
 Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 </p>
-</div>
+</div> -->
 
         <!-- <div class="btn-toolbar">
             <div class="wrapper pull-right">
@@ -3961,6 +3961,14 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <p class="narrow">ISSN (Online): 2512-7071</p>
     </message>
 
+    <message key="xmlui.collection.matdaf.introduction">
+        <p>
+            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href ="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.
+        </p>
+        <p class="narrow">ISSN (Print): 2566-9230</p>
+        <p class="narrow">ISSN (Online): 2566-9281</p>
+    </message>
+
     <message key="xmlui.collection.mis.introduction">
         <p>
             Die Bände dieser Serie enthalten jeweils die Beiträge der Seminare, die von Yuri Tschinkel am Mathematischen Institut der Georg-August-Universität Göttingen abgehalten wurden.
@@ -4919,4 +4927,9 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         </div>
     </message>
 
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_uri">DOI</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.uri">{0}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.uri">nach DOI</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading"></message>
+    <message key="xmlui.item.sponsor.details">Geförderte Publikation</message>
 </catalogue>

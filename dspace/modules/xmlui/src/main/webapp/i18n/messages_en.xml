@@ -242,7 +242,7 @@
     <message key="xmlui.ArtifactBrowser.ItemViewer.trail">View Item</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">This item appears in the following Collection(s)</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Show simple item record</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#32;</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#160;&#160;</message>
 
     <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">This item has been withdrawn and is no longer available.</message>
 
@@ -2670,7 +2670,7 @@
 
     <!-- different views of lists -->
     <message key="xmlui.mirage2.listview.cover">Cover View</message>
-    <message key="xmlui.mirage2.listview.list">Lis View (with details)</message>
+    <message key="xmlui.mirage2.listview.list">List View (with details)</message>
     <message key="xml.author.profile.dnb.label">DNB Profile</message>
     <message key="xml.author.profile.orcid.label">ORCID Profile</message>
 
@@ -2770,12 +2770,12 @@
             Our aim is to offer free access to as many publications as possible.
             The Göttingen University Press also seeks to publish reviewed high-quality books that due to their specialised nature will not easily be accepted by commercial publishing houses.
         </p>
-	<div class="alert alert-info">
+	<!-- <div class="alert alert-info">
 
 		<p>Dear customers,</p>
 
 		<p>at the moment it is impossible for us to meet any amazon obligations. We would like to ask you not to order via amazon at the moment. Please excuse any inconveniences.</p>
-	</div>
+	</div>-->
         <!--<div class="btn-toolbar">
             <div class="wrapper pull-right">
                 <a href="/news" class="btn btn-default btn-xs" role="button">News</a>
@@ -3052,7 +3052,7 @@
     <message key="xmlui.static.reviewer">
         <div>
             <p>
-                <i class="icon-file-pdf"></i><a href="/dockumente/texts/simple-review_extern_130204.pdf">Review Form</a> for download.
+                <i class="icon-file-pdf"></i><a href="/dokumente/texts/simple-review_extern_130204.pdf">Review Form</a> for download.
             </p>
         </div>
     </message>
@@ -3086,7 +3086,7 @@
             <div class="item">
                 <h4 class="list-item-header section-heading">Instructions for authors</h4>
                 <div class="button-panel">
-                    <a href="/dockumente/texts/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/Anleitung_Autoren.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3094,7 +3094,7 @@
                 <h4 class="list-item-header section-heading">Instructions stylesheet</h4>
                 <p>Description of how the available stylesheets should be used.</p>
                 <div class="button-panel">
-                    <a href="/dockumente/texts/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/anleitung_formatvorlage.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3102,8 +3102,8 @@
                 <h4 class="list-item-header section-heading">Stylesheet 17x24cm, Standard</h4>
                 <p>This is our standard stylesheet. Please use this stylesheet if you plan to submit your work in size 17x24cm</p>
                 <div class="button-panel">
-                    <a href="/dockumente/texts/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/dockumente/texts/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3113,8 +3113,8 @@
                     Please use this stylesheet if the work is a collection of articles of different authors, which is to be published in size 17x24cm.
                     Please contact us before bringing together the separate articles.</p>
                 <div class="button-panel">
-                    <a href="/dockumente/texts/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/dockumente/texts/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_sammelband.dot" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_sammelband.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3122,8 +3122,8 @@
                 <h4 class="list-item-header section-heading">Stylesheet 17x24cm, scaled</h4>
                 <p>Please use this stylesheet only in consultation with us.</p>
                 <div class="button-panel">
-                    <a href="/dockumente/texts/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/dockumente/texts/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_skaliert.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_17x24_skaliert.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3928,6 +3928,14 @@
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
+    </message>
+
+    <message key="xmlui.collection.matdaf.introduction">
+        <!-- <p>
+            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href ="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.
+        </p> -->
+        <p class="narrow">ISSN (Print): 2566-9230</p>
+        <p class="narrow">ISSN (Online): 2566-9281</p>
     </message>
 
     <message key="xmlui.collection.mis.introduction">
@@ -4900,6 +4908,9 @@
 
     <message key="xmlui.costrequest.error">The request could not be sent. Please try again later.</message>
 
-
-
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_uri">DOI</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.uri">{0}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.uri">by DOI</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading"></message>
+    <message key="xmlui.item.sponsor.details">Sponsored Publication</message>	
 </catalogue>

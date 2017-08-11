@@ -1546,7 +1546,7 @@
                 </xsl:if>
 
                 <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a></p>
-                <xsl:for-each select="//dim:field[@element='description'][@qualifier='sponsorship']">
+                <xsl:for-each select="//dim:field[@element='relation'][@qualifier='sponsorship']">
                     <xsl:if test="string-length(./@authority) &gt; 0">
                         <p>
                             <strong>Sponsor</strong><xsl:text>: </xsl:text>
