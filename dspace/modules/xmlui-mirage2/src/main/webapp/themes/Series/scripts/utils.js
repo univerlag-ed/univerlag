@@ -29,4 +29,23 @@
         }
         return DSpace.templates[name];
     };
+
+    if ($("#ds-language-selection").text().substring(1,3) == 'En')
+    {
+        $("a, li, h2").each(function ()
+        {
+            if ($(this).text() == "Alle Produkte") {
+                $(this).text("All Products");
+            }
+            if ($(this).text() == "Publikationen aus der Universit\u00e4t") {
+                $(this).text("Publications from the University");
+            }
+            if ($(this).text() == "Reihen") {
+                $(this).text("Series");
+            }
+            if ($(this).text() == "Verlagsprogramm") {
+                $(this).text("Regular Publications");
+            }
+	}
+     }
 })(jQuery);

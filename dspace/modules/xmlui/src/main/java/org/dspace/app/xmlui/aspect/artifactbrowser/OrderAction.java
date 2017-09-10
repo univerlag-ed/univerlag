@@ -3,6 +3,7 @@ package org.dspace.app.xmlui.aspect.artifactbrowser;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.text.DecimalFormat;
 
 import org.apache.avalon.framework.parameters.Parameters;
 import org.apache.cocoon.acting.AbstractAction;
@@ -492,15 +493,22 @@ public class OrderAction extends AbstractAction
             
             /**Email confirm_email = Email.getEmail("order_confirm" + formvariant + "_" + customer_locale); **/
 	    Email confirm_email = Email.getEmail(I18nUtil.getEmailFilename(new Locale(customer_locale), "order_confirm" + formvariant ));
+            DecimalFormat df = new DecimalFormat("##0.00");
             System.out.println("Locale: " + context.getCurrentLocale());
+            int product = Integer.parseInt(bill.getProductCost().replace('.', '.'));
+            int shipping = Integer.parseInt(shipping_cost.replace('.', '.'));
+            total_sum = df.format((product + shipping)/100.00);
             confirm_email.addRecipient(customer_email);
             confirm_email.addArgument(new Date());
             confirm_email.addArgument(customer_email);
             confirm_email.addArgument(customer_info);                        //customer name, address, zipcode, city, country
             confirm_email.addArgument(delivery_info);                        //delivery address with name, address, zipcode, city, country
             confirm_email.addArgument(order_data);                            //ordered product info: price, quantitiy, creators, title, description, isbn
-            confirm_email.addArgument(bill.getProductCost());                //price sum of ordered products
+	    System.out.println("email product cost: "+ df.format(product/100.00));
+            confirm_email.addArgument(df.format(product/100.00));                //price sum of ordered products
+	     System.out.println("email shiping cost: "+ shipping_cost);
             confirm_email.addArgument(shipping_cost);                        //costs for shipping
+	      System.out.println("email total sum: "+ total_sum);
             confirm_email.addArgument(total_sum);                           //total amount to pay
 
 
@@ -526,7 +534,7 @@ public class OrderAction extends AbstractAction
             email.addArgument(customer_info);
             email.addArgument(delivery_info);
             email.addArgument(order_data);
-            email.addArgument(bill.getProductCost());
+            email.addArgument(df.format(product/100.00));
             email.addArgument(shipping_cost);
             email.addArgument(total_sum);
 
@@ -562,3 +570,4 @@ public class OrderAction extends AbstractAction
     }
 
 }
+

@@ -113,7 +113,7 @@
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Summer term 2016</strong></span>
-                        <p><a href="/info/16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
+                        <p><a href="/info/16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Winter term 2015/16</strong></span>
-                        <p><a href="/info/15-16">LANDWIRTSCHAFT zwischen Idylle und Hightech</a></p>
+                        <p><a href="/info/15-16">WISSENSORT MUSEUM Traditionen - Positionen - Perspektiven</a></p>
                     </div>
                 </div>
 
@@ -7023,7 +7023,7 @@
     <message key="xmlui.static.ring.poster-15-16">
         <div class="media-right hidden-xs">
             <img src="/static/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img><br />
-            <small><a class="extern-link" href="//www.uni-goettingen.de/de/ringvorlesung-Winter term-15-16/54374.html">More information ...</a></small>
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/534820.html">More information ...</a></small>
         </div>
     </message>
 
@@ -7315,7 +7315,7 @@
     <message key="xmlui.static.ring.poster-16">
         <div class="media-right hidden-xs">
             <img src="/static/images/ring/cover-16.jpg" class="media-object poster" alt="poster"></img><br />
-            <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">More information ...</a></small>
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/537736.html">More information ...</a></small>
         </div>
     </message>
 
@@ -8041,16 +8041,35 @@
             <header class="panel-heading">
                 <h3 class="panel-title">20. June 2017</h3>
             </header>
-            <div class="panel-body">
-                Dr. Daniel Steil (Göttingen)
-                <h4>"Ein physikalischer Versuch der knallt ist allemal mehr werth als ein stiller" - Ein Experimentalvortrag nach Art von Lichtenberg</h4>
-                <p>
-                    Attantion! Different place: I. <a  target="_blank"  href="//goo.gl/maps/rQH9NorCaMK2"><i class="icon-location"></i>Physikalisches Institut, Friedrich-Hund-Platz 1</a> Lichtenberg lecture hall.
-                </p>
+	    <div class="panel-body">
+		Prof. Dr. Martin Stingelin (Dortmund) 
+		<h4>"Man lese nicht viel und nur das beste" – Arthur Schopenhauer, Friedrich Nietzsche und Sigmund Freud im wechselseitigen Spiegel ihrer Lichtenberg-Rezeption</h4>
                 <div class="pull-right">
                     <div class="btn-toolbar">
                         <!--
                         <a href="/dokumente/audio/ring2017-06-20.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
+                        <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i><span class="hidden-xs"> Watch on YouTube</span></a>
+                        -->
+                    </div>
+                </div>
+            </div>
+	</div>
+	
+	<div class="panel panel-default">
+            <header class="panel-heading">
+                <h3 class="panel-title">27. June 2017</h3>
+            </header>
+
+            <div class="panel-body">
+                Dr. Daniel Steil (Göttingen)
+                <h4>"Ein physikalischer Versuch der knallt ist allemal mehr werth als ein stiller" - Ein Experimentalvortrag nach Art von Lichtenberg</h4>
+                <!-- <p>
+                    Attantion! Different place: I. <a  target="_blank"  href="//goo.gl/maps/rQH9NorCaMK2"><i class="icon-location"></i>Physikalisches Institut, Friedrich-Hund-Platz 1</a> Lichtenberg lecture hall.
+                </p> -->
+                <div class="pull-right">
+                    <div class="btn-toolbar">
+                        <a href="/dokumente/audio/ring2017-06-27.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
+			<!--
                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i><span class="hidden-xs"> Watch on YouTube</span></a>
                         -->
                     </div>
@@ -8085,8 +8104,8 @@
                 <p>Podiumsdiskussion</p>
                 <div class="pull-right">
                     <div class="btn-toolbar">
-                        <!--
                         <a href="/dokumente/audio/ring2017-07-11.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
+			<!--
                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i><span class="hidden-xs"> Watch on YouTube</span></a>
                         -->
                     </div>
