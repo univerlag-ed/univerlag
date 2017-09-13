@@ -18,11 +18,10 @@
             <!-- Restrict access to hidden items by default -->
             <Filter ref="defaultFilter" />
 
-            <Format ref="oaidc"/>
-	    <Format ref="picaxml"/>
-	    <Format ref="epicur"/>
-	    <!-- <Format ref="xoai"/> -->
-            <!-- 
+            <Format refid="oaidc"/>
+            <Format refid="epicur"/>
+            <Format refid="picaxml"/>
+            <!--<Format ref="mets"/>
             <Format ref="xoai"/>
             <Format ref="didl"/>
             <Format ref="dim"/>
@@ -33,49 +32,60 @@
             <Format ref="qdc"/>
             <Format ref="marc"/>
             <Format ref="uketd_dc"/>
-            <Format ref="junii2" />
-	    -->
+            <Format ref="junii2" />-->
             <Description>
                 This is the default context of the DSpace OAI-PMH data provider.
             </Description>
         </Context>
-
-
-	<Context baseurl="oapen" name="OAPEN Context">
+        
+        
+        <Context baseurl="oapen" name="OAPEN Context">
             <!-- Restrict access to hidden items -->
             <!-- <Filter ref="defaultFilter" /> -->
             <!-- The oapen filter -->
             <Filter ref="oapenFilter"/>
             <!-- Metadata Formats -->
-	    <!-- <Format ref="oaidc"/> -->
             <Format ref="simpledc"/>
             <Format ref="qdc"/>
             <Description>
                 This contexts complies with OAPEN rules.
             </Description>
         </Context>
-
-	<Context baseurl="fundref" name="FundRef Context">
-                 <Transformer ref="fundrefTransformer"/>
-                 <Filter ref="FundRefFilter" />
-                 <Format ref="oaidc" />
-                 <Description>
-                This contexts lists all publications sponsored by some funder.
-                </Description>
-        </Context>
-
-
-	<Context baseurl="print">
-	    <Filter refid="printexistsFilter"/>
-	    <!-- <Format refid="onixprint"/>  -->
-	    <!-- <Set refid="printPublicationsSet"/> -->
-	    <!-- <Format refid="oaidc"/>
-	   <Format refid="xoai"/>--> 
-	    <Format ref="oaidc"/> 
-	    <Description>
-                Print publications in ONIX 2.1 format.
+        
+        <!-- ONIX -->             
+        <!-- e-publications for ONIX -->
+<!--		<Context baseurl="edocs">
+			<Filter refid="documentexistsFilter"/>
+			<Format refid="onix21_edocs"/>
+			<Format refid="oaidc"/>
+			<Format refid="xoai"/>
+			<Description>
+               Online documents in ONIX 2.1 Format.
             </Description>
-	</Context>
+		</Context> -->
+        
+		<!-- Print publications for ONIX -->
+		<Context baseurl="print">
+			<Filter refid="printexistsFilter" />
+			<Format refid="onix21_print"/>
+			<Format refid="oaidc"/>
+			<Format refid="xoai"/>
+			<Description>
+               Print publications in ONIX 2.1 Format.
+            </Description>
+		</Context>
+
+		<!-- DVD or CD-ROM publications for ONIX -->
+		<Context baseurl="media">
+			<Filter refid="mediaexistsFilter" />
+			<Format refid="onix21_media"/>
+			<Format refid="oaidc"/>
+			<Format refid="xoai"/>
+			<Description>
+               multimedia publications in ONIX 2.1 Format.
+            </Description>
+		</Context>
+       
 
         <!--
             Driver Guidelines:
@@ -127,36 +137,60 @@
 
 
     <Formats>
+		<Format id="onix21">
+			<Prefix>onix</Prefix>
+			<XSLT>metadataFormats/onix2.1.xsl</XSLT>
+			<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
+			<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
+		</Format>
+		<Format id="onix21_print">
+			<Prefix>onix_print</Prefix>
+			<XSLT>metadataFormats/onix2.1_print.xsl</XSLT>
+			<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
+			<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
+		</Format>
+		<Format id="onix21_media">
+			<Prefix>onix_media</Prefix>
+			<XSLT>metadataFormats/onix2.1_media.xsl</XSLT>
+			<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
+			<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
+		</Format>
+		<Format id="onix21_edocs">
+			<Prefix>onix_edocs</Prefix>
+			<XSLT>metadataFormats/onix2.1.xsl</XSLT>
+			<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
+			<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
+		</Format>
+		<Format id="simpledc">
+            <Prefix>oaidc</Prefix>
+            <XSLT>metadataFormats/simpledc.xsl</XSLT>
+            <Namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</Namespace>
+            <SchemaLocation>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</SchemaLocation>
+        </Format>
         <Format id="oaidc">
             <Prefix>oai_dc</Prefix>
             <XSLT>metadataFormats/oai_dc.xsl</XSLT>
             <Namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</Namespace>
             <SchemaLocation>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</SchemaLocation>
         </Format>
-	<Format id="simpledc">
-            <Prefix>oaidc</Prefix>
-            <XSLT>metadataFormats/simpledc.xsl</XSLT>
-            <Namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</Namespace>
-            <SchemaLocation>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</SchemaLocation>
-        </Format>
-	<Format id="picaxml">
-	    <Prefix>picaxml</Prefix>
-	    <XSLT>metadataFormats/picaxml.xsl</XSLT>
-	    <Namespace>info:srw/schema/5/picaXML-v1.0</Namespace>
-	    <SchemaLocation>http://www.oclcpica.org/xml/picaplus.xsd</SchemaLocation>
+        <Format id="picaxml">
+			<Prefix>picaxml</Prefix>
+			<XSLT>metadataFormats/picaxml.xsl</XSLT>
+			<Namespace>info:srw/schema/5/picaXML-v1.0</Namespace>
+			<SchemaLocation>http://www.oclcpica.org/xml/picaplus.xsd</SchemaLocation>
         </Format>
         <Format id="epicur">
-	    <Prefix>epicur</Prefix>
-	    <XSLT>metadataFormats/epicur.xsl</XSLT>
-	    <Namespace>urn:nbn:de:1111-2004033116</Namespace>
-	    <SchemaLocation>http://www.persistent-identifier.de/xepicur/version1.0/xepicur.xsd</SchemaLocation>
-	</Format>
-	<!-- <Format id="onixprint">
-		<Prefix>onix_print</Prefix>
-		<XSLT>metadataFormats/onix_print.xsl</XSLT>
-		<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
-		<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
-	</Format> -->
+			<Prefix>epicur</Prefix>
+			<XSLT>metadataFormats/epicur.xsl</XSLT>
+			<Namespace>urn:nbn:de:1111-2004033116</Namespace>
+			<SchemaLocation>http://www.persistent-identifier.de/xepicur/version1.0/xepicur.xsd</SchemaLocation>
+		</Format>
+		<Format id="onix21_print">
+			<Prefix>epicur</Prefix>
+			<XSLT>metadataFormats/epicur.xsl</XSLT>
+			<Namespace>urn:nbn:de:1111-2004033116</Namespace>
+			<SchemaLocation>http://www.persistent-identifier.de/xepicur/version1.0/xepicur.xsd</SchemaLocation>
+		</Format>
         <Format id="mets">
             <Prefix>mets</Prefix>
             <XSLT>metadataFormats/mets.xsl</XSLT>
@@ -241,13 +275,91 @@
         <Transformer id="openaireTransformer">
             <XSLT>transformers/openaire.xsl</XSLT>
         </Transformer>
-	<Transformer id="fundrefTransformer">
-            <XSLT>transformers/fundref.xsl</XSLT>
-        </Transformer>
     </Transformers>
 
 
     <Filters>
+		<!-- 
+			OAPEN filter for records marked as related to
+		-->
+		<Filter id="oapenFilter">
+			<Definition>
+                <Custom ref="oapenRelatedCondition"/>
+            </Definition>
+		</Filter>
+		
+		<!-- 
+			ONIX filter 
+		-->
+		<!-- <Filter id="documentexistsFilter">
+			<Definition>
+				<And>
+					<LeftCondition>
+						<And>
+							<LeftCondition>
+								<Custom ref="itemAccessCondition"/>
+							</LeftCondition>
+							<RightCondition>
+								<Custom ref="itemWithdrawnCondition"/>
+							</RightCondition>
+						</And>
+					 </LeftCondition>
+					 <RightCondition>
+						 <Not>
+							<Custom ref="nodocumentCondition"/>		
+						 </Not>
+					 </RightCondition>
+			   </And>
+           </Definition>
+		</Filter> -->
+		
+		<Filter id="printexistsFilter">
+			<Definition>
+				<And>
+					<LeftCondition>
+						<And>
+							<LeftCondition>
+								<Custom ref="itemAccessCondition"/>
+							</LeftCondition>
+							<RightCondition>
+								<Custom ref="itemWithdrawnCondition"/>
+							</RightCondition>
+						</And>
+					 </LeftCondition>
+					 <RightCondition>
+						<Custom ref="printexistsCondition"/>
+					 </RightCondition>
+				</And>
+            </Definition>
+		</Filter>
+		
+		<Filter id="mediaexistsFilter">
+			<Definition>
+				<And>
+					<LeftCondition>
+						<And>
+							<LeftCondition>
+								<Custom ref="itemAccessCondition"/>
+							</LeftCondition>
+							<RightCondition>
+								<Custom ref="itemWithdrawnCondition"/>
+							</RightCondition>
+						</And>
+					 </LeftCondition>
+					 <RightCondition>
+						 <Or>
+								<LeftCondition>
+									<Custom ref="cdromexistsCondition"/>
+								</LeftCondition>
+								<RightCondition>
+									<Custom ref="dvdexistsCondition"/>
+								</RightCondition>
+							</Or>
+					 </RightCondition>
+				</And>
+			</Definition>
+		</Filter>
+		
         <!-- DRIVER filter for records returned by OAI-PMH.
              By default, return an Item record:
                * If a Title & Author field both exist
@@ -346,12 +458,6 @@
             </Definition>
         </Filter>
 
-	<Filter id="FundRefFilter">
-            <Definition>
-                <Custom ref="sponsorshipExistsCondition"/>
-            </Definition>
-        </Filter>
-
         <!-- UKETD Filter for records returned by OAI-PMH.
              By default, return an Item record:
                 * If it is a "thesis"
@@ -383,24 +489,15 @@
                 </Or>
             </Definition>
         </Filter>
-
-	<!-- 
-		OAPEN filter for records marked as related to
-	-->
-	<Filter id="oapenFilter">
-	    <Definition>
-                <Custom ref="oapenRelatedCondition"/>
-            </Definition>
-	</Filter>
-
-	<!-- 
-		ONIX PRINT filter for records having print format
-	-->
-	<Filter id="printexistsFilter">
-	    <Definition>
-                <Custom ref="printexistsCondition"/>
-            </Definition>
-	</Filter>
+        
+        <CustomCondition id="oapenRelatedCondition">
+            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
+            <Configuration>
+                <string name="field">dc.subject.other</string>
+                <string name="operator">starts_with</string>
+                <string name="value">OAPEN</string>
+            </Configuration>
+        </CustomCondition>
 
         <!-- This condition determines if an Item has a "dc.type" field
              which contains "Thesis". -->
@@ -426,13 +523,6 @@
             <Class>org.dspace.xoai.filter.DSpaceMetadataExistsFilter</Class>
             <Configuration>
                 <string name="field">dc.title</string>
-            </Configuration>
-        </CustomCondition>
-
-	<CustomCondition id="sponsorshipExistsCondition">
-            <Class>org.dspace.xoai.filter.DSpaceMetadataExistsFilter</Class>
-            <Configuration>
-                <string name="field">dc.relation.sponsorship</string>
             </Configuration>
         </CustomCondition>
 
@@ -502,35 +592,53 @@
                 <string name="value">info:eu-repo/grantAgreement/EC/FP</string>
             </Configuration>
         </CustomCondition>
-	
-	<!-- This condition detemines if an Item has a "dc.subject.other" field
-             which contains "OAPEN" -->
-	<CustomCondition id="oapenRelatedCondition">
+        
+        <!-- This condition determines if an Item has a "dc.notes.access" field
+             which contains "nodocument" -->
+         <CustomCondition id="nodocumentCondition">
             <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
             <Configuration>
-                <string name="field">dc.subject.other</string>
-                <string name="operator">contains</string>
-                <string name="value">OAPEN</string>
+                <string name="field">dc.notes.access</string>
+                <string name="operator">starts_with</string>
+                <string name="value">nodocument</string>
             </Configuration>
         </CustomCondition>
-
-	<!-- This condition determines if an Item has a "dc.format.medium" field
+        
+        <!-- This condition determines if an Item has a "dc.format.medium" field
              which contains "Print" -->
         <CustomCondition id="printexistsCondition">
             <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
             <Configuration>
                 <string name="field">dc.format.medium</string>
-                <string name="operator">contains</string>
+                <string name="operator">starts_with</string>
                 <string name="value">Print</string>
+            </Configuration>
+        </CustomCondition>
+        
+        <!-- This condition determines if an Item has a "dc.format.medium" field
+             which contains "CD-ROM" -->
+        <CustomCondition id="cdromexistsCondition">
+            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
+            <Configuration>
+                <string name="field">dc.format.medium</string>
+                <string name="operator">starts_with</string>
+                <string name="value">CD-ROM</string>
+            </Configuration>
+        </CustomCondition>
+        
+        <!-- This condition determines if an Item has a "dc.format.medium" field
+             which contains "DVD" -->
+        <CustomCondition id="dvdexistsCondition">
+            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
+            <Configuration>
+                <string name="field">dc.format.medium</string>
+                <string name="operator">starts_with</string>
+                <string name="value">DVD</string>
             </Configuration>
         </CustomCondition>
     </Filters>
 
     <Sets>
-	<Set id="printPublicationsSet">
-		<Spec>print</Spec>
-		<Name>print publications</Name>
-	</Set>
         <Set id="driverSet">
             <Spec>driver</Spec>
             <Name>Open Access DRIVERset</Name>
@@ -543,3 +651,4 @@
         </Set>
     </Sets>
 </Configuration>
+
