@@ -29,7 +29,7 @@
 
     if ($("#ds-language-selection").text().substring(1,3) == 'En')
     {
-        $("a, li, h2").each(function ()
+        $("a, ul.breadcrumb li, h2").each(function ()
         {
             if ($(this).text() == "Alle Produkte") {
                 $(this).text("All Products");
@@ -127,10 +127,6 @@
             }
 
         });
-        if ($("#ds-trail > li.last-link").text() == "Publikationen aus der UniversitÃ¤t")
-        {
-            $("#ds-trail > li.last-link").text("Publications at the University");
-        }
 
     }
 

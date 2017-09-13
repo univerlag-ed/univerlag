@@ -19,8 +19,8 @@
       en: 'We have received your order, thank you! You will receive an email shortly.'
     },
     shippingCalculationError: {
-      de: 'Versandkosten konnten nicht berechnet werden. Sie k&ouml;nnen Ihre Bestellung dennoch abschicken, wir melden uns dann per E-Mail bei Ihnen.',
-      en: 'Shipping costs could not be calculated. You can submit your order nonetheless and we will contact you via e-mail.'
+      de: 'Versandkosten k&ouml;nnen f&uuml;r dieses Land nicht berechnet werden. Sie k&ouml;nnen Ihre Bestellung dennoch abschicken, wir melden uns dann per E-Mail bei Ihnen.',
+      en: 'Shipping costs cannot be calculated for this country. You can submit your order nonetheless and we will contact you via e-mail.'
     },
     shippingUpdated: {
       de: 'Versandkosten aktualisiert',
@@ -37,7 +37,7 @@
     templatePath: '/static/shopping-cart/templates/',
     currencySymbol: '&euro;',
     vat: 0,
-    language: $('#ds-language-selection').text().replace(/\[|\]/g, '').trim() === 'en' ? 'de' : 'en',
+    language: $('#ds-language-selection').text().substring(1,3).toLowerCase() === 'en' ? 'en' : 'de',
     orderUrl: '/order',
     shippingUrl: '/costrequest'
   };

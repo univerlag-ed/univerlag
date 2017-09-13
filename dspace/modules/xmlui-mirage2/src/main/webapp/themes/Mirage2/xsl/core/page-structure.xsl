@@ -921,7 +921,10 @@
                         <xsl:value-of
                                 select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$active-locale]"/>
                         <xsl:text>&#160;</xsl:text>
-                        <b class="caret"/>
+			<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$active-locale] = 'English'">
+				<xsl:text>&#160;</xsl:text>
+			</xsl:if>
+			<b class="caret"/>
                     </span>
                 </a>
                 <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="language-dropdown-toggle" data-no-collapse="true">
@@ -943,7 +946,11 @@
                                     </xsl:attribute>
                                     <xsl:value-of
                                             select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale]"/>
-                                </a>
+					     
+				<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='supportedLocale'][@qualifier=$locale] = 'English'">
+                                	<xsl:text>&#160;&#160;</xsl:text>
+                        	</xsl:if>
+				</a>
                             </li>
                         </xsl:if>
                     </xsl:for-each>

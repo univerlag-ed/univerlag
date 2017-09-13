@@ -495,20 +495,25 @@ public class OrderAction extends AbstractAction
 	    Email confirm_email = Email.getEmail(I18nUtil.getEmailFilename(new Locale(customer_locale), "order_confirm" + formvariant ));
             DecimalFormat df = new DecimalFormat("##0.00");
             System.out.println("Locale: " + context.getCurrentLocale());
-            int product = Integer.parseInt(bill.getProductCost().replace('.', '.'));
-            int shipping = Integer.parseInt(shipping_cost.replace('.', '.'));
-            total_sum = df.format((product + shipping)/100.00);
+            int product = Integer.parseInt(bill.getProductCost().replace(".", ""));
+            try {
+                int shipping = Integer.parseInt(shipping_cost.replace(".", ""));
+                total_sum = df.format((product + shipping)/100.00);
+
+            }
+            catch (NumberFormatException nfe) {
+                System.out.println("shipping cost not integer" );
+            }
+
+
             confirm_email.addRecipient(customer_email);
             confirm_email.addArgument(new Date());
             confirm_email.addArgument(customer_email);
             confirm_email.addArgument(customer_info);                        //customer name, address, zipcode, city, country
             confirm_email.addArgument(delivery_info);                        //delivery address with name, address, zipcode, city, country
             confirm_email.addArgument(order_data);                            //ordered product info: price, quantitiy, creators, title, description, isbn
-	    System.out.println("email product cost: "+ df.format(product/100.00));
             confirm_email.addArgument(df.format(product/100.00));                //price sum of ordered products
-	     System.out.println("email shiping cost: "+ shipping_cost);
             confirm_email.addArgument(shipping_cost);                        //costs for shipping
-	      System.out.println("email total sum: "+ total_sum);
             confirm_email.addArgument(total_sum);                           //total amount to pay
 
 
