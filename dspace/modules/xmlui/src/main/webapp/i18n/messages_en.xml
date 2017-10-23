@@ -2869,7 +2869,7 @@
             <div class="col-sm-6">
 
                 <h4 class="list-item-header">Faculty of Law</h4>
-                <p>Prof. Dr. Dr. h.c. Werner Heun <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Dr. h.c. Werner Heun &#10013; <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
                 <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
@@ -4236,12 +4236,12 @@
     <message key="xmlui.static.publishing.catalog.text">
         <h3>Our publishing program is available online and print</h3>
         <p>
-            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/documents/verlagsprogramm_2016.pdf">here</a>.
+            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/documents/verlagsprogramm_2017.pdf">here</a>.
             You will find new releases and selected titles from our backlist. We have listed the series of the "Universitätsverlag Göttingen" with all published titles.
             If you like to read the brochure in high-quality offset print we will send it to you for <a href="mailto:univerlag@uni-goettingen.de?subject=Publishing Catalog order">free</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2016.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2017.pdf"></iframe>
         </div>
 
         <!-- <p id="catalog">

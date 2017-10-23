@@ -57,39 +57,57 @@
     <!-- Liste der Ringvorlesungen -->
 
     <message key="xmlui.static.ring.listall">
+	<h3 class="list-item-header">2017</h3>
 
-        <h3 class="list-item-header">2017</h3>
+       <div class="row">
+	    
+            <div class="col-sm-6">
 
-        <div class="row">
-            <div class="alone">
-                <!-- <div class="col-sm-6">
-
-                    <div class="media">
-
-                        <div class="media-left hidden-xs">
-                            <img src="/static/images/ring/cover-17-18.jpg" class="media-object poster" alt="poster"></img>
-                        </div>
-                        <div class="media-body">
-                            <span class="media-heading"><strong>Wintersemester 2017/18</strong></span>
-                            <p><a href="/info/17-18"></a></p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-6"> -->
                 <div class="media">
 
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-17-18.jpg" class="media-object poster" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Wintersemester 2017/18</strong></span>
+                        <p><a href="/info/17-18">Forschung im "Zeitalter der Extreme"<br />
+
+		Akademien und andere Forschungseinrichtungen im Nationalsozialismus</a></p>
+                    </div>
+                </div>
+
+            </div>
+	    <div class="col-sm-6">
+	    	<div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/dokumente/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommersemester 2017</strong></span>
+                        <p><a href="/info/17">G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer</a></p>
+                    </div>
+             	</div>
+	     </div>
+        </div>
+	
+        <!-- <h3 class="list-item-header">2017</h3>
+	
+        <div class="row">
+            <div class="alone">
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/dokumente/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2017</strong></span>
                         <p><a href="/info/17">G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer</a></p>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
-        </div>
+	    
+        </div> -->
 
         <h3 class="list-item-header">2016</h3>
 
@@ -99,7 +117,7 @@
                 <div class="media">
 
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-16-17.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-16-17.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2016/17</strong></span>
@@ -112,7 +130,7 @@
                 <div class="media">
 
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-16.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-16.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2016</strong></span>
@@ -129,7 +147,7 @@
 
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2015/16</strong></span>
@@ -142,7 +160,7 @@
                 <div class="media">
 
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-15.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-15.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2015</strong></span>
@@ -159,7 +177,7 @@
 
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-14-15.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-14-15.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2014/15</strong></span>
@@ -170,7 +188,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-14.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-14.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2014</strong></span>
@@ -186,7 +204,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-13-14.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-13-14.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2013/14</strong></span>
@@ -197,7 +215,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-13.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-13.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2013</strong></span>
@@ -213,7 +231,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-12-13.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-12-13.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2012/13</strong></span>
@@ -224,7 +242,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-12.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-12.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2012</strong></span>
@@ -240,7 +258,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-11-12.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-11-12.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2011/12</strong></span>
@@ -251,7 +269,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-11.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-11.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2011</strong></span>
@@ -267,7 +285,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-10-11.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-10-11.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2010/11</strong></span>
@@ -278,7 +296,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-10.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-10.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2010</strong></span>
@@ -294,7 +312,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-09-10.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-09-10.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2009/10</strong></span>
@@ -305,7 +323,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-09.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-09.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2009</strong></span>
@@ -321,7 +339,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-08-09.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-08-09.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2008/09</strong></span>
@@ -332,7 +350,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-08.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-08.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2008</strong></span>
@@ -348,7 +366,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-07-08.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-07-08.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2007/08</strong></span>
@@ -359,7 +377,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-07.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-07.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2007</strong></span>
@@ -375,7 +393,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-06-07.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-06-07.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2006/07</strong></span>
@@ -386,7 +404,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-06.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-06.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2006</strong></span>
@@ -402,7 +420,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-05-06.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-05-06.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2005/06</strong></span>
@@ -413,7 +431,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-05.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-05.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2005</strong></span>
@@ -429,7 +447,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-04-05.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-04-05.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Wintersemester 2004/05</strong></span>
@@ -440,7 +458,7 @@
             <div class="col-sm-6">
                 <div class="media">
                     <div class="media-left hidden-xs">
-                        <img src="/static/images/ring/cover-04.jpg" class="media-object poster" alt="poster"></img>
+                        <img src="/dokumente/images/ring/cover-04.jpg" class="media-object poster" alt="poster"></img>
                     </div>
                     <div class="media-body">
                         <span class="media-heading"><strong>Sommersemester 2004</strong></span>
@@ -473,7 +491,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-04">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-04.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-04.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/13478.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -802,7 +820,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-04-05">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-04-05.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-04-05.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/17619.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -1167,7 +1185,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-05">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-05.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-05.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/22319.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -1442,7 +1460,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-05-06">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-05-06.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-05-06.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/28484.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -1729,7 +1747,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-06">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-06.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-06.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/36018.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -1993,7 +2011,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-06-07">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-06-07.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-06-07.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/43494.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -2353,7 +2371,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-07">
         <div class="media-right hidden-xs">
-            <img class="media-object" src="/static/images/ring/cover-07.jpg" alt="poster"></img><br />
+            <img class="media-object" src="/dokumente/images/ring/cover-07.jpg" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/64779.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -2645,7 +2663,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-07-08">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-07-08.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-07-08.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/79287.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -2953,7 +2971,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-08">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-08.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-08.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/109585.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -3223,7 +3241,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-08-09">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-08-09.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-08-09.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/109585.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -3575,7 +3593,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-09">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-09.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-09.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/123834.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -3848,7 +3866,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-09-10">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-09-10.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-09-10.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/123789.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -4113,7 +4131,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-10">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-10.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-10.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/138896.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -4412,7 +4430,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-10-11">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-10-11.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-10-11.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/191023.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -4729,7 +4747,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-11">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-11.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-11.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/263844.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -4981,7 +4999,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-11-12">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-11-12.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-11-12.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/begleittext-zur-ringvorlesung/209487.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -5276,7 +5294,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-12">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-12.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-12.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/349376.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -5533,7 +5551,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-12-13">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-12-13.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-12-13.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/wintersemester-2013-2014/481743.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -5810,7 +5828,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-13">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-13.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-13.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/sommersemester-2013/445609.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -6006,7 +6024,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-13-14">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-13-14.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-13-14.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/wintersemester-2013-2014/481743.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -6261,7 +6279,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-14">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-14.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-14.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -6532,7 +6550,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-14-15">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-14-15.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/509590.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -6798,7 +6816,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-15">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-15.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-15.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/54374.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -7034,7 +7052,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-15-16">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" target="_blank" href="//www.uni-goettingen.de/de/534820.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -7327,7 +7345,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-16">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-16.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-16.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/537736.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -7584,7 +7602,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-16-17">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-16-17.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-16-17.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/547325.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -7848,13 +7866,13 @@
 
     <!-- Title -->
     <message key="xmlui.static.ring.title-17">
-        G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufkläre
+        G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer
     </message>
 
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-17">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/dokumente/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/559208.html">Mehr Informationen ...</a></small>
         </div>
     </message>
@@ -8101,8 +8119,9 @@
                 <h4>"In den Calender wurde nun eingetragen ..." - Lichtenbergs Tagebücher</h4>
                 <div class="pull-right">
                     <div class="btn-toolbar">
-                        <!--
+                        
                         <a href="/dokumente/audio/ring2017-07-04.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio Datei</span></a>
+			<!--
                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i><span class="hidden-xs"> YouTube Video</span></a>
                         -->
                     </div>
@@ -8145,6 +8164,511 @@
 
     <!-- ********************************************************************************************* -->
 
+    <!-- ********** WS 17/18 ******* -->
+
+   <message key="xmlui.static.ring.playlist-17-18">
+   <!--     <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrc_N2snDBeXkdT41cbIbuIH"><i class="icon-youtube"></i>Playlist</a>.
+        </p> -->
+    </message>
+
+    <message key="xmlui.static.ring-17-18.trail">
+
+        WS 2017 / 2018
+
+    </message>
+
+
+
+    <!-- Title -->
+
+    <message key="xmlui.static.ring.title-17-18">
+
+        Forschung im "Zeitalter der Extreme"<br />
+
+		Akademien und andere Forschungseinrichtungen im Nationalsozialismus
+
+    </message>
+
+
+
+    <!-- Poster -->
+
+    <message key="xmlui.static.ring.poster-17-18">
+
+        <div class="media-right hidden-xs">
+
+            <img class="media-object" src="/dokumente/images/ring/cover-17-18.jpg" alt="poster"></img><br />
+
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/571206.html">Mehr Informationen ...</a></small>
+
+        </div>
+
+    </message>
+
+
+
+
+
+    <message key="xmlui.static.ring.list-17-18">
+
+		
+
+		<!-- Liste der Vorlesungen -->
+
+		
+
+		
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">24. Oktober 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Dirk Schumann (Göttingen)
+
+                <h4>Einführung</h4><br />
+
+				Prof. Dr. Carola Sachse (Wien)
+
+				<h4>Die Max-Planck-Gesellschaft, die Zwillingsforschung und Auschwitz: Fakten und Vorstellungen</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-10-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+		
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">7. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Mitchell Ash (Wien)
+
+                <h4>Strukturwandel der Forschung im Nationalsozialismus. Versuch einer Entwicklungsgeschichte.</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">14. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Reinhard Rürup (Berlin)
+
+                <h4>Die Vertreibung von Wissenschaftlerinnen und Wissenschaftlern aus den deutschen Universitäten und anderen wissenschaftlichen Einrichtungen seit dem Beginn der NS-Herrschaft</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">21. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Desirée Schauz (Göttingen)
+
+                <h4>Zwischen wissenschaftlichem Anspruch und politischen Zielen. Zum Selbstverständnis der Göttinger Akademiemitglieder im Nationalsozialismus</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">28. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Rüdiger Hachtmann (Berlin)
+
+                <h4>Expansive Forschungspolitik: Die NS-Diktatur und die Kaiser-Wilhelm-Gesellschaft</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">5. Dezember 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Wolfgang Schieder (Köln/Göttingen)
+
+                <h4>Adolf Butenandt. Wissenschaftler und Wissenschaftsorganisator im und nach dem Nationalsozialismus</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-12-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">12. Dezember 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Sören Flachowsky (Berlin)
+
+                <h4>Die DFG, der Reichsforschungsrat und das Reichsamt für Wirtschaftsausbau als Forschungsbehörden im NS-System</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-12-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">9. Januar 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Florian Schmaltz (Berlin)
+
+                <h4>Die Akademie der Luftfahrtforschung 1936 bis 1945: Ludwig Prandtl und die nationalsozialistische Muster-Akademie Hermann Görings</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-09.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">16. Januar 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Norbert Schappacher (Straßburg)
+
+                <h4>NS-Akademien der Wissenschaften - die scheinbaren Verlierer einer Kulturrevolution</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-16.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">23. Januar 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Katja Geisenhainer (Wien)
+
+                <h4>"aus innerer Zustimmung zu den Programmpunkten der NSDAP" - Der Völkerkundler Hans Plischke (1890-1972) und sein Wirken in Göttingen</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-23.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">30. Januar 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Frank Rexroth (Göttingen)
+
+                <h4>Verhaltene Reformen: Hermann Heimpel und die Vorhaben der deutschen Geschichtsforschung in der Nachkriegszeit</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-30.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">6. Februar 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Eva Schumann (Göttingen)
+
+                <h4>Die "Akademie für Deutsches Recht"</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-02-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio Datei</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </message>
+
+
+
+	<!-- Kontakt -->
+
+    <message key="xmlui.static.ring.contact-17-18">
+
+
+
+        <h3>Organisation / Kontakt: </h3>
+
+
+
+        <div class="contact">
+
+            <strong>Prof. Dr. Dirk Schumann</strong>
+
+
+
+            <p><i class="icon-location"></i>Heinrich-Düker-Weg 14</p>
+
+            <p><span class="icon-body">37073 Göttingen</span></p>
+
+            <p><i class="icon-call"></i>+49 551 39-24409</p>
+
+            <p><i class="icon-mail"></i><a href="mailto:dschuma@uni-goettingen.de">dschuma@uni-goettingen.de</a></p>
+
+        </div>
+
+    </message>
+
+
+
+    <!-- ********************************************************************************************* -->
 
 
 

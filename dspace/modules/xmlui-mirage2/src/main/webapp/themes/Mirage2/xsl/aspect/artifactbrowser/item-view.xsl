@@ -1450,18 +1450,17 @@
                 </xsl:for-each>
             </div>
             <xsl:if test="//dim:field[@qualifier='isreferencedby']">
-                <div class="tab-pane" id="reviews">
+		<div class="tab-pane" id="reviews">
                     <xsl:for-each select="//dim:field[@qualifier='isreferencedby']">
                         <p>
                             <xsl:choose>
-                                <xsl:when test="contains(., 'http:')">
+                                <xsl:when test="contains(., 'http')">
 
                                     <a class="extern-link" target="_blank">
                                         <xsl:choose>
-                                            <xsl:when test="contains(node(), ': ')">
-                                                <xsl:variable name="url"><xsl:value-of select="substring-before(node(), ': ')" /></xsl:variable>
-                                                <xsl:attribute name="href"><xsl:value-of select="substring-after($url, ':')" /></xsl:attribute>
-                                                <xsl:value-of select="substring-after(node(), ': ')" />
+                                            <xsl:when test="contains(node(), '@ ')">
+                                                <xsl:attribute name="href"><xsl:value-of select="substring-after(node(), '@ ')" /></xsl:attribute>
+                                                <xsl:value-of select="substring-before(node(), '@ ')" />
                                             </xsl:when>
 
                                             <xsl:otherwise>
@@ -1482,6 +1481,7 @@
                         </p>
                     </xsl:for-each>
                 </div>
+
             </xsl:if>
             <xsl:if test="//dim:field[@qualifier='tableofcontents']">
                 <div class="tab-pane" id="toc">
@@ -1547,7 +1547,8 @@
 
                 <p><strong> URN</strong><xsl:text>: </xsl:text><span id="urn"><xsl:value-of select="//dim:field[@element='identifier'][@qualifier='urn']" /></span><a href="#" onclick="copyToClipboard('#urn')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a></p>
                 <xsl:for-each select="//dim:field[@element='relation'][@qualifier='sponsorship']">
-                    <xsl:if test="string-length(./@authority) &gt; 0">
+		    <xsl:choose>
+                    <xsl:when test="string-length(./@authority) &gt; 0">
                         <p>
                             <strong>Sponsor</strong><xsl:text>: </xsl:text>
                             <a target="_blank" class="extern-link">
@@ -1555,7 +1556,17 @@
                                 <xsl:value-of select="." />
                             </a>
                         </p>
-                    </xsl:if>
+                    </xsl:when>
+		    <xsl:otherwise>
+			<p>
+                            <strong>Sponsor</strong><xsl:text>: </xsl:text>
+                                <xsl:value-of select="." />
+			    <xsl:if test="//dim:field[@element='relation'][@qualifier='sponsordetails']">
+				<xsl:value-of select="concat(' ', //dim:field[@element='relation'][@qualifier='sponsordetails'])"/>
+			    </xsl:if>
+                        </p>
+		    </xsl:otherwise>
+		    </xsl:choose>
                 </xsl:for-each>
                 <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
             </div>

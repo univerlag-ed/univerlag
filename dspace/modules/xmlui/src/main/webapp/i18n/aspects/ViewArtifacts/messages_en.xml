@@ -55,25 +55,44 @@
 
     <message key="xmlui.static.ring.listall">
 
-        <h3 class="list-item-header">2017</h3>
+	<h3 class="list-item-header">2017</h3>
+
+       <div class="row">
+
+            <div class="col-sm-6">
+
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/dokumente/images/ring/cover-17-18.jpg" class="media-object poster" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Winter term 2017/18</strong></span>
+                        <p><a href="/info/17-18">Forschung im "Zeitalter der Extreme"<br />
+
+                Akademien und andere Forschungseinrichtungen im Nationalsozialismus</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="media">
+
+                    <div class="media-left hidden-xs">
+                        <img src="/dokumente/images/ring/cover-17.jpg" class="media-object poster" alt="poster"></img>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-heading"><strong>Sommer term 2017</strong></span>
+                        <p><a href="/info/17">G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer</a></p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- <h3 class="list-item-header">2017</h3>
 
         <div class="row">
             <div class="alone">
-                <!-- <div class="col-sm-6">
-
-                    <div class="media">
-
-                        <div class="media-left hidden-xs">
-                            <img src="/static/images/ring/cover-17-18.jpg" class="media-object poster" alt="poster"></img>
-                        </div>
-                        <div class="media-body">
-                            <span class="media-heading"><strong>Wintersemester 2017/18</strong></span>
-                            <p><a href="/info/17-18"></a></p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-6"> -->
+            
                 <div class="media">
 
                     <div class="media-left hidden-xs">
@@ -83,10 +102,9 @@
                         <span class="media-heading"><strong>Sommer term 2017</strong></span>
                         <p><a href="/info/17">G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer</a></p>
                     </div>
-                </div>
-                <!-- </div> -->
+                </div> 
             </div>
-        </div>
+        </div> -->
 
         <h3 class="list-item-header">2016</h3>
 
@@ -6520,7 +6538,7 @@
     <!-- Poster -->
     <message key="xmlui.static.ring.poster-14-15">
         <div class="media-right hidden-xs">
-            <img src="/static/images/ring/cover-15-16.jpg" class="media-object poster" alt="poster"></img><br />
+            <img src="/static/images/ring/cover-14-15.jpg" class="media-object poster" alt="poster"></img><br />
             <small><a class="extern-link" href="//www.uni-goettingen.de/de/509590.html">More information ...</a></small>
         </div>
     </message>
@@ -7832,7 +7850,7 @@
 
     <!-- Title -->
     <message key="xmlui.static.ring.title-17">
-        G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufkläre
+        G. C. Lichtenberg (1742-1799) Schriftsteller, Physiker, Aufklärer
     </message>
 
     <!-- Poster -->
@@ -8086,8 +8104,9 @@
                 <h4>"In den Calender wurde nun eingetragen ..." - Lichtenbergs Tagebücher</h4>
                 <div class="pull-right">
                     <div class="btn-toolbar">
-                        <!--
+                        
                         <a href="/dokumente/audio/ring2017-07-04.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
+			<!--
                         <a target="_blank" href="//www.youtube.com/watch?v=" class="btn btn-default btn-xs" role="button"><i class="icon-videocam-1" aria-hidden="true"></i><span class="hidden-xs"> Watch on YouTube</span></a>
                         -->
                     </div>
@@ -8130,6 +8149,511 @@
 
     <!-- ********************************************************************************************* -->
 
+
+   <!-- ********** WS 17-18******* -->
+       <message key="xmlui.static.ring.playlist-17-18">
+   <!--     <p>
+            Die Videoaufzeichnung finden Sie unter der jeweils aktuellen <a class="extern-link" target="_blank" href="//www.youtube.com/playlist?list=PLgoiCMgV-zrc_N2snDBeXkdT41cbIbuIH"><i class="icon-youtube"></i>Playlist</a>.
+        </p> -->
+    </message>
+
+    <message key="xmlui.static.ring-17-18.trail">
+
+        WT 2017 / 2018
+
+    </message>
+
+
+
+    <!-- Title -->
+
+    <message key="xmlui.static.ring.title-17-18">
+
+        Forschung im "Zeitalter der Extreme"<br />
+
+		Akademien und andere Forschungseinrichtungen im Nationalsozialismus
+
+    </message>
+
+
+
+    <!-- Poster -->
+
+    <message key="xmlui.static.ring.poster-17-18">
+
+        <div class="media-right hidden-xs">
+
+            <img class="media-object" src="/dokumente/images/ring/cover-17-18.jpg" alt="poster"></img><br />
+
+            <small><a class="extern-link" href="//www.uni-goettingen.de/de/571206.html">More information...</a></small>
+
+        </div>
+
+    </message>
+
+
+
+
+
+    <message key="xmlui.static.ring.list-17-18">
+
+		
+
+		<!-- Liste der Vorlesungen -->
+
+		
+
+		
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">24. October 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Dirk Schumann (Göttingen)
+
+                <h4>Einführung</h4><br />
+
+				Prof. Dr. Carola Sachse (Wien)
+
+				<h4>Die Max-Planck-Gesellschaft, die Zwillingsforschung und Auschwitz: Fakten und Vorstellungen</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-10-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+		
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">7. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Mitchell Ash (Wien)
+
+                <h4>Strukturwandel der Forschung im Nationalsozialismus. Versuch einer Entwicklungsgeschichte.</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">14. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Reinhard Rürup (Berlin)
+
+                <h4>Die Vertreibung von Wissenschaftlerinnen und Wissenschaftlern aus den deutschen Universitäten und anderen wissenschaftlichen Einrichtungen seit dem Beginn der NS-Herrschaft</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-14.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">21. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Desirée Schauz (Göttingen)
+
+                <h4>Zwischen wissenschaftlichem Anspruch und politischen Zielen. Zum Selbstverständnis der Göttinger Akademiemitglieder im Nationalsozialismus</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">28. November 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Rüdiger Hachtmann (Berlin)
+
+                <h4>Expansive Forschungspolitik: Die NS-Diktatur und die Kaiser-Wilhelm-Gesellschaft</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-11-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">5. December 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Wolfgang Schieder (Köln/Göttingen)
+
+                <h4>Adolf Butenandt. Wissenschaftler und Wissenschaftsorganisator im und nach dem Nationalsozialismus</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-12-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">12. December 2017</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Sören Flachowsky (Berlin)
+
+                <h4>Die DFG, der Reichsforschungsrat und das Reichsamt für Wirtschaftsausbau als Forschungsbehörden im NS-System</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2017-12-12.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">9. January 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Florian Schmaltz (Berlin)
+
+                <h4>Die Akademie der Luftfahrtforschung 1936 bis 1945: Ludwig Prandtl und die nationalsozialistische Muster-Akademie Hermann Görings</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-09.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">16. January 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Norbert Schappacher (Straßburg)
+
+                <h4>NS-Akademien der Wissenschaften - die scheinbaren Verlierer einer Kulturrevolution</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-16.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">23. January 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Dr. Katja Geisenhainer (Wien)
+
+                <h4>"aus innerer Zustimmung zu den Programmpunkten der NSDAP" - Der Völkerkundler Hans Plischke (1890-1972) und sein Wirken in Göttingen</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-23.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">30. January 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Frank Rexroth (Göttingen)
+
+                <h4>Verhaltene Reformen: Hermann Heimpel und die Vorhaben der deutschen Geschichtsforschung in der Nachkriegszeit</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-01-30.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="panel panel-default panel-first">
+
+            <header class="panel-heading">
+
+                <h4 class="panel-title">6. February 2018</h4>
+
+            </header>
+
+
+
+            <div class="panel-body">
+
+                Prof. Dr. Eva Schumann (Göttingen)
+
+                <h4>Die "Akademie für Deutsches Recht"</h4>
+
+                <div class="pull-right">
+
+                    <div class="btn-toolbar">
+
+                       <!-- <a href="/dokumente/audio/ring2018-02-06.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </message>
+
+
+
+	<!-- Kontakt -->
+
+    <message key="xmlui.static.ring.contact-17-18">
+
+
+
+        <h3>Organisation / Contact: </h3>
+
+
+
+        <div class="contact">
+
+            <strong>Prof. Dr. Dirk Schumann</strong>
+
+
+
+            <p><i class="icon-location"></i>Heinrich-Düker-Weg 14</p>
+
+            <p><span class="icon-body">37073 Göttingen</span></p>
+
+            <p><i class="icon-call"></i>+49 551 39-24409</p>
+
+            <p><i class="icon-mail"></i><a href="mailto:dschuma@uni-goettingen.de">dschuma@uni-goettingen.de</a></p>
+
+        </div>
+
+    </message>
+
+
+
+    <!-- ********************************************************************************************* -->
 
 
 
