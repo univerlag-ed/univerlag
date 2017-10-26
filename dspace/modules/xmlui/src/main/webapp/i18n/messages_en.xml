@@ -3776,7 +3776,6 @@
             unded by the same research networks.
             We hope that the series will also help to enhance the visibility of the research carried out here and help others in the field to advance similar projects.
         </p>
-        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2191-9860</p>
         <p class="narrow">ISSN (Online): 2512-6326</p>
     </message>
@@ -3857,7 +3856,7 @@
     <message key="xmlui.collection.gsmr.introduction">
         <p>
             The new series "Göttinger Schriften zum Medizinrecht" presents a forum to the interested general public in order
-            to make all new research results of the newly created "<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
+            to make all new research results of the newly created "<a href="//www.uni-goettingen.de/en/31523.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>" publicly available.
         </p>
         <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 1864-2144</p>
@@ -4236,12 +4235,12 @@
     <message key="xmlui.static.publishing.catalog.text">
         <h3>Our publishing program is available online and print</h3>
         <p>
-            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/documents/verlagsprogramm_2017.pdf">here</a>.
+            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/dokumente/texts/verlagsprogramm_2017.pdf">here</a>.
             You will find new releases and selected titles from our backlist. We have listed the series of the "Universitätsverlag Göttingen" with all published titles.
             If you like to read the brochure in high-quality offset print we will send it to you for <a href="mailto:univerlag@uni-goettingen.de?subject=Publishing Catalog order">free</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/static/documents/verlagsprogramm_2017.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm_2017.pdf"></iframe>
         </div>
 
         <!-- <p id="catalog">
@@ -4916,4 +4915,7 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.uri">by DOI</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading"></message>
     <message key="xmlui.item.sponsor.details">Sponsored Publication</message>	
+
+    <message key="xmlui.dri2xhtml.mimetype.application/epub+zip">EPUB</message>
+    <message key="xmlui.item.ebook">eBook</message>
 </catalogue>

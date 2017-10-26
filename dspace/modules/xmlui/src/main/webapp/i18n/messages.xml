@@ -3889,7 +3889,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
     <message key="xmlui.collection.gsmr.introduction">
         <p>
-            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/zentrum-f%C3%BCr-medizinrecht/133337.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
+            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/31523.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
         <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 1864-2144</p>
@@ -4932,4 +4932,7 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.uri">nach DOI</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading"></message>
     <message key="xmlui.item.sponsor.details">Geförderte Publikation</message>
+
+    <message key="xmlui.dri2xhtml.mimetype.application/epub+zip">EPUB</message>
+    <message key="xmlui.item.ebook">eBook</message>
 </catalogue>

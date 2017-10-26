@@ -415,7 +415,7 @@
                 </h4>
             </xsl:when>
             <xsl:otherwise>
-                <div>&#130;</div>
+                <div>&#160;</div>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -882,7 +882,15 @@
                     <xsl:value-of select="substring-after($mimetype,'/')"/>
                 </xsl:with-param>
             </xsl:call-template>
-            <i18n:text>xmlui.item.online.version</i18n:text>
+	    <xsl:choose>
+		<xsl:when test="contains($mimetype, 'epub')">
+			<i18n:text>xmlui.item.ebook</i18n:text>			
+		</xsl:when>
+		<xsl:otherwise>
+			<i18n:text>xmlui.item.online.version</i18n:text>
+
+		</xsl:otherwise>
+	    </xsl:choose>
             <span class="access">
                 <a>
                     <xsl:attribute name="href">
@@ -1286,7 +1294,14 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
-        <i class="icon-file-pdf"></i>
+	<xsl:choose>
+		<xsl:when test="contains($mimetype, 'epub')">
+			<i class="icon-doc-text"></i>
+		</xsl:when>
+		<xsl:otherwise>
+			<i class="icon-file-pdf"></i>
+		</xsl:otherwise>
+	</xsl:choose>
         <!--<xsl:attribute name="class">
             <xsl:choose>
                 <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
