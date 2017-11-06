@@ -344,7 +344,7 @@
 
 
     <!-- General keys used by the EPerson aspect -->
-    <message key="xmlui.EPerson.trail_new_registration">Registrierung Neuer Benutzer</message>
+    <message key="xmlui.EPerson.trail_new_registration">Registrierung neuer Benutzer</message>
     <message key="xmlui.EPerson.trail_forgot_password">Passwort vergessen</message>
 
     <!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
