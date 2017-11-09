@@ -818,7 +818,7 @@
 
     <!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
     <message key="xmlui.Submission.submit.CompletedStep.head">Veröffentlichung abgeschlossen</message>
-    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den für diese Sammlung festgelegten Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen umd Ihr Dokument in der Sammlung archiviert wurde oder erhalten ggf. eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
+    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den für diese Sammlung festgelegten Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen und Ihr Dokument in der Sammlung archiviert wurde. Falls eine weitere Bearbeitung nötig ist, erhalten Sie eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
     <message key="xmlui.Submission.submit.CompletedStep.go_submission">Zur Veröffentlichungsseite</message>
     <message key="xmlui.Submission.submit.CompletedStep.submit_again">Ein weiteres Dokument veröffentlichen</message>
 
