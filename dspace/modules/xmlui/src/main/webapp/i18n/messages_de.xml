@@ -3300,9 +3300,22 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
     <message key="xmlui.static.price">
         <div>
             <p>
-                Als Open-Access-Verlag sind wir darauf angewiesen, dass unsere Autoren und Herausgeber sich an den Kosten des Publizierens beteiligen, die im Universitätsverlag anfallen. Denn durch die freie Onlinebereitstellung unserer Publikationen können wir nur sehr bedingt über den Absatz gedruckter Werke Einnahmen generieren. Was wir ins Verlagsprogramm aufnehmen, sollte auch nicht der wirtschaftliche Erfolg eines Werkes entscheiden, sondern seine wissenschaftliche Relevanz.
+		Die Kosten für ein Publikationsprojekt errechnen sich aus den <strong>Verlagskosten</strong> und den <strong>Druckkosten</strong>.    
             </p>
             <p>
+		Die <strong>Verlagskosten</strong> beinhalten die von der Seitenzahl und der Qualität der Vorlage abhängigen Kosten für die formale Qualitätsprüfung des Manuskriptes incl. der Abbildungen, die Covergestaltung, Erstellung der Titelei und Prüfung des Manuskriptes auf technische Korrektheit. Außerdem stellen wir die Onlinebereitstellung, Titelmeldung sowie das Marketing in Rechnung. Autorinnen/Autoren von Dissertationen erhalten einen Nachlass von 25% auf diese Kosten. Wegen des geringeren Aufwandes bei der Covergestaltung werden für Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, um 40,- EUR geringere Kosten für die Covergestaltung angesetzt.
+		</p>
+             <p>
+		<strong>Druckkosten</strong> werden nur für die von den Autorinnen/Autoren benötigten Druckexemplare in Rechnung gestellt. Zusätzlich zahlt die Autorin/der Autor 15 Verlagsexemplare, die u.a. für Pflichtabgaben an die Deutsche Nationalbibliothek (DNB) und die Niedersächsische Landesbibliothek (NLB) und als Rezensionsexemplare verwendet werden.
+		</p>
+		<p>
+		   Die für die Beispiele zugrunde gelegten Zahlen sind den aktuell vorliegenden Kalkulationstabellen der Druckereien entnommen und unterliegen markttypischen Schwankungen (Papierpreise).
+		</p>
+		<p>
+			Die folgenden Beispiele verdeutlichen die Preisbildung der Gesamtkosten, die für den Autor anfallen, sollten aber aufgrund der Diversität der einzelnen Projekte nur als Beispiel verstanden werden. Bitte benutzen Sie das Formular „Kostenanfrage“, um einen konkreten Kostenvoranschlag für Ihr Projekt zu erhalten.
+		</p>    
+		
+		<!--<p>
                 Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel <i class="icon-info-circled" data-toggle="popover" data-content="Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%."></i> 750,00 € beträgt.
 
                 Autoren von Dissertationen und Studierende erhalten einen Nachlass von 25% auf die Pauschale. Bei Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, reduziert sich die Verlagskostenpauschale um 40,00 €, weil der Bearbeitungsaufwand für das Cover geringer ist. Diese Pauschale beinhaltet die Unterstützung der Nutzer beim Erstellen der publikationsreifen Manuskripte, die formale Qualitätsprüfung, die Erstellung der Druckvorlagen (Covergestaltung, technische Überprüfung der Manuskripte), die Onlinebereitstellung, die Titelmeldung sowie das Marketing.
@@ -3310,7 +3323,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <p>
                 Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i>
                 bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
-            </p>
+            </p>-->
             <table id="prices" class="table table-sm">
 
                 <thead>
