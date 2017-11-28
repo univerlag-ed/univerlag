@@ -3712,7 +3712,9 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <strong>Ab Heft 34 erscheinen die "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung" ausschliesslich als open access-Publikation auf den Seiten des Universitätsverlags Göttingen.</strong><br />
             Einzelne Restexemplare früherer Ausgaben sind weiterhin zum Versandkostenpreis erhältlich. Die Bestellung können Sie direkt beim Universitätsverlag Göttingen aufgeben. Bei Bedarf kann ein nicht mehr im Druck erhältliches Heft eingescannt und dann ausschliesslich als open access-Publikation auf der Seite des Universitätsverlages eingesehen werden.
         </p>
-        <p>ISSN: 2198-2384</p>
+        <p class="narrow">ISSN (Print): 0942-2064</p>
+    <p class="narrow">ISSN (Online): 2198-2384</p>
+
     </message>
 
     <!-- Collection texts -->
@@ -3865,7 +3867,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
-	    Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
+	    Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Ab Band 38 erscheinen die Publikationen im Universitätsverlag Göttingen.
         </p>
         <p class="narrow">ISSN (Print): 0943-951X</p>
         <p class="narrow">ISSN (Online): 2512-6822</p>
@@ -3980,14 +3982,14 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <p class="narrow">ISSN (Online): 2566-9281</p>
     </message>
 
-    <message key="xmlui.collection.mis.introduction">
+    <!-- <message key="xmlui.collection.mis.introduction">
         <p>
             Die Bände dieser Serie enthalten jeweils die Beiträge der Seminare, die von Yuri Tschinkel am Mathematischen Institut der Georg-August-Universität Göttingen abgehalten wurden.
         </p>
-    </message>
+    </message> -->
 
 
-    <message key="xmlui.collection.sdidaxis.introduction">
+    <!-- <message key="xmlui.collection.sdidaxis.introduction">
         <p>
             Die Reihe Didaxis soll ein Publikationsforum für veröffentlichungswürdige Beiträge aus Studienseminaren und Unterrichtsreihen sowie aus pädagogischen Prüfungsarbeiten werden. Damit wird diese neue Reihe ein einmaliges Beispiel für eine didaktische Kooperation zwischen Fachwissenschaft und Schulpraxis darstellen.
         </p>
@@ -3995,7 +3997,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             Die Reihe wird von Ulrike Egelhaaf-Gaiser und Thorsten Fuchs herausgegeben.
         </p>
         <p class="narrow">ISSN: 1863-0952</p>
-    </message>
+    </message> -->
 
     <message key="xmlui.collection.spe.introduction">
          <p>
