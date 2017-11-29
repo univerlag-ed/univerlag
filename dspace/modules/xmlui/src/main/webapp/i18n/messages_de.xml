@@ -4518,7 +4518,18 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
 
-            <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
+                    </div>
+    </message>
+
+    <message key="xmlui.static.news-archive.title">Aktuelles Archiv</message>
+    <message key="xmlui.static.news-archive.navigation">Archiv</message>
+
+    <message key="xmlui.static.news-archive">
+        <h2 class="first-page-header">Archiv Aktuelles</h2>
+        <div class="news">
+        
+		
+		<h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 Der Physiker Dr. Martin Krenkel erhielt im Dezember 2016 Dissertationspreis des Universitätsbundes Göttingen.
             </p>
@@ -4527,8 +4538,6 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
             </p>
             <p>
             </p>
-
-
 
             <h3 class="list-item-header">Fachartikel zum Thema Universitätsverlage in Deutschland erschienen<span class="pull-right"><small>Mai 2016</small></span></h3>
             <span class="contributor">Bargheer, Margo; Pabst, Jutta</span>
@@ -4539,16 +4548,9 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
             <p class="strech-top">
                 Zusammenfassung: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
             </p>
-        </div>
-    </message>
 
-    <message key="xmlui.static.news-archive.title">Aktuelles Archiv</message>
-    <message key="xmlui.static.news-archive.navigation">Archiv</message>
-
-    <message key="xmlui.static.news-archive">
-        <h2 class="first-page-header">Archiv Aktuelles</h2>
-        <div class="news">
-        </div>
+		
+	    </div>
     </message>
 
     <message key="xmlui.costrequest.form">
