@@ -3757,13 +3757,6 @@
         <p class="narrow">ISSN (Online): 2512-5974</p>
     </message>
 
-    <message key="xmlui.collection.nfv.introduction">
-        <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
-            (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe "Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt" veröffentlicht.
-        </p>
-        <p class="narrow">ISSN (Print): 1865-6994</p>
-        <p class="narrow">ISSN (Online): 2512-594X</p>
-    </message>
 
     <message key="xmlui.collection.gsxp.introduction">
         <p>
@@ -3817,7 +3810,7 @@
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
-	    After about six years of a creative break the trusted tradition of publishing exhibitions and research results of the Niedersächsischen Staats- und Universitätsbibliothek Göttingen in book format has been revived, starting with volume 38.
+	    After about six years of a creative break the trusted tradition of publishing exhibitions and research results of the Niedersächsischen Staats- und Universitätsbibliothek Göttingen in book format has been revived. Starting with volume 38 the projects are published with Universitätsverlag Göttingen (Göttingen University Press).
         </p>
         <p class="narrow">ISSN (Print): 0943-951X</p>
         <p class="narrow">ISSN (Online): 2512-6822</p>
@@ -3940,13 +3933,13 @@
         <p class="narrow">ISSN (Online): 2566-9281</p>
     </message>
 
-    <message key="xmlui.collection.mis.introduction">
+    <!-- <message key="xmlui.collection.mis.introduction">
         <p>
             Die Bände dieser Serie enthalten jeweils die Beiträge der Seminare, die von Yuri Tschinkel am Mathematischen Institut der Georg-August-Universität Göttingen abgehalten wurden.
         </p>
-    </message>
+    </message> -->
 
-    <message key="xmlui.collection.sdidaxis.introduction">
+    <!-- <message key="xmlui.collection.sdidaxis.introduction">
         <p>
             Die Reihe Didaxis soll ein Publikationsforum für veröffentlichungswürdige Beiträge aus Studienseminaren und Unterrichtsreihen sowie aus pädagogischen Prüfungsarbeiten werden. Damit wird diese neue Reihe ein einmaliges Beispiel für eine didaktische Kooperation zwischen Fachwissenschaft und Schulpraxis darstellen.
         </p>
@@ -3954,7 +3947,7 @@
             Die Reihe wird von Ulrike Egelhaaf-Gaiser und Thorsten Fuchs herausgegeben.
         </p>
         <p>ISSN: 1863-0952</p>
-    </message>
+    </message> -->
 
     <message key="xmlui.collection.spe.introduction">
         
@@ -4500,7 +4493,16 @@
         <h2 class="first-page-header">News <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archive</a></h2>
         <div class="news">
 
-            <h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Dez. 2016</small></span></h3>
+	</div>
+    </message>
+
+    <message key="xmlui.static.news-archive.title">News Archive</message>
+    <message key="xmlui.static.news-archive.navigation">Archive</message>
+
+    <message key="xmlui.static.news-archive">
+        <h2 class="first-page-header">News Archive</h2>
+        <div class="news">
+                    <h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 The physicist Dr. Martin Krenkel has been awarded the dissertation prize 2016 of the University Association of Göttingen.
             </p>
@@ -4519,16 +4521,8 @@
             <p class="strech-top">
                 Abstract: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
             </p>
-        </div>
-    </message>
 
-    <message key="xmlui.static.news-archive.title">News Archive</message>
-    <message key="xmlui.static.news-archive.navigation">Archive</message>
-
-    <message key="xmlui.static.news-archive">
-        <h2 class="first-page-header">News Archive</h2>
-        <div class="news">
-        </div>
+	</div>
     </message>
 
     <message key="xmlui.costrequest.form">
