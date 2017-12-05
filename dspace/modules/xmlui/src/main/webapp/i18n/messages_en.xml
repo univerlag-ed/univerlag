@@ -3054,8 +3054,21 @@
             <p>
                 <i class="icon-file-pdf"></i><a href="/dokumente/texts/simple-review_extern_130204.pdf">Review Form</a> for download.
             </p>
-        </div>
+        
+	    <p>
+		    <bold>Quality Control and Peer Review at Göttingen University Press</bold><br />
+The Universitätsverlag Göttingen (Göttingen University Press) is a service unit within Göttingen State and University Library and publishes quality-controlled publications within the disciplinary scope of Göttingen University. All publications should reflect the high standard of the university. The press’ general publishing policy and the reviewing system are under guidance of the press’ editorial board. All faculties of the university delegate one or more representative to the editorial board. Delegates’ names are publicly available at the press’ website: <a href="/info/editors">editorial board</a>
+All publications undergo thorough quality control. However, not all our publications have to pass formal peer review, such as simple text books, reports or specific proceedings and publications with contributions of varying quality. For such publications the University Press runs its imprint “Universitätsdrucke”.
+		    <br />
+A first review regarding formal criteria and the general quality of content is conducted by the press’ staff (the staff members are either trained scientists or librarians). They decide whether a publication should be rejected, meets the minimum standard for the imprint “Universitätsdrucke” or should be forwarded to peer review. If staff members are in doubt about the content they contact the library’s respective subject librarian or the specialist from the editorial board.
+If a manuscript applies for peer review, press’ staff members forward it to the respective editorial board member. If the member of the editorial board is specialist enough to judge the quality of the publication, the member reviews it and either rejects, calls for revision by the author(s) or recommends the publication to the editorial board for evaluation. If a member is not familiar enough with the topic of the publication the reviser organizes additional peer review and decides with the help of the external reviewers. The press’ staff assists in this process. All of these publications need to pass evaluation of the whole board. The board decides by majority vote. If after the recommendation of the first reviewer a member of the board calls for revision or has serious doubts, production is stopped and additional review applies. The staff makes sure that authors and editors meet revision requirements from the review process. If authors or editors are unwilling to meet these requirements publications can only appear within the imprint “Universitätsdrucke”.
+Publications of Göttingen University Press are published Open Access via the press’ website. By being visible online and worldwide, all publications are open for critical discussion regarding their scientific quality and meaningfulness.
+<br />
+Editorial board and staff members of the press are aware of their responsibility for the quality of all publications at Göttingen University Press. Staff continually discusses means to improve the procedures for quality control. The review process is evalutated regularly.
+		</p>
+	    </div>
     </message>
+
     <message key="xmlui.static.editors-authors.head">Publishing: Authors&#39; Toolset</message>
     <message key="xmlui.static.editors-authors.navigation">Authors&#39; Toolset</message>
     <message key="xmlui.static.editors-authors">
@@ -3630,7 +3643,9 @@
             Bei Bedarf kann ein nicht mehr im Druck erhältliches Heft eingescannt und dann ausschliesslich als open access-Publikation auf der Seite des Universitätsverlages
             eingesehen werden.
         </p>
-        <p>ISSN: 2198-2384</p>
+	    <p class="narrow">ISSN (Print): 0942-2064</p>
+	    <p class="narrow">ISSN (Online): 2198-2384</p>
+	    	    
     </message>
 
     <!-- Collection texts -->
@@ -3709,12 +3724,8 @@
             <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
             This series is being published by Goettingen University Press from volume 4 onwards.
         </p>
-        <p class="narrow">
-            ISSN (Print): 2512-7128
-        </p>
-        <p class="narrow">
-            ISSN (Online): 2512-7136
-        </p>
+        <p class="narrow">ISSN (Print): 2512-7128</p>
+        <p class="narrow">ISSN (Online): 2512-7136</p>
     </message>
 
     <message key="xmlui.collection.annalsBiologie.introduction">
