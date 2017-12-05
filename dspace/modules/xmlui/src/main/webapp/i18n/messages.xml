@@ -344,7 +344,7 @@
 
 
     <!-- General keys used by the EPerson aspect -->
-    <message key="xmlui.EPerson.trail_new_registration">Registrierung Neuer Benutzer</message>
+    <message key="xmlui.EPerson.trail_new_registration">Registrierung neuer Benutzer</message>
     <message key="xmlui.EPerson.trail_forgot_password">Passwort vergessen</message>
 
     <!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
@@ -3151,14 +3151,34 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div>
     </message>
     <message key="xmlui.static.publisher-catalog.link">Verlagskatalog</message>
-    <message key="xmlui.static.reviewer.head">Publizieren: Gutachterhilfe</message>
-    <message key="xmlui.static.reviewer.navigation">Gutachterhilfe</message>
+    <message key="xmlui.static.reviewer.head">Publizieren: Begutachtungsverfahren</message>
+    <message key="xmlui.static.reviewer.navigation">Begutachtungsverfahren</message>
     <message key="xmlui.static.reviewer">
         <div>
             <p>
                 <i class="icon-file-pdf"></i><a href="/dokumente/texts/simple-review_extern_130204.pdf">Begutachtungsbogen</a> zum Herunterladen.
             </p>
         </div>
+	<div>
+		<p>
+			<strong>Qualitätskontrolle und Begutachtungsverfahren im Universitätsverlag Göttingen</strong><br />
+Der Universitätsverlag Göttingen ist eine Serviceeinrichtung der Niedersächsischen Staats- und Universitätsbibliothek Göttingen und veröffentlicht qualitätsgeprüfte Publikationen aller Fakultäten/Fachbereiche der Georg-August-Universität Göttingen. Sowohl die programmatische Ausrichtung des Verlags als auch das Verfahren zur Qualitätssicherung werden durch die Mitglieder des Herausgebergremiums vorgegeben. Jede Fakultät der Universität entsendet mindestens eine/mindestens einen wissenschaftlichen Vertreter in das Herausgebergremium. Die Namen der amtierenden Gremiumsmitglieder sind der Seite des Universitätsverlages zu entnehmen: <a href="/info/editors">Herausgebergremium</a>
+		</p>
+		<p>
+Alle Veröffentlichungen werden einer Qualitätsprüfung unterzogen. Gleichwohl müssen nicht alle Publikationen  das Begutachtungsverfahren im Sinne eines „peer review“ durchlaufen. Dazu zählen u. a. einfache Lehrbücher, Forschungsberichte oder Tagungsbände und Veröffentlichungen mit Beiträgen unterschiedlicher Qualitätsniveaus. Für diese Publikationsarten ist die Sparte „Universitätsdrucke“ vorgesehen.
+		</p>
+		<p>
+Eine erste Begutachtung erfolgt durch die Mitarbeiterinnen und Mitarbeiter des Verlages (sie haben entweder ein Studium absolviert oder sie sind ausgebildete Bibliothekare). Sie prüfen den Text nach formalen Kriterien und stellen fest, ob die Qualitätsstandards wissenschaftlicher Publikationen grundsätzlich erfüllt wurden. Sie entscheiden, ob eine vorgelegte Publikation zurückgewiesen wird, ob sie dem Minimalstandard der Sparte „Universitätsdrucke“ entspricht oder ob sie dem Herausgebergremium zur Begutachtung für die Aufnahme in die Sparte „Universitätsverlag“ vorgelegt wird. Falls eine Entscheidung nicht eindeutig zu fällen ist, ziehen die Mitarbeiterinnen und Mitarbeiter die zuständige Fachreferentin bzw. den zuständigen Fachreferenten der SUB Göttingen oder das Herausgebergremiumsmitglied des jeweiligen Fachgebiets zu Rate.
+Wenn ein Manuskript die Kriterien für die Sparte „Universitätsverlag“ erfüllt, wird es an die Fachvertreterin/den Fachvertreter im Herausgebergremium zur Begutachtung weitergeleitet. Die eingereichte Publikation wird entweder zurückgewiesen, dem Autor zur Korrektur zurückgegeben oder für die Veröffentlichung empfohlen. Falls die Fachvertreterin/der Fachvertreter nicht ausreichend mit der entsprechenden Materie vertraut ist, wendet sie/er sich an (externe) Gutachter, um zu einem abschließenden Urteil zu kommen (u. U. können die Mitarbeiterinnen und Mitarbeiter des Verlages bei der Vermittlung weiterer Gutachter behilflich sein). Wird die Publikation für die Veröffentlichung empfohlen, wird sie dem gesamten Herausgebergremium zur Beurteilung vorgelegt. Die Entscheidung des Gremiums fällt nach dem Mehrheitsprinzip. Sollte ein Gremiumsmitglied eine weitere Begutachtung einfordern oder sogar von der Publikation abraten, wird der Veröffentlichungsprozess zunächst gestoppt und eine weitere Begutachtung veranlasst.
+Die Mitarbeiterinnen und Mitarbeiter des Verlages achten darauf, dass die Änderungsauflagen Veröffentlichenden eingehalten werden. Falls diese nicht bereit sind, die Auflagen zu erfüllen, kann das Werk bestenfalls in der Sparte „Universitätsdrucke“ veröffentlicht werden.
+		</p>
+		<p>
+Bücher, die im Universitätsverlag Göttingen erscheinen, werden parallel als Open-Access-Publikation veröffentlicht und sind kostenfrei über die Website des Universitätsverlages zugänglich. Durch diese weltweite Sichtbarkeit ist eine kritische Auseinandersetzung mit der wissenschaftlichen Qualität bzw. mit dem Inhalt eines Textes jederzeit gegeben.
+		</p>
+		<p>
+Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und Mitarbeiter des Verlages sind sich ihrer Verantwortung bezüglich der Qualität der Veröffentlichungen des Verlages bewusst und arbeiten ständig an der Verbesserung des Begutachtungsprozesses, der regelmäßig evaluiert wird.
+		</p>
+	    </div>
     </message>
     <message key="xmlui.static.editors-authors.head">Publizieren: Autorenhilfe</message>
     <message key="xmlui.static.editors-authors.navigation">Autorenhilfe</message>
@@ -3300,9 +3320,22 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
     <message key="xmlui.static.price">
         <div>
             <p>
-                Als Open-Access-Verlag sind wir darauf angewiesen, dass unsere Autoren und Herausgeber sich an den Kosten des Publizierens beteiligen, die im Universitätsverlag anfallen. Denn durch die freie Onlinebereitstellung unserer Publikationen können wir nur sehr bedingt über den Absatz gedruckter Werke Einnahmen generieren. Was wir ins Verlagsprogramm aufnehmen, sollte auch nicht der wirtschaftliche Erfolg eines Werkes entscheiden, sondern seine wissenschaftliche Relevanz.
+		Die Kosten für ein Publikationsprojekt errechnen sich aus den <strong>Verlagskosten</strong> und den <strong>Druckkosten</strong>.    
             </p>
             <p>
+		Die <strong>Verlagskosten</strong> beinhalten die von der Seitenzahl und der Qualität der Vorlage abhängigen Kosten für die formale Qualitätsprüfung des Manuskriptes incl. der Abbildungen, die Covergestaltung, Erstellung der Titelei und Prüfung des Manuskriptes auf technische Korrektheit. Außerdem stellen wir die Onlinebereitstellung, Titelmeldung sowie das Marketing in Rechnung. Autorinnen/Autoren von Dissertationen erhalten einen Nachlass von 25% auf diese Kosten. Wegen des geringeren Aufwandes bei der Covergestaltung werden für Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, um 40,- EUR geringere Kosten für die Covergestaltung angesetzt.
+		</p>
+             <p>
+		<strong>Druckkosten</strong> werden nur für die von den Autorinnen/Autoren benötigten Druckexemplare in Rechnung gestellt. Zusätzlich zahlt die Autorin/der Autor 15 Verlagsexemplare, die u.a. für Pflichtabgaben an die Deutsche Nationalbibliothek (DNB) und die Niedersächsische Landesbibliothek (NLB) und als Rezensionsexemplare verwendet werden.
+		</p>
+		<p>
+		   Die für die Beispiele zugrunde gelegten Zahlen sind den aktuell vorliegenden Kalkulationstabellen der Druckereien entnommen und unterliegen markttypischen Schwankungen (Papierpreise).
+		</p>
+		<p>
+			Die folgenden Beispiele verdeutlichen die Preisbildung der Gesamtkosten, die für den Autor anfallen, sollten aber aufgrund der Diversität der einzelnen Projekte nur als Beispiel verstanden werden. Bitte benutzen Sie das Formular „Kostenanfrage“, um einen konkreten Kostenvoranschlag für Ihr Projekt zu erhalten.
+		</p>    
+		
+		<!--<p>
                 Für jedes Publikationsprojekt wird daher den Autoren und Herausgebern eine Verlagskostenpauschale berechnet, die in der Regel <i class="icon-info-circled" data-toggle="popover" data-content="Basispreis, kalkuliert mit 250 Manuskriptseiten der Verlagsversion und geringem Aufwand bei der Durchsicht durch den Verlag. Ist die Seitenzahl deutlich niedriger, (z.B. 100 S.) sinkt der Preis um bis zu 25%. Dementsprechend steigt er bei deutlich höherer Seitenzahl (z.B. 600 S.) um bis zu 75%. Bei sehr aufwändig zu prüfenden Manuskripten mit mehreren Korrekturdurchläufen steigt die Verlagskostenpauschale um bis zu 40%."></i> 750,00 € beträgt.
 
                 Autoren von Dissertationen und Studierende erhalten einen Nachlass von 25% auf die Pauschale. Bei Publikationen, die innerhalb einer laufenden Schriftenreihe erscheinen, reduziert sich die Verlagskostenpauschale um 40,00 €, weil der Bearbeitungsaufwand für das Cover geringer ist. Diese Pauschale beinhaltet die Unterstützung der Nutzer beim Erstellen der publikationsreifen Manuskripte, die formale Qualitätsprüfung, die Erstellung der Druckvorlagen (Covergestaltung, technische Überprüfung der Manuskripte), die Onlinebereitstellung, die Titelmeldung sowie das Marketing.
@@ -3310,35 +3343,33 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <p>
                 Für die Drucklegung werden die Kosten der Erstauflage den Nutzern in Rechnung gestellt. Der durchschnittliche Seitenpreis<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i>
                 bei einer s/w-Produktion beträgt derzeit 1,26 €, im Falle von Farbseiten<i class="icon-info-circled" data-toggle="popover" data-content="Basierend auf 250 Seiten gesamt mit 10 Farbseiten Digitaldruck, bei Auflage 50 (35 Frei- plus 15 Verlagsexemplare)"></i> steigt der Preis bei einfacher Papierqualität auf 1,67 € und bei gehobener Papierqualität auf 1,78 €. Die folgenden Beispiele verdeutlichen die Preisbildung des Autorenanteils, die letztendliche Höhe ergibt sich aber aus den konkreten Publikationsprojekten.
-            </p>
+            </p>-->
             <table id="prices" class="table table-sm">
 
                 <thead>
                     <tr>
                         <th> </th>
-                        <th>Verlagskostenpauschale</th>
+                        <th>Verlagskosten</th>
                         <th>Druckkosten inkl. MwSt. und Versand</th>
                         <th>Gesamtkosten für die Nutzer</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ihr Werk hat 180 Seiten, &#173;der verlagsseitige Bearbeitungsaufwand ist mittel, &#173;Sie benötigen 35 Exemplare</td>
-                        <td class="numeric">750,00 €</td>
-                        <td class=" numeric">180 x 1,26  = 227,00 €</td>
+                        <td>Sammelband, 180 Seiten, keine Farbseiten, &#173;gedruckt als Softcover auf Offset-Papier, verlagsseitig geringer Bearbeitungsaufwand, &#173;35 Autoren-Exemplare</td>
+                        <td class="numeric">665,00 €</td>
+                        <td class=" numeric">240,00 €</td>
 
-                        <td class="numeric">977,00 €</td>
+                        <td class="numeric">905,00 €</td>
                     </tr>
                     <tr>
-                        <td>Ihr Sammelband hat 450 Seiten mit 8 Farbseiten,  &#173;der verlagsseitige Bearbeitungsaufwand ist hoch, &#173;Sie benötigen 35 Exemplare</td>
-                        <td class="numeric">1.300,00 €</td>
-                        <td class="numeric">450 x 1,67 = 751,50 €</td>
-                        <td class="numeric">2.051,50 €</td>
+                        <td>Sammelband, 450 Seiten, 20 Farbseiten, &#173;gedruckt als Softcover auf Offset-Papier, verlagsseitig hoher Bearbeitungsaufwand, &#173;erscheint in einer Schriftenreihe, 100 Autoren/Hrsg.-Exemplare</td>
+                        <td class="numeric">1.323,00 €</td>
+                        <td class="numeric">1.320,00 €</td>
+                        <td class="numeric">2.643,00 €</td>
                     </tr>
                     <tr>
-                        <td>Ihre Dissertation hat 250 Seiten mit 10 Farbseiten, &#173;gedruckt in hoher Papierqualität,
-                            &#173;der verlagsseitige Bearbeitungsaufwand ist gering, &#173;die Arbeit erscheint in einer Schriftenreihe,
-                            &#173;Sie benötigen 35 Exemplare</td>
+                        <td>Dissertation, 250 Seiten, 10 Farbseiten, &#173;gedruckt als Softcover auf hochwertigem Bilderdruckpapier, &#173;verlagsseitig geringer Bearbeitungsaufwand, &#173;20 Autoren-Exemplare</td>
                         <td class="numeric">516,00 €</td>
                         <td class="numeric">250 x 1,78 = 445,00 €</td>
                         <td class="numeric">960,00 €</td>
@@ -3701,7 +3732,9 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <strong>Ab Heft 34 erscheinen die "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung" ausschliesslich als open access-Publikation auf den Seiten des Universitätsverlags Göttingen.</strong><br />
             Einzelne Restexemplare früherer Ausgaben sind weiterhin zum Versandkostenpreis erhältlich. Die Bestellung können Sie direkt beim Universitätsverlag Göttingen aufgeben. Bei Bedarf kann ein nicht mehr im Druck erhältliches Heft eingescannt und dann ausschliesslich als open access-Publikation auf der Seite des Universitätsverlages eingesehen werden.
         </p>
-        <p>ISSN: 2198-2384</p>
+        <p class="narrow">ISSN (Print): 0942-2064</p>
+    <p class="narrow">ISSN (Online): 2198-2384</p>
+
     </message>
 
     <!-- Collection texts -->
@@ -3854,7 +3887,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
     <message key="xmlui.collection.gbs.introduction">
         <p>
-	    Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Die Vorgängerbände (Nr.1-37) sind unter <a href="/handle/3/Goettingen_library_writings" target="_blank">Göttinger Bibliotheksschriften</a> zu finden.
+	    Nach gut sechs Jahren „schöpferischer Pause“ wird eine altbewährte Tradition der Niedersächsischen Staats- und Universitätsbibliothek Göttingen wiedererweckt, nämlich Ausstellungen und besondere Forschungsergebnisse, die in der SUB erarbeitet wurden, in Buchform zu präsentieren. Ab Band 38 erscheinen die Publikationen im Universitätsverlag Göttingen.
         </p>
         <p class="narrow">ISSN (Print): 0943-951X</p>
         <p class="narrow">ISSN (Online): 2512-6822</p>
@@ -3969,14 +4002,14 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <p class="narrow">ISSN (Online): 2566-9281</p>
     </message>
 
-    <message key="xmlui.collection.mis.introduction">
+    <!-- <message key="xmlui.collection.mis.introduction">
         <p>
             Die Bände dieser Serie enthalten jeweils die Beiträge der Seminare, die von Yuri Tschinkel am Mathematischen Institut der Georg-August-Universität Göttingen abgehalten wurden.
         </p>
-    </message>
+    </message> -->
 
 
-    <message key="xmlui.collection.sdidaxis.introduction">
+    <!-- <message key="xmlui.collection.sdidaxis.introduction">
         <p>
             Die Reihe Didaxis soll ein Publikationsforum für veröffentlichungswürdige Beiträge aus Studienseminaren und Unterrichtsreihen sowie aus pädagogischen Prüfungsarbeiten werden. Damit wird diese neue Reihe ein einmaliges Beispiel für eine didaktische Kooperation zwischen Fachwissenschaft und Schulpraxis darstellen.
         </p>
@@ -3984,7 +4017,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             Die Reihe wird von Ulrike Egelhaaf-Gaiser und Thorsten Fuchs herausgegeben.
         </p>
         <p class="narrow">ISSN: 1863-0952</p>
-    </message>
+    </message> -->
 
     <message key="xmlui.collection.spe.introduction">
          <p>
@@ -4505,7 +4538,16 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
 
-            <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
+        </div>
+    </message>
+
+    <message key="xmlui.static.news-archive.title">Aktuelles Archiv</message>
+    <message key="xmlui.static.news-archive.navigation">Archiv</message>
+
+    <message key="xmlui.static.news-archive">
+        <h2 class="first-page-header">Archiv Aktuelles</h2>
+        <div class="news">
+        <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 Der Physiker Dr. Martin Krenkel erhielt im Dezember 2016 Dissertationspreis des Universitätsbundes Göttingen.
             </p>
@@ -4526,16 +4568,9 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
             <p class="strech-top">
                 Zusammenfassung: International discussion on university presses appears to be dominated by Anglo-American concepts and concerns, passing over many continental European presses that operate in their national contexts. In our article, we provide a case study of German-language university presses that highlights challenges and opportunities when publishing in languages other than English. A common thread across those university presses is their adoption of open access (OA) publishing. OA has become a necessity for them because the combination of publishing niche scholarship and a potential audience limited by linguistic borders serves to create market conditions that are not viable in a conventional model. Consequently, German university presses have adopted OA publishing earlier than many of their English-speaking counterparts and provide a developed example for some of the ongoing transitions highlighted elsewhere.
             </p>
-        </div>
-    </message>
 
-    <message key="xmlui.static.news-archive.title">Aktuelles Archiv</message>
-    <message key="xmlui.static.news-archive.navigation">Archiv</message>
-
-    <message key="xmlui.static.news-archive">
-        <h2 class="first-page-header">Archiv Aktuelles</h2>
-        <div class="news">
-        </div>
+		
+	</div>
     </message>
 
     <message key="xmlui.costrequest.form">
