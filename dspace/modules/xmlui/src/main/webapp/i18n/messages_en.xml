@@ -4934,4 +4934,9 @@ Editorial board and staff members of the press are aware of their responsibility
 
     <message key="xmlui.dri2xhtml.mimetype.application/epub+zip">EPUB</message>
     <message key="xmlui.item.ebook">eBook</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Keywords: Persons</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_person">Keywords: Persons</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Keywords: Location</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_person">Keywords: Location</message>
+
 </catalogue>
