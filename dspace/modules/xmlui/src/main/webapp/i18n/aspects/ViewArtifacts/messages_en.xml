@@ -8209,7 +8209,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">24. October 2017</h4>
+                <h3 class="panel-title">24. October 2017</h3>
 
             </header>
 
@@ -8229,7 +8229,7 @@
 
                     <div class="btn-toolbar">
 
-                       <!-- <a href="/dokumente/audio/ring2017-10-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+                       <a href="/dokumente/audio/ring2017-10-24.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
 
                     </div>
 
@@ -8249,7 +8249,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">7. November 2017</h4>
+                <h3 class="panel-title">7. November 2017</h3>
 
             </header>
 
@@ -8265,7 +8265,7 @@
 
                     <div class="btn-toolbar">
 
-                       <!-- <a href="/dokumente/audio/ring2017-11-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+                       <a href="/dokumente/audio/ring2017-11-07.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
 
                     </div>
 
@@ -8283,7 +8283,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">14. November 2017</h4>
+                <h3 class="panel-title">14. November 2017</h3>
 
             </header>
 
@@ -8317,7 +8317,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">21. November 2017</h4>
+                <h3 class="panel-title">21. November 2017</h3>
 
             </header>
 
@@ -8333,7 +8333,7 @@
 
                     <div class="btn-toolbar">
 
-                       <!-- <a href="/dokumente/audio/ring2017-11-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+                       <a href="/dokumente/audio/ring2017-11-21.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
 
                     </div>
 
@@ -8351,7 +8351,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">28. November 2017</h4>
+                <h3 class="panel-title">28. November 2017</h3>
 
             </header>
 
@@ -8367,7 +8367,7 @@
 
                     <div class="btn-toolbar">
 
-                       <!-- <a href="/dokumente/audio/ring2017-11-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+                       <a href="/dokumente/audio/ring2017-11-28.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
 
                     </div>
 
@@ -8385,7 +8385,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">5. December 2017</h4>
+                <h3 class="panel-title">5. December 2017</h3>
 
             </header>
 
@@ -8401,7 +8401,7 @@
 
                     <div class="btn-toolbar">
 
-                       <!-- <a href="/dokumente/audio/ring2017-12-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i> Audio File</a> -->
+                       <a href="/dokumente/audio/ring2017-12-05.mp3" class="btn btn-default btn-xs" role="button"><i class="icon-headphones-1" aria-hidden="true"></i><span class="hidden-xs">Audio File</span></a>
 
                     </div>
 
@@ -8419,7 +8419,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">12. December 2017</h4>
+                <h3 class="panel-title">12. December 2017</h3>
 
             </header>
 
@@ -8453,7 +8453,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">9. January 2018</h4>
+                <h3 class="panel-title">9. January 2018</h3>
 
             </header>
 
@@ -8487,7 +8487,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">16. January 2018</h4>
+                <h3 class="panel-title">16. January 2018</h3>
 
             </header>
 
@@ -8521,7 +8521,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">23. January 2018</h4>
+                <h3 class="panel-title">23. January 2018</h3>
 
             </header>
 
@@ -8555,7 +8555,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">30. January 2018</h4>
+                <h3 class="panel-title">30. January 2018</h3>
 
             </header>
 
@@ -8589,7 +8589,7 @@
 
             <header class="panel-heading">
 
-                <h4 class="panel-title">6. February 2018</h4>
+                <h3 class="panel-title">6. February 2018</h3>
 
             </header>
 
