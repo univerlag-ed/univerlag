@@ -4046,10 +4046,15 @@ Editorial board and staff members of the press are aware of their responsibility
 
 	
     <message key="xmlui.collection.tdsjb.introduction">
+	<p>
+        The Turkish-German Studies Yearbook which was established in 2010 and is being published by Göttingen University Press since 2017, provides a platform for international, interdisciplinary knowledge exchange between established scientists and junior scientists working on Turkish-German topics. In addititon to contemporary topics such as the current migration culture, also studies are published that deal with the historical dimension of Turkish-German cultural contact in the broadest sense. Publications from subjects such as literature, media and linguistics, German studies and Turkology as well as sociology, politics, history, cultural studies and didactics are published in German, English and Turkish. Information about previous publications can be found at <a href="//www.v-r.de/de/tuerkisch_deutsche_studien_jahrbuch/sd-0/3091" class="extern-link" target="_blank">www.v-r.de/de/tuerkisch_deutsche_studien_jahrbuch/sd-0/3091</a>. The scientific advisory board, which consists of renowned scientists from Germany, Turkey and the USA, decides on the publication of the contributions in a double-blind peer review process. In addition to articles, reviews and reports are published.
+	</p>
 	<p class="narrow">ISSN (Print): 2198-5286</p>
         <p class="narrow">ISSN (Online): 2197-4993</p>
-    </message>
-
+</message>
+	
+	
+	
     <message key="xmlui.static.shipping.costs.title">Ordering: Shipping costs</message>
     <message key="xmlui.static.shipping.costs.trail">Shipping costs</message>
     <message key="xmlui.static.shipping.costs.head">Ordering: Shipping costs</message>
