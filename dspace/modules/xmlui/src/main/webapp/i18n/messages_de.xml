@@ -818,7 +818,7 @@
 
     <!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
     <message key="xmlui.Submission.submit.CompletedStep.head">Veröffentlichung abgeschlossen</message>
-    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den für diese Sammlung festgelegten Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen umd Ihr Dokument in der Sammlung archiviert wurde oder erhalten ggf. eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
+    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den (für diese Sammlung festgelegten) Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen und Ihr Dokument in der Sammlung archiviert wurde. Falls eine weitere Bearbeitung nötig ist, erhalten Sie eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
     <message key="xmlui.Submission.submit.CompletedStep.go_submission">Zur Veröffentlichungsseite</message>
     <message key="xmlui.Submission.submit.CompletedStep.submit_again">Ein weiteres Dokument veröffentlichen</message>
 
@@ -2784,13 +2784,13 @@
 Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
 </p>-->
 
-        <!--<p class="highlight">
+        <p class="highlight">
     Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,<br />
-    der Universitätsverlag macht ab dem 23. Dezember 2016 eine längere Weihnachtspause.
-Der Versand der Bücher und die Betreuung der Autorinnen und Autoren werden in dieser Zeit nicht geleistet. Ab dem 9. Januar 2017 sind wir wieder für Sie da.
+    der Universitätsverlag macht ab dem 22. Dezember 2017 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
+Ab dem 4. Januar 2018 sind wir wieder für Sie da.
 Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.<br />
 Das Team vom Universitätsverlag Göttingen
-</p>-->
+</p>
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
