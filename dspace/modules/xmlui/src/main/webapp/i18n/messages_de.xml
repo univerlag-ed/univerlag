@@ -2961,7 +2961,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></dd>
 
 	<dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
-	<dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
+	<dd>Prof. Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
 	</dd>
 </dl>
 -->
@@ -3170,7 +3170,7 @@ Alle Veröffentlichungen werden einer Qualitätsprüfung unterzogen. Gleichwohl 
 		<p>
 Eine erste Begutachtung erfolgt durch die Mitarbeiterinnen und Mitarbeiter des Verlages (sie haben entweder ein Studium absolviert oder sie sind ausgebildete Bibliothekare). Sie prüfen den Text nach formalen Kriterien und stellen fest, ob die Qualitätsstandards wissenschaftlicher Publikationen grundsätzlich erfüllt wurden. Sie entscheiden, ob eine vorgelegte Publikation zurückgewiesen wird, ob sie dem Minimalstandard der Sparte „Universitätsdrucke“ entspricht oder ob sie dem Herausgebergremium zur Begutachtung für die Aufnahme in die Sparte „Universitätsverlag“ vorgelegt wird. Falls eine Entscheidung nicht eindeutig zu fällen ist, ziehen die Mitarbeiterinnen und Mitarbeiter die zuständige Fachreferentin bzw. den zuständigen Fachreferenten der SUB Göttingen oder das Herausgebergremiumsmitglied des jeweiligen Fachgebiets zu Rate.
 Wenn ein Manuskript die Kriterien für die Sparte „Universitätsverlag“ erfüllt, wird es an die Fachvertreterin/den Fachvertreter im Herausgebergremium zur Begutachtung weitergeleitet. Die eingereichte Publikation wird entweder zurückgewiesen, dem Autor zur Korrektur zurückgegeben oder für die Veröffentlichung empfohlen. Falls die Fachvertreterin/der Fachvertreter nicht ausreichend mit der entsprechenden Materie vertraut ist, wendet sie/er sich an (externe) Gutachter, um zu einem abschließenden Urteil zu kommen (u. U. können die Mitarbeiterinnen und Mitarbeiter des Verlages bei der Vermittlung weiterer Gutachter behilflich sein). Wird die Publikation für die Veröffentlichung empfohlen, wird sie dem gesamten Herausgebergremium zur Beurteilung vorgelegt. Die Entscheidung des Gremiums fällt nach dem Mehrheitsprinzip. Sollte ein Gremiumsmitglied eine weitere Begutachtung einfordern oder sogar von der Publikation abraten, wird der Veröffentlichungsprozess zunächst gestoppt und eine weitere Begutachtung veranlasst.
-Die Mitarbeiterinnen und Mitarbeiter des Verlages achten darauf, dass die Änderungsauflagen Veröffentlichenden eingehalten werden. Falls diese nicht bereit sind, die Auflagen zu erfüllen, kann das Werk bestenfalls in der Sparte „Universitätsdrucke“ veröffentlicht werden.
+Die Mitarbeiterinnen und Mitarbeiter des Verlages achten darauf, dass die Änderungsauflagen von den Veröffentlichenden eingehalten werden. Falls diese nicht bereit sind, die Auflagen zu erfüllen, kann das Werk bestenfalls in der Sparte „Universitätsdrucke“ veröffentlicht werden.
 		</p>
 		<p>
 Bücher, die im Universitätsverlag Göttingen erscheinen, werden parallel als Open-Access-Publikation veröffentlicht und sind kostenfrei über die Website des Universitätsverlages zugänglich. Durch diese weltweite Sichtbarkeit ist eine kritische Auseinandersetzung mit der wissenschaftlichen Qualität bzw. mit dem Inhalt eines Textes jederzeit gegeben.
@@ -3986,13 +3986,14 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         <p class="narrow">ISSN (Online): 2512-7063</p>
     </message>
 
-    <message key="xmlui.collection.fadaf.introduction">
+        <message key="xmlui.collection.fadaf.introduction">
         <p>
-            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF) In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen.
+            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF). In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen und wird seit Mitte 2017 (Bd. 97 ff.) unter dem Namen <a href ="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“  im Universitätsverlag Göttingen weitergeführt.
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
     </message>
+
 
     <message key="xmlui.collection.matdaf.introduction">
         <p>
