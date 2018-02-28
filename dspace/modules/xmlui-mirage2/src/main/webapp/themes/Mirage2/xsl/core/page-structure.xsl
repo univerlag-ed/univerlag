@@ -326,7 +326,6 @@
                 </script>
                 <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">&#160;</script>
             </xsl:if>
-
         </head>
     </xsl:template>
 
@@ -816,10 +815,11 @@
     <xsl:template name="addJavascript">
 
         <!--TODO concat & minify!-->
-
+	
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
+	<script type="text/javascript" src="/static/js/tooltips.js">&#160;</script>
 
         <!--inject scripts.html containing all the theme specific javascript references
         that can be minified and concatinated in to a single file or separate and untouched
@@ -889,6 +889,7 @@
         </xsl:if>
 
         <script src="/static/shopping-cart.min.js" charset="UTF-8" type="text/javascript"> </script>
+        <script src="/static/js/utils.js" charset="UTF-8" type="text/javascript"> </script>
         <script type="text/javascript">
             var _paq = _paq || [];
             _paq.push(['trackPageView']);

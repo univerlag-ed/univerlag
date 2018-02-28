@@ -197,6 +197,20 @@
                     </xsl:if>
                     <!-- <span class="badge"><xsl:value-of select="translate(text(), '[]', '')" /></span> -->
                 </xsl:when>
+		<xsl:when test="contains(dri:xref/@target, 'field=person')  or contains(dri:xref/@target, 'field=location')">
+                    <xsl:variable name="texttail"><xsl:value-of select="substring-after(. , '::')" /></xsl:variable>
+                    <a>
+                        <xsl:attribute name="href"><xsl:value-of select="dri:xref/@target"/></xsl:attribute>
+                        <xsl:value-of select="substring-before(. , '::')" /><!-- <xsl:text> (</xsl:text><xsl:value-of select="substring-after($texttail , ' (')" /> -->
+                    </a>
+                    <xsl:if test="starts-with($texttail, 'Q')">
+                    <a class="wiki hidden-sm hidden-xs" href="#">
+                        <xsl:attribute name="data-wiki"><xsl:value-of select="substring-before($texttail , ' (')"/></xsl:attribute>
+                        <xsl:attribute name="title"><xsl:value-of select="substring-before(. , '::')" /></xsl:attribute>
+                        <i class="icon-wikipedia"></i>
+                    </a>
+                  </xsl:if>
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:apply-templates />
                 </xsl:otherwise>

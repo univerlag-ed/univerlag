@@ -818,7 +818,7 @@
 
     <!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
     <message key="xmlui.Submission.submit.CompletedStep.head">Veröffentlichung abgeschlossen</message>
-    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den für diese Sammlung festgelegten Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen umd Ihr Dokument in der Sammlung archiviert wurde oder erhalten ggf. eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
+    <message key="xmlui.Submission.submit.CompletedStep.info1">Ihre Veröffentlichung durchläuft nun den (für diese Sammlung festgelegten) Geschäftsgang. Sie werden per E-Mail benachrichtigt, sobald dieser abgeschlossen und Ihr Dokument in der Sammlung archiviert wurde. Falls eine weitere Bearbeitung nötig ist, erhalten Sie eine E-Mail mit Rückfragen des Bearbeiters. Den Bearbeitungsstand Ihrer Veröffentlichung können Sie über Ihre Veröffentlichungsseite einsehen.</message>
     <message key="xmlui.Submission.submit.CompletedStep.go_submission">Zur Veröffentlichungsseite</message>
     <message key="xmlui.Submission.submit.CompletedStep.submit_again">Ein weiteres Dokument veröffentlichen</message>
 
@@ -2780,17 +2780,17 @@
     <message key="xmlui.static.home">
         <h2 class="first-page-header">Willkommen beim Universitätsverlag Göttingen</h2>
 
-        <!--<p class="highlight">
+        <!-- <p class="highlight">
 Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
-</p>-->
+</p> -->
 
-        <!--<p class="highlight">
+       <!-- <p class="highlight">
     Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,<br />
-    der Universitätsverlag macht ab dem 23. Dezember 2016 eine längere Weihnachtspause.
-Der Versand der Bücher und die Betreuung der Autorinnen und Autoren werden in dieser Zeit nicht geleistet. Ab dem 9. Januar 2017 sind wir wieder für Sie da.
+    der Universitätsverlag macht ab dem 22. Dezember 2017 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
+Ab dem 4. Januar 2018 sind wir wieder für Sie da.
 Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.<br />
 Das Team vom Universitätsverlag Göttingen
-</p>-->
+</p> -->
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
@@ -2961,7 +2961,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></dd>
 
 	<dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
-	<dd>Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
+	<dd>Prof. Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
 	</dd>
 </dl>
 -->
@@ -3170,7 +3170,7 @@ Alle Veröffentlichungen werden einer Qualitätsprüfung unterzogen. Gleichwohl 
 		<p>
 Eine erste Begutachtung erfolgt durch die Mitarbeiterinnen und Mitarbeiter des Verlages (sie haben entweder ein Studium absolviert oder sie sind ausgebildete Bibliothekare). Sie prüfen den Text nach formalen Kriterien und stellen fest, ob die Qualitätsstandards wissenschaftlicher Publikationen grundsätzlich erfüllt wurden. Sie entscheiden, ob eine vorgelegte Publikation zurückgewiesen wird, ob sie dem Minimalstandard der Sparte „Universitätsdrucke“ entspricht oder ob sie dem Herausgebergremium zur Begutachtung für die Aufnahme in die Sparte „Universitätsverlag“ vorgelegt wird. Falls eine Entscheidung nicht eindeutig zu fällen ist, ziehen die Mitarbeiterinnen und Mitarbeiter die zuständige Fachreferentin bzw. den zuständigen Fachreferenten der SUB Göttingen oder das Herausgebergremiumsmitglied des jeweiligen Fachgebiets zu Rate.
 Wenn ein Manuskript die Kriterien für die Sparte „Universitätsverlag“ erfüllt, wird es an die Fachvertreterin/den Fachvertreter im Herausgebergremium zur Begutachtung weitergeleitet. Die eingereichte Publikation wird entweder zurückgewiesen, dem Autor zur Korrektur zurückgegeben oder für die Veröffentlichung empfohlen. Falls die Fachvertreterin/der Fachvertreter nicht ausreichend mit der entsprechenden Materie vertraut ist, wendet sie/er sich an (externe) Gutachter, um zu einem abschließenden Urteil zu kommen (u. U. können die Mitarbeiterinnen und Mitarbeiter des Verlages bei der Vermittlung weiterer Gutachter behilflich sein). Wird die Publikation für die Veröffentlichung empfohlen, wird sie dem gesamten Herausgebergremium zur Beurteilung vorgelegt. Die Entscheidung des Gremiums fällt nach dem Mehrheitsprinzip. Sollte ein Gremiumsmitglied eine weitere Begutachtung einfordern oder sogar von der Publikation abraten, wird der Veröffentlichungsprozess zunächst gestoppt und eine weitere Begutachtung veranlasst.
-Die Mitarbeiterinnen und Mitarbeiter des Verlages achten darauf, dass die Änderungsauflagen Veröffentlichenden eingehalten werden. Falls diese nicht bereit sind, die Auflagen zu erfüllen, kann das Werk bestenfalls in der Sparte „Universitätsdrucke“ veröffentlicht werden.
+Die Mitarbeiterinnen und Mitarbeiter des Verlages achten darauf, dass die Änderungsauflagen von den Veröffentlichenden eingehalten werden. Falls diese nicht bereit sind, die Auflagen zu erfüllen, kann das Werk bestenfalls in der Sparte „Universitätsdrucke“ veröffentlicht werden.
 		</p>
 		<p>
 Bücher, die im Universitätsverlag Göttingen erscheinen, werden parallel als Open-Access-Publikation veröffentlicht und sind kostenfrei über die Website des Universitätsverlages zugänglich. Durch diese weltweite Sichtbarkeit ist eine kritische Auseinandersetzung mit der wissenschaftlichen Qualität bzw. mit dem Inhalt eines Textes jederzeit gegeben.
@@ -3986,13 +3986,14 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         <p class="narrow">ISSN (Online): 2512-7063</p>
     </message>
 
-    <message key="xmlui.collection.fadaf.introduction">
+        <message key="xmlui.collection.fadaf.introduction">
         <p>
-            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF) In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen.
+            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF). In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen und wird seit Mitte 2017 (Bd. 97 ff.) unter dem Namen <a href ="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“</a>  im Universitätsverlag Göttingen weitergeführt.
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
     </message>
+
 
     <message key="xmlui.collection.matdaf.introduction">
         <p>

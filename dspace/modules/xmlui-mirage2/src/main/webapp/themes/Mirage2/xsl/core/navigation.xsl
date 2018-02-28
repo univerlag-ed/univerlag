@@ -262,7 +262,11 @@
                         <i18n:text><xsl:value-of select="translate($kind, ' ', '+')" /></i18n:text><xsl:value-of select="concat(' (', substring-after(.,' ('))"/>
                     </xsl:if>
                 </xsl:when>
+		<xsl:when test="contains(., '::')">
+			<xsl:value-of select="substring-before(., '::')"/>	
+		</xsl:when>
                 <xsl:otherwise>
+			
                     <xsl:apply-templates />
                 </xsl:otherwise>
             </xsl:choose>
@@ -289,12 +293,16 @@
             </xsl:call-template>
             <xsl:choose>
                 <!-- Translate langugage iso code and division in search facet bar -->
-                <xsl:when test="(contains(dri:xref/@target, 'filtertype=division') or contains(dri:xref/@target, 'type') or contains(dri:xref/@target, 'language') or contains(dri:xref/@target, 'subjectheading'))">
+                <xsl:when test="(contains(dri:xref/@target, 'filtertype=division') or contains(dri:xref/@target, 'filtertype=type') or contains(dri:xref/@target, 'language') or contains(dri:xref/@target, 'subjectheading'))">
                     <xsl:if test="contains(., '(')">
                         <xsl:variable name="kind"><xsl:value-of select="substring-before(dri:xref/node(), ' (')" /></xsl:variable>
                         <i18n:text><xsl:value-of select="translate($kind, ' ', '+')" /></i18n:text><xsl:value-of select="concat(' (', substring-after(dri:xref/node(), ' ('))" />
                     </xsl:if>
                 </xsl:when>
+		<xsl:when test="contains(., '::')">
+			<xsl:variable name="tail"><xsl:value-of select="substring-after(., '(')"/></xsl:variable>
+			<xsl:value-of select="concat(substring-before(., '::'), ' (', $tail) "/>
+		</xsl:when>
                 <xsl:when test="dri:xref/node()">
                     <xsl:apply-templates select="dri:xref/node()"/>
                 </xsl:when>
