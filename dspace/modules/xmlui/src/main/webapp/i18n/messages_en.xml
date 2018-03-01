@@ -2948,7 +2948,7 @@ Göttingen University Press
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Göttingen State and University Library (Chair)</h4>
-                <p><nobr>Dr. Wolfram Horstmann</nobr>
+                <p><nobr>Prof. Dr. Wolfram Horstmann</nobr>
 
                     <a href="//orcid.org/0000-0001-8673-6104" target="_blank" title="Person Profile (ORCID)">
                         <i class="icon-info-circled orcid"></i>
@@ -3635,18 +3635,15 @@ Editorial board and staff members of the press are aware of their responsibility
 
     <message key="xmlui.collection.GBeF.introduction">
         <p>
-            Die Göttinger Beiträge zur erziehungswissenschaftlichen Forschung wurden 1991 gegründet, um für kleinere Studien und explorative empirische Arbeiten,
-            Dokumentationen und Forschungsberichte von Mitarbeiter_innen des damaligen Pädagogischen Seminars sowie für sehr gute studentische Abschlussarbeiten eine
-            Publikationsmöglichkeit zu schaffen. Auch nach der Umbenennung des Pädagogischen Seminars in Institut für Erziehungswissenschaft wird die Reihe fortgesetzt.
-        </p>
+The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung" was created in 1991 to offer of researchers of the "Pädagogisches Seminar" a place for publication of small studies or explorative empirical studies or documentations or research papers. Students who wrote an exceptional final paper were also offered the possibility to publish their work within this collection. The series is being continued even after the renaming of the seminar to "Institut für Erziehungswissenschaft".
+</p>
         <p>
-            <strong>Ab Heft 34 erscheinen die "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung" ausschliesslich als open access-Publikation auf den Seiten des
-                Universitätsverlags Göttingen.</strong>
+            <strong>Issue 34 and following of the "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung" will be published as open access publications only.</strong>
         </p>
-        <p>
-            Einzelne Restexemplare früherer Ausgaben sind weiterhin zum Versandkostenpreis erhältlich. Die Bestellung können Sie direkt beim Universitätsverlag Göttingen aufgeben.
-            Bei Bedarf kann ein nicht mehr im Druck erhältliches Heft eingescannt und dann ausschliesslich als open access-Publikation auf der Seite des Universitätsverlages
-            eingesehen werden.
+
+<p>
+   		Remaining individual issues may be purchased at the price for shipping and handling. Please place your order with the Universitätsverlag Göttingen.
+		If an issue, which is not for sale any longer, is required, please feel free to contact us at Universiätsverlag Göttingen to acquire online open access to the paper in question.
         </p>
 	    <p class="narrow">ISSN (Print): 0942-2064</p>
 	    <p class="narrow">ISSN (Online): 2198-2384</p>
@@ -3932,7 +3929,7 @@ Editorial board and staff members of the press are aware of their responsibility
         <p>
             The series "Materialien Deutsch als Fremdsprache (DaF)” is being published by the "Fachverband Deutsch als Fremdsprache (FaDaF)”.
             It comprises research results from the annual meetings and symposia of the research group as well as theses papers and other important reports.
-            This series is being published by Goettingen University Press from volume 78 onwards.
+            This series is being published by Goettingen University Press from volume 78 onwards. Since the middle of 2017 (Vol. 97 ff.) the series is being continued as <a href="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“ within the Universitätsverlag Göttingen.
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
