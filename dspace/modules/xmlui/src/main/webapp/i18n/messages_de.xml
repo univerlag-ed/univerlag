@@ -2960,7 +2960,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 	<dd>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> &#160;</a></span></dd>
 	<dd>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></dd>
 
-	<dt>Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</dt>
+	<dt>Niedersächsische Staats- und Universitätsbibliothek Göttingen (Vorsitz)</dt>
 	<dd>Prof. Dr. Wolfram Horstmann <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"> &#160;</a></span>
 	</dd>
 </dl>
@@ -3895,7 +3895,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
 
     <message key="xmlui.collection.gf.introduction">
         <p>
-	    Die neue Schriftenreihe <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">„Göttinger Forstwissensschaften“</a> der traditionsreichen Fakultät für Forstwissenschaften und Waldökologie der Georg-August-Universität Göttingen. 
+	    Die neue Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen. 
 	    Sie fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
 	    Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. 
 	    Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
@@ -3953,8 +3953,8 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             Das vom BMBF im Rahmen des Schwerpunktes »Internetökonomie« bis Ende 2007 geförderte Göttinger Forschungsvorhaben »Mediaconomy« widmet sich den durch Internettechnologien hervorgerufenen Veränderungen in der Medienbranche aus der Sicht der fünf verschiedenen Disziplinen Bibliothekswissenschaft, Informatik, Jura, Soziologie und Wirtschaftsinformatik. In der Reihe »Göttinger Schriften zur Internetforschung« werden die Ergebnisse der interdisziplinären Forschung von Mediaconomy präsentiert.
             Die Reihe wird herausgegeben von Svenja Hagenhoff, Dieter Hogrefe, Elmar Mittler, Matthias Schumann, Gerald Spindler und Volker Wittke (†).
         </p>
-        <p>ISSN (Print): 1863-0944</p>
-        <p>ISSN (Online): 2512-6989</p>
+        <p class="narrow">ISSN (Print): 1863-0944</p>
+        <p class="narrow">ISSN (Online): 2512-6989</p>
     </message>
 
     <message key="xmlui.collection.gskw.introduction">
