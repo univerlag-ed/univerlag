@@ -3049,8 +3049,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Klaus-Peter Horn <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> &#160;</a></span></p>
-                <p>Prof. Dr. Karin Kurz <span class="glyphicon glyphicon-home"><a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"></a></span></p>
+                <p>Prof. Dr. Klaus-Peter Horn <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/426516.html"> <span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Karin Kurz <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/94296.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek (Vorsitz)</h4>
