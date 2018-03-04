@@ -4974,6 +4974,6 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.item.ebook">eBook</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Stichwörter: Personen</message>
     <message key="xmlui.Discovery.AbstractSearch.type_person">Stichwörter: Personen</message>
-    <message key="xmlui.Discovery.AbstractSearch.type_person">Stichwörter: Orte</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_location">Stichwörter: Orte</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Stichwörter: Orte</message>
 </catalogue>

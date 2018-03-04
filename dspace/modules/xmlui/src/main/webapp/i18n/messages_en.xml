@@ -4933,6 +4933,6 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_person">Keywords: Persons</message>
     <message key="xmlui.Discovery.AbstractSearch.type_person">Keywords: Persons</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Keywords: Location</message>
-    <message key="xmlui.Discovery.AbstractSearch.type_person">Keywords: Location</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_location">Keywords: Location</message>
 
 </catalogue>
