@@ -4959,6 +4959,7 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
                 <li>Wenn sie mehrteilig ist, <strong>Teile</strong> miteinander <strong>verlinken</strong>.</li>
                 <li>Wenn sie nicht lieferbar ist, <strong>Lieferbarkeitsstatus ändern</strong>.</li>
                 <li>Wenn sie für <strong>OAPEN</strong> ist, <strong>englische Zusammenfassung</strong> und <strong> drei keywords</strong> hinzufügen. </li>
+		<li>Wenn die zugeordnete <strong>DOI geändert</strong> werden soll: Metadaten bearbeiten, dc.intern.doi ändern</li>
             </ul>
         </div>
     </message>

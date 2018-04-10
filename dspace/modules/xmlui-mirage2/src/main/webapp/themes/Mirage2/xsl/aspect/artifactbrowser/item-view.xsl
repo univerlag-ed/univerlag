@@ -45,10 +45,14 @@
 
     <xsl:variable name="serie">
         <xsl:for-each select="//dri:reference[@type='DSpace Collection']">
-            <xsl:if test="contains(./@url, '_series')">
+	    <xsl:if test="contains(@url, 'series')">
                 <xsl:value-of select="substring-after(substring-before(@url, '/mets.xml'), 'metadata')" />
-            </xsl:if>
+	    </xsl:if>
         </xsl:for-each>
+    </xsl:variable>
+
+    <xsl:variable name="authent">
+        <xsl:value-of select="//dri:userMeta/@authenticated" />
     </xsl:variable>
 
     <xsl:template name="itemSummaryView-DIM">
@@ -221,18 +225,46 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-events">
-        <xsl:if test="//dim:field[@element='relation'][@qualifier='event']">
-            <xsl:for-each select="//dim:field[@element='relation'][@qualifier='event']">
-                <p class="event">
-                    <xsl:value-of select="." />
+<xsl:for-each select="//dim:field[@element='relation'][@qualifier='event']">
+                <p>
+                   <strong>
+                   <xsl:choose>
+                        <xsl:when test="//dim:field[@qualifier='subtype'] and //dim:field[@qualifier='subtype']='catalog'">
+                            <i18n:text>xmlui.item.event.catalog</i18n:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <i18n:text>xmlui.item.event</i18n:text>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                   </strong>
+                    <xsl:choose>
+                        <xsl:when test="contains(., '(')">
+                                <xsl:variable name="tail"><xsl:value-of select="substring-after(., ')')"/></xsl:variable>
+                                <xsl:value-of select="concat(substring-before(., ';'), ', ')"/>
+                                <xsl:if test="contains($tail, ':')">
+                                        <xsl:variable name="tail2"><xsl:value-of select="substring-after($tail, ':')"/></xsl:variable>
+                                        <xsl:if test="contains($tail2, '.')">
+                                                <xsl:value-of select="concat(' ', $tail2, ', ')" />
+                                        </xsl:if>
+                                        <xsl:value-of select="substring-after(substring-before(., ')'),'(')"/>
+                                </xsl:if>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="."/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </p>
             </xsl:for-each>
-        </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-edition">
-        <xsl:if test="//dim:field[@element='description'][@qualifier='edition']">
-            <xsl:value-of select="//dim:field[@element='description'][@qualifier='edition']"/>
+	
+        <xsl:for-each select="//dim:field[@element='description'][@qualifier='edition']">
+            <xsl:value-of select="."/>
+	    <xsl:text>. </xsl:text>
+        </xsl:for-each>
+	<xsl:if test="//dim:field[@element='notes'][@qualifier='edition']">
+            <xsl:value-of select="//dim:field[@element='notes'][@qualifier='edition']"/>
         </xsl:if>
     </xsl:template>
 
@@ -399,6 +431,11 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-URI">
+	<xsl:if test="($authent = 'yes') and (not(contains(//dim:field[@element='identifier' and @qualifier='uri'],'doi.org')))">
+                <div class="alert alert-danger" role="alert">
+                <strong>ZUGEORDNETE DOI: <xsl:value-of select="//dim:field[@element='intern'][@qualifier='doi']" /></strong>
+                </div>
+        </xsl:if>
         <xsl:choose>
             <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))">
                 <h4>
@@ -406,6 +443,7 @@
 
                     <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
                     <a id="pid">
+	
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
                         </xsl:attribute>
@@ -1508,10 +1546,10 @@
                 <xsl:if test="not(//dim:field[starts-with(@qualifier, 'abstract')])">
                     <xsl:attribute name="class">tab-pane active</xsl:attribute>
                 </xsl:if>
-                <xsl:for-each select="//dim:field[@qualifier='supplement']">
+                <xsl:call-template name="itemSummaryView-DIM-events"/>
+	        <xsl:for-each select="//dim:field[@qualifier='supplement']">
                     <p><xsl:value-of select="." /></p>
                 </xsl:for-each>
-                <xsl:call-template name="itemSummaryView-DIM-events"/>
                 <xsl:if test="//dim:field[@qualifier='edition']">
                     <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></p>
                 </xsl:if>
