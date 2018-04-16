@@ -457,4 +457,14 @@ function askNerd () {
 			});
 		});
 
+    if ($("input[name='dc_identifier_intern']").length != 0 )
+    {
+	if ($("input[name='dc_identifier_intern']").val() == "" )
+	{
+		$("input[name='dc_identifier_intern']").val("isbn-");
+	}
+    }
+
+   if ($("#aspect_submission_StepTransformer_field_dc_identifier_intern").length < 2 && $("#aspect_submission_StepTransformer_field_dc_identifier_intern").val() == ""){$("#aspect_submission_StepTransformer_field_dc_identifier_intern").val("isbn-")}
+
 })(jQuery);

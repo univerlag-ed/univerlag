@@ -230,10 +230,10 @@
                    <strong>
                    <xsl:choose>
                         <xsl:when test="//dim:field[@qualifier='subtype'] and //dim:field[@qualifier='subtype']='catalog'">
-                            <i18n:text>xmlui.item.event.catalog</i18n:text>
+                            <i18n:text>xmlui.item.event.catalog</i18n:text><xsl:text>: </xsl:text>
                         </xsl:when>
                         <xsl:otherwise>
-                            <i18n:text>xmlui.item.event</i18n:text>
+                            <i18n:text>xmlui.item.event</i18n:text><xsl:text>: </xsl:text>
                         </xsl:otherwise>
                     </xsl:choose>
                    </strong>

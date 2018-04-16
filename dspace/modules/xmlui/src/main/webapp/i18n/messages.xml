@@ -2710,6 +2710,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Verwandtes</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-details">Details</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-edition">Edition</message>
+    <message key="xmlui.item.event">Veranstaltung</message>
     <!-- static sites -->
 
     <message key="xmlui.static.navigation.informations">Informationen</message>
@@ -4349,6 +4350,10 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="ita">italienisch</message>
     <message key="jpn">japanisch</message>
     <message key="chi">chinesisch</message>
+    <message key="rus">russisch</message>
+    <message key="mon">mongolisch</message>
+    <message key="ind">indonesisch</message>
+    <message key="ukr">ukrainisch</message>
 
     <message key="monograph">Monographie</message>
     <message key="anthology">Sammelband</message>

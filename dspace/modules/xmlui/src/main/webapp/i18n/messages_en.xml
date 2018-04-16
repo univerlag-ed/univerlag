@@ -2678,6 +2678,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-related.items">Related products</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-details">Details</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-edition">Edition</message>
+    <message key="xmlui.item.event">Event</message>
     <!-- static sites -->
 
     <message key="xmlui.static.navigation.informations">Information</message>
@@ -4329,6 +4330,10 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     <message key="ita">italian</message>
     <message key="jpn">japanese</message>
     <message key="chi">chinese</message>
+    <message key="rus">russian</message>
+    <message key="mon">mongolian</message>
+    <message key="ind">indonesian</message>
+    <message key="ukr">ukrainian</message>
 
     <message key="monograph">Monograph</message>
     <message key="anthology">Anthology</message>
