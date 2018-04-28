@@ -66,8 +66,7 @@ and searching the repository.
             <map:action name="NotModifiedAction" src="org.dspace.app.xmlui.aspect.general.NotModifiedAction" />
             <map:action name="ItemRequestResponseAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.ItemRequestResponseAction" />
             <map:action name="SendCostRequestAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.SendCostRequestAction"/>
-            <map:action name="SendOrderAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.SendOrderAction"/>
-            <map:action name="OrderAction" src="org.dspace.app.xmlui.aspect.artifactbrowser.OrderAction"/>
+            <map:action name="OrderAction" src="org.dspace.app.xmlui.aspect.viewartifacts.OrderAction"/>
         </map:actions>
 
 

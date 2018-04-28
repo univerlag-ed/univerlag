@@ -552,6 +552,9 @@
             <xsl:variable name="externalMetadataUrl">
                 <xsl:text>cocoon://metadata/handle/3/</xsl:text>
                 <xsl:choose>
+		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.17875')">
+                        <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
+                    </xsl:when>
                     <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], 'univerlag')">
                         <xsl:value-of select="substring-after(//dim:field[@element='identifier'][@qualifier='uri'], 'purl?univerlag-')"/>
                     </xsl:when>

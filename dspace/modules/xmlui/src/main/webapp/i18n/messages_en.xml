@@ -4063,7 +4063,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     <message key="xmlui.static.shipping.costs.trail">Shipping costs</message>
     <message key="xmlui.static.shipping.costs.head">Ordering: Shipping costs</message>
     <message key="xmlui.static.shipping.costs">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-6">
                 <table class="table table-striped shipping">
                     <thead>
@@ -4125,7 +4125,8 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
         <div class="alert alert-info">
             The delivery is free of charge for orders worth more then 60.00 € in Germany or over 70.00 € within the European Union.
         </div>
-
+	-->
+	A flat rate of €3.50 shipping costs is charged per order. 
     </message>
 
     <message key="xmlui.static.review.form">Review Form</message>

@@ -370,7 +370,6 @@
 
 
         <a class="list-group-item ds-option" href="{$context-path}/{$special-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.special.collection</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/info/list?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.ring.lectures</i18n:text></a>
 
 
     </xsl:template>

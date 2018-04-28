@@ -545,19 +545,24 @@
             <xsl:variable name="externalMetadataUrl">
                 <xsl:text>cocoon://metadata/handle/3/</xsl:text>
                 <xsl:choose>
+		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.17875')">
+                        <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
+                    </xsl:when>
                     <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], 'univerlag')">
                         <xsl:value-of select="substring-after(//dim:field[@element='identifier'][@qualifier='uri'], 'purl?univerlag-')"/>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="substring-after(//dim:field[@element='identifier'][@qualifier='uri'], 'purl?')"/>
                     </xsl:otherwise>
+
                 </xsl:choose>
                 <xsl:text>/mets.xml</xsl:text>
             </xsl:variable>
 
+		
             <xsl:variable name="metsDoc" select="document($externalMetadataUrl)/mets:METS/mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']"/>
-
             <xsl:for-each select="$metsDoc/mets:file[1]">
+		<!-- <xsl:value-of select="$metsDoc/mets:file[1]" /> -->
                 <!-- Do not show description if file is not free or no files atteched -->
                 <xsl:choose>
                     <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">

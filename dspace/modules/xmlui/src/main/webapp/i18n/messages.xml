@@ -4110,7 +4110,7 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.static.shipping.costs.trail">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.head">Versandkosten</message>
     <message key="xmlui.static.shipping.costs">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-6">
                 <table class="table table-striped shipping">
                     <thead>
@@ -4171,7 +4171,8 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         <div class="alert alert-info">
             Bei Bestellungen im Wert von über 60,00 € innerhalb Deutschland bzw. über 70,00 € innerhalb der Europäischen Union liefert der Verlag versandkostenfrei.
         </div>
-
+	-->
+	Pro Bestellung werden pauschal 3,50 € Versandkosten berechnet.
     </message>
 
     <message key="xmlui.static.review.form">Begutachtungsbogen</message>

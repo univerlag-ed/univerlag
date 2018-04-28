@@ -1,4 +1,4 @@
-package org.dspace.app.xmlui.aspect.artifactbrowser;
+package org.dspace.app.xmlui.aspect.viewartifacts;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -11,6 +11,7 @@ import org.apache.cocoon.environment.ObjectModelHelper;
 import org.apache.cocoon.environment.Redirector;
 import org.apache.cocoon.environment.Request;
 import org.apache.cocoon.environment.SourceResolver;
+import org.apache.log4j.Logger;
 import org.dspace.app.xmlui.utils.ContextUtil;
 import org.dspace.core.ConfigurationManager;
 import org.dspace.core.Context;
@@ -31,7 +32,6 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.dspace.app.xmlui.utils.Bill;
 
 import java.util.Locale;
 
@@ -116,7 +116,11 @@ public class OrderAction extends AbstractAction
      */
 
 
-    public static final String[] partValues = {"print", "cdrom", "dvd"};
+    /** log4j logger */
+    private static Logger log = Logger.getLogger(OrderAction.class);
+
+
+    private final String[] partValues = {"print", "cdrom", "dvd"};
     private Bill bill = new Bill();
     JSONObject jsonResult = new JSONObject();
 
@@ -241,22 +245,21 @@ public class OrderAction extends AbstractAction
                 }
 
 
-                String extent = (part.equals("print")) ? (dsitem.getMetadata("dc", "format", "extent", Item.ANY)[ind].value) : "0";
+                //String extent = (part.equals("print")) ? (dsitem.getMetadata("dc", "format", "extent", Item.ANY)[ind].value) : "0";
                 String price = dsitem.getMetadata("dc", "price", part, Item.ANY)[ind].value;
 
                 //Check price and extent for print
-                if ((extent == null) || extent.equals("")
-                        || (price == null) || price.equals("")) {
+                if ((price == null) || price.equals("")) {
                     writeError(map, "No size or price found for item " + id);
                     System.out.println(jsonResult.toJSONString());
                     return map;
                 } else {
 
-                    bill.addWeight(quantity, extent);
+                    //bill.addWeight(quantity, extent);
                     bill.addPrice(quantity, price);
                 }
                 System.out.println("quantity: " + quantity);
-                System.out.println("extent: " + extent);
+                //System.out.println("extent: " + extent);
                 System.out.println("checking request...");
                 //for order only
                 if (action.equals("order")) {
@@ -330,8 +333,8 @@ public class OrderAction extends AbstractAction
                 System.out.println("calculating shipping costs...");
 
                 jsonResult.put("products", bill.getProductCost());
-                jsonResult.put("shipping", bill.getShippingCost(countrycode));
-                jsonResult.put("total", bill.getTotalSum(countrycode));
+                jsonResult.put("shipping", bill.getShippingCost());
+                jsonResult.put("total", bill.getTotalSum());
             }
             System.out.println("Costrequest finished!! Result: " + jsonResult.toJSONString());
             map.put("result", jsonResult.toJSONString());
@@ -352,8 +355,6 @@ public class OrderAction extends AbstractAction
             String customer_info;
             String delivery_info;
             String order_data;
-            String shipping_cost = "";
-            String total_sum = bill.getTotalSum(countrycode);
 			String formvariant = "_complete";
 			String customer_locale = "DE";
 			
@@ -387,10 +388,19 @@ public class OrderAction extends AbstractAction
             if ( ((customer.get("name") == null) &&  (customer.get("company") == null)) || (customer.get("address") == null)
                     || (customer.get("zipcode") == null) || (customer.get("city") == null)
                     || (customer.get("country") == null)) {
-                writeError(map, "incomplete customer info");
-                System.out.println(jsonResult.toJSONString());
-                return map;
+                    writeError(map, "incomplete customer info");
+                    System.out.println(jsonResult.toJSONString());
+                    return map;
+            }
+            else if (((customer.get("name").equals("")) &&  (customer.get("company").equals(""))) || (customer.get("address").equals(""))
+                        || (customer.get("zipcode").equals("")) || (customer.get("city").equals(""))
+                        || (customer.get("country").equals(""))) {
+                    writeError(map, "incomplete customer info");
+                    System.out.println(jsonResult.toJSONString());
+                    return map;
+
             } else {
+
                 System.out.println("data complete!");
                 //customer data complete
                 if (customer.get("name") != null) {
@@ -474,37 +484,25 @@ public class OrderAction extends AbstractAction
                 }
                 delivery_info = customer_info;
             }
-            System.out.println("Checking bill data...");
-            
-            shipping_cost = bill.getShippingCost(countrycode);
-            if (bill.getShippingCost(countrycode).startsWith("-1"))  {
-					/*shipping_cost_en += "Information on demand.";
-					shipping_cost_de += "Information auf Anfrage.";
-                    total_sum_en += " plus shipping costs";
-					total_sum_de += " zzgl. Versandkosten";*/
-					formvariant = "";
 
-            } 
-            System.out.println("calculating shipping costs...");
+            //collect and log bill data
+            System.out.println("Customer: " +  customer_info + "Checking bill data...");
+            
+            String shipping_cost = bill.getShippingCost();
+
+            System.out.println("shipping costs...");
+
+            String products_cost = bill.getProductCost();
+            String total_sum = bill.getTotalSum();
 
 
             // set parameter for confirmation email to customer
             System.out.println("setting confirmation email parameter...");
             
             /**Email confirm_email = Email.getEmail("order_confirm" + formvariant + "_" + customer_locale); **/
-	    Email confirm_email = Email.getEmail(I18nUtil.getEmailFilename(new Locale(customer_locale), "order_confirm" + formvariant ));
+	        Email confirm_email = Email.getEmail(I18nUtil.getEmailFilename(new Locale(customer_locale), "order_confirm" + formvariant ));
             DecimalFormat df = new DecimalFormat("##0.00");
             System.out.println("Locale: " + context.getCurrentLocale());
-            int product = Integer.parseInt(bill.getProductCost().replace(".", ""));
-            try {
-                int shipping = Integer.parseInt(shipping_cost.replace(".", ""));
-                total_sum = df.format((product + shipping)/100.00);
-
-            }
-            catch (NumberFormatException nfe) {
-                System.out.println("shipping cost not integer" );
-            }
-
 
             confirm_email.addRecipient(customer_email);
             confirm_email.addArgument(new Date());
@@ -512,7 +510,7 @@ public class OrderAction extends AbstractAction
             confirm_email.addArgument(customer_info);                        //customer name, address, zipcode, city, country
             confirm_email.addArgument(delivery_info);                        //delivery address with name, address, zipcode, city, country
             confirm_email.addArgument(order_data);                            //ordered product info: price, quantitiy, creators, title, description, isbn
-            confirm_email.addArgument(df.format(product/100.00));                //price sum of ordered products
+            confirm_email.addArgument(products_cost);                //price sum of ordered products
             confirm_email.addArgument(shipping_cost);                        //costs for shipping
             confirm_email.addArgument(total_sum);                           //total amount to pay
 
@@ -539,7 +537,7 @@ public class OrderAction extends AbstractAction
             email.addArgument(customer_info);
             email.addArgument(delivery_info);
             email.addArgument(order_data);
-            email.addArgument(df.format(product/100.00));
+            email.addArgument(products_cost);
             email.addArgument(shipping_cost);
             email.addArgument(total_sum);
 
@@ -560,6 +558,7 @@ public class OrderAction extends AbstractAction
             jsonResult.put("success", "true");
             map.put("result", jsonResult.toJSONString());
             System.out.println(jsonResult.toJSONString());
+
             return map;
         }
 
@@ -572,6 +571,132 @@ public class OrderAction extends AbstractAction
         jsonResult.put("success", "false");
         jsonResult.put("error", errorMessage);
         resultmap.put("result", jsonResult.toJSONString());
+    }
+
+
+
+
+
+
+    public class Bill {
+        //The price of actual products in the shopping cart in cent
+        protected int amountSum;
+        protected int shippingCosts;
+
+        DecimalFormat df = new DecimalFormat("##0.00");
+
+        public Bill() {
+            init();
+        }
+
+        private void init()
+        {
+            amountSum = 0;
+            try {
+                shippingCosts = Integer.parseInt(ConfigurationManager.getProperty("xmlui.shipping.costs").replace(",", ""));
+            }
+            catch (NumberFormatException nfe) {
+                shippingCosts = 350;
+                log.warn("Invalide shipping costs in dspace.cfg: " );
+
+            }
+
+        }
+
+
+        /**
+         * Adds product price to total price
+         *
+         * @param count
+         *            number of products
+         * @param price
+         *            product price
+         */
+        public void addPrice(String count, String price)
+        {
+            int c = 0;
+            int p = 0;
+
+            try {
+                c = Integer.parseInt(count);
+                p = Integer.parseInt(price.replace(",", ""));
+
+
+            }
+            catch (NumberFormatException nfe) {
+                log.warn("Trying to add invalid price to bill: " + count + " * " + price );
+            }
+
+            if (c > 0) {
+                amountSum +=  (c * p );
+            }
+        }
+
+        /**
+         * Gives the cost of all ordered products
+         * with two decimal places in euro
+         *
+         * @return
+         *            cost of products
+         */
+        public String getProductCost() {
+
+            return df.format(amountSum/100.00);
+        }
+
+        /**
+         * Gives the cost of all ordered products
+         * with two decimal places in euro
+         *
+         * @return
+         *            shipping costs
+         */
+        public String getShippingCosts() {
+
+            return df.format(shippingCosts/100.00);
+        }
+
+        /**
+         * Gives getShippingCost result as String
+         * with two decimal places in euro
+         *
+         *
+         * @return
+         *          delivery cost or 0.00
+         */
+        public String getShippingCost()
+        {
+
+
+            System.out.println("cost string: " + df.format(shippingCosts/100.00));
+            return df.format(shippingCosts/100.00);
+
+        }
+
+        private int getAmount(){
+            return amountSum;
+        }
+
+        /**
+         * Gives total price of order
+         * i.e. sum of product cost + shipping cost
+         * with two decimal places in euro
+         *
+         * @return
+         *          total price to pay for order
+         */
+        public String getTotalSum() {
+
+            if (amountSum > 0) {
+                return df.format((amountSum + shippingCosts) / 100.00);
+            } else{
+                return "0.00";
+            }
+        }
+
+
+
+
     }
 
 }
