@@ -239,8 +239,10 @@
                    </strong>
                     <xsl:choose>
                         <xsl:when test="contains(., '(')">
+
                                 <xsl:variable name="tail"><xsl:value-of select="substring-after(., ')')"/></xsl:variable>
-                                <xsl:value-of select="concat(substring-before(., ';'), ', ')"/>
+			 	<xsl:variable name="head"><xsl:value-of select="normalize-space(substring-before(., '('))" /></xsl:variable>
+				<xsl:value-of select="concat(translate($head, ';', ''), ', ')"/>
                                 <xsl:if test="contains($tail, ':')">
                                         <xsl:variable name="tail2"><xsl:value-of select="substring-after($tail, ':')"/></xsl:variable>
                                         <xsl:if test="contains($tail2, '.')">
