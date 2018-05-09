@@ -598,7 +598,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
+						<xsl:text> (Eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -607,7 +608,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text> -->
+						<xsl:text> (Arr.)</xsl:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
@@ -705,7 +707,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
+						<xsl:text> (Eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -714,7 +717,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text> -->
+						<xsl:text> (Arr.)</xsl:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
@@ -805,7 +809,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+						<xsl:text> (Eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -814,7 +818,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
+						<xsl:text> (Arr.)</xsl:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
