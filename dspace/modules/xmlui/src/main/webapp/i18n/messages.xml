@@ -3147,8 +3147,25 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <p>
                 Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="//creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
             </p>
+	<p>
+		Die Archivierung der Volltextversionen erfolgt im Rahmen der bibliothekarischen Verantwortung für die Langzeitverfügbarkeit digitaler Objekte durch Meldung an die DNB (Deutsche Nationalbibliothek).
+		</p>
+		
+	<p>
+		Wir empfehlen unseren Autorinnen und Autoren, schon mit ihren ersten Publikationen ein <a href="//orcid.org/" class="extern-link" target="_blank">ORCID iD</a> (Open Researcher and 
 
+Contributor ID) für sich zu registrieren, um im wissenschaftlichen Kontext eindeutig identifizierbar und authentifizierbar zu sein. Ein ORCID iD bietet jeder 
 
+Wissenschaftlerin/jedem Wissenschaftler die Möglichkeit, sich die eigenen Publikationen eindeutig zuzuordnen und sie besser auffindbar zu machen. Der ORCID iD bleibt außerdem bei 
+
+Namensveränderungen oder Affiliationswechsel immer derselbe, was gerade am Beginn einer wissenschaftlichen Karriere wichtig ist. Auf der Basis eindeutiger Autoren-IDs wie dem ORCID 
+
+iD können Verlage und Bibliotheken außerdem weitere Informationen zu Autorinnen und Autoren und ihren Publikationen anbieten, etwa Verlinkungen auf Nachweise in Wikipedia oder in 
+
+nationalen Bibliographien.	
+
+	</p>	
+		
         </div>
     </message>
     <message key="xmlui.static.publisher-catalog.link">Verlagskatalog</message>
@@ -3564,7 +3581,27 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         </div>
 
         <h3>Weiteres zu Open Access</h3>
-        <div class="media">
+        
+<div class="media">
+            <div class="media-left">
+                <a href="//hirmeos.eu/" class="extern-link" target="_blank">
+                    <img class="media-object" src="/static/icons/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">High Integration of Research Monographs in the European Open Science infrastructure</h4>
+                <p>Das Projekt <a href="//hirmeos.eu/" class="extern-link" target="_blank">HIRMEOS</a> (High Integration of Research Monographs in the European Open Science infrastructure) befasst 
+sich mit den Haupthindernissen sowie Lösungsansätzen für die vollständige Integration von Open Access Monographien in die wissenschaftliche Wertschöpfungskette.
+HIRMEOS zielt darauf ab, Prototypen von innovativen Dienstleistungen für Monographien zu entwickeln aufbauend auf der bestehende Open Science-Infrastruktur, indem es zusätzliche 
+Daten, Links und Interaktionen mit den Dokumenten bereitstellt und gleichzeitig den Weg zu neuen Instrumenten für die Forschungsevaluierung ebnet. Das Projekt wird dazu beitragen, 
+weitere Disziplinen wie die buchorientierten Geistes- und Sozialwissenschaften für das Open Science-Paradigma zu öffnen und dessen Abdeckung zu erweitern. Dadurch sollen die 
+bereits vorhandenen Publikationsplattformen und Repositorien, die ebenfalls an der OpenAIRE-Infrastruktur teilnehmen, durch HIRMEOS verbessert und verstärkt werden.</p>
+            </div>
+        </div>
+	    
+	    
+	    
+	 <div class="media">
             <div class="media-left">
                 <a href="//oaspa.org/" class="extern-link" target="_blank">
                     <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
@@ -3574,7 +3611,6 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                 <h4 class="media-heading">Open Access Scholarly Publishers Association</h4>
                 <p>Die internationale Vereinigung der wissenschaftlichen Open Access Verlage (<a href="//oaspa.org/" class="extern-link" target="_blank">OASPA</a>) setzt sich zum Ziel, die Interessen der OA-Zeitschriften- und Buchverlage aller Wissensschaftsdisziplinen weltweit zu unterstützen und zu repräsentieren.
                     Dafür stellt die Vereinigung ein Forum zum Austausch für alle wichtigen Informationen und Erfahrungswerte bereit, setzt Standards bei OA, entwickelt und verbessert Geschäfts- und Publikationsmodelle für OA, plädiert für den Gold OA-Weg, unterrichtet die Wissenschaftsgemeinden und die breite Öffentlichkeit über die Vorteile von OA und treibt mit Innovationen im Bereich OA diese Form der wissenschaftlichen Publikationsweise voran.</p>
-                ...
             </div>
         </div>
 
