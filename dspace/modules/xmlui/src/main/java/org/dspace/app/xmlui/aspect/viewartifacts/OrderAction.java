@@ -126,6 +126,7 @@ public class OrderAction extends AbstractAction
 
     public Map act(Redirector redirector, SourceResolver resolver, Map objectModel,
                    String source, Parameters parameters) throws Exception {
+     synchronized (this) {
         Request request = ObjectModelHelper.getRequest(objectModel);
 
         Context context = ContextUtil.obtainContext(objectModel);
@@ -565,6 +566,8 @@ public class OrderAction extends AbstractAction
         //if we are here request is not valid
         writeError(map, "invalid request");
         return map;
+
+      }
     }
 
     private void writeError(Map<String, String> resultmap, String errorMessage) {

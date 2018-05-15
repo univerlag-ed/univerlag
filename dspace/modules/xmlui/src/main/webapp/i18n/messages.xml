@@ -3584,7 +3584,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         
 <div class="media">
             <div class="media-left">
-                <a href="//hirmeos.eu/" class="extern-link" target="_blank">
+                <a href="//hirmeos.eu/" target="_blank">
                     <img class="media-object" src="/static/icons/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
                 </a>
             </div>
@@ -3603,7 +3603,7 @@ bereits vorhandenen Publikationsplattformen und Repositorien, die ebenfalls an d
 	    
 	 <div class="media">
             <div class="media-left">
-                <a href="//oaspa.org/" class="extern-link" target="_blank">
+                <a href="//oaspa.org/" target="_blank">
                     <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
                 </a>
             </div>
