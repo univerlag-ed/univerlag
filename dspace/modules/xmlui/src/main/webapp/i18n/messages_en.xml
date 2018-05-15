@@ -3040,9 +3040,13 @@ Göttingen University Press
             <p>
                 After publication your book will be available online <a href="/info/openaccess">open access</a> on our website, endowed with a <a href="//creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Licence 4.0</a>.
                 We also report your work to important databases and catalogues (e. g. GVK, DNB). The printed version will be listed in the "German Books in Print" ("Verzeichnis lieferbarer Bücher (VLB)") and with Amazon.
+	</p>
 
-            </p>
-
+	<p>
+		The long-term archiving of the full text version is carried out by reporting the files to the German National Library.
+	</p>
+		
+		
 
         </div>
     </message>
@@ -3436,7 +3440,32 @@ Editorial board and staff members of the press are aware of their responsibility
             </div>
 
             <h3>More on Open Access</h3>
-            <div class="media">
+            
+	<div class="media">
+                <div class="media-left">
+                    <a href="//hirmeos.eu/" target="_blank">
+                        <img class="media-object" src="/static/icons/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">High Integration of Research Monographs in the European Open Science infrastructure</h4>
+                    <p>
+                        <a href="//hirmeos.eu/" class="extern-link" target="_blank">HIRMEOS</a> (High Integration of Research Monographs in the European Open Science infrastructure) will prototype and set 
+up a common layer of added value services on top of existing e-publishing platforms for open access monographs. The set of services that will be prototyped will make scattered and 
+loosely connected collections of documents an integrated part of the open science knowledge system at european level by implementing common standards and crosslinking the documents
+with others and with various types of digital objects related to the research process. The project builds on two combined pillars: integration and innovation. HIRMEOS won’t develop
+new technologies from scratch but rather use already existing ones and prototype their implementation on the specific types of digital objects that are academic monographs. The 
+technologies used will be the most innovative of the moment although mature enough to be implemented.</p>
+                </div>
+            </div>
+	
+		
+		
+		
+		
+		
+		
+	<div class="media">
                 <div class="media-left">
                     <a href="//oaspa.org/" target="_blank">
                         <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
