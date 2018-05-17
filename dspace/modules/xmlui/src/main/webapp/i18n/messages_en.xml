@@ -3444,7 +3444,7 @@ Editorial board and staff members of the press are aware of their responsibility
 	<div class="media">
                 <div class="media-left">
                     <a href="//hirmeos.eu/" target="_blank">
-                        <img class="media-object" src="/static/icons/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
+                        <img class="media-object" src="/dokumente/images/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
                     </a>
                 </div>
                 <div class="media-body">
@@ -3460,6 +3460,21 @@ technologies used will be the most innovative of the moment although mature enou
             </div>
 	
 		
+<div class="media">
+            <div class="media-left">
+                <a href="//doabooks.org//" target="_blank">
+                    <img class="media-object" src="/dokumente/images/doab.png" alt="doab"></img>
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Directory of open access books</h4>
+                <p>"The primary aim of DOAB is to increase discoverability of Open Access books. Academic publishers are invited to provide metadata of their Open Access books to DOAB. Metadata will 
+be harvestable in order to maximize dissemination, visibility and impact. Aggregators can integrate the records in their commercial services and libraries can integrate the 
+directory into their online catalogues, helping scholars and students to discover the books. The directory is open to all publishers who publish academic, peer reviewed books in 
+Open Access and should contain as many books as possible, provided that these publications are in Open Access and meet academic standards."
+		    </p>
+            </div>
+        </div>
 		
 		
 		
