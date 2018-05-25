@@ -185,7 +185,7 @@
     <!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
     <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Search Scope</message>
     <message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">All</message>
-    <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Fulltext search:</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Full-text search:</message>
     <message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Browse by</message>
     <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Titles</message>
     <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Authors</message>
@@ -202,7 +202,7 @@
     <!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
     <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Search Scope</message>
     <message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">All</message>
-    <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Fulltext seach:</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Full-text search:</message>
     <message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Browse by</message>
     <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Titles</message>
     <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Authors</message>
@@ -2184,7 +2184,7 @@
     <message key="xmlui.dri2xhtml.structural.search-in-collection">This Collection</message>
 
     <message key="xmlui.dri2xhtml.structural.pagination-previous">Previous Page</message>
-    <message key="xmlui.dri2xhtml.structural.pagination-info">Now showing items {0}-{1} of {2}</message>
+    <message key="xmlui.dri2xhtml.structural.pagination-info">Showing items {0}-{1} of {2}</message>
     <message key="xmlui.dri2xhtml.structural.pagination-next">Next Page</message>
 
     <message key="xmlui.dri2xhtml.structural.link_cc">Creative Commons</message>
@@ -3085,7 +3085,7 @@ Editorial board and staff members of the press are aware of their responsibility
         <div>
 
             <p>
-                For publication, Goettingen University Press needs a publication ready PDF document.
+                For publication, Göttingen University Press needs a publication ready PDF document.
                 We offer templates for word processing applications and templates for publishing with (La-)TeX.
                 Using our templates, the author can prepare print ready files which reduces publishing costs by a significant amount.
                 Please note that our templates are currently only available with German sample texts. You can use the contact facility on our web site in order to get help.
@@ -3468,7 +3468,7 @@ technologies used will be the most innovative of the moment although mature enou
             </div>
             <div class="media-body">
                 <h4 class="media-heading">Directory of open access books</h4>
-                <p>"The primary aim of DOAB is to increase discoverability of Open Access books. Academic publishers are invited to provide metadata of their Open Access books to DOAB. Metadata will 
+                <p>"The primary aim of <a href="//doabooks.org//" class="extern-link" target="_blank">DOAB</a> is to increase discoverability of Open Access books. Academic publishers are invited to provide metadata of their Open Access books to DOAB. Metadata will 
 be harvestable in order to maximize dissemination, visibility and impact. Aggregators can integrate the records in their commercial services and libraries can integrate the 
 directory into their online catalogues, helping scholars and students to discover the books. The directory is open to all publishers who publish academic, peer reviewed books in 
 Open Access and should contain as many books as possible, provided that these publications are in Open Access and meet academic standards."
@@ -3635,15 +3635,12 @@ Open Access and should contain as many books as possible, provided that these pu
 
             </p>
 
-            <p>
-                German users please switch the web site&#39;s language in order to see the German text.
-            </p>
-
+            
             <h3>Privacy</h3>
 
-            <p>The Repository may collect anonymized information on the use.</p>
+            <p>The repository may track anonymized usage information.</p>
             <p>
-                Out opt: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en" target="_blank" class="extern-link">Do not count my visits.</a>
+                Opt out: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=en" target="_blank" class="extern-link">Do not count my visits.</a>
             </p>
 
             <h3>Copyright</h3>
@@ -3775,7 +3772,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
             The "Göttinger Schriften zu Landschaftsinterpretation und Tourismus” present a sample of the works of the independent non-profit organization ZELT,
             who aims at supporting the interpretation of landscapes in context with a sustainable development in the fields of tourism and regional issues.
             <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
-            This series is being published by Goettingen University Press from volume 4 onwards.
+            This series is being published by Göttingen University Press from volume 4 onwards.
         </p>
         <p class="narrow">ISSN (Print): 2512-7128</p>
         <p class="narrow">ISSN (Online): 2512-7136</p>
@@ -3980,7 +3977,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
         <p>
             The series "Materialien Deutsch als Fremdsprache (DaF)” is being published by the "Fachverband Deutsch als Fremdsprache (FaDaF)”.
             It comprises research results from the annual meetings and symposia of the research group as well as theses papers and other important reports.
-            This series is being published by Goettingen University Press from volume 78 onwards. Since the middle of 2017 (Vol. 97 ff.) the series is being continued as <a href="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“</a> within the Universitätsverlag Göttingen.
+            This series is being published by Göttingen University Press from volume 78 onwards. Since the middle of 2017 (Vol. 97 ff.) the series is being continued as <a href="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“</a> within the Universitätsverlag Göttingen.
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
@@ -4180,22 +4177,21 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     <message key="xmlui.static.order-conditions.head">Ordering: Terms and Conditions</message>
     <message key="xmlui.static.order-conditions">
         <p>
-            Please note that we have not yet been able to translate the terms and conditions to the English language since it would have to be judicially correct.
-            For that reason, we provide the terms and conditions in German language and a short abstract in English.
-            If you have questions, please feel invited to use our contact form linked above.
-            Please note that the second section of our terms and conditions, which deals with revoking of orders, only applies to customers living in
-            the countries of the European Union.
+            Please note that we have not yet been able to translate the terms and conditions into the English language.
+            For that reason, we provide the terms and conditions in German and a short summary in English.
+            If you have any questions, please feel free to contact us.
+            Please note that the second section of our terms and conditions, which deals with the cancellation of orders, only applies to customers living in
+            the European Union.
         </p>
         <p>
             Short summary:
         </p>
         <p>
-            When transmitting the final step of your order on these web pages, you are effectively making us an offer. We accept your offer by sending you the ordered products.
+            When transmitting the final step of your order via our website, you are effectively making us an offer. We accept your offer by sending you the ordered products.
             Please note that we add shipping and handling costs to the displayed cost of the items.
             Shipping and handling costs for Germany and countries of the Eruopean Union appear on your order once you have put items into the shopping cart.
             Please use the contact form in order to find out about the exact costs for shipping outside the European Union or in case that you have special needs,
-            e.g. delivery by air mail. We don&#39;t archive or share personal data that you transmit on our web site except for the purpose of billing and delivery and
-            only as it is actually required.
+            e.g. delivery by air mail. We don&#39;t archive or share your personal data except for the purpose of billing and delivery.
         </p>
 
         <p>Terms and Conditions (German, see above) </p>
