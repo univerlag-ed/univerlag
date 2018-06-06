@@ -3585,7 +3585,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
 <div class="media">
             <div class="media-left">
                 <a href="//hirmeos.eu/" target="_blank">
-                    <img class="media-object" src="/static/icons/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
+                    <img class="media-object" src="/dokumente/images/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
                 </a>
             </div>
             <div class="media-body">
@@ -3598,6 +3598,22 @@ weitere Disziplinen wie die buchorientierten Geistes- und Sozialwissenschaften f
 bereits vorhandenen Publikationsplattformen und Repositorien, die ebenfalls an der OpenAIRE-Infrastruktur teilnehmen, durch HIRMEOS verbessert und verstärkt werden.</p>
             </div>
         </div>
+	    
+
+
+<div class="media">
+            <div class="media-left">
+                <a href="//doabooks.org//" target="_blank">
+                    <img class="media-object" src="/dokumente/images/doab.png" alt="doab"></img>
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Directory of open access books</h4>
+                <p>DOAB verfolgt das Ziel, die Sichtbarkeit von Open-Access-Monographien zu verbessern. Wissenschaftsverlage werden gebeten, die Daten ihrer qualitätsgeprüften und unter einer oa-
+Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggregatoren (Verlage, Bibliotheken) in ihre jeweiligen Angebote (Verzeichnisse, Kataloge etc.) übernommen werden und ermöglichen so eine größere Sichtbarkeit und Verbreitung der Titel.</p>
+            </div>
+        </div>
+   
 	    
 	    
 	    
@@ -3691,7 +3707,7 @@ bereits vorhandenen Publikationsplattformen und Repositorien, die ebenfalls an d
 
             <h3>Vertreter</h3>
 
-            <p>Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) wird vertreten durch den leitenden Direktor <strong>Dr. Wolfram Horstmann</strong>.</p>
+            <p>Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) wird vertreten durch den leitenden Direktor <strong>Prof. Dr. Wolfram Horstmann</strong>.</p>
 
             <p>Die SUB Göttingen ist als zentrale Einrichtung eine organisatorische, rechtlich nicht selbständige Einheit der Georg-August-Universität Göttingen. Die Georg-August-Universität Göttingen ist eine Körperschaft des öffentlichen Rechts. Sie wird durch die Präsidentin Prof. Dr. Ulrike Beisiegel gesetzlich vertreten.
             </p>

@@ -3154,8 +3154,8 @@ Editorial board and staff members of the press are aware of their responsibility
                 <h4 class="list-item-header section-heading">Stylesheet 14,8x21cm</h4>
                 <p>Please use this stylesheet for documents in size 14,8x21cm.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_DINA5.doc" class="btn btn-default btn-sm">MS-Word</a>
-                    <a href="/static/documents/formatvorlage_DINA5.pdf" class="btn btn-default btn-sm">PDF</a>
+                    <a href="/dokumente/texts/formatvorlage_DINA5.doc" class="btn btn-default btn-sm">MS-Word</a>
+                    <a href="/dokumente/texts/formatvorlage_DINA5.pdf" class="btn btn-default btn-sm">PDF</a>
                 </div>
             </div>
 
@@ -3163,7 +3163,7 @@ Editorial board and staff members of the press are aware of their responsibility
                 <h4 class="list-item-header section-heading">Stylesheet LaTeX</h4>
                 <p>Please use this stylesheet für collective volumes (e.g. Proceedings) which are going to be published in size 17x24cm.</p>
                 <div class="button-panel">
-                    <a href="/static/documents/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archive (.zip)</a>
+                    <a href="/dokumente/texts/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archive (.zip)</a>
                 </div>
 
             </div>
@@ -3171,7 +3171,7 @@ Editorial board and staff members of the press are aware of their responsibility
             <div class="item">
                 <h4 class="list-item-header section-heading">Metadata scheme</h4>
                 <div class="button-panel">
-                    <a href="/static/documents/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
+                    <a href="/dokumente/texts/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
                 </div>
             </div>
 
@@ -3243,7 +3243,7 @@ Editorial board and staff members of the press are aware of their responsibility
         </div>
     </message>
 
-    <message key="xmlui.static.reviewform.link"><a href="/documents/simple-review_extern_130204.pdf">Review Form</a></message>
+    <message key="xmlui.static.reviewform.link"><a href="/documente/texts/simple-review_extern_130204.pdf">Review Form</a></message>
 
     <message key="xmlui.static.divisions.head">Publication Categories</message>
 
@@ -3343,7 +3343,7 @@ Editorial board and staff members of the press are aware of their responsibility
     <message key="xmlui.static.policy">
         <div class="ds-static-div">
             <p>
-                <i class="icon-file-pdf"></i><a href="/static/documents/Verlagspolicy-en_UVG_Stand161115.pdf">Publishing Policy</a>
+                <i class="icon-file-pdf"></i><a href="/dokumente/texts/Verlagspolicy-en_UVG_Stand161115.pdf">Publishing Policy</a>
                 <span class="pull-right">May 2015, Göttingen</span>
             </p>
             <p>
@@ -3360,7 +3360,7 @@ Editorial board and staff members of the press are aware of their responsibility
 
 
             <p>
-                In January 2015 the presidential board of the Georg-August-Universität Göttingen approved the <a href="/documents/Nutzungsordnung-2015-01-09.pdf">terms of entitlement</a> (available in German only) for the Göttingen University Press.
+                In January 2015 the presidential board of the Georg-August-Universität Göttingen approved the <a href="/documente/texts/Nutzungsordnung-2015-01-09.pdf">terms of entitlement</a> (available in German only) for the Göttingen University Press.
                 These terms clarify how the press publishes and which target groups it is meant to serve.
                 The terms of entitlement enable the press to become active for third-party-funded projects whose strict funding guidelines would normally exclude an inhouse service such as the university press as a beneficiary.
                 We appreciate that our terms of entitlement help us to promote Open Access especially in those disciplines that rely on publishing their research results in books—especially against the backdrop of little or no uptake of Open Access among the disci-plines&#39; commercial publishing houses.
@@ -3406,7 +3406,7 @@ Editorial board and staff members of the press are aware of their responsibility
                 We offer an innovative model of publication that focuses on optimal usage of modern ways of publication and gives choices to the authors regarding free online publication.
                 The focus of our publication work is broad awareness and accessibility for the publications in order to illustrate the scholarly performance of Goettingen&#39;s Scholars.
                 For that reason, we are aiming to make most of our publications available on the university&#39;s Institutional Repository (GOEDOC) by terms of Open Access.
-                Here you can find our <a href="/static/documents/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><i class="icon-file-pdf"></i>publication policy (in German)</a>.
+                Here you can find our <a href="/dokumente/texts/Verlagspolicy-de_UVG_150529_Stand161104.pdf"><i class="icon-file-pdf"></i>publication policy (in German)</a>.
                 (In a concise form you can find our policy for the deposit of pre- and postprints in Open Access repositories in the <a href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all" target="_blank" class="extern-link">Sherpa/RoMEO database</a>.)
             </p>
             <p>
@@ -3416,7 +3416,7 @@ Editorial board and staff members of the press are aware of their responsibility
 
 		</p>
 	<p>
-                Göttingen University Press provides some recommendations <a href="/documents/UVG_lizenzen_141124.pdf"><i class="icon-file-pdf"></i>Open-Access-Lizenzen im Universitätsverlag Göttingen"</a> relating to open access licenses.
+                Göttingen University Press provides some recommendations <a href="/dokumente/texts/UVG_lizenzen_141124.pdf"><i class="icon-file-pdf"></i>Open-Access-Lizenzen im Universitätsverlag Göttingen"</a> relating to open access licenses.
                 Please note that this text is only available in German.
             </p>
             <p>
