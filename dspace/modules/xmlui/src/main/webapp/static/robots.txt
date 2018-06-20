@@ -21,3 +21,4 @@ Disallow: /static/*
 Disallow: /static
 Disallow: /dokumente
 Disallow: /dokumente/*
+Disallow: /Redakteure.html

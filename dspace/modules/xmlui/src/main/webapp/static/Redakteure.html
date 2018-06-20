@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+  <head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<script type="text/javascript" src="jquery.1.7.1.min.js">&nbsp;</script>
+    <title>Dspace für Redakteure</title>
+
+    <script type="text/javascript">
+			$(document).ready(function() {   
+				//alert("OK");    
+				
+				var print = false;
+				var cd = false;
+				var dvd = false;
+				
+				$("#medium1, #medium2, #medium3").change(function() {
+					if ($("option#mp1").is(":selected") || $("option#mp2").is(":selected") || $("option#mp2").is(":selected")){
+						$("#print").show();
+					}
+					else {$("#print").hide();}
+					if ($("option#mcd1").is(":selected") || $("option#mcd2").is(":selected") || $("option#mcd2").is(":selected")){
+						$("#cd").show();
+					}
+					else {$("#cd").hide();}
+					if ($("option#mdvd1").is(":selected") || $("option#mdvd2").is(":selected") || $("option#mdvd2").is(":selected")){
+						$("#dvd").show();
+					}
+					else {$("#dvd").hide();}		
+				});
+
+				
+				
+				$("#descprint").change(function () {
+					$("#printdesc").text($(this).find('option:selected').val());
+				});
+				
+				$("input#desccdrom").change(function () {
+					if (($(this).val() == '-')) {
+						$("#cdromdesc").text("");
+						if (($("#pricecdrom") == '-')) {$("#cddp").hide();}
+					}
+					else {
+						$("#cdromdesc").text($(this).val());
+						if ($("#pricecdrom") != '-') {$("#cddp").show();}
+					}
+
+				});
+				
+				$("input#descdvd").change(function () {
+					if (($(this).val() == '-')) {
+						$("#dvddesc").text("");
+						if (($("#pricedvd") == '-')) {$("#dvddp").hide();}
+					}
+					else {
+						$("#dvddesc").text($(this).val());
+						if ($("#pricedvd") != '-') {$("#cddp").show();}
+					}
+
+				});
+				
+				$("#accessprint").change(function () {
+					if ($(this).find('option:selected').val() == 'amazon') {
+						$("#printaccess").html('<a href="#">amazon Bestellung</a> ');
+						$("#printaccess").attr("class", "unit access order amazon");
+						$("#printaccess").attr("title", "dc.notes.printaccess");
+					}
+					else if  ($(this).find('option:selected').val() == 'link') {
+						$("#printaccess").html('<a href="#">Online Version</a> ');
+						$("#printaccess").attr("class", "unit access");
+						$("#printaccess").attr("title", "dc.notes.printaccess");
+					}
+					else {
+					$("#printaccess").text($(this).find('option:selected').val());
+					$("#printaccess").attr("class", "unit access");
+					$("#printaccess").attr("title", "dc.notes.printaccess");
+					}
+				});
+				
+				$("#accesscdrom").change(function () {
+					if ($(this).find('option:selected').val() == 'amazon') {
+						$("#cdromaccess").html('<a href="#">amazon Bestellung</a> ');
+						$("#cdromaccess").attr("class", "unit access order amazon");
+						$("#cdromaccess").attr("title", "dc.notes.cdromaccess");
+					}
+					else if  ($(this).find('option:selected').val() == 'link') {
+						$("#cdromaccess").html('<a href="#">Online Version</a> ');
+						$("#cdromaccess").attr("class", "unit access");
+						$("#cdromaccess").attr("title", "dc.notes.cdromaccess");
+					}
+					else {
+					$("#cdromaccess").text($(this).find('option:selected').val());
+					$("#cdromaccess").attr("class", "unit access");
+					$("#cdromaccess").attr("title", "dc.notes.cdromaccess");
+					}
+				});
+				
+				$("#accessdvd").change(function () {
+					if ($(this).find('option:selected').val() == 'amazon') {
+						$("#dvdaccess").html('<a href="#">amazon Bestellung</a> ');
+						$("#dvdaccess").attr("class", "unit access order amazon");
+						$("#dvdaccess").attr("title", "dc.notes.dvdaccess");
+					}
+					else if  ($(this).find('option:selected').val() == 'link') {
+						$("#dvdaccess").html('<a href="#">Online Version</a> ');
+						$("#dvdaccess").attr("class", "unit access");
+						$("#dvdaccess").attr("title", "dc.notes.dvdaccess");
+					}
+					else {
+					$("#dvdaccess").text($(this).find('option:selected').val());
+					$("#dvdaccess").attr("class", "unit access");
+					$("#dvdaccess").attr("title", "dc.notes.dvdaccess");
+					}
+				});
+				
+				$("input#extent").change(function () {
+					$("span#printextent").text($(this).val());
+				});
+				
+				$("input#priceprint").change(function () {
+					if ($("input#priceprint").val() == '-') {
+							$("#printprice").text("");
+							$("#pdp").hide();
+							$("#printcurr").hide();
+					}
+					else
+					{
+						$("span#printprice").text($(this).val());
+						$("#pdp").show();
+						$("#printcurr").show();
+					}
+				});
+				
+				$("input#pricecdrom").change(function () {
+					if ($("#pricecdrom").val() == '-') {
+							$("#cdromprice").text("");
+							$("#cdromcurr").hide();
+							if ($("#cdromdesc") == '') {$("#cddp").hide();}
+					}
+					else
+					{
+						$("span#cdromprice").text($(this).val());
+						$("#cddp").show();
+						if ($("#cdromdesc") != '') {$("#cddp").show();} 
+						$("#cdromcurr").show();
+					}
+				});
+				
+				$("input#pricedvd").change(function () {
+					if ($("#pricedvd").val() == '-') {
+							$("#dvdprice").text("");
+							$("#dvdcurr").hide();
+							if ($("#dvddesc") == '') {$("#cddp").hide();}
+					}
+					else
+					{
+						$("span#dvdprice").text($(this).val());
+						$("#cddp").show();
+						if ($("#dvddesc") != '') {$("#cddp").show();} 
+						$("#dvdcurr").show();
+					}
+				});
+				
+				$("#printaccessdel").click(function() {
+					location.reload();
+					/*if ($(this).is('checked')) {
+						$("#printaccess").text("In den Warenkorb");
+						$("#printaccess").attr("class", "unit access order this");
+						$("#printaccess").attr("title", "autmatisch wenn kein dc.notes.printaccess vorhanden");
+						$("#accessprint select").val("");
+						
+					}*/
+					
+				});
+				
+				$("#cddel").click(function(e) {
+					e.preventDefault();
+					$("#cdromaccess").text("In den Warenkorb");
+						$("#cdromaccess").attr("class", "unit access order this");
+						$("#cdromaccess").attr("title", "autmatisch wenn kein dc.notes.printaccess vorhanden");
+						$("#accesscdrom").val("");
+				});
+				
+				$("#dvddel").click(function(e) {
+					e.preventDefault();
+					$("#dvdaccess").text("In den Warenkorb");
+						$("#dvdaccess").attr("class", "unit access order this");
+						$("#dvdaccess").attr("title", "autmatisch wenn kein dc.notes.printaccess vorhanden");
+						$("#accessdvd").val("");
+				});
+				
+				$("#genaccessdel").click(function(e) {
+					e.preventDefault();
+					$("p.versioninfo span").text("");
+					$("#notesaccess").val("");
+				});
+				
+				$("#notesaccess").change(function () {
+						$("p.versioninfo span").text($(this).val());
+						
+				});
+				
+				
+			});
+			
+			function info(id) {
+					$("<div>"  + $(id).html() + "</div>").insertAfter($(this));
+			}
+	</script>
+	    <style type="text/css">
+			.weg {
+				display:none;
+			}
+		.extern {
+			color: gray;
+		}
+		.note {
+			color: blue;
+		}
+		.warn {
+			color: red;
+		}
+		.small {
+			font-size: 0.8em;
+		}
+		.thumbnail-wrapper, .file-metadata, .file-link {
+float: left;
+margin-right: 15px;
+}
+.thumbnail-wrapper, .file-metadata, .file-link {
+//float: left;
+margin-right: 15px;
+}
+span.unit {
+border: 1px solid rgb(202, 202, 202);
+}
+.access.order.this{
+	background-image: url('shopping-cart.png');
+background-size: 18px 18px;
+text-decoration: underline;
+color: #607890;
+cursor: pointer;
+
+}
+
+.access.order.amazon{
+	background-image: url('external.png');
+background-size: 18px 18px;
+text-decoration: underline;
+color: #607890;
+cursor: pointer;
+
+}
+
+.access {
+	width: 120px;
+height: 18px;
+padding-left: 23px;
+background-repeat: no-repeat;
+margin-left: 30px;
+}
+
+
+div.try fieldset{
+width: 150px;
+display: inline;
+vertical-align: top;
+
+}
+
+#dvdcurr {
+	display: none;
+}
+
+#demo {
+
+	height: 300px;
+}
+.warning {
+	margin-top: 5px;
+	display: block;
+	color: red;
+}
+
+.hint {
+	margin-top: 5px;
+	display: block;
+	color: green;
+}
+.it {
+	font-style: italic;
+}
+body {
+		width: 950px;
+		margin: 0 auto;
+}
+
+li {
+	padding-bottom: 5px;
+}
+    </style>
+  </head>
+     
+  <body>
+	  <h1>Dspace für Redakteure</h1>
+	  <span class="it">"Was du heute kannst besorgen, das verschiebe nicht auf morgen!"</span>
+	  <h2>Inhalt</h2>
+	  <div></div>
+	 <ul>
+		<li><a href="#publishing">Veröffentlichung einer Publikation Schritt für Schritt</a></li>
+		<li><a href="#often">Die häufigsten Griffe</a>
+			<ul>
+				<li><a href="#take">Publikation aus der Bearbeitungspool übernehmen</a>
+				<li><a href="#accept">Publikation annehmen (aktzeptieren)</a>
+				<li><a href="#refuse">Publikation ablehnen</a>
+				<li><a href="#mirror">Publikation in eine Reihe spiegeln</a></li>
+			</ul>
+		</li>
+		<li><a href="#descriptions">Beschreibung der Medienformate</a></li>
+		<li><a href="#interactive">Anzeigedemo</a></li>
+		<li><a href="#specialfields">Spezielle Metadatenfelder</a></li>
+		<li><a href="#multipartPubli">Mehrteilige Publikationen</a></li>
+		<li><a href="#embargo">Embargomanagement</a></li>
+		<li><a href="#noDocumentPubli">Publikationen <strong>ohne</strong> Online-Dokument bzw. mit Dokument unter Embargo</a></li>
+		<li><a href="#multiDocument">Publikationen <strong>mit mehreren</strong> Online-Dokumenten</a></li>		
+		<li><a href="#edit">Bereits erschienene Publikationen (Metadaten oder Dokumente) bearbeiten</a></li>
+		<li><a href="#recentPublished">Neuerscheinungsliste kontrollieren</a></li>
+		<li><a href="#editDocumentOrder">Reihenfolge der Dokumente innerhalb einer Publikation ändern</a></li>
+		<li><a href="#stati">Mögliche <strong>Zustände einer Publikation</strong></a></li>
+		<li><a href="#statiedit">Zustände einer Publikation <strong>ändern</strong></a></li>
+		<li><a href="#metadata">Metadatenschemas</a></li>
+		<li><a href="#grundstuktur">Grundstrukturierung der Publikationen</a></li>
+		<li><a href="#internId">Interne Identifizierung der Publikationen</a></li>
+		<li><a href="#navigation">Navigation im System</a></li>
+	 </ul>
+	 </div>
+	 
+	 <div id="publishing">
+		<h2>Veröffentlichung einer Publikation Schritt für Schritt</h2>
+		<span class="small">Arbeitsschritte, die außerhalb des Systems abgewickelt werden, sind grau markiert.</span>
+		<div  id="reviewStep">
+		<p>Ist ein Dokument zur Publikation eingereicht, so liegt es im Bearbeitungspool und die Erledigung des nächsten Schrittes im Workflow kann von einem der Univerlag-Mitarbeitern übernommen werden. Der anstehende Schritt ist im Bearbeitungspool als Aufgabe angegeben.
+		</p>
+		Die Veröffentlichung einer Publikation in den Sammlungen des Verlagsprogramms ist zweistufig.
+		<h3>1. Schritt: Grundesätzliche Entscheidung, ob ein eingereichtes Dokument veröffentlichungswürdig ist. (Aufgabe: "Begutachtung")</h3>
+		<ul>
+			<li>Das eingereichte Dokument herunterladen: <br />
+			im Bearbeitungspool auf den Titel des Dokumentes klicken <br />
+			=> Das leere Coverfeld anklicken.</li>
+			<li><span class="extern">Entscheiden ob das Dokument alle Voraussetzungen zur Veröffentlichung bei Univerlag erfüllt.</span></li>
+			<li>Aufgabe "Wartet auf Begutachtung" aus der <a href="#take">Bearbeitungspool übernehmen</a><br />
+			
+			Je nach Entscheidung die Publikation <a href="accept">annehmen</a> oder <a href="refuse">ablehnen.</a>		
+			</li>		
+		</ul> 
+		<p><strong>Im Falle einer Ablehnung</strong> erscheint ein Textfeld. Hier können Sie dem Autor des Dokumentes mitteilen, warum die Publikation abgelehnt wird. Dieser Text wird an den Autor als E-Mail-Nachricht geschickt.</p>
+		<p><strong>Wird das Dokument angenommen</strong>, so landet es wieder im Bearbeitungspool und wartet auf den zweiten Bearbeitungsschritt.<br /><br /></p>
+		<div><span class="extern">Preis und alle Modalitäten werden mit dem Autor geklärt, das Dokument durchläuft einen Peer-Review Prozess - falls vorgesehen - und wird vom Verlag zur Publikation bearbeitet.</span></div>
+		<h3>2. Schritt: Publikation ablehnen oder  Veröffentlichung eines fertigen Verlagsdokumentes (Aufgabe "Verlagsbearbeitung")</h3>		
+		<h4>2. a) Das Dokument wird doch nicht veröffentlicht.</h4>
+		<p>
+		<a href="#take">Publikation aus der Bearbeitungspool übernehmen</a><br />
+		<a href="#refuse">Publikation ablehnen</a>
+		</p>
+		<h4>2. b) Das Dokument ist angenommen und bearbeitet und steht zur Veröffentlichung bereit.</h4>
+		<h5>Verlagsfertiges Dokument mit dem eingereichten Dokument austauschen und Coverbild hochladen</h5>
+		<div id="documentChange">
+		Zuerst muss die ursprüngliche Datei gelöscht, dann das fertige Verlagsdokument hochgeladen werden. Dazu braucht man die Publikation nicht aus dem Bearbeitungspool übernehmen!
+		<p>Unter Hauptmenü "Veröffentlichungen" auf dem Titel der der Publikation klicken. <br />
+		Über den leeren Cover auf den Link "Dokument bearbeiten" klicken.<br />
+		=> den Reiter "Zugehörige Dateien" auswählen<br />
+		=> Checkbox neben dem ursprünglichen Dokument einhacken
+		=> auf "Dateien löschen" klicken</p>
+		<p>Ebenfalls auf dieser Seite:<br/>
+		auf den Link "Eine neue Datei hochladen" klicken<br />
+		=> Knopf "Datei auswählen" betätigen<br />
+		= Verlagsdokument auf dem lokalen Rechner auswählen<br />
+		=> den Knopf "Hochladen" drücken.</p>
+		</div>
+		<div id="coverUpload">
+		<h5>Um das Coverbild hochzuladen:</h5>
+		<p>Den Link "Eine neue Datei hochladen" anklicken<br />
+		=> im obersten Dropdown-Menü "Vorschaubilder" auswählen<br />
+		=> "Datei auswählen" klicken<br />
+		=> Coverbild auf dem lokalen Rechner auswählen<br />
+		=> Knopf "Hochladen" betätigen.
+		</p>
+		</div>	
+		<h4>Metadaten der Publikation ergänzen</h4>
+		<div id="metadataComplete">
+		Im Hauptmenü "Veröffentlichungen" die Publikation aus der Bearbeitungspool nehmen<br/>
+		Unter "Ihre eigenen Aufgaben" die Aufgabe "Verlagbearbeitung" neben dem Titel der Publikation anklicken<br />
+		=> Knopf "Metadaten bearbeiten" drücken<br />
+		=> einfach "Weiter"<br />
+		=> die Metadaten, die vom Autor eingegeben wurden, durchlesen und ggf. Korrigieren<br />
+		=> Unter der Zusammenfassung kommen die Felder, die nur für Editoren sichtbar sind. Alle relevanten Felder gemäß der Beschreibung ausfüllen. Siehe dazu <a href="#specialfields">Spezielle Metadatenfelder!</a>
+		=> "Weiter" bis alle Schritte durchlaufen sind <br />
+		=> "annehmen".<br />
+		In einigen Minuten ist die neue Publikation auf der Startseite als Neuerscheinung zu finden!
+		</div>
+		
+		<h3>Falls die neue Publikation in einer Reihe erschienen ist, sind noch folgende Schritte nötig:</h3>
+		<h4>ein neues Feld "dc.bibliographicCitation.volume" erzeugen und die Bandzählung mindestens zweistellig (mit führendem "0") eintragen. Dies ist für die Sortierung nach Band notwendig!</h4>
+			<div id="appendVolume">
+				Zur Publikation navigieren <br />
+				=> im Hauptmenü "Dokument bearbeiten" wählen. <br />
+				=> Reiter "Metadaten" auswählen<br />
+				=> im obigen Dropdown-Menü "dc.bibliographicCitation.volume auswählen<br />
+				=> im Textfeld darunter die Bandnummer eintragen<br />
+				=> "metadatum hinzufügen" anklicken.
+			</div>
+		<h4>Publikation in die entspr. Reihe <a href="#mirror">spiegeln.</a></h4>
+		<p>FERTIG!</p>
+		</div>
+	</div>
+	
+	<div id="often">
+		<h2>Die häufigsten Griffe</h2>
+	<div id="take">
+		<h3>Publikation aus der Bearbeitungspool übernehmen</h3>
+
+		<p>
+			Hauptmenü "Veröffentlichungen" wählen<br />
+			=> Im Bearbeitungspool Checkbox neben dem Titel des Dokumentes einhacken<br />
+			=> "Aufgabe übernehmen" klicken.<br />
+			Die Publikation wandert in den Bereich "Ihre eigene Aufgaben".
+		</p>
+
+	</div>
+
+	
+	<div id="accept">
+		<h3>Publikation annehmen</h3>
+	<div>
+		Hauptmenü "Veröffentlichungen" wählen<br />
+		=> unter "Ihre eigene Aufgaben" auf die Aufgabe klicken<br />
+		=> "Dokument annehmen" klicken.
+	</div>	
+	</div>
+	
+	<div id="refuse">
+		<h3>Publikation ablehnen</h3>
+	<div>
+		Hauptmenü "Veröffentlichungen" wählen<br />
+		=> unter "Ihre eigene Aufgaben" auf die Aufgabe klicken<br />
+		=> "Dokument ablehnen" klicken.
+	</div>	
+	</div>
+	
+	<div  id="mirror">
+		<h3>Publikation in eine Reihe spiegeln</h3>
+		<div>
+			Den Handle der zu spiegelnden Publikation kopieren<br />
+			=> zur Reihe navigieren, in die die Neupublikation gespiegelt werden soll<br />
+			=> auf "Alle Publikationen" bei den zuletzt erschienen klicken<br />
+			=> im Hauptmenü "Kontext" "Dokumente spiegeln" auswählen<br />
+			=> den Handle mit Anführungszeichen in den Suchfeld eingeben und "Suche" klicken<br />
+			=> Checkbox neben dem zutreffenden Titel einhacken<br />
+			=> "Dokument spiegeln" klicken.
+		</div>
+	</div>
+	</div>
+	
+
+	
+	<div id="descriptions">
+		<h2>Beschreibung der Medienformate</h2>
+		<strong>dc.format.medium</strong><br />
+			Das Feld gibt an, welche medienformate zu einer Publikation existieren. (Auch wenn sie für den Nutzer nicht verfügbar sind!)
+			Das Feld arbeitet mit kontrolliertem Vokabular. Mögliche Werte sind: "Print", "DC-ROM" oder "DVD". Es soll mehrfach, d.h. für jeden Medientyp wiederholt werden.
+			<span class="warning">Achtung! Die Beschreibung eines Medientyps wird bei der Anzeige ignoriert, wenn kein dc.format.medium Feld mit dem entspr. Wert vorhanden ist. </span>
+
+			<h3>Buchbeschreibung</h3>
+
+				Die Printversion einer Publikation wird mittels drei Metadatenfelder beschrieben:
+				<ol>
+					<li><strong>dc.description.print</strong><br />
+					Beschreibung des Covers der Druckversion. Etwas "Softcover, 20x20".
+					</li>
+					<li>dc.format.extent<br />
+					Umfang des Buches: Seitenzahl (ohne "S.", "Seiten" o.ä.)</li>
+					<li>dc.price.print<br />
+					Der Preis in €: Angegeben mit zwei Dezimalstellen, Komma als Dezimalpunkt und ohne Währungsnagabe</li>
+				</ol>
+				Diese Felder sind Pflicht, falls es eine Printversion existiert.
+				<strong>dc.description.print</strong><br />
+
+			<h3>CD-ROM Beschreibung</h3>
+
+				Die CD-ROM-Version einer Publikation hat kein festes Plichtfeld. Welche Felder vorhanden sein müssen variiert je nachdem, ob sie zum Kauf angeboten wird oder nicht.			
+				<ol>
+					<li>CD ist kaufbar:<br />
+					<strong>dc.price.cdrom</strong> ist Pflicht.<br />
+					Der Preis in €: Angegeben mit zwei Dezimalstellen, Komma als Dezimalpunkt und ohne Währungsnagabe.
+					</li>
+
+					<li>CD ist nicht kaufbar.<br />
+					Dann <strong>muss</strong> das Feld <strong>dc.notes.cdromaccess</strong> mit einem der möglichen Werte angelegt werden: "outofstock", "notavailable" oder http:// zu der Onlineversion der CD.
+					</li>
+				</ol>
+				Zusätzlich kann und ist empfohlen, eine Beschreibung der CD im Feld <strong>dc.description.cdrom</strong> anzugeben.
+				Diese Beschreibung ist Freitext und kann eine Angabe zum Inhalt oder zum Spielzeit der CD sein. Die Spielzeit bitte in der Form "32:12 Min." angeben!
+				<span class="hint">Ist ein Feld dc.format.medium mit dem Inhalt "CD-ROM" vorhanden, so wird in der Anzeige automatisch die Beschriftung "CD-ROM:" für die vorhandenen Angaben generiert.</span>
+
+			<h3>DVD Beschreibung</h3>
+
+				Die DVD-Version einer Publikation hat kein festes Plichtfeld. Welche Felder vorhanden sein müssen variiert je nachdem, ob sie zum Kauf angeboten wird oder nicht.			
+				<ol>
+					<li>CD ist kaufbar:<br />
+					<strong>dc.price.dvd</strong> ist Pflicht.<br />
+					Der Preis in €: Angegeben mit zwei Dezimalstellen, Komma als Dezimalpunkt und ohne Währungsnagabe.
+					</li>
+
+					<li>DVD ist nicht kaufbar.<br />
+					Dann <strong>muss</strong> das Feld <strong>dc.notes.dvdaccess</strong> mit einem der möglichen Werte angelegt werden: "outofstock", "notavailable" oder http:// zu der Onlineversion der DVD.
+					</li>
+				</ol>
+				Zusätzlich kann und ist empfohlen, die Spielzeit der DVD im Feld <strong>dc.description.DVD</strong> anzugeben.
+				Angabe als "45:04 Min."!
+				<span class="hint">Ist ein Feld dc.format.medium mit dem Inhalt "DVD" vorhanden, so wird in der Anzeige automatisch die Beschriftung "DVD-Video:" für die vorhandenen Angaben generiert.</span>
+	</div>
+	
+	<h2 id="interactive">Anzeigedemo</h2>
+	<p>Veranschaulichung des Zusammenhangs zwischen Metadaten und Anzeige und der Abhängigkeiten der Metadaten untereinder.</p>
+
+	<h3>Hinweise</h3>
+	<ul>
+		<li>Nur mit Rahmen versehene Inhalte stammen aus den Metadatenfeldern. Alles andere wird automatisch generiert.<br /></li>
+		<li>Fährt man mit der Maus über die Feldinhalte, so wir der Name des internen Feldes, aus dem der Inahlt stammt, angezeigt.<br /></li>
+		<li>Im Formular unter der Anzeige können die Werte der Anzeige verändert werden. Dropdown-Werte werden automatisch übernommen, bie Textfeldern bitte nach Abschluß der Eingabe neben dem Texfeld klicken.
+		</li>
+	</ul>
+	
+	
+	</div>
+	<div id="demo">
+	<div class="file-wrapper">
+		<div class="thumbnail-wrapper">
+			<!-- <img alt="Thumbnail" src="/univerlag/bitstream/handle/3/issn-1863-0197_annals16/annals16_DGGTB.pdf.jpg?sequence=1&amp;isAllowed=y"> -->
+			<img alt="Thumbnail" src="annals16_DGGTB.pdf.jpg" />
+		</div>
+		<div style="height: 180px;" class="file-metadata">
+			<p id="print" class="desc"><span id="printdesc" class="unit" title="dc.description.print">Softcover, 17x24</span>, <span id="printextent" class="unit" title="dc.format.extent">XII, 348</span> p.<span id="pdp">:</span> <span id="printprice" class="unit" title="dc.price.print">24,00</span><span id="printcurr"> €</span><span id="printaccess" class="unit access order this" title="automatisch wenn kein dc.notes.printaccess vorhanden">In den Warenkorb</span></p>
+			<p id="cd" class="desc">CD-ROM<span id="cddp">: </span><span id="cdromdesc" class="unit" title="dc.description.cdrom">11 Fallsimulationen</span> <span id="cdromprice" class="unit" title="dc.price.cdrom">30,80</span><span id="cdromcurr"> €</span><span id="cdromaccess" class="unit access" title="dc.notes.cdromaccess">vergriffen</span></p>
+			
+			<p id="dvd" class="desc">DVD-Video<span id="dvddp">: </span><span id="dvddesc" class="unit" title="dc.description.dvd">43:20 Min.</span><span>  </span><span id="dvdprice" class="unit" title="dc.price.dvd"></span><span id="dvdcurr"> €</span><span id="dvdaccess" class="unit access" title="dc.notes.dvdaccess">Nicht verfügbar.</span></p>
+
+			<p class="versioninfo"><span class="unit" title="dc.notes.access">Elektronisches Dokument nicht verfügbar!</span></p>
+		</div>
+	</div>
+	</div>
+
+	<div class="try">
+		<hr />
+		<form name="tryfields">
+			<fieldset>
+			<legend>Medien</legend>
+			<label for="fromatmedium2">*dc.format.medium</label><br />
+			<span>Für jeden Wert wiederholen.</span><br />
+			<select id="medium1" value="Print">
+				<option value=""></option>
+				<option id="mp1" value="Print" selected>Print</option>
+				<option id="mcd1" value="CD-ROM">CD-ROM</option>
+				<option id="mdvd1" value="DVD">DVD</option>
+			</select><br />
+			<select id="medium2" value="Print">
+				<option value=""></option>
+				<option id="mp2" value="Print">Print</option>
+				<option id="mcd2" value="CD-ROM" selected>CD-ROM</option>
+				<option id="mdvd2" value="DVD">DVD</option>
+			</select><br />
+			<select id="medium3" value="Print">
+				<option value=""></option>
+				<option id="mp3" value="Print">Print</option>
+				<option id="mcd3" value="CD-ROM">CD-ROM</option>
+				<option id="dvd3" value="DVD" selected>DVD</option>
+			</select>
+			</fieldset>
+			<fieldset>
+			<legend>Printbeschreibung</legend>
+			<label for="descprint">*dc.description.print</label>
+			<select id="descprint" type="text" name="descprint">
+				<option value="Softcover, 17x24">Softcover, 17x24</option>
+				<option value="Hardcover, DIN A5">Hardcover, DIN A5</option>
+				<option value="Softcover, 20x20">Softcover, 20x20</option>
+				<option value="Hardcover, 20x20">Hardcover, 20x20</option>
+			</select><br />
+			<label for="extent">*dc.format.extent</label>
+			<input type="text" name="extent" id="extent" value="XII, 348"/>
+			<br />
+			<label for="priceprint">*dc.price.print</label>
+			<input type="text" name="priceprint" id="priceprint" value="24,00"/>
+			<br /><br />
+			<span>Optional:</span><br />
+			<label for="accessprint">dc.notes.printaccess</label>
+			<select id="accessprint" type="text" name="accessprint">
+				<option value=""></option>
+				<option value="Nicht verfügbar">notavailable</option>
+				<option value="amazon">http://amazon</option>
+				<option value="link">http://....</option>
+				<option value="vergriffen">outofstock</option>
+				
+			</select><br />
+			<a id="printaccessdel" href="#metadatenschema">Feld löschen</a>
+			</fieldset>
+			<fieldset>
+			<legend>CD-ROM Beschreibung</legend>
+			<label for="desccdrom">*dc.description.cdrom</label>
+			<input type="text" id="desccdrom" type="text" name="desccdrom" value="11 Fallsimulationen"/>
+				<br />
+			<label for="pricecdrom">*dc.price.cdrom</label>
+			<input type="text" name="pricecdrom" id="pricecdrom" value="30,80"/>
+			<br />
+			<br />
+			<span>Optional:</span><br />
+			<label for="accesscdrom">dc.notes.accesscdrom</label>
+			<select id="accesscdrom" type="text" name="accesscdrom">
+				<option value=""></option>
+				<option value="Nicht verfügbar">notavailable</option>
+				<option value="amazon">http://amazon</option>
+				<option value="link">http://....</option>
+				<option value="vergriffen" selected>outofstock</option>
+			</select><br />
+			<a id="cddel" href="#metadatenschema">Feld löschen</a>
+			</fieldset>
+			<fieldset>
+			<legend>DVD Beschreibung</legend>
+			<label for="descdvd">d*c.description.dvd</label>
+			<input type="text" id="descdvd" type="text" name="descdvd" value="43:20 Min."/>
+				<br />
+			<label for="pricecdrom">*dc.price.dvd</label>
+			<input type="text" name="pricedvd" id="pricedvd" value="-"/>
+			<br />
+			<br />
+			<span>Optional:</span><br />
+			<label for="accessdvd">dc.notes.accessdvd</label>
+			<select id="accessdvd" type="text" name="accessdvd">
+				<option value=""></option>
+				<option value="Nicht verfügbar" selected>notavailable</option>
+				<option value="amazon">http://amazon</option>
+				<option value="link">http://....</option>
+				<option value="vergriffen">outofstock</option>
+			</select><br />
+			<a id="dvddel" href="#metadatenschema">Feld löschen</a>
+			</fieldset>
+			<fieldset>
+			<legend>Zusatzfelder</legend>
+			<label for="notesaccess">dc.notes.access</label>
+			<select id="notesaccess" type="text" name="notesaccess">
+				<option value="Nur online verfügbar!">onlineonly</option>
+				<option value="Elektronisches Dokument nicht verfügbar!" selected>nodocument</option>
+				<option value=""></option>
+			</select><br />
+			<a id="genaccessdel" href="#metadatenschema">Feld löschen</a>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div id="specialfields">
+		<h2>Spezielle Metadatenfelder</h2>
+		<ul>
+			<li><strong>dc.notes.access</strong><br />
+			Normalerweise gehört zu jeder Publikation mindestens eine Printversion und ein Online-Dokument (PDF).
+			Mit Hilfe dieses Feldes kann und sollte ein Hinweis angezeigt werden, daß einer dieser gängigen Formate nicht vorhanden ist. <br />
+			</li>
+			
+			<li><strong>dc.relation.otherparts</strong><br />
+				wird nur bei mehrteiligen Publikationen benutzt. Es enthält den Verweis auf andere Teile der Publikation, die ebenfalls bei Univerlag erschienen sind und muss die folgende Syntax haben:<br />
+				Teilbezeichnung (z.B. "Teil 2" oder "Band 4": handle /&lt;handle&gt; => Anzeige: Text vor dem Doppelpunkt + Link auf die Publikation mit dem Handle<br />
+				<span class="hint">Die Teilbezeichnung soll in der Sprache des Titels angeben werden!</span>
+				<a href="http://univerlag.uni-goettingen.de/handle/3/isbn-978-3-941875-43-2">Beislpiel</a>
+								 <br />
+			</li>
+			<li><strong>dc.description.other</strong><br />
+				Verknüpfung mit Online-Ressourcen außerhalb von Univerlag.<br />
+				Falls vorhanden, wird der Feldinhalt über dem Erscheinungsjahr angezeigt. <br />
+
+				Soll ein HTTP Link enthalten. => Anzeige: Link mit Überschrift "Online-Version"<br />
+				
+				<a href="http://univerlag.uni-goettingen.de/handle/3/isbn-978-3-940344-12-0">Beispiel</a>
+				 <br />				
+			</li>
+			<li><strong>dc.relation.isreferencedby</strong><br />
+				Verweise auf Rezensionen<br />
+				Kann einen HTTP Link auf eine Online-Rezension oder die bibliographische Angabe einer Druckrezension enthalten => Anzeige: Im Reiter "Rezensionen" je nach Angabe verlinkt oder nicht. <br />
+
+				<span class="hint">Für mehrere Rezensionen bitte das Feld wiederholen!</span>
+				<a href="http://univerlag.sub.uni-goettingen.de/handle/3/isbn-3-938616-35-0">Beispiel</a>
+					 <br />			
+			</li>
+			<li><strong>dc.bibliographicCitation</strong><br />
+				Das Feld ermöglicht die Sortierung von Reihen nach Bandnummer.<br />
+				Der Feldinhalt ist nur in der Langanzeige sichtbar.<br />
+				<span class="hint">Bitte nur die Bandnummer der Reihe mindestens zweistelling (mit führendem Null) eintragen! Falls die Numerierung Komma oder Punkt enthält, diese einfach weglassen. Slashes werden jedoch übernommen.</span>
+				z.B. bei SPE; 1,1 => 11 eingeben<br />
+				Annals of the History and Philosophy of Biology 16/2011 => 16/2011<br />
+				InterKultur; 1 => 01
+
+				 <br />				
+			</li>
+			<li><strong>dc.notes.intern</strong><br />
+				Interne Bemerkungen, die für normale Nutzer nicht sichtbar sind.<br />
+				Dies kann alles Mögliche sein: wie Verhandlungsdetails mit dem Autor zur Publikation, erzwungene Änderungen, ToDos etc.
+				 <br />				
+			</li>
+			
+			
+		</ul>
+			</div>
+	
+	<div id="multipartPubli">
+		<h2>Mehrteilige Publikationen</h2>
+		<p>
+		Jedes Teil erscheint als eigenständige Publikation mit der Teilangabe im Titel in derselben Sprache. Die einzelnen Teile werden über das Feld <strong>dc.relation.otherparts</strong> miteinander verknüpft. 
+		Siehe dazu<a href="#specialfields"> hier!</a>
+
+		</p>
+	</div>
+	
+	<div id="embargo">
+		<h2>Embargomanagement</h2>
+		<p>
+		Beschreibung kommt noch!!</a>
+
+		</p>
+	</div>
+	
+	<div id="noDocumentPubli">
+		<h2>Publikationen <strong>ohne</strong> Online-Dokument bzw. mit Dokument unter Embargo</h2>
+
+	</div>
+	
+	<div id="multiDocument">
+		<h2>Publikationen <strong>mit mehreren</strong> Online-Dokumenten</h2>
+		<p>Gelegentlich kommt es vor, daß zusätzlich zum Hauptdokument noch ein Anhang, Errata etc. als PDF angeboten wird.
+		</p>
+		<p>
+		Bitte immer das Hauptdokument als erstes Dokument hochladen. Weitere Dokumente, z.B. Tabellenanhang <span class="warn">müssen</span> eine Beschreibung haben. <br />
+		<span class="warn">Achtung: Kein Metadatenfeld!</span> Die Beschreibung wird unter Dokument bearbeiten => Reiter "Zugehörige Dokuemnte" => Klick auf den Dokumentennamen => Feld: Beschreibung angegeben.
+		<a href="http://univerlag.uni-goettingen.de/handle/56789/163">Beispiel</a><br />
+		<span class="note">Zusatzbemerkungen wie "(ausschließlich online)" werden auch hier eingetragen!</span><br />
+		<span class="note">Falls die Reihenfolge der Dateien <strong>nach</strong> dem Hochladen geändert werden muss, siehe <a href="#editDocumentOrder">hier!</a></span>
+		</p>
+	</div>
+	
+	
+	<div id="edit">
+		<h2>Bereits erschienene Publikationen (Metadaten oder Dokumente) bearbeiten</h2>
+		<ol>
+			<li>Zum Dokument navigieren:<br />
+				<ul>
+					<li>Hauptmenü rechts/Kontext: Dokument bearbeiten oder</li>
+					<li>Hauptmenü rechts/Administration: Dokumente => Handle angeben</li>
+				</ul>
+			</li>
+			<li>
+				<strong>Metadaten</strong> bearbeiten: über Reiter “Metadaten”
+				
+			</li>
+			<li>
+				<strong>Dokumente</strong> bearbeiten: über  Reiter “Zugehörige Dokumente”
+
+			</li>
+		</ol>
+	
+	</div>
+		<div id="recentPublished">
+		<h2><strong>Neuerscheinungsliste</strong> kontrollieren</h2>
+		<p>
+		Welche Publikationen als Neuerscheinungen aufgelistet werden, hängt von dem Feld <strong>dc.date.accessioned = Einstellungsdatum</strong> ab. Sie listet die zuletzt freigegeben Publikationen auf. Soll eine Publikation vor den anderen in der Neuerscheinungsliste angezeigt werden oder eine Publikation in die Liste aufgenommen werden, muss dieses Datum entspr. geändert werden. 
+		</p>
+	</div>
+	
+	
+	<div id="editDocumentOrder">
+		<h2><strong>Reihenfolge der Dokumente</strong> innerhalb Publikationen ändern</h2>
+		<p>
+		Dokument bearbeiten => Reiter "Zugehörige Dateien" => mit den Pfeilen die Reienfolge ändern => <strong>Button "Reihenfolge ändern"!</strong>
+		</p>
+	</div>
+	
+
+	<div id="stati">
+		<h2>Mögliche <strong>Zustände einer Publikation</strong></h2>
+		<ul>
+			<li><strong>verworfen</strong>: Die Publikation ist aus dem Repository zurückgezogen. Sie ist aus der Suche/Browsing herausgenommen. Die Persistente URL wird aber gepflegt. Bei Aufruf via Handle erscheint die Meldung, daß diese Publikation zurückgezogen wurde.<br />
+			<br />Dieser Zustand kann wieder rückgängig gemacht werden.
+			Beispiel für Nutzungsszenario: Publikation muss wegen Plagiat zurückgenommen werden.</li>
+			<li><strong>nicht sichtbar</strong>: Die Publikation ist ist aus der Suche/Browsing herausgenommen. Jedoch über ihr Handle direkt aufrufbar.<br />Dieser Zustand kann wieder rückgängig gemacht werden.
+			<br />
+			Beispiel für Nutzungsszenario: ??</li>
+			<li><strong>nicht sichtbar</strong>: Die Publikation ist aus der Suche/Browsing herausgenommen. Jedoch über ihr Handle direkt aufrufbar.<br />
+			<br />
+			Beispiel für Nutzungsszenario: ??</li>
+			<li><strong>endgültig gelöscht</strong>: Die Publikation ist aus dem System entfernt worden.<br />
+			<span class="warn">Dieser Zustand kann nicht rückgängig gemacht werden!</span>
+			<br />
+			Beispiel für Nutzungsszenario: <span class="warn">Bitte nie nutzen!</span> Statt dessen immer Publikation verwerfen!</li>
+		</ul>
+	</div>
+	
+	<div id="statiedit">
+		<h2>Zustände einer Publikation<strong> ändern</strong></h2>
+		<ol>
+			<li>Zum Dokument navigieren:<br />
+				<ul>
+					<li>Hauptmenü rechts/Kontext: Dokument bearbeiten oder</li>
+					<li>Hauptmenü rechts/Administration: Dokumente => Handle angeben</li>
+				</ul>
+			</li>
+			<li>
+				Im Reiter “Dokumentenstatus”<br />
+				den entsprechenden Knopf auswählen und Auswahl bestätigen.
+				
+			</li>
+			
+		</ol>
+		<p>Diese Methoden können nur den Status einer ganzen Publikation ändern. Die Sichtbarkeit einzelner Dateien kann man über das Embarogmanagement oder durch händische Änderung der Zugriffsrechte der Dateien kontrollieren!</p>
+	</div>
+
+
+	
+	
+	<div id="metadata">
+		<h2>Metadatenschemas</h2>
+		Das Metadatenschema der Publikationen ist vom Publikationstyp abhängig. Es gibt 5 Typen:
+		<ol>
+			<li>Buch</li>
+			<li>Sammelband</li>
+			<li>Artikel im Sammelband</li>
+			<li>Zeitschriftenartikel</li>
+			<li>Andere</li>
+		</ol>
+		<h3>Buch</h3>
+		<table>
+			<tr>
+				<th>Label im Inputformular</th>
+				<th>interne Feldbezeichnung</th>
+			</tr>
+			<tr>
+				<td>*Autor(en)</td>
+				<td>dc.contributor.author</td>
+			</tr>
+			<tr>
+				<td>Sonstige Personen(en)</td>
+				<td>dc.contributor.other</td>
+			</tr>
+			<tr>
+				<td>*Titel</td>
+				<td>dc.title</td>
+			</tr>
+			<tr>
+				<td>Untertitel</td>
+				<td>[dc.title.alternative]</td>
+			</tr>
+			<tr>
+				<td>Titelergänzung</td>
+				<td>dc.title.supplement]</td>
+			</tr>
+			<tr>
+				<td>Reihe/Band (bei Serien)</td>
+				<td>dc.relation.ispartofseries</td>
+			</tr>
+			<tr>
+				<td>*Sprache</td>
+				<td>dc.language.iso</td>
+			</tr>
+			<tr>
+				<td>Zusammenfassung</td>
+				<td>dc.description.abstract</td>
+			</tr>
+		
+		</table>
+		<h3>Sammelband</h3>
+		<table>
+			<tr>
+				<th>Label im Inputformular</th>
+				<th>interne Feldbezeichnung</th>
+			</tr>
+			<tr>
+				<td>*Heraugeber</td>
+				<td>dc.contributor.editor</td>
+			</tr>
+			<tr>
+				<td>Sonstige Personen(en)</td>
+				<td>dc.contributor.other</td>
+			</tr>
+			<tr>
+				<td>*Titel</td>
+				<td>dc.title</td>
+			</tr>
+			<tr>
+				<td>Untertitel</td>
+				<td>[dc.title.alternative]</td>
+			</tr>
+			<tr>
+				<td>Titelergänzung</td>
+				<td>dc.title.supplement]</td>
+			</tr>
+			<tr>
+				<td>Reihe/Band (bei Serien)</td>
+				<td>dc.relation.ispartofseries</td>
+			</tr>
+			<tr>
+				<td>*Sprache</td>
+				<td>dc.language.iso</td>
+			</tr>
+			<tr>
+				<td>Zusammenfassung</td>
+				<td>dc.description.abstract</td>
+			</tr>
+		
+		</table>
+		<h3>Artikel im Sammelband</h3>
+		<table>
+			
+			<tr>
+				<th>Label im Inputformular</th>
+				<th>interne Feldbezeichnung</th>
+			</tr>
+			<tr>
+				<td>*Autor(en)</td>
+				<td>dc.contributor.author</td>
+			</tr>
+			<tr>
+				<td>*Heraugeber</td>
+				<td>dc.contributor.editor</td>
+			</tr>
+			<tr>
+				<td>Sonstige Personen(en)</td>
+				<td>dc.contributor.other</td>
+			</tr>
+			<tr>
+				<td>*Titel der Artikel</td>
+				<td>dc.title</td>
+			</tr>
+			<tr>
+				<td>Untertitel</td>
+				<td>[dc.title.alternative]</td>
+			</tr>
+			<tr>
+				<td>Titelergänzung</td>
+				<td>dc.title.supplement]</td>
+			</tr>
+			<tr>
+				<td>*Titel des Sammelbandes</td>
+				<td>dc.relation.ispartof</td>
+			</tr>
+			<tr>
+				<td>Reihe/Band (bei Serien)</td>
+				<td>dc.relation.ispartofseries</td>
+			</tr>
+			<tr>
+				<td>*Sprache</td>
+				<td>dc.language.iso</td>
+			</tr>
+			<tr>
+				<td>Zusammenfassung</td>
+				<td>dc.description.abstract</td>
+			</tr>
+		
+		</table>
+		<h3>Zeitschriftenartikel</h3>
+		<p>Noch nicht in Nutzung!</p>
+		<h3>Andere</h3>
+		<table>
+			<tr>
+				<th>Label im Inputformular</th>
+				<th>interne Feldbezeichnung</th>
+			</tr>
+			<tr>
+				<td>*Autor(en)</td>
+				<td>dc.contributor.author</td>
+			</tr>
+			<tr>
+				<td>Sonstige Personen(en)</td>
+				<td>dc.contributor.other</td>
+			</tr>
+			<tr>
+				<td>*Titel</td>
+				<td>dc.title</td>
+			</tr>
+			<tr>
+				<td>Untertitel</td>
+				<td>[dc.title.alternative]</td>
+			</tr>
+			<tr>
+				<td>Titelergänzung</td>
+				<td>dc.title.supplement]</td>
+			</tr>
+			<tr>
+				<td>Reihe/Band (bei Serien)</td>
+				<td>dc.relation.ispartofseries</td>
+			</tr>
+			<tr>
+				<td>*Sprache</td>
+				<td>dc.language.iso</td>
+			</tr>
+			<tr>
+				<td>Zusammenfassung</td>
+				<td>dc.description.abstract</td>
+			</tr>
+		
+		</table>
+		<h3>Nur für Redakteure sichtbare Felder, die im Review-Workflow erscheinen</h3>
+		<table>
+			<tr>
+				<th>Label im Inputformular</th>
+				<th>interne Feldbezeichnung</th>
+			</tr>
+			<tr>
+				<td>*Interner Identifier</td>
+				<td>dc.indentifier.intern</td>
+			</tr>
+			<tr>
+				<td>*Artikel-Nummer</td>
+				<td>dc.identifier.articlenumber</td>
+			</tr>
+			<tr>
+				<td>*Sparte</td>
+				<td>dc.subject.division</td>
+			</tr>
+			<tr>
+				<td>Beschreibung der Printversion</td>
+				<td>dc.description.print</td>
+			</tr>
+			<tr>
+				<td>Beschreibung einer DVD</td>
+				<td>dc.description.dvd</td>
+			</tr>
+			<tr>
+				<td>Beschreibung einer CD-ROM</td>
+				<td>dc.description.cdrom</td>
+			</tr>
+			<tr>
+				<td>Markierung für Harvesting</td>
+				<td>dc.subject.other</td>
+			</tr>
+		
+		</table>
+		
+	</div>
+
+		 <div id="grundstuktur">
+		 <h2>Grundstrukturierung der Publikationen</h2>
+		 <ul>Bereiche / Sammlungen
+			 <li>Verlagsprogramm
+				<ul>
+					<li>Fachgebiete</li>
+				</ul>
+			 </li>
+			 <li>Reihen
+				<ul>
+					<li>Seriennamen <br />(enthält nur gespiegelte Dokumente aus dem Verlagsprogramm!)</li>
+				</ul>
+			 </li>
+			 <li>Publikationen in Kooperation?
+				<ul>
+					<li>Verlagsfremde Sammlungen mit verlagsfremden Publikationen</li>
+				</ul>
+			 </li>
+		 </ul>
+	 </div>
+	 
+	 <div id="internId">
+		 <h2>Interne Identifizierung der Publikationen</h2>
+		 <p>
+			 via <strong>Handle</strong>: Teil der URL nach dem Wort handle <br/>
+			 z.B. "56789/531" in http://univerlag.uni-goettingen.de/handle/56789/531<br />
+			 
+		 </p>
+		 <p>oder</p>
+		 <p>
+			 via <strong>ItemId</strong>: Nützlich wenn die Publikation noch kein Handle bekommen hat, aber nicht ohne Weiteres sichtbar. <br/>
+			 
+			 
+		 </p>
+	</div>
+	
+	<div id="navigation">
+		 <h2>Navigation im System</h2>
+		 <p>
+			 <strong>Suche oben rechts</strong> sucht standardmäßig im Verlagsprogramm. Um auch verlagsfremde Publikationen zu finden: Suche im starten => im Dropdown “Suche” “Gesamter Bereich” auswählen und noch einmal abschicken!
+		 </p>
+		 <p><strong>Suche in einer Sammlung:</strong> Zur Sammlung navigieren und in der Einstiegseite der Sammlung die Suche benutzen.
+</p>
+		 <p>
+			 <strong>ISBN-Suche:</strong>: ISBN in Anfürhungszeichen im Suchfeld eingeben.<br/>
+		 </p>
+		 <p><strong>Allgemeiner Hinweis zur Suche:</strong>Identifikatioren (ISSN, PPN, Handle etc. immer in Anführungszeichen setzen!</p>
+		 <p>
+			 <strong>Browsing:</strong> Mit einem Klick nur in in den einzelnen Bereichen möglich. In allen Bereichen blättern: auf einen bel. Bereich klicken => im Krümelpfad im Kopfbereich auf “Alle Produkte” klicken.
+<br/>
+		 </p>
+		 
+	</div>
+	
+	
+
+	
+	
+  </body>
+</html>
+
+
