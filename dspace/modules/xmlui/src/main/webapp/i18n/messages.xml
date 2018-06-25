@@ -2977,7 +2977,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <div class="col-sm-6">
 
                 <h4 class="list-item-header">Juristische Fakultät</h4>
-                <p>Prof. Dr. Dr. h.c. Werner Heun &#10013; <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Heun"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Thomas Mann <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Thomas_Mann_(Jurist)"><i class="icon-wikipedia"></i></a></p>
                 <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
                 </p>
             </div>
@@ -3580,6 +3580,41 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             </div>
         </div>
 
+	<div>
+                Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich
+                <div class="media">
+                        <div class="media-left">
+                            ONIX 2.0
+                        </div>
+                        <div class="media-body">
+                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix_edocs" target="_blank">Electronische Publikationen</a><br />
+                                <a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix_print" target="_blank">Print Publikationen</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix_media" target="_blank">Multimedia Publikationen</a>
+                        </div>
+                </div>
+                <div class="media">
+                        <div class="media-left">
+                            OAI_DC
+                        </div>
+                        <div class="media-body">
+                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Electronische Publikationen</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Print Publikationen</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Multimedia Publikationen</a>
+                        </div>
+                </div>
+		<div class="media">
+                        <div class="media-left">
+                            OAIDC
+			  
+                        </div>
+                        <div class="media-body">
+                                <a href="https://univerlag.uni-goettingen.de/oai/oapen?verb=ListRecords&amp;metadataPrefix=oaidc" target="_blank">Alle Publikationen</a><br />
+				(Speziell für OAPEN)
+                        </div>
+                </div>
+ 
+ 
+	</div>
         <h3>Weiteres zu Open Access</h3>
         
 <div class="media">
@@ -3745,11 +3780,11 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
             <h3>Rechtliche Hinweise zur Haftung</h3>
 
             <p>Bitte nehmen Sie unseren <a href="//www.disclaimer.de/disclaimer.htm?farbe=FFFFFF/000000/000000/000000" class="extern-link" target="_blank">Haftungsausschluss</a> zur Kenntnis.  (Der vorliegende Haftungssauschlusstext basiert auf dem kostenlosen Dienst von //www.disclaimer.de).</p>
-            <h3>Datenschutzhinweis</h3>
+            <!-- <h3>Datenschutzhinweis</h3>
             <p>
                 Diese Website erfasst anonymisierte Daten zur Nutzung.<br />
                 Zustimmung verweigern: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de"  class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
-            </p>
+            </p> -->
 
             <h3>Urheberrecht</h3>
             <h4>Icon Fonts:</h4>
@@ -5008,6 +5043,154 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
             </fieldset>
         </form>
 
+    </message>
+
+   <message key="xmlui.static.data_privacy.head">Datenschutzhinweis</message>
+    <message key="xmlui.static.data_privacy">
+	<div>
+            
+       <p>
+       Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor. 
+</p>   
+  
+<h3>Personenbezogene Daten</h3>
+
+            
+<p>
+Die Nutzung dieser Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf diesen Seiten personenbezogene Daten erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis und im hier dargestellten Umfang. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. 
+</p>
+<p>
+Namen, Postanschriften und E-Mail-Adressen, die im Rahmen von Anfragen oder Bestellungen angegeben werden, werden ausschließlich für die Korrespondenz beziehungsweise den Versand verwendet. 
+</p>
+<p>
+Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den jeweils genannten Zweck erforderlich ist. Hierbei werden bestehende gesetzliche Aufbewahrungsfristen berücksichtigt. 
+</p>
+ 
+<h3>Informationen zur Verarbeitung personenbezogener Daten</h3>
+<p>
+ <p class="address"><strong>Name und Kontaktdaten der Verantwortlichen</strong></p>
+  <p class="address">Prof. Dr. Ulrike Beisiegel</p>
+    <p class="address">Wilhelmsplatz 1</p>
+      <p class="address">37073 Göttingen</p>
+<p class="address">
+                    
+<i class="icon-call" title="Telefon"></i> +49 551 39-21000
+                </p>
+<p class="address">
+                    
+<a href="mailto:praesidentin_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i>praesidentin AT uni-goettingen.de</a>
+
+                
+</p>
+</p>
+<p>
+ <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragen</strong></p>
+  <p class="address">Prof. Dr. Andreas Wiebe</p>
+  <p class="address">Lehrstuhl für Bürgerliches Recht</p>
+    <p class="address">Wettbewerbs- und Immaterialgüterrecht</p>
+      <p class="address">Medien- und Informationsrecht</p>
+    <p class="address">Platz der Göttinger Sieben 6</p>
+      <p class="address">37073 Göttingen</p>
+<p class="address">
+                    
+<i class="icon-call" title="Telefon"></i> +49 551 39-7381
+                </p>
+<p class="address">
+                    
+<a href="mailto:datenschutz_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i>datenschutz AT uni-goettingen.de</a>
+
+                
+</p>
+
+ </p>
+ 
+ <h3>Zwecke und Rechtsgrundlagen der Verarbeitung</h3>
+ <p>
+ Ihre Daten werden dafür erhoben, um Ihr Anliegen zu bearbeiten. Ihre Daten werden auf Grundlage von Art. 6 Abs. 1e erhoben. 
+ </p>
+ 
+    
+    <h3>Empfänger der personenbezogenen Daten</h3>
+    <p>
+    Um ihre Anfrage zu beantworten, werden Ihre personenbezogenen Daten an die innerhalb des Universitätsverlags Göttingen zuständige Personengruppe übermittelt.
+    </p>  
+    
+        <h3>Übermittlung von personenbezogenen Daten an ein Drittland</h3>
+    <p>
+    Es ist nicht geplant Ihre personenbezogenen Daten zu übermitteln. 
+    </p> 
+        <h3>Dauer der Speicherung der personenbezogenen Daten</h3>
+    <p>
+    Ihre Daten werden gespeichert, um die Dienste zu erbringen, mit denen Sie uns beauftragen. Sobald diese Dienste erbracht sind oder Sie um eine Löschung der Daten bitten, werden ihre Daten nur noch so lange gespeichert, bis alle laufenden Vorgänge abgeschlossen sind und dann gelöscht, es sei denn gesetzliche Vorgaben erfordern eine längere Speicherung.
+    </p> 
+        <h3>Betroffenenrechte</h3>
+    <p>
+    Nach der EU-Datenschutzgrundverordnung stehen Ihnen folgende Rechte zu:
+Werden Ihre personenbezogenen Daten verarbeitet, so haben Sie das Recht Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO). Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO). Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen sowie Widerspruch gegen die Verarbeitung einlegen (Art. 17, 18 und 21 DSGVO).
+Wenn Sie die erforderlichen Daten nicht angeben, kann Ihr Antrag nicht bearbeitet werden.
+Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
+Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschutzbeauftragten.
+    </p> 
+    <p>
+    Bei datenschutzrechtlichen Beschwerden können Sie sich an die zuständige Aufsichtsbehörde wenden: 
+    </p> 
+      <p class="address">Die Landesbeauftragte für den Datenschutz Niedersachsen</p>
+  <p class="address">Prinzenstraße 5</p>
+    <p class="address">30159 Hannover</p>
+      <p class="address">37073 Göttingen</p>
+<p class="address">
+                    
+<i class="icon-call" title="Telefon"></i> +49 551 120 4500
+                </p>
+<p class="address">
+                    
+<a href="mailto:poststelle_at_lfd.niedersachsen.de" title="E-Mail"><i class="icon-mail"></i>poststelle AT lfd.niedersachsen.de</a>
+
+                
+</p>
+    
+    <h3>Auskunft, Löschung, Sperrung</h3>
+    <p>
+    Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.
+    </p>  
+    
+    <h3>Statistische Daten für den Betreiber der Website</h3>
+    <p>
+    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. Piwik ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von Piwik erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in Piwik ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
+    </p>  
+    <p>
+    Diese „Sitzungs-Cookies“ beinhalten keine personenbezogenen Daten und verfallen nach Ablauf der Sitzung. Techniken, wie zum Beispiel Java-Applets oder Active-X-Controls, die es ermöglichen, das Zugriffsverhalten der Nutzer nachzuvollziehen, werden nicht eingesetzt.
+    </p>
+    <p>
+    Im Einzelnen werden über jeden Zugriff/Abruf folgende Daten gespeichert: 
+    </p>
+    <ul>
+    
+    <li>- die ersten beiden Teile der IP-Adresse,</li>
+    <li>- Datum und Uhrzeit,</li>
+    <li>- User-Agent der verwendeten Software,</li>
+    <li>- aufgerufene Seite/Name der abgerufenen Datei,</li>
+    <li>- übertragene Datenmenge,</li>
+    <li>- Meldung, ob der Zugriff/Abruf erfolgreich war,</li>
+
+    </ul>
+    <p>
+    Sie können sich hier entscheiden, ob in Ihrem Browser ein eindeutiger Webanalyse-Cookie abgelegt werden darf, um dem Betreiber der Webseite die Erfassung und Analyse verschiedener statistischer Daten zu ermöglichen.  
+    </p>
+    <p>
+    Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Piwik in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um den Piwik-Deaktivierungs-Cookie in Ihrem Browser abzulegen.
+    </p>
+    <p>
+    Widerspruchs- und Beseitigungsmöglichkeit:
+    </p>
+    <p>
+                
+                Zustimmung verweigern: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de" class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
+            
+</p>
+</div>
     </message>
 
     <message key="xmlui.costrequest.error">Das Formular konnte leider nicht abgeschickt werden.</message>

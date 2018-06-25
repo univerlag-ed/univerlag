@@ -727,6 +727,10 @@
                         <a href="{$context-path}/info/conditions">
                             <i18n:text>xmlui.dri2xhtml.structural.conditions-link</i18n:text>
                         </a>
+			<xsl:text> | </xsl:text>
+                        <a href="{$context-path}/info/dataprivacy">
+                            <i18n:text>xmlui.static.data_privacy.head</i18n:text>
+                        </a>
                     </div>
 
                 </div>
@@ -882,6 +886,7 @@
 
         <script src="/static/shopping-cart.min.js" charset="UTF-8" type="text/javascript"> </script>
         <script src="/static/js/utils.js" charset="UTF-8" type="text/javascript"> </script>
+	<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'> </script>
         <script type="text/javascript">
             var _paq = _paq || [];
             _paq.push(['trackPageView']);
@@ -914,7 +919,7 @@
                         <xsl:variable name="locale" select="."/>
                         <xsl:if test="$locale != $active-locale">
                             <li role="presentation">
-                                <a>
+                                <a id="langopt">
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="$current-uri"/>
                                         <xsl:text>?locale-attribute=</xsl:text>
