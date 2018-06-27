@@ -2828,7 +2828,7 @@ Göttingen University Press
                 <div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
-                        <h4><a href="www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
+                        <h4><a href="http:/www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
                         <p>Göttingen Centre for Digital Humanities</p>
                     </div>
                     <div class="col-sm-4">
@@ -3542,11 +3542,11 @@ Open Access and should contain as many books as possible, provided that these pu
 
             <div class="media">
                 <div class="media-left">
-                    <a href="//www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+                    <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
                 </div>
                 <div class="media-body">
                     <h4 class="media-heading">Goettingen Journal of International Law (GoJIL)</h4>
-                    Founded in 2007, the Goettingen Journal of International Law (<a href="//www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) is an initiative
+                    Founded in 2007, the Goettingen Journal of International Law (<a href="http://www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) is an initiative
                     with the primary objective of publishing an e-journal of legal scholarship focusing on International Law.
                     Since then the Göttingen University Press supports the journal with bibliographic and archiving services.
                     The aim of the journal is to foster debate among scholars of the diverse fields within international law, while, at the same time,
@@ -3557,7 +3557,7 @@ Open Access and should contain as many books as possible, provided that these pu
                     It is the first German International Law journal where the responsibility for the editing and publishing process as a whole is primarily carried by students.
                     It is published exclusively in English.
                     The journal is available online and free of charge, since open access to the results of academic research is essential for the future of legal scholarship.
-                    The journal is being published in cooperation with the <a href="//www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>,
+                    The journal is being published in cooperation with the <a href="htpp://www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>,
                     with the <a href="//inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> and with support of the
                     Göttingen University Press.
                 </div>
@@ -3771,7 +3771,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
         <p>
             The "Göttinger Schriften zu Landschaftsinterpretation und Tourismus” present a sample of the works of the independent non-profit organization ZELT,
             who aims at supporting the interpretation of landscapes in context with a sustainable development in the fields of tourism and regional issues.
-            <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
+            <a href="http://www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a> is closely connected with the Geographical Institut of the University of Göttingen.
             This series is being published by Göttingen University Press from volume 4 onwards.
         </p>
         <p class="narrow">ISSN (Print): 2512-7128</p>

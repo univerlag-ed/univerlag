@@ -2872,7 +2872,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
-                        <h4><a href="www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
+                        <h4><a href="http://www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
                         <p>Göttingen Centre for Digital Humanities</p>
                     </div>
                 </div>
@@ -3700,10 +3700,10 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
         <div class="media">
             <div class="media-left">
-                <a href="//www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+                <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
             </div>
             <div class="media-body">
-                Das Goettingen Journal for International Law (<a href="//www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="//www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>, dem <a href="//inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
+                Das Goettingen Journal for International Law (<a href="http://www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="http://www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>, dem <a href="http://inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
             </div>
         </div>
 
@@ -3886,7 +3886,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <message key="xmlui.collection.zeltf.introduction">
         <p>
-            Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="//www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen.
+            Die „Göttinger Schriften zu Landschaftsinterpretation und Tourismus“ zeigen einen Ausschnitt aus der Arbeit des unabhängigen gemeinnützigen Vereins <a href="http://www.zelt-goettingen.de/wasistzelt.htm" class="extern-link" target="_blank">ZELT</a>, der sich für die Profilierung der Landschaftsinterpretation im Kontext einer nachhaltigen Tourismus- und Regionalentwicklung einsetzt. ZELT steht in enger Verbindung mit dem Geographischen Institut der Universität Göttingen.
         </p>
         <p class="narrow">
             ISSN (Print): 2512-7128
@@ -3951,6 +3951,9 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
         <p>
             Ab Juni 2008 arbeiteten zunächst Wissenschaftler/innen der Universitäten Göttingen und Hamburg, seit 2011 der Universitäten Göttingen und Tübingen, aus den Bereichen Kulturanthropologie/ Europäische Ethnologie, Volkswirtschaft, Ethnologie, Wirtschafts- und Völkerrecht zu Cultural Property (kulturelles Eigentum). Mittlerweile befindet sich das Projekt in der zweiten Phase. Mit einem interdisziplinären Ansatz untersucht die aus Mitteln der Deutschen Forschungsgemeinschaft geförderte Forschergruppe die Konstituierung von Cultural Property, seinen Akteuren, Diskursen, Kontexten und Regeln. Die Bände dieser Reihe dokumentieren die Ergebnisse aus der laufenden Forschung.
         </p>
+	    <p>
+		    Herausgeberinnen und Herausgeber der Reihe sind Prof. Dr. Regina Bendix, Prof. Dr. Kilian Bizer, Prof. Dr. Brigitta Hauser-Schäublin, Prof. Dr. Gerald Spindler und Prof. Dr. Peter-Tobias Stoll.
+	    </p>
         <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2190-8672</p>
         <p class="narrow">ISSN (Online): 2512-6342</p>
@@ -4173,6 +4176,9 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
             interdisziplinären, kulturwissenschaftlichen Vernetzungen, für empirische Studien in gegenwartsorientierter wie historischer
             Anlage ebenso wie fachhistorische und theoretische Studien.
         </p>
+	<p>
+		Herausgeberinnen und Herausgeber der Reihe sind Prof. Dr. Regina Bendix, Prof. Dr. Sabine Hess, Prof. Dr. Carola Lipp und Prof. Dr. Moritz Ege.
+	    </p>		
         <p><a class="flyer" target="_blank" href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
