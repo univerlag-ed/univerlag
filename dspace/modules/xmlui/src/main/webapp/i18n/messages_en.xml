@@ -3671,6 +3671,18 @@ Open Access and should contain as many books as possible, provided that these pu
 
     <!-- Publikationen aus der Universität texts -->
 
+	
+<message key="xmlui.collection.gsbp.introduction">
+
+        <p>
+            The Göttingen Series in Biophysics is intended as a collection of research monographs in biological physics, carried out at the Institute for X-Ray Physics at the University of Göttingen, and in the framework of related research networks and collaborations. The series covers topics from molecular to cellular biophysics, includes experimental, numerical then theoretical work and combines methods development and studies of complex biological systems. In most cases, the contributions are based on PhD theses. With this book series, we intend to promote the individual monographs by putting them into the larger context of the research field. We hope to be able to enhance the visibility of the research carried out here, and to encourage others to build on our findings, use our methods and advance the filed in a collaborative spirit.
+  
+      </p>
+   
+   </message>
+
+	
+	
     <message key="xmlui.collection.nfv.introduction">
         <p>
 	The Nordwestdeutsche Forstliche Versuchsanstalt is in charge of practical forestry research and has the advisory function to all types of forestry holdings in Lower Saxony, 
@@ -3922,7 +3934,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
-            This new series in public law, published by the <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristische Fakultät der Georg-August-Universität Göttingen</a>, consists of dissertation theses, significant research works and anthologies with special attention to constituional and administrative law.
+            This new series in public law, published by the <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristische Fakultät der Georg-August-Universität Göttingen</a>, consists of dissertation theses, significant research works and anthologies with special attention to constituional and administrative law.
         </p>
         <p class="narrow">ISSN (Print): 2191-4583</p>
         <p class="narrow">ISSN (Online): 2512-6911</p>
