@@ -3814,14 +3814,6 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <!-- Publikationen aus der Universität texts -->
 
-<message key="xmlui.collection.gsbp.introduction">
-        <p>
-            The Göttingen Series in Biophysics is intended as a collection of research monographs in biological physics, carried out at the Institute for X-Ray Physics at the University of Göttingen, and in the framework of related research networks and collaborations. The series covers topics from molecular to cellular biophysics, includes experimental, numerical then theoretical work and combines methods development and studies of complex biological systems. In most cases, the contributions are based on PhD theses. With this book series, we intend to promote the individual monographs by putting them into the larger context of the research field. We hope to be able to enhance the visibility of the research carried out here, and to encourage others to build on our findings, use our methods and advance the filed in a collaborative spirit.
-        </p>
-            </message>
-	
-	
-	
     <message key="xmlui.collection.GBeF.introduction">
         <p>
             Die Göttinger Beiträge zur erziehungswissenschaftlichen Forschung wurden 1991 gegründet, um für kleinere Studien und explorative empirische Arbeiten, Dokumentationen und Forschungsberichte von Mitarbeiter_innen des damaligen Pädagogischen Seminars sowie für sehr gute studentische Abschlussarbeiten eine Publikationsmöglichkeit zu schaffen. Auch nach der Umbenennung des Pädagogischen Seminars in Institut für Erziehungswissenschaft wird die Reihe fortgesetzt.<br />
@@ -4031,7 +4023,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
-            Diese Reihe der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
+            Diese Reihe der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
         </p>
         <p class="narrow">ISSN (Print): 2191-4583</p>
         <p class="narrow">ISSN (Online): 2512-6911</p>
@@ -5235,4 +5227,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_person">Stichwörter: Personen</message>
     <message key="xmlui.Discovery.AbstractSearch.type_location">Stichwörter: Orte</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Stichwörter: Orte</message>
+    <message key="xmlui.item.license">Deckblatt-Bild: </message>
 </catalogue>

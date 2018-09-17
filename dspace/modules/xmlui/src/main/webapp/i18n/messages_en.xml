@@ -5153,5 +5153,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_person">Keywords: Persons</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Keywords: Location</message>
     <message key="xmlui.Discovery.AbstractSearch.type_location">Keywords: Location</message>
-
+    <message key="xmlui.item.license">Cover-Image: </message>
 </catalogue>

@@ -329,12 +329,30 @@
                         <xsl:attribute name="data-src">
                             <xsl:text>holder.js/100%x</xsl:text>
                             <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
+                            <xsl:text>No Thumbnail</xsl:text>
                         </xsl:attribute>
                     </img>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
+        <span id="coverlicense">
+            <xsl:if test="//dim:field[@element='rights'][@qualifier='coverlicense']">
+                <xsl:variable name="coverlicense"><xsl:value-of select="//dim:field[@element='rights'][@qualifier='coverlicense']"/></xsl:variable>
+                <a rel="license"
+                       href="{$coverlicense}"
+                       alt="{$coverlicense}"
+                       i18n:attr="title"
+                       title="xmlui.item.license"
+                    >
+			<i18n:text>xmlui.item.cover.license</i18n:text>                        
+                        <xsl:variable name="license"><xsl:value-of select="substring-before(substring-after($coverlicense, 'licenses/'), '/')" /></xsl:variable>
+                        <xsl:variable name="cc-version"><xsl:value-of select="substring-before(substring-after($coverlicense, concat($license, '/')), '/')" /></xsl:variable>
+                        <span class="license"><xsl:value-of select="concat(' CC ', $license, ' ', $cc-version)" /></span>
+
+                    </a>
+            </xsl:if>
+         </span>
+
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-abstract">
