@@ -5228,4 +5228,14 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_location">Stichwörter: Orte</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Stichwörter: Orte</message>
     <message key="xmlui.item.license">Deckblatt-Bild: </message>
+
+    <message key="xmlui.Discovery.AbstractSearch.type_locations">Orte im Volltext</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Orte (Volltext)</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_persons">Personen (Volltext)</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_persons">Personen im Volltext</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_organisations">Organisationen (Vollext)</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisationen im Volltext</message>
+    <message key="xmlui.viewall"> Alle auflisten</message>
+
+
 </catalogue>

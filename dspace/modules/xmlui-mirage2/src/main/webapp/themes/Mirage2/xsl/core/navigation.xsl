@@ -226,9 +226,11 @@
     </xsl:template>
 
     <xsl:template match="dri:options//dri:list">
-        <xsl:apply-templates select="dri:head"/>
-        <xsl:apply-templates select="dri:item"/>
-        <xsl:apply-templates select="dri:list"/>
+	<xsl:if test="not(@n='persons' or @n='locations' or @n='organisations')">
+                <xsl:apply-templates select="dri:head"/>
+                <xsl:apply-templates select="dri:item"/>
+                <xsl:apply-templates select="dri:list"/>
+        </xsl:if>
     </xsl:template>
 
 

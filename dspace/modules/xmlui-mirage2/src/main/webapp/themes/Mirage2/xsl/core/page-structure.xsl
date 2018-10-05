@@ -128,6 +128,35 @@
                     </xsl:choose>
                     <!-- Javascript at the bottom for fast page loading -->
                     <xsl:call-template name="addJavascript"/>
+		    <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script> 
+                    <!-- <xsl:if test="//dri:metadata[@element='request' and  @qualifier='URI'] == 'handle/3/Goettingen_studies_in_cultural_property_series'">
+                                <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script>
+                    </xslif> -->
+                    <script>
+                        $("#tagcloud-person a").tagcloud({
+                        size: {start: 7, end: 14, unit: "px"},
+                        /*color: {start: '#6bafcf', end: '#08338e'}*/
+                        color: {start: '#3498DB', end: '#46CFB0'}
+                        });
+
+                        $("#tagcloud-organisation a").tagcloud({
+                        size: {start: 7, end: 14, unit: "px"},
+                        color: {start: '#3498DB', end: '#46CFB0'}
+                        });
+
+                        $("#tagcloud-location a").tagcloud({
+                        size: {start: 7, end: 14, unit: "px"},
+                        color: {start: '#3498DB', end: '#46CFB0'}
+                        });
+
+                        $(function () {
+                        $('[data-toggle="popover"]').popover()
+                        })
+
+                        $('#thumbnail').mouseenter( function() {$('#cover').css('display','block')} ).mouseleave(  function() {$('#cover').css('display','none')} );
+
+
+                    </script>
                 </body>
                 <xsl:text disable-output-escaping="yes">&lt;/html&gt;</xsl:text>
 
@@ -182,6 +211,16 @@
             </meta>
 
             <!-- Add stylesheets -->
+
+	     <style type="text/css">
+            	a.tagcloud{
+                        padding-right:5px;
+                }
+
+		#aspect_artifactbrowser_CollectionViewer_div_collection-view > h4 {
+			margin-top: 30px;
+		}
+                </style>
 
             <!--TODO figure out a way to include these in the concat & minify-->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='stylesheet']">

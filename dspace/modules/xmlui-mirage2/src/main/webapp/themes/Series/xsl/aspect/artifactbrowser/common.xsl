@@ -84,6 +84,66 @@
         In DRI it constitutes a standard view of collections/communities and a complete metadata listing
         view of items. -->
     <xsl:template match="dri:referenceSet[@type = 'detailView']" priority="2">
+
+
+        <xsl:if test="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.persons']">
+            <h4><i18n:text>xmlui.Discovery.AbstractSearch.type_persons</i18n:text></h4>
+            <div id="tagcloud-person">
+                <xsl:for-each select="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.persons']/dri:item">
+                    <xsl:sort select="." data-type="text" order="ascending"/>
+                    <a class="tagcloud">
+                        <xsl:attribute name="href"><xsl:value-of select="dri:xref/@target" /></xsl:attribute>
+                        <xsl:attribute name="rel"><xsl:value-of select="substring-before(substring-after(dri:xref,'('), ')')" /></xsl:attribute>
+                        <xsl:value-of select="substring-before(dri:xref,'::')" />
+                    </a>
+                </xsl:for-each>
+            </div>
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="concat('/', //dri:metadata[@element='request' and @qualifier='URI'], '/search-filter?field=persons') "/></xsl:attribute>
+
+                ... <i18n:text>xmlui.viewall</i18n:text>
+            </a>
+
+        </xsl:if>
+    <xsl:if test="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.organisations']">
+            <h4><i18n:text>xmlui.Discovery.AbstractSearch.type_organisations</i18n:text></h4>
+            <div id="tagcloud-organisation">
+                <xsl:for-each select="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.organisations']/dri:item">
+                    <xsl:sort select="." data-type="text" order="ascending"/>
+                    <a class="tagcloud">
+                        <xsl:attribute name="href"><xsl:value-of select="dri:xref/@target" /></xsl:attribute>
+                        <xsl:attribute name="rel"><xsl:value-of select="substring-before(substring-after(dri:xref,'('), ')')" /></xsl:attribute>
+                        <xsl:value-of select="substring-before(dri:xref,'::')" />
+                    </a>
+                </xsl:for-each>
+
+            </div>
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="concat('/', //dri:metadata[@element='request' and @qualifier='URI'], '/search-filter?field=organisations') "/></xsl:attribute>
+
+                ... <i18n:text>xmlui.viewall</i18n:text>
+            </a>
+        </xsl:if>
+        <xsl:if test="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.locations']">
+            <h4><i18n:text>xmlui.Discovery.AbstractSearch.type_locations</i18n:text></h4>
+            <div id="tagcloud-location">
+                <xsl:for-each select="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.locations']/dri:item">
+                    <xsl:sort select="." data-type="text" order="ascending"/>
+                    <a class="tagcloud">
+                        <xsl:attribute name="href"><xsl:value-of select="dri:xref/@target" /></xsl:attribute>
+                        <!-- <xsl:attribute name="rel"><xsl:value-of select="round(substring-before(substring-after(dri:xref,'('), ')') div 2)" /></xsl:attribute> -->
+			<xsl:attribute name="rel"><xsl:value-of select="substring-before(substring-after(dri:xref,'('), ')')"/></xsl:attribute>
+                        <xsl:value-of select="substring-before(dri:xref,'::')" />
+                    </a>
+
+                </xsl:for-each>
+            </div>
+            <a>
+                <xsl:attribute name="href"><xsl:value-of select="concat('/', //dri:metadata[@element='request' and @qualifier='URI'], '/search-filter?field=locations') "/></xsl:attribute>
+
+                ... <i18n:text>xmlui.viewall</i18n:text>
+            </a>
+        </xsl:if>
         <xsl:apply-templates select="dri:head"/>
         <xsl:apply-templates select="*[not(name()='head')]" mode="detailView"/>
     </xsl:template>
@@ -381,6 +441,7 @@
         <xsl:comment> External Metadata URL: <xsl:value-of select="$externalMetadataURL"/> </xsl:comment>
             <xsl:apply-templates select="document($externalMetadataURL)" mode="recent-submissions-list"/>
             <xsl:apply-templates />
+	
     </xsl:template>
 
     <xsl:template match="mets:METS[mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']]" mode="recent-submissions-list">

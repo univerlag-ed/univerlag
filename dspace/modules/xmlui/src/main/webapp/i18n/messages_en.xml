@@ -5154,4 +5154,14 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Keywords: Location</message>
     <message key="xmlui.Discovery.AbstractSearch.type_location">Keywords: Location</message>
     <message key="xmlui.item.license">Cover-Image: </message>
+
+
+    <message key="xmlui.Discovery.AbstractSearch.type_locations">Locations in fulltext</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location">Locations (Full Text)</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_persons">Persons (Full Text)</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_persons">Persons in fulltext</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_organisations">Organizations (Full Text)</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisations in fulltext</message>
+    <message key="xmlui.viewall"> View all</message>
+
 </catalogue>
