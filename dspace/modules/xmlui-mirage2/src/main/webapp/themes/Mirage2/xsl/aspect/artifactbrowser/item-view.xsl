@@ -335,8 +335,8 @@
                 </xsl:otherwise>
             </xsl:choose>
         </div>
-        <span id="coverlicense">
-            <xsl:if test="//dim:field[@element='rights'][@qualifier='coverlicense']">
+        <xsl:if test="//dim:field[@element='rights'][@qualifier='coverlicense']">
+	   <span id="coverlicense">
                 <xsl:variable name="coverlicense"><xsl:value-of select="//dim:field[@element='rights'][@qualifier='coverlicense']"/></xsl:variable>
                 <a rel="license"
                        href="{$coverlicense}"
@@ -344,15 +344,14 @@
                        i18n:attr="title"
                        title="xmlui.item.license"
                     >
-			<i18n:text>xmlui.item.cover.license</i18n:text>                        
+                        <i18n:text>xmlui.item.coverlicense</i18n:text> 
                         <xsl:variable name="license"><xsl:value-of select="substring-before(substring-after($coverlicense, 'licenses/'), '/')" /></xsl:variable>
                         <xsl:variable name="cc-version"><xsl:value-of select="substring-before(substring-after($coverlicense, concat($license, '/')), '/')" /></xsl:variable>
                         <span class="license"><xsl:value-of select="concat(' CC ', $license, ' ', $cc-version)" /></span>
 
                     </a>
-            </xsl:if>
-         </span>
-
+	     </span>
+         </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-abstract">
@@ -1434,11 +1433,11 @@
                 </xsl:if>
                 <a data-target="#details" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-details</i18n:text></a>
             </li>
-            <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
+            <!-- <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
                 <li>
                     RELATED ITEMS
                 </li>
-            </xsl:if>
+            </xsl:if> -->
             <!-- <li><a href="#cite">Zitieren</a></li> -->
         </ul>
         <!-- </div> -->
