@@ -7,7 +7,7 @@
 .thumbnail {
   display: block;
   padding: $thumbnail-padding;
-  margin-bottom: $line-height-computed;
+/*  margin-bottom: $line-height-computed; */
   line-height: $line-height-base;
   background-color: $thumbnail-bg;
   border: 1px solid $thumbnail-border;
@@ -36,3 +36,5 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: $link-color;
 }
+
+

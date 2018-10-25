@@ -18,7 +18,9 @@ import java.io.Writer;
 
 import org.apache.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.util.PDFTextStripper;
+import org.apache.pdfbox.pdmodel.PDPage;
 import org.dspace.core.ConfigurationManager;
 
 /*
@@ -74,7 +76,12 @@ public class PDFFilter extends MediaFilter
         try
         {
             boolean useTemporaryFile = ConfigurationManager.getBooleanProperty("pdffilter.largepdfs", false);
-
+	    int Startpage;
+            try {
+                Startpage = Integer.parseInt(ConfigurationManager.getProperty("pdffilter.startpage"));
+            } catch (Exception e) {
+                Startpage = 1;
+            }
             // get input stream from bitstream
             // pass to filter, get string back
             PDFTextStripper pts = new PDFTextStripper();
@@ -98,6 +105,11 @@ public class PDFFilter extends MediaFilter
             try
             {
                 pdfDoc = PDDocument.load(source);
+		PDDocumentCatalog dc = pdfDoc.getDocumentCatalog();
+                int numPages = dc.getAllPages().size();
+                // get text from page 9
+                pts.setStartPage(Startpage);
+
                 pts.writeText(pdfDoc, writer);
             }
             finally

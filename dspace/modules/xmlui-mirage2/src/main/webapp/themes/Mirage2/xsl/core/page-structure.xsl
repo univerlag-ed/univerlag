@@ -213,6 +213,10 @@
             <!-- Add stylesheets -->
 
 	     <style type="text/css">
+		#aspect_discovery_RelatedItems_div_item-related-container {
+			display:none;
+		}
+
             	a.tagcloud{
                         padding-right:5px;
                 }

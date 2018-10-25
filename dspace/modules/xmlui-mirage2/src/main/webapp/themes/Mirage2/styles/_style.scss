@@ -180,7 +180,6 @@ a.list-group-item {
 
 
 .relation, .relation a, .event {
-  display: inline-block;
   font-weight: bold;
   font-size: small;
   color: gray;
@@ -188,6 +187,7 @@ a.list-group-item {
 
 
 .dateissued {
+  padding-top: 15px;
   display: inherit;
 }
 
@@ -778,6 +778,9 @@ a.tooltip {
   min-height: 300px;
 }
 
+#coverlicense {
+ margin-bottom: 25px;
+}
 
 #totop {
   background: #EAE9E7;

@@ -359,8 +359,9 @@
             </map:match>
 
             <!-- redirect publishing in series to info -->
-
-
+	    <map:match pattern="handle/3/academy_in_conversation_series/submit">
+                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+            </map:match>
 
             <map:match pattern="handle/3/Annals_of_the_history_and_philosophy_of_biology_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
@@ -397,7 +398,6 @@
             <map:match pattern="handle/3/Goettingen_contributions_to_cultural_anthropology_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
-
             <map:match pattern="handle/3/Goettingen_library_works_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
@@ -438,13 +438,7 @@
             <map:match pattern="handle/3/Goettingen_studies_on_criminology_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
-
-            <map:match pattern="handle/3/793/submit">
-                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
-            </map:match>
-
-
-            <map:match pattern="handle/3/rtg_interdisciplinary_environmental_history_series/submit">
+            <map:match pattern="handle/3/Goettingen_studies_in_cultural_anthropology_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
@@ -452,23 +446,11 @@
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
-            <map:match pattern="handle/3/interKULTUR_series/submit">
-                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
-            </map:match>
-
             <map:match pattern="handle/3/fadaf_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
-            <map:match pattern="handle/3/seminars_of_mathematical_institute_series/submit">
-                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
-            </map:match>
-
-            <map:match pattern="handle/3/835/submit">
-                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
-            </map:match>
-
-            <map:match pattern="handle/3/Didaxis_series/submit">
+            <map:match pattern="handle/3/matdaf_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
@@ -476,9 +458,6 @@
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
 
-            <map:match pattern="handle/3/821/submit">
-                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
-            </map:match>
 
             <map:match pattern="handle/3/Species_phylogeny_and_evolution_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
@@ -491,10 +470,15 @@
             <map:match pattern="handle/3/Syngramma_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
+            
+            <map:match pattern="handle/3/turkish_german_studies_series/submit">
+                <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
+            </map:match>
 
             <map:match pattern="handle/3/Zeltforum_series/submit">
                 <map:redirect-to uri="/info/editor-warning" permanent="yes"/>
             </map:match>
+
 
             <!-- changed isbn-9 to isbn-13 -->
             <map:match pattern="handle/3/isbn-3-938616-32-6">
