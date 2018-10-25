@@ -3937,7 +3937,22 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
         <p class="narrow">ISSN (Online): 2512-594X</p>
     </message>
 
-    <message key="xmlui.collection.gsxp.introduction">
+
+    <message key="xmlui.collection.gsbp.introduction">
+        <p>
+            Die Göttinger Biophysik Reihe ist als Sammlung von Forschungsmonographien zur Biophysik gedacht, die am Institut für Röntgenphysik der Universität Göttingen sowie im Rahmen von Forschungsnetzwerken und Kooperationen durchgeführt werden. Die Themen reichen von der molekularen Biophysik bis zur Zellbiophysik, in experimentellen, numerischen und theoretischen Arbeiten, und kombinieren Methodenentwicklung und die Untersuchung komplexer biologischer Systeme.
+In den meisten Fällen basieren die Beiträge auf Dissertationen. Mit dieser Buchreihe wollen wir die einzelnen Monographien fördern, indem wir sie in den größeren Kontext des Forschungsbereichs stellen. Wir hoffen, die Sichtbarkeit der hier durchgeführten Forschung zu verbessern und andere zu ermutigen, auf unseren Erkenntnissen aufzubauen und unsere Methoden zu nutzen und weiterzuentwickeln.
+<br />
+Übersetzt mit www.DeepL.com/Translator
+        </p>
+
+        <p class="narrow">ISSN (Print): 2626-2061</p>
+        <p class="narrow">ISSN (Online): 2626-207X</p>
+    </message>
+	
+	
+	
+     <message key="xmlui.collection.gsxp.introduction">
         <p>
             In der Reihe „Göttingen Series in X-ray Physics“ erscheinen sehr gute Dissertationen und angenommene Habilitationen, geeignete wissenschaftliche Studien und Sammelbände sowie besonders herausragende Bachelor- und Master-Arbeiten aus den Forschungbereichen der Röntgenoptik und Röntgenbildgebung. Die Arbeiten können auch an anderen Universitäten oder Großforschungseinrichtungen entstanden sein. In der Regel werden die Arbeiten auf Englisch veröffentlicht.
         </p>
