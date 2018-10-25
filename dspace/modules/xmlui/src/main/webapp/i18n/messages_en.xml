@@ -3672,16 +3672,6 @@ Open Access and should contain as many books as possible, provided that these pu
     <!-- Publikationen aus der Universität texts -->
 
 	
-<message key="xmlui.collection.gsbp.introduction">
-
-        <p>
-            The Göttingen Series in Biophysics is intended as a collection of research monographs in biological physics, carried out at the Institute for X-Ray Physics at the University of Göttingen, and in the framework of related research networks and collaborations. The series covers topics from molecular to cellular biophysics, includes experimental, numerical then theoretical work and combines methods development and studies of complex biological systems. In most cases, the contributions are based on PhD theses. With this book series, we intend to promote the individual monographs by putting them into the larger context of the research field. We hope to be able to enhance the visibility of the research carried out here, and to encourage others to build on our findings, use our methods and advance the filed in a collaborative spirit.
-  
-      </p>
-   
-   </message>
-
-	
 	
     <message key="xmlui.collection.nfv.introduction">
         <p>
@@ -3831,6 +3821,18 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     </message>
 
 
+    <message key="xmlui.collection.gsbp.introduction">
+        <p>
+            The Göttingen Series in Biophysics is intended as a collection of research monographs in biological physics, carried out at the Institute for X-Ray Physics at the University of Göttingen, and in the framework of related research networks and collaborations. The series covers topics from molecular to cellular biophysics, includes experimental, numerical then theoretical work and combines methods development and studies of complex biological systems.
+In most cases, the contributions are based on PhD theses. With this book series, we intend to promote the individual monographs by putting them into the larger context of the research field. We hope to be able to enhance the visibility of the research carried out here, and to encourage others to build on our findings, use our methods and advance the filed in a collaborative spirit.
+        </p>
+
+        <p class="narrow">ISSN (Print): 2626-2061</p>
+        <p class="narrow">ISSN (Online): 2626-207X</p>
+    </message>
+	
+	
+	
     <message key="xmlui.collection.gsxp.introduction">
         <p>
             The Göttingen series in x-ray physics is intended as a collection of research monographs in x-ray science,
