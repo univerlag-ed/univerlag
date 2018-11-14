@@ -45,14 +45,15 @@
 
     <xsl:variable name="serie">
         <xsl:for-each select="//dri:reference[@type='DSpace Collection']">
-	    <xsl:if test="contains(@url, 'series')">
+            <xsl:if test="contains(./@url, '_series')">
                 <xsl:value-of select="substring-after(substring-before(@url, '/mets.xml'), 'metadata')" />
-	    </xsl:if>
+            </xsl:if>
         </xsl:for-each>
     </xsl:variable>
 
-    <xsl:variable name="authent">
-        <xsl:value-of select="//dri:userMeta/@authenticated" />
+    <xsl:variable name="baseURL">
+<!--         <xsl:value-of select="concat('//', //dri:metadata[@qualifier='serverName'], ':',//dri:metadata[@qualifier='serverPort'])" /> -->
+	     <xsl:text>www.univerlag.uni-goettingen.de</xsl:text>
     </xsl:variable>
 
     <xsl:template name="itemSummaryView-DIM">
@@ -225,48 +226,18 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-events">
-<xsl:for-each select="//dim:field[@element='relation'][@qualifier='event']">
-                <p>
-                   <strong>
-                   <xsl:choose>
-                        <xsl:when test="//dim:field[@qualifier='subtype'] and //dim:field[@qualifier='subtype']='catalog'">
-                            <i18n:text>xmlui.item.event.catalog</i18n:text><xsl:text>: </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <i18n:text>xmlui.item.event</i18n:text><xsl:text>: </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                   </strong>
-                    <xsl:choose>
-                        <xsl:when test="contains(., '(')">
-
-                                <xsl:variable name="tail"><xsl:value-of select="substring-after(., ')')"/></xsl:variable>
-			 	<xsl:variable name="head"><xsl:value-of select="normalize-space(substring-before(., '('))" /></xsl:variable>
-				<xsl:value-of select="concat(translate($head, ';', ''), ', ')"/>
-                                <xsl:if test="contains($tail, ':')">
-                                        <xsl:variable name="tail2"><xsl:value-of select="substring-after($tail, ':')"/></xsl:variable>
-                                        <xsl:if test="contains($tail2, '.')">
-                                                <xsl:value-of select="concat(' ', $tail2, ', ')" />
-                                        </xsl:if>
-                                        <xsl:value-of select="substring-after(substring-before(., ')'),'(')"/>
-                                </xsl:if>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="."/>
-                        </xsl:otherwise>
-                    </xsl:choose>
+        <xsl:if test="//dim:field[@element='relation'][@qualifier='event']">
+            <xsl:for-each select="//dim:field[@element='relation'][@qualifier='event']">
+                <p class="event">
+                    <xsl:value-of select="." />
                 </p>
             </xsl:for-each>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-edition">
-	
-        <xsl:for-each select="//dim:field[@element='description'][@qualifier='edition']">
-            <xsl:value-of select="."/>
-	    <xsl:text>. </xsl:text>
-        </xsl:for-each>
-	<xsl:if test="//dim:field[@element='notes'][@qualifier='edition']">
-            <xsl:value-of select="//dim:field[@element='notes'][@qualifier='edition']"/>
+        <xsl:if test="//dim:field[@element='description'][@qualifier='edition']">
+            <xsl:value-of select="//dim:field[@element='description'][@qualifier='edition']"/>
         </xsl:if>
     </xsl:template>
 
@@ -329,29 +300,12 @@
                         <xsl:attribute name="data-src">
                             <xsl:text>holder.js/100%x</xsl:text>
                             <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>No Thumbnail</xsl:text>
+                            <xsl:text>/text:No Thumbnail</xsl:text>
                         </xsl:attribute>
                     </img>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
-        <xsl:if test="//dim:field[@element='rights'][@qualifier='coverlicense']">
-	   <span id="coverlicense">
-                <xsl:variable name="coverlicense"><xsl:value-of select="//dim:field[@element='rights'][@qualifier='coverlicense']"/></xsl:variable>
-                <a rel="license"
-                       href="{$coverlicense}"
-                       alt="{$coverlicense}"
-                       i18n:attr="title"
-                       title="xmlui.item.license"
-                    >
-                        <i18n:text>xmlui.item.coverlicense</i18n:text> 
-                        <xsl:variable name="license"><xsl:value-of select="substring-before(substring-after($coverlicense, 'licenses/'), '/')" /></xsl:variable>
-                        <xsl:variable name="cc-version"><xsl:value-of select="substring-before(substring-after($coverlicense, concat($license, '/')), '/')" /></xsl:variable>
-                        <span class="license"><xsl:value-of select="concat(' CC ', $license, ' ', $cc-version)" /></span>
-
-                    </a>
-	     </span>
-         </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-abstract">
@@ -450,11 +404,6 @@
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-URI">
-	<xsl:if test="($authent = 'yes') and (not(contains(//dim:field[@element='identifier' and @qualifier='uri'],'doi.org')))">
-                <div class="alert alert-danger" role="alert">
-                <strong>ZUGEORDNETE DOI: <xsl:value-of select="//dim:field[@element='intern'][@qualifier='doi']" /></strong>
-                </div>
-        </xsl:if>
         <xsl:choose>
             <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))">
                 <h4>
@@ -462,7 +411,6 @@
 
                     <strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-uri</i18n:text><xsl:text>: </xsl:text></strong>
                     <a id="pid">
-	
                         <xsl:attribute name="href">
                             <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='uri']"/>
                         </xsl:attribute>
@@ -472,7 +420,7 @@
                 </h4>
             </xsl:when>
             <xsl:otherwise>
-                <div>&#160;</div>
+                <div>&#130;</div>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -615,8 +563,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
-						<xsl:text> (Eds.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -625,8 +572,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <!-- <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text> -->
-						<xsl:text> (Arr.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
@@ -724,8 +670,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
-						<xsl:text> (Eds.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -734,8 +679,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <!-- <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text> -->
-						<xsl:text> (Arr.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
@@ -826,7 +770,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-						<xsl:text> (Eds.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -835,7 +779,7 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-						<xsl:text> (Arr.)</xsl:text>
+                                            <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
                                         </xsl:when>
                                     </xsl:choose>
                                 </xsl:attribute>
@@ -943,22 +887,12 @@
                     <xsl:value-of select="substring-after($mimetype,'/')"/>
                 </xsl:with-param>
             </xsl:call-template>
-	    <xsl:choose>
-		<xsl:when test="contains($mimetype, 'epub')">
-			<i18n:text>xmlui.item.ebook</i18n:text>			
-		</xsl:when>
-		<xsl:otherwise>
-			<i18n:text>xmlui.item.online.version</i18n:text>
-
-		</xsl:otherwise>
-	    </xsl:choose>
+            <i18n:text>xmlui.item.online.version</i18n:text>
             <span class="access">
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="$href"/>
                     </xsl:attribute>
-
-
 
                     <i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 
@@ -1355,14 +1289,7 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
-	<xsl:choose>
-		<xsl:when test="contains($mimetype, 'epub')">
-			<i class="icon-doc-text"></i>
-		</xsl:when>
-		<xsl:otherwise>
-			<i class="icon-file-pdf"></i>
-		</xsl:otherwise>
-	</xsl:choose>
+        <i class="icon-file-pdf"></i>
         <!--<xsl:attribute name="class">
             <xsl:choose>
                 <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
@@ -1433,11 +1360,11 @@
                 </xsl:if>
                 <a data-target="#details" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-details</i18n:text></a>
             </li>
-            <!-- <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
+            <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
                 <li>
                     RELATED ITEMS
                 </li>
-            </xsl:if> -->
+            </xsl:if>
             <!-- <li><a href="#cite">Zitieren</a></li> -->
         </ul>
         <!-- </div> -->
@@ -1569,10 +1496,10 @@
                 <xsl:if test="not(//dim:field[starts-with(@qualifier, 'abstract')])">
                     <xsl:attribute name="class">tab-pane active</xsl:attribute>
                 </xsl:if>
-                <xsl:call-template name="itemSummaryView-DIM-events"/>
-	        <xsl:for-each select="//dim:field[@qualifier='supplement']">
+                <xsl:for-each select="//dim:field[@qualifier='supplement']">
                     <p><xsl:value-of select="." /></p>
                 </xsl:for-each>
+                <xsl:call-template name="itemSummaryView-DIM-events"/>
                 <xsl:if test="//dim:field[@qualifier='edition']">
                     <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-edition</i18n:text></strong><xsl:text>: </xsl:text><xsl:call-template name="itemSummaryView-DIM-edition"/></p>
                 </xsl:if>
@@ -1644,7 +1571,36 @@
 		    </xsl:otherwise>
 		    </xsl:choose>
                 </xsl:for-each>
-                <xsl:if test="//dim:field[@qualifier='access'] != 'nodocument'"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
+                <xsl:if test="(//dim:field[@qualifier='access'] != 'nodocument')"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
+	         <xsl:if test="contains(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=y')">
+                <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading</i18n:text></strong><xsl:text>: </xsl:text>
+                    <a data-fancybox="" data-type="iframe" >
+                        <xsl:attribute name="data-src">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate</i18n:text>
+                    </a>
+                    <span id="pdfurl" style="display: none;" aria-hidden="true"><xsl:value-of select="concat($baseURL, '/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/></span>
+                    <a href="#" onclick="copyToClipboard('#pdfurl')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
+                    <br /><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.description</i18n:text>
+                </p>
+
+		<!-- preparation for annotation export -->
+                <div style="display: none;" aria-hidden="true">
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-text"><i18n:text>xmlui.item.annotation.details.text</i18n:text></span>
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.details.link</i18n:text></span>
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span>
+                </div>
+
+		</xsl:if>
+                <!-- preparation for peer review certificate -->
+                <div id="pr-details-texts" style="display: none;" aria-hidden="true">
+                    <span id="pr-details-text" style="display: none;" aria-hidden="true"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-pr-process</i18n:text></span>
+                    <span id="pr-link-title" style="display: none;" aria-hidden="true"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-pr-process.icon.title</i18n:text></span>
+                </div>
             </div>
             <!-- <div id="cite">
 
@@ -1808,3 +1764,4 @@
     </xsl:template>
 
 </xsl:stylesheet>
+

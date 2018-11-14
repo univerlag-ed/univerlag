@@ -546,7 +546,7 @@ public class OrderAction extends AbstractAction
             try {
                 email.send();
                 // everything ok and emails sent
-
+		System.out.println("email sent to univerlag");
 
             } catch (MessagingException me) {
                 writeError(map, "notification email failed");

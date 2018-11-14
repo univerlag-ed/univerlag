@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
+
+<body>
+                <head><i18n:text>xmlui.static.annotations.head</i18n:text></head>
+                <i18n:text>xmlui.static.annotations</i18n:text>
+</body>
+
+<options/>
+
+<meta>
+<userMeta/>
+ <pageMeta>
+        <metadata element="title"><i18n:text>xmlui.static.annotations.head</i18n:text></metadata>
+        <trail target="/"><i18n:text>xmlui.general.dspace_home</i18n:text></trail>
+        <trail><i18n:text>xmlui.static.annotations.head</i18n:text></trail>
+</pageMeta>
+<repositoryMeta/>
+</meta>
+</document>
+

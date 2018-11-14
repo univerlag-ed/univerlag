@@ -212,6 +212,7 @@
             <map:action name="StartAuthentication" src="org.dspace.app.xmlui.aspect.eperson.StartAuthenticationAction"/>
             <map:action name="DSpacePropertyFileReader" src="org.dspace.app.xmlui.cocoon.DSpacePropertyFileReader" />
             <map:action name="PropertyFileReader" src="org.dspace.app.xmlui.cocoon.PropertyFileReader" />
+	    <map:action name="OrderAction" src="org.dspace.app.xmlui.aspect.viewartifacts.OrderAction"/>
         </map:actions>
         <map:pipes default="caching">
             <map:pipe name="noncaching" src="org.apache.cocoon.components.pipeline.impl.NonCachingProcessingPipeline">
@@ -244,6 +245,16 @@
             <map:parameter name="outputBufferSize" value="8192"/>
             <map:parameter name="expires" value="now"/>
 
+	    <map:match pattern="order">
+                <map:generate type="file" src="aspects/protodocument.xml"/>
+                <map:act type="OrderAction">
+                    <map:transform src="file:///opt/dspace/univerlag/config/orderResults.xsl">
+                        <map:parameter name="result" value="{result}"/>
+                    </map:transform>
+
+                </map:act>
+                <map:serialize type="text"/>
+            </map:match>
 
             <!--
                     Bitstreams for items that have a handle assigned. If the
@@ -763,6 +774,10 @@
                     </map:otherwise>
                 </map:select>
             </map:match>
+
+           <map:match pattern="pdfview/*/*">
+                <map:redirect-to uri="https://www.univerlag.uni-goettingen.de/static/pdf.js-hypothes.is/viewer/web/viewer.html?file=https://www.univerlag.uni-goettingen.de/bitstream/handle/3/{1}/{2}"/>
+	    </map:match>
 
             <!-- HTML Sitemaps and Sitemaps.org Sitemaps for whole repo -->
             <map:match pattern="htmlmap">

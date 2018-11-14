@@ -2109,6 +2109,10 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Beschreibung</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Öffnen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Zu diesem Dokument gibt es keine Dateien.</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading">Annotationsservice</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate">Ansehen und Annotieren</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.description"><a href="https://web.hypothes.is/" >Hypothes.is</a> ist ein kostenloser Dienst, der es den Benutzern ermöglicht, Markierungen, Anmerkungen und Kommentare zu erstellen, sowohl öffentlich als auch privat, für sich selbst oder für eine bestimmte Gruppe.</message>
+
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">Bytes</message>
     <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes"> KB</message>
@@ -3490,6 +3494,26 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         </div>
     </message>
 
+    <message key="xmlui.static.annotations.head">Annotationsservice</message>
+    <message key="xmlui.static.annotations">
+
+        <div>
+
+            <p>Im Rahmen des EU-Projekts <a href="http://www.hirmeos.eu/">HIRMEOS</a> hat sich der Universitätsverlag Göttingen zum Ziel gesetzt, neue Dienste auf seiner Plattform zu integrieren. Dabei soll eine intensivere Auseinandersetzung mit den Inhalten und eine bessere Identifizierung der Autoren und unserer jeweiligen Begutachtungsverfahren ermöglicht werden. Ab sofort können Sie  das Annotationstool von <a href="https://web.hypothes.is/">Hypothes.is</a> für alle unsere Publikationen nutzen, indem Sie unsere digitalen Monographien in Ihrem eigenen Browser annotieren und die Annotationen für sich oder für die Öffentlichkeit speichern.</p>
+            <p>Hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das Hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
+
+            <h4>Wie man das Hypothes.is-Tool benutzt</h4>
+            <p>Um eine Publikation des Universitätsverlags Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation, unter <em>Details</em>, den Link <em>Ansehen und annotieren</em>. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, wo das Hypothes.is-Tool integriert ist.</p>
+            <p>Um einen Kommentar zu posten, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden Hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
+            <p>Ein interessantes Beispiel dafür ist der "Call for Annotations" des <em>Hypothesis Reading Group für James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
+            <p>Auch Lehrende und Lernende können von dieser Technologie profitieren, so ist es zum Beispiel möglich, Kursmaterialien und andere Ressourcen in privaten Gruppen zu diskutieren.</p>
+            <p>Beachten Sie, dass Ihre öffentlichen Kommentare immer der Netiquette entsprechen sollten.</p>
+            <p>Alle Annotationen werden auf dem Hypothes.is-Server gespeichert.</p>
+            <p><img src="/static/icons/annotationservice.png" style="max-width: 100%;"></img></p>
+
+        </div>
+    </message>
+
     <message key="xmlui.static.openaccess.trail">Open Access</message>
 
     <message key="xmlui.static.policy.head">Leitlinien des Publizierens</message>
@@ -4447,6 +4471,9 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Band</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">nach Band</message>
 
+    <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process">Peer-Review-Verfahren</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process.icon.title">Zertifikat und Details zum Begutachtungsprozess</message>
+
     <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
     <message key="de">deutsch</message>
@@ -5250,7 +5277,9 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_persons">Personen im Volltext</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_organisations">Organisationen (Vollext)</message>
     <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisationen im Volltext</message>
-    <message key="xmlui.viewall"> Alle auflisten</message>
-
+    <message key="xmlui.viewall">Alle auflisten</message>
+    <message key="xmlui.item.annotation.details.text">Annotationen zum Text</message>
+    <message key="xmlui.item.annotation.details.link">Öffnen</message>
+    <message key="xmlui.item.annotation.details.none">Keine Annotationen gefunden</message>
 
 </catalogue>

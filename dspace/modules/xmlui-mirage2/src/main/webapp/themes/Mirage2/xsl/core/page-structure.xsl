@@ -157,6 +157,7 @@
 
 
                     </script>
+		    <script src="/static/js/jquery.fancybox.js" charset="UTF-8" type="text/javascript"> </script>
                 </body>
                 <xsl:text disable-output-escaping="yes">&lt;/html&gt;</xsl:text>
 
@@ -242,6 +243,7 @@
             <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
             <link rel="stylesheet" href="{concat($theme-path, 'styles/fontello/css/fontello.css')}"/>
             <link rel="stylesheet" href="{concat($theme-path, 'styles/bootstrap-datetimepicker.css')}"/>
+	    <link rel="stylesheet" type="text/css" href="/static/css/jquery.fancybox.css"/>
 
             <!-- Add syndication feeds -->
             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
@@ -858,7 +860,7 @@
         <script>
             <xsl:text>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='</xsl:text><xsl:value-of select="$context-path"/><xsl:text>';window.DSpace.theme_path='</xsl:text><xsl:value-of select="$theme-path"/><xsl:text>';</xsl:text>
         </script>
-	<script type="text/javascript" src="/static/js/tooltips.js">&#160;</script>
+	<!-- <script type="text/javascript" src="/static/js/tooltips.js">&#160;</script> -->
 
         <!--inject scripts.html containing all the theme specific javascript references
         that can be minified and concatinated in to a single file or separate and untouched

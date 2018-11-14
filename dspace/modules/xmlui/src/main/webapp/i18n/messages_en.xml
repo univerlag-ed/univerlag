@@ -2226,6 +2226,13 @@
     <!-- <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message> -->
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View Document</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading">Annotation service</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate">View and annotate document</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.description"><a href="https://web.hypothes.is/">Hypothes.is</a> is a free service to users and allows annotations, highlights, and page notes to be made publicly, privately to oneself, or to a private group.</message>
+
+    <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">Kb</message>
+<message key="xmlui.dri2xhtml.METS-1.0.size-megabytes">Mb</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
     <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">Kb</message>
@@ -3337,6 +3344,25 @@ Editorial board and staff members of the press are aware of their responsibility
             </p>
         </div>
     </message>
+    <message key="xmlui.static.annotations.head">Annotation Service</message>
+
+    <message key="xmlui.static.annotations">
+
+        <div>
+
+            <p>As part of the EU <a href="http://www.hirmeos.eu/">HIRMEOS</a> project, Göttingen University Press has set itself the goal of integrating new services on its platform. The aim is to enable a more intensive examination of the contents and a better identification of the authors and our respective review procedures. From now on you can use the annotation tool of <a href="https://web.hypothes.is/">Hypothes.is</a> for all our publications by annotating our digital monographs in your own browser and saving the annotations for yourself or for the public.</p>
+            <p>Hypothes.is is a widely used annotation system used by several scientific publishers: Johns Hopkins University Press, University of Michigan Publishing, University of California Press and Ubiquity Press have already integrated the Hypothes.is tool into their platforms.</p>
+            <h4>How to use the Hypothes.is tool</h4>
+            <p>To annotate a publication of Göttingen University Press, you will find the link <em>View and Annotate</em> on the website of each publication, under <em>Details</em>. By clicking you will be redirected to a PDF viewer where the Hypothes.is tool is integrated.</p>
+            <p>To post a comment, click the right arrow button and sign in with your existing Hypothes.is account or create an account. To create an account, you must enter an account name and a valid email address. Use of the service is free of charge. Once logged in, you can annotate, highlight text passages, reply to existing public annotations, and more. You can either create private notes for yourself or make your comments readable for others.  To start group discussions, you can set up a private group in which you can only exchange comments within that group.</p>
+            <p>An interesting example is the "Call for Annotations" of the <em>Hypothesis Reading Group for James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
+            <p>Teachers and learners can also benefit from this technology, for example, it is possible to discuss course materials and other resources in private groups.</p>
+            <p>Note that your public comments should always correspond to the netiquette.</p>
+            <p>All annotations are stored on the Hypothes.is server.</p>
+            <p><img src="/static/icons/annotationservice.png" style="max-width: 100%;"></img></p>
+        </div>
+    </message>
+
 
     <message key="xmlui.static.policy.head">Publishing Policy</message>
     <message key="xmlui.static.policy.trail">Publishing Policy</message>
@@ -4376,6 +4402,8 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.volume">Vol.</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.volume">Volume</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard">Copy link to clipboard</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process">Peer Review Process</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process.icon.title">Certificate and details of the peer review process</message>
 
     <message key="xmlui.static.copyright">&#169; 2017 Göttingen State and University Library</message>
     <!-- search facet values -->
@@ -5165,5 +5193,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_organisations">Organizations (Full Text)</message>
     <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisations in fulltext</message>
     <message key="xmlui.viewall"> View all</message>
-
+    <message key="xmlui.item.annotation.details.text">Annotations</message>
+    <message key="xmlui.item.annotation.details.link">Open</message>
+    <message key="xmlui.item.annotation.details.none">No annotations found</message>
 </catalogue>

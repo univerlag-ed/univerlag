@@ -170,7 +170,7 @@
                                         VLB Export
                                 </a>
                 </xsl:if>
-
+		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice"><i18n:text>xmlui.static.annotations.head</i18n:text></a>
             </div>
             <xsl:apply-templates select="dri:list[@n='context']"/>
             <xsl:apply-templates select="dri:list[@n='administrative']"/>
