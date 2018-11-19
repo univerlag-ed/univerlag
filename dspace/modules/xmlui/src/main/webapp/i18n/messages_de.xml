@@ -4682,7 +4682,16 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.static.news">
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
-
+<h3 class="list-item-header">PDF-Annotationen über Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Der Universitätsverlag Göttingen unterstützt nun PDF-Annotationen über <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
+           </p> 						
+	<h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Die Germanistin Dr. Zhizi Yang erhielt im August 2018 den <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">gesonderten Förderpreis der Märchen-Stiftung Walter Kahn</a>
+		<br />
+	         Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
+            </p>         
         </div>
     </message>
 
@@ -4695,13 +4704,10 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 Der Physiker Dr. Martin Krenkel erhielt im Dezember 2016 Dissertationspreis des Universitätsbundes Göttingen.
+            <br />
+             Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-251-8">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
             </p>
-            <p>
-                Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-251-8">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
-            </p>
-            <p>
-            </p>
-
+           
 
 
             <h3 class="list-item-header">Fachartikel zum Thema Universitätsverlage in Deutschland erschienen<span class="pull-right"><small>Mai 2016</small></span></h3>
