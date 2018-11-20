@@ -4611,6 +4611,16 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.static.news">
         <h2 class="first-page-header">News <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archive</a></h2>
         <div class="news">
+<h3 class="list-item-header">PDF-Annotationen via Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                 Göttingen University Press supports PDF-annotations via <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
+           </p> 						
+	<h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Specialist in German studies Dr. Zhizi Yang received in August 2018 the <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">special advancement price of the Märchen-Stiftung Walter Kahn</a>
+		<br />
+	         The thesis is <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0"> available printed and open access at Göttingen University Press</a>.
+            </p>         
 
 	</div>
     </message>
@@ -4624,8 +4634,7 @@ In most cases, the contributions are based on PhD theses. With this book series,
                     <h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 The physicist Dr. Martin Krenkel has been awarded the dissertation prize 2016 of the University Association of Göttingen.
-            </p>
-            <p>
+            <br />
                 The thesis is available printed and open access <a href="/handle/3/isbn-978-3-86395-251-8">at Universitätsverlag Göttingen</a>.
             </p>
 
