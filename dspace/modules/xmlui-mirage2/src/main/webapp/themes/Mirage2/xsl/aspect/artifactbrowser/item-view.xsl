@@ -300,12 +300,29 @@
                         <xsl:attribute name="data-src">
                             <xsl:text>holder.js/100%x</xsl:text>
                             <xsl:value-of select="$thumbnail.maxheight"/>
-                            <xsl:text>/text:No Thumbnail</xsl:text>
+                            <xsl:text>No Thumbnail</xsl:text>
                         </xsl:attribute>
                     </img>
                 </xsl:otherwise>
             </xsl:choose>
         </div>
+	<xsl:if test="//dim:field[@element='rights'][@qualifier='coverlicense']">
+           <span id="coverlicense">
+                <xsl:variable name="coverlicense"><xsl:value-of select="//dim:field[@element='rights'][@qualifier='coverlicense']"/></xsl:variable>
+                <a rel="license"
+                       href="{$coverlicense}"
+                       alt="{$coverlicense}"
+                       i18n:attr="title"
+                       title="xmlui.item.license"
+                    >
+                        <i18n:text>xmlui.item.coverlicense</i18n:text>
+                        <xsl:variable name="license"><xsl:value-of select="substring-before(substring-after($coverlicense, 'licenses/'), '/')" /></xsl:variable>
+                        <xsl:variable name="cc-version"><xsl:value-of select="substring-before(substring-after($coverlicense, concat($license, '/')), '/')" /></xsl:variable>
+                        <span class="license"><xsl:value-of select="concat(' CC ', $license, ' ', $cc-version)" /></span>
+
+                    </a>
+             </span>
+         </xsl:if>
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-abstract">
@@ -418,9 +435,12 @@
                     </a>
 
                 </h4>
+<!-- 		<div data-badge-popover="right" data-badge-type="2" data-doi="${}" data-hide-no-mentions="true" class="altmetric-embed">
+			 <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute> 
+		</div> -->
             </xsl:when>
             <xsl:otherwise>
-                <div>&#130;</div>
+                <div>&#160;</div>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -439,6 +459,9 @@
                     <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
                 </a>
             </h4>
+	    <div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
+                         <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute> 
+            </div>
         </xsl:if>
     </xsl:template>
 
@@ -889,6 +912,16 @@
             </xsl:call-template>
             <i18n:text>xmlui.item.online.version</i18n:text>
             <span class="access">
+		<a data-fancybox="" data-type="iframe" >
+                        <xsl:attribute name="data-src">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+			<i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+        </a>
+<!--
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="$href"/>
@@ -896,7 +929,7 @@
 
                     <i class="icon-download-5"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
 
-                </a>
+                </a> -->
             </span>
         </div>
         <div class="details">
@@ -1247,12 +1280,21 @@
     </xsl:template>
 
     <xsl:template name="view-open">
-        <a>
+	 <a data-fancybox="" data-type="iframe" >
+                        <xsl:attribute name="data-src">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
+                        </xsl:attribute>
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+        </a>
+        <!-- <a>
             <xsl:attribute name="href">
                 <xsl:value-of select="mets:FLocat[@LOCTYPE='URL']/@xlink:href"/>
             </xsl:attribute>
             <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
-        </a>
+        </a>-->
     </xsl:template>
 
     <xsl:template name="display-rights">
@@ -1572,8 +1614,8 @@
 		    </xsl:choose>
                 </xsl:for-each>
                 <xsl:if test="(//dim:field[@qualifier='access'] != 'nodocument')"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
-	         <xsl:if test="contains(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=y')">
-                <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading</i18n:text></strong><xsl:text>: </xsl:text>
+	        <xsl:if test="contains(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=y')">
+                <!-- <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading</i18n:text></strong><xsl:text>: </xsl:text>
                     <a data-fancybox="" data-type="iframe" >
                         <xsl:attribute name="data-src">
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
@@ -1586,14 +1628,14 @@
                     <span id="pdfurl" style="display: none;" aria-hidden="true"><xsl:value-of select="concat($baseURL, '/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/></span>
                     <a href="#" onclick="copyToClipboard('#pdfurl')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
                     <br /><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.description</i18n:text>
-                </p>
+                </p> -->
 
 		<!-- preparation for annotation export -->
-                <div style="display: none;" aria-hidden="true">
+                <!-- <div style="display: none;" aria-hidden="true">
                     <span aria-hidden="true" style="display: none;" id="annotation-details-text"><i18n:text>xmlui.item.annotation.details.text</i18n:text></span>
                     <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.details.link</i18n:text></span>
                     <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span>
-                </div>
+                </div> -->
 
 		</xsl:if>
                 <!-- preparation for peer review certificate -->

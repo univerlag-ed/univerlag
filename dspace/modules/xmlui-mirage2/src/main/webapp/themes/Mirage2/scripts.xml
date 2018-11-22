@@ -52,7 +52,7 @@
     <script src="scripts/bootstrap-datetimepicker.js">&#160;</script>
     <script src="scripts/addons.js">&#160;</script>
     <script src="scripts/pr-info.js">&#160;</script>
-
+    <script src="scripts/catch-annotations.js">&#160;</script>
 
 
     <!-- endbuild -->
