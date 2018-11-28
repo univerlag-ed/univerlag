@@ -163,6 +163,7 @@
                 <a class="list-group-item ds-option" href="{$context-path}/info/editors"><i18n:text>xmlui.static.editors.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/openaccess">Open Access</a>
+		<a class="list-group-item ds-option" href="{$context-path}/info/interfaces"><i18n:text>xmlui.static.interfaces.head</i18n:text></a>
                 <xsl:if test="//dri:userMeta/@authenticated='yes'">
                         <xsl:variable name="date"><xsl:value-of select="document('../../vlb/current-date.xml')/date"/></xsl:variable>
                                 <a class="list-group-item ds-option">

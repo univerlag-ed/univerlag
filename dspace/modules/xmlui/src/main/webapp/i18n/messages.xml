@@ -2718,6 +2718,74 @@
     <!-- static sites -->
 
     <message key="xmlui.static.navigation.informations">Informationen</message>
+    <message key="xmlui.static.navigation.interfaces">Interfaces</message>
+
+    <!-- interfaces -->
+    <message key="xmlui.static.interfaces.head">Schnittstellen</message>
+    <message key="xmlui.static.interfaces.title">Schnittstellen</message>
+    <message key="xmlui.static.intefaces.trail">Schnittstellen</message>
+    <message key="xmlui.static.interfaces.text">
+	<div>
+                <div>Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich</div>
+		<div>Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich</div>
+                
+
+                        
+<h3>ONIX 2.1</h3>
+                        
+<div>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix_edocs" target="_blank">Elektronische Publikationen</a>
+<br/>
+                                
+<a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix_print" target="_blank">Gedruckte Publikationen</a>
+<br/>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix_media" target="_blank">DVDs und CD-ROMs</a>
+                        
+</div>
+                
+<h3>Dublin Core Simple</h3>                
+
+
+
+
+                        
+<div>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Elektronische Publikationen</a>
+<br/>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Gedruckte Publikationen</a>
+<br/>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">DVDs und CD-ROMs</a>
+                        
+</div>
+<h3>MARC 21</h3> 
+                 
+<div>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=marc" target="_blank">Alle Publikationen</a>
+<br/>
+                        
+</div>
+<h3>PICA XML</h3> 
+ 
+<div>
+                                
+<a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=picaxml" target="_blank">Alle Publikationen</a>
+<br/>
+                        
+</div>
+<h3>Spezielle Dublin Core Simple für <a href="http://www.oapen.org/home">OAPEN</a> (Open Access Publishing in European Networks)</h3>	
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/oapen?verb=ListRecords&amp;metadataPrefix=oaidc" target="_blank">Monografien</a><br />
+                        </div>
+
+
+</div>
+    </message>
 
     <!-- contact -->
     <message key="xmlui.static.contact.head">Kontakt</message>
@@ -3605,7 +3673,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         </div>
 
 	<div>
-                Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich
+                Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstelle in verschiedenen Formaten frei zugänglich
                 <div class="media">
                         <div class="media-left">
                             ONIX 2.0
