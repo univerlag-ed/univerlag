@@ -2689,6 +2689,55 @@
     <!-- static sites -->
 
     <message key="xmlui.static.navigation.informations">Information</message>
+    <message key="xmlui.static.navigation.interfaces">Interfaces</message>
+
+    <!-- interfaces -->
+    <message key="xmlui.static.interfaces.head">Interfaces</message>
+    <message key="xmlui.static.interfaces.title">Interfaces</message>
+    <message key="xmlui.static.intefaces.trail">Interfaces</message>
+    <message key="xmlui.static.interfaces.text">
+	<div>
+		<div>The metadata of our publications is freely accessible via our OAI PMH (v2.0) interfaces in various formats</div>
+                        <h3>ONIX 2.0</h3>
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix_edocs" target="_blank">Electronic Publications</a><br />
+                                <a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix_print" target="_blank">Print Publications</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix_media" target="_blank">Multimedia Publications</a>
+                        </div>
+                
+                        <h3>
+                            Dublin Core Simple
+                        </h3>
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Electronic Publications</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Print Publications</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Multimedia Publications</a>
+                        </div>
+                        <h3>
+                           MARC 21
+                        </h3>
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=marc" target="_blank">All Publications</a><br />
+                        </div>
+                        <h3>
+                           PICA XML
+                        </h3>
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=picaxml" target="_blank">All Publications</a><br />
+                        </div>
+
+                        <!-- <h3>
+                            Special Dublin Core Simple<br />dedicated to <a href="http://www.oapen.org/home">OAPEN (Open Access Publishing in European Networks)</a>
+
+                        </h3>
+                        <div>
+                                <a href="https://univerlag.uni-goettingen.de/oai/oapen?verb=ListRecords&amp;metadataPrefix=oaidc" target="_blank">Monographs</a><br />
+                        </div> -->
+
+
+        </div>
+	
+    </message>
 
     <!-- contact -->
     <message key="xmlui.static.contact.head">Contact</message>

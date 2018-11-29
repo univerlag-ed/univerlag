@@ -2727,7 +2727,6 @@
     <message key="xmlui.static.interfaces.text">
 	<div>
                 <div>Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich</div>
-		<div>Die Metadaten unserer Publikationen sind über unsere OAI-PMH (v2.0) Schnittstellen in verschiedenen Formaten frei zugänglich</div>
                 
 
                         
@@ -2778,10 +2777,10 @@
 <br/>
                         
 </div>
-<h3>Spezielle Dublin Core Simple für <a href="http://www.oapen.org/home">OAPEN</a> (Open Access Publishing in European Networks)</h3>	
+<!-- <h3>Spezielle Dublin Core Simple für <a href="http://www.oapen.org/home">OAPEN</a> (Open Access Publishing in European Networks)</h3>	
                         <div>
                                 <a href="https://univerlag.uni-goettingen.de/oai/oapen?verb=ListRecords&amp;metadataPrefix=oaidc" target="_blank">Monografien</a><br />
-                        </div>
+                        </div> -->
 
 
 </div>
