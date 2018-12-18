@@ -3066,7 +3066,7 @@ Göttingen University Press
         <div>
             <p>
 
-                <strong>As an associate of Georg-August-University Göttingen</strong> you can publish your scholarly work with Göttingen University Press.</p>
+                <strong>As an associate of University of Göttingen</strong> you can publish your scholarly work with Göttingen University Press.</p>
             <p>
                 To get an estimate of <strong>the publication costs</strong> please make use of our form <a href="/costrequest">Query of costs</a>.
                 Please note that the author has to pay her or his share of the production costs.</p>
@@ -3080,12 +3080,12 @@ Göttingen University Press
                 For further information please make use of our <a href="/info/publishing-utils">"author´s tools"</a> where you will also find templates for different style sheets, etc.
             </p>
             <p>
-                Göttingen University Press publications fall into one of our two <a href="/info/divisions">categories</a>, the category "University Prints" ("Universitätsdrucke") for scholarly work of decent quality and the reviewed category "University Press" ("Univsitätsverlag") for premium scholarly work.
+                Göttingen University Press publications fall into one of our two <a href="/info/divisions">categories</a>, the category "University Prints" ("Universitätsdrucke") for scholarly work of decent quality and the reviewed category "University Press" ("Universitätsverlag") for premium scholarly work.
                 The quality level of your work determines which publication category your work will be assigned to. If the quality level allows for the category "University Press" and author and publisher agree to do so, your manuscript will receive a peer review by our editorial board or external reviewers. Manuscripts for books to be published in the category "University Prints" undergo a formal review.
             </p>
 
             <p>
-                In a collaborative process you as the author and us as the publisher decide on the design of the book, e.g. cover and layout (according to the corporate design of the university).
+                In a collaborative process you (the author) and we (the publisher) decide on the design of the book, e.g. cover and layout (according to the corporate design of the university).
                 We also perform a formal check of your file.
 
             </p>
@@ -4390,12 +4390,12 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.static.publishing.catalog.text">
         <h3>Our publishing program is available online and print</h3>
         <p>
-            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/dokumente/texts/verlagsprogramm_2017.pdf">here</a>.
+            If you would like to read the brochure of our publishing program as a PDF please download it <a href="/dokumente/texts/verlagsprogramm.pdf">here</a>.
             You will find new releases and selected titles from our backlist. We have listed the series of the "Universitätsverlag Göttingen" with all published titles.
             If you like to read the brochure in high-quality offset print we will send it to you for <a href="mailto:univerlag@uni-goettingen.de?subject=Publishing Catalog order">free</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm_2017.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm.pdf"></iframe>
         </div>
 
         <!-- <p id="catalog">
