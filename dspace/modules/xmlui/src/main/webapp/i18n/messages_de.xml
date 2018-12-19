@@ -2856,13 +2856,16 @@
 Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
 </p> -->
 
-       <p class="highlight news">
-    Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,<br />
+       <div class="highlight news">
+	<span id="cm">&#127876;</span>
+	<div class="right">
+    <h4>Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,</h4>
     der Universitätsverlag macht ab dem 21. Dezember 2018 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
 Ab dem 7. Januar 2019 sind wir wieder für Sie da.
-Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.<br />
-Das Team vom Universitätsverlag Göttingen
-</p>
+Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
+<!-- Das Team vom Universitätsverlag Göttingen -->
+</div>
+	</div>
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
@@ -5358,4 +5361,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.annotation.details.link">Öffnen</message>
     <message key="xmlui.item.annotation.details.none">Keine Annotationen gefunden</message>
 
+    <message key="xmlui.collection.JAWG.introduction"></message>
 </catalogue>
