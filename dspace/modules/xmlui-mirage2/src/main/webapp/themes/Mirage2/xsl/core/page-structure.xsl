@@ -214,6 +214,54 @@
             <!-- Add stylesheets -->
 
 	     <style type="text/css">
+
+		.highlight.news {
+		    color: #193364;
+		    padding: 30px 0;
+		}
+		#cm {
+		    font-size: 5em;
+		    float: left;
+		    padding-right: 5px;
+		}		
+		.navbar.navbar-default.navbar-static-top::before {
+	content: '';
+   display: block;
+   position: absolute;
+   z-index: 999999999999999 !important;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+background-image: url('https://www.dropbox.com/s/bgwuzfu83pjb5s1/divi-life-snowflakes-a-2.png?dl=1'),
+url('https://www.dropbox.com/s/54le1eyh01vb253/divi-life-snowflakes-b.png?dl=1'),
+url('https://www.dropbox.com/s/gfm01rozxanf3ub/divi-life-snowflakes-d.png?dl=1');	
+	-webkit-animation: snow 15s linear infinite;
+	-moz-animation: snow 15s linear infinite;
+	-ms-animation: snow 15s linear infinite;
+	animation: snow 15s linear infinite;
+}		
+		@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
 		#aspect_discovery_RelatedItems_div_item-related-container {
 			display:none;
 		}
@@ -757,6 +805,10 @@
                 <div class="col-xs-7 col-sm-8">
 
                     <div class="hidden-print">
+			<a href="{$context-path}/info/publishing-catalog?locale-attribute={$currentLoc}">
+				<i18n:text>xmlui.static.publisher-catalog.link</i18n:text>
+			</a>
+			<xsl:text> | </xsl:text>
                         <a href="{$context-path}/info/impressum">
                             <i18n:text>xmlui.static.impressum.head</i18n:text>
                         </a>

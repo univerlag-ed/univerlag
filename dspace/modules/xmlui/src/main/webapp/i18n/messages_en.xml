@@ -2739,6 +2739,21 @@
 	
     </message>
 
+    <!-- journals -->
+    <message key="xmlui.static.journals.head">Journal</message>
+    <message key="xmlui.static.journals.trail">Journal</message>
+    <message key="xmlui.static.journals.title">Journal</message>
+    <message key="xmlui.static.journals"> 
+        <div>
+	We are pleased about the cooperation agreement 2018 with the <a href="http://www.asjournal.org/">American Studies Journal (ASJ)</a>. From here, you will have access to this open-access journal in the future.
+        </div>
+        <h3>American Studies Journal</h3>
+        <div>
+The American Studies Journal is a peer-reviewed open-access journal that provides a forum for intellectual debate about all aspects of social, cultural, and political life in the United States of America. It aims to present new and challenging research in the humanities to both academic and non-academic audiences around the world.<br />
+Three elements make up the asjournal.org web presence: the American Studies Journal with its offerings of scholarly and methodological content, the ASJ Occasional Papers series as a web space for longer articles that do not fit into the thematically focused issues of the journal, and the American Studies Blog with its topical observations and comments on present-day U.S. society and culture.
+        </div>
+    </message>
+
     <!-- contact -->
     <message key="xmlui.static.contact.head">Contact</message>
     <message key="xmlui.static.contact.trail">Contact</message>
@@ -2812,7 +2827,7 @@
         Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
         </p> -->
 
-<div class="highlight news">
+<!-- <div class="highlight news">
 <span id="cm">&#127876;</span>
         <div class="right">
 			<h4>Dear customers, dear authors,</h4>
@@ -2821,7 +2836,7 @@ the Göttingen University Press team will be on a break from December 21st, 2018
 Thank you for your understanding. We wish you a delightful Christmas season and a happy new year.<br />
 Göttingen University Press.
 </div>
-		</div>
+		</div> -->
 
         <p class="paragraph justify">
             Göttingen University Press is the self-contained publishing facility of the Georg August University, Göttingen.
@@ -3400,13 +3415,12 @@ Editorial board and staff members of the press are aware of their responsibility
     <message key="xmlui.static.annotations.head">Annotation Service</message>
 
     <message key="xmlui.static.annotations">
-
         <div>
 
             <p>As part of the EU <a href="http://www.hirmeos.eu/">HIRMEOS</a> project, Göttingen University Press has set itself the goal of integrating new services on its platform. The aim is to enable a more intensive examination of the contents and a better identification of the authors and our respective review procedures. From now on you can use the annotation tool of <a href="https://web.hypothes.is/">Hypothes.is</a> for all our publications by annotating our digital monographs in your own browser and saving the annotations for yourself or for the public.</p>
             <p>Hypothes.is is a widely used annotation system used by several scientific publishers: Johns Hopkins University Press, University of Michigan Publishing, University of California Press and Ubiquity Press have already integrated the Hypothes.is tool into their platforms.</p>
             <h4>How to use the Hypothes.is tool</h4>
-            <p>To annotate a publication of Göttingen University Press, you will find the link <em>View and Annotate</em> on the website of each publication, under <em>Details</em>. By clicking you will be redirected to a PDF viewer where the Hypothes.is tool is integrated.</p>
+            <p>To annotate a publication of Göttingen University Press, you will find the link <em>View Document</em> on the website of each publication. By clicking you will be redirected to a PDF viewer where the Hypothes.is tool is integrated.</p>
             <p>To post a comment, click the right arrow button and sign in with your existing Hypothes.is account or create an account. To create an account, you must enter an account name and a valid email address. Use of the service is free of charge. Once logged in, you can annotate, highlight text passages, reply to existing public annotations, and more. You can either create private notes for yourself or make your comments readable for others.  To start group discussions, you can set up a private group in which you can only exchange comments within that group.</p>
             <p>An interesting example is the "Call for Annotations" of the <em>Hypothesis Reading Group for James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
             <p>Teachers and learners can also benefit from this technology, for example, it is possible to discuss course materials and other resources in private groups.</p>
@@ -3414,6 +3428,7 @@ Editorial board and staff members of the press are aware of their responsibility
             <p>All annotations are stored on the Hypothes.is server.</p>
             <p><img src="/static/icons/annotationservice.png" style="max-width: 100%;"></img></p>
         </div>
+
     </message>
 
 

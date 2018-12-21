@@ -366,7 +366,7 @@
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=author&amp;locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_author</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=title&amp;locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_title</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$series-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.series.collection</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/info/publishing-catalog?locale-attribute={$currentLoc}"><i18n:text>xmlui.static.publisher-catalog.link</i18n:text></a>
+        <a class="list-group-item ds-option" href="{$context-path}/info/journals?locale-attribute={$currentLoc}"><i18n:text>xmlui.static.journals.title</i18n:text></a> 
 
     </xsl:template>
     <xsl:template  name="menu-other">

@@ -2786,6 +2786,21 @@
 </div>
     </message>
 
+    <!-- journals -->
+    <message key="xmlui.static.journals.head">Zeitschrift</message>
+    <message key="xmlui.static.journals.trail">Zeitschrift</message>
+    <message key="xmlui.static.journals.title">Zeitschrift</message>
+    <message key="xmlui.static.journals">
+	<div>
+	Wir freuen uns über die 2018 getroffene Kooperationsvereinbarung mit dem <a href="http://www.asjournal.org/">American Studies Journal (ASJ)</a>. Von hier aus werden Sie zukünftig Zugriff auf diese open-access Zeitschrift haben.
+	</div>
+	<h3>American Studies Journal</h3>
+	<div>
+The American Studies Journal is a peer-reviewed open-access journal that provides a forum for intellectual debate about all aspects of social, cultural, and political life in the United States of America. It aims to present new and challenging research in the humanities to both academic and non-academic audiences around the world.<br />
+Three elements make up the asjournal.org web presence: the American Studies Journal with its offerings of scholarly and methodological content, the ASJ Occasional Papers series as a web space for longer articles that do not fit into the thematically focused issues of the journal, and the American Studies Blog with its topical observations and comments on present-day U.S. society and culture.
+	</div>
+    </message>
+
     <!-- contact -->
     <message key="xmlui.static.contact.head">Kontakt</message>
     <message key="xmlui.static.contact.trail">Kontakt</message>
@@ -2856,16 +2871,15 @@
 Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
 </p> -->
 
-       <div class="highlight news">
+       <!-- <div class="highlight news">
 	<span id="cm">&#127876;</span>
 	<div class="right">
     <h4>Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,</h4>
     der Universitätsverlag macht ab dem 21. Dezember 2018 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
 Ab dem 7. Januar 2019 sind wir wieder für Sie da.
 Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
-<!-- Das Team vom Universitätsverlag Göttingen -->
 </div>
-	</div>
+	</div> -->
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
@@ -3566,14 +3580,13 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
 
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
-
         <div>
 
             <p>Im Rahmen des EU-Projekts <a href="http://www.hirmeos.eu/">HIRMEOS</a> hat sich der Universitätsverlag Göttingen zum Ziel gesetzt, neue Dienste auf seiner Plattform zu integrieren. Dabei soll eine intensivere Auseinandersetzung mit den Inhalten und eine bessere Identifizierung der Autoren und unserer jeweiligen Begutachtungsverfahren ermöglicht werden. Ab sofort können Sie  das Annotationstool von <a href="https://web.hypothes.is/">Hypothes.is</a> für alle unsere Publikationen nutzen, indem Sie unsere digitalen Monographien in Ihrem eigenen Browser annotieren und die Annotationen für sich oder für die Öffentlichkeit speichern.</p>
             <p>Hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das Hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
 
             <h4>Wie man das Hypothes.is-Tool benutzt</h4>
-            <p>Um eine Publikation des Universitätsverlags Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation, unter <em>Details</em>, den Link <em>Ansehen und annotieren</em>. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, wo das Hypothes.is-Tool integriert ist.</p>
+            <p>Um eine Publikation des Universitätsverlags Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em>. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, wo das Hypothes.is-Tool integriert ist.</p>
             <p>Um einen Kommentar zu posten, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden Hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
             <p>Ein interessantes Beispiel dafür ist der "Call for Annotations" des <em>Hypothesis Reading Group für James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
             <p>Auch Lehrende und Lernende können von dieser Technologie profitieren, so ist es zum Beispiel möglich, Kursmaterialien und andere Ressourcen in privaten Gruppen zu diskutieren.</p>
@@ -3582,6 +3595,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             <p><img src="/static/icons/annotationservice.png" style="max-width: 100%;"></img></p>
 
         </div>
+
     </message>
 
     <message key="xmlui.static.openaccess.trail">Open Access</message>

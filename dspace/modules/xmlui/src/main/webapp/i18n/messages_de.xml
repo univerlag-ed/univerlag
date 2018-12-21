@@ -2786,6 +2786,21 @@
 </div>
     </message>
 
+    <!-- journals -->
+    <message key="xmlui.static.journals.head">Zeitschrift</message>
+    <message key="xmlui.static.journals.trail">Zeitschrift</message>
+    <message key="xmlui.static.journals.title">Zeitschrift</message>
+    <message key="xmlui.static.journals">
+	<div>
+	Wir freuen uns über die 2018 getroffene Kooperationsvereinbarung mit dem <a href="http://www.asjournal.org/">American Studies Journal (ASJ)</a>. Von hier aus werden Sie zukünftig Zugriff auf diese open-access Zeitschrift haben.
+	</div>
+	<h3>American Studies Journal</h3>
+	<div>
+The American Studies Journal is a peer-reviewed open-access journal that provides a forum for intellectual debate about all aspects of social, cultural, and political life in the United States of America. It aims to present new and challenging research in the humanities to both academic and non-academic audiences around the world.<br />
+Three elements make up the asjournal.org web presence: the American Studies Journal with its offerings of scholarly and methodological content, the ASJ Occasional Papers series as a web space for longer articles that do not fit into the thematically focused issues of the journal, and the American Studies Blog with its topical observations and comments on present-day U.S. society and culture.
+	</div>
+    </message>
+
     <!-- contact -->
     <message key="xmlui.static.contact.head">Kontakt</message>
     <message key="xmlui.static.contact.trail">Kontakt</message>
