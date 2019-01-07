@@ -62,6 +62,7 @@ public class FeedbackForm extends AbstractDSpaceTransformer implements Cacheable
     
     private static final Message T_submit =
         message("xmlui.ArtifactBrowser.FeedbackForm.submit");
+
     
     /**
      * Generate the unique caching key.
