@@ -112,7 +112,7 @@
     <xsl:template match="dim:dim" mode="itemSummaryList-DIM-metadata">
         <xsl:param name="href"/>
         <div class="artifact-description">
-            <h4 class="artifact-title">
+             <h4 class="artifact-title">
                 <xsl:element name="a">
                     <xsl:attribute name="href">
                         <xsl:value-of select="$href"/>
@@ -142,6 +142,12 @@
                 </xsl:for-each>
 
             </xsl:if>
+	     <xsl:if test="//dim:field[@element='description'][@qualifier='edition']">
+                    <xsl:value-of select="concat(//dim:field[@element='description'][@qualifier='edition'], '. ')"/>
+                </xsl:if>
+                <xsl:if test="//dim:field[@element='notes'][@qualifier='edition']">
+                    <xsl:value-of select="//dim:field[@element='notes'][@qualifier='edition']"/>
+                </xsl:if>
             <div class="artifact-info">
                 <span class="author h4">
                     <small>
@@ -547,12 +553,14 @@
 
                 </xsl:for-each>
             </xsl:if>
-
             <!-- fetch file infos -->
             <xsl:variable name="externalMetadataUrl">
                 <xsl:text>cocoon://metadata/handle/3/</xsl:text>
                 <xsl:choose>
 		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.17875')">
+                        <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
+                    </xsl:when>
+		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.3249/')">
                         <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
                     </xsl:when>
                     <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], 'univerlag')">
@@ -568,6 +576,7 @@
             <xsl:variable name="metsDoc" select="document($externalMetadataUrl)/mets:METS/mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']"/>
 
             <xsl:for-each select="$metsDoc/mets:file[1]">
+		<!-- ID: <xsl:value-of select="./@ID"/> -->
                 <!-- Do not show description if file is not free or no files atteched -->
                 <xsl:choose>
                     <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
@@ -621,7 +630,12 @@
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <i class="icon-download-5"></i><a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+				<xsl:variable name="viewer"><xsl:value-of select="concat('/pdfview', substring-after(mets:FLocat/@xlink:href, '/bitstream/handle/3'))" /></xsl:variable>
+				<!-- <a data-type="iframe" data-fancybox="" data-scr="{mets:FLocat/@xlink:href}" href="{mets:FLocat/@xlink:href}">  -->
+				<a data-type="iframe" data-fancybox="" data-scr="{$viewer}" href="{$viewer}"> 
+                                <i class="icon-download-5"></i>
+				<!-- <a href="{mets:FLocat/@xlink:href}"> -->
+				<i18n:text>xmlui.item.access.document</i18n:text></a>
                             </span>
                         </div>
                     </xsl:otherwise>

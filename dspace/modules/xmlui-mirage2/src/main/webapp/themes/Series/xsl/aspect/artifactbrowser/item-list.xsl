@@ -616,7 +616,13 @@
 
                             <span class="access">
                                 <xsl:attribute name="class"><xsl:text>access doc</xsl:text></xsl:attribute>
-                                <i class="icon-download-5"></i> <a href="{mets:FLocat/@xlink:href}"><i18n:text>xmlui.item.access.document</i18n:text></a>
+				<xsl:variable name="viewer"><xsl:value-of select="concat('/pdfview', substring-after(mets:FLocat/@xlink:href, '/bitstream/handle/3'))" /></xsl:variable>
+                                <!-- <a data-type="iframe" data-fancybox="" data-scr="{mets:FLocat/@xlink:href}" href="{mets:FLocat/@xlink:href}">  -->
+                                <i class="icon-download-5"></i>
+				<a data-type="iframe" data-fancybox="" data-scr="{$viewer}" href="{$viewer}"> 
+				<!-- <a href="{mets:FLocat/@xlink:href}"> -->
+				<i18n:text>xmlui.item.access.document</i18n:text>
+				</a>
                             </span>
                         </div>
                     </xsl:otherwise>

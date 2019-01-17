@@ -502,7 +502,7 @@
             <map:match pattern="content/list*">
                 <map:redirect-to uri="/handle/3/{request-param:details}" permanent="yes"/>
             </map:match>
-            <map:match pattern="ring*">
+            <!-- <map:match pattern="ring*">
                 <map:redirect-to uri="/info/{1}" permanent="yes"/>
             </map:match>
             <map:match pattern="content/anfrage.php">
@@ -534,7 +534,7 @@
             </map:match>
             <map:match pattern="content/prices.php">
                 <map:redirect-to uri="/info/publishing-prices" permanent="yes"/>
-            </map:match>
+            </map:match> -->
 
             <!-- End redirects -->
 
