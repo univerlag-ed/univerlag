@@ -2867,10 +2867,18 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
     <message key="xmlui.static.home">
         <h2 class="first-page-header">Willkommen beim Universitätsverlag Göttingen</h2>
 
+        <!-- <p class="highlight">
+Aufgrund einer dringend notwendigen Wartung durch die Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) kann es heute, am Donnerstag, den 26.1.2017 ab 17:00 Uhr Einschränkungen beim Zugriff auf die elektronischen Serviceangebote der SUB Göttingen geben. Wir möchten Sie bitten, möglichst in der Zeit vom 26.1.2017 ab 17:00 Uhr bis 27.1.2017, 8:00 Uhr keine Bestellungen aufzugeben, da diese Daten verloren gehen könnten.
+</p> -->
 
        <!-- <div class="highlight news">
+	<span id="cm">&#x1F389;</span>
+	<div class="right">
     <h4>Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,</h4>
-	</div>
+    der Universitätsverlag macht ab dem 21. Dezember 2018 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
+Ab dem 7. Januar 2019 sind wir wieder für Sie da.
+Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
+</div>
 	</div> -->
 
         <p class="paragraph justify strech-bottom">
@@ -5368,4 +5376,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.annotation.details.none">Keine Annotationen gefunden</message>
 
     <message key="xmlui.collection.JAWG.introduction"></message>
+    <message key="xmlui.collection.arthistory.introduction"></message>
 </catalogue>
