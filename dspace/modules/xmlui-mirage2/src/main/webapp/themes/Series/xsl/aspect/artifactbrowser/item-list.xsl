@@ -93,13 +93,15 @@
             <xsl:if test="(dim:field[@element='relation' and @qualifier='ispartofseries'])">
                 <xsl:value-of select="dim:field[@element='relation' and @qualifier='ispartofseries']" />
                 <xsl:if test="//dim:field[@element='bibliographicCitation' and @qualifier='volume']">
+		    <xsl:text>;&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.item.series.volume</i18n:text><xsl:text>&#160;</xsl:text>
                     <xsl:choose>
+			<xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '00')">
+                        	<xsl:value-of select="substring(dim:field[@element='bibliographicCitation'][@qualifier='volume'], 3)"/>
+			</xsl:when>
                         <xsl:when test="starts-with(//dim:field[@element='bibliographicCitation' and @qualifier='volume'], '0')">
-                            <xsl:text>;&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.item.series.volume</i18n:text><xsl:text>&#160;</xsl:text>
                             <xsl:value-of select="substring-after(//dim:field[@element='bibliographicCitation' and @qualifier='volume'], '0')" />
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:text>;&#160;</xsl:text><i18n:text>xmlui.dri2xhtml.item.series.volume</i18n:text><xsl:text>&#160;</xsl:text>
                             <xsl:value-of select="//dim:field[@element='bibliographicCitation' and @qualifier='volume']"/>
                         </xsl:otherwise>
                     </xsl:choose>

@@ -252,6 +252,9 @@
                     <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
                 </a>
                 <xsl:choose>
+                    <xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '00')">
+                        <xsl:value-of select="concat('; ', substring(dim:field[@element='bibliographicCitation'][@qualifier='volume'], 3))"/>
+                    </xsl:when>			
                     <xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '0')">
                         <xsl:value-of select="concat('; ', substring(dim:field[@element='bibliographicCitation'][@qualifier='volume'], 2))"/>
                     </xsl:when>
