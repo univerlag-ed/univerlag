@@ -38,10 +38,14 @@
 			<xsl:when test="contains($query, 'univerlag-')">
 				<xsl:variable name="lpi"><xsl:value-of select="substring-after($query, 'univerlag-')" /></xsl:variable>
 				<url>
+				
 				<xsl:choose>
 						<xsl:when test="contains($lpi, 'isbn-')">
 							<xsl:value-of select="concat($baseURL, '/handle/','3/isbn-', substring-after($lpi, 'isbn-'))" />
 						</xsl:when>
+						<xsl:when test="contains($lpi, 'eissn-')">
+                                                        <xsl:value-of select="concat($baseURL, '/handle/','3/eissn-', substring-after($lpi, 'eissn-'))" />
+                                                </xsl:when>
 						<xsl:when test="contains($lpi, 'issn-')">
 							<xsl:value-of select="concat($baseURL, '/handle/','3/issn-', substring-after($lpi, 'issn-'))" />
 						</xsl:when>
