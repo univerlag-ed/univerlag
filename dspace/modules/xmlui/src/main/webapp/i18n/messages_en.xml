@@ -4529,8 +4529,8 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="Germanistik">German</message>
     <message key="Biologie">Biology</message>
 
-    <message key="peerReviewed">University Print</message>
-    <message key="surveyed">University Press</message>
+    <message key="peerReviewed">University Press</message>
+    <message key="surveyed">University Print</message>
     <message key="varia">Varia</message>
     <message key="other">Other</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-language">Language</message>
