@@ -2868,63 +2868,74 @@ Göttingen University Press.
         </div>
     </message>
 
-    <message key="xmlui.static.aboutus.head">About us</message>
+<message key="xmlui.static.aboutus.head">About us</message>
     <message key="xmlui.static.aboutus">
         <div>
             <p>
-                Since its foundation in summer 2003, the Göttingen University Press (Universitätsverlag Göttingen) offers innovative services and solutions for publication, primarly focused on the scholarly community at the Göttingen University. Our services include
+                Since its foundation in summer 2003, the Göttingen University Press (Universitätsverlag Göttingen) offers innovative services and solutions for publication, primarily focused on the scholarly community at the Göttingen University.<br />
+				Our services include
             </p>
 
 
             <ul class="styled">
                 <li>Electronic Publications in Open Access,
-                    <ul>
+                    <!-- <ul>
                         <li>more information on Open Access at <a class="extern-link" href="//www.open-access.net//DE-EN">open-access.net</a></li>
                         <li>see our <a class="extern-link" href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all%22">publication policy</a> at the <a href="//www.dini.de/wiss-publizieren/sherparomeo/">SHERPA/RoMEO</a> list</li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li>High quality print on demand, hardcover and softcover</li>
+                <li>High quality print (on demand)</li>
                 <li>Publication support and information on location</li>
                 <li>Short realization intervals</li>
                 <li>Guaranteed quality assurance</li>
                 <li>Optional peer review through our editorial board</li>
                 <li>Marketing &#38; distribution</li>
-                <li>ong term archiving, Storage</li>
+                <li>long term archiving, storage</li>
             </ul>
 
             <p>All publications from the program "Universitätsverlag" that have undergone additional peer review are stored on the university&#39;s publication server <a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a>.
-
             </p>
 
-            <p>AThe press has close relationships to other Open-Access-related activities of the library such as
+<p>All publications of the Universitätsverlag Göttingen are accessible via the OPAC of the SUB and can be ordered via booksellers. In addition, the Open Access publications are long-term archived at the German National Library (DNB) and can be found via search engines such as Google Scholar or BASE and in digital libraries such as the OAPEN Library and the Directory of Open Access Books (DOAB). All digital publications of Göttingen University Press are made permanently available. 
+
+            <p>The press has close relationships to other Open-Access-related activities of the library such as
             </p>
 
             <div id="services" class="container-fluid text-center">
                 <div class="row">
                     <div class="col-sm-4">
+                        <img src="/dokumente/images/hirmeos.ico"></img>
+                        <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
+                        <p>High Integration of Research Monographs in the European Open Science infrastructure</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="/static/icons/ediss.ico"></img>
+                        <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
+                        <p>Electronic Dissertations at Georg-August-Universität Göttingen</p>
+                    </div>
+                    <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
-                        <h4><a href="http:/www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
+                        <h4><a href="http://www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
                         <p>Göttingen Centre for Digital Humanities</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="/static/icons/coar-logo.png"></img>
-                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
-                        <p>Confederation of Open Access Repositories</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <img src="/static/icons/openaire.ico"></img>
-                        <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
-                        <p>Open Access Infrastructure for Research in Europe</p>
                     </div>
                 </div>
             </div>
 
 
-            <p><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">more projects at the SUB Göttingen ...</a>
+            <p><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">More projects at the SUB Göttingen ...</a>
             </p>
+			<p>The permanent and worldwide availability of University of Göttingen publications is a central concern of the Göttingen University Press. The Press should not be seen as a competitor, but as a complement to medium-sized publishing houses.
+			</p>
+			<p>
+			[Partly translated with www.DeepL.com/Translator]
+			</p>
+		</div>
+    </message>  
+	    <p><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">more projects at the SUB Göttingen ...</a></p>
         </div>
     </message>
-    <message key="xmlui.static.editors.head">Editorial Board</message>
+   
+<message key="xmlui.static.editors.head">Editorial Board</message>
     <message key="xmlui.static.editors">
         <div>
             <p>Each of the university&#39;s faculties appoint one or two members to the editorial board of Göttingen University Press.
