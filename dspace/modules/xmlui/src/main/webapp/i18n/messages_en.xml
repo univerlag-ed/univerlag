@@ -5281,4 +5281,11 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.collection.JAWG.introduction"></message>
     <message key="xmlui.collection.arthistory.introduction"></message>
+
+    <message key="xmlui.static.editorials.title">Editorials</message>
+    <message key="xmlui.static.editorials.head">Editorials</message>
+    <message key="xmlui.static.editorials">
+        <h3>Annotatios</h3>
+        <div id="annotation-list"></div>
+    </message>
 </catalogue>
