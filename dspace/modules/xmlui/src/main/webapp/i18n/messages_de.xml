@@ -2913,18 +2913,18 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div>
     </message>
 
-    <message key="xmlui.static.aboutus.head">Über uns</message>
+<message key="xmlui.static.aboutus.head">Über uns</message>
     <message key="xmlui.static.aboutus">
         <div>
             <p>
-                Der Universitätsverlag Göttingen gehört zum Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
+                Der Universitätsverlag Göttingen gehört zu dem Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
                 der Universität Göttingen anzubieten:
             </p>
 
 
             <ul class="styled">
-                <li>elektronisches Publizieren</li>
-                <li>hochwertige Druckausgabe als Print-on-Demand</li>
+                <li>elektronisches Publizieren - online frei zugänglich (open access)</li>
+                <li>hochwertige Druckausgabe in kleiner Auflage</li>
                 <li>persönliche Beratung vor Ort</li>
                 <li>kurze Produktionszeit </li>
                 <li>garantierte Qualitätssicherung</li>
@@ -2940,23 +2940,23 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
             <p>Alle Publikationen im Universitätsverlag Göttingen sind über den OPAC der SUB erschlossen und
                 über den Buchhandel bestellbar.
-                Außerdem sind die Open Access-Publikationen über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
+                Außerdem sind die Open Access-Publikationen bei der Deutschen Nationalbibliothek (DNB) langzeitarchiviert und sie sind über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books (DOAB) nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
                 werden dauerhaft verfügbar gemacht.
-
+<br />
                 Der Universitätsverlag ist eng mit anderen Aktivitäten der SUB Göttingen in Hinblick auf Open Access verbunden:
             </p>
 
             <div id="services" class="container-fluid text-center">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="/static/icons/goescholar.ico"></img>
-                        <h4><a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
-                        <p>Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</p>
+                        <img src="/dokumente/images/hirmeos.ico"></img>
+                        <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
+                        <p>High Integration of Research Monographs in the European Open Science infrastructure</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/ediss.ico"></img>
                         <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
-                        <p>elektronische Dissertationen der Universität Göttingen</p>
+                        <p>Elektronische Dissertationen der Georg-August-Universität Göttingen</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
@@ -2965,36 +2965,36 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                     </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/openaire.ico"></img>
                         <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
                         <p>Open Access Infrastructure for Research in Europe</p>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="/static/icons/coar-logo.png"></img>
-                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
-                        <p>Confederation of Open Access Repositories</p>
-                    </div>
-                    <div class="col-sm-4">
+					<div class="col-sm-4">
                         <span class="iconplace">SUB</span>
                         <h4><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">SUB</a></h4>
                         <p>Weitere Projekte der SUB</p>
                     </div>
-                </div>
+                    <div class="col-sm-4">
+                        <img src="/static/icons/coar-logo.png"></img>
+                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
+                        <p>Confederation of Open Access Repositories</p>
+                    </div>                
+                </div> -->
             </div>
-
+				<p><a href="//projekte-forschung/projekte-a-z//"  class="extern-link" target="_blank">Weitere Projekte an der SUB Göttingen ...</a>
+				</p>
 
             <p>Die dauerhafte und weltweite Verfügbarkeit der Göttinger Publikationen ist
                 zentrales Anliegen des Universitätsverlages. Dabei ist der Universitätsverlag
                 ausdrücklich nicht als Konkurrent, sondern als Ergänzung der Arbeit
-                mittelständischer Verlage zu verstehen, die auch in Zukunft wesentliche Teile
-                der wissenschaftlichen Literatur - möglichst ebenfalls nach modernen
-                Standards - produzieren sollten.
+                mittelständischer Verlage zu verstehen.
             </p>
         </div>
     </message>
-    <message key="xmlui.static.editors.head">Herausgebergremium</message>
+	
+	<message key="xmlui.static.editors.head">Herausgebergremium</message>
     <message key="xmlui.static.editors">
         <div>
             <p>Das Herausgebergremium des Universitätsverlages Göttingen besteht aus Vertretern aller Fakultäten der Universität Göttingen, die von den Fakultäten selbst benannt wurden. Es steuert die programmatische Ausrichtung des Verlages und die Qualitätsprüfung seiner Sparte „Universitätsverlag".
