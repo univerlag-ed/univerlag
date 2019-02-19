@@ -2995,6 +2995,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
     </message>
 	
 	<message key="xmlui.static.editors.head">Herausgebergremium</message>
+
+    <message key="xmlui.static.editors.head">Herausgebergremium</message>
     <message key="xmlui.static.editors">
         <div>
             <p>Das Herausgebergremium des Universitätsverlages Göttingen besteht aus Vertretern aller Fakultäten der Universität Göttingen, die von den Fakultäten selbst benannt wurden. Es steuert die programmatische Ausrichtung des Verlages und die Qualitätsprüfung seiner Sparte „Universitätsverlag".

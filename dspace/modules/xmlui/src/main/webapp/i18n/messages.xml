@@ -2994,6 +2994,12 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             </p>
         </div>
     </message>
+    <message key="xmlui.static.editorials.title">Redaktionelles</message>    
+    <message key="xmlui.static.editorials.head">Redaktionelles</message>
+    <message key="xmlui.static.editorials">
+	<h3>Annotationen</h3>
+	<div id="annotation-list"></div>
+    </message>
     <message key="xmlui.static.editors.head">Herausgebergremium</message>
     <message key="xmlui.static.editors">
         <div>
