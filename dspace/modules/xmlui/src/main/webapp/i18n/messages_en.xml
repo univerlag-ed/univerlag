@@ -2879,10 +2879,6 @@ Göttingen University Press.
 
             <ul class="styled">
                 <li>Electronic Publications in Open Access,
-                    <!-- <ul>
-                        <li>more information on Open Access at <a class="extern-link" href="//www.open-access.net//DE-EN">open-access.net</a></li>
-                        <li>see our <a class="extern-link" href="//www.sherpa.ac.uk/romeo/search.php?id=254&amp;fIDnum=all%22">publication policy</a> at the <a href="//www.dini.de/wiss-publizieren/sherparomeo/">SHERPA/RoMEO</a> list</li>
-                    </ul> -->
                 </li>
                 <li>High quality print (on demand)</li>
                 <li>Publication support and information on location</li>
@@ -2896,13 +2892,13 @@ Göttingen University Press.
             <p>All publications from the program "Universitätsverlag" that have undergone additional peer review are stored on the university&#39;s publication server <a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a>.
             </p>
 
-<p>All publications of the Universitätsverlag Göttingen are accessible via the OPAC of the SUB and can be ordered via booksellers. In addition, the Open Access publications are long-term archived at the German National Library (DNB) and can be found via search engines such as Google Scholar or BASE and in digital libraries such as the OAPEN Library and the Directory of Open Access Books (DOAB). All digital publications of Göttingen University Press are made permanently available. 
+		<p>All publications of the Universitätsverlag Göttingen are accessible via the OPAC of the SUB and can be ordered via booksellers. In addition, the Open Access publications are long-term archived at the German National Library (DNB) and can be found via search engines such as Google Scholar or BASE and in digital libraries such as the OAPEN Library and the Directory of Open Access Books (DOAB). All digital publications of Göttingen University Press are made permanently available.</p> 
 
             <p>The press has close relationships to other Open-Access-related activities of the library such as
             </p>
 
             <div id="services" class="container-fluid text-center">
-                <div class="row">
+	    	<div class="row">
                     <div class="col-sm-4">
                         <img src="/dokumente/images/hirmeos.ico"></img>
                         <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
@@ -2929,8 +2925,6 @@ Göttingen University Press.
 			<p>
 			[Partly translated with www.DeepL.com/Translator]
 			</p>
-		</div>
-    </message>  
 	    <p><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">more projects at the SUB Göttingen ...</a></p>
         </div>
     </message>
@@ -5295,8 +5289,12 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.static.editorials.title">Editorials</message>
     <message key="xmlui.static.editorials.head">Editorials</message>
+    <message key="xmlui.static.editorials.info">Info</message>
     <message key="xmlui.static.editorials">
-        <h3>Annotatios</h3>
-        <div id="annotation-list"></div>
+        <h3>Annotated documents</h3>
+        <p id="annotations">
+                <ul id="annotations"></ul>
+        </p>
     </message>
+
 </catalogue>
