@@ -2935,28 +2935,28 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
             <p>Der Universitätsverlag Göttingen offeriert ein innovatives Publikationsmodell, das Ihnen als Autor neue Wahlfreiheiten bzgl. der freien Verfügbarmachung der elektronischen
                 Ausgabe eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
-                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Daher machen wir parallel  alle Publikationen über den <a class="extern-link" target="_blank" href="//webdoc.sub.gwdg.de/" title="GOEDOC">GOEDOC</a> Server online frei zugänglich (Open Access), bei denen die Rechtslage dies erlaubt. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden außerdem über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
+                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden daher über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
             </p>
 
             <p>Alle Publikationen im Universitätsverlag Göttingen sind über den OPAC der SUB erschlossen und
                 über den Buchhandel bestellbar.
-                Außerdem sind die Open Access-Publikationen über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
-                werden dauerhaft verfügbar gemacht.
+                Außerdem sind die Open Access-Publikationen über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books (DOAB) nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
+                werden dauerhaft verfügbar gemacht.<br />
 
                 Der Universitätsverlag ist eng mit anderen Aktivitäten der SUB Göttingen in Hinblick auf Open Access verbunden:
             </p>
 
-            <div id="services" class="container-fluid text-center">
-                <div class="row">
+	<div id="services" class="container-fluid text-center">
+	    	<div class="row">
                     <div class="col-sm-4">
-                        <img src="/static/icons/goescholar.ico"></img>
-                        <h4><a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
-                        <p>Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</p>
+                        <img src="/dokumente/images/hirmeos.ico"></img>
+                        <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
+                        <p>High Integration of Research Monographs in the European Open Science infrastructure</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/ediss.ico"></img>
                         <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
-                        <p>elektronische Dissertationen der Universität Göttingen</p>
+                        <p>Electronic Dissertations at Georg-August-Universität Göttingen</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
@@ -2964,8 +2964,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                         <p>Göttingen Centre for Digital Humanities</p>
                     </div>
                 </div>
-
-                <div class="row">
+	</div>
+                <!--<div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/openaire.ico"></img>
                         <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
@@ -2982,15 +2982,15 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                         <p>Weitere Projekte der SUB</p>
                     </div>
                 </div>
-            </div>
+            </div>-->
+<p><a href="https://www.sub.uni-goettingen.de/projekte-forschung/projekte-a-z/"  class="extern-link" target="_blank">Weitere Projekte der SUB Göttingen ...</a>
+            </p>		
 
 
             <p>Die dauerhafte und weltweite Verfügbarkeit der Göttinger Publikationen ist
                 zentrales Anliegen des Universitätsverlages. Dabei ist der Universitätsverlag
                 ausdrücklich nicht als Konkurrent, sondern als Ergänzung der Arbeit
-                mittelständischer Verlage zu verstehen, die auch in Zukunft wesentliche Teile
-                der wissenschaftlichen Literatur - möglichst ebenfalls nach modernen
-                Standards - produzieren sollten.
+                mittelständischer Verlage zu verstehen.
             </p>
         </div>
     </message>
