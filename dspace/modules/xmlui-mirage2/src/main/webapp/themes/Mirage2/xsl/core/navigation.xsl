@@ -164,16 +164,21 @@
                 <a class="list-group-item ds-option" href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/openaccess">Open Access</a>
 		<a class="list-group-item ds-option" href="{$context-path}/info/interfaces"><i18n:text>xmlui.static.interfaces.head</i18n:text></a>
-                <xsl:if test="//dri:userMeta/@authenticated='yes'">
-                        <xsl:variable name="date"><xsl:value-of select="document('../../vlb/current-date.xml')/date"/></xsl:variable>
-                                <a class="list-group-item ds-option">
-                                        <xsl:attribute name="href"><xsl:value-of select="concat('/vlb-list/', $date)" /></xsl:attribute>
-                                        VLB Export
-                                </a>
-                </xsl:if>
 		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice"><i18n:text>xmlui.static.annotations.head</i18n:text></a>
             </div>
             <xsl:apply-templates select="dri:list[@n='context']"/>
+	    <xsl:if test="//dri:userMeta/@authenticated='yes'">
+		    <h2 class="ds-option-set-head h6 page-header  h6"><i18n:text>xmlui.static.editorials.head</i18n:text></h2>
+		    <div id="aspect_viewArtifacts_Navigation_list_account" class="list-group">
+			<a class="list-group-item ds-option" href="{$context-path}/info/editorials"><i18n:text>xmlui.static.editorials.info</i18n:text></a>
+			<xsl:variable name="date"><xsl:value-of select="document('../../vlb/current-date.xml')/date"/></xsl:variable>
+		 	<a class="list-group-item ds-option">
+                                        <xsl:attribute name="href"><xsl:value-of select="concat('/vlb-list/', $date)" /></xsl:attribute>
+                                        VLB Export
+                        </a>
+		    </div>
+	    </xsl:if>
+
             <xsl:apply-templates select="dri:list[@n='administrative']"/>
             <xsl:if test="//dri:userMeta/@authenticated='yes'">
                 <xsl:apply-templates select="dri:list[@n='account']"/>

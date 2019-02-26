@@ -246,7 +246,7 @@
 
     <xsl:template name="itemSummaryView-DIM-series">
         <xsl:if test="dim:field[@element='relation'][@qualifier='ispartofseries']">
-
+           
             <span class="relation">
                 <a href="{$serie}">
                     <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
@@ -919,7 +919,8 @@
             <i18n:text>xmlui.item.online.version</i18n:text>
             <span class="access">
 		<xsl:choose>
-		<xsl:when test="contains(mimetype, 'pdf')">
+		<xsl:when test="contains($href, '.pdf')">
+	
 		<a data-fancybox="" data-type="iframe" >
                         <xsl:attribute name="data-src">
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after($href, '3/'), 'isAllow'))"/>
@@ -931,7 +932,7 @@
         </a>
 		</xsl:when>
 		<xsl:otherwise>
-
+		
                 <a>
                     <xsl:attribute name="href">
                         <xsl:value-of select="$href"/>

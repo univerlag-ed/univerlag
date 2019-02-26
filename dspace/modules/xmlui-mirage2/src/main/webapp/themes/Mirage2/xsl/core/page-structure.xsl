@@ -128,7 +128,11 @@
                     </xsl:choose>
                     <!-- Javascript at the bottom for fast page loading -->
                     <xsl:call-template name="addJavascript"/>
-		    <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script> 
+		    <!-- <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script> -->
+		    
+		    <xsl:if test="contains($request-uri,'info/editorials')">
+				<script src="/static/js/search-annotations.js" charset="UTF-8" type="text/javascript"> </script>
+		    </xsl:if>
                     <!-- <xsl:if test="//dri:metadata[@element='request' and  @qualifier='URI'] == 'handle/3/Goettingen_studies_in_cultural_property_series'">
                                 <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script>
                     </xslif> -->
@@ -158,7 +162,9 @@
 
                     </script>
 		    <script src="/static/js/jquery.fancybox.js" charset="UTF-8" type="text/javascript"> </script>
+		    
                 </body>
+
                 <xsl:text disable-output-escaping="yes">&lt;/html&gt;</xsl:text>
 
             </xsl:when>
