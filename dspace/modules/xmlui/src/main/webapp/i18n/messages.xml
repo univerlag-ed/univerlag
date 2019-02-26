@@ -2913,18 +2913,18 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div>
     </message>
 
-    <message key="xmlui.static.aboutus.head">Über uns</message>
+<message key="xmlui.static.aboutus.head">Über uns</message>
     <message key="xmlui.static.aboutus">
         <div>
             <p>
-                Der Universitätsverlag Göttingen gehört zum Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
+                Der Universitätsverlag Göttingen gehört zu dem Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
                 der Universität Göttingen anzubieten:
             </p>
 
 
             <ul class="styled">
-                <li>elektronisches Publizieren</li>
-                <li>hochwertige Druckausgabe als Print-on-Demand</li>
+                <li>elektronisches Publizieren - online frei zugänglich (open access)</li>
+                <li>hochwertige Druckausgabe in kleiner Auflage</li>
                 <li>persönliche Beratung vor Ort</li>
                 <li>kurze Produktionszeit </li>
                 <li>garantierte Qualitätssicherung</li>
@@ -2935,28 +2935,31 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
             <p>Der Universitätsverlag Göttingen offeriert ein innovatives Publikationsmodell, das Ihnen als Autor neue Wahlfreiheiten bzgl. der freien Verfügbarmachung der elektronischen
                 Ausgabe eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
-                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Daher machen wir parallel  alle Publikationen über den <a class="extern-link" target="_blank" href="//webdoc.sub.gwdg.de/" title="GOEDOC">GOEDOC</a> Server online frei zugänglich (Open Access), bei denen die Rechtslage dies erlaubt. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden außerdem über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
+                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden daher über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
             </p>
 
             <p>Alle Publikationen im Universitätsverlag Göttingen sind über den OPAC der SUB erschlossen und
                 über den Buchhandel bestellbar.
-                Außerdem sind die Open Access-Publikationen über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
-                werden dauerhaft verfügbar gemacht.
+                Außerdem sind die Open Access-Publikationen über Suchmaschinen wie Google Scholar oder BASE auffindbar und in Digitalen Bibliotheken wie der OAPEN Library und dem Directory of Open Access Books (DOAB) nachgewiesen. Alle digitalen Publikationen des Universitätsverlages
+                werden dauerhaft verfügbar gemacht.<br />
 
                 Der Universitätsverlag ist eng mit anderen Aktivitäten der SUB Göttingen in Hinblick auf Open Access verbunden:
             </p>
 
-            <div id="services" class="container-fluid text-center">
-                <div class="row">
+	<div id="services" class="container-fluid text-center">
+	    	<div class="row">
                     <div class="col-sm-4">
-                        <img src="/static/icons/goescholar.ico"></img>
-                        <h4><a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" target="_blank">GOESCHOLAR</a></h4>
-                        <p>Publikationsserver der Georg-August-Universität (begutachtete Publikationen)</p>
+                        <img src="/dokumente/images/hirmeos.ico"></img>
+                        <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
+                        <p>High Integration of Research Monographs in the European Open Science infrastructure</p>
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/ediss.ico"></img>
                         <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
-                        <p>elektronische Dissertationen der Universität Göttingen</p>
+
+
+                        <p>Elektronische Dissertationen der Georg-August-Universität Göttingen</p>
+
                     </div>
                     <div class="col-sm-4">
                         <img src="/static/icons/gcdh.ico"></img>
@@ -2965,44 +2968,50 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                     </div>
                 </div>
 
-                <div class="row">
+
+                <!-- <div class="row">
+
                     <div class="col-sm-4">
                         <img src="/static/icons/openaire.ico"></img>
                         <h4><a href="//www.openaire.eu/"  class="extern-link" target="_blank">OPENAIRE</a></h4>
                         <p>Open Access Infrastructure for Research in Europe</p>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="/static/icons/coar-logo.png"></img>
-                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
-                        <p>Confederation of Open Access Repositories</p>
-                    </div>
-                    <div class="col-sm-4">
+					<div class="col-sm-4">
                         <span class="iconplace">SUB</span>
                         <h4><a href="//rdd.sub.uni-goettingen.de/"  class="extern-link" target="_blank">SUB</a></h4>
                         <p>Weitere Projekte der SUB</p>
                     </div>
+
                 </div>
-            </div>
+            </div>-->
+<p><a href="https://www.sub.uni-goettingen.de/projekte-forschung/projekte-a-z/"  class="extern-link" target="_blank">Weitere Projekte der SUB Göttingen ...</a>
+            </p>		
+
+		<!-- <div class="row">
+                    <div class="col-sm-4">
+                        <img src="/static/icons/coar-logo.png"></img>
+                        <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
+                        <p>Confederation of Open Access Repositories</p>
+                    </div>                
+                </div> -->
+
+		<div class="row">
+				<p><a href="//projekte-forschung/projekte-a-z//"  class="extern-link" target="_blank">Weitere Projekte an der SUB Göttingen ...</a>
+				</p>
 
 
             <p>Die dauerhafte und weltweite Verfügbarkeit der Göttinger Publikationen ist
                 zentrales Anliegen des Universitätsverlages. Dabei ist der Universitätsverlag
                 ausdrücklich nicht als Konkurrent, sondern als Ergänzung der Arbeit
-                mittelständischer Verlage zu verstehen, die auch in Zukunft wesentliche Teile
-                der wissenschaftlichen Literatur - möglichst ebenfalls nach modernen
-                Standards - produzieren sollten.
+                mittelständischer Verlage zu verstehen.
             </p>
+		</div>
         </div>
+     </div>
     </message>
-    <message key="xmlui.static.editorials.title">Redaktionelles</message>
-    <message key="xmlui.static.editorials.head">Redaktionelles</message>
-    <message key="xmlui.static.editorials.info">Infos</message>
-    <message key="xmlui.static.editorials">
-        <h3>Annotatierte Dokumente</h3>
-        <p id="annotations">
-                <ul id="annotations"></ul>
-        </p>
-    </message>
+	
+	<message key="xmlui.static.editors.head">Herausgebergremium</message>
+
     <message key="xmlui.static.editors.head">Herausgebergremium</message>
     <message key="xmlui.static.editors">
         <div>
@@ -5389,4 +5398,14 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.collection.JAWG.introduction"></message>
     <message key="xmlui.collection.arthistory.introduction"></message>
+
+    <message key="xmlui.static.editorials.title">Redaktionelles</message>
+    <message key="xmlui.static.editorials.head">Redaktionelles</message>
+    <message key="xmlui.static.editorials.info">Infos</message>
+    <message key="xmlui.static.editorials">
+        <h3>Annotatierte Dokumente</h3>
+        <p id="annotations">
+                <ul id="annotations"></ul>
+        </p>
+    </message>
 </catalogue>

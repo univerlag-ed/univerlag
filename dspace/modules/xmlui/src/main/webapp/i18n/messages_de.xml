@@ -2987,14 +2987,15 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 <p><a href="https://www.sub.uni-goettingen.de/projekte-forschung/projekte-a-z/"  class="extern-link" target="_blank">Weitere Projekte der SUB Göttingen ...</a>
             </p>		
 
-
+		<!-- <div class="row">
                     <div class="col-sm-4">
                         <img src="/static/icons/coar-logo.png"></img>
                         <h4><a href="//coar-repositories.org/"  class="extern-link" target="_blank">COAR e.v.</a></h4>
                         <p>Confederation of Open Access Repositories</p>
                     </div>                
                 </div> -->
-            </div>
+
+		<div class="row">
 				<p><a href="//projekte-forschung/projekte-a-z//"  class="extern-link" target="_blank">Weitere Projekte an der SUB Göttingen ...</a>
 				</p>
 
@@ -3004,7 +3005,9 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 ausdrücklich nicht als Konkurrent, sondern als Ergänzung der Arbeit
                 mittelständischer Verlage zu verstehen.
             </p>
+		</div>
         </div>
+     </div>
     </message>
 	
 	<message key="xmlui.static.editors.head">Herausgebergremium</message>
@@ -5395,4 +5398,14 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.collection.JAWG.introduction"></message>
     <message key="xmlui.collection.arthistory.introduction"></message>
+
+    <message key="xmlui.static.editorials.title">Redaktionelles</message>
+    <message key="xmlui.static.editorials.head">Redaktionelles</message>
+    <message key="xmlui.static.editorials.info">Infos</message>
+    <message key="xmlui.static.editorials">
+        <h3>Annotatierte Dokumente</h3>
+        <p id="annotations">
+                <ul id="annotations"></ul>
+        </p>
+    </message>
 </catalogue>

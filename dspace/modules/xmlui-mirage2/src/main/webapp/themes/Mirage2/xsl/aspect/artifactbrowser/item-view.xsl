@@ -516,7 +516,11 @@
             <xsl:for-each select="dim:field[@element='description' and @qualifier='print']">
                 <xsl:variable name="pos"><xsl:value-of select="position()"/></xsl:variable>
 
-                <xsl:variable name="extent"><xsl:value-of select="../dim:field[@qualifier='extent'][position() = $pos]"/></xsl:variable>
+                <xsl:variable name="extent"><xsl:value-of select="../dim:field[@qualifier='extent'][position() = $pos]"/>
+			<xsl:if test="../dim:field[@qualifier='extentpostfix'][position() = $pos]">
+				<xsl:value-of select="../dim:field[@qualifier='extentpostfix'][position() = $pos]"/>
+			</xsl:if>
+		</xsl:variable>
                 <xsl:variable name="price">
                     <xsl:choose>
                         <xsl:when test="$locale = 'en'">
