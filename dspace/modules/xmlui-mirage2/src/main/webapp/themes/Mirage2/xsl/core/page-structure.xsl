@@ -130,9 +130,11 @@
                     <xsl:call-template name="addJavascript"/>
 		    <!-- <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script> -->
 		    
-		    <xsl:if test="contains($request-uri,'info/editorials')">
+		    <!-- <xsl:if test="contains($request-uri,'info/editorials')">
 				<script src="/static/js/search-annotations.js" charset="UTF-8" type="text/javascript"> </script>
-		    </xsl:if>
+		    </xsl:if> -->
+		    <script src="/themes/Mirage2/scripts/citations.js" charset="UTF-8" type="text/javascript"> </script>
+		    <script src="/themes/Mirage2/scripts/catch-annotations.js" charset="UTF-8" type="text/javascript"> </script>
                     <!-- <xsl:if test="//dri:metadata[@element='request' and  @qualifier='URI'] == 'handle/3/Goettingen_studies_in_cultural_property_series'">
                                 <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script>
                     </xslif> -->

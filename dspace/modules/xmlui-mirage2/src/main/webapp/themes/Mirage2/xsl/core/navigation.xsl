@@ -164,7 +164,7 @@
                 <a class="list-group-item ds-option" href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/openaccess">Open Access</a>
 		<a class="list-group-item ds-option" href="{$context-path}/info/interfaces"><i18n:text>xmlui.static.interfaces.head</i18n:text></a>
-		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice"><i18n:text>xmlui.static.annotations.head</i18n:text></a>
+		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice"><i18n:text>xmlui.static.annotations.link</i18n:text></a>
             </div>
             <xsl:apply-templates select="dri:list[@n='context']"/>
 	    <xsl:if test="//dri:userMeta/@authenticated='yes'">

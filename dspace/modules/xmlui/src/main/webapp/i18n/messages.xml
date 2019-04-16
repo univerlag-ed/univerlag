@@ -2734,13 +2734,13 @@
                         
 <div>
                                 
-<a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix_edocs" target="_blank">Elektronische Publikationen</a>
+<a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix2_edocs" target="_blank">Elektronische Publikationen</a>
 <br/>
                                 
-<a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix_print" target="_blank">Gedruckte Publikationen</a>
+<a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onixi2_print" target="_blank">Gedruckte Publikationen</a>
 <br/>
                                 
-<a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix_media" target="_blank">DVDs und CD-ROMs</a>
+<a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix2_media" target="_blank">DVDs und CD-ROMs</a>
                         
 </div>
                 
@@ -3597,7 +3597,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             </p>
         </div>
     </message>
-
+    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/static/images/hp_logo-sw.png"/></message>
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
         <div>
@@ -5392,7 +5392,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisationen im Volltext</message>
     <message key="xmlui.viewall">Alle auflisten</message>
     <message key="xmlui.item.annotation.details.text">Annotationen zum Text</message>
-    <message key="xmlui.item.annotation.details.link">Öffnen</message>
+    <message key="xmlui.item.annotation.details.link">Herunterladen (csv)</message>
     <message key="xmlui.item.annotation.details.none">Keine Annotationen gefunden</message>
 
     <message key="xmlui.collection.JAWG.introduction"></message>
@@ -5402,9 +5402,21 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.static.editorials.head">Redaktionelles</message>
     <message key="xmlui.static.editorials.info">Infos</message>
     <message key="xmlui.static.editorials">
-        <h3>Annotatierte Dokumente</h3>
-        <p id="annotations">
+        <h3>Annotierte Dokumente</h3>
+        <!-- <p id="annotations">
                 <ul id="annotations"></ul>
-        </p>
+        </p> -->
+	<div>
+		<iframe src="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*"
+        width="100%" height="1000" frameborder="0">
+	  <p> <a href="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*">
+	  </a> </p>
+	</iframe>
+	</div>
     </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-cite">Zititeren</message>
+    <message key="xmlui.biblio.export.label">Bibliografie-Export</message>
+    <message key="xmlui.biblio.export.ebookdata">eBook: </message>
+    <message key="xmlui.biblio.export.printdata">Print: </message>
+ 
 </catalogue>

@@ -2700,9 +2700,9 @@
 		<div>The metadata of our publications is freely accessible via our OAI PMH (v2.0) interfaces in various formats</div>
                         <h3>ONIX 2.0</h3>
                         <div>
-                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix_edocs" target="_blank">Electronic Publications</a><br />
-                                <a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix_print" target="_blank">Print Publications</a><br />
-                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix_media" target="_blank">Multimedia Publications</a>
+                                <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix2_edocs" target="_blank">Electronic Publications</a><br />
+                                <a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onix2_print" target="_blank">Print Publications</a><br />
+                                <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix2_media" target="_blank">Multimedia Publications</a>
                         </div>
                 
                         <h3>
@@ -3421,6 +3421,7 @@ Editorial board and staff members of the press are aware of their responsibility
             </p>
         </div>
     </message>
+    <message key="xmlui.static.annotations.link">Annotation Service <img title="hypothes.is" src="/static/images/hp_logo-sw.png"/></message>
     <message key="xmlui.static.annotations.head">Annotation Service</message>
 
     <message key="xmlui.static.annotations">
@@ -5280,7 +5281,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.Discovery.AbstractSearch.type_organisations">Organisations in fulltext</message>
     <message key="xmlui.viewall"> View all</message>
     <message key="xmlui.item.annotation.details.text">Annotations</message>
-    <message key="xmlui.item.annotation.details.link">Open</message>
+    <message key="xmlui.item.annotation.details.link">Download (csv)</message>
     <message key="xmlui.item.annotation.details.none">No annotations found</message>
 
     <message key="xmlui.collection.JAWG.introduction"></message>
@@ -5291,9 +5292,20 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.static.editorials.info">Info</message>
     <message key="xmlui.static.editorials">
         <h3>Annotated documents</h3>
-        <p id="annotations">
+        <!-- <p id="annotations">
                 <ul id="annotations"></ul>
-        </p>
-    </message>
+        </p> -->
+	<div>
+                <iframe src="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*"
+        width="100%" height="1000" frameborder="0">
+          <p> <a href="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*">
+          </a> </p>
+        </iframe>
+        </div>
 
+    </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-cite">Cite</message>
+    <message key="xmlui.biblio.export.label">Bibliographic Export</message>
+    <message key="xmlui.biblio.export.ebookdata">eBook: </message>
+    <message key="xmlui.biblio.export.printdata">Print: </message>
 </catalogue>

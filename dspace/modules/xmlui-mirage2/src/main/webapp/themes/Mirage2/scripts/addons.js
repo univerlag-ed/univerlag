@@ -147,6 +147,23 @@
 	$("#aspect_submission_StepTransformer_field_dc_identifier_intern").attr("placeholder","isbn-");
    }
 
+
+   function citestyle(cs, link){
+			$.ajax({     		
+				headers: {		     
+					"Accept": "text/x-bibliography; style=" + cs
+				 },
+				  url: link,  
+				  dataType : "text",   
+				  success : function(response) {  
+						$('#'+cs).text(response);
+				  },
+				  error: function(jqxhr, status, exception) {
+					alert('Exception:', exception);
+				}
+			});
+   }
+
 //create queryObject
 var queryStr = '{"text": "","shortText": "","termVector": [],"language": {"lang": "en"},"entities": [],"onlyNER": false,"resultLanguages": ["de","en"],"nbest": false,"sentence": false,"customisation": "generic"}';
 queryJSON = $.parseJSON(queryStr);
