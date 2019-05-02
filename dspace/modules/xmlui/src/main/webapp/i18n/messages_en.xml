@@ -2860,7 +2860,7 @@ Göttingen University Press.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">News</a>
+                <a href="/news"><span class="new">!</span>News</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
@@ -4111,8 +4111,24 @@ In most cases, the contributions are based on PhD theses. With this book series,
 	<p>
 	Dr. Annegret Middeke (Universität Göttingen) is assigned editor of the series "Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)" on behalf of the "Fachverband Deutsch als Fremd- und Zweitsprache e.V. (FaDaF)". The series comprises research results from the annual meetings and symposia of the research group as well as theses papers and other important reports within the international context. The series has been published by Goettingen University Press from volume 78 onwards. Volumes 78-96 have been published as <a href="/handle/3/fadaf_series">"Materialien Deutsch als Fremdsprache"</a>
 	</p>
-        <p class="narrow">ISSN (Print): 2566-9230</p>
-        <p class="narrow">ISSN (Online): 2566-9281</p>
+        <!-- <p class="narrow">ISSN (Print): 2566-9230</p>
+        <p class="narrow">ISSN (Online): 2566-9281</p> -->
+	<div class="row">
+		<div class="col-md-6">
+<p class="narrow">ISSN (Print): 2566-9230</p>
+        
+<p class="narrow">ISSN (Online): 2566-9281</p>
+		</div>
+		<div class="col-md-6">
+	
+
+		<i id="play" class="fa fa-youtube-play" style="font-size:30px;color:red;vertical-align: top;float: right;/*! margin-right: 50px; */"></i>
+		<a data-type="iframe" data-fancybox="" data-src="https://www.youtube.com/embed/O5nbW5e_8PI" href="https://www.youtube.com/embed/O5nbW5e_8PI">
+			<span class="info">Festkolloquium</span>
+		</a>
+
+		</div>
+	</div>
     </message>
 
     <!-- <message key="xmlui.collection.mis.introduction">
@@ -4689,17 +4705,21 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.static.news">
         <h2 class="first-page-header">News <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archive</a></h2>
         <div class="news">
-<h3 class="list-item-header">PDF-Annotationen via Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
-            <p class="strech-top">
-                 Göttingen University Press supports PDF-annotations via <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
-           </p> 						
-	<h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Nov. 2018</small></span></h3>
-            <p class="strech-top">
-                Specialist in German studies Dr. Zhizi Yang received in August 2018 the <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">special advancement price of the Märchen-Stiftung Walter Kahn</a>
-		<br />
-	         The thesis is <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0"> available printed and open access at Göttingen University Press</a>.
-            </p>         
-
+		<h3 class="list-item-header">Colloquium Lectures on the MatDaF series are online<span class="pull-right"><small>April 2019</small></span></h3>
+            
+		<p class="strech-top">
+                
+	
+		On the occasion of the 30th anniversary of the association and the 100th volume of the series "Materialien Deutsch als Fremd- und Zweitsprache" (MatDaF), the FaDaF organised a colloquium on "Languages, Integration, Values" on 01 February 2019. Speakers were Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Prof. Dr. Hiltraud Casper-Hehne (Vice President of the University of Göttingen) and Jutta Pabst (Göttinger Universitätsverlag) addressed the guests.</p>
+		<p>The lectures were recorded</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the trailer </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the opening </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Annegret Middeke </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Prof. Dr. Uwe Koreik </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Matthias Jung </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by PD Dr. Roger Fornoff </i></a></li>
+</ul>
 	</div>
     </message>
 
@@ -4709,6 +4729,17 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.static.news-archive">
         <h2 class="first-page-header">News Archive</h2>
         <div class="news">
+		<h3 class="list-item-header">PDF-Annotations via Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                 Göttingen University Press supports PDF-annotations via <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
+           </p>
+        <h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Specialist in German studies Dr. Zhizi Yang received in August 2018 the <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">special advancement price of the Märchen-Stiftung Walter Kahn</a>
+                <br />
+                 The thesis is <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0"> available printed and open access at Göttingen University Press</a>.
+            </p>
+
                     <h3 class="list-item-header">Award for Thesis<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 The physicist Dr. Martin Krenkel has been awarded the dissertation prize 2016 of the University Association of Göttingen.
@@ -5308,4 +5339,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.label">Bibliographic Export</message>
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Speech <span class="glyphicon glyphicon-film"></span></message>
 </catalogue>

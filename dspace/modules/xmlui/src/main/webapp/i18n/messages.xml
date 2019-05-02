@@ -2905,7 +2905,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news">Aktuelles</a>
+                <a href="/news"><span class="new">!</span>Aktuelles</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog</a>
@@ -4230,11 +4230,27 @@ In den meisten Fällen basieren die Beiträge auf Dissertationen. Mit dieser Buc
 
 
     <message key="xmlui.collection.matdaf.introduction">
-        <p>
-            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href ="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.
-        </p>
-        <p class="narrow">ISSN (Print): 2566-9230</p>
-        <p class="narrow">ISSN (Online): 2566-9281</p>
+
+	<p>
+            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href ="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.</p>
+        <!-- <p class="narrow">ISSN (Print): 2566-9230</p>
+        <p class="narrow">ISSN (Online): 2566-9281</p> -->
+	<div class="row">
+		<div class="col-md-6">
+<p class="narrow">ISSN (Print): 2566-9230</p>
+        
+<p class="narrow">ISSN (Online): 2566-9281</p>
+		</div>
+		<div class="col-md-6">
+	
+
+		<i id="play" class="fa fa-youtube-play" style="font-size:30px;color:red;vertical-align: top;float: right;"></i>
+		<a data-type="iframe" data-fancybox="" data-src="https://www.youtube.com/embed/O5nbW5e_8PI" href="https://www.youtube.com/embed/O5nbW5e_8PI">
+			<span class="info">Festkolloquium</span>
+		</a>
+
+		</div>
+	</div>
     </message>
 
     <!-- <message key="xmlui.collection.mis.introduction">
@@ -4786,16 +4802,24 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.static.news">
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
-<h3 class="list-item-header">PDF-Annotationen über Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
-            <p class="strech-top">
-                Der Universitätsverlag Göttingen unterstützt nun PDF-Annotationen über <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
-           </p> 						
-	<h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Nov. 2018</small></span></h3>
-            <p class="strech-top">
-                Die Germanistin Dr. Zhizi Yang erhielt im August 2018 den <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">gesonderten Förderpreis der Märchen-Stiftung Walter Kahn</a>
-		<br />
-	         Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
-            </p>         
+		<h3 class="list-item-header">Festkolloquium-Vorträge zur Reihe MatDaF sind online<span class="pull-right"><small>April 2019</small></span>
+</h3>
+            
+<p class="strech-top">
+                
+	
+</p><p>Anlässlich des 30-jährigen Verbandsjubiläums und des 100. Bandes der Reihe „Materialien Deutsch als Fremd- und Zweitsprache“ (MatDaF) hat der FaDaF am 01. Februar 2019 ein Festkolloquium zum Thema „Sprachen, Integration, Werte“ ausgerichtet. Referenten waren Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Grußworte sprachen Prof. Dr. Hiltraud Casper-Hehne (Vizepräsidentin der Universität Göttingen) und Jutta Pabst (Göttinger Universitätsverlag).</p>
+<p>Die Vorträge wurden aufgezeichnet und sind öffentlich zugänglich:
+
+</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Trailer </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> die Eröffnung </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Annegret Middeke </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Prof. Dr. Uwe Koreik </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Matthias Jung </i></a></li>
+<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von PD Dr. Roger Fornoff </i></a></li>
+</ul>
         </div>
     </message>
 
@@ -4805,6 +4829,16 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.static.news-archive">
         <h2 class="first-page-header">Archiv Aktuelles</h2>
         <div class="news">
+	<h3 class="list-item-header">PDF-Annotationen über Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Der Universitätsverlag Göttingen unterstützt nun PDF-Annotationen über <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
+           </p>
+	<h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Nov. 2018</small></span></h3>
+            <p class="strech-top">
+                Die Germanistin Dr. Zhizi Yang erhielt im August 2018 den <a href="//www.maerchen-stiftung.de/lutz-roehrich-preis-fuer-dr-acakpo-constant-juladie-sedote-gesonderter-foerderpreis-fuer-dr-des-zhizi-yang/" class="extern-link" target="_blank">gesonderten Förderpreis der Märchen-Stiftung Walter Kahn</a>
+                <br />
+                 Die Dissertation ist <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-369-0">gedruckt und open access beim Universitätsverlag Göttingen zugänglich</a>.
+            </p>
         <h3 class="list-item-header">Preis für Dissertationsschrift<span class="pull-right"><small>Dez. 2016</small></span></h3>
             <p class="strech-top">
                 Der Physiker Dr. Martin Krenkel erhielt im Dezember 2016 Dissertationspreis des Universitätsbundes Göttingen.
@@ -5418,5 +5452,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.label">Bibliografie-Export</message>
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
- 
+    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Festvortrag <span class="glyphicon glyphicon-film"></span></message> 
 </catalogue>
