@@ -164,7 +164,7 @@
                 <a class="list-group-item ds-option" href="{$context-path}/info/divisions"><i18n:text>xmlui.static.divisions.head</i18n:text></a>
                 <a class="list-group-item ds-option" href="{$context-path}/info/openaccess">Open Access</a>
 		<a class="list-group-item ds-option" href="{$context-path}/info/interfaces"><i18n:text>xmlui.static.interfaces.head</i18n:text></a>
-		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice"><i18n:text>xmlui.static.annotations.link</i18n:text></a>
+		<a class="list-group-item ds-option" href="{$context-path}/info/annotationservice" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Annotation']);"><i18n:text>xmlui.static.annotations.link</i18n:text></a>
             </div>
             <xsl:apply-templates select="dri:list[@n='context']"/>
 	    <xsl:if test="//dri:userMeta/@authenticated='yes'">
@@ -367,9 +367,9 @@
 
         <!-- <h2 class="ds-sublist-head"><i18n:text>xmlui.ArtifactBrowser.CollectionViewer.head_browse</i18n:text></h2> -->
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.home.collection</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=dateissued&amp;locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_dateissued</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=author&amp;locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_author</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=title&amp;locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_title</i18n:text></a>
+        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=dateissued&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Dateissued']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_dateissued</i18n:text></a>
+        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=author&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Authors']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_author</i18n:text></a>
+        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=title&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Title']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_title</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$series-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.series.collection</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/info/journals?locale-attribute={$currentLoc}"><i18n:text>xmlui.static.journals.title</i18n:text></a> 
 

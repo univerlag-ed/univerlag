@@ -372,7 +372,7 @@
                     <xsl:if test="dim:field[@qualifier='editor']">
                         <xsl:for-each select="dim:field[@qualifier='editor']">
                             <xsl:call-template name="itemSummaryView-DIM-authors-entry" />
-                            <xsl:if test="count(following-sibling::dim:field[@element='contributor']) != 0">
+                            <xsl:if test="count(following-sibling::dim:field[@element='contributor' and @qualifier='editor']) != 0">
                                 <xsl:text>; </xsl:text>
                             </xsl:if>
                         </xsl:for-each>
@@ -384,7 +384,7 @@
                         <xsl:for-each select="dim:field[@qualifier='corporation']">
                             <!-- <xsl:call-template name="itemSummaryView-DIM-authors-entry" /> -->
 			    <xsl:value-of select="."/>
-                            <xsl:if test="count(following-sibling::dim:field[@element='contributor']) != 0">
+                            <xsl:if test="count(following-sibling::dim:field[@element='contributor' and @qualifier='corporation']) != 0">
                                 <xsl:text>; </xsl:text>
                             </xsl:if>
                         </xsl:for-each>
@@ -518,7 +518,7 @@
 
                 <xsl:variable name="extent"><xsl:value-of select="../dim:field[@qualifier='extent'][position() = $pos]"/>
 			<xsl:if test="../dim:field[@qualifier='extentpostfix'][position() = $pos]">
-				<xsl:value-of select="../dim:field[@qualifier='extentpostfix'][position() = $pos]"/>
+				<xsl:value-of select="concat(', ', ../dim:field[@qualifier='extentpostfix'][position() = $pos])"/>
 			</xsl:if>
 		</xsl:variable>
                 <xsl:variable name="price">
@@ -547,7 +547,7 @@
                                 <xsl:attribute name="class"><xsl:text>access amazon</xsl:text></xsl:attribute>
                                 <a target="_blank">
                                     <xsl:attribute name="href"><xsl:value-of select="//dim:field[@element='notes' and @qualifier='printaccess']"/></xsl:attribute>
-                                    <i class="icon-amazon" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.amazon.order</i18n:text>
+                                    <i class="icon-amazon-1" aria-hidden="true"></i><xsl:text> </xsl:text> <i18n:text>xmlui.item.amazon.order</i18n:text>
                                 </a>
                             </xsl:when>
                             <xsl:when test="starts-with(//dim:field[@element='notes' and @qualifier='printaccess'], 'http')">
@@ -932,8 +932,8 @@
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after($href, '3/'), 'isAllow'))"/>
                         </xsl:attribute>
-			<img title="There are annotations for this document" id="hp" src="/static/images/hp_logo.png" style="display:none"/>
-			<i class="icon-download-5 pdf"></i><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+			<img title="You can annotate the opened document." id="hp" src="/static/images/hp_passive.png"/>
+			<i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
         </a>
 		</xsl:when>
 		<xsl:otherwise>
@@ -1349,7 +1349,9 @@
 
     <xsl:template name="getFileIcon">
         <xsl:param name="mimetype"/>
+	
         <i class="icon-file-pdf"></i>
+	
         <!--<xsl:attribute name="class">
             <xsl:choose>
                 <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
@@ -1425,18 +1427,27 @@
                     RELATED ITEMS
                 </li>
             </xsl:if>
-	    <xsl:if test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')">
+	    <xsl:if test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')"> 
                 <li><a  id="cs" data-target="#cite" data-toggle="tab">
 			<i18n:text>xmlui.dri2xhtml.METS-1.0.item-cite</i18n:text> 
 			</a>
 		</li>
-            </xsl:if>
-
+            </xsl:if> 
+	    <xsl:if test="//dim:field[@element='relation' and @qualifier='youtube']">
+		<li><a  data-target="#film" data-toggle="tab">
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-lecture</i18n:text>
+                        </a>
+                </li> 
+	    </xsl:if> 
+	    <li><a  id="anno" data-target="#annos" data-toggle="tab" style="display:none">
+                        <i18n:text>xmlui.dri2xhtml.METS-1.0.item-annotations</i18n:text>
+                        </a>
+            </li>
             <!-- <li><a href="#cite">Zitieren</a></li> -->
         </ul>
         <!-- </div> -->
         <div class="tab-content">
-            <div id="related">
+            <div id="related" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'RelatedItems']);">
                 <xsl:attribute name="class">tab-pane
                     <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']"><xsl:text> active</xsl:text></xsl:if>
                 </xsl:attribute>
@@ -1450,7 +1461,7 @@
                 </xsl:for-each>
 
             </div>
-            <div id="abstract">
+            <div id="abstract" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'Abstract']);">
                 <xsl:attribute name="class"><xsl:text>tab-pane</xsl:text>
                     <xsl:if test="(//dim:field[@element='description' and starts-with(@qualifier, 'abstract')]) and not(//dim:field[@element='relation'][@qualifier='otherparts'])">
                         <xsl:text> active</xsl:text>
@@ -1520,7 +1531,7 @@
                 </xsl:for-each>
             </div>
             <xsl:if test="//dim:field[@qualifier='isreferencedby']">
-		<div class="tab-pane" id="reviews">
+		<div class="tab-pane" id="reviews" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'reviews']);">
                     <xsl:for-each select="//dim:field[@qualifier='isreferencedby']">
                         <p>
                             <xsl:choose>
@@ -1554,11 +1565,11 @@
 
             </xsl:if>
             <xsl:if test="//dim:field[@qualifier='tableofcontents']">
-                <div class="tab-pane" id="toc">
+                <div class="tab-pane" id="toc" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'ToC']);">
                     <xsl:value-of select="//dim:field[@qualifier='tableofcontents']" disable-output-escaping="yes" />
                 </div>
             </xsl:if>
-            <div  class="tab-pane" id="details">
+            <div  class="tab-pane" id="details" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'Details']);">
 
                 <xsl:if test="not(//dim:field[starts-with(@qualifier, 'abstract')])">
                     <xsl:attribute name="class">tab-pane active</xsl:attribute>
@@ -1640,7 +1651,7 @@
                 </xsl:for-each>
                 <xsl:if test="(//dim:field[@qualifier='access'] != 'nodocument')"><i18n:text>xmlui.item.info.document</i18n:text></xsl:if>
 	        <xsl:if test="contains(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=y')">
-                <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading</i18n:text></strong><xsl:text>: </xsl:text>
+                <!-- <p><strong><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading</i18n:text></strong><xsl:text>: </xsl:text>
                     <a data-fancybox="" data-type="iframe" >
                         <xsl:attribute name="data-src">
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
@@ -1649,18 +1660,19 @@
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/>
                         </xsl:attribute>
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate</i18n:text>
-                    </a>
+                    </a> -->
                     <span id="pdfurl" style="display: none;" aria-hidden="true"><xsl:value-of select="concat($baseURL, '/pdfview/', substring-before(substring-after(//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:href, '3/'), 'isAllow'))"/></span>
-                    <a href="#" onclick="copyToClipboard('#pdfurl')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
+		    <span id="doctitle" style="display: none;"><xsl:value-of select="//mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat/@xlink:title"/></span>
+                  <!--  <a href="#" onclick="copyToClipboard('#pdfurl')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
                     <br /><i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-annotate.description</i18n:text>
-                </p>
+                </p> -->
 
 		<!-- preparation for annotation export -->
-                <div style="display: none;" aria-hidden="true">
+                <!-- <div style="display: none;" aria-hidden="true">
                     <span aria-hidden="true" style="display: none;" id="annotation-details-text"><i18n:text>xmlui.item.annotation.details.text</i18n:text></span>
                     <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.details.link</i18n:text></span>
-                    <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span>
-                </div> 
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span> 
+                </div> -->
 
 		</xsl:if>
                 <!-- preparation for peer review certificate -->
@@ -1669,12 +1681,12 @@
                     <span id="pr-link-title" style="display: none;" aria-hidden="true"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-pr-process.icon.title</i18n:text></span>
                 </div>
             </div>
-	    <div class="tab-pane" id="cite">
-		<h6><b>APA</b></h6>
+	    <div class="tab-pane" id="cite" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'Cite']);">
+		<h6 class="apa" style="display:none"><b>APA</b></h6>
                 <p id="apa" class="cs"> </p>
-		<h6><b>Chicago</b></h6>
+		<h6 class="chicago-author-date-de" style="display:none"><b>Chicago</b></h6>
                 <p id="chicago-author-date-de" class="cs"> </p>
-		<h6><b>Harvard</b></h6>
+		<h6 class="harvard1" style="display:none"><b>Harvard</b></h6>
                 <p id="harvard1" class="cs"> </p>
 		<!-- <h6><b>MLA</b></h6> 
                 <p id="mla" class="cs"> </p>  -->
@@ -1684,15 +1696,18 @@
                 <b>Export: </b>
                 <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('/bibtex/handle/', $hdl)"/></xsl:attribute>
+			<xsl:attribute name="onclick"><xsl:text>javascript:_paq.push(['trackEvent', 'Clicks', 'Export', 'BibTeX']);</xsl:text></xsl:attribute>
                         BibTeX
                 </a>
                 <xsl:text> | </xsl:text>
                 <a>
                         <xsl:attribute name="href"><xsl:value-of select="concat('/endnote/handle/', $hdl)"/></xsl:attribute>
+			<xsl:attribute name="onclick"><xsl:text>javascript:_paq.push(['trackEvent', 'Clicks', 'Export', 'EndNote']);</xsl:text></xsl:attribute>
                         RefMan
                 </a>
                 <xsl:text> | </xsl:text>
                 <a>
+			<xsl:attribute name="onclick"><xsl:text>javascript:_paq.push(['trackEvent', 'Clicks', 'Export', 'RIS']);</xsl:text></xsl:attribute>
                         <xsl:attribute name="href"><xsl:value-of select="concat('/ris/handle/', $hdl)"/></xsl:attribute>
                         Ris
                 </a>
@@ -1700,6 +1715,24 @@
 		
 		</div>
 	    </div> 
+	    <div class="tab-pane" id="film" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'video']);">
+		<xsl:for-each select="//dim:field[@element='relation' and @qualifier='youtube']">
+		<div class="embed-responsive embed-responsive-16by9">
+		  <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0">
+			<xsl:attribute name="src"><xsl:value-of select="."/></xsl:attribute>
+		  </iframe>
+		</div>
+		</xsl:for-each>
+	    </div>
+	    <div class="tab-pane" id="annos">
+                <iframe id="hp-site" src="" width="100%" height="1000" frameborder="0"></iframe>
+             </div>
+	     <!-- preparation for annotation export -->
+                <div style="display: none;" aria-hidden="true">
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-text"><i18n:text>xmlui.item.annotation.details.text</i18n:text></span> 
+                    <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.details.link</i18n:text></span>
+                    <!-- <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span> -->
+                </div>
         </div>
 
 

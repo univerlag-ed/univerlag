@@ -8,10 +8,11 @@ function citestyle(cs, link){
                                   //data: "data",
                                   success : function(response) {
                                     //$("#citationstyle").text($("#citationstyle").text() + response);
+						$('.'+cs).toggle();
                                                 $('#'+cs).text(response);
                                   },
                                   error: function(jqxhr, status, exception) {
-                                        alert('Exception:', exception);
+                                        /*alert('Exception:', exception);*/
                                 }
                         });
    }

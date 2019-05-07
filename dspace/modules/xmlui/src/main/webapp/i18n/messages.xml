@@ -3597,7 +3597,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             </p>
         </div>
     </message>
-    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/static/images/hp_logo-sw.png"/></message>
+    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/static/images/hp_passive.png"/></message>
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
         <div>
@@ -4556,8 +4556,8 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.ArtifactBrowser.Navigation.series.collection">Reihen</message>
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
-    <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.)</message>
-    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.)</message>
+    <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.) </message>
+    <message key="xmlui.dri2xhtml.item.contributor.editor"> (Hrsg.) </message>
     <message key="xmlui.dri2xhtml.item.contributor.other"> (Bearb.)</message>
     <message key="xmlui.dri2xhtml.item.dateissued">Erschienen</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-reviewed">Rezensionen</message>
@@ -5453,4 +5453,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Festvortrag <span class="glyphicon glyphicon-film"></span></message> 
+    <message key="xmlui.dri2xhtml.METS-1.0.item-annotations">Annotationen</message>
 </catalogue>

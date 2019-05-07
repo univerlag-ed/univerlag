@@ -161,7 +161,6 @@
 
                         $('#thumbnail').mouseenter( function() {$('#cover').css('display','block')} ).mouseleave(  function() {$('#cover').css('display','none')} );
 
-
                     </script>
 		    <script src="/static/js/jquery.fancybox.js" charset="UTF-8" type="text/javascript"> </script>
 		    
@@ -195,6 +194,7 @@
             <!-- Mobile viewport optimized: h5bp.com/viewport -->
             <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <link rel="shortcut icon">
                 <xsl:attribute name="href">
                     <xsl:value-of select="$theme-path"/>
@@ -222,7 +222,13 @@
             <!-- Add stylesheets -->
 
 	     <style type="text/css">
-
+		.new {
+		    color: red;
+		    font-weight: bold;
+		    padding-right: 2px;
+		    font-size: 1.2em;
+		}
+	
 		.highlight.news {
 		    color: #193364;
 		    padding: 30px 0;
@@ -237,6 +243,35 @@
 
 		#aspect_artifactbrowser_CollectionViewer_div_collection-view > h4 {
 			margin-top: 30px;
+		}
+
+		#ostern {
+                            display: inline-block;
+                            float: left;
+                            margin: 0 30px 0px 0;
+                            width: 100px;
+                        }
+
+		#file_news_div_news {
+ 		   padding-top: 30px;
+		}
+
+		.info {
+		       float: right;
+		    background: #31558e;
+		    color: white;
+		    padding: 2px 5px;
+		    border-radius: 5px;
+		    margin-right: 2px;
+		    margin-top: 2px;
+		    font-weight: bold;
+		}
+
+		#play {
+		font-size: 30px;
+		color: red;
+		vertical-align: top;
+		float: right;
 		}
                 </style>
 
@@ -483,7 +518,7 @@
                             <form method="post" class="" id="ds-search-form" action="{$context-path}/discover?scope=3%2FAll_Products">
                                 <fieldset>
                                     <div class="input-group">
-                                        <input placeholder="Search" class="ds-text-field form-control" name="query" type="text"/><span class="input-group-btn"><button title="Go" class="ds-button-field btn btn-primary"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+                                        <input placeholder="Search" class="ds-text-field form-control" name="query" type="text"/><span class="input-group-btn"><button title="Go" class="ds-button-field btn btn-primary" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Search', 'Global']);"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
                                     </div>
                                 </fieldset>
                             </form>

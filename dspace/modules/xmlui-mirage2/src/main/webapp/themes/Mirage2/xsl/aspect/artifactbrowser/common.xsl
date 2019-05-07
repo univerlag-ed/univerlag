@@ -129,7 +129,7 @@
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="concat('/', //dri:metadata[@qualifier='URI'], '?', //dri:metadata[@qualifier='queryString'] )"/>
                                 </xsl:attribute>
-                                <i class="icon-th" aria-hidden="true"></i>
+                                <i class="icon-th" aria-hidden="true" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'View', 'th']);"></i>
                             </a><xsl:text> </xsl:text>
                             <a title="xmlui.mirage2.listview.list" i18n:attr="title">
                                 <xsl:attribute name="href">
