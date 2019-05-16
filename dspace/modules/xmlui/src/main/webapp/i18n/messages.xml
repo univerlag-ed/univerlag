@@ -5448,7 +5448,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 	</iframe>
 	</div>
     </message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-cite">Zititeren</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-cite">Zitieren</message>
     <message key="xmlui.biblio.export.label">Bibliografie-Export</message>
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
