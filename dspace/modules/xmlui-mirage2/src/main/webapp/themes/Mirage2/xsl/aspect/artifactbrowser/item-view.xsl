@@ -368,6 +368,7 @@
                                 <xsl:text>; </xsl:text>
                             </xsl:if>
                         </xsl:for-each>
+			<br />
                     </xsl:if>
                     <xsl:if test="dim:field[@qualifier='editor']">
                         <xsl:for-each select="dim:field[@qualifier='editor']">
@@ -375,6 +376,7 @@
                             <xsl:if test="count(following-sibling::dim:field[@element='contributor' and @qualifier='editor']) != 0">
                                 <xsl:text>; </xsl:text>
                             </xsl:if>
+			    <xsl:text> </xsl:text>
                         </xsl:for-each>
                         <xsl:if test="not(//dim:field[@qualifier='corporation'])">
                             <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>

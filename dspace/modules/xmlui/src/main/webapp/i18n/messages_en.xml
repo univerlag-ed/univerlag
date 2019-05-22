@@ -2860,7 +2860,7 @@ Göttingen University Press.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><span class="new">!</span>News</a>
+                <a href="/news"><!-- <span class="new">!</span> -->News</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
