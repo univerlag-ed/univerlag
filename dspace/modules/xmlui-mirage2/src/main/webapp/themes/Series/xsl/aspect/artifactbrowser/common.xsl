@@ -85,7 +85,7 @@
         view of items. -->
     <xsl:template match="dri:referenceSet[@type = 'detailView']" priority="2">
 
-
+	<!--
         <xsl:if test="//dri:list[@id='aspect.discovery.SidebarFacetsTransformer.list.persons']">
             <h4><i18n:text>xmlui.Discovery.AbstractSearch.type_persons</i18n:text></h4>
             <div id="tagcloud-person">
@@ -131,8 +131,7 @@
                     <xsl:sort select="." data-type="text" order="ascending"/>
                     <a class="tagcloud">
                         <xsl:attribute name="href"><xsl:value-of select="dri:xref/@target" /></xsl:attribute>
-                        <!-- <xsl:attribute name="rel"><xsl:value-of select="round(substring-before(substring-after(dri:xref,'('), ')') div 2)" /></xsl:attribute> -->
-			<xsl:attribute name="rel"><xsl:value-of select="substring-before(substring-after(dri:xref,'('), ')')"/></xsl:attribute>
+                      	<xsl:attribute name="rel"><xsl:value-of select="substring-before(substring-after(dri:xref,'('), ')')"/></xsl:attribute>
                         <xsl:value-of select="substring-before(dri:xref,'::')" />
                     </a>
 
@@ -143,7 +142,8 @@
 
                 ... <i18n:text>xmlui.viewall</i18n:text>
             </a>
-        </xsl:if>
+        </xsl:if> 
+	-->
         <xsl:apply-templates select="dri:head"/>
         <xsl:apply-templates select="*[not(name()='head')]" mode="detailView"/>
     </xsl:template>
@@ -156,26 +156,40 @@
         moved to the list model. A special theme, called TableTheme, has beeen created for the purpose of
         preserving the pioneer model. -->
     <xsl:template match="dri:referenceSet[@type = 'summaryList']" priority="2">
-
-        <xsl:apply-templates select="dri:head"/>
+	<!-- <xsl:value-of select="../../@n"/>
+	<xsl:if test="not(contains(../@n,'community'))">  -->
+	      <xsl:apply-templates select="dri:head"/>
+	<!-- </xsl:if> -->
         <!-- Here we decide whether we have a hierarchical list or a flat one -->
         <xsl:choose>
             <xsl:when test="descendant-or-self::dri:referenceSet/@rend='hierarchy' or ancestor::dri:referenceSet/@rend='hierarchy'">
                 <ul class="ds-artifact-list list-unstyled">
                     <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
                 </ul>
+		<!-- show closed series on series community page -->
+	        <xsl:if test="//dri:metadata[@element='focus' and @qualifier='container'] = 'hdl:3/Series'">
+        	        <hr />
+                	<h4 class="artifact-title">
+			<a href="/handle/3/Concluded_series"><i18n:text>xmlui.ArtifactBrowser.Navigation.concludedseries.collection</i18n:text></a>
+			</h4>
+	        </xsl:if>
+
             </xsl:when>
             <xsl:when test="@rend='recent-submissions'">
+	<!--	<xsl:if test="not(@n='community-last-submitted')"> -->
                 <div class="row">
                     <xsl:apply-templates select="*[not(name()='head')]" mode="recent-submissions"/>
-                </div>
+                 </div> 
+	<!-- 	</xsl:if> -->
             </xsl:when>
             <xsl:otherwise>
                 <ul class="ds-artifact-list list-unstyled">
                     <xsl:apply-templates select="*[not(name()='head')]" mode="summaryList"/>
                 </ul>
             </xsl:otherwise>
+		
         </xsl:choose>
+
     </xsl:template>
 
     <!-- Generate the logo, if present, from the file section -->

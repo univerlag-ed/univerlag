@@ -1670,11 +1670,12 @@
                 </p> -->
 
 		<!-- preparation for annotation export -->
-                <!-- <div style="display: none;" aria-hidden="true">
+                <div style="display: none;" aria-hidden="true">
                     <span aria-hidden="true" style="display: none;" id="annotation-details-text"><i18n:text>xmlui.item.annotation.details.text</i18n:text></span>
                     <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.details.link</i18n:text></span>
                     <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span> 
-                </div> -->
+                </div> 
+		<!-- <span aria-hidden="true" style="display: none;" id="annotation-details-link"><i18n:text>xmlui.item.annotation.download</i18n:text></span> -->
 
 		</xsl:if>
                 <!-- preparation for peer review certificate -->

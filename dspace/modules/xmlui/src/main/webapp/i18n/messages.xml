@@ -3598,6 +3598,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         </div>
     </message>
     <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/static/images/hp_passive.png"/></message>
+    <message key="xmlui.item.annotation.download">Annotationen: </message>
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
         <div>
@@ -4554,6 +4555,7 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
     <message key="xmlui.ArtifactBrowser.Navigation.special.collection">Publikationen des Göttingen Campus</message>
     <message key="xmlui.ArtifactBrowser.Navigation.more.offers">Weitere Angebote</message>
     <message key="xmlui.ArtifactBrowser.Navigation.series.collection">Reihen</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.concludedseries.collection">Abgeschlossene Reihen</message>
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Ringvorlesungen der Universität</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (Hrsg.) </message>

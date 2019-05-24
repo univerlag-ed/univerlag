@@ -3422,6 +3422,7 @@ Editorial board and staff members of the press are aware of their responsibility
         </div>
     </message>
     <message key="xmlui.static.annotations.link">Annotation Service <img title="hypothes.is" src="/static/images/hp_passive.png"/></message>
+    <message key="xmlui.item.annotation.download">Annotations: </message>
     <message key="xmlui.static.annotations.head">Annotation Service</message>
 
     <message key="xmlui.static.annotations">
@@ -4459,6 +4460,7 @@ In most cases, the contributions are based on PhD theses. With this book series,
     <message key="xmlui.ArtifactBrowser.Navigation.special.collection">Publications of the Göttingen Campus</message>
     <message key="xmlui.ArtifactBrowser.Navigation.more.offers">More Offers</message>
     <message key="xmlui.ArtifactBrowser.Navigation.series.collection">Series</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.concludedseries.collection">Concluded Series</message>
     <message key="xmlui.ArtifactBrowser.Navigation.ring.lectures">Lecture Series at the University</message>
 
     <message key="xmlui.dri2xhtml.item.editor"> (eds.) </message>

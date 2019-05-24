@@ -3,11 +3,20 @@ $(function(){
   var noAnnosText = $("#annotation-details-none").text();
   var annosLink = $("#annotation-details-link").text();
   var pdfUrl = $("#pdfurl").text();
+  var docname = $("#doctitle").text();
+  pdfUrl = fixUrlForHypothesisSearch(pdfUrl);
+
 
   var annotations = [];
   var replies = [];
   var offset = 0;
   search(pdfUrl, offset, annotations, replies);
+
+  function fixUrlForHypothesisSearch(url) {
+    var fixedUrl = url.replace(/^.+\/pdfview\//, 'https://www.univerlag.uni-goettingen.de/bitstream/handle/3/');
+    fixedUrl = fixedUrl.split('?')[0]; //replace('?sequence=1&', '');
+    return fixedUrl;
+  }
 
   function search(pdfUrl, offset, annotations, replies) {
     var max = 2000;
@@ -37,18 +46,24 @@ $(function(){
     });
 
     function updateDOM() {
-      var tag = "<p><strong>" + annosText + " </strong>: "
+      var tag = " ";
       if (annotations.length === 0) {
-        tag += "<em>" + noAnnosText + "</em>";
+        //tag += "<em>" + noAnnosText + "</em>";
       } else {
+	tag = "<p><strong>" + annosText + " </strong>: ";
+	$('#hp').attr('title', 'There are annotations for this document.');
+	$('#hp').attr('src', '/static/images/hp_active.png');
+	/*$('#hp-site').attr('src', 'https://hypothes.is/search?q=' + docname);
+	$('#anno').toggle();*/
         tag += "<a id='downloadAnnotations' href='#'>" + annosLink + "</a>";
-      }
+      
       tag += "</p>";
       $("#details").append(tag);
       $("#downloadAnnotations").click(function(){
         parseAnnotationsAndPrepareForDownload(annotations, replies);
         return false;
       });
+      }
     }
 
     function parseAnnotationsAndPrepareForDownload(annotations, replies) {
