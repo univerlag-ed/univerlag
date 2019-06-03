@@ -3603,20 +3603,20 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
     <message key="xmlui.static.annotations">
         <div>
 
-            <p>Im Rahmen des EU-Projekts <a href="http://www.hirmeos.eu/">HIRMEOS</a> hat sich der Universitätsverlag Göttingen zum Ziel gesetzt, neue Dienste auf seiner Plattform zu integrieren. Dabei soll eine intensivere Auseinandersetzung mit den Inhalten und eine bessere Identifizierung der Autoren und unserer jeweiligen Begutachtungsverfahren ermöglicht werden. Ab sofort können Sie  das Annotationstool von <a href="https://web.hypothes.is/">Hypothes.is</a> für alle unsere Publikationen nutzen, indem Sie unsere digitalen Monographien in Ihrem eigenen Browser annotieren und die Annotationen für sich oder für die Öffentlichkeit speichern.</p>
-            <p>Hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das Hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
+            <p>Im Rahmen des EU-Projekts <a href="http://www.hirmeos.eu/">HIRMEOS</a> hat sich der Universitätsverlag Göttingen zum Ziel gesetzt, neue Dienste auf seiner Plattform zu integrieren. Dabei soll eine intensivere Auseinandersetzung mit den Inhalten und eine bessere Identifizierung der Autoren und unserer jeweiligen Begutachtungsverfahren ermöglicht werden. Ab sofort können Sie das Annotationstool von <a href="https://web.hypothes.is/">hypothes.is</a> für alle unsere Publikationen nutzen, indem Sie unsere digitalen Publikationen in Ihrem eigenen Browser annotieren und die Annotationen für sich und/oder für die Öffentlichkeit speichern.</p>
+            <p>hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
 
-            <h4>Wie man das Hypothes.is-Tool benutzt</h4>
-            <p>Um eine Publikation des Universitätsverlags Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em>. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, wo das Hypothes.is-Tool integriert ist.</p>
-            <p>Um einen Kommentar zu posten, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden Hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
+            <h4>Wie man das hypothes.is-Tool mit unseren Publikationen benutzt</h4>
+            <p>Um eine Publikation des Universitätsverlages Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em> zusammen mit dem schwarzen hypothes.is Symbol. Ein rotes Symbol signalisiert, dass zu dieser Publikation bereits Annotationen erstellt wurden. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, in dem das hypothes.is-Tool integriert ist.</p>
+			<p>In dem Reiter <em>Details</em> können Sie alle bisher realisierten Annotationen zu der ausgewählten Publikation im csv-Format herunterladen:<br />
+			<img src="/dokumente/images/Snippet_Reiter_Details_dt.png" style="max-width: 100%;"></img></p>
+            <p>Um eine Annotation zu erstellen, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
             <p>Ein interessantes Beispiel dafür ist der "Call for Annotations" des <em>Hypothesis Reading Group für James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
             <p>Auch Lehrende und Lernende können von dieser Technologie profitieren, so ist es zum Beispiel möglich, Kursmaterialien und andere Ressourcen in privaten Gruppen zu diskutieren.</p>
             <p>Beachten Sie, dass Ihre öffentlichen Kommentare immer der Netiquette entsprechen sollten.</p>
-            <p>Alle Annotationen werden auf dem Hypothes.is-Server gespeichert.</p>
-            <p><img src="/static/icons/annotationservice.png" style="max-width: 100%;"></img></p>
+            <p>Alle Annotationen werden auf dem hypothes.is-Server gespeichert.</p>
 
-        </div>
-
+</div>
     </message>
 
     <message key="xmlui.static.openaccess.trail">Open Access</message>
