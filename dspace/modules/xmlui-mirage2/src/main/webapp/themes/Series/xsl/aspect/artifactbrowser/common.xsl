@@ -170,7 +170,7 @@
 	        <xsl:if test="//dri:metadata[@element='focus' and @qualifier='container'] = 'hdl:3/Series'">
         	        <hr />
                 	<h4 class="artifact-title">
-			<a href="/handle/3/Concluded_series"><i18n:text>xmlui.ArtifactBrowser.Navigation.concludedseries.collection</i18n:text></a>
+			<a href="/handle/3/Concluded_Series"><i18n:text>xmlui.ArtifactBrowser.Navigation.concludedseries.collection</i18n:text></a>
 			</h4>
 	        </xsl:if>
 

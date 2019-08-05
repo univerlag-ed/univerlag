@@ -3431,7 +3431,7 @@ Editorial board and staff members of the press are aware of their responsibility
             <p>As part of the EU <a href="http://www.hirmeos.eu/">HIRMEOS</a> project, Göttingen University Press has set itself the goal of integrating new services on its platform. The aim is to enable a more intensive examination of the contents and a better identification of the authors and our respective review procedures. From now on you can use the annotation tool of <a href="https://web.hypothes.is/">hypothes.is</a> for all our publications by annotating our digital monographs in your own browser and saving the annotations for yourself or for the public.</p>
             <p>hypothes.is is a widely used annotation system used by several scientific publishers: Johns Hopkins University Press, University of Michigan Publishing, University of California Press and Ubiquity Press have already integrated the Hypothes.is tool into their platforms.</p>
             <h4>How to use the hypothes.is tool with our publications</h4>
-            <p>To annotate a publication of Göttingen University Press, you will find on the website of each publication the link <em>View Document</em> together with the black hypothes.is symbol. A red symbol indicates that annotations have already been created for this publication. By clicking you will be redirected to a PDF viewer where the hypothes.is tool is integrated.</p>
+            <p>To annotate a publication of Göttingen University Press, you will find on the website of each publication the link <em>View Document</em> together with the black hypothes.is symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_bl.jpg" />). A red symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_red.jpg"/>) indicates that annotations have already been created for this publication. By clicking you will be redirected to a PDF viewer where the hypothes.is tool is integrated.</p>
 			<p>In the tab <em>Details</em> you can download all annotations realized so far for a certain publication in csv format:<br />
 			<img src="/dokumente/images/Snippet_Reiter_Details_en.png" style="max-width: 100%;"></img></p>
             <p>To post a comment, click the right arrow button and sign in with your existing hypothes.is account or create an account. To create an account, you must enter an account name and a valid email address. Use of the service is free of charge. Once logged in, you can annotate, highlight text passages, reply to existing public annotations, and more. You can either create private notes for yourself or make your comments readable for others.  To start group discussions, you can set up a private group in which you can only exchange comments within that group.</p>
@@ -3503,8 +3503,8 @@ Editorial board and staff members of the press are aware of their responsibility
 
     <message key="xmlui.static.openaccess.trail">Open Access</message>
 
-    <message key="xmlui.static.openacces.head">Open Access</message>
-    <message key="xmlui.static.openacces.trail">Open Access</message>
+    <message key="xmlui.static.openaccess.head">Open Access</message>
+    <message key="xmlui.static.openaccess.trail">Open Access</message>
     <message key="xmlui.static.openaccess">
         <div class="ds-static-div">
             <p>
@@ -5342,4 +5342,16 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Speech <span class="glyphicon glyphicon-film"></span></message>
+    <message key="xmlui.administer.checklist">
+        <div class="collapse" id="checklist">
+            <h1>BEI NEUPUBLIKATIONEN BITTE NICHT VERGESSEN!</h1>
+            <ul class="styled">
+                <li>Wenn sie einer Reihe angehört, <strong>in die Reihe spiegeln</strong></li>
+                <li>Wenn sie mehrteilig ist, <strong>Teile</strong> miteinander <strong>verlinken</strong>.</li>
+                <li>Wenn sie nicht lieferbar ist, <strong>Lieferbarkeitsstatus ändern</strong>.</li>
+                <li>Wenn sie für <strong>OAPEN</strong> ist, <strong>englische Zusammenfassung</strong> und <strong> drei keywords</strong> hinzufügen. </li>
+                <li>Wenn die zugeordnete <strong>DOI geändert</strong> werden soll: Metadaten bearbeiten, dc.intern.doi ändern</li>
+            </ul>
+        </div>
+    </message>
 </catalogue>

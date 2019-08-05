@@ -222,6 +222,9 @@
             <!-- Add stylesheets -->
 
 	     <style type="text/css">
+		#hp {
+ 		   padding-right: 2px;
+		}
 		.new {
 		    color: red;
 		    font-weight: bold;
@@ -272,6 +275,13 @@
 		color: red;
 		vertical-align: top;
 		float: right;
+		}
+
+		#aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission {
+ 		   display: none;
+		}
+		.list-group-item.ds-option {
+ 		   white-space: nowrap;
 		}
                 </style>
 

@@ -1547,7 +1547,7 @@
                                             </xsl:when>
 
                                             <xsl:otherwise>
-                                                <xsl:attribute name="href"><xsl:value-of select="." /></xsl:attribute>
+                                                <xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
 
                                                 <small><i18n:text>xmlui.item.review.online</i18n:text></small>
                                             </xsl:otherwise>
@@ -1557,7 +1557,8 @@
 
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <xsl:copy-of select="node()"/>
+                                    <!-- <xsl:copy-of select="node()"/> -->
+				    <xsl:value-of select="." disable-output-escaping="yes"/>
                                 </xsl:otherwise>
                             </xsl:choose>
 
