@@ -37,7 +37,7 @@
     templatePath: '/static/shopping-cart/templates/',
     currencySymbol: '&euro;',
     vat: 0,
-    language: $('#ds-language-selection').text().substring(1,3).toLowerCase() === 'en' ? 'en' : 'de',
+    language: $('#langopt').text() === 'Deutsch' ? 'en' : 'de',
     orderUrl: '/order',
     shippingUrl: '/costrequest'
   };
