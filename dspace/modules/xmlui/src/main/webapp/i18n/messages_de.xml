@@ -2905,10 +2905,10 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><!-- <span class="new">!</span> -->Aktuelles</a>
+                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->Aktuelles</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Verlagskatalog</a>
+                <a class="pull-right bigger" href="/info/publishing-catalog">Verlagskatalog</a>
             </div>
         </div>
     </message>
@@ -3607,7 +3607,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             <p>hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
 
             <h4>Wie man das hypothes.is-Tool mit unseren Publikationen benutzt</h4>
-            <p>Um eine Publikation des Universitätsverlages Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em> zusammen mit dem schwarzen hypothes.is Symbol. Ein rotes Symbol signalisiert, dass zu dieser Publikation bereits Annotationen erstellt wurden. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, in dem das hypothes.is-Tool integriert ist.</p>
+            <p>Um eine Publikation des Universitätsverlages Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em> zusammen mit dem schwarzen hypothes.is Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_bl.jpg" />). Ein rotes Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_red.jpg"/>) signalisiert, dass zu dieser Publikation bereits Annotationen erstellt wurden. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, in dem das hypothes.is-Tool integriert ist.</p>
 			<p>In dem Reiter <em>Details</em> können Sie alle bisher realisierten Annotationen zu der ausgewählten Publikation im csv-Format herunterladen:<br />
 			<img src="/dokumente/images/Snippet_Reiter_Details_dt.png" style="max-width: 100%;"></img></p>
             <p>Um eine Annotation zu erstellen, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
@@ -5457,4 +5457,10 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.printdata">Print: </message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Festvortrag <span class="glyphicon glyphicon-film"></span></message> 
     <message key="xmlui.dri2xhtml.METS-1.0.item-annotations">Annotationen</message>
+
+    <message key="xmlui.dri2xhtml.METS-1.0.item-statistics">Statistiken</message>
+
+    <message key="xmlui.item.toc.list">Inhaltesverzeichnis</message>
+    <message key="xmlui.item.chapter">Kapitel</message>
+    <message key="xmlui.item.chapter.pages">Seiten</message>
 </catalogue>

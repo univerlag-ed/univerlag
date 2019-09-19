@@ -2860,10 +2860,10 @@ Göttingen University Press.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a href="/news"><!-- <span class="new">!</span> -->News</a>
+                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->News</a>
             </div>
             <div class="col-xs-6">
-                <a class="pull-right" href="/info/publishing-catalog">Publishing Catalog</a>
+                <a class="pull-right bigger" href="/info/publishing-catalog">Publishing Catalog</a>
             </div>
         </div>
     </message>
@@ -5356,4 +5356,8 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     </message>
 
     <message key="xmlui.dri2xhtml.structural.conditions-link">General Business Terms</message>
+
+    <message key="xmlui.item.toc.list">Table of contents</message>
+    <message key="xmlui.item.chapter">Chapter</message>
+    <message key="xmlui.item.chapter.pages">Pages</message>
 </catalogue>

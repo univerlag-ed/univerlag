@@ -430,7 +430,7 @@
 
     <xsl:template name="itemSummaryView-DIM-URI">
         <xsl:choose>
-            <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))">
+            <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))  and (dim:field[@element='type'] != 'bookChapter')">
                 <h4>
                     <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
@@ -470,6 +470,7 @@
 	    <div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
                          <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute> 
             </div>
+
         </xsl:if>
     </xsl:template>
 
@@ -598,7 +599,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
+					    <xsl:text> (eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -705,7 +707,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                            <!-- <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
+						<xsl:text> (eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -805,7 +808,8 @@
                                                     <xsl:text>; </xsl:text>
                                                 </xsl:if>
                                             </xsl:for-each>
-                                            <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+                                           <!--  <i18n:text>xmlui.dri2xhtml.item.editor</i18n:text> -->
+						<xsl:text> (eds.)</xsl:text>
                                         </xsl:when>
                                         <xsl:when test="//dim:field[@element='contributor'][@qualifier='other']">
                                             <xsl:for-each select="//dim:field[@element='contributor'][@qualifier='other']">
@@ -1399,7 +1403,57 @@
     </xsl:template>
 
     <xsl:template name="abstract">
+	        <xsl:choose>
+		<xsl:when test="//dim:field[@element='type'] = 'bookChapter'">
 
+		<xsl:variable name="parentUrl"><xsl:value-of select="//dim:field[@element='relation' and @qualifier='ispartof']"/></xsl:variable>
+		<xsl:variable name="parentMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle', $parentUrl, '/mets.xml')" /></xsl:variable>
+<!--		<xsl:variable name="metsData" select="document($parentMetadataUrl)/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim"/>		-->
+
+   <xsl:variable name="metsData" select="document($parentMetadataUrl)//dim:dim"/>
+	<div><span class="chapter"><i18n:text>xmlui.item.chapter</i18n:text><xsl:value-of select="substring-after(/mets:METS/@ID, '.')"/></span>
+	<xsl:value-of select="concat(' (pages ', //dim:field[@element='format' and @qualifier='extent'], ')')"/>  of 
+	<span class="decor"><hr /></span>
+	</div>	
+<div class="row">
+ 
+  <div class="col-xs-hidden col-sm-hidden col-md-2 col-lg-2">
+    <img id="parenttumb">
+	<xsl:attribute name="src"><xsl:value-of select="concat('/bitstream/handle/', $parentUrl, '/cover-200.jpg')"/></xsl:attribute>
+   </img>
+</div>
+   <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+     <h3><a>
+	<xsl:attribute name="href"><xsl:value-of select="concat('/handle/', $parentUrl)"/></xsl:attribute>
+	<xsl:copy-of select="$metsData/dim:field[@element='title'][1]/node()"/>
+</a></h3>
+     <h4>
+	<xsl:if test="$metsData/dim:field[@element='title' and @qualifier='alternative']">
+		<xsl:copy-of select="$metsData/dim:field[@element='title' and @qualifier='alternative']"/>
+        </xsl:if>
+     </h4>
+     <div class="itemView-authors">
+	<xsl:for-each select="$metsData/dim:field[@element='contributor'][@qualifier='author']">	
+		<xsl:copy-of select="."/>
+		<xsl:if test="position() != last()">
+			<xsl:text>; </xsl:text>
+		</xsl:if>
+		
+	</xsl:for-each>
+	<xsl:for-each select="$metsData/dim:field[@element='contributor'][@qualifier='editor']">        
+                <xsl:copy-of select="."/>
+                <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                </xsl:if>
+
+        </xsl:for-each>
+	<i18n:text>xmlui.dri2xhtml.item.editor</i18n:text>
+    </div>	
+</div>
+</div>	
+	
+		</xsl:when>
+		<xsl:otherwise>
 
         <!-- <div class="simple-item-view-description"> -->
         <ul class="nav nav-tabs" id="myTab">
@@ -1738,7 +1792,52 @@
                     <!-- <span aria-hidden="true" style="display: none;" id="annotation-details-none"><i18n:text>xmlui.item.annotation.details.none</i18n:text></span> -->
                 </div>
         </div>
+     </xsl:otherwise>
+    </xsl:choose>
 
+    <!-- show table of contents if parts of the publication have DOI -->
+    	<xsl:if test="//dim:field[@qualifier='haspart']">
+		<h4 class="bold">
+			<i18n:text>xmlui.item.toc.list</i18n:text>
+			<small class="ital normal gray"> <xsl:text> (</xsl:text> <xsl:value-of select="count(//dim:field[@qualifier='haspart'])"/> <i18n:text>xmlui.item.chapter</i18n:text><xsl:text>)</xsl:text></small>
+		</h4>
+                <hr />
+                <div id="toc-outside">
+			<ul>
+			<xsl:for-each select="//dim:field[@qualifier='haspart']">
+				<li>
+				<xsl:variable name="childMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle', ., '/mets.xml')" /></xsl:variable>
+
+   <xsl:variable name="metsData" select="document($childMetadataUrl)//dim:dim"/>
+				<div class="col-sm-8 item">
+				<span class="ptitle">
+				<xsl:value-of select="$metsData/dim:field[@element='title']"/>
+				<small class="ital gray"><nobr><xsl:text> (</xsl:text><i18n:text>xmlui.item.chapter.pages</i18n:text>
+				<xsl:value-of select="$metsData/dim:field[@element='format'][@qualifier='extent']"/><xsl:text>)</xsl:text></nobr></small>
+				</span>
+				<span class="pauthor">
+				<xsl:for-each select="$metsData/dim:field[@element='contributor']">
+					<xsl:value-of select="."/>
+					<xsl:if test="position() != last()"><xsl:text>; </xsl:text></xsl:if>
+				</xsl:for-each>
+				</span>
+				</div>
+				<div class="col-sm-4 link">
+				<span class="pdoi">
+					<a>
+					<xsl:attribute name="href">
+						<!-- <xsl:copy-of select="concat('https://doi.org/', $metsData/dim:field[@qualifier='doi'])"/> -->
+						<xsl:value-of select="concat('/handle/123456789/', $metsData/dim:field[@element='identifier'][@qualifier='intern'])"/>
+					</xsl:attribute>
+					<xsl:value-of select="$metsData/dim:field[@qualifier='doi']"/>
+					</a>
+				</span>
+				</div>
+				</li>
+			</xsl:for-each>
+			</ul>
+		</div>
+	</xsl:if>
 
     </xsl:template>
 

@@ -10,6 +10,9 @@
  * You can put your own style in this file.
  * It will be included in all color schemes
  */
+body {
+	font-size: 16px;
+}
 
 #main-container #sidebar {
   background-color: #fff;
@@ -751,6 +754,7 @@ a.tooltip {
 
 .tab-content > .active {
   padding: 0 15px 3em 15px;
+  font-size: 14px;
 }
 
 
@@ -933,6 +937,7 @@ a.tooltip {
   #ds-options > h2.ds-option-set-head.h6.page-header.h6 {
     border-bottom: 1px solid #2D487B;
     padding-bottom: 5px;
+    font-size: 14px;
   }
 
 
@@ -944,6 +949,7 @@ a.tooltip {
 @media (min-width: 1200px){
   .doi{
     background: #EAE9E7;border: 1px solid #EAE9E7;padding: 5px;border-radius: 5px;
+    margin-bottom: 20px !important;
   }
 }
 
@@ -993,5 +999,58 @@ a.tooltip {
 	padding: 5px;
 }
 
+.bigger {
+	font-size: 1.2em;
+}
 
+.ital {
+	font-style: italic;
+}
 
+.normal {
+	font-weight: normal;
+}
+
+ {
+	font-style: italic;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.chapter {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.decor {
+    margin-top: -30px;
+    display: block;
+    margin-left: 35%;
+}
+
+#toc-outside {
+    margin-left: -35px;
+}
+
+.ptitle {
+    font-size: 1.1em;
+}
+
+.pauthor {
+    color: gray;
+    font-weight: bold;
+}
+
+.pdoi {
+    text-align: right;
+}
+
+.gray {
+	color: gray;
+}
+
+footer {
+	clear: both;
+}
