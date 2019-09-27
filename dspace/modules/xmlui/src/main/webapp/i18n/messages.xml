@@ -2225,6 +2225,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Description</message>
     <!-- <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View/<wbr/>Open</message> -->
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">View Document</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewContent">View Content</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">There are no files associated with this item.</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading">Annotation service</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate">View and annotate document</message>
@@ -3713,7 +3714,7 @@ Open Access and should contain as many books as possible, provided that these pu
 
             <p>
                 The SUB Göttingen is part of the University of Göttingen.
-                The Georg-August-Universität Göttingen is a public body. President Ulrike Beisiegel functions as its legal representative.
+                The Georg-August-Universität Göttingen is a public body. It is legally represented by its acting President Dr. Valérie Schüller (Vice President Finance and Human Resources). 
             </p>
 
             <h3>Editorial Staff</h3>
@@ -5360,4 +5361,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.toc.list">Table of contents</message>
     <message key="xmlui.item.chapter">Chapter</message>
     <message key="xmlui.item.chapter.pages">Pages</message>
+    <message key="xmlui.item.contributors">Contributors</message>
 </catalogue>
