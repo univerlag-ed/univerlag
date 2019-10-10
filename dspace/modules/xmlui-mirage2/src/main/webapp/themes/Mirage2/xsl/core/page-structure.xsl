@@ -207,7 +207,8 @@
                     <xsl:text>images/apple-touch-icon.png</xsl:text>
                 </xsl:attribute>
             </link>
-
+	    <!-- load css for hirmeos metrics -->
+	    <link rel="stylesheet" href="https://storage.googleapis.com/hirmeos/metrics-widget/hirmeos-metrics-prototype-0.0.2.css"></link>
 
             <meta name="Generator">
                 <xsl:attribute name="content">
@@ -283,6 +284,7 @@
 		.list-group-item.ds-option {
  		   white-space: nowrap;
 		}
+	
                 </style>
 
             <!--TODO figure out a way to include these in the concat & minify-->
@@ -525,7 +527,7 @@
 
                     <div class="navbar-header pull-right hidden-xs">
                         <div>
-                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover?scope=3%2FAll_Products">
+                            <form method="post" class="" id="ds-search-form" action="{$context-path}/discover?scope=All">
                                 <fieldset>
                                     <div class="input-group">
                                         <input placeholder="Search" class="ds-text-field form-control" name="query" type="text"/><span class="input-group-btn"><button title="Go" class="ds-button-field btn btn-primary" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Search', 'Global']);"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
