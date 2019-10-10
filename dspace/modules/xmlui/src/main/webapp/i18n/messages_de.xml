@@ -5461,7 +5461,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.dri2xhtml.METS-1.0.item-statistics">Statistiken</message>
 
-    <message key="xmlui.item.toc.list">Inhaltesverzeichnis</message>
+    <message key="xmlui.item.toc.list">Inhaltsverzeichnis</message>
     <message key="xmlui.item.chapter">Kapitel</message>
     <message key="xmlui.item.chapter.pages">Seiten</message>
     <message key="xmlui.item.contributors">Beitragende</message>
