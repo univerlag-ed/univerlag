@@ -3598,7 +3598,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             </p>
         </div>
     </message>
-    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/static/images/hp_passive.png"/></message>
+    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/dokumente/images/hypthesis_Symbol_bl.jpg"/></message>
     <message key="xmlui.item.annotation.download">Annotationen: </message>
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
@@ -4893,7 +4893,16 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
                         </div>
                     </div>
                 </div>
-
+		
+		<!-- ORCID iD-->
+		<div class="form-group">
+			<label class="col-md-4 control-label">ORCID iD</label>
+			<div class="col-md-6 inputGroupContainer">
+				<div class="input-group">
+					<input name="orcid" placeholder="ORCID iD" class="form-control" type="text"></input>
+				</div>
+			</div>
+		</div>
 
 
                 <!-- Street-->
@@ -4942,7 +4951,7 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
                     <label class="col-md-4 control-label">*Telefon</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text"  required="true" pattern="^[()0-9-]*"></input>
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text"  required="true"></input>
                         </div>
                     </div>
                 </div>

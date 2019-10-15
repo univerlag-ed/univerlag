@@ -3422,7 +3422,7 @@ Editorial board and staff members of the press are aware of their responsibility
             </p>
         </div>
     </message>
-    <message key="xmlui.static.annotations.link">Annotation Service <img title="hypothes.is" src="/static/images/hp_passive.png"/></message>
+    <message key="xmlui.static.annotations.link">Annotation Service <img title="hypothes.is" src="/dokumente/images/hypthesis_Symbol_bl.jpg"/></message>
     <message key="xmlui.item.annotation.download">Annotations: </message>
     <message key="xmlui.static.annotations.head">Annotation Service</message>
 
@@ -4792,7 +4792,15 @@ In most cases, the contributions are based on PhD theses. With this book series,
                     </div>
                 </div>
 
-
+		<!-- ORCID iD-->
+		<div class="form-group">
+			<label class="col-md-4 control-label">ORCID iD</label>
+			<div class="col-md-6 inputGroupContainer">
+				<div class="input-group">
+					<input name="orcid" placeholder="ORCID iD" class="form-control" type="text"></input>
+				</div>
+			</div>
+		</div>
 
                 <!-- Street-->
                 <div class="form-group">
@@ -4840,7 +4848,7 @@ In most cases, the contributions are based on PhD theses. With this book series,
                     <label class="col-md-4 control-label">*Phone</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="phone" placeholder="+30-321-0845555-1212" class="form-control" type="text"  required="true" pattern="^[()0-9-]*"></input>
+                            <input name="phone" placeholder="+30-321-0845555-1212" class="form-control" type="text"  required="true"></input>
                         </div>
                     </div>
                 </div>

@@ -683,7 +683,7 @@
                                     <xsl:attribute name="href">
                                         <xsl:value-of select="//dim:field[@element='notes' and @qualifier='cdromaccess']"/>
                                     </xsl:attribute>
-                                    <i class="icon-download"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
+                                    <i class="icon-download-5"></i>&#160;  <i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewContent</i18n:text>
                                 </a>
                             </xsl:when>
 
@@ -938,7 +938,7 @@
                         <xsl:attribute name="href">
                             <xsl:value-of select="concat('/pdfview/', substring-before(substring-after($href, '3/'), 'isAllow'))"/>
                         </xsl:attribute>
-			<img title="You can annotate the opened document." id="hp" src="/static/images/hp_passive.png"/>
+			<img title="You can annotate the opened document." id="hp" src="/dokumente/images/hypthesis_Symbol_bl.jpg"/>
 			<i18n:text>xmlui.dri2xhtml.METS-1.0.item-files-viewOpen</i18n:text>
         </a>
 		</xsl:when>
@@ -1418,7 +1418,7 @@
 <div class="row">
  
   <div class="col-xs-hidden col-sm-hidden col-md-2 col-lg-2">
-    <img id="parenttumb">
+    <img id="parentthumb">
 	<xsl:attribute name="src"><xsl:value-of select="concat('/bitstream/handle/', $parentUrl, '/cover-200.jpg')"/></xsl:attribute>
    </img>
 </div>

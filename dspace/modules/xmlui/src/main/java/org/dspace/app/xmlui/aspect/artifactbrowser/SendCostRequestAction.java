@@ -52,6 +52,7 @@ public class SendCostRequestAction extends AbstractAction
 
         String page = request.getParameter("page");
         String name	= request.getParameter("name");
+	String orcid	= request.getParameter("orcid");
         String zip	= request.getParameter("zip");
         String city	= request.getParameter("city");
         String address	= request.getParameter("address");
@@ -85,6 +86,7 @@ public class SendCostRequestAction extends AbstractAction
 
             allParams.put("page", request.getParameter("page"));
             allParams.put("name", request.getParameter("name"));
+	    allParams.put("orcid", request.getParameter("orcid"));
             allParams.put("zip", request.getParameter("zip"));
             allParams.put("city", request.getParameter("city"));
             allParams.put("address", request.getParameter("address"));
@@ -198,7 +200,13 @@ public class SendCostRequestAction extends AbstractAction
         String customer_data = name + "\n" + address  +
                 "\n" + zip + " " + city + 
 		"\nTel.: " + phone + "\nE-Mail: " + customer_email;
-	
+
+	if ((orcid != null) && !orcid.equals("")) 
+	{
+		customer_data += "\nORCID: " + orcid;
+	}
+
+        	
 	if ((institute != null) && !institute.equals(""))
         {
             customer_data +=  "\nFakultät/Institut: " + institute;

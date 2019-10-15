@@ -117,6 +117,9 @@ public class CostRequestForm extends AbstractDSpaceTransformer implements Cachea
         Message T_customer_name =
                 message("xmlui.ArtifactBrowser.CostRequestForm.customer_name");
 
+	Message T_customer_orcid =
+                message("xmlui.ArtifactBrowser.CostRequestForm.customer_orcid");
+
         Message T_address =
                 message("xmlui.ArtifactBrowser.CostRequestForm.address");
 
@@ -268,6 +271,9 @@ public class CostRequestForm extends AbstractDSpaceTransformer implements Cachea
         customer_email.setLabel(T_customer_email);
         customer_email.setValue(parameters.getParameter("customer_email",""));
 
+	Text orcid = form.addItem().addText("orcid");
+        orcid.setLabel(T_customer_orcid);
+        orcid.setValue(parameters.getParameter("orcid",""));
 
         Select sponsor = form.addItem().addSelect("sponsor","sponsor");
         sponsor.setLabel(T_sponsor);
