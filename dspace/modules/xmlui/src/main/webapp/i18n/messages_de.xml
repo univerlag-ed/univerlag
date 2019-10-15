@@ -3393,12 +3393,12 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                     <a href="/dokumente/texts/formatvorlage_latex_proceedings_17x24.zip" class="btn btn-default btn-sm">Zip Archiv (.zip)</a>
                 </div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <h4 class="list-item-header section-heading">Metadatenschema</h4>
                 <div class="button-panel">
                     <a href="/dokumente/texts/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
                 </div>
-            </div>
+            </div> -->
 
             <h3>VG-Wort</h3>
 

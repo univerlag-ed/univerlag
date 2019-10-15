@@ -3253,12 +3253,12 @@ Editorial board and staff members of the press are aware of their responsibility
 
             </div>
 
-            <div class="item">
+            <!-- <div class="item">
                 <h4 class="list-item-header section-heading">Metadata scheme</h4>
                 <div class="button-panel">
                     <a href="/dokumente/texts/Metadatenschema.xls" class="btn btn-default btn-sm">MS-Excel (xls)</a>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </message>
