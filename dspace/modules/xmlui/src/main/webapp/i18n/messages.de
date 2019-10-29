@@ -2764,8 +2764,8 @@
 
 
             <h2>Postanschrift</h2>
-            <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
-            <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
+            <p class="address"><span class="icon-body">Georg-August-Universität Göttingen</span></p>
+	    <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a>Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
             <p class="address"><span class="icon-body">37073 Göttingen</span></p>
 
@@ -3685,9 +3685,12 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
             <p>
             </p><p class="address">
-            <strong>Niedersächsische Staats- und Universitätsbibliothek Göttingen</strong>
-        </p>
+            <strong>Georg-August-Universität Göttingen</strong>
+	    </p>
             <p class="address">
+                Niedersächsische Staats- und Universitätsbibliothek Göttingen
+            </p>
+	    <p class="address">
                 Platz der Göttinger Sieben 1
             </p>
             <p class="address">
@@ -4266,7 +4269,9 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
                         Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
                     </p>
                     <p>Der Widerruf ist zu richten an: </p>
-                    <p class="address">Universitätsverlag Göttingen</p>
+                    <p class="address">Georg-August-Universität Göttingen</p>
+		    <p class="address">Niedersächsische Staats- und Universitätsbibliothek</p>
+		    <p class="address">Universitätsverlag Göttingen</p>
                     <p class="address">Platz der Göttinger Sieben 1</p>
                     <p class="address">37073 Göttingen</p>
                     <p></p>
