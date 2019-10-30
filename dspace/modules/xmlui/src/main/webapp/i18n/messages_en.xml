@@ -2806,8 +2806,9 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
 
 
             <h2>Postal address</h2>
-            <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a> Universitätsverlag Göttingen</p>
-            <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
+            <p class="address"><span class="icon-body">Georg-August-Universität Göttingen</span></p>
+	    <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
+	    <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a>Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
             <p class="address"><span class="icon-body">37073 Göttingen</span></p>
 
@@ -3687,6 +3688,10 @@ Open Access and should contain as many books as possible, provided that these pu
             </p>
 
             <p class="address">
+                Georg-August-Universität Göttingen
+            </p>
+		
+		<p class="address">
                 <strong>Niedersächsische Staats- und Universitätsbibliothek Göttingen</strong>
             </p>
             <p class="address">
@@ -4370,7 +4375,8 @@ In most cases, the contributions are based on PhD theses. With this book series,
                         Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
                     </p>
                     <p>Der Widerruf ist zu richten an: </p>
-                    <p class="address">Universitätsverlag Göttingen</p>
+                    <p class="address">Georg-August-Universität Göttingen</p>
+		    <p class="address">Universitätsverlag Göttingen</p>
                     <p class="address">Platz der Göttinger Sieben 1</p>
                     <p class="address">37073 Göttingen</p>
                     <p></p>
