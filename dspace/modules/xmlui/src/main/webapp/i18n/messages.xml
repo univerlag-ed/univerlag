@@ -5483,4 +5483,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.chapter">Kapitel</message>
     <message key="xmlui.item.chapter.pages">Seiten</message>
     <message key="xmlui.item.contributors">Beitragende</message>
+    <message key="xmlui.item.chapter.of">von</message>
 </catalogue>
