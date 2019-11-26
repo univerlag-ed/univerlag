@@ -4367,6 +4367,24 @@ in einem double-blind Peer-Review-Verfahren. Neben Artikeln werden Rezensionen u
         <p class="narrow">ISSN (Online): 2197-4993</p>
     </message>
 
+	
+    <message key="xmlui.collection.wdi.introduction">
+        <p>
+            Zum Gedenken an den Göttinger Alumnus und Widerstandskämpfer Adam von Trott zu Solz (1909–1944) haben die Universität Göttingen und die Stiftung Adam von Trott Imshausen e.V. im Jahr 2018 das Projekt „Widerstand – Demokratie – Internationalität“ ins Leben gerufen. Gemeinsam organisieren sie Veranstaltungen und initiieren Projekte, die die Auseinandersetzung mit dem historischen Erbe Adam von Trotts für die aktive Gestaltung von Gegenwart und Zukunft nutzbar machen. Dazu gehören öffentliche Vorträge, Tagungen und Konferenzen, Projektseminare, Stipendienprogramme sowie Bildungsangebote für Schülerinnen und Schüler.</p>
+<p>
+Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014 an der Universität und der Stiftung, insbesondere im Zuge von Veranstaltungen in Gedenken an Adam von Trott (z. B. Adam-von-Trott-Lecture), entstanden sind. Gemein ist allen Texten ein – teils unmittelbarer, teils mittelbarer – Bezug zur Person Adam von Trott und zu den Themen des Kooperationsprojekts: Widerstand und Verantwortung, Demokratie und Frieden, Internationalität und Europa.
+        </p>
+        <p class="narrow">
+            ISSN (Print): 2698-881X
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2698-8828
+        </p>
+    </message>
+
+
+
+	
     <message key="xmlui.static.shipping.costs.title">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.trail">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.head">Versandkosten</message>
