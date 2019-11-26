@@ -4247,6 +4247,27 @@ In most cases, the contributions are based on PhD theses. With this book series,
 	
 	
 	
+	    <message key="xmlui.collection.wdi.introduction">
+        <p>
+            In rememberance of the life of Adam von Trott zu Solz (1909-1944), alumnus of Georg-August-University Göttingen and resistence fighter, the University and the Foundation Adam von Trott Imshausen e.V. have set up the project "Resistance - Democracy - Internationality". Different activities are being initiated, focusing on the discussion about the historic legacy of Adam von Trott to use it for shaping the present and the future. These projects include lectures, meetings and conferences, projects seminars, scholarships and educational programs für students which have been created since 2014.
+This series includes texts, lectures and speeches, which have been organized in commemoration of Adam von Trott and which cover the main themes of the project: resistance and responsibility, democracy and peace, internationality and Europe.
+        </p>
+        <p class="narrow">
+            ISSN (Print): 2698-881X
+        </p>
+        <p class="narrow">
+            ISSN (Online): 2698-8828
+        </p>
+    </message>
+
+
+
+
+
+
+	
+	
+	
     <message key="xmlui.static.shipping.costs.title">Ordering: Shipping costs</message>
     <message key="xmlui.static.shipping.costs.trail">Shipping costs</message>
     <message key="xmlui.static.shipping.costs.head">Ordering: Shipping costs</message>
