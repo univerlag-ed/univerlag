@@ -139,21 +139,54 @@
                                 <script src="/static/js/jquery.tagcloud.js" charset="UTF-8" type="text/javascript"> </script>
                     </xslif> -->
                     <script>
-                        $("#tagcloud-person a").tagcloud({
-                        size: {start: 7, end: 14, unit: "px"},
-                        /*color: {start: '#6bafcf', end: '#08338e'}*/
-                        color: {start: '#3498DB', end: '#46CFB0'}
-                        });
-
-                        $("#tagcloud-organisation a").tagcloud({
-                        size: {start: 7, end: 14, unit: "px"},
-                        color: {start: '#3498DB', end: '#46CFB0'}
-                        });
-
-                        $("#tagcloud-location a").tagcloud({
-                        size: {start: 7, end: 14, unit: "px"},
-                        color: {start: '#3498DB', end: '#46CFB0'}
-                        });
+			if ($("#ds-stats").length &gt; 0) {
+                        if ($("#aspect_statistics_Navigation_list_statistics").length &gt; 0)
+                        {
+                                src=$("#aspect_statistics_Navigation_list_statistics a").attr("href");
+                                $.ajax({
+                                    type: "GET",
+                                    url: src + "?XML",
+                                    dataType: "xml",
+                                    contentType: false,
+                                    error: function(){
+                                            alert("ERROR");
+                                    },
+                                    success: function(xml){
+                                        //alert("OK");
+                                      $(xml).find('table').each(function(i, v){
+                                         //console.log(index);
+                                         if (i == 0)
+                                         {
+                                                var view=$(this).find("cell[rend='datacell'][n='02']");
+                                                if ($(view).text().length &gt; 1) { 
+							if (parseInt($(view).text()) &gt; 49) {
+                                                        var label=$("#views").text();
+                                                        $("#views").text(label + $(view).text());
+							$("#ds-stats").css('display','block');
+                                                        $("#views").toggle();
+							}
+                                                }
+                                                 //alert("Views: " + $(view).text());
+                                         }
+                                         if (i == 2)
+                                          {
+                                                var download=$(this).find("cell[rend='datacell'][n='02']");
+                                                 if ($(download).text().length &gt; 0) {
+                                                         var label=$("#downloads").text();
+                                                         $("#downloads").text(label + $(download).text());
+                                                         $("#downloads").toggle();
+                                                  }
+                                         }
+                                      });
+                                      //alert("OK");
+                                      
+                                    },
+                                    timeout: 3000 // sets timeout to 3 seconds
+                                  });
+                                //alert(src);
+                           
+                          }
+                        }			
 
                         $(function () {
                         $('[data-toggle="popover"]').popover()
@@ -208,7 +241,7 @@
                 </xsl:attribute>
             </link>
 	    <!-- load css for hirmeos metrics -->
-	    <link rel="stylesheet" href="https://storage.googleapis.com/hirmeos/metrics-widget/hirmeos-metrics-prototype-0.0.2.css"></link>
+	    <!-- <link rel="stylesheet" href="https://storage.googleapis.com/hirmeos/metrics-widget/hirmeos-metrics-prototype-0.0.2.css"></link> -->
 
             <meta name="Generator">
                 <xsl:attribute name="content">
@@ -223,6 +256,23 @@
             <!-- Add stylesheets -->
 
 	     <style type="text/css">
+		#views, #downloads {
+			display: none;
+		}
+		#ds-stats {
+		    display:none;
+		    padding: 2px 5px 2px 0;
+		    font-size: 0.8em;
+		    color:  #2d487b;
+		    margin-bottom: 10px;
+		    margin-top: 45px;
+		}
+		#views {
+		   padding-left: 5px;
+		}
+		.altmetric-see-more-details {	
+		   font-size: 0.8em;
+		}
 		#hp {
  		   padding-right: 2px;
 		}
@@ -232,7 +282,8 @@
 		    padding-right: 2px;
 		    font-size: 1.2em;
 		}
-	
+		:focus {outline:none !important;}
+		::-moz-focus-inner {border:0 !important;}
 		.highlight.news {
 		    color: #193364;
 		    padding: 30px 0;
@@ -281,10 +332,26 @@
 		#aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission {
  		   display: none;
 		}
-		.list-group-item.ds-option {
+		/*.list-group-item.ds-option {
  		   white-space: nowrap;
+		}*/
+
+		.pauthor {
+			display:block;
 		}
-	
+
+		#parentthumb {
+ 		   max-width: 150px;
+		}
+		#toc-outside {
+			font-size: 0.9em;
+		}
+
+		.col-sm-5.link {
+			padding-top: 15px;
+			padding-left: 35px;
+		}
+
                 </style>
 
             <!--TODO figure out a way to include these in the concat & minify-->

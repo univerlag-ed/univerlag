@@ -46,13 +46,15 @@
 
     <!-- authorLookup and its dependencies -->
     <script src="vendor/datatables/media/js/jquery.dataTables.js">&#160;</script>
-    <script src="scripts/person-lookup.js">&#160;</script>
+    <!-- <script src="scripts/person-lookup.js">&#160;</script> -->
 
     <script src="scripts/Moment.js">&#160;</script>
     <script src="scripts/bootstrap-datetimepicker.js">&#160;</script>
     <script src="scripts/addons.js">&#160;</script>
     <!-- <script src="scripts/pr-info.js">&#160;</script> -->
-    <script src="scripts/catch-annotations.js">&#160;</script>
+    <script src="scripts/catch-annotations.js">&#160;</script> 
+    <script src="scripts/citations.js">&#160;</script>
+    <script src="scripts/deepl.js">&#160;</script>
 
 
     <!-- endbuild -->

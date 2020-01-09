@@ -220,25 +220,27 @@ public class InstallItem
 
         // Add provenance description
         item.addDC("description", "provenance", "en", provDescription);
-
-        //Create URN and add to metadata
-        String handleKey = item.getHandle().substring(item.getHandle().indexOf('/')+1);
-        if (item.getMetadata("dc","identifier", "urn", Item.ANY).length == 0)
-        {
-            String urn = getURNPrefix() +  handleKey + '-';
-            item.addMetadata("dc","identifier", "urn", null, urn + URNChecksum(urn));
-        }
-        //Add ISBN or ISSN if existent in handle
-        if (handleKey.indexOf("isbn") > -1)
-        {
-            String isbn = handleKey.substring(handleKey.indexOf("isbn-") + 5);
-            item.addMetadata("dc", "relation", "isbn-13", null, isbn);
-        }
-        else if (handleKey.indexOf("issn") > -1)
-        {
-            String issn = handleKey.substring(handleKey.indexOf("issn-") + 5);
-            item.addMetadata("dc","relation", "issn", null, issn);
-        }
+	if (!(item.getMetadata("dc", "type", null, Item.ANY)[0].value.equals("bookPart")))
+	{
+	        //Create URN and add to metadata
+        	String handleKey = item.getHandle().substring(item.getHandle().indexOf('/')+1);
+	        if (item.getMetadata("dc","identifier", "urn", Item.ANY).length == 0)
+        	{
+	            String urn = getURNPrefix() +  handleKey + '-';
+        	    item.addMetadata("dc","identifier", "urn", null, urn + URNChecksum(urn));
+	        }
+        	//Add ISBN or ISSN if existent in handle
+		if (handleKey.indexOf("isbn") > -1)
+	        {
+        	    String isbn = handleKey.substring(handleKey.indexOf("isbn-") + 5);
+	            item.addMetadata("dc", "relation", "isbn-13", null, isbn);
+        	}
+	        else if (handleKey.indexOf("issn") > -1)
+        	{
+	            String issn = handleKey.substring(handleKey.indexOf("issn-") + 5);
+        	    item.addMetadata("dc","relation", "issn", null, issn);
+	        }
+	}
     }
 
     /**

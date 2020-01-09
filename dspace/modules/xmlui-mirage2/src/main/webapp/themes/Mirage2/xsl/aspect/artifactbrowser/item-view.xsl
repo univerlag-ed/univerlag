@@ -430,7 +430,7 @@
 
     <xsl:template name="itemSummaryView-DIM-URI">
         <xsl:choose>
-            <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))  and (dim:field[@element='type'] != 'bookChapter')">
+            <xsl:when test="not(contains(dim:field[@element='identifier' and @qualifier='uri'],'doi.org'))  and (dim:field[@element='type'] != 'bookPart')">
                 <h4>
                     <a href="#" onclick="copyToClipboard('#pid')" i18n:attr="title" title="xmlui.dri2xhtml.METS-1.0.item-copyto-clipboard"><i class="icon-export"></i></a>
 
@@ -1404,15 +1404,16 @@
 
     <xsl:template name="abstract">
 	        <xsl:choose>
-		<xsl:when test="//dim:field[@element='type'] = 'bookChapter'">
+		<xsl:when test="(//dim:field[@element='type'] = 'bookChapter') or (//dim:field[@element='type'] = 'bookPart')">
 
 		<xsl:variable name="parentUrl"><xsl:value-of select="//dim:field[@element='relation' and @qualifier='ispartof']"/></xsl:variable>
-		<xsl:variable name="parentMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle', $parentUrl, '/mets.xml')" /></xsl:variable>
+		<xsl:variable name="parentMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle/', $parentUrl, '/mets.xml')" /></xsl:variable>
 <!--		<xsl:variable name="metsData" select="document($parentMetadataUrl)/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim"/>		-->
 
    <xsl:variable name="metsData" select="document($parentMetadataUrl)//dim:dim"/>
 	<div><span class="chapter"><i18n:text>xmlui.item.chapter</i18n:text><xsl:value-of select="concat(' ', substring-after(/mets:METS/@ID, '.'))"/></span>
-	<xsl:value-of select="concat(' (pages ', //dim:field[@element='format' and @qualifier='extent'], ')')"/>  of 
+	<xsl:text> (</xsl:text><i18n:text>xmlui.item.chapter.pages</i18n:text>
+	<xsl:value-of select="concat(' ', //dim:field[@element='format' and @qualifier='extent'], ') ')"/> <i18n:text>xmlui.item.chapter.of</i18n:text> 
 	<span class="decor"><hr /></span>
 	</div>	
 <div class="row">
@@ -1842,14 +1843,15 @@
 			<ul>
 			<xsl:for-each select="//dim:field[@qualifier='haspart']">
 				<li>
-				<xsl:variable name="childMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle', ., '/mets.xml')" /></xsl:variable>
+				<xsl:variable name="childMetadataUrl"><xsl:value-of select="concat('cocoon://metadata/handle/', ., '/mets.xml')" /></xsl:variable>
 
    <xsl:variable name="metsData" select="document($childMetadataUrl)//dim:dim"/>
 				<div class="col-sm-7 item">
 				<span class="ptitle">
 				<xsl:value-of select="$metsData/dim:field[@element='title']"/>
 				<small class="ital"><xsl:text> (</xsl:text><i18n:text>xmlui.item.chapter.pages</i18n:text>
-				<xsl:value-of select="concat(' ', $metsData/dim:field[@element='format'][@qualifier='extent'])"/><xsl:text>)</xsl:text></small>
+				<!-- <xsl:value-of select="concat(' ', $metsData/dim:field[@element='format'][@qualifier='extent'])"/><xsl:text>)</xsl:text></small> -->
+				<xsl:value-of select="concat(' ', $metsData/dim:field[@element='bibliographicCitation'][@qualifier='firstpage'], '-', $metsData/dim:field[@element='bibliographicCitation'][@qualifier='lastpage'])"/><xsl:text>)</xsl:text></small>
 				</span>
 				<span class="pauthor">
 				<xsl:for-each select="$metsData/dim:field[@element='contributor']">
@@ -1859,15 +1861,18 @@
 				</span>
 				</div>
 				<div class="col-sm-5 link">
+				<xsl:if test="starts-with($metsData/dim:field[@element='identifier'][@qualifier='uri'], 'https://doi.org')">
 				<span class="pdoi">
+				
 					<a>
 					<xsl:attribute name="href">
-						<!-- <xsl:copy-of select="concat('https://doi.org/', $metsData/dim:field[@qualifier='doi'])"/> -->
-						<xsl:value-of select="concat('https://doi.org/', $metsData/dim:field[@element='identifier'][@qualifier='doi'])"/>
+						<xsl:value-of select="$metsData/dim:field[@element='identifier' and @qualifier='uri']"/> 
+						<!-- <xsl:value-of select="concat('https://doi.org/', $metsData/dim:field[@element='identifier'][@qualifier='doi'])"/> -->
 					</xsl:attribute>
 					<xsl:value-of select="concat('https://doi.org/', $metsData/dim:field[@qualifier='doi'])"/>
 					</a>
 				</span>
+				</xsl:if>
 				</div>
 				</li>
 			</xsl:for-each>

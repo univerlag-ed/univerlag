@@ -1011,14 +1011,6 @@ a.tooltip {
 	font-weight: normal;
 }
 
- {
-	font-style: italic;
-}
-
-.normal {
-	font-weight: normal;
-}
-
 .chapter {
     font-size: 1.2em;
     font-weight: bold;
@@ -1032,6 +1024,7 @@ a.tooltip {
 
 #toc-outside {
     margin-left: -35px;
+    font-size: 0.9em;
 }
 
 .ptitle {
@@ -1041,6 +1034,7 @@ a.tooltip {
 .pauthor {
     color: gray;
     font-weight: bold;
+    display: block;
 }
 
 .pdoi {
@@ -1053,4 +1047,19 @@ a.tooltip {
 
 footer {
 	clear: both;
+}
+
+#parentthumb {
+    max-width: 150px;
+}
+
+.col-sm-5.link {
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+#cm {
+	float: left;
+        font-size: 5em;
+        padding-right: 30px;
 }
