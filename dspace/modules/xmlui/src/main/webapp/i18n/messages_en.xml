@@ -2826,8 +2826,8 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
         <h2 class="first-page-header">Welcome to Göttingen University Press</h2>
 
         
-<div class="highlight news">
-<span id="cm">&#x1F389;</span>
+<!-- <div class="highlight news">
+<span id="cm">&#127876;</span>
         <div class="right">
 			<h4>Dear customers, dear authors,</h4>
 	
@@ -2835,7 +2835,7 @@ the Göttingen University Press team will be on a break from December 23, 2019 t
 Thank you for your understanding. We wish you a delightful Christmas season and a happy new year.<br />
 Göttingen University Press.
 </div>
-		</div>
+		</div> -->
 
         <p class="paragraph justify">
             Göttingen University Press is the self-contained publishing facility of the Georg August University, Göttingen.
@@ -4529,23 +4529,23 @@ This series includes texts, lectures and speeches, which have been organized in 
 
     <message key="xmlui.static.copyright">&#169; 2017 Göttingen State and University Library</message>
     <!-- search facet values -->
-    <message key="de">german</message>
-    <message key="ger">german</message>
-    <message key="en">english</message>
-    <message key="eng">english</message>
-    <message key="ara">arabic</message>
-    <message key="per">persian</message>
-    <message key="fr">french</message>
-    <message key="spa">spanish</message>
-    <message key="fra">french</message>
-    <message key="arm">armenian</message>
-    <message key="ita">italian</message>
-    <message key="jpn">japanese</message>
-    <message key="chi">chinese</message>
-    <message key="rus">russian</message>
-    <message key="mon">mongolian</message>
-    <message key="ind">indonesian</message>
-    <message key="ukr">ukrainian</message>
+    <message key="de">German</message>
+    <message key="ger">German</message>
+    <message key="en">English</message>
+    <message key="eng">English</message>
+    <message key="ara">Arabic</message>
+    <message key="per">Persian</message>
+    <message key="fr">French</message>
+    <message key="spa">Spanish</message>
+    <message key="fra">French</message>
+    <message key="arm">Armenian</message>
+    <message key="ita">Italian</message>
+    <message key="jpn">Japanese</message>
+    <message key="chi">Chinese</message>
+    <message key="rus">Russian</message>
+    <message key="mon">Mongolian</message>
+    <message key="ind">Indonesian</message>
+    <message key="ukr">Ukrainian</message>
 
     <message key="monograph">Monograph</message>
     <message key="anthology">Anthology</message>

@@ -4628,23 +4628,23 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
 
     <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
-    <message key="de">deutsch</message>
-    <message key="ger">deutsch</message>
-    <message key="en">englisch</message>
-    <message key="eng">englisch</message>
-    <message key="ara">arabisch</message>
-    <message key="per">persisch</message>
-    <message key="fr">französisch</message>
-    <message key="spa">spanisch</message>
-    <message key="fra">französisch</message>
-    <message key="arm">armenisch</message>
-    <message key="ita">italienisch</message>
-    <message key="jpn">japanisch</message>
-    <message key="chi">chinesisch</message>
-    <message key="rus">russisch</message>
-    <message key="mon">mongolisch</message>
-    <message key="ind">indonesisch</message>
-    <message key="ukr">ukrainisch</message>
+    <message key="de">Deutsch</message>
+    <message key="ger">Deutsch</message>
+    <message key="en">Englisch</message>
+    <message key="eng">Englisch</message>
+    <message key="ara">Arabisch</message>
+    <message key="per">Persisch</message>
+    <message key="fr">Französisch</message>
+    <message key="spa">Spanisch</message>
+    <message key="fra">Französisch</message>
+    <message key="arm">Armenisch</message>
+    <message key="ita">Italienisch</message>
+    <message key="jpn">Japanisch</message>
+    <message key="chi">Chinesisch</message>
+    <message key="rus">Russisch</message>
+    <message key="mon">Mongolisch</message>
+    <message key="ind">Indonesisch</message>
+    <message key="ukr">Ukrainisch</message>
 
     <message key="monograph">Monographie</message>
     <message key="anthology">Sammelband</message>
@@ -4652,6 +4652,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="catalog">Katalog</message>
     <message key="bibliography">Bibliografie</message>
     <message key="thesis">Hochschulschrift</message>
+    <message key="habilitation">Habilitation</message>
     <message key="dictionary">Wörterbuch</message>
     <message key="documentation">Dokumentation</message>
     <message key="referenceWork">Bibliographie etc.</message>
