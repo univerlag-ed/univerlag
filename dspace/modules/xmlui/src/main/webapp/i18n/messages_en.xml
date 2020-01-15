@@ -4135,6 +4135,10 @@ In most cases, the contributions are based on PhD theses. With this book series,
 	</div>
     </message>
 
+	
+	
+	
+	
     <!-- <message key="xmlui.collection.mis.introduction">
         <p>
             Die Bände dieser Serie enthalten jeweils die Beiträge der Seminare, die von Yuri Tschinkel am Mathematischen Institut der Georg-August-Universität Göttingen abgehalten wurden.
@@ -4258,6 +4262,16 @@ This series includes texts, lectures and speeches, which have been organized in 
     </message>
 
 
+<message key="xmlui.collection.gbsb.introduction">
+        <p>
+            In recent years, methods in biographical research that are anchored in social constructivism and the sociology of knowledge have become established in the Center of Methods in Social Sciences at Georg-August University, Göttingen. In this context, a large amount of innovative and empirically sound research on a great variety of topics has been carried out. This new series is intended to do justice to this development. The editors wish to offer a forum for studies in the field of sociology written in German or English, whether doctoral dissertations, research reports or scholarly articles, which are based on the methodologies developed at the Center of Methods in Social Sciences. The studies published in the series shall include researchworks focused on methods and methodological developments as well as on material topics.
+        </p>
+        <p>
+            All contributions will be subject to a double-blind peer-review process.
+        </p>
+        <p class="narrow">ISSN (Print): 2699-0989</p>
+        <p class="narrow">ISSN (Online): 2699-0997</p>
+    </message>
 
 
 
