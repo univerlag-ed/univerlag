@@ -9,25 +9,25 @@
 -->
 
 <xsl:stylesheet
-    xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
-    xmlns:dri="http://di.tamu.edu/DRI/1.0/"
-    xmlns:mets="http://www.loc.gov/METS/"
-    xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
-    xmlns:xlink="http://www.w3.org/TR/xlink/"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
-    xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:xalan="http://xml.apache.org/xalan"
-    xmlns:encoder="xalan://java.net.URLEncoder"
-    xmlns:stringescapeutils="org.apache.commons.lang3.StringEscapeUtils"
-    xmlns:util="org.dspace.app.xmlui.utils.XSLUtils"
-    exclude-result-prefixes="xalan encoder i18n dri mets dim  xlink xsl util stringescapeutils">
+        xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+        xmlns:dri="http://di.tamu.edu/DRI/1.0/"
+        xmlns:mets="http://www.loc.gov/METS/"
+        xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+        xmlns:xlink="http://www.w3.org/TR/xlink/"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:xalan="http://xml.apache.org/xalan"
+        xmlns:encoder="xalan://java.net.URLEncoder"
+        xmlns:stringescapeutils="org.apache.commons.lang3.StringEscapeUtils"
+        xmlns:util="org.dspace.app.xmlui.utils.XSLUtils"
+        exclude-result-prefixes="xalan encoder i18n dri mets dim  xlink xsl util stringescapeutils">
 
     <xsl:output indent="yes"/>
 
-<!--
-    These templates are devoted to rendering the search results for discovery.
-    Since discovery used hit highlighting seperate templates are required !
--->
+    <!--
+        These templates are devoted to rendering the search results for discovery.
+        Since discovery used hit highlighting seperate templates are required !
+    -->
 
 
     <xsl:template match="dri:list[@type='dsolist']" priority="2">
@@ -40,28 +40,43 @@
         <xsl:apply-templates select="*[not(name()='head')]" mode="dsoList"/>
     </xsl:template>
 
+
+    <xsl:template match="dri:p[@rend='recentSubmissionViewMore']">
+        <div class="row view-more">
+            <p>
+                <xsl:attribute name="id"><xsl:value-of select="@id" /></xsl:attribute>
+                <xsl:attribute name="class"><xsl:value-of select="concat('ds-paragraph ', @rend)" /></xsl:attribute>
+                <a>
+                    <xsl:attribute name="class"><xsl:text>pull-right</xsl:text></xsl:attribute>
+                    <xsl:attribute name="href"><xsl:value-of select="concat(substring-before(./dri:xref/@target, 'recent-submissions'), 'browse?order=DESC&amp;type=dateissued&amp;sort_by=3')" /></xsl:attribute>
+                    <i18n:text>xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more</i18n:text>
+                </a>
+            </p>
+        </div>
+    </xsl:template>
+
     <xsl:template match="dri:list/dri:list/dri:list" mode="dsoList" priority="8">
-            <!--
-                Retrieve the type from our name, the name contains the following format:
-                    {handle}:{metadata}
-            -->
-            <xsl:variable name="handle">
-                <xsl:value-of select="substring-before(@n, ':')"/>
-            </xsl:variable>
-            <xsl:variable name="type">
-                <xsl:value-of select="substring-after(@n, ':')"/>
-            </xsl:variable>
-            <xsl:variable name="externalMetadataURL">
-                <xsl:text>cocoon://metadata/handle/</xsl:text>
-                <xsl:value-of select="$handle"/>
-                <xsl:text>/mets.xml</xsl:text>
-                <!-- Since this is a summary only grab the descriptive metadata, and the thumbnails -->
-                <xsl:text>?sections=dmdSec,fileSec&amp;fileGrpTypes=THUMBNAIL</xsl:text>
-                <!-- An example of requesting a specific metadata standard (MODS and QDC crosswalks only work for items)->
-                <xsl:if test="@type='DSpace Item'">
-                    <xsl:text>&amp;dmdTypes=DC</xsl:text>
-                </xsl:if>-->
-            </xsl:variable>
+        <!--
+            Retrieve the type from our name, the name contains the following format:
+                {handle}:{metadata}
+        -->
+        <xsl:variable name="handle">
+            <xsl:value-of select="substring-before(@n, ':')"/>
+        </xsl:variable>
+        <xsl:variable name="type">
+            <xsl:value-of select="substring-after(@n, ':')"/>
+        </xsl:variable>
+        <xsl:variable name="externalMetadataURL">
+            <xsl:text>cocoon://metadata/handle/</xsl:text>
+            <xsl:value-of select="$handle"/>
+            <xsl:text>/mets.xml</xsl:text>
+            <!-- Since this is a summary only grab the descriptive metadata, and the thumbnails -->
+            <xsl:text>?sections=dmdSec,fileSec&amp;fileGrpTypes=THUMBNAIL</xsl:text>
+            <!-- An example of requesting a specific metadata standard (MODS and QDC crosswalks only work for items)->
+            <xsl:if test="@type='DSpace Item'">
+                <xsl:text>&amp;dmdTypes=DC</xsl:text>
+            </xsl:if>-->
+        </xsl:variable>
 
 
         <xsl:choose>
@@ -123,12 +138,12 @@
                 </xsl:if>
             </a>
             <div class="artifact-info">
-            <xsl:if test="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item">
-                <p>
-                    <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item[1]"/>
-                </p>
-            </xsl:if>
-        </div>
+                <xsl:if test="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item">
+                    <p>
+                        <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item[1]"/>
+                    </p>
+                </xsl:if>
+            </div>
 
         </div>
     </xsl:template>
@@ -197,15 +212,25 @@
                         </span>
                     </h4>
                 </xsl:element>
+                <div>
+                    <xsl:if test="dri:list[@n=(concat($handle, ':dc.volume'))]">
+                        <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.volume'))]/dri:item"/>
+                        <xsl:text>. </xsl:text>
+                    </xsl:if>
+                    <xsl:if test="dri:list[@n=(concat($handle, ':dc.title.volume'))]">
+                        <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.title.volume'))]/dri:item"/>
+                    </xsl:if>
+                </div>
                 <div class="artifact-info">
-                    <span class="author h4">    <small>
+                    <span class="author">
                         <xsl:choose>
                             <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.author'))]">
-                                <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.author'))]/dri:item">
-                                    <xsl:variable name="author">
-                                        <xsl:apply-templates select="."/>
-                                    </xsl:variable>
-                                    <span>
+                                <span>
+                                    <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.author'))]/dri:item">
+                                        <xsl:variable name="author">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:variable>
+
                                         <!--Check authority in the mets document-->
                                         <xsl:if test="$metsDoc/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim/dim:field[@element='contributor' and @qualifier='author' and . = $author]/@authority">
                                             <xsl:attribute name="class">
@@ -213,38 +238,114 @@
                                             </xsl:attribute>
                                         </xsl:if>
                                         <xsl:apply-templates select="."/>
-                                    </span>
 
-                                    <xsl:if test="count(following-sibling::dri:item) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
+
+                                        <xsl:if test="count(following-sibling::dri:item) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </span>
                             </xsl:when>
-                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.creator'))]">
-                                <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.creator'))]/dri:item">
-                                    <xsl:apply-templates select="."/>
-                                    <xsl:if test="count(following-sibling::dri:item) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
+                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.author'))]">
+                                <span>
+                                    <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.author'))]/dri:item">
+                                        <xsl:variable name="author">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:variable>
+
+                                        <!--Check authority in the mets document-->
+                                        <xsl:if test="$metsDoc/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim/dim:field[@element='contributor' and @qualifier='author' and . = $author]/@authority">
+                                            <xsl:attribute name="class">
+                                                <xsl:text>ds-dc_contributor_author-authority</xsl:text>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:apply-templates select="."/>
+
+
+                                        <xsl:if test="count(following-sibling::dri:item) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </span>
                             </xsl:when>
-                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor'))]">
-                                <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor'))]/dri:item">
-                                    <xsl:apply-templates select="."/>
-                                    <xsl:if test="count(following-sibling::dri:item) != 0">
-                                        <xsl:text>; </xsl:text>
-                                    </xsl:if>
-                                </xsl:for-each>
+                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.editor'))]">
+                                <span>
+                                    <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.editor'))]/dri:item">
+                                        <xsl:variable name="editor">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:variable>
+
+                                        <!--Check authority in the mets document-->
+                                        <xsl:if test="$metsDoc/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim/dim:field[@element='contributor' and @qualifier='editor' and . = $editor]/@authority">
+                                            <xsl:attribute name="class">
+                                                <xsl:text>ds-dc_contributor_author-authority</xsl:text>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:apply-templates select="."/>
+
+
+                                        <xsl:if test="count(following-sibling::dri:item) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.contributor.editor</i18n:text>
+                                </span>
+                            </xsl:when>
+                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.corporation'))]">
+                                <span>
+                                    <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.corporation'))]/dri:item">
+                                        <xsl:variable name="corporation">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:variable>
+
+                                        <!--Check authority in the mets document-->
+                                        <xsl:if test="$metsDoc/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim/dim:field[@element='contributor' and @qualifier='corporation' and . = $corporation]/@authority">
+                                            <xsl:attribute name="class">
+                                                <xsl:text>ds-dc_contributor_author-authority</xsl:text>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:apply-templates select="."/>
+
+
+                                        <xsl:if test="count(following-sibling::dri:item) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.contributor.editor</i18n:text>
+                                </span>
+                            </xsl:when>
+                            <xsl:when test="dri:list[@n=(concat($handle, ':dc.contributor.other'))]">
+                                <span>
+                                    <xsl:for-each select="dri:list[@n=(concat($handle, ':dc.contributor.other'))]/dri:item">
+                                        <xsl:variable name="other">
+                                            <xsl:apply-templates select="."/>
+                                        </xsl:variable>
+
+                                        <!--Check authority in the mets document-->
+                                        <xsl:if test="$metsDoc/mets:METS/mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim/dim:field[@element='contributor' and @qualifier='other' and . = $other]/@authority">
+                                            <xsl:attribute name="class">
+                                                <xsl:text>ds-dc_contributor_author-authority</xsl:text>
+                                            </xsl:attribute>
+                                        </xsl:if>
+                                        <xsl:apply-templates select="."/>
+
+
+                                        <xsl:if test="count(following-sibling::dri:item) != 0">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <i18n:text>xmlui.dri2xhtml.item.contributor.other</i18n:text>
+                                </span>
                             </xsl:when>
                             <xsl:otherwise>
                                 <i18n:text>xmlui.dri2xhtml.METS-1.0.no-author</i18n:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                        </small></span>
+                    </span>
                     <xsl:text> </xsl:text>
                     <xsl:if test="dri:list[@n=(concat($handle, ':dc.date.issued'))]">
                         <span class="publisher-date h4">   <small>
-                            <xsl:text>(</xsl:text>
                             <xsl:if test="dri:list[@n=(concat($handle, ':dc.publisher'))]">
                                 <span class="publisher">
                                     <xsl:apply-templates select="dri:list[@n=(concat($handle, ':dc.publisher'))]/dri:item"/>
@@ -255,8 +356,7 @@
                                 <xsl:value-of
                                         select="substring(dri:list[@n=(concat($handle, ':dc.date.issued'))]/dri:item,1,10)"/>
                             </span>
-                            <xsl:text>)</xsl:text>
-                            </small></span>
+                        </small></span>
                     </xsl:if>
                     <xsl:choose>
                         <xsl:when test="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item/dri:hi">
@@ -279,10 +379,10 @@
                             </div>
                         </xsl:when>
                         <xsl:when test="dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item">
-                        <div class="abstract">
+                            <div class="abstract">
                                 <xsl:value-of select="util:shortenString(dri:list[@n=(concat($handle, ':dc.description.abstract'))]/dri:item[1], 220, 10)"/>
-                        </div>
-                    </xsl:when>
+                            </div>
+                        </xsl:when>
                     </xsl:choose>
                 </div>
             </div>
@@ -424,7 +524,7 @@
         <xsl:text>
             if (!window.DSpace.i18n) {
                 window.DSpace.i18n = {};
-            } 
+            }
             if (!window.DSpace.i18n.discovery) {
                 window.DSpace.i18n.discovery = {};
             }
@@ -459,7 +559,7 @@
             </xsl:call-template>
 
             <div>
-                    <xsl:apply-templates/>
+                <xsl:apply-templates/>
             </div>
         </div>
     </xsl:template>

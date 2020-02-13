@@ -19,6 +19,7 @@ import org.dspace.identifier.IdentifierException;
 import org.dspace.identifier.IdentifierService;
 import org.dspace.utils.DSpace;
 
+import org.dspace.handle.HandleManager;
 import org.dspace.core.ConfigurationManager;
 
 /**
@@ -241,6 +242,24 @@ public class InstallItem
         	    item.addMetadata("dc","relation", "issn", null, issn);
 	        }
 	}
+        else {
+              //set bookpart private
+              item.setDiscoverable(false);
+
+              //register to parent
+              String parentHandle = item.getMetadata("dc", "relation", "ispartof", Item.ANY)[0].value;
+              String partnr = item.getMetadata("dc", "bibliographicCitation", "chapter", Item.ANY)[0].value;
+
+              if (parentHandle != null) {
+                        DSpaceObject parentdso;
+                        parentdso = HandleManager.resolveToObject(c, parentHandle);
+                        Item parentItem = (Item) parentdso;
+
+                        parentdso.addMetadata("dc", "relation", "haspart", null, parentHandle + '.' + partnr);
+                        parentItem.update();
+              }
+        }
+
     }
 
     /**
