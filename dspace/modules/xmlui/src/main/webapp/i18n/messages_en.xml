@@ -3847,13 +3847,12 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
     <message key="xmlui.collection.gssca.introduction">
         <p>
             This series is the continuation of "<a href="/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>",
-            (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), which originally had been issued as "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" by the LIT publishing company
-            (Vol. 1-17, 2001-2007).
+            (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), which originally had been issued as "Göttinger Studien zur Ethnologie" by the LIT publishing company
+            (Vol. 1-17, 1996-2007).
         </p>
-        <p class="narrow">ISSN (Print): 2199-5346</p>
+    <p>Content of this series are scientific ethnological papers, which fit particularly well the regional and thematic focus of the Institute of Ethnology.</p>   <p> The editors of this series are Prof. Dr. Elfriede Hermann, Prof. Dr. Andrea Lauser, Prof. Dr. Roman Loimeier und Prof. Dr. Nikolaus Schareika.</p> <p class="narrow">ISSN (Print): 2199-5346</p>
         <p class="narrow">ISSN (Online): 2512-6881</p>
     </message>
-
 
     <message key="xmlui.collection.gcg.introduction">
         <p>
@@ -3987,10 +3986,10 @@ In most cases, the contributions are based on PhD theses. With this book series,
 
     <message key="xmlui.collection.gbe.introduction">
         <p>
-            This series is the continuation of "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>",
+            This series is the continuation of "Göttinger Studien zur Ethnologie" (Vol. 1-17, 1996-2007),
             which originally had been issued by the LIT publishing company.
         </p>
-        <p class="narrow">ISSN (Print): 1866-0711</p>
+  <p>The continuation of this series on the other hand is the "<a href="//www.univerlag.uni-goettingen.de/handle/3/Goettingen_series_in_social_and_cultural_anthropology?locale-attribute=en" target="_blank">Göttinger Reihe zur Ethnologie - Göttingen Series in Social and Cultural Anthropology</a>".</p>      <p class="narrow">ISSN (Print): 1866-0711</p>
         <p class="narrow">ISSN (Online): 2512-6814</p>
     </message>
 
