@@ -4835,25 +4835,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.static.news">
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
-		<h3 class="list-item-header">Festkolloquium-Vorträge zur Reihe MatDaF sind online<span class="pull-right"><small>April 2019</small></span>
-</h3>
-            
-<p class="strech-top">
-                
-	
-</p><p>Anlässlich des 30-jährigen Verbandsjubiläums und des 100. Bandes der Reihe „Materialien Deutsch als Fremd- und Zweitsprache“ (MatDaF) hat der FaDaF am 01. Februar 2019 ein Festkolloquium zum Thema „Sprachen, Integration, Werte“ ausgerichtet. Referenten waren Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Grußworte sprachen Prof. Dr. Hiltraud Casper-Hehne (Vizepräsidentin der Universität Göttingen) und Jutta Pabst (Göttinger Universitätsverlag).</p>
-<p>Die Vorträge wurden aufgezeichnet und sind öffentlich zugänglich:
-
-</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Trailer </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> die Eröffnung </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Annegret Middeke </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Prof. Dr. Uwe Koreik </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Matthias Jung </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von PD Dr. Roger Fornoff </i></a></li>
-</ul>
-        </div>
+	</div>
     </message>
 
     <message key="xmlui.static.news-archive.title">Aktuelles Archiv</message>
@@ -4862,6 +4844,23 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.static.news-archive">
         <h2 class="first-page-header">Archiv Aktuelles</h2>
         <div class="news">
+	
+	<h3 class="list-item-header">Festkolloquium-Vorträge zur Reihe MatDaF sind online<span class="pull-right"><small>April 2019</small></span>
+	</h3>
+        <p class="strech-top">
+        </p>
+	<p>Anlässlich des 30-jährigen Verbandsjubiläums und des 100. Bandes der Reihe „Materialien Deutsch als Fremd- und Zweitsprache“ (MatDaF) hat der FaDaF am 01. Februar 2019 ein Festkolloquium zum Thema „Sprachen, Integration, Werte“ ausgerichtet. Referenten waren Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Grußworte sprachen Prof. Dr. Hiltraud Casper-Hehne (Vizepräsidentin der Universität Göttingen) und Jutta Pabst (Göttinger Universitätsverlag).</p>
+	<p>Die Vorträge wurden aufgezeichnet und sind öffentlich zugänglich:
+	</p>
+	<ul>
+	<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Trailer </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> die Eröffnung </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Annegret Middeke </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Prof. Dr. Uwe Koreik </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Matthias Jung </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von PD Dr. Roger Fornoff </i></a></li>
+	</ul>	
+		
 	<h3 class="list-item-header">PDF-Annotationen über Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
             <p class="strech-top">
                 Der Universitätsverlag Göttingen unterstützt nun PDF-Annotationen über <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
