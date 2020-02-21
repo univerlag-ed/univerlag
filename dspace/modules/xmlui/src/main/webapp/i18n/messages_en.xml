@@ -4746,21 +4746,6 @@ This series includes texts, lectures and speeches, which have been organized in 
     <message key="xmlui.static.news">
         <h2 class="first-page-header">News <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archive</a></h2>
         <div class="news">
-		<h3 class="list-item-header">Colloquium Lectures on the MatDaF series are online<span class="pull-right"><small>April 2019</small></span></h3>
-            
-		<p class="strech-top">
-                
-	
-		On the occasion of the 30th anniversary of the association and the 100th volume of the series "Materialien Deutsch als Fremd- und Zweitsprache" (MatDaF), the FaDaF organised a colloquium on "Languages, Integration, Values" on 01 February 2019. Speakers were Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Prof. Dr. Hiltraud Casper-Hehne (Vice President of the University of Göttingen) and Jutta Pabst (Göttinger Universitätsverlag) addressed the guests.</p>
-		<p>The lectures were recorded</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the trailer </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the opening </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Annegret Middeke </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Prof. Dr. Uwe Koreik </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Matthias Jung </i></a></li>
-<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by PD Dr. Roger Fornoff </i></a></li>
-</ul>
 	</div>
     </message>
 
@@ -4770,6 +4755,20 @@ This series includes texts, lectures and speeches, which have been organized in 
     <message key="xmlui.static.news-archive">
         <h2 class="first-page-header">News Archive</h2>
         <div class="news">
+		
+	<h3 class="list-item-header">Colloquium Lectures on the MatDaF series are online<span class="pull-right"><small>April 2019</small></span></h3>
+            <p class="strech-top">
+           	On the occasion of the 30th anniversary of the association and the 100th volume of the series "Materialien Deutsch als Fremd- und Zweitsprache" (MatDaF), the FaDaF organised a colloquium on "Languages, Integration, Values" on 01 February 2019. Speakers were Dr. Annegret Middeke, Prof. Dr. Uwe Koreik, Dr. Matthias Jung, PD Dr. Roger Fornoff. Prof. Dr. Hiltraud Casper-Hehne (Vice President of the University of Göttingen) and Jutta Pabst (Göttinger Universitätsverlag) addressed the guests.</p>
+		<p>The lectures were recorded</p>
+		<ul>
+		<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the trailer </i></a></li>
+		<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the opening </i></a></li>
+		<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Annegret Middeke </i></a></li>
+		<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Prof. Dr. Uwe Koreik </i></a></li>
+		<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by Dr. Matthias Jung </i></a></li>
+		<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> the lecture by PD Dr. Roger Fornoff </i></a></li>
+		</ul>	
+		
 		<h3 class="list-item-header">PDF-Annotations via Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
             <p class="strech-top">
                  Göttingen University Press supports PDF-annotations via <a href="//web.hypothes.is/" class="extern-link" target="_blank">Hypothes.is</a>
