@@ -3913,16 +3913,13 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
 
     <message key="xmlui.collection.biodiversity.introduction">
         <p>
-            In 2001, the Göttingen Centre for Biodiversity and Ecology (GCBE) was founded with the aim to promote - in both research and education -
+            The "Centre of Biodiversity and sustainable Land Use - CBL" (originally founded in 2001 as the "Göttingen Centre for Biodiversity and Ecology - GCBE)", aims at promoting both in research and education -
             studies into biodiversity from the genetic to the landscape level using an interdisciplinary approach.
             The evolution of biodiversity, the role of biodiversity for the functions and processes in ecosystems,
             and the pre-conditions for a sustainable management of biodiversity shall be investigated using modern research methods.
             The results are being published in the "<em>Biodiversity and Ecology Series - A</em>".
         </p>
-        <p>
-            Within the "<em>Biodiversity and Ecology Series - B</em>" dissertations are being published which have been written at the GCBE and are available online but not in print.
-            <a href="//ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0"  class="extern-link" target="_blank">List of these dissertations</a>.
-        </p>
+        
         <p class="narrow">ISSN (Print): 1863-3935</p>
         <p class="narrow">ISSN (Online): 2512-5974</p>
     </message>
