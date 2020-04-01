@@ -21,4 +21,6 @@
         }
         return DSpace.templates[name];
     };
+
+   $("#aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission").prev("h3").css("display", "none");
 })(jQuery);

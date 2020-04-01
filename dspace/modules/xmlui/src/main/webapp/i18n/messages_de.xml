@@ -2869,18 +2869,19 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
     <message key="xmlui.static.home">
         <h2 class="first-page-header">Willkommen beim Universitätsverlag Göttingen</h2>
 
-        <!-- <p class="highlight">
-Sehr geehrte Damen und Herren,<br />
-aufgrund der aktuellen Lage sind wir von der Universitätsleitung aufgefordert worden, von zu Hause zu arbeiten.
-Davon sind alle Bereiche der Universität Göttingen betroffen.<br />
-<strong>Der Universitätsverlag versendet ab sofort keine Bücher mehr.</strong><br />
-Die Beratung unserer Autorinnen und Autoren findet ausschließlich per E-Mail statt. Wir bitten zu entschuldigen, dass es dabei zu Verzögerungen kommen kann.
+        <div class="highlight news">
+<h4>Sehr geehrte Damen und Herren,</h4>
+<p>aufgrund der aktuellen Lage sind wir von der Universitätsleitung aufgefordert worden, von zu Hause zu arbeiten.
+Davon sind alle Bereiche der Universität Göttingen betroffen.</p>
+<p><strong>Der Universitätsverlag versendet ab sofort keine Bücher mehr.</strong></p>
+<p>Die Beratung unserer Autorinnen und Autoren findet ausschließlich per E-Mail statt. Wir bitten zu entschuldigen, dass es dabei zu Verzögerungen kommen kann.
 Wir weisen alle Leserinnen und Leser darauf hin, dass unsere Titel nahezu vollständig frei (open access) online verfügbar sind. 
 Sollte der von Ihnen gewünschte Titel nicht online verfügbar sein, kontaktieren Sie uns bitte per E-Mail über unsere Kontaktadressen.
-Wir informieren Sie, sobald der Betrieb wieder in gewohnter Weise aufgenommen werden kann.<br />
-Bleiben Sie gesund!<br />
+Wir informieren Sie, sobald der Betrieb wieder in gewohnter Weise aufgenommen werden kann.</p>
+<p>Bleiben Sie gesund!<br />
 Ihr Team vom Universitätsverlag Göttingen
-</p> -->
+</p>
+	</div> 
 
 
         <p class="paragraph justify strech-bottom">
@@ -5400,7 +5401,7 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
     
     <h3>Statistische Daten für den Betreiber der Website</h3>
     <p>
-    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. Piwik ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von Piwik erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in Piwik ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
+    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. MATOMO ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von MATOMO erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in MATOMO ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
     </p>  
     <p>
     Diese „Sitzungs-Cookies“ beinhalten keine personenbezogenen Daten und verfallen nach Ablauf der Sitzung. Techniken, wie zum Beispiel Java-Applets oder Active-X-Controls, die es ermöglichen, das Zugriffsverhalten der Nutzer nachzuvollziehen, werden nicht eingesetzt.
@@ -5422,8 +5423,8 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
     Sie können sich hier entscheiden, ob in Ihrem Browser ein eindeutiger Webanalyse-Cookie abgelegt werden darf, um dem Betreiber der Webseite die Erfassung und Analyse verschiedener statistischer Daten zu ermöglichen.  
     </p>
     <p>
-    Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Piwik in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
-Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um den Piwik-Deaktivierungs-Cookie in Ihrem Browser abzulegen.
+    Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch MATOMO in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um den MATOMO-Deaktivierungs-Cookie in Ihrem Browser abzulegen.
     </p>
     <p>
     Widerspruchs- und Beseitigungsmöglichkeit:

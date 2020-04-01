@@ -2828,19 +2828,20 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
         
 <!-- <div class="highlight news">
 <span id="cm">&#127876;</span>
-        <div class="right">
+        <div class="right"> -->
+<div class="highlight news">
 			<h4>Dear customers, dear authors,</h4>
-due to the current situation we have been asked by the university management to work from home.
-This affects all areas of the University of Göttingen.<br />
-<strong>With immediate effect, the Universitätsverlag no longer delivers any books. </strong><br />
-Advice for our authors is provided exclusively by e-mail. We apologize for any delays that may occur. 
+<p>due to the current situation we have been asked by the university management to work from home.
+This affects all areas of the University of Göttingen.</p>
+<p><strong>With immediate effect, the Universitätsverlag no longer delivers any books. </strong></p>
+<p>Advice for our authors is provided exclusively by e-mail. We apologize for any delays that may occur. 
 We would like to point out to customers that almost all our titles are completely open access online. 
 If the title you require is not available online, please contact us by e-mail using our contact addresses.
-We will inform you as soon as operations can be resumed in the usual manner.<br />
-Take care.<br />
-Your team at the Universitätsverlag Göttingen
+We will inform you as soon as operations can be resumed in the usual manner.</p>
+<p>Take care.<br />
+Your team at the Universitätsverlag Göttingen</p>
 </div>
-</div> -->
+<!-- </div> -->
 
         <p class="paragraph justify">
             Göttingen University Press is the self-contained publishing facility of the Georg August University, Göttingen.
@@ -5189,32 +5190,31 @@ This series includes texts, lectures and speeches, which have been organized in 
 
     </message>
 
-   <message key="xmlui.static.data_privacy.head">Datenschutzhinweis</message>
+   <message key="xmlui.static.data_privacy.head">Data Protection Information</message>
     <message key="xmlui.static.data_privacy">
 <div>
             
        <p>
-       Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor. 
-</p>   
-  
-<h3>Personenbezogene Daten</h3>
+	Please note that any data transmission on the Internet (e.g. communication by e-mail) can have security gaps. Therefore, complete protection of data against third parties access isn’t possible. It is not permitted to use any contact data that we publish due to imprint regulation for sending unsolicited advertising or information material. The operators of these pages explicitly reserve the right to take legal action in the event of the unsolicited sending of advertising information, for example via spam mails. 
+ </p>
+ 
+<h3>Personal Data</h3>
 
             
 <p>
-Die Nutzung dieser Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf diesen Seiten personenbezogene Daten erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis und im hier dargestellten Umfang. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. 
+If we need to collect personal data we aim to do so only with your consent and only as described on our web pages. Unless we have your explicit consent we won’t transfer any personal data to third parties. 
 </p>
 <p>
-Namen, Postanschriften und E-Mail-Adressen, die im Rahmen von Anfragen oder Bestellungen angegeben werden, werden ausschließlich für die Korrespondenz beziehungsweise den Versand verwendet. 
+Names, postal addresses and e-mail addresses given in the context of publishing are used exclusively for our communication with you.
 </p>
 <p>
-Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den jeweils genannten Zweck erforderlich ist. Hierbei werden bestehende gesetzliche Aufbewahrungsfristen berücksichtigt. 
+All personal data will only be stored as long as necessary for the respective purpose. Existing legal retention periods are taken into account. 
 </p>
  
-<h3>Informationen zur Verarbeitung personenbezogener Daten</h3>
+<h3>Information on the processing of personal data</h3>
 <p>
- <p class="address"><strong>Name und Kontaktdaten der Verantwortlichen</strong></p>
-  <p class="address">Der Präsident</p>
+ <p class="address"><strong>Name and contact details of responsible persons</strong></p>
+  <p class="address">The University President</p>
   <p class="address">Prof. Dr. Reinhard Jahn</p>
     <p class="address">Wilhelmsplatz 1</p>
       <p class="address">37073 Göttingen</p>
@@ -5230,7 +5230,7 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
 </p>
 </p>
 <p>
- <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragen</strong></p>
+ <p class="address"><strong>Contact details of the institution’s data protection officer</strong></p>
   <p class="address">Prof. Dr. Andreas Wiebe</p>
   <p class="address">Lehrstuhl für Bürgerliches Recht</p>
     <p class="address">Wettbewerbs- und Immaterialgüterrecht</p>
@@ -5250,37 +5250,33 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
 
  </p>
  
- <h3>Zwecke und Rechtsgrundlagen der Verarbeitung</h3>
+ <h3>Purposes and legal basis of data processing</h3>
  <p>
- Ihre Daten werden dafür erhoben, um Ihr Anliegen zu bearbeiten. Ihre Daten werden auf Grundlage von Art. 6 Abs. 1e erhoben. 
+We collect your data for the purpose of processing your request. Your data will be collected on the basis of Art. 6 para. 1e.
  </p>
  
     
-    <h3>Empfänger der personenbezogenen Daten</h3>
+    <h3>Recipient of personal data</h3>
     <p>
-    Um ihre Anfrage zu beantworten, werden Ihre personenbezogenen Daten an die innerhalb des Universitätsverlags Göttingen zuständige Personengruppe übermittelt.
+	In order to adress your query we transfer your personal data to those staff members at SUB that are in charge to handle your query. 
     </p>  
     
-        <h3>Übermittlung von personenbezogenen Daten an ein Drittland</h3>
+        <h3>Transfer of personal data to other countries</h3>
     <p>
-    Es ist nicht geplant Ihre personenbezogenen Daten zu übermitteln. 
+	We do not intend to transfer any personal data to other countries.
     </p> 
-        <h3>Dauer der Speicherung der personenbezogenen Daten</h3>
+        <h3>Storage duration of personal data</h3>
     <p>
-    Ihre Daten werden gespeichert, um die Dienste zu erbringen, mit denen Sie uns beauftragen. Sobald diese Dienste erbracht sind oder Sie um eine Löschung der Daten bitten, werden ihre Daten nur noch so lange gespeichert, bis alle laufenden Vorgänge abgeschlossen sind und dann gelöscht, es sei denn gesetzliche Vorgaben erfordern eine längere Speicherung.
+	We will store your data to provide the requested services. As soon as we have delivered our services or you ask for your data to be deleted, we’ll store your data only until all current processes have been completed. It will then be deleted unless legal requirements require longer storage.
     </p> 
-        <h3>Betroffenenrechte</h3>
+        <h3>ight of access by the data subject</h3>
     <p>
-    Nach der EU-Datenschutzgrundverordnung stehen Ihnen folgende Rechte zu:
-Werden Ihre personenbezogenen Daten verarbeitet, so haben Sie das Recht Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO). Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO). Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen sowie Widerspruch gegen die Verarbeitung einlegen (Art. 17, 18 und 21 DSGVO).
-Wenn Sie die erforderlichen Daten nicht angeben, kann Ihr Antrag nicht bearbeitet werden.
-Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
-Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschutzbeauftragten.
+	According to the EU general data protection regulation (GDPR), you have the following rights: If your personal data is processed, you have the right to receive information about the data stored about you (Art. 15 GDPR). If incorrect personal data is processed, you have the right to have it corrected (Art. 16 GDPR). If the legal requirements are met, you can request the deletion or restriction of the processing and object to the processing (Art. 17, 18 and 21 GDPR). If you can’t provide the required data your request won’t be processed. If you have consented to data processing or if a contract for data processing exists and the data processing is carried out using automated procedures, you may have a right to data transferability (Art. 20 GDPR). Should you make use of your above mentioned rights, the Lower Saxony State and University Library Göttingen will check whether the legal requirements are fulfilled. To exercise your rights, please contact the instition’s data protection officer. 
     </p> 
     <p>
-    Bei datenschutzrechtlichen Beschwerden können Sie sich an die zuständige Aufsichtsbehörde wenden: 
+	If you have any complaints regarding data protection, you can contact the relevant supervisory authority.
     </p> 
-      <p class="address">Die Landesbeauftragte für den Datenschutz Niedersachsen</p>
+	<p class="address">The State Commissioner for Data Protection of Lower Saxony</p>
   <p class="address">Prinzenstraße 5</p>
     <p class="address">30159 Hannover</p>
       <p class="address">37073 Göttingen</p>
@@ -5295,44 +5291,41 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
                 
 </p>
     
-    <h3>Auskunft, Löschung, Sperrung</h3>
+    <h3>Information, Deletion, Blocking</h3>
     <p>
-    Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.
+	You have the right to receive information free of charge at any time about your stored personal data, its origin and recipients and the purpose of data processing, as well as the right to correct, block or delete this data. For this purpose, as well as for further questions regarding personal data, you can contact us at any time via the website operator's address given in the imprint.
     </p>  
     
-    <h3>Statistische Daten für den Betreiber der Website</h3>
+    <h3>Statistical data for website operators</h3>
     <p>
-    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. Piwik ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von Piwik erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in Piwik ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
+	Our website uses the open source software MATOMO for statistical analysis of visitor access. MATOMO is configured in accordance with data protection, all data is stored anonymously. "Session cookies" used for this purpose are text files stored on your computer to enable an analysis of website use. The information generated by the cookie about your use of this website is stored on a protected server of the university’s computing centre GWDG. Your IP address is anonymised immediately after processing and before saving. MATOMO collects data in anonymised form to improve our service. IP addresses are stored in MATOMO without the last tuple. We can identify the network of a query, but not an individual computer.
     </p>  
     <p>
-    Diese „Sitzungs-Cookies“ beinhalten keine personenbezogenen Daten und verfallen nach Ablauf der Sitzung. Techniken, wie zum Beispiel Java-Applets oder Active-X-Controls, die es ermöglichen, das Zugriffsverhalten der Nutzer nachzuvollziehen, werden nicht eingesetzt.
+	These "session cookies" contain no personal data and expire at the end of the session. We don’t use tracing software such as Java applets or Active-X controls.
     </p>
     <p>
-    Im Einzelnen werden über jeden Zugriff/Abruf folgende Daten gespeichert: 
+	In detail, the following data is stored for each access/retrieval:
     </p>
     <ul>
-    
-    <li>- die ersten beiden Teile der IP-Adresse,</li>
-    <li>- Datum und Uhrzeit,</li>
-    <li>- User-Agent der verwendeten Software,</li>
-    <li>- aufgerufene Seite/Name der abgerufenen Datei,</li>
-    <li>- übertragene Datenmenge,</li>
-    <li>- Meldung, ob der Zugriff/Abruf erfolgreich war,</li>
-
+   	<li>- First two parts of IP-adresses</li>
+    <li>- First two parts of IP-adresses</li>
+    <li>- User agent of access software</li>
+    <li>- Accessed pages, accessed files</li>
+    <li>- Transmitted data volume</li>
+    <li>- Message whether access/retrieval was successful</li>
     </ul>
     <p>
-    Sie können sich hier entscheiden, ob in Ihrem Browser ein eindeutiger Webanalyse-Cookie abgelegt werden darf, um dem Betreiber der Webseite die Erfassung und Analyse verschiedener statistischer Daten zu ermöglichen.  
+	You can decide here whether a unique web analysis cookie may be stored in your browser to enable the website operator to collect and analyse various statistical data.
     </p>
     <p>
-    Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Piwik in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+	By using our website, you consent to processing of your data with MATOMO in the manner and for the purposes set out above. If you wish to opt out, click the following link to place the MATOMO opt-out cookie in your browser.
 Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um den Piwik-Deaktivierungs-Cookie in Ihrem Browser abzulegen.
     </p>
     <p>
-    Widerspruchs- und Beseitigungsmöglichkeit:
+	Opt-out and removal option:
     </p>
     <p>
-                
-                Zustimmung verweigern: <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de" class="extern-link" target="_blank">Meine Besuche sollen nicht erfasst werden.</a>
+                Deny consent:  <a href="//piwik.gwdg.de/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=de" class="extern-link" target="_blank">Don’t track my visits</a>
             
 </p>
 </div>
