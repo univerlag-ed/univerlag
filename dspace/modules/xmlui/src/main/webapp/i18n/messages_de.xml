@@ -5329,7 +5329,7 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
 </p>
 </p>
 <p>
- <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragen</strong></p>
+ <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragten</strong></p>
   <p class="address">Prof. Dr. Andreas Wiebe</p>
   <p class="address">Lehrstuhl für Bürgerliches Recht</p>
     <p class="address">Wettbewerbs- und Immaterialgüterrecht</p>
@@ -5373,19 +5373,18 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
     Nach der EU-Datenschutzgrundverordnung stehen Ihnen folgende Rechte zu:
 Werden Ihre personenbezogenen Daten verarbeitet, so haben Sie das Recht Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO). Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO). Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen sowie Widerspruch gegen die Verarbeitung einlegen (Art. 17, 18 und 21 DSGVO).
 Wenn Sie die erforderlichen Daten nicht angeben, kann Ihr Antrag nicht bearbeitet werden.
-Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
+Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft die Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
 Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschutzbeauftragten.
     </p> 
     <p>
     Bei datenschutzrechtlichen Beschwerden können Sie sich an die zuständige Aufsichtsbehörde wenden: 
     </p> 
-      <p class="address">Die Landesbeauftragte für den Datenschutz Niedersachsen</p>
+      <p class="address">Landesbeauftragte für den Datenschutz Niedersachsen</p>
   <p class="address">Prinzenstraße 5</p>
     <p class="address">30159 Hannover</p>
-      <p class="address">37073 Göttingen</p>
-<p class="address">
+      <p class="address">
                     
-<i class="icon-call" title="Telefon"></i> +49 551 120 4500
+<i class="icon-call" title="Telefon"></i> +49 511 120 4500
                 </p>
 <p class="address">
                     
@@ -5401,7 +5400,7 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
     
     <h3>Statistische Daten für den Betreiber der Website</h3>
     <p>
-    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. MATOMO ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von MATOMO erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in MATOMO ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
+    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. MATOMO ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf einem geschützten Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von MATOMO erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in MATOMO ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
     </p>  
     <p>
     Diese „Sitzungs-Cookies“ beinhalten keine personenbezogenen Daten und verfallen nach Ablauf der Sitzung. Techniken, wie zum Beispiel Java-Applets oder Active-X-Controls, die es ermöglichen, das Zugriffsverhalten der Nutzer nachzuvollziehen, werden nicht eingesetzt.
