@@ -4065,8 +4065,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
     </message>
 
     <message key="xmlui.collection.nfv.introduction">
-        <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
-            (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
+        <p>Die <a href="//www.nw-fva.de/" class="extern-link" target="_blank">Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)</a> ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den fünf Abteilungen Waldwachstum, Waldschutz, Waldgenressourcen, Umweltkontrolle und Waldnaturschutz wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
         </p>
         <p class="narrow">ISSN (Print): 1865-6994</p>
         <p class="narrow">ISSN (Online): 2512-594X</p>
@@ -4147,8 +4146,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 	
     <message key="xmlui.collection.gf.introduction">
         <p>
-	    Die neue Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen. 
-	    Sie fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
+	    Die Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
 	    Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. 
 	    Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
         </p>
