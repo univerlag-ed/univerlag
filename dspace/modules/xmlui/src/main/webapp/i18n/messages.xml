@@ -2871,16 +2871,12 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
 
         <div class="highlight news">
 <h4>Sehr geehrte Damen und Herren,</h4>
-<p>aufgrund der aktuellen Lage sind wir von der Universitätsleitung aufgefordert worden, von zu Hause zu arbeiten.
-Davon sind alle Bereiche der Universität Göttingen betroffen.</p>
-<p><strong>Der Universitätsverlag versendet ab sofort keine Bücher mehr.</strong></p>
-<p>Die Beratung unserer Autorinnen und Autoren findet ausschließlich per E-Mail statt. Wir bitten zu entschuldigen, dass es dabei zu Verzögerungen kommen kann.
-Wir weisen alle Leserinnen und Leser darauf hin, dass unsere Titel nahezu vollständig frei (open access) online verfügbar sind. 
-Sollte der von Ihnen gewünschte Titel nicht online verfügbar sein, kontaktieren Sie uns bitte per E-Mail über unsere Kontaktadressen.
-Wir informieren Sie, sobald der Betrieb wieder in gewohnter Weise aufgenommen werden kann.</p>
-<p>Bleiben Sie gesund!<br />
-Ihr Team vom Universitätsverlag Göttingen
-</p>
+<p><img id="delivery" src="/static/images/Bookdelivery4.png" align="left"/>Ab Montag, 4.Mai 2020 verkauft und versendet der Universitätsverlag Göttingen wieder gedruckte Bücher.</p>
+<p>Die Beratung unserer Autorinnen und Autoren findet weiterhin ausschließlich per E-Mail statt. </p>
+<p>Wir informieren Sie, sobald der Betrieb wieder in gewohnter Weise aufgenommen werden kann.</p>
+<p>Bleiben Sie gesund!<br/>
+Ihr Team vom Universitätsverlag Göttingen </p>
+
 	</div> 
 
 
@@ -4065,8 +4061,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
     </message>
 
     <message key="xmlui.collection.nfv.introduction">
-        <p>Die Nordwestdeutsche Forstliche Versuchsanstalt
-            (NW-FVA) ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den vier Arbeitsbereichen Waldwachstum, Waldschutz, Waldgenressourcen und Umweltkontrolle wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
+        <p>Die <a href="//www.nw-fva.de/" class="extern-link" target="_blank">Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)</a> ist zuständig für die praxisnahe forstliche Forschung und die Beratung aller Waldbesitzarten in Niedersachsen, Hessen, Sachsen-Anhalt und Schleswig-Holstein. Mit den fünf Abteilungen Waldwachstum, Waldschutz, Waldgenressourcen, Umweltkontrolle und Waldnaturschutz wird ein weites Forschungsspektrum abgedeckt. Die Erarbeitung und Vermittlung praxisnaher forstwissenschaftlicher Erkenntnisse basiert auf einem umfangreichen Netz an Versuchsflächen und Naturwäldern. Teile dieser Forschungsergebnisse werden in der Reihe „Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt“ veröffentlicht.
         </p>
         <p class="narrow">ISSN (Print): 1865-6994</p>
         <p class="narrow">ISSN (Online): 2512-594X</p>
@@ -4147,8 +4142,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 	
     <message key="xmlui.collection.gf.introduction">
         <p>
-	    Die neue Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen. 
-	    Sie fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
+	    Die Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
 	    Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. 
 	    Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
         </p>
@@ -5329,7 +5323,7 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
 </p>
 </p>
 <p>
- <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragen</strong></p>
+ <p class="address"><strong>Kontaktdaten des betrieblichen Datenschutzbeauftragten</strong></p>
   <p class="address">Prof. Dr. Andreas Wiebe</p>
   <p class="address">Lehrstuhl für Bürgerliches Recht</p>
     <p class="address">Wettbewerbs- und Immaterialgüterrecht</p>
@@ -5373,19 +5367,18 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
     Nach der EU-Datenschutzgrundverordnung stehen Ihnen folgende Rechte zu:
 Werden Ihre personenbezogenen Daten verarbeitet, so haben Sie das Recht Auskunft über die zu Ihrer Person gespeicherten Daten zu erhalten (Art. 15 DSGVO). Sollten unrichtige personenbezogene Daten verarbeitet werden, steht Ihnen ein Recht auf Berichtigung zu (Art. 16 DSGVO). Liegen die gesetzlichen Voraussetzungen vor, so können Sie die Löschung oder Einschränkung der Verarbeitung verlangen sowie Widerspruch gegen die Verarbeitung einlegen (Art. 17, 18 und 21 DSGVO).
 Wenn Sie die erforderlichen Daten nicht angeben, kann Ihr Antrag nicht bearbeitet werden.
-Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
+Wenn Sie in die Datenverarbeitung eingewilligt haben oder ein Vertrag zur Datenverarbeitung besteht und die Datenverarbeitung mithilfe automatisierter Verfahren durchgeführt wird, steht Ihnen gegebenenfalls ein Recht auf Datenübertragbarkeit zu (Art. 20 DSGVO). Sollten Sie von Ihren oben genannten Rechten Gebrauch machen, prüft die Niedersächsische Staats- und Universitätsbibliothek Göttingen, ob die gesetzlichen Voraussetzungen hierfür erfüllt sind.
 Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschutzbeauftragten.
     </p> 
     <p>
     Bei datenschutzrechtlichen Beschwerden können Sie sich an die zuständige Aufsichtsbehörde wenden: 
     </p> 
-      <p class="address">Die Landesbeauftragte für den Datenschutz Niedersachsen</p>
+      <p class="address">Landesbeauftragte für den Datenschutz Niedersachsen</p>
   <p class="address">Prinzenstraße 5</p>
     <p class="address">30159 Hannover</p>
-      <p class="address">37073 Göttingen</p>
-<p class="address">
+      <p class="address">
                     
-<i class="icon-call" title="Telefon"></i> +49 551 120 4500
+<i class="icon-call" title="Telefon"></i> +49 511 120 4500
                 </p>
 <p class="address">
                     
@@ -5401,7 +5394,7 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
     
     <h3>Statistische Daten für den Betreiber der Website</h3>
     <p>
-    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. MATOMO ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf dem Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von MATOMO erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in MATOMO ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
+    Diese Website nutzt die Open-Source-Software MATOMO für die statistische Auswertung von Besucherzugriffen. MATOMO ist datenschutzkonform konfiguriert, Daten werden anonymisiert gespeichert. Die zu diesem Zweck verwendeten „Sitzungs-Cookies“ sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Webseite durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieses Internetangebotes werden auf einem geschützten Server der GWDG gespeichert. Die IP-Adresse wird sofort nach der Verarbeitung und vor deren Speicherung anonymisiert. Die von MATOMO erfassten Daten werden in anonymisierter Form dazu verwendet, unser Angebot zu verbessern. IP-Adressen werden in MATOMO ohne das letzte Tupel gespeichert. Wir wissen, aus welchem Netz eine Anfrage kam, nicht jedoch von welchem Rechner. 
     </p>  
     <p>
     Diese „Sitzungs-Cookies“ beinhalten keine personenbezogenen Daten und verfallen nach Ablauf der Sitzung. Techniken, wie zum Beispiel Java-Applets oder Active-X-Controls, die es ermöglichen, das Zugriffsverhalten der Nutzer nachzuvollziehen, werden nicht eingesetzt.

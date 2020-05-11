@@ -2826,22 +2826,15 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
         <h2 class="first-page-header">Welcome to Göttingen University Press</h2>
 
         
-<!-- <div class="highlight news">
-<span id="cm">&#127876;</span>
-        <div class="right"> -->
 <div class="highlight news">
 			<h4>Dear customers, dear authors,</h4>
-<p>due to the current situation we have been asked by the university management to work from home.
-This affects all areas of the University of Göttingen.</p>
-<p><strong>With immediate effect, the Universitätsverlag no longer delivers any books. </strong></p>
-<p>Advice for our authors is provided exclusively by e-mail. We apologize for any delays that may occur. 
-We would like to point out to customers that almost all our titles are completely open access online. 
-If the title you require is not available online, please contact us by e-mail using our contact addresses.
-We will inform you as soon as operations can be resumed in the usual manner.</p>
+<p><img id="delivery" src="/static/images/Bookdelivery4.png" align="left" />From Monday, May 4, 2020, the Universitätsverlag Göttingen will again sell and distribute printed books.</p>
+<p>Advice for our authors will continue to be provided exclusively by e-mail. </p>
+<p>We will inform you as soon as operations can be resumed in the usual manner.</p>
 <p>Take care.<br />
 Your team at the Universitätsverlag Göttingen</p>
+
 </div>
-<!-- </div> -->
 
         <p class="paragraph justify">
             Göttingen University Press is the self-contained publishing facility of the Georg August University, Göttingen.

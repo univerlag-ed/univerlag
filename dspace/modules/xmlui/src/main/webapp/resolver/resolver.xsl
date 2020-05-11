@@ -27,6 +27,7 @@
 
 		<xsl:choose>
 			<!-- resolve only requests which are in the purl-mapping or starts with 'univerlag-' -->
+			<!-- example request: https://univerlag.uni-goettingen.de/resolvexml?pur=univerlag-neubauSUB_Doku -->
 			<xsl:when test="$purlMapping//nodes/node[@webdocID=$query]">
 				 <url>
 					<xsl:value-of select="concat($baseURL, '/handle/', $purlMapping//nodes/node[@webdocID=$query])" />
