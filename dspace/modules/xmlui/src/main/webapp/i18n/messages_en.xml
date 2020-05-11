@@ -3789,9 +3789,9 @@ Open Access and should contain as many books as possible, provided that these pu
 	
     <message key="xmlui.collection.nfv.introduction">
         <p>
-	The Nordwestdeutsche Forstliche Versuchsanstalt is in charge of practical forestry research and has the advisory function to all types of forestry holdings in Lower Saxony, 
-	Hesse and Saxony-Anhalt. The NFV covers a wide range of research areas, including the fields forest growth, forest protection, forest-gene-ressources and environmental control. 	 Working on and distributing practical research results is based on a comprehensive network of sample areas and natural forests. Part of these research results 
-	are published in this series "Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt".
+	The <a href="//www.nw-fva.de/" class="extern-link" target="_blank">Northwest German Forest Research Institute [Nordwestdeutsche Forstliche Versuchsanstalt (NW-FVA)</a> is in charge of practical forestry research and has the advisory function to all types of forestry holdings in Lower Saxony, 
+	Hesse, Saxony-Anhalt and Schleswig-Holstein. With its five departments forest growth, forest protection, forest genetic ressources, environmental control and forest nature conservation the NW-FVA covers a wide range of research areas. Working on and distributing practical research results is based on a comprehensive network of sample areas and natural forests. Parts of these research results 
+	are published in the series "Beiträge aus der Nordwestdeutschen Forstlichen Versuchanstalt".
         </p>
         <p class="narrow">ISSN (Print): 1865-6994</p>
         <p class="narrow">ISSN (Online): 2512-594X</p>
@@ -4006,7 +4006,7 @@ In most cases, the contributions are based on PhD theses. With this book series,
 
     <message key="xmlui.collection.gf.introduction">
         <p>
-            "Göttinger Forstwissensschaften" is the new series of the <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Faculty of Forest Science and Forest Ecology</a> at the Georg-August-Universität Göttingen.
+            "Göttinger Forstwissensschaften" is the series of the <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Faculty of Forest Science and Forest Ecology</a> at the Georg-August-Universität Göttingen.
             It merges the series "Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt” and
             series A of the "Berichte des Forschungszentrums Waldökosysteme”.
             The series reflects the wide thematic range of the faculty and of the "Nordwestdeutschen Forstlichen Versuchsanstalt”.
