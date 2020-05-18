@@ -5375,7 +5375,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.label">Bibliographic Export</message>
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Speech <span class="glyphicon glyphicon-film"></span></message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Multimedia <span class="glyphicon glyphicon-film"></span></message>
     <message key="xmlui.administer.checklist">
         <div class="collapse" id="checklist">
             <h1>BEI NEUPUBLIKATIONEN BITTE NICHT VERGESSEN!</h1>
