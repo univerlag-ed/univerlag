@@ -2869,7 +2869,7 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
     <message key="xmlui.static.home">
         <h2 class="first-page-header">Willkommen beim Universitätsverlag Göttingen</h2>
 
-        <div class="highlight news">
+<!--        <div class="highlight news">
 <h4>Sehr geehrte Damen und Herren,</h4>
 <p><img id="delivery" src="/static/images/Bookdelivery4.png" align="left"/>Seit Montag, 4.Mai 2020 verkauft und versendet der Universitätsverlag Göttingen wieder gedruckte Bücher.</p>
 <p>Die Beratung unserer Autorinnen und Autoren findet weiterhin ausschließlich per E-Mail statt. </p>
@@ -2877,13 +2877,14 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
 <p>Bleiben Sie gesund!<br/>
 Ihr Team vom Universitätsverlag Göttingen </p>
 
-	</div> 
+	</div> -->
 
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
-            Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.
+            Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.<br />
+		Aufgrund der Corona Pandemie erfolgt die Beratung unserer Autorinnen und Autoren weiterhin ausschließlich per E-Mail.		
         </p>
 <!--	<div class="alert alert-info">
 	<p>Sehr geehrte Kundinnen und Kunden,</p>
@@ -4055,6 +4056,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
         <p><a href="//www.uni-goettingen.de/de/524600.html" target="_blank">Zentrum für Biodiversität und Nachhaltige Landnutzung</a> wurde im Jahre 2001 (ursprünglich als "Göttinger Zentrum für Biodiversitätsforschung und Ökologie") gegründet. Ziel ist unter anderem die Verbreitung von Biodiversitätsstudien in Forschung und Lehre.
             Das Spektrum reicht von der Genetik bis zur Landschaftsökologie, jeweils mit einem interdisziplinären Ansatz. Die Evolution der Biodiversität, die Rolle der Biodiversität bei Funktionen und Prozessen in Ökosystemen und die Voraussetzungen für ein nachhaltiges Management der Biodiversität soll mit Hilfe moderner Methoden erforscht werden.
             Diese Forschungsergebnisse werden in der <em>„Biodiversity and Ecology Series - A“</em> veröffentlicht.</p>
+	    <p>In der Reihe <a href="https://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0" class="extern-link" target="_blank">Biodiversity and Ecology Series / B</a> wurden zwischen 2008 und 2014 ausschließlich Dissertationen online publiziert.</p>
 
         <p class="narrow">ISSN (Print): 1863-3935</p>
         <p class="narrow">ISSN (Online): 2512-5974</p>
