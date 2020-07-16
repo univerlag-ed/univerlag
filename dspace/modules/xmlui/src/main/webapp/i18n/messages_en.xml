@@ -2826,13 +2826,13 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
         <h2 class="first-page-header">Welcome to Göttingen University Press</h2>
 
         
-<div class="highlight news">
+<!-- <div class="highlight news">
 			<h4>Dear customers, dear authors,</h4>
 <p><img id="delivery" src="/static/images/Bookdelivery4.png" align="left" />Since Monday, May 4, 2020, the Universitätsverlag Göttingen will again sell and distribute printed books.</p>
 <p>Advice for our authors will continue to be provided exclusively by e-mail. </p>
 <p>We will inform you as soon as operations can be resumed in the usual manner.</p>
 <p>Take care.<br />
-Your team at the Universitätsverlag Göttingen</p>
+Your team at the Universitätsverlag Göttingen</p> -->
 
 </div>
 
@@ -2841,7 +2841,8 @@ Your team at the Universitätsverlag Göttingen</p>
             We publish documents from scholars who are associated with the Göttingen University.
             We give assistance to the authors to publish their works electronically and as printed copies.
             Our aim is to offer free access to as many publications as possible.
-            The Göttingen University Press also seeks to publish reviewed high-quality books that due to their specialised nature will not easily be accepted by commercial publishing houses.
+            The Göttingen University Press also seeks to publish reviewed high-quality books that due to their specialised nature will not easily be accepted by commercial publishing houses.<br/>
+		Due to the coronavirus pandemic advice for our authors will continue to be provided exclusively by e-mail.		
         </p>
 	<!-- <div class="alert alert-info">
 
@@ -3918,6 +3919,7 @@ The collection "Göttinger Beiträge zur erziehungswissenschaftlichen Forschung"
             and the pre-conditions for a sustainable management of biodiversity shall be investigated using modern research methods.
             The results are being published in the "<em>Biodiversity and Ecology Series - A</em>".
         </p>
+	    <p>The series <a href="https://ediss.uni-goettingen.de/discover?scope=/&amp;rpp=20&amp;page=1&amp;query=%22Biodiversity+and+Ecology+Series%22&amp;group_by=none&amp;etal=0" class="extern-link" target="_blank">Biodiversity and Ecology Series / B</a> contains only theses, which have been published exclusively online between 2008 and 2014.</p>
         
         <p class="narrow">ISSN (Print): 1863-3935</p>
         <p class="narrow">ISSN (Online): 2512-5974</p>
