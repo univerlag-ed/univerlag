@@ -149,7 +149,7 @@
                                     dataType: "xml",
                                     contentType: false,
                                     error: function(){
-                                            alert("ERROR");
+                                            //alert("ERROR");
                                     },
                                     success: function(xml){
                                         //alert("OK");
@@ -170,12 +170,14 @@
                                          }
                                          if (i == 2)
                                           {
-                                                var download=$(this).find("cell[rend='datacell'][n='02']");
-                                                 if ($(download).text().length &gt; 0) {
-                                                         var label=$("#downloads").text();
-                                                         $("#downloads").text(label + $(download).text());
-                                                         $("#downloads").toggle();
+						if ($("#downloads").text().length > 0) {
+                                                	var download=$(this).find("cell[rend='datacell'][n='02']");
+	                                                 if ($(download).text().length &gt; 0) {
+        	                                                 var label=$("#downloads").text();
+                	                                         $("#downloads").text(label + $(download).text());
+                        	                                 $("#downloads").toggle();
                                                   }
+						}
                                          }
                                       });
                                       //alert("OK");
@@ -264,8 +266,7 @@
 		    padding: 2px 5px 2px 0;
 		    font-size: 0.8em;
 		    color:  #2d487b;
-		    margin-bottom: 10px;
-		    margin-top: 45px;
+		    margin-top: 25px;
 		}
 		#views {
 		   padding-left: 5px;
@@ -351,7 +352,14 @@
 			padding-top: 15px;
 			padding-left: 35px;
 		}
-
+		img#nd {
+		    max-width: 4em;
+		    padding-right: 15px;
+		}
+		ul.newfeatures {
+		    list-style-type: circle;
+		}
+		
                 </style>
 
             <!--TODO figure out a way to include these in the concat & minify-->

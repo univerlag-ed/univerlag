@@ -51,6 +51,10 @@
         </xsl:for-each>
     </xsl:variable>
 
+    <xsl:variable name="handl">
+        <xsl:value-of select="//dri:metadata[@element='request' and @qualifier='URI']" />
+    </xsl:variable>
+
     <xsl:variable name="baseURL">
 <!--         <xsl:value-of select="concat('//', //dri:metadata[@qualifier='serverName'], ':',//dri:metadata[@qualifier='serverPort'])" /> -->
 	     <xsl:text>www.univerlag.uni-goettingen.de</xsl:text>
@@ -248,9 +252,11 @@
         <xsl:if test="dim:field[@element='relation'][@qualifier='ispartofseries']">
            
             <span class="relation">
-                <a href="{$serie}">
+                <a>
+		<xsl:attribute name="href"><xsl:value-of select="$serie" /></xsl:attribute>
                     <xsl:value-of select="dim:field[@element='relation'][@qualifier='ispartofseries']" />
                 </a>
+		
                 <xsl:choose>
                     <xsl:when test="starts-with(dim:field[@element='bibliographicCitation'][@qualifier='volume'], '00')">
                         <xsl:value-of select="concat('; ', substring(dim:field[@element='bibliographicCitation'][@qualifier='volume'], 3))"/>
@@ -467,11 +473,36 @@
                     <xsl:value-of select="//dim:field[@element='identifier' and @qualifier='uri']" />
                 </a>
             </h4>
-	    <div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
-                         <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute> 
-            </div>
-
+	 
         </xsl:if>
+	 <a id="ds-stats" title="Statistics details">
+                <xsl:attribute name="href"><xsl:value-of select="concat('/', $handl, '/statistics')"/></xsl:attribute>
+                <span class="glyphicon glyphicon-stats"> </span>
+                <!-- <span id="views"><i18n:text>xmlui.statistics.visits.views</i18n:text>: </span>
+                <span id="downloads"> | <i18n:text>xmlui.statistics.visits.bitstreams</i18n:text>: </span> -->
+                <span id="views">Views: </span>
+		<xsl:if test="not(//dim:field[@element='notes' and @qualifier='access'] = 'nodocument')">
+                	<span id="downloads"> | Downloads: </span>
+		</xsl:if>
+            </a>
+	    <!-- <xsl:if test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')">
+		<div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
+                         <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute>
+                    </div>
+	    </xsl:if> -->
+	    <xsl:choose>
+		<xsl:when test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')">
+		
+	            <div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
+                         <xsl:attribute name="data-doi"><xsl:value-of select="substring-after(//dim:field[@element='identifier' and @qualifier='uri'], 'https://doi.org/')" /></xsl:attribute>
+        	    </div>
+		</xsl:when>
+		<xsl:when test="//dim:field[@element='identifier' and @qualifier='doi']">
+                    <div data-badge-details="right" data-badge-type="2" data-hide-no-mentions="true" class="altmetric-embed">
+                         <xsl:attribute name="data-doi"><xsl:value-of select="//dim:field[@element='identifier' and @qualifier='doi']" /></xsl:attribute>
+                    </div>
+		</xsl:when>
+	    </xsl:choose> 
     </xsl:template>
 
     <xsl:template name="itemSummaryView-DIM-date">
@@ -926,7 +957,10 @@
                     <xsl:value-of select="substring-after($mimetype,'/')"/>
                 </xsl:with-param>
             </xsl:call-template>
+	    <a>
+		<xsl:attribute name="href"><xsl:value-of select="concat('/bitstream/handle/3/', substring-before(substring-after($href, '3/'), 'isAllow'))"/></xsl:attribute>
             <i18n:text>xmlui.item.online.version</i18n:text>
+	    </a>
             <span class="access">
 		<xsl:choose>
 		<xsl:when test="contains($href, '.pdf')">
@@ -1413,17 +1447,17 @@
    <xsl:variable name="metsData" select="document($parentMetadataUrl)//dim:dim"/>
 	<div><span class="chapter"><i18n:text>xmlui.item.chapter</i18n:text><xsl:value-of select="concat(' ', substring-after(/mets:METS/@ID, '.'))"/></span>
 	<xsl:text> (</xsl:text><i18n:text>xmlui.item.chapter.pages</i18n:text>
-	<xsl:value-of select="concat(' ', //dim:field[@element='format' and @qualifier='extent'], ') ')"/> <i18n:text>xmlui.item.chapter.of</i18n:text> 
+	<xsl:value-of select="concat(' ', //dim:field[@element='bibliographicCitation'][@qualifier='firstpage'], '-', //dim:field[@element='bibliographicCitation'][@qualifier='lastpage'], ') ')"/> <i18n:text>xmlui.item.chapter.of</i18n:text> 
 	<span class="decor"><hr /></span>
 	</div>	
 <div class="row">
  
-  <div class="col-xs-hidden col-sm-hidden col-md-2 col-lg-2">
+  <div class="col-xs-hidden col-sm-hidden col-md-4 col-lg-4">
     <img id="parentthumb">
 	<xsl:attribute name="src"><xsl:value-of select="concat('/bitstream/handle/', $parentUrl, '/cover-200.jpg')"/></xsl:attribute>
    </img>
 </div>
-   <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
      <h3><a>
 	<xsl:attribute name="href"><xsl:value-of select="concat('/handle/', $parentUrl)"/></xsl:attribute>
 	<xsl:copy-of select="$metsData/dim:field[@element='title'][1]/node()"/>
@@ -1497,7 +1531,7 @@
 			</a>
 		</li>
             </xsl:if> 
-	    <xsl:if test="//dim:field[@element='relation' and @qualifier='youtube']">
+	    <xsl:if test="//dim:field[@element='relation' and @qualifier='multimedia']">
 		<li><a  data-target="#film" data-toggle="tab">
                         <i18n:text>xmlui.dri2xhtml.METS-1.0.item-lecture</i18n:text>
                         </a>
@@ -1811,7 +1845,24 @@
 		</div>
 	    </div> 
 	    <div class="tab-pane" id="film" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'video']);">
-		<xsl:for-each select="//dim:field[@element='relation' and @qualifier='youtube']">
+		<xsl:for-each select="//dim:field[@element='notes' and @qualifier='multimedia']">
+			<xsl:choose>
+				<xsl:when test="starts-with(., 'http')">
+					<a target="_blank">
+						<xsl:attribute name="href"><xsl:value-of select="."/></xsl:attribute>
+						<xsl:value-of select="."/>
+					</a>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+			<xsl:if test="count(following-sibling::dim:field[@element='notes'][@qualifier='multimedia']) != 0">
+
+                                 <xsl:text>&#160;</xsl:text>
+                        </xsl:if>
+		</xsl:for-each>
+		<xsl:for-each select="//dim:field[@element='relation' and @qualifier='multimedia']">
 		<div class="embed-responsive embed-responsive-16by9">
 		  <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0">
 			<xsl:attribute name="src"><xsl:value-of select="."/></xsl:attribute>
@@ -1861,18 +1912,15 @@
 				</span>
 				</div>
 				<div class="col-sm-5 link">
-				<xsl:if test="starts-with($metsData/dim:field[@element='identifier'][@qualifier='uri'], 'https://doi.org')">
 				<span class="pdoi">
 				
 					<a>
 					<xsl:attribute name="href">
 						<xsl:value-of select="$metsData/dim:field[@element='identifier' and @qualifier='uri']"/> 
-						<!-- <xsl:value-of select="concat('https://doi.org/', $metsData/dim:field[@element='identifier'][@qualifier='doi'])"/> -->
 					</xsl:attribute>
-					<xsl:value-of select="concat('https://doi.org/', $metsData/dim:field[@qualifier='doi'])"/>
+					<xsl:value-of select="$metsData/dim:field[@element='identifier' and @qualifier='uri']"/>
 					</a>
 				</span>
-				</xsl:if>
 				</div>
 				</li>
 			</xsl:for-each>

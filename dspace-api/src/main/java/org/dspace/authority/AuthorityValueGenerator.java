@@ -65,8 +65,10 @@ public class AuthorityValueGenerator {
     }
 
     protected static AuthorityValue generateRaw(String authorityKey, String content, String field) {
+	System.out.println("Key: " + authorityKey + " field: " + field);
         AuthorityValue nextValue;
         if (authorityKey != null && authorityKey.startsWith(AuthorityValueGenerator.GENERATE)) {
+	    System.out.print("Key not null ...");
             String[] split = StringUtils.split(authorityKey, SPLIT);
             String type = null, info = null;
             if (split.length > 0) {
@@ -77,7 +79,9 @@ public class AuthorityValueGenerator {
             }
             AuthorityValue authorityType = AuthorityValue.getAuthorityTypes().getEmptyAuthorityValue(type);
             nextValue = authorityType.newInstance(info);
+	   System.out.println("value: " + nextValue);
         } else {
+	    System.out.println("else... ");
             Map<String, AuthorityValue> fieldDefaults = AuthorityValue.getAuthorityTypes().getFieldDefaults();
             nextValue = fieldDefaults.get(field).newInstance(null);
             if (nextValue == null) {
@@ -89,6 +93,7 @@ public class AuthorityValueGenerator {
     }
 
     public static AuthorityValue update(AuthorityValue value) {
+	System.out.println("Authority: " + value);
         AuthorityValue updated = generateRaw(value.generateString(), value.getValue(), value.getField());
         if (updated != null) {
             updated.setId(value.getId());

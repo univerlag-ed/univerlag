@@ -2522,7 +2522,7 @@
 
     <!--   Start Sword Client  -->
     <message key="xmlui.swordclient.Navigation.context_head">Sword Kopie</message>
-    <message key="xmlui.swordclient.Navigation.context_copy">Dokument in Fein anderes Repositorium kopieren</message>
+    <message key="xmlui.swordclient.Navigation.context_copy">Dokument in ein anderes Repositorium kopieren</message>
     <message key="xmlui.swordclient.general.SwordCopy_trail">Sword Kopie</message>
     <message key="xmlui.swordclient.general.main_head">Kopie von Dokument: {0}</message>
 
