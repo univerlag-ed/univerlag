@@ -2884,7 +2884,7 @@ Ihr Team vom Universitätsverlag Göttingen </p>
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
             Der Universitätsverlag Göttingen arbeitet mit der Zielsetzung, wissenschaftliche Publikationen möglichst unbeschränkt der Öffentlichkeit zur Verfügung zu stellen und auch solche qualitätvollen Publikationen zu ermöglichen, die wegen ihrer inhaltlichen Spezialisierung auf dem kommerziellen Verlagsmarkt nur schwer veröffentlicht werden.<br />
-		Aufgrund der Corona Pandemie erfolgt die Beratung unserer Autorinnen und Autoren weiterhin ausschließlich per E-Mail.		
+	    Die Beratung unserer Autorinnen und Autoren erfolgt wegen der Corona-Pandemie zwar überwiegend per E-Mail, aber es können auch gerne Termine für eine telefonische Beratung vereinbart werden. Wir freuen uns auf Ihre Anfrage.
         </p>
 <!--	<div class="alert alert-info">
 	<p>Sehr geehrte Kundinnen und Kunden,</p>
@@ -2905,7 +2905,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->Aktuelles</a>
+                <a class="bigger" href="/news"><span class="new">!</span>Aktuelles</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right bigger" href="/info/publishing-catalog">Verlagskatalog</a>
@@ -3158,7 +3158,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/65485.html"> <span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Elfriede Hermann<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/152352.html"> <span class="glyphicon glyphicon-home"></span></a></p>
                 <p>Prof. Dr. Gabriele Rosenthal <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sh/28238.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p>
             </div>
             <div class="col-sm-6">
@@ -4838,12 +4838,24 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.static.news">
         <h2 class="first-page-header">Aktuelles <a class="btn btn-default btn-sm pull-right" href="/news-archive">Archiv</a></h2>
         <div class="news">
+	
+<h3 class="list-item-header">Zum Tod von Prof. Dr. h.c. Stephan Klasen<span class="pull-right"><small>Nov. 2020</small></span></h3>
+            <p class="strech-top">
+                Der Universitätsverlag gedenkt seines Autors und Herausgebers <a href="//uni-goettingen.de/de/633409.html" class="extern-link" target="_blank">Prof. Dr. h.c. Stephan Klasen, Ph.D.</a>, der am 27. Oktober 2020 im Alter von 54 Jahren nach langer und schwerer Krankheit verstorben ist.
+			</p>        		
+
+<h3 class="list-item-header">Friedenspreis des Deutschen Buchhandels an Amartya Sen<span class="pull-right"><small>Okt. 2020</small></span></h3>
+	<p class="strech-top">
+		Der Stiftungsrat des Börsenvereins hat den indischen Wirtschaftswissenschaftler und Philosophen Amartya Sen zum Friedenspreisträger des Jahres 2020 gewählt. Die <a href="//www.friedenspreis-des-deutschen-buchhandels.de/alle-preistraeger-seit-1950/2020-2029/amartya-sen" class="extern-link" target="_blank">Verleihung fand am Sonntag, 18. Oktober 2020, in der Frankfurter Paulskirche</a> statt. <br />
+		Anlässlich der Verleihung der Ehrendoktorwürde der Wirtschaftswissenschaftlichen Fakultät der Georg-August-Universität Göttingen im Jahr 2005 veröffentlichte der Universitätsverlag Göttingen den Festvortrag Amarty Sens sowie die Laudatio, die der kürzlich verstorbene Prof. Dr. Stephan Klasen hielt: <a href="//doi.org/10.17875/gup2006-202" class="extern-link" target="_blank">"Perspectives on the Economic and Human Development of India and China"</a>.
+		</p>  
+		
 		
 <h3 class="list-item-header">Auszeichnung für Sozialwissenschaftler der Georg-August-Universität Göttingen<span class="pull-right"><small>Sept. 2020</small></span></h3>
             <p class="strech-top">
                 <a href="//www.uni-goettingen.de/de/130884.html" class="extern-link" target="_blank">Dr. Johannes Becker </a>ist der aktuelle Preisträger des Thomas A. Herz-Preises für qualitative Sozialforschung der <a href="//soziologie.de/dgs/preise/thomas-a-herz-preis" class="extern-link" target="_blank">Deutschen Gesellschaft für Soziologie (DGS)</a>.
 <br />
-Im Oktober 2020 erscheint das von ihm und seiner Kollegin Eva Bahl herausgegebene Buch "Global Processes of Flight and Migration - the Explanatory Power of Case Studies" im Universitätsverlag Göttingen. 
+Gerade ist das von ihm und seiner Kollegin Eva Bahl herausgegebene Buch <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-454-3">"Global Processes of Flight and Migration - the Explanatory Power of Case Studies"</a> im Universitätsverlag Göttingen erschienen.
 <br />
 Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenthal herausgegebenen Band <a href="//www.univerlag.uni-goettingen.de/handle/3/isbn-978-3-86395-286-0">"Established and Outsiders at the Same Time, Self-Images and We-Images of Palestinians in the West Bank and in Israel"</a> enthalten.
             </p>        		
@@ -5516,4 +5528,6 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.chapter.pages">Seiten</message>
     <message key="xmlui.item.contributors">Beitragende</message>
     <message key="xmlui.item.chapter.of">von</message>
+
+    <message key="xmlui.dri2xhtml.METS-1.0.item-aboutauthors">Über die Autoren</message>
 </catalogue>

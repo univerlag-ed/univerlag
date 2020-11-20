@@ -5423,4 +5423,5 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.contributors">Contributors</message>
     <message key="xmlui.item.chapter.of">of</message>
 
+    <message key="xmlui.dri2xhtml.METS-1.0.item-aboutauthors">About the authors</message>
 </catalogue>
