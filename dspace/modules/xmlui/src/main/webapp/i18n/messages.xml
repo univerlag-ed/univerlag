@@ -5524,10 +5524,12 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.dri2xhtml.METS-1.0.item-statistics">Statistiken</message>
 
     <message key="xmlui.item.toc.list">Inhaltsverzeichnis</message>
+    <message key="xmlui.item.article.list">Beiträge</message>
     <message key="xmlui.item.chapter">Kapitel</message>
     <message key="xmlui.item.chapter.pages">Seiten</message>
     <message key="xmlui.item.contributors">Beitragende</message>
     <message key="xmlui.item.chapter.of">von</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.item-aboutauthors">Über die Autoren</message>
+    <message key="xmlui.dri2xhtml.item.litref">Literatur</message>
 </catalogue>
