@@ -5419,7 +5419,9 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.item.toc.list">Table of contents</message>
     <message key="xmlui.item.article.list">Articles</message>
+    <message key="xmlui.item.chapter.list">Chapters</message>
     <message key="xmlui.item.chapter">Chapter</message>
+    <message key="xmlui.item.part">Article</message>
     <message key="xmlui.item.chapter.pages">Pages</message>
     <message key="xmlui.item.contributors">Contributors</message>
     <message key="xmlui.item.chapter.of">of</message>

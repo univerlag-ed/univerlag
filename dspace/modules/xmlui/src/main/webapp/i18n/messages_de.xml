@@ -5525,7 +5525,9 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.item.toc.list">Inhaltsverzeichnis</message>
     <message key="xmlui.item.article.list">Beiträge</message>
+    <message key="xmlui.item.chapter.list">Kapitel</message>
     <message key="xmlui.item.chapter">Kapitel</message>
+    <message key="xmlui.item.part">Beitrag</message>
     <message key="xmlui.item.chapter.pages">Seiten</message>
     <message key="xmlui.item.contributors">Beitragende</message>
     <message key="xmlui.item.chapter.of">von</message>
