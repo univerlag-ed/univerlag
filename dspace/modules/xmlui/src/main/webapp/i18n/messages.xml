@@ -1,3 +1,4 @@
+                </div>
 <!--
 
     The contents of this file are subject to the license and copyright
@@ -2879,6 +2880,15 @@ Ihr Team vom Universitätsverlag Göttingen </p>
 
 	</div> -->
 
+	<div class="highlight news">
+        <span id="cm">&#127876;</span>
+        <div class="right">
+    <h4>Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,</h4>
+    der Universitätsverlag macht ab dem 21. Dezember 2020 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
+Ab dem 11. Januar 2021 sind wir wieder für Sie da.
+Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
+	</div>
+ </div>
 
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
@@ -3879,7 +3889,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
             <p>Die Niedersächsische Staats- und Universitätsbibliothek Göttingen (SUB Göttingen) wird vertreten durch den leitenden Direktor <strong>Prof. Dr. Wolfram Horstmann</strong>.</p>
 
-            <p>Die SUB Göttingen ist als zentrale Einrichtung eine organisatorische, rechtlich nicht selbständige Einheit der Georg-August-Universität Göttingen. Die Georg-August-Universität Göttingen ist eine Körperschaft des öffentlichen Rechts. Sie wird durch Prof. Dr. Reinhard Jahn gesetzlich vertreten, der beauftragt ist, das Amt des Präsidenten wahrzunehmen. 
+            <p>Die SUB Göttingen ist als zentrale Einrichtung eine organisatorische, rechtlich nicht selbständige Einheit der Georg-August-Universität Göttingen. Die Georg-August-Universität Göttingen ist eine Körperschaft des öffentlichen Rechts. Sie wird durch die Präsidentin (kommissarisch) Dr. Valérie Schüller (Vizepräsidentin für Finanzen und Personal) gesetzlich vertreten. 
             </p>
 
             <h3>Redaktionsverantwortliche</h3>
@@ -5332,7 +5342,7 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
 <p>
  <p class="address"><strong>Name und Kontaktdaten der Verantwortlichen</strong></p>
   <p class="address">Der Präsident</p>
-  <p class="address">Prof. Dr. Reinhard Jahn</p>
+  <p class="address">Dr. Valérie Schüller</p>
     <p class="address">Wilhelmsplatz 1</p>
       <p class="address">37073 Göttingen</p>
 <p class="address">
