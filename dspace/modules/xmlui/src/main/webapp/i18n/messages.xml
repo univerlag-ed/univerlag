@@ -1,4 +1,3 @@
-                </div>
 <!--
 
     The contents of this file are subject to the license and copyright
@@ -2887,9 +2886,8 @@ Ihr Team vom Universitätsverlag Göttingen </p>
     der Universitätsverlag macht ab dem 21. Dezember 2020 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
 Ab dem 11. Januar 2021 sind wir wieder für Sie da.
 Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
-	</div>
- </div>
-
+</div>
+</div>
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
@@ -5535,6 +5533,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.item.toc.list">Inhaltsverzeichnis</message>
     <message key="xmlui.item.article.list">Beiträge</message>
+    <message key="xmlui.item.complete.article.list">Vollständige Beiträge</message>
     <message key="xmlui.item.chapter.list">Kapitel</message>
     <message key="xmlui.item.chapter">Kapitel</message>
     <message key="xmlui.item.part">Beitrag</message>

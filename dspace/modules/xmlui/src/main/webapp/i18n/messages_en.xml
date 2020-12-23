@@ -2846,6 +2846,7 @@ Thank you for your understanding. We wish you a delightful Christmas season and 
 Göttingen University Press.
 </div>
                 </div>
+
         <p class="paragraph justify">
             Göttingen University Press is the self-contained publishing facility of the Georg August University, Göttingen.
             We publish documents from scholars who are associated with the Göttingen University.
@@ -5429,6 +5430,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.item.toc.list">Table of contents</message>
     <message key="xmlui.item.article.list">Articles</message>
+    <message key="xmlui.item.complete.article.list">Complete Articles</message>
     <message key="xmlui.item.chapter.list">Chapters</message>
     <message key="xmlui.item.chapter">Chapter</message>
     <message key="xmlui.item.part">Article</message>
