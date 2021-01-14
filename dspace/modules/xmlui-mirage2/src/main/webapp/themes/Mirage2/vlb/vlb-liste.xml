@@ -1,0 +1,770 @@
+<items>
+<item id="1351" isbn="978-3-86395-470-3" DOI="10.17875/gup2020-1351" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="990" isbn="978-3-86395-272-3" DOI="10.17875/gup2016-990" status="lieferbar" format="Softcover, 17x24"/>
+<item id="444" isbn="978-3-940344-26-7" DOI="10.17875/gup2008-444" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="290" isbn="978-3-86395-117-7" DOI="10.17875/gup2013-290" status="lieferbar" format="Softcover, 17x24"/>
+<item id="490" isbn="978-3-941875-52-4" DOI="10.17875/gup2010-490" status="lieferbar" format="Softcover, 17x24"/>
+<item id="35" isbn="978-3-940344-71-7" DOI="10.17875/gup2009-35" status="lieferbar" format="Softcover, 17x24"/>
+<item id="404" isbn="978-3-86395-107-8" DOI="10.17875/gup2013-404" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="79" isbn="978-3-86395-023-1" DOI="10.17875/gup2011-79" status="lieferbar" format="Softcover, 17x24"/>
+<item id="169" isbn="978-3-940344-06-9" DOI="10.17875/gup2007-169" status="lieferbar" format="Softcover, 17x24"/>
+<item id="985" isbn="978-3-86395-273-0" DOI="10.17875/gup2016-985" status="lieferbar" format="Softcover, 17x24"/>
+<item id="479" isbn="978-3-86395-144-3" DOI="10.17875/gup2013-479" status="lieferbar" format="Softcover, 17x24"/>
+<item id="115" isbn="978-3-938616-45-1" DOI="10.17875/gup2006-115" status="lieferbar" format="Softcover, 17x24"/>
+<item id="245" isbn="978-3-930457-42-7" DOI="10.17875/gup2004-245" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="1056" isbn="978-3-86395-333-1" DOI="10.17875/gup2018-1056" status="lieferbar" format="Softcover, 17x24"/>
+<item id="122" isbn="978-3-86395-003-3" DOI="10.17875/gup2011-122" status="nicht lieferbar" format="Hardcover,  17x24"/>
+<item id="379" isbn="978-3-938616-56-7" DOI="10.17875/gup2006-379" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="451" isbn="978-3-940344-86-1" DOI="10.17875/gup2009-451" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="821" isbn="978-3-86395-221-1" DOI="10.17875/gup2015-821" status="lieferbar" format="Softcover, 17x24"/>
+<item id="645" isbn="978-3-930457-55-7" DOI="10.17875/gup2004-645" status="lieferbar" format="Softcover, 17x24"/>
+<item id="648" isbn="978-3-930457-79-3" DOI="10.17875/gup2006-648" status="lieferbar" format="Hardcover, 21x27"/>
+<item id="374" isbn="978-3-930457-48-9" DOI="10.17875/gup2005-374" status="lieferbar" format="Softcover, 17x24"/>
+<item id="163" isbn="978-3-938616-80-2" DOI="10.17875/gup2007-163" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1016" isbn="978-3-86395-302-7" DOI="10.17875/gup2017-1016" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="71" isbn="978-3-938616-11-6" DOI="10.17875/gup2005-71" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="893" isbn="978-3-86395-250-1" DOI="10.17875/gup2016-893" status="lieferbar" format="Softcover, 20x20"/>
+<item id="741" isbn="978-3-86395-138-2" DOI="10.17875/gup2014-741" status="lieferbar" format="Softcover, 17x24"/>
+<item id="507" isbn="978-3-941875-00-5" DOI="10.17875/gup2009-507" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1015" isbn="978-3-86395-298-3" DOI="10.17875/gup2017-1015" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="1309" isbn="978-3-86395-453-6" DOI="10.17875/gup2020-1309" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1226" isbn="978-3-86395-428-4" DOI="10.17875/gup2019-1226" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="1010" isbn="978-3-86395-299-0" DOI="10.17875/gup2017-1010" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="36" isbn="978-3-940344-78-6" DOI="10.17875/gup2009-36" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="174" isbn="978-3-940344-48-9" DOI="10.17875/gup2008-174" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1043" isbn="978-3-86395-304-1" DOI="10.17875/gup2017-1043" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1117" isbn="978-3-86395-391-1" DOI="10.17875/gup2018-1117" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1329" isbn="978-3-86395-460-4" DOI="10.17875/gup2020-1329" status="lieferbar" format="Softcover, 17x24"/>
+<item id="383" isbn="978-3-940344-34-2" DOI="10.17875/gup2008-383" status="lieferbar" format="Softcover, 17x24"/>
+<item id="461" isbn="978-3-930457-31-1" DOI="10.17875/gup2003-461" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1053" isbn="978-3-86395-329-4" DOI="10.17875/gup2017-1053" status="lieferbar" format="Softcover, 17x24"/>
+<item id="180" isbn="978-3-941875-01-2" DOI="10.17875/gup2009-180" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="87" isbn="978-3-86395-092-7" DOI="10.17875/gup2012-87" status="lieferbar" format="Softcover, 17x24"/>
+<item id="128" isbn="978-3-86395-012-5" DOI="10.17875/gup2011-128" status="lieferbar" format="Softcover, 17x24"/>
+<item id="112" isbn="978-3-938616-08-6" DOI="10.17875/gup2005-112" status="lieferbar" format="Softcover, 17x24"/>
+<item id="663" isbn="978-3-940344-05-2" DOI="10.17875/gup2007-663" status="lieferbar" format="Softcover, 17x24"/>
+<item id="282" isbn="978-3-941875-94-4" DOI="10.17875/gup2011-282" status="lieferbar" format="Softcover, 17x24"/>
+<item id="64" isbn="978-3-941875-32-6" DOI="10.17875/gup2010-64" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="392" isbn="978-3-940344-00-7" DOI="10.17875/gup2007-392" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1337" isbn="978-3-86395-466-6" DOI="10.17875/gup2020-1337" status="lieferbar" format="Softcover, 17x24"/>
+<item id="277" isbn="978-3-941875-73-9" DOI="10.17875/gup2010-277" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="278" isbn="978-3-941875-76-0" DOI="10.17875/gup2010-278" status="lieferbar" format="Softcover, 17x24"/>
+<item id="513" isbn="978-3-940344-01-4" DOI="10.17875/gup2007-513" status="lieferbar" format="Softcover, 14,8x21"/>
+<item id="33" isbn="978-3-940344-46-5" DOI="10.17875/gup2008-33" status="lieferbar" format="Softcover, 17x24"/>
+<item id="662" isbn="978-3-938616-44-4" DOI="10.17875/gup2005-662" status="lieferbar" format="Softcover, 17x24"/>
+<item id="999" isbn="978-3-86395-294-5" DOI="10.17875/gup2016-999" status="lieferbar" format="Softcover, 17x24"/>
+<item id="242" isbn="978-3-941875-98-2" DOI="10.17875/gup2011-242" status="lieferbar" format="Softcover, 17x24"/>
+<item id="101" isbn="978-3-941875-36-4" DOI="10.17875/gup2009-101" status="lieferbar" format="Softcover, 17x24"/>
+<item id="993" isbn="978-3-86395-283-9" DOI="10.17875/gup2016-993" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="454" isbn="978-3-940344-90-8" DOI="10.17875/gup2009-454" status="lieferbar" format="Softcover, 17x24"/>
+<item id="269" isbn="978-3-940344-44-1" DOI="10.17875/gup2008-269" status="lieferbar" format="Softcover, 17x24"/>
+<item id="776" isbn="978-3-86395-176-4" DOI="10.17875/gup2014-776" status="lieferbar" format="Softcover, 17x24"/>
+<item id="698" isbn="978-3-86395-022-4" DOI="10.17875/gup2012-698" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1228" isbn="978-3-86395-432-1" DOI="10.17875/gup2019-1228" status="lieferbar" format="Softcover, 17x24"/>
+<item id="205" isbn="978-3-86395-113-9" DOI="10.17875/gup2013-205" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1096" isbn="978-3-86395-364-5" DOI="10.17875/gup2018-1096" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1128" isbn="978-3-86395-389-8" DOI="10.17875/gup2019-1128" status="lieferbar" format="Softcover, 17x24"/>
+<item id="119" isbn="978-3-938616-67-3" DOI="10.17875/gup2006-119" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="399" isbn="978-3-86395-045-3" DOI="10.17875/gup2012-399" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="355" isbn="978-3-930457-75-5" DOI="10.17875/gup2005-355" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="851" isbn="978-3-86395-225-9" DOI="10.17875/gup2015-851" status="lieferbar" format="Softcover, 17x24"/>
+<item id="151" isbn="978-3-86395-096-5" DOI="10.17875/gup2013-151" status="lieferbar" format="Softcover, 17x24"/>
+<item id="48" isbn="978-3-938616-17-8" DOI="10.17875/gup2005-48" status="lieferbar" format="Softcover, 17x24"/>
+<item id="448" isbn="978-3-941875-24-1" DOI="10.17875/gup2009-448" status="lieferbar" format="Softcover, 17x24"/>
+<item id="957" isbn="978-3-86395-263-1" DOI="10.17875/gup2016-957" status="lieferbar" format="Softcover, 17x24"/>
+<item id="123" isbn="978-3-86395-004-0" DOI="10.17875/gup2011-123" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="78" isbn="978-3-86395-015-6" DOI="10.17875/gup2011-78" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1244" isbn="978-3-86395-423-9" DOI="10.17875/gup2019-1244" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1124" isbn="978-3-86395-383-6" DOI="10.17875/gup2018-1124" status="lieferbar" format="Softcover, 17x24"/>
+<item id="955" isbn="978-3-86395-256-3" DOI="10.17875/gup2016-955" status="lieferbar" format="Softcover, 17x24"/>
+<item id="949" isbn="978-3-86395-254-9" DOI="10.17875/gup2016-949" status="lieferbar" format="Softcover, 17x24"/>
+<item id="475" isbn="978-3-86395-016-3" DOI="10.17875/gup2011-475" status="lieferbar" format="Softcover, 17x24"/>
+<item id="212" isbn="978-3-940344-28-1" DOI="10.17875/gup2008-212" status="lieferbar" format="Softcover, 17x24"/>
+<item id="175" isbn="978-3-940344-54-0" DOI="10.17875/gup2008-175" status="lieferbar" format="Softcover, 17x24"/>
+<item id="254" isbn="978-3-86395-055-2" DOI="10.17875/gup2012-254" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1048" isbn="978-3-86395-327-0" DOI="10.17875/gup2017-1048" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="771" isbn="978-3-86395-163-4" DOI="10.17875/gup2014-771" status="lieferbar" format="Softcover, 17x24"/>
+<item id="998" isbn="978-3-86395-267-9" DOI="10.17875/gup2016-998" status="lieferbar" format="Softcover, 17x24"/>
+<item id="890" isbn="978-3-86395-244-0" DOI="10.17875/gup2015-890" status="lieferbar" format="Softcover, 17x24"/>
+<item id="6" isbn="978-3-86395-125-2" DOI="10.17875/gup2013-6" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="55" isbn="978-3-86395-094-1" DOI="10.17875/gup2012-55" status="lieferbar" format="Softcover, 17x24"/>
+<item id="86" isbn="978-3-86395-074-3" DOI="10.17875/gup2012-86" status="lieferbar" format="Softcover, 17x24"/>
+<item id="495" isbn="978-3-86395-139-9" DOI="10.17875/gup2013-495" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="956" isbn="978-3-86395-212-9" DOI="10.17875/gup2016-956" status="lieferbar" format="Softcover, 17x24"/>
+<item id="185" isbn="978-3-941875-29-6" DOI="10.17875/gup2010-185" status="lieferbar" format="Softcover, 17x24"/>
+<item id="778" isbn="978-3-86395-177-1" DOI="10.17875/gup2014-778" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1004" isbn="978-3-86395-208-2" DOI="10.17875/gup2017-1004" status="lieferbar" format="Softcover, 17x24"/>
+<item id="285" isbn="978-3-930457-71-7" DOI="10.17875/gup2005-285" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="838" isbn="978-3-86395-238-9" DOI="10.17875/gup2015-838" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="360" isbn="978-3-86395-050-7" DOI="10.17875/gup2012-360" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="121" isbn="978-3-86395-002-6" DOI="10.17875/gup2011-121" status="lieferbar" format="Softcover, 17x24"/>
+<item id="380" isbn="978-3-938616-69-7" DOI="10.17875/gup2007-380" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="190" isbn="978-3-941875-77-7" DOI="10.17875/gup2011-190" status="lieferbar" format="Softcover, 17x24"/>
+<item id="411" isbn="978-3-86395-077-4" DOI="10.17875/gup2013-411" status="lieferbar" format="Softcover, 20x20"/>
+<item id="516" isbn="978-3-86395-090-3" DOI="10.17875/gup2013-516" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1017" isbn="978-3-86395-307-2" DOI="10.17875/gup2017-1017" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1143" isbn="978-3-86395-401-7" DOI="10.17875/gup2019-1143" status="lieferbar" format="Softcover, 17x24"/>
+<item id="367" isbn="978-3-930457-29-8" DOI="10.17875/gup2004-367" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="110" isbn="978-3-930457-74-8" DOI="10.17875/gup2005-110" status="lieferbar" format="Softcover, 17x24"/>
+<item id="636" isbn="978-3-930457-24-3" DOI="10.17875/gup2002-636" status="lieferbar" format="Softcover, 17x24"/>
+<item id="265" isbn="978-3-940344-31-1" DOI="10.17875/gup2008-265" status="lieferbar" format="Softcover, 17x24"/>
+<item id="62" isbn="978-3-940344-56-4" DOI="10.17875/gup2008-62" status="lieferbar" format="Softcover, 17x24"/>
+<item id="200" isbn="978-3-938616-36-9" DOI="10.17875/gup2006-200" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="232" isbn="978-3-930457-60-1" DOI="10.17875/gup2004-232" status="lieferbar" format="Softcover, 17x24"/>
+<item id="906" isbn="978-3-86395-214-3" DOI="10.17875/gup2016-906" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1105" isbn="978-3-86395-369-0" DOI="10.17875/gup2018-1105" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1353" isbn="978-3-86395-477-2" DOI="10.17875/gup2020-1353" status="lieferbar" format="Softcover, 17x24"/>
+<item id="85" isbn="978-3-86395-065-1" DOI="10.17875/gup2012-85" status="lieferbar" format="Softcover, 17x24"/>
+<item id="406" isbn="978-3-86395-162-7" DOI="10.17875/gup2014-406" status="lieferbar" format="Softcover, 17x24"/>
+<item id="432" isbn="978-3-940344-13-7" DOI="10.17875/gup2008-432" status="lieferbar" format="Softcover, 17x24"/>
+<item id="260" isbn="978-3-938616-92-5" DOI="10.17875/gup2007-260" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1340" isbn="978-3-86395-472-7" DOI="10.17875/gup2020-1340" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1256" isbn="978-3-86395-445-1" DOI="10.17875/gup2020-1256" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1178" isbn="978-3-86395-420-8" DOI="10.17875/gup2019-1178" status="lieferbar" format="Softcover, 17x24"/>
+<item id="407" isbn="978-3-941875-48-7" DOI="10.17875/gup2010-407" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1341" isbn="978-3-86395-463-5" DOI="10.17875/gup2020-1341" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1101" isbn="978-3-86395-371-3" DOI="10.17875/gup2018-1101" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1167" isbn="978-3-86395-413-0" DOI="10.17875/gup2019-1167" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="1114" isbn="978-3-86395-376-8" DOI="10.17875/gup2018-1114" status="lieferbar" format="Softcover, 17x24"/>
+<item id="630" isbn="978-3-930457-16-8" DOI="10.17875/gup2001-630" status="lieferbar" format="Softcover, 17x24"/>
+<item id="194" isbn="978-3-941875-92-0" DOI="10.17875/gup2011-194" status="lieferbar" format="Softcover, 17x24"/>
+<item id="790" isbn="978-3-86395-193-1" DOI="10.17875/gup2015-790" status="lieferbar" format="Softcover, 17x24"/>
+<item id="416" isbn="978-3-940344-12-0" DOI="10.17875/gup2008-416" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1081" isbn="978-3-86395-317-1" DOI="10.17875/gup2018-1081" status="lieferbar" format="Softcover, 17x24"/>
+<item id="99" isbn="978-3-940344-73-1" DOI="10.17875/gup2009-99" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="514" isbn="978-3-930457-37-3" DOI="10.17875/gup2004-514" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1090" isbn="978-3-86395-360-7" DOI="10.17875/gup2018-1090" status="lieferbar" format="Softcover, 17x24"/>
+<item id="130" isbn="978-3-86395-018-7" DOI="10.17875/gup2011-130" status="lieferbar" format="Softcover, 17x24"/>
+<item id="791" isbn="978-3-86395-187-0" DOI="10.17875/gup2014-791" status="lieferbar" format="Softcover, 17x24"/>
+<item id="764" isbn="978-3-86395-168-9" DOI="10.17875/gup2014-764" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="804" isbn="978-3-86395-194-8" DOI="10.17875/gup2015-804" status="lieferbar" format="Softcover, 17x24"/>
+<item id="354" isbn="978-3-940344-16-8" DOI="10.17875/gup2008-354" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1208" isbn="978-3-86395-435-2" DOI="10.17875/gup2019-1208" status="lieferbar" format="Softcover, 17x24"/>
+<item id="992" isbn="978-3-86395-291-4" DOI="10.17875/gup2016-992" status="lieferbar" format="Softcover, 17x24"/>
+<item id="318" isbn="978-3-941875-07-4" DOI="10.17875/gup2009-318" status="lieferbar" format="Softcover, 17x24"/>
+<item id="321" isbn="978-3-941875-51-7" DOI="10.17875/gup2010-321" status="lieferbar" format="Softcover, 17x24"/>
+<item id="186" isbn="978-3-941875-37-1" DOI="10.17875/gup2010-186" status="lieferbar" format="Softcover, 17x24"/>
+<item id="268" isbn="978-3-940344-40-3" DOI="10.17875/gup2008-268" status="lieferbar" format="Softcover, 17x24"/>
+<item id="438" isbn="978-3-941875-62-3" DOI="10.17875/gup2010-438" status="lieferbar" format="Softcover, 17x24"/>
+<item id="402" isbn="978-3-86395-083-5" DOI="10.17875/gup2012-402" status="lieferbar" format="Hardcover, DIN A4"/>
+<item id="469" isbn="978-3-938616-54-3" DOI="10.17875/gup2006-469" status="nicht lieferbar" format="Softcover, DIN A5"/>
+<item id="274" isbn="978-3-941875-25-8" DOI="10.17875/gup2009-274" status="lieferbar" format="Softcover, 17x24"/>
+<item id="452" isbn="978-3-940344-88-5" DOI="10.17875/gup2009-452" status="lieferbar" format="Softcover, 17x24"/>
+<item id="718" isbn="978-3-941875-56-2" DOI="10.17875/gup2010-718" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1127" isbn="978-3-86395-384-3" DOI="10.17875/gup2018-1127" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1343" isbn="978-3-86395-471-0" DOI="10.17875/gup2020-1343" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1155" isbn="978-3-86395-405-5" DOI="10.17875/gup2019-1155" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1046" isbn="978-3-86395-323-2" DOI="10.17875/gup2017-1046" status="lieferbar" format="Softcover, 17x24"/>
+<item id="160" isbn="978-3-86395-147-4" DOI="10.17875/gup2013-160" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1146" isbn="978-3-86395-403-1" DOI="10.17875/gup2019-1146" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="512" isbn="978-3-938616-99-4" DOI="10.17875/gup2007-512" status="lieferbar" format="Softcover, 17x24"/>
+<item id="45" isbn="978-3-930457-64-9" DOI="10.17875/gup2004-45" status="lieferbar" format="Softcover, 17x24"/>
+<item id="372" isbn="978-3-938616-32-1" DOI="10.17875/gup-2005-372" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1034" isbn="978-3-86395-219-8" DOI="10.17875/gup2017-1034" status="lieferbar" format="Softcover, 17x24"/>
+<item id="822" isbn="978-3-86395-218-1" DOI="10.17875/gup2015-822" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1049" isbn="978-3-86395-325-6" DOI="10.17875/gup2017-1049" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1335" isbn="978-3-86395-465-9" DOI="10.17875/gup2020-1335" status="lieferbar" format="Softcover, 17x24"/>
+<item id="193" isbn="978-3-941875-82-1" DOI="10.17875/gup2010-193" status="lieferbar" format="Softcover, 17x24"/>
+<item id="80" isbn="978-3-86395-036-1" DOI="10.17875/gup2011-80" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1204" isbn="978-3-86395-426-0" DOI="10.17875/gup2019-1204" status="lieferbar" format="Softcover, 17x24"/>
+<item id="478" isbn="978-3-86395-076-7" DOI="10.17875/gup2012-478" status="lieferbar" format="Softcover, 17x24"/>
+<item id="468" isbn="978-3-930457-50-2" DOI="10.17875/gup2004-468" status="lieferbar" format="Softcover, 17x24"/>
+<item id="487" isbn="978-3-941875-12-8" DOI="10.17875/gup2009-487" status="lieferbar" format="Softcover, 17x24"/>
+<item id="378" isbn="978-3-930457-41-0" DOI="10.17875/gup2004-378" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1169" isbn="978-3-86395-414-7" DOI="10.17875/gup2019-1169" status="lieferbar" format="Softcover, 17x24"/>
+<item id="213" isbn="978-3-940344-67-0" DOI="10.17875/gup2009-213" status="lieferbar" format="Softcover, 17x24"/>
+<item id="286" isbn="978-3-938616-37-6" DOI="10.17875/gup2006-286" status="lieferbar" format="Softcover, 17x24"/>
+<item id="299" isbn="978-3-941875-71-5" DOI="10.17875/gup2010-299" status="lieferbar" format="Softcover, 17x24"/>
+<item id="848" isbn="978-3-86395-241-9" DOI="10.17875/gup2015-848" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1038" isbn="978-3-86395-312-6" DOI="10.17875/gup2017-1038" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1164" isbn="978-3-86395-372-0" DOI="10.17875/gup2019-1164" status="lieferbar" format="Softcover, 17x24"/>
+<item id="886" isbn="978-3-86395-249-5" DOI="10.17875/gup2015-886" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="433" isbn="978-3-86395-033-0" DOI="10.17875/gup2012-433" status="lieferbar" format="Softcover, 17x24"/>
+<item id="442" isbn="978-3-86395-095-8" DOI="10.17875/gup2012-442" status="lieferbar" format="Softcover, 17x24"/>
+<item id="505" isbn="978-3-940344-17-5" DOI="10.17875/gup2008-505" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1304" isbn="978-3-86395-268-6" DOI="10.17875/gup2020-1304" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1242" isbn="978-3-86395-436-9" DOI="10.17875/gup2019-1242" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1251" isbn="978-3-86395-415-4" DOI="10.17875/gup2020-1251" status="lieferbar" format="Softcover, 17x24"/>
+<item id="291" isbn="978-3-86395-126-9" DOI="10.17875/gup2013-291" status="lieferbar" format="Softcover, 17x24"/>
+<item id="629" isbn="978-3-930457-61-8" DOI="10.17875/gup2004-629" status="lieferbar" format="Softcover, 17x24"/>
+<item id="639" isbn="978-3-930457-39-7" DOI="10.17875/gup2004-639" status="lieferbar" format="Softcover, 17x24"/>
+<item id="638" isbn="978-3-930457-36-6" DOI="10.17875/gup2004-638" status="lieferbar" format="Softcover, 17x24"/>
+<item id="637" isbn="978-3-930457-27-4" DOI="10.17875/gup2002-637" status="lieferbar" format="Softcover, 17x24"/>
+<item id="143" isbn="978-3-86395-071-2" DOI="10.17875/gup2012-143" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1305" isbn="978-3-86395-450-5" DOI="10.17875/gup2020-1305" status="lieferbar" format="Softcover, 17x24"/>
+<item id="111" isbn="978-3-938616-06-2" DOI="10.17875/gup2005-111" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="403" isbn="978-3-86395-102-3" DOI="10.17875/gup2013-403" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="95" isbn="978-3-930457-72-4" DOI="10.17875/gup2005-95" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="106" isbn="978-3-941875-75-3" DOI="10.17875/gup2010-106" status="lieferbar" format="Softcover, 17x24"/>
+<item id="75" isbn="978-3-86395-008-8" DOI="10.17875/gup2011-75" status="lieferbar" format="Softcover, 17x24"/>
+<item id="995" isbn="978-3-86395-276-1" DOI="10.17875/gup2016-995" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1310" isbn="978-3-86395-454-3" DOI="10.17875/gup2020-1310" status="lieferbar" format="Softcover, 17x24"/>
+<item id="66" isbn="978-3-940344-36-6" DOI="10.17875/gup2008-66" status="nicht lieferbar" format="Softcover 17x24"/>
+<item id="231" isbn="978-3-86395-141-2" DOI="10.17875/gup2013-231" status="lieferbar" format="Softcover, 17x24"/>
+<item id="159" isbn="978-3-86395-136-8" DOI="10.17875/gup2013-159" status="lieferbar" format="Softcover, 17x24"/>
+<item id="706" isbn="978-3-940344-23-6" DOI="10.17875/gup2008-706" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1306" isbn="978-3-86395-448-2" DOI="10.17875/gup2020-1306" status="lieferbar" format="Softcover, 17x24"/>
+<item id="34" isbn="978-3-940344-47-2" DOI="10.17875/gup2008-34" status="lieferbar" format="Softcover, 17x24"/>
+<item id="757" isbn="978-3-86395-149-8" DOI="10.17875/gup2014-757" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1033" isbn="978-3-86395-313-3" DOI="10.17875/gup2017-1033" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1036" isbn="978-3-86395-309-6" DOI="10.17875/gup2017-1036" status="lieferbar" format="Softcover, 17x24"/>
+<item id="37" isbn="978-3-941875-27-2" DOI="10.17875/gup2009-37" status="lieferbar" format="Softcover, 17x24"/>
+<item id="298" isbn="978-3-940344-33-5" DOI="10.17875/gup2008-298" status="lieferbar" format="Softcover, 17x24"/>
+<item id="311" isbn="978-3-940344-38-0" DOI="10.17875/gup2008-311" status="lieferbar" format="Softcover, 17x24"/>
+<item id="103" isbn="978-3-941875-41-8" DOI="10.17875/gup2009-103" status="lieferbar" format="Softcover, 17x24"/>
+<item id="668" isbn="978-3-938616-02-4" DOI="10.17875/gup2005-668" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="1165" isbn="978-3-86395-411-6" DOI="10.17875/gup2019-1165" status="lieferbar" format="Softcover, 17x24"/>
+<item id="508" isbn="978-3-941875-11-1" DOI="10.17875/gup2009-508" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="885" isbn="978-3-86395-233-4" DOI="10.17875/gup2015-885" status="lieferbar" format="Softcover, 17x24"/>
+<item id="39" isbn="978-3-941875-72-2" DOI="10.17875/gup2010-39" status="lieferbar" format="Softcover, 17x24"/>
+<item id="460" isbn="978-3-86395-085-9" DOI="10.17875/gup2014-460" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="157" isbn="978-3-86395-123-8" DOI="10.17875/gup2013-157" status="lieferbar" format="Softcover, 17x24"/>
+<item id="789" isbn="978-3-86395-186-3" DOI="10.17875/gup2014-789" status="lieferbar" format="Softcover, 17x24"/>
+<item id="996" isbn="978-3-86395-287-7" DOI="10.17875/gup2016-996" status="lieferbar" format="Softcover, 17x24"/>
+<item id="453" isbn="978-3-940344-89-2" DOI="10.17875/gup2009-453" status="lieferbar" format="Softcover, 17x24"/>
+<item id="817" isbn="978-3-86395-211-2" DOI="10.17875/gup2015-817" status="lieferbar" format="Softcover, 17x24"/>
+<item id="316" isbn="978-3-941875-04-3" DOI="10.17875/gup2009-316" status="lieferbar" format="Softcover, 17x24"/>
+<item id="911" isbn="978-3-86395-259-4" DOI="10.17875/gup2016-911" status="lieferbar" format="Softcover, 17x24"/>
+<item id="47" isbn="978-3-930457-76-2" DOI="10.17875/gup2005-47" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="91" isbn="978-3-86395-127-6" DOI="10.17875/gup2013-91" status="lieferbar" format="Softcover, 17x24"/>
+<item id="107" isbn="978-3-941875-89-0" DOI="10.17875/gup2011-107" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="841" isbn="978-3-86395-234-1" DOI="10.17875/gup2015-841" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1073" isbn="978-3-86395-342-3" DOI="10.17875/gup2018-1073" status="lieferbar" format="Softcover, 17x24"/>
+<item id="319" isbn="978-3-941875-46-3" DOI="10.17875/gup2009-319" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1328" isbn="978-3-86395-458-1" DOI="10.17875/gup2020-1328" status="lieferbar" format="Softcover, 17x24"/>
+<item id="494" isbn="978-3-938616-14-7" DOI="10.17875/gup2005-494" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="739" isbn="978-3-938616-39-0" DOI="10.17875/gup2006-739" status="lieferbar" format="Softcover, 17x24"/>
+<item id="52" isbn="978-3-86395-042-2" DOI="10.17875/gup2012-52" status="lieferbar" format="Softcover, 17x24"/>
+<item id="518" isbn="978-3-86395-093-4" DOI="10.17875/gup2012-518" status="lieferbar" format="Softcover, 17x24"/>
+<item id="24" isbn="978-3-86395-025-5" DOI="10.17875/gup2011-24" status="lieferbar" format="Softcover, 17x24"/>
+<item id="162" isbn="978-3-938616-72-7" DOI="10.17875/gup2007-162" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="281" isbn="978-3-941875-87-6" DOI="10.17875/gup2010-281" status="lieferbar" format="Softcover, 17x24"/>
+<item id="787" isbn="978-3-86395-189-4" DOI="10.17875/gup2015-787" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="517" isbn="978-3-941875-85-2" DOI="10.17875/gup2010-517" status="lieferbar" format="Softcover, 17x24"/>
+<item id="635" isbn="978-3-930457-23-6" DOI="10.17875/gup2002-635" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1176" isbn="978-3-86395-418-5" DOI="10.17875/gup2019-1176" status="lieferbar" format="Softcover, 17x24"/>
+<item id="156" isbn="978-3-86395-121-4" DOI="10.17875/gup2013-156" status="lieferbar" format="Softcover, 17x24"/>
+<item id="171" isbn="978-3-940344-30-4" DOI="10.17875/gup2008-171" status="lieferbar" format="Softcover, 17x24"/>
+<item id="423" isbn="978-3-938616-19-2" DOI="10.17875/gup2005-423" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="772" isbn="978-3-86395-153-5" DOI="10.17875/gup2014-772" status="lieferbar" format="Softcover, 17x24"/>
+<item id="267" isbn="978-3-940344-37-3" DOI="10.17875/gup2008-267" status="lieferbar" format="Softcover, 17x24"/>
+<item id="126" isbn="978-3-86395-009-5" DOI="10.17875/gup2011-126" status="lieferbar" format="Softcover, 17x24"/>
+<item id="263" isbn="978-3-940344-21-2" DOI="10.17875/gup2008-263" status="lieferbar" format="Softcover, 17x24"/>
+<item id="179" isbn="978-3-940344-64-9" DOI="10.17875/gup2009-179" status="lieferbar" format="Softcover, 17x24"/>
+<item id="209" isbn="978-3-938616-91-8" DOI="10.17875/gup2007-209" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1160" isbn="978-3-86395-399-7" DOI="10.17875/gup2019-1160" status="lieferbar" format="Softcover, 17x24"/>
+<item id="839" isbn="978-3-86395-232-7" DOI="10.17875/gup2015-839" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1145" isbn="978-3-86395-397-3" DOI="10.17875/gup2019-1145" status="lieferbar" format="Softcover, 17x24"/>
+<item id="105" isbn="978-3-941875-74-6" DOI="10.17875/gup2010-105" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="168" isbn="978-3-938616-86-4" DOI="10.17875/gup2008-168" status="lieferbar" format="Softcover, 17x24"/>
+<item id="172" isbn="978-3-940344-41-0" DOI="10.17875/gup2008-172" status="lieferbar" format="Softcover, 17x24"/>
+<item id="198" isbn="978-3-938616-25-3" DOI="10.17875/gup2005-198" status="lieferbar" format="Softcover, 17x24"/>
+<item id="481" isbn="978-3-938616-90-1" DOI="10.17875/gup2007-481" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="634" isbn="978-3-930457-21-2" DOI="10.17875/gup2001-634" status="lieferbar" format="Softcover, 17x24"/>
+<item id="901" isbn="978-3-86395-252-5" DOI="10.17875/gup2016-901" status="lieferbar" format="Softcover, 17x24"/>
+<item id="49" isbn="978-3-938616-35-2" DOI="10.17875/gup2006-49" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1072" isbn="978-3-86395-346-1" DOI="10.17875/gup2017-1072" status="lieferbar" format="Softcover, 17x24"/>
+<item id="503" isbn="978-3-86395-026-2" DOI="10.17875/gup2012-503" status="lieferbar" format="Softcover, 17x24"/>
+<item id="280" isbn="978-3-941875-84-5" DOI="10.17875/gup2010-280" status="lieferbar" format="Softcover, 17x24"/>
+<item id="396" isbn="978-3-930457-59-5" DOI="10.17875/gup2004-396" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1093" isbn="978-3-86395-361-4" DOI="10.17875/gup2018-1093" status="lieferbar" format="Softcover, 17x24"/>
+<item id="248" isbn="978-3-938616-28-4" DOI="10.17875/gup2005-248" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="21" isbn="978-3-938616-49-9" DOI="10.17875/gup2006-21" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="256" isbn="978-3-86395-070-5" DOI="10.17875/gup2012-256" status="lieferbar" format="Softcover, 17x24"/>
+<item id="884" isbn="978-3-86395-245-7" DOI="10.17875/gup2015-884" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1012" isbn="978-3-86395-297-6" DOI="10.17875/gup2017-1012" status="lieferbar" format="Softcover, 17x24"/>
+<item id="134" isbn="978-3-86395-034-7" DOI="10.17875/gup2011-134" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="89" isbn="978-3-86395-101-6" DOI="10.17875/gup2013-89" status="lieferbar" format="Softcover, 17x24"/>
+<item id="622" isbn="978-3-930457-04-5" DOI="10.17875/gup1995-622" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1253" isbn="978-3-86395-444-4" DOI="10.17875/gup2020-1253" status="lieferbar" format="Softcover, 17x24"/>
+<item id="780" isbn="978-3-86395-175-7" DOI="10.17875/gup2014-780" status="lieferbar" format="Softcover, 17x24"/>
+<item id="797" isbn="978-3-86395-188-7" DOI="10.17875/gup2015-797" status="lieferbar" format="Softcover, 17x24"/>
+<item id="57" isbn="978-3-938616-77-2" DOI="10.17875/gup2007-57" status="lieferbar" format="Softcover, 17x24"/>
+<item id="241" isbn="978-3-941875-68-5" DOI="10.17875/gup2010-241" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1307" isbn="978-3-86395-451-2" DOI="10.17875/gup2020-1307" status="lieferbar" format="Softcover, 17x24"/>
+<item id="131" isbn="978-3-86395-021-7" DOI="10.17875/gup2011-131" status="lieferbar" format="Softcover, 17x24"/>
+<item id="983" isbn="978-3-86395-280-8" DOI="10.17875/gup2016-983" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="436" isbn="978-3-941875-02-9" DOI="10.17875/gup2009-436" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1201" isbn="978-3-86395-425-3" DOI="10.17875/gup2019-1201" status="lieferbar" format="Softcover, 17x24"/>
+<item id="642" isbn="978-3-930457-67-0" DOI="10.17875/gup2006-642" status="lieferbar" format="Softcover, 14,8x21"/>
+<item id="1144" isbn="978-3-86395-402-4" DOI="10.17875/gup2019-1144" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1102" isbn="978-3-86395-373-7" DOI="10.17875/gup2018-1102" status="lieferbar" format="Softcover, 17x24"/>
+<item id="649" isbn="978-3-930457-80-9" DOI="10.17875/gup2006-649" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1065" isbn="978-3-86395-339-3" DOI="10.17875/gup2018-1065" status="lieferbar" format="Softcover, 17x24"/>
+<item id="466" isbn="978-3-86395-133-7" DOI="10.17875/gup2013-466" status="lieferbar" format="Softcover, 17x24"/>
+<item id="387" isbn="978-3-86395-047-7" DOI="10.17875/gup2012-387" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="273" isbn="978-3-940344-74-8" DOI="10.17875/gup2008-273" status="lieferbar" format="Softcover, 17x24"/>
+<item id="226" isbn="978-3-86395-019-4" DOI="10.17875/gup2011-226" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="390" isbn="978-3-86395-145-0" DOI="10.17875/gup2013-390" status="lieferbar" format="Softcover, DIN A5 quer"/>
+<item id="520" isbn="978-3-941875-55-5" DOI="10.17875/gup2010-520" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="116" isbn="978-3-938616-60-4" DOI="10.17875/gup2006-116" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="497" isbn="978-3-940344-20-5" DOI="10.17875/gup2008-497" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="740" isbn="978-3-86395-111-5" DOI="10.17875/gup2014-740" status="lieferbar" format="Softcover, 17x24"/>
+<item id="974" isbn="978-3-86395-274-7" DOI="10.17875/gup2016-974" status="lieferbar" format="Softcover, 17x24"/>
+<item id="975" isbn="978-3-86395-275-4" DOI="10.17875/gup2016-975" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1224" isbn="978-3-86395-417-8" DOI="10.17875/gup2019-1224" status="lieferbar" format="Softcover, 17x24"/>
+<item id="216" isbn="978-3-941875-22-7" DOI="10.17875/gup2009-216" status="lieferbar" format="Softcover, 17x24"/>
+<item id="368" isbn="978-3-940344-81-6" DOI="10.17875/gup2010-368" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1079" isbn="978-3-86395-350-8" DOI="10.17875/gup2018-1079" status="lieferbar" format="Softcover, 17x24"/>
+<item id="301" isbn="978-3-938616-15-4" DOI="10.17875/gup2005-301" status="lieferbar" format="Softcover, 17x24"/>
+<item id="500" isbn="978-3-941875-64-7" DOI="10.17875/gup2010-500" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="766" isbn="978-3-86395-178-8" DOI="10.17875/gup2014-766" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="704" isbn="978-3-940344-57-1" DOI="10.17875/gup2008-704" status="lieferbar" format="Softcover, 17x24"/>
+<item id="624" isbn="978-3-930457-05-2" DOI="10.17875/gup1995-624" status="lieferbar" format="Softcover, 17x24"/>
+<item id="818" isbn="978-3-86395-215-0" DOI="10.17875/gup2015-818" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1041" isbn="978-3-86395-321-8" DOI="10.17875/gup2017-1041" status="lieferbar" format="Softcover, 17x24"/>
+<item id="655" isbn="978-3-930457-02-1" DOI="10.17875/gup1993-655" status="lieferbar" format="Softcover, 17x24"/>
+<item id="38" isbn="978-3-941875-30-2" DOI="10.17875/gup2010-38" status="lieferbar" format="Softcover, 17x24"/>
+<item id="422" isbn="978-3-930457-43-4" DOI="10.17875/gup2004-422" status="lieferbar" format="Softcover, 17x24"/>
+<item id="104" isbn="978-3-941875-42-5" DOI="10.17875/gup2009-104" status="lieferbar" format="Softcover, 17x24"/>
+<item id="189" isbn="978-3-941875-57-9" DOI="10.17875/gup2010-189" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1001" isbn="978-3-86395-293-8" DOI="10.17875/gup2016-1001" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1115" isbn="978-3-86395-382-9" DOI="10.17875/gup2018-1115" status="lieferbar" format="Softcover, 17x24"/>
+<item id="313" isbn="978-3-940344-66-3" DOI="10.17875/gup2008-313" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1308" isbn="978-3-86395-452-9" DOI="10.17875/gup2020-1308" status="lieferbar" format="Softcover, 17x24"/>
+<item id="484" isbn="978-3-940344-65-6" DOI="10.17875/gup2008-484" status="lieferbar" format="Softcover, 17x24"/>
+<item id="798" isbn="978-3-86395-196-2" DOI="10.17875/gup2015-798" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1109" isbn="978-3-86395-341-6" DOI="10.17875/gup2018-1109" status="lieferbar" format="Softcover, 17x24"/>
+<item id="58" isbn="978-3-938616-89-5" DOI="10.17875/gup2007-58" status="lieferbar" format="Softcover, 17x24"/>
+<item id="187" isbn="978-3-941875-50-0" DOI="10.17875/gup2010-187" status="lieferbar" format="Softcover, 17x24"/>
+<item id="300" isbn="978-3-930457-14-4" DOI="10.17875/gup2000-300" status="lieferbar" format="Softcover, 17x24"/>
+<item id="425" isbn="978-3-86395-120-7" DOI="10.17875/gup2013-425" status="lieferbar" format="Softcover, 17x24"/>
+<item id="973" isbn="978-3-86395-216-7" DOI="10.17875/gup2016-973" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="279" isbn="978-3-941875-81-4" DOI="10.17875/gup2010-279" status="lieferbar" format="Softcover, 17x24"/>
+<item id="473" isbn="978-3-938616-62-8" DOI="10.17875/gup2007-473" status="lieferbar" format="Softcover, 17x24"/>
+<item id="650" isbn="978-3-930457-81-6" DOI="10.17875/gup2006-650" status="lieferbar" format="Softcover, 17x24"/>
+<item id="816" isbn="978-3-86395-210-5" DOI="10.17875/gup2015-816" status="lieferbar" format="Softcover, 17x24"/>
+<item id="824" isbn="978-3-86395-213-6" DOI="10.17875/gup2015-824" status="lieferbar" format="Softcover, 17x24"/>
+<item id="234" isbn="978-3-940344-03-8" DOI="10.17875/gup2007-234" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="912" isbn="978-3-86395-231-0" DOI="10.17875/gup2016-912" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1299" isbn="978-3-86395-447-5" DOI="10.17875/gup2020-1299" status="lieferbar" format="Softcover, 17x24"/>
+<item id="465" isbn="978-3-86395-039-2" DOI="10.17875/gup2011-465" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1061" isbn="978-3-86395-334-8" DOI="10.17875/gup2017-1061" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1037" isbn="978-3-86395-300-3" DOI="10.17875/gup2017-1037" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1064" isbn="978-3-86395-338-6" DOI="10.17875/gup2018-1064" status="lieferbar" format="Softcover, 17x24"/>
+<item id="293" isbn="978-3-938616-73-4" DOI="10.17875/gup2007-293" status="lieferbar" format="Softcover, 17x24"/>
+<item id="488" isbn="978-3-941875-21-0" DOI="10.17875/gup2010-488" status="lieferbar" format="Softcover, 17x24"/>
+<item id="773" isbn="978-3-86395-172-6" DOI="10.17875/gup2014-773" status="lieferbar" format="Softcover, 17x24"/>
+<item id="220" isbn="978-3-938616-07-9" DOI="10.17875/gup2005-220" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="314" isbn="978-3-940344-76-2" DOI="10.17875/gup2009-314" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1330" isbn="978-3-86395-461-1" DOI="10.17875/gup2020-1330" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1060" isbn="978-3-86395-335-5" DOI="10.17875/gup2017-1060" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="792" isbn="978-3-86395-190-0" DOI="10.17875/gup2015-792" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1055" isbn="978-3-86395-332-4" DOI="10.17875/gup2017-1055" status="lieferbar" format="Softcover, 17x24"/>
+<item id="970" isbn="978-3-86395-247-1" DOI="10.17875/gup2016-970" status="lieferbar" format="Softcover, 17x24"/>
+<item id="60" isbn="978-3-940344-15-1" DOI="10.17875/gup2008-60" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="147" isbn="978-3-86395-078-1" DOI="10.17875/gup2012-147" status="lieferbar" format="Softcover, 17x24"/>
+<item id="192" isbn="978-3-941875-80-7" DOI="10.17875/gup2010-192" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="289" isbn="978-3-86395-108-5" DOI="10.17875/gup2013-289" status="lieferbar" format="Softcover, 17x24"/>
+<item id="63" isbn="978-3-940344-96-0" DOI="10.17875/gup2009-63" status="lieferbar" format="Softcover, 17x24"/>
+<item id="471" isbn="978-3-941875-20-3" DOI="10.17875/gup2010-471" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1338" isbn="978-3-86395-462-8" DOI="10.17875/gup2020-1338" status="lieferbar" format="Softcover, 17x24"/>
+<item id="208" isbn="978-3-938616-75-8" DOI="10.17875/gup2007-208" status="lieferbar" format="Softcover, 17x24"/>
+<item id="210" isbn="978-3-940344-09-0" DOI="10.17875/gup2007-210" status="lieferbar" format="Softcover, 17x24"/>
+<item id="177" isbn="978-3-940344-62-5" DOI="10.17875/gup2008-177" status="lieferbar" format="Softcover, 17x24"/>
+<item id="667" isbn="978-3-86395-082-8" DOI="10.17875/gup2011-667" status="lieferbar" format="Softcover, 17x24"/>
+<item id="811" isbn="978-3-86395-202-0" DOI="10.17875/gup2015-811" status="lieferbar" format="Softcover, 17x24"/>
+<item id="117" isbn="978-3-938616-64-2" DOI="10.17875/gup2006-117" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="139" isbn="978-3-86395-053-8" DOI="10.17875/gup2012-139" status="lieferbar" format="Softcover, 17x24"/>
+<item id="252" isbn="978-3-86395-014-9" DOI="10.17875/gup2011-252" status="lieferbar" format="Softcover, 17x24"/>
+<item id="509" isbn="978-3-941875-13-5" DOI="10.17875/gup2009-509" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="240" isbn="978-3-941875-33-3" DOI="10.17875/gup2010-240" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="266" isbn="978-3-940344-32-8" DOI="10.17875/gup2008-266" status="lieferbar" format="Softcover, 17x24"/>
+<item id="389" isbn="978-3-86395-084-2" DOI="10.17875/gup2013-389" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="953" isbn="978-3-86395-237-2" DOI="10.17875/gup2016-953" status="lieferbar" format="Softcover, 17x24"/>
+<item id="25" isbn="978-3-86395-035-4" DOI="10.17875/gup2012-25" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1227" isbn="978-3-86395-429-1" DOI="10.17875/gup2019-1227" status="lieferbar" format="Softcover, 17x24"/>
+<item id="907" isbn="978-3-86395-255-6" DOI="10.17875/gup2016-907" status="lieferbar" format="Softcover, 17x24"/>
+<item id="170" isbn="978-3-940344-24-3" DOI="10.17875/gup2008-170" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="310" isbn="978-3-86395-124-5" DOI="10.17875/gup2014-310" status="lieferbar" format="Softcover, 17x24"/>
+<item id="910" isbn="978-3-86395-257-0" DOI="10.17875/gup2016-910" status="lieferbar" format="Softcover, 17x24"/>
+<item id="755" isbn="978-3-86395-166-5" DOI="10.17875/gup2014-755" status="lieferbar" format="Softcover, 17x24"/>
+<item id="474" isbn="978-3-940344-82-3" DOI="10.17875/gup2009-474" status="lieferbar" format="Softcover, 17x24"/>
+<item id="496" isbn="978-3-86395-140-5" DOI="10.17875/gup2013-496" status="lieferbar" format="Softcover, 17x24"/>
+<item id="428" isbn="978-3-940344-42-7" DOI="10.17875/gup2008-428" status="lieferbar" format="Softcover, 17x24"/>
+<item id="462" isbn="978-3-930457-63-2" DOI="10.17875/gup2004-462" status="lieferbar" format="Softcover, 17x24"/>
+<item id="832" isbn="978-3-86395-226-6" DOI="10.17875/gup2015-832" status="lieferbar" format="Softcover, 17x24"/>
+<item id="250" isbn="978-3-938616-58-1" DOI="10.17875/gup2006-250" status="lieferbar" format="Softcover, 17x24"/>
+<item id="302" isbn="978-3-938616-18-5" DOI="10.17875/gup2005-302" status="lieferbar" format="Softcover, 17x24"/>
+<item id="315" isbn="978-3-940344-83-0" DOI="10.17875/gup2009-315" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1003" isbn="978-3-86395-271-6" DOI="10.17875/gup2017-1003" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1104" isbn="978-3-86395-375-1" DOI="10.17875/gup2018-1104" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1153" isbn="978-3-86395-407-9" DOI="10.17875/gup2019-1153" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="981" isbn="978-3-86395-277-8" DOI="10.17875/gup2016-981" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1000" isbn="978-3-86395-292-1" DOI="10.17875/gup2016-1000" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="81" isbn="978-3-86395-043-9" DOI="10.17875/gup2012-81" status="lieferbar" format="Softcover, 17x24"/>
+<item id="74" isbn="978-3-938616-34-5" DOI="10.17875/gup2005-74" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="206" isbn="978-3-86395-142-9" DOI="10.17875/gup2013-206" status="lieferbar" format="Softcover, 17x24"/>
+<item id="419" isbn="978-3-941875-03-6" DOI="10.17875/gup2009-419" status="lieferbar" format="Softcover, 17x24"/>
+<item id="767" isbn="978-3-86395-170-2" DOI="10.17875/gup2014-767" status="lieferbar" format="Softcover, 17x24"/>
+<item id="963" isbn="978-3-86395-266-2" DOI="10.17875/gup2016-963" status="lieferbar" format="Softcover, 17x24"/>
+<item id="447" isbn="978-3-941875-38-8" DOI="10.17875/gup2010-447" status="lieferbar" format="Softcover, 17x24"/>
+<item id="211" isbn="978-3-940344-25-0" DOI="10.17875/gup2008-211" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="223" isbn="978-3-938616-47-5" DOI="10.17875/gup2006-223" status="lieferbar" format="Softcover, 17x24"/>
+<item id="152" isbn="978-3-86395-103-0" DOI="10.17875/gup2013-152" status="lieferbar" format="Softcover, 17x24"/>
+<item id="221" isbn="978-3-938616-10-9" DOI="10.17875/gup2005-221" status="lieferbar" format="Softcover, 17x24"/>
+<item id="161" isbn="978-3-938616-68-0" DOI="10.17875/gup2007-161" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="498" isbn="978-3-940344-98-4" DOI="10.17875/gup2009-498" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1097" isbn="978-3-86395-365-2" DOI="10.17875/gup2018-1097" status="lieferbar" format="Softcover, 17x24"/>
+<item id="92" isbn="978-3-86395-134-4" DOI="10.17875/gup2013-92" status="lieferbar" format="Softcover, 17x24"/>
+<item id="823" isbn="978-3-86395-224-2" DOI="10.17875/gup2015-823" status="lieferbar" format="Softcover, 17x24"/>
+<item id="499" isbn="978-3-941875-45-6" DOI="10.17875/gup2010-499" status="lieferbar" format="Softcover, 17x24"/>
+<item id="700" isbn="978-3-941875-97-5" DOI="10.17875/gup2011-700" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1206" isbn="978-3-86395-422-2" DOI="10.17875/gup2019-1206" status="lieferbar" format="Softcover, 17x24"/>
+<item id="108" isbn="978-3-941875-96-8" DOI="10.17875/gup2011-108" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1327" isbn="978-3-86395-459-8" DOI="10.17875/gup2020-1327" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1134" isbn="978-3-86395-367-6" DOI="10.17875/gup2019-1134" status="lieferbar" format="Softcover, 17x24"/>
+<item id="457" isbn="978-3-940344-93-9" DOI="10.17875/gup2009-457" status="lieferbar" format="Softcover, 17x24"/>
+<item id="847" isbn="978-3-86395-228-0" DOI="10.17875/gup2015-847" status="lieferbar" format="Softcover, 17x24"/>
+<item id="97" isbn="978-3-938616-96-3" DOI="10.17875/gup2007-97" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="272" isbn="978-3-940344-72-4" DOI="10.17875/gup2009-272" status="lieferbar" format="Softcover, 17x24"/>
+<item id="382" isbn="978-3-940344-18-2" DOI="10.17875/gup2008-382" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="207" isbn="978-3-86395-143-6" DOI="10.17875/gup2013-207" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="132" isbn="978-3-86395-028-6" DOI="10.17875/gup2011-132" status="lieferbar" format="Softcover, 17x24"/>
+<item id="188" isbn="978-3-941875-53-1" DOI="10.17875/gup2010-188" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1085" isbn="978-3-86395-352-2" DOI="10.17875/gup2018-1085" status="lieferbar" format="Softcover, 17,6x25"/>
+<item id="235" isbn="978-3-940344-52-6" DOI="10.17875/gup2008-235" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1078" isbn="978-3-86395-349-2" DOI="10.17875/gup2018-1078" status="lieferbar" format="Softcover, 17x24"/>
+<item id="288" isbn="978-3-86395-067-5" DOI="10.17875/gup2012-288" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1142" isbn="978-3-86395-385-0" DOI="10.17875/gup2019-1142" status="lieferbar" format="Softcover, 17x24"/>
+<item id="486" isbn="978-3-940344-97-7" DOI="10.17875/gup2009-486" status="lieferbar" format="Softcover, 17x24"/>
+<item id="394" isbn="978-3-941875-26-5" DOI="10.17875/gup2010-394" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1158" isbn="978-3-86395-408-6" DOI="10.17875/gup2019-1158" status="lieferbar" format="Softcover, 17x24"/>
+<item id="491" isbn="978-3-941875-63-0" DOI="10.17875/gup2010-491" status="lieferbar" format="Softcover, 17x24"/>
+<item id="519" isbn="978-3-938616-23-9" DOI="10.17875/gup2005-519" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1011" isbn="978-3-86395-296-9" DOI="10.17875/gup2017-1011" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="400" isbn="978-3-941875-95-1" DOI="10.17875/gup2011-400" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1026" isbn="978-3-86395-262-4" DOI="10.17875/gup2017-1026" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1069" isbn="978-3-86395-345-4" DOI="10.17875/gup2018-1069" status="lieferbar" format="Softcover, 17x24"/>
+<item id="414" isbn="978-3-86395-132-0" DOI="10.17875/gup2013-414" status="lieferbar" format="Softcover, 17x24"/>
+<item id="137" isbn="978-3-86395-048-4" DOI="10.17875/gup2012-137" status="lieferbar" format="Softcover, 17x24"/>
+<item id="228" isbn="978-3-86395-105-4" DOI="10.17875/gup2012-228" status="lieferbar" format="Softcover, 17x24"/>
+<item id="455" isbn="978-3-940344-91-5" DOI="10.17875/gup2009-455" status="lieferbar" format="Softcover, 17x24"/>
+<item id="418" isbn="978-3-940344-80-9" DOI="10.17875/gup2009-418" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="891" isbn="978-3-86395-206-8" DOI="10.17875/gup2015-891" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1071" isbn="978-3-86395-337-9" DOI="10.17875/gup2017-1071" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="309" isbn="978-3-86395-089-7" DOI="10.17875/gup2012-309" status="lieferbar" format="Softcover, 17x24"/>
+<item id="958" isbn="978-3-86395-260-0" DOI="10.17875/gup2016-958" status="lieferbar" format="Softcover, 17x24"/>
+<item id="90" isbn="978-3-86395-112-2" DOI="10.17875/gup2013-90" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="477" isbn="978-3-86395-041-5" DOI="10.17875/gup2013-477" status="lieferbar" format="Softcover, 17x24"/>
+<item id="708" isbn="978-3-86395-155-9" DOI="10.17875/gup2014-708" status="lieferbar" format="Softcover, 17x24"/>
+<item id="735" isbn="978-3-86395-182-5" DOI="10.17875/gup2014-735" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1248" isbn="978-3-86395-440-6" DOI="10.17875/gup2020-1248" status="lieferbar" format="Softcover, 17x24"/>
+<item id="230" isbn="978-3-86395-137-5" DOI="10.17875/gup2013-230" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="762" isbn="978-3-86395-161-0" DOI="10.17875/gup2014-762" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1141" isbn="978-3-86395-400-0" DOI="10.17875/gup2019-1141" status="lieferbar" format="Softcover, 17x24"/>
+<item id="366" isbn="978-3-940344-84-7" DOI="10.17875/gup2009-366" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1325" isbn="978-3-86395-455-0" DOI="10.17875/gup2020-1325" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1350" isbn="978-3-86395-469-7" DOI="10.17875/gup2020-1350" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="385" isbn="978-3-938616-24-6" DOI="10.17875/gup2005-385" status="lieferbar" format="Softcover, 17x24"/>
+<item id="485" isbn="978-3-940344-69-4" DOI="10.17875/gup2009-485" status="lieferbar" format="Softcover, 17x24"/>
+<item id="987" isbn="978-3-86395-278-5" DOI="10.17875/gup2016-987" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1086" isbn="978-3-86395-356-0" DOI="10.17875/gup2018-1086" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1249" isbn="978-3-86395-441-3" DOI="10.17875/gup2020-1249" status="lieferbar" format="Softcover, 17x24"/>
+<item id="229" isbn="978-3-86395-135-1" DOI="10.17875/gup2013-229" status="lieferbar" format="Softcover, 17x24"/>
+<item id="324" isbn="978-3-941875-86-9" DOI="10.17875/gup2010-324" status="lieferbar" format="Softcover, 17x24"/>
+<item id="641" isbn="978-3-930457-65-6" DOI="10.17875/gup2004-641" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="408" isbn="978-3-941875-90-6" DOI="10.17875/gup2011-408" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="30" isbn="978-3-86395-150-4" DOI="10.17875/gup2014-30" status="lieferbar" format="Softcover, 17x24"/>
+<item id="845" isbn="978-3-86395-230-3" DOI="10.17875/gup2015-845" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1110" isbn="978-3-86395-378-2" DOI="10.17875/gup2018-1110" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1203" isbn="978-3-86395-421-5" DOI="10.17875/gup2019-1203" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="434" isbn="978-3-86395-129-0" DOI="10.17875/gup2013-434" status="lieferbar" format="Softcover, 17x24"/>
+<item id="317" isbn="978-3-941875-05-0" DOI="10.17875/gup2010-317" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="261" isbn="978-3-940344-07-6" DOI="10.17875/gup2007-261" status="lieferbar" format="Softcover, 17x24"/>
+<item id="397" isbn="978-3-938616-38-3" DOI="10.17875/gup2006-397" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="464" isbn="978-3-86395-013-2" DOI="10.17875/gup2011-464" status="lieferbar" format="Softcover, 17x24"/>
+<item id="249" isbn="978-3-938616-57-4" DOI="10.17875/gup2006-249" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="440" isbn="978-3-938616-03-1" DOI="10.17875/gup2005-440" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1098" isbn="978-3-86395-366-9" DOI="10.17875/gup2018-1098" status="lieferbar" format="Softcover, 17x24"/>
+<item id="204" isbn="978-3-86395-068-2" DOI="10.17875/gup2012-204" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="284" isbn="978-3-930457-69-4" DOI="10.17875/gup2004-284" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="427" isbn="978-3-940344-04-5" DOI="10.17875/gup2007-427" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="707" isbn="978-3-938616-05-5" DOI="10.17875/gup2006-707" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1054" isbn="978-3-86395-322-5" DOI="10.17875/gup2017-1054" status="lieferbar" format="Softcover, 17x24"/>
+<item id="456" isbn="978-3-940344-92-2" DOI="10.17875/gup2009-456" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1225" isbn="978-3-86395-431-4" DOI="10.17875/gup2019-1225" status="lieferbar" format="Softcover, 17x24"/>
+<item id="386" isbn="978-3-86395-031-6" DOI="10.17875/gup2011-386" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="988" isbn="978-3-86395-285-3" DOI="10.17875/gup2016-988" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1147" isbn="978-3-86395-404-8" DOI="10.17875/gup2019-1147" status="lieferbar" format="Softcover, 17x24"/>
+<item id="306" isbn="978-3-86395-000-2" DOI="10.17875/gup2011-306" status="lieferbar" format="Softcover, 17x24"/>
+<item id="398" isbn="978-3-938616-48-2" DOI="10.17875/gup2006-398" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="445" isbn="978-3-940344-43-4" DOI="10.17875/gup2008-445" status="lieferbar" format="Softcover, 17x24"/>
+<item id="292" isbn="978-3-938616-71-0" DOI="10.17875/gup2007-292" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1057" isbn="978-3-86395-330-0" DOI="10.17875/gup2017-1057" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1133" isbn="978-3-86395-392-8" DOI="10.17875/gup2019-1133" status="lieferbar" format="Softcover, 17x24"/>
+<item id="441" isbn="978-3-86395-027-9" DOI="10.17875/gup2011-441" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1007" isbn="978-3-86395-295-2" DOI="10.17875/gup2017-1007" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="492" isbn="978-3-941875-99-9" DOI="10.17875/gup2011-492" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1014" isbn="978-3-86395-269-3" DOI="10.17875/gup2017-1014" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1245" isbn="978-3-86395-438-3" DOI="10.17875/gup2019-1245" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1352" isbn="978-3-86395-475-8" DOI="10.17875/gup2020-1352" status="lieferbar" format="Softcover, 17x24"/>
+<item id="515" isbn="978-3-86395-006-4" DOI="10.17875/gup2012-515" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1241" isbn="978-3-86395-433-8" DOI="10.17875/gup2019-1241" status="lieferbar" format="Softcover, 17x24"/>
+<item id="219" isbn="978-3-930457-66-3" DOI="10.17875/gup2004-219" status="lieferbar" format="Softcover, 17x24"/>
+<item id="808" isbn="978-3-86395-191-7" DOI="10.17875/gup2015-808" status="lieferbar" format="Softcover, 17x24"/>
+<item id="774" isbn="978-3-86395-171-9" DOI="10.17875/gup2014-774" status="lieferbar" format="Softcover, 17x24"/>
+<item id="961" isbn="978-3-86395-265-5" DOI="10.17875/gup2016-961" status="lieferbar" format="Softcover, 17x24"/>
+<item id="181" isbn="978-3-941875-06-7" DOI="10.17875/gup2009-181" status="lieferbar" format="Softcover, 17x24"/>
+<item id="826" isbn="978-3-86395-227-3" DOI="10.17875/gup2015-826" status="lieferbar" format="Softcover, 17x24"/>
+<item id="133" isbn="978-3-86395-029-3" DOI="10.17875/gup2011-133" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="670" isbn="978-3-940344-85-4" DOI="10.17875/gup2009-670" status="lieferbar" format="Softcover, 17x24"/>
+<item id="761" isbn="978-3-86395-173-3" DOI="10.17875/gup2014-761" status="lieferbar" format="Softcover, 17x24"/>
+<item id="782" isbn="978-3-86395-130-6" DOI="10.17875/gup2014-782" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1336" isbn="978-3-86395-467-3" DOI="10.17875/gup2020-1336" status="lieferbar" format="Softcover, 17x24"/>
+<item id="756" isbn="978-3-86395-159-7" DOI="10.17875/gup2014-756" status="lieferbar" format="Softcover, 17x24"/>
+<item id="850" isbn="978-3-86395-229-7" DOI="10.17875/gup2015-850" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1024" isbn="978-3-86395-308-9" DOI="10.17875/gup2017-1024" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1259" isbn="978-3-86395-446-8" DOI="10.17875/gup2020-1259" status="lieferbar" format="Softcover, 17x24"/>
+<item id="173" isbn="978-3-940344-45-8" DOI="10.17875/gup2008-173" status="lieferbar" format="Softcover, 17x24"/>
+<item id="758" isbn="978-3-86395-167-2" DOI="10.17875/gup2014-758" status="lieferbar" format="Softcover, 17x24"/>
+<item id="96" isbn="978-3-938616-84-0" DOI="10.17875/gup2007-96" status="lieferbar" format="Softcover, 17x24"/>
+<item id="844" isbn="978-3-86395-235-8" DOI="10.17875/gup2015-844" status="lieferbar" format="Softcover, 17x24"/>
+<item id="401" isbn="978-3-86395-051-4" DOI="10.17875/gup2012-401" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="493" isbn="978-3-938616-13-0" DOI="10.17875/gup2005-493" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="752" isbn="978-3-86395-169-6" DOI="10.17875/gup2014-752" status="lieferbar" format="Softcover, 17x24"/>
+<item id="950" isbn="978-3-86395-258-7" DOI="10.17875/gup2016-950" status="lieferbar" format="Softcover, 17x24"/>
+<item id="951" isbn="978-3-86395-261-7" DOI="10.17875/gup2016-951" status="lieferbar" format="Softcover, 17x24"/>
+<item id="738" isbn="978-3-86395-152-8" DOI="10.17875/gup2014-738" status="lieferbar" format="Softcover, 17x24"/>
+<item id="118" isbn="978-3-938616-65-9" DOI="10.17875/gup2006-118" status="lieferbar" format="Softcover, 17x24"/>
+<item id="439" isbn="978-3-941875-91-3" DOI="10.17875/gup2011-439" status="lieferbar" format="Softcover, 17x24"/>
+<item id="148" isbn="978-3-86395-080-4" DOI="10.17875/gup2012-148" status="lieferbar" format="Softcover, 17x24"/>
+<item id="962" isbn="978-3-86395-264-8" DOI="10.17875/gup2016-962" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="1020" isbn="978-3-86395-305-8" DOI="10.17875/gup2017-1020" status="lieferbar" format="Softcover, 20x22,5"/>
+<item id="1120" isbn="978-3-86395-395-9" DOI="10.17875/gup2018-1120" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1223" isbn="978-3-86395-430-7" DOI="10.17875/gup2019-1223" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="32" isbn="978-3-940344-29-8" DOI="10.17875/gup2008-32" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="154" isbn="978-3-86395-116-0" DOI="10.17875/gup2013-154" status="lieferbar" format="Softcover, 17x24"/>
+<item id="384" isbn="978-3-930457-62-5" DOI="10.17875/gup2004-384" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="661" isbn="978-3-938616-26-0" DOI="10.17875/gup2005-661" status="lieferbar" format="Softcover, 17x24"/>
+<item id="155" isbn="978-3-86395-119-1" DOI="10.17875/gup2013-155" status="lieferbar" format="Softcover, 17x24"/>
+<item id="304" isbn="978-3-938616-46-8" DOI="10.17875/gup2006-304" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="412" isbn="978-3-86395-081-1" DOI="10.17875/gup2012-412" status="lieferbar" format="Softcover, 17x24"/>
+<item id="430" isbn="978-3-941875-44-9" DOI="10.17875/gup2010-430" status="lieferbar" format="Softcover, 17x24"/>
+<item id="109" isbn="978-3-930457-58-8" DOI="10.17875/gup2004-109" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="435" isbn="978-3-940344-75-5" DOI="10.17875/gup2009-435" status="lieferbar" format="Softcover, 17x24"/>
+<item id="506" isbn="978-3-940344-70-0" DOI="10.17875/gup2009-506" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="769" isbn="978-3-86395-160-3" DOI="10.17875/gup2014-769" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="420" isbn="978-3-941875-83-8" DOI="10.17875/gup2011-420" status="lieferbar" format="Softcover, 17x24"/>
+<item id="308" isbn="978-3-86395-061-3" DOI="10.17875/gup2012-308" status="lieferbar" format="Softcover, 17x24"/>
+<item id="760" isbn="978-3-86395-165-8" DOI="10.3249/webdoc-3939" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="775" isbn="978-3-86395-183-2" DOI="10.17875/gup2014-775" status="lieferbar" format="Softcover, 17x24"/>
+<item id="960" isbn="978-3-86395-236-5" DOI="10.17875/gup2016-960" status="lieferbar" format="Softcover, 17x24"/>
+<item id="246" isbn="978-3-938616-16-1" DOI="10.17875/gup2005-246" status="lieferbar" format="Softcover, 17x24"/>
+<item id="253" isbn="978-3-86395-038-5" DOI="10.17875/gup2011-253" status="lieferbar" format="Softcover, 17x24"/>
+<item id="972" isbn="978-3-86395-270-9" DOI="10.17875/gup2016-972" status="lieferbar" format="Softcover, 17x24"/>
+<item id="44" isbn="978-3-930457-51-9" DOI="10.17875/gup2004-44" status="lieferbar" format="Softcover, 17x24"/>
+<item id="997" isbn="978-3-86395-286-0" DOI="10.17875/gup2016-997" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1067" isbn="978-3-86395-343-0" DOI="10.17875/gup2017-1067" status="lieferbar" format="Softcover, 17x24"/>
+<item id="184" isbn="978-3-941875-28-9" DOI="10.17875/gup2010-184" status="lieferbar" format="Softcover, 17x24"/>
+<item id="88" isbn="978-3-86395-097-2" DOI="10.17875/gup2012-88" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1156" isbn="978-3-86395-386-7" DOI="10.17875/gup2019-1156" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1025" isbn="978-3-86395-314-0" DOI="10.17875/gup2017-1025" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1063" isbn="978-3-86395-336-2" DOI="10.17875/gup2017-1063" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1250" isbn="978-3-86395-442-0" DOI="10.17875/gup2020-1250" status="lieferbar" format="Softcover, 17x24"/>
+<item id="480" isbn="978-3-86395-151-1" DOI="10.17875/gup2014-480" status="lieferbar" format="Softcover, 17x24"/>
+<item id="802" isbn="978-3-86395-181-8" DOI="10.17875/gup2015-802" status="lieferbar" format="Softcover, 17x24"/>
+<item id="136" isbn="978-3-86395-046-0" DOI="10.17875/gup2012-136" status="lieferbar" format="Softcover, 17x24"/>
+<item id="371" isbn="978-3-86395-063-7" DOI="10.17875/gup2012-371" status="lieferbar" format="Softcover, 17x24"/>
+<item id="658" isbn="978-3-940344-02-1" DOI="10.17875/gup2007-658" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="27" isbn="978-3-86395-099-6" DOI="10.17875/gup2012-27" status="lieferbar" format="Softcover, 17x24"/>
+<item id="417" isbn="978-3-940344-19-9" DOI="10.17875/gup2008-417" status="lieferbar" format="Softcover, 17x24"/>
+<item id="751" isbn="978-3-86395-180-1" DOI="10.17875/gup2014-751" status="lieferbar" format="Softcover, 21x21"/>
+<item id="305" isbn="978-3-938616-51-2" DOI="10.17875/gup2006-305" status="lieferbar" format="Softcover, 17x24"/>
+<item id="633" isbn="978-3-930457-20-5" DOI="10.17875/gup2001-633" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1023" isbn="978-3-86395-311-9" DOI="10.17875/gup2017-1023" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1042" isbn="978-3-86395-164-1" DOI="10.17875/gup2017-1042" status="lieferbar" format="Softcover, 17x24"/>
+<item id="312" isbn="978-3-940344-58-8" DOI="10.17875/gup2008-312" status="lieferbar" format="Softcover, 17x24"/>
+<item id="504" isbn="978-3-940344-10-6" DOI="10.17875/gup2008-504" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="763" isbn="978-3-86395-179-5" DOI="10.17875/gup2014-763" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="1139" isbn="978-3-86395-394-2" DOI="10.17875/gup2019-1139" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1334" isbn="978-3-86395-464-2" DOI="10.17875/gup2020-1334" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1076" isbn="978-3-86395-348-5" DOI="10.17875/gup2018-1076" status="lieferbar" format="Softcover, 17x24"/>
+<item id="167" isbn="978-3-938616-83-3" DOI="10.17875/gup2007-167" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1047" isbn="978-3-86395-326-3" DOI="10.17875/gup2017-1047" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1084" isbn="978-3-86395-355-3" DOI="10.17875/gup2018-1084" status="lieferbar" format="Softcover, 17x24"/>
+<item id="31" isbn="978-3-940344-08-3" DOI="10.17875/gup2007-31" status="lieferbar" format="Softcover, 17x24"/>
+<item id="129" isbn="978-3-86395-017-0" DOI="10.17875/gup2011-129" status="lieferbar" format="Softcover, 17x24"/>
+<item id="215" isbn="978-3-941875-18-0" DOI="10.17875/gup2009-215" status="lieferbar" format="Softcover, 17x24"/>
+<item id="102" isbn="978-3-941875-39-5" DOI="10.17875/gup2010-102" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="320" isbn="978-3-941875-47-0" DOI="10.17875/gup2010-320" status="lieferbar" format="Softcover, 17x24"/>
+<item id="224" isbn="978-3-938616-52-9" DOI="10.17875/gup2006-224" status="lieferbar" format="Softcover, 17x24"/>
+<item id="964" isbn="978-3-86395-199-3" DOI="10.17875/gup2016-964" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1027" isbn="978-3-86395-310-2" DOI="10.17875/gup2017-1027" status="lieferbar" format="Softcover, 17x24"/>
+<item id="809" isbn="978-3-86395-197-9" DOI="10.17875/gup2015-809" status="lieferbar" format="Hardcover, 21x27"/>
+<item id="1154" isbn="978-3-86395-406-2" DOI="10.17875/gup2019-1154" status="lieferbar" format="Hardcover, 21x27"/>
+<item id="82" isbn="978-3-86395-054-5" DOI="10.17875/gup2012-82" status="lieferbar" format="Softcover, 17x24"/>
+<item id="511" isbn="978-3-941875-65-4" DOI="10.17875/gup2010-511" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="810" isbn="978-3-86395-209-9" DOI="10.17875/gup2015-810" status="lieferbar" format="Softcover, 17x24"/>
+<item id="135" isbn="978-3-86395-037-8" DOI="10.17875/gup2012-135" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1006" isbn="978-3-86395-246-4" DOI="10.17875/gup2017-1006" status="lieferbar" format="Softcover, 17x24"/>
+<item id="238" isbn="978-3-941875-09-8" DOI="10.17875/gup2009-238" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1051" isbn="978-3-86395-324-9" DOI="10.17875/gup2017-1051" status="lieferbar" format="Hardcover, 25x21"/>
+<item id="1162" isbn="978-3-86395-388-1" DOI="10.17875/gup2019-1162" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1050" isbn="978-3-86395-328-7" DOI="10.17875/gup2017-1050" status="lieferbar" format="Softcover, 17x24"/>
+<item id="142" isbn="978-3-86395-066-8" DOI="10.17875/gup2012-142" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1131" isbn="978-3-86395-363-8" DOI="10.17875/gup2019-1131" status="lieferbar" format="Softcover, 17x24"/>
+<item id="227" isbn="978-3-86395-030-9" DOI="10.17875/gup2011-227" status="lieferbar" format="Softcover, 17x24"/>
+<item id="446" isbn="978-3-940344-49-6" DOI="10.17875/gup2008-446" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="183" isbn="978-3-941875-17-3" DOI="10.17875/gup2009-183" status="lieferbar" format="Softcover, 17x24"/>
+<item id="393" isbn="978-3-940344-79-3" DOI="10.17875/gup2009-393" status="lieferbar" format="Softcover, 17x24"/>
+<item id="236" isbn="978-3-940344-53-3" DOI="10.17875/gup2008-236" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="259" isbn="978-3-86395-110-8" DOI="10.17875/gup2013-259" status="lieferbar" format="Softcover, 17x24"/>
+<item id="100" isbn="978-3-941875-35-7" DOI="10.17875/gup2009-100" status="lieferbar" format="Softcover, 17x24"/>
+<item id="144" isbn="978-3-86395-073-6" DOI="10.17875/gup2012-144" status="lieferbar" format="Softcover, 17x24"/>
+<item id="463" isbn="978-3-938616-01-7" DOI="10.17875/gup2005-463" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1205" isbn="978-3-86395-427-7" DOI="10.17875/gup2019-1205" status="lieferbar" format="Softcover, 17x24"/>
+<item id="218" isbn="978-3-930457-22-9" DOI="10.17875/gup2002-218" status="lieferbar" format="Softcover, 14,8x21"/>
+<item id="322" isbn="978-3-941875-69-2" DOI="10.17875/gup2010-322" status="lieferbar" format="Softcover, 17x24"/>
+<item id="483" isbn="978-3-940344-39-7" DOI="10.17875/gup2008-483" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1175" isbn="978-3-86395-396-6" DOI="10.17875/gup2019-1175" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1031" isbn="978-3-86395-316-4" DOI="10.17875/gup2017-1031" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1121" isbn="978-3-86395-393-5" DOI="10.17875/gup2018-1121" status="lieferbar" format="Softcover, 17x24"/>
+<item id="820" isbn="978-3-86395-200-6" DOI="10.17875/gup2015-820" status="lieferbar" format="Softcover, 17x24"/>
+<item id="307" isbn="978-3-86395-044-6" DOI="10.17875/gup2012-307" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="70" isbn="978-3-930457-38-0" DOI="10.17875/gup2004-70" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1068" isbn="978-3-86395-344-7" DOI="10.17875/gup2017-1068" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1100" isbn="978-3-86395-368-3" DOI="10.17875/gup2018-1100" status="lieferbar" format="Softcover, 17x24"/>
+<item id="363" isbn="978-3-938616-42-0" DOI="10.17875/gup2006-363" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="426" isbn="978-3-938616-70-3" DOI="10.17875/gup2007-426" status="lieferbar" format="Softcover, 17x24"/>
+<item id="892" isbn="978-3-86395-239-6" DOI="10.17875/gup2015-892" status="lieferbar" format="Softcover, 17x24"/>
+<item id="237" isbn="978-3-940344-77-9" DOI="10.17875/gup2009-237" status="lieferbar" format="Softcover, 17x24"/>
+<item id="437" isbn="978-3-941875-49-4" DOI="10.17875/gup2010-437" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1082" isbn="978-3-86395-351-5" DOI="10.17875/gup2018-1082" status="lieferbar" format="Softcover, 17x24"/>
+<item id="489" isbn="978-3-941875-23-4" DOI="10.17875/gup2009-489" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1080" isbn="978-3-86395-347-8" DOI="10.17875/gup2018-1080" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1092" isbn="978-3-86395-359-1" DOI="10.17875/gup2018-1092" status="lieferbar" format="Softcover, 17x24"/>
+<item id="381" isbn="978-3-86395-146-7" DOI="10.17875/gup2013-381" status="lieferbar" format="Softcover, 17x24"/>
+<item id="46" isbn="978-3-930457-70-0" DOI="10.17875/gup2004-46" status="lieferbar" format="Softcover, 17x24"/>
+<item id="56" isbn="978-3-938616-74-1" DOI="10.17875/gup2008-56" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="275" isbn="978-3-941875-34-0" DOI="10.17875/gup2010-275" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1247" isbn="978-3-86395-439-0" DOI="10.17875/gup2020-1247" status="lieferbar" format="Softcover, 17x24"/>
+<item id="909" isbn="978-3-86395-253-2" DOI="10.17875/gup2016-909" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="202" isbn="978-3-938616-63-5" DOI="10.17875/gup2006-202" status="nicht lieferbar" format="Softcover, DIN A5"/>
+<item id="711" isbn="978-3-86395-115-3" DOI="10.17875/gup2013-711" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="825" isbn="978-3-86395-201-3" DOI="10.17875/gup2015-825" status="lieferbar" format="Softcover, 17x24"/>
+<item id="833" isbn="978-3-86395-203-7" DOI="10.17875/gup2015-833" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1122" isbn="978-3-86395-377-5" DOI="10.17875/gup2018-1122" status="lieferbar" format="Softcover, 17x24"/>
+<item id="53" isbn="978-3-86395-072-9" DOI="10.17875/gup2012-53" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="627" isbn="978-3-930457-07-6" DOI="10.17875/gup1998-627" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1107" isbn="978-3-86395-380-5" DOI="10.17875/gup2018-1107" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1062" isbn="978-3-86395-319-5" DOI="10.17875/gup2017-1062" status="lieferbar" format="Softcover, 17x24"/>
+<item id="178" isbn="978-3-940344-63-2" DOI="10.17875/gup2009-178" status="lieferbar" format="Softcover, 17x24"/>
+<item id="138" isbn="978-3-86395-049-1" DOI="10.17875/gup2012-138" status="lieferbar" format="Softcover, 17x24"/>
+<item id="3" isbn="978-3-941875-59-3" DOI="10.17875/gup2010-3" status="lieferbar" format="Softcover, 17x24"/>
+<item id="358" isbn="978-3-938616-21-5" DOI="10.17875/gup2005-358" status="lieferbar" format="Softcover, 17x24"/>
+<item id="141" isbn="978-3-86395-060-6" DOI="10.17875/gup2012-141" status="lieferbar" format="Softcover, 17x24"/>
+<item id="812" isbn="978-3-86395-192-4" DOI="10.17875/gup2015-812" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="1083" isbn="978-3-86395-353-9" DOI="10.17875/gup2018-1083" status="lieferbar" format="Softcover, 17x24"/>
+<item id="982" isbn="978-3-86395-279-2" DOI="10.17875/gup2016-982" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="640" isbn="978-3-930457-40-3" DOI="10.17875/gup2004-640" status="lieferbar" format="Softcover, 17x24"/>
+<item id="361" isbn="978-3-86395-024-8" DOI="10.17875/gup2012-361" status="lieferbar" format="Softcover, 17x24"/>
+<item id="262" isbn="978-3-940344-11-3" DOI="10.17875/gup2007-262" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="370" isbn="978-3-86395-091-0" DOI="10.17875/gup2012-370" status="lieferbar" format="Softcover, 17x24"/>
+<item id="476" isbn="978-3-86395-040-8" DOI="10.17875/gup2012-476" status="lieferbar" format="Softcover, 17x24"/>
+<item id="644" isbn="978-3-930457-78-6" DOI="10.17875/gup2006-644" status="lieferbar" format="Softcover, 17x24"/>
+<item id="222" isbn="978-3-938616-40-6" DOI="10.17875/gup2006-222" status="lieferbar" format="Softcover, 17x24"/>
+<item id="391" isbn="978-3-938616-66-6" DOI="10.17875/gup2007-391" status="lieferbar" format="Softcover, 17x24"/>
+<item id="395" isbn="978-3-941875-40-1" DOI="10.17875/gup2010-395" status="lieferbar" format="Softcover, 17x24"/>
+<item id="83" isbn="978-3-86395-058-3" DOI="10.17875/gup2012-83" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="233" isbn="978-3-938616-93-2" DOI="10.17875/gup2007-233" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="777" isbn="978-3-86395-148-1" DOI="10.17875/gup2014-777" status="lieferbar" format="Softcover, 17x24"/>
+<item id="197" isbn="978-3-938616-22-2" DOI="10.17875/gup2005-197" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1303" isbn="978-3-86395-437-6" DOI="10.17875/gup2020-1303" status="lieferbar" format="Softcover, 17x24"/>
+<item id="247" isbn="978-3-938616-20-8" DOI="10.17875/gup2005-247" status="lieferbar" format="Softcover, 17x24"/>
+<item id="287" isbn="978-3-86395-020-0" DOI="10.17875/gup2011-287" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="362" isbn="978-3-941875-10-4" DOI="10.17875/gup2009-362" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1030" isbn="978-3-86395-315-7" DOI="10.17875/gup2017-1030" status="lieferbar" format="Softcover, 17x24"/>
+<item id="225" isbn="978-3-938616-55-0" DOI="10.17875/gup2006-225" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="989" isbn="978-3-86395-284-6" DOI="10.17875/gup2016-989" status="lieferbar" format="Softcover, 17x24"/>
+<item id="113" isbn="978-3-938616-31-4" DOI="10.17875/gup2005-113" status="lieferbar" format="Softcover, 17x24"/>
+<item id="98" isbn="978-3-940344-14-4" DOI="10.17875/gup2008-98" status="lieferbar" format="Softcover, 17x24"/>
+<item id="125" isbn="978-3-86395-007-1" DOI="10.17875/gup2011-125" status="lieferbar" format="Softcover, 17x24"/>
+<item id="271" isbn="978-3-940344-60-1" DOI="10.17875/gup2008-271" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="191" isbn="978-3-941875-78-4" DOI="10.17875/gup2010-191" status="lieferbar" format="Softcover, 17x24"/>
+<item id="199" isbn="978-3-938616-29-1" DOI="10.17875/gup2006-199" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="124" isbn="978-3-86395-005-7" DOI="10.17875/gup2011-124" status="lieferbar" format="Softcover, 17x24"/>
+<item id="244" isbn="978-3-930457-32-8" DOI="10.17875/gup2003-244" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="369" isbn="978-3-86395-118-4" DOI="10.17875/gup2013-369" status="lieferbar" format="Softcover, 17x24"/>
+<item id="150" isbn="978-3-86395-088-0" DOI="10.17875/gup2012-150" status="lieferbar" format="Softcover, 17x24"/>
+<item id="258" isbn="978-3-86395-079-8" DOI="10.17875/gup2012-258" status="lieferbar" format="Softcover, 17x24"/>
+<item id="405" isbn="978-3-86395-114-6" DOI="10.17875/gup2013-405" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1116" isbn="978-3-86395-390-4" DOI="10.17875/gup2018-1116" status="lieferbar" format="Softcover, 17x24"/>
+<item id="294" isbn="978-3-938616-79-6" DOI="10.17875/gup2007-294" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1089" isbn="978-3-86395-358-4" DOI="10.17875/gup2018-1089" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1095" isbn="978-3-86395-320-1" DOI="10.17875/gup2018-1095" status="lieferbar" format="Softcover, 17x24"/>
+<item id="364" isbn="978-3-930457-77-9" DOI="10.17875/gup2005-364" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1045" isbn="978-3-86395-318-8" DOI="10.17875/gup2017-1045" status="lieferbar" format="Softcover, 12,6x20,5"/>
+<item id="153" isbn="978-3-86395-106-1" DOI="10.17875/gup2013-153" status="lieferbar" format="Softcover, 17x24"/>
+<item id="702" isbn="978-3-940344-22-9" DOI="10.17875/gup2008-702" status="lieferbar" format="Softcover, 17x24"/>
+<item id="127" isbn="978-3-86395-011-8" DOI="10.17875/gup2011-127" status="lieferbar" format="Softcover, 17x24"/>
+<item id="214" isbn="978-3-940344-68-7" DOI="10.17875/gup2009-214" status="lieferbar" format="Softcover, 17x24"/>
+<item id="196" isbn="978-3-930457-68-7" DOI="10.17875/gup2004-196" status="lieferbar" format="Softcover, 17x24"/>
+<item id="632" isbn="978-3-930457-19-9" DOI="10.17875/gup2001-632" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1035" isbn="978-3-86395-303-4" DOI="10.17875/gup2017-1035" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1161" isbn="978-3-86395-410-9" DOI="10.17875/gup2019-1161" status="lieferbar" format="Softcover, 17x24"/>
+<item id="900" isbn="978-3-86395-242-6" DOI="10.17875/gup2015-900" status="lieferbar" format="Softcover, 17x24"/>
+<item id="166" isbn="978-3-938616-82-6" DOI="10.17875/gup2007-166" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="203" isbn="978-3-86395-056-9" DOI="10.17875/gup2012-203" status="lieferbar" format="Softcover, 17x24"/>
+<item id="467" isbn="978-3-940344-99-1" DOI="10.17875/gup2009-467" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1106" isbn="978-3-86395-379-9" DOI="10.17875/gup2018-1106" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="1140" isbn="978-3-86395-370-6" DOI="10.17875/gup2019-1140" status="lieferbar" format="Hardcover, DIN A5"/>
+<item id="1171" isbn="978-3-86395-412-3" DOI="10.17875/gup2019-1171" status="lieferbar" format="Softcover, 17x24"/>
+<item id="843" isbn="978-3-86395-240-2" DOI="10.17875/gup2015-843" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1177" isbn="978-3-86395-419-2" DOI="10.17875/gup2019-1177" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1157" isbn="978-3-86395-409-3" DOI="10.17875/gup2019-1157" status="lieferbar" format="Softcover, 17x24"/>
+<item id="421" isbn="978-3-941875-88-3" DOI="10.17875/gup2011-421" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1070" isbn="978-3-86395-340-9" DOI="10.17875/gup2018-1070" status="lieferbar" format="Softcover, 17x24"/>
+<item id="201" isbn="978-3-938616-53-6" DOI="10.17875/gup2006-201" status="lieferbar" format="Softcover, 17x24"/>
+<item id="510" isbn="978-3-941875-19-7" DOI="10.17875/gup2010-510" status="lieferbar" format="Softcover, 17x24"/>
+<item id="908" isbn="978-3-86395-251-8" DOI="10.17875/gup2015-908" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1002" isbn="978-3-86395-282-2" DOI="10.17875/gup2016-1002" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1331" isbn="978-3-86395-457-4" DOI="10.17875/gup2020-1331" status="lieferbar" format="Softcover, 17x24"/>
+<item id="270" isbn="978-3-940344-51-9" DOI="10.17875/gup2009-270" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="140" isbn="978-3-86395-057-6" DOI="10.17875/gup2012-140" status="lieferbar" format="Softcover, 17x24"/>
+<item id="449" isbn="978-3-86395-062-0" DOI="10.17875/gup2013-449" status="lieferbar" format="Softcover, 17x24"/>
+<item id="120" isbn="978-3-86395-001-9" DOI="10.17875/gup2011-120" status="lieferbar" format="Softcover, 17x24"/>
+<item id="994" isbn="978-3-86395-290-7" DOI="10.17875/gup2016-994" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1005" isbn="978-3-86395-289-1" DOI="10.17875/gup2016-1005" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1326" isbn="978-3-86395-456-7" DOI="10.17875/gup2020-1326" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1252" isbn="978-3-86395-443-7" DOI="10.17875/gup2020-1252" status="lieferbar" format="Softcover, 17x24"/>
+<item id="67" isbn="978-3-938616-00-0" DOI="10.17875/gup2005-67" status="lieferbar" format="Softcover, 17x24"/>
+<item id="323" isbn="978-3-941875-79-1" DOI="10.17875/gup2010-323" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1094" isbn="978-3-86395-362-1" DOI="10.17875/gup2018-1094" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="459" isbn="978-3-86395-069-9" DOI="10.17875/gup2012-459" status="lieferbar" format="Softcover, 17x24"/>
+<item id="813" isbn="978-3-86395-207-5" DOI="10.17875/gup2015-813" status="lieferbar" format="Softcover, 17x24"/>
+<item id="429" isbn="978-3-941875-43-2" DOI="10.17875/gup2010-429" status="lieferbar" format="Softcover, 17x24"/>
+<item id="669" isbn="978-3-930457-11-3" DOI="10.17875/gup1999-669" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="158" isbn="978-3-86395-128-3" DOI="10.17875/gup2014-158" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="470" isbn="978-3-941875-14-2" DOI="10.17875/gup2010-470" status="lieferbar" format="Hardcover, 17x24"/>
+<item id="849" isbn="978-3-86395-243-3" DOI="10.17875/gup2015-849" status="lieferbar" format="Softcover, 17x24"/>
+<item id="295" isbn="978-3-938616-98-7" DOI="10.17875/gup2008-295" status="lieferbar" format="Softcover, 17x24"/>
+<item id="887" isbn="978-3-86395-220-4" DOI="10.17875/gup2015-887" status="lieferbar" format="Softcover, 17x24"/>
+<item id="72" isbn="978-3-938616-33-8" DOI="10.17875/gup2005-72" status="lieferbar" format="Softcover, DIN A5"/>
+<item id="840" isbn="978-3-86395-217-4" DOI="10.17875/gup2015-840" status="lieferbar" format="Softcover, 17x24"/>
+<item id="84" isbn="978-3-86395-059-0" DOI="10.17875/gup2012-84" status="lieferbar" format="Softcover, 17x24"/>
+<item id="61" isbn="978-3-940344-50-2" DOI="10.17875/gup2008-61" status="nicht lieferbar" format="Hardcover, 17x24"/>
+<item id="217" isbn="978-3-941875-31-9" DOI="10.17875/gup2010-217" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1066" isbn="978-3-86395-331-7" DOI="10.17875/gup2017-1066" status="lieferbar" format="Softcover, 17x24"/>
+<item id="753" isbn="978-3-86395-174-0" DOI="10.17875/gup2014-753" status="lieferbar" format="Softcover, 17x24"/>
+<item id="276" isbn="978-3-941875-60-9" DOI="10.17875/gup2010-276" status="lieferbar" format="Softcover, 17x24"/>
+<item id="4" isbn="978-3-941875-58-6" DOI="10.17875/gup2010-4" status="lieferbar" format="Softcover, 17x24"/>
+<item id="50" isbn="978-3-938616-61-1" DOI="10.17875/gup2006-50" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="501" isbn="978-3-930457-30-4" DOI="10.17875/gup2003-501" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="980" isbn="978-3-86395-281-5" DOI="10.17875/gup2016-980" status="lieferbar" format="Softcover, 17x24"/>
+<item id="472" isbn="978-3-86395-104-7" DOI="10.17875/gup2013-472" status="lieferbar" format="Softcover, 17x24"/>
+<item id="765" isbn="978-3-86395-154-2" DOI="10.17875/gup2014-765" status="lieferbar" format="Softcover, 17x24"/>
+<item id="251" isbn="978-3-938616-59-8" DOI="10.17875/gup2006-251" status="lieferbar" format="Softcover, 17x24"/>
+<item id="482" isbn="978-3-938616-95-6" DOI="10.17875/gup2007-482" status="lieferbar" format="Softcover, 17x24"/>
+<item id="815" isbn="978-3-86395-184-9" DOI="10.17875/gup2015-815" status="lieferbar" format="Softcover, 17x24"/>
+<item id="1129" isbn="978-3-86395-398-0" DOI="10.17875/gup2019-1129" status="lieferbar" format="Softcover, 17x24"/>
+<item id="784" isbn="978-3-86395-185-6" DOI="10.17875/gup2014-784" status="lieferbar" format="Softcover, 17x24"/>
+<item id="164" isbn="978-3-938616-81-9" DOI="10.17875/gup2008-164" status="lieferbar" format="Softcover, 17x24"/>
+<item id="770" isbn="978-3-86395-158-0" DOI="10.17875/gup2014-770" status="lieferbar" format="Softcover, DIN A4"/>
+<item id="502" isbn="978-3-938616-30-7" DOI="10.17875/gup2006-502" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="93" isbn="978-3-86395-157-3" DOI="10.17875/gup2014-93" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="894" isbn="978-3-86395-223-5" DOI="10.17875/gup2015-894" status="lieferbar" format="Softcover, 17x24"/>
+<item id="176" isbn="978-3-940344-59-5" DOI="10.17875/gup2008-176" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="376" isbn="978-3-930457-45-8" DOI="10.17875/gup2004-376" status="nicht lieferbar" format="Softcover, 17x24"/>
+<item id="424" isbn="978-3-938616-50-5" DOI="10.17875/gup2007-424" status="nicht lieferbar" format="Softcover, 17x24"/>
+</items>

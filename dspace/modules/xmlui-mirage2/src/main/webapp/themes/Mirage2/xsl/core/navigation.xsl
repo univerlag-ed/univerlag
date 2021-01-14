@@ -184,8 +184,16 @@
                 <xsl:apply-templates select="dri:list[@n='account']"/>
             </xsl:if>
             <xsl:apply-templates select="dri:list[@n='discovery']"/>
-            <xsl:apply-templates select="dri:list[@n='statistics']"/>
-
+	    <xsl:choose>
+	    <xsl:when test="//dri:userMeta/@authenticated = 'no'"> 
+		<div class="hide">
+	            <xsl:apply-templates select="dri:list[@n='statistics']"/> 
+		</div>
+	    </xsl:when>
+	    <xsl:otherwise>
+		<xsl:apply-templates select="dri:list[@n='statistics']"/>
+	    </xsl:otherwise>
+	    </xsl:choose>
             <!-- Do not show RSS Feed -->
             <!-- DS-984 Add RSS Links to Options Box -->
             <!-- <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']) != 0">
@@ -367,7 +375,7 @@
 
         <!-- <h2 class="ds-sublist-head"><i18n:text>xmlui.ArtifactBrowser.CollectionViewer.head_browse</i18n:text></h2> -->
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.home.collection</i18n:text></a>
-        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=dateissued&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Dateissued']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_dateissued</i18n:text></a>
+        <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?ort_by=3&amp;type=dateissued&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Dateissued']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_dateissued</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=author&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Authors']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_author</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$home-collection}/browse?type=title&amp;locale-attribute={$currentLoc}" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Menu', 'Title']);"><i18n:text>xmlui.ArtifactBrowser.Navigation.browse_title</i18n:text></a>
         <a class="list-group-item ds-option" href="{$context-path}/{$series-collection}?locale-attribute={$currentLoc}"><i18n:text>xmlui.ArtifactBrowser.Navigation.series.collection</i18n:text></a>

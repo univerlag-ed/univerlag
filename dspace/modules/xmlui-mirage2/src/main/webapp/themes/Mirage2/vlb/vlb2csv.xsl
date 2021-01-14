@@ -19,7 +19,7 @@
     <xsl:output method="text" encoding="UTF-8" indent="no" media-type="text/csv; charset=UTF-8" />
 
 	<xsl:template match="/items">
-				<xsl:text>ISBN;Umfang Höhe / Breite / Gewicht;Lieferstatus;Zolltarifnummer;Herstellungsland</xsl:text>
+				<xsl:text>ISBN;DOI;Umfang Höhe / Breite / Gewicht;Lieferstatus;Zolltarifnummer;Herstellungsland</xsl:text>
 <xsl:text>
 </xsl:text>
                 <xsl:for-each select="item">
@@ -69,7 +69,7 @@
 							</xsl:otherwise>
 						</xsl:choose>
 					</xsl:variable>
-					<xsl:value-of select="concat(@isbn, ';', $mass, ';', @status, ';', '49019900;Deutschland')" />
+					<xsl:value-of select="concat(@isbn, ';', @DOI, ';', $mass, ';', @status, ';', '49019900;Deutschland')" />
 <xsl:text>
 </xsl:text>	
 				</xsl:for-each>

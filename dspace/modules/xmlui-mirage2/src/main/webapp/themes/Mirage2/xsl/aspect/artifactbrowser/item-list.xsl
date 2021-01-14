@@ -120,6 +120,10 @@
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='title']">
                             <xsl:value-of select="dim:field[@element='title'][1]/node()" disable-output-escaping="yes"/>
+			    <xsl:if test="dim:field[@element='title' and @qualifier='translated']">
+				<br />
+				<xsl:value-of select="dim:field[@element='title' and @qualifier='translated'][1]/node()" disable-output-escaping="yes"/>
+			    </xsl:if>
                         </xsl:when>
                         <xsl:otherwise>
                             <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
@@ -134,13 +138,18 @@
                 </span>
             </h4>
             <xsl:if test="//dim:field[@element='title'][@qualifier='alternative']">
+		<div>
                 <xsl:for-each select="//dim:field[@element='title'][@qualifier='alternative']">
-                    <div><small>
+                    <small>
                         <xsl:value-of select="node()" disable-output-escaping="yes"/>
                     </small>
-                    </div>
-                </xsl:for-each>
-
+		</xsl:for-each>
+		<xsl:for-each select="//dim:field[@element='title'][@qualifier='alternativetranslated']">
+			<small>
+				<xsl:value-of select="node()" disable-output-escaping="yes"/>
+			</small>
+		</xsl:for-each>
+		</div>
             </xsl:if>
 	     <xsl:if test="//dim:field[@element='description'][@qualifier='edition']">
                     <xsl:value-of select="concat(//dim:field[@element='description'][@qualifier='edition'], '. ')"/>
@@ -771,7 +780,6 @@
     <xsl:template match="dim:dim" mode="itemSummaryList-DIM">
         <xsl:variable name="itemWithdrawn" select="@withdrawn" />
         <div class="artifact-description">
-            <div class="artifact-title">
 
                 <xsl:element name="a">
                     <xsl:attribute name="href">
@@ -787,6 +795,10 @@
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='title']">
                             <xsl:value-of select="dim:field[@element='title'][1]/node()"/>
+			     <xsl:if test="dim:field[@element='title' and @qualifier='translated']">
+				<div/>
+				<xsl:value-of select="dim:field[@element='title' and @qualifier='translated'][1]/node()"/>
+			    </xsl:if> 
                         </xsl:when>
                         <xsl:otherwise>
                             <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
@@ -853,7 +865,6 @@
                         <xsl:text>)</xsl:text>
                     </span>
                 </xsl:if>
-            </div>
         </div>
     </xsl:template>
 

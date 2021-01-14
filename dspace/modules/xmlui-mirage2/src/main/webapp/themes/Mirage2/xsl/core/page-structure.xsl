@@ -307,6 +307,10 @@
                             margin: 0 30px 0px 0;
                             width: 100px;
                         }
+		#delivery {
+			width: 60px;
+			padding: 0 10px;
+		}
 
 		#file_news_div_news {
  		   padding-top: 30px;
@@ -359,7 +363,53 @@
 		ul.newfeatures {
 		    list-style-type: circle;
 		}
+	
+		ul.contributors > li {
+			margin-bottom: 15px;
+                        margin-left: -45px;
+                }
+		.row.litref {
+ 			   margin: 15px 0 15px -15px;
+		}	
+		#litref {
+			display:none;
+		}
+		#litref ul li {
+			padding-bottom: 15px;
+		}
+		.refs {
+			text-decoration:underline;
+		}
 		
+		#toc dl dt {
+			/*font-weight: normal;		*/
+		}
+
+		#toc dl dt span.contr {
+                        font-style: italic;
+			display: block;
+			padding-bottom: 5px;
+			font-weight: normal;
+                }
+
+		#toc dl dd {
+                        text-align: right;
+                }
+		#toc h4 {
+			margin: 30px 0 15px 0 !important;
+			font-size: 18px !important;
+			color: #555;
+		}
+		.navbar.navbar-default.navbar-static-top::before {
+			position: absolute;
+		}
+		#cm {
+		font-size: 5em;
+                    float: left;
+                    padding-right: 5px;
+		}
+
+
                 </style>
 
             <!--TODO figure out a way to include these in the concat & minify-->
