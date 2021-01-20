@@ -3135,7 +3135,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             
 	<div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Geowissenschaften und Geographie</h4>
-                <p>Dr. Alexander Gehler <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
+                <p>Dr. Alexander Gehler <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;
+		<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
                 </p>
             </div>
         </div>
