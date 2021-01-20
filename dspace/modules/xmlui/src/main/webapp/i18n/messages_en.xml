@@ -2951,8 +2951,8 @@ Göttingen University Press.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Theology</h4>
-                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/55424.html"> <span class="glyphicon glyphicon-home"></span></a>&#160;
-                <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
+                <p>Prof. Dr. Reinhard Müller<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/56732.html"> <span class="glyphicon glyphicon-home"></span></a>&#160;
+                <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
 		</p>
 
             </div>
@@ -2976,9 +2976,10 @@ Göttingen University Press.
 			<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/537520.html"><span class="glyphicon glyphicon-home"></span></a> &#160;
                     <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Humanities</h4>
-                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Andrew Gross<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
                 <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/450366.html"><span class="glyphicon glyphicon-home"></span></a></p>
 	    </div>
 		
@@ -2990,7 +2991,8 @@ Göttingen University Press.
                 <p>Prof. Dr. Ina Kersten <a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a>&#160;
             <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Physics</h4>
                 <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
@@ -3001,11 +3003,11 @@ Göttingen University Press.
                 <h4 class="list-item-header">Faculty of Chemistry</h4>
                 <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Geoscience and Geography</h4>
-                <p>Prof. Dr. Joachim Reitner <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;<a title="Wikipedia" 
-
-target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
+                <p>Dr. Alexander Gehler<a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;
+		<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
                 </p>
             </div>
         </div>
@@ -3027,9 +3029,10 @@ target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wi
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Agricultural Sciences</h4>
-                <p>Prof. Dr. Senja Post <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/600680.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Jürgen Hummel<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/492912.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Economics</h4>
                 <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
@@ -3039,16 +3042,15 @@ target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wi
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Social Sciences</h4>
                 <p>Prof. Dr. Elfriede Hermann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/152352.html"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Gabriele Rosenthal <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sh/28238.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p> 
+                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p> 
 		</div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Göttingen State and University Library (Chair)</h4>
                 <p><nobr>Prof. Dr. Wolfram Horstmann</nobr>
-
                     <a href="//orcid.org/0000-0001-8673-6104" target="_blank" title="Person Profile (ORCID)">
                         <i class="icon-info-circled orcid"></i>
                     </a>
-
                     <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
