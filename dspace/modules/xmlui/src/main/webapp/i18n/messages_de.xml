@@ -3083,8 +3083,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Theologische Fakultät</h4>
-                <p>Prof. Dr. Dr. h.c. mult. Martin Tamcke <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/55424.html"> <span class="glyphicon glyphicon-home"></span></a>&#160;
-                <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Martin_Tamcke"><i class="icon-wikipedia"></i></a>
+                <p>Prof. Dr. Reinhard Müller <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/56732.html"> <span class="glyphicon glyphicon-home"></span></a>&#160;
+                <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
 		</p>
             </div>
             <div class="col-sm-6">
@@ -3104,13 +3104,13 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                     <a href="//orcid.org/0000-0002-8260-0346" target="_blank" title="Personen-Profil (ORCID)">
                         <i class="icon-info-circled orcid"></i>
                     </a>
-<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/537520.html"><span class="glyphicon glyphicon-home"></span></a> &#160;
+			<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/537520.html"><span class="glyphicon glyphicon-home"></span></a> &#160;
                     <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Philosophische Fakultät</h4>
-                <p>Prof. Dr. Regina Bendix <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
-                <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/450366.html"><span class="glyphicon glyphicon-home"></span></a>&#160;</p>
+                <p>Prof. Dr. Andrew Gross <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/76738.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home"></span></a>&#160;</p>
 		</div>
         </div>
 
@@ -3120,7 +3120,8 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 <p>Prof. Dr. Ina Kersten <a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a>&#160;
             <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a></p>
 		</div>
-            <div class="col-sm-6">
+		
+         <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Physik</h4>
                 <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
@@ -3131,9 +3132,10 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 <h4 class="list-item-header">Fakultät für Chemie</h4>
                 <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Geowissenschaften und Geographie</h4>
-                <p>Prof. Dr. Joachim Reitner <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
+                <p>Dr. Alexander Gehler <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia"></i></a>
                 </p>
             </div>
         </div>
@@ -3143,10 +3145,11 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 <h4 class="list-item-header">Fakultät für Biologie und Psychologie</h4>
                 <p>Prof. Dr. Erwin Bergmeier <a href="//orcid.org/0000-0002-6118-4611" target="_blank" itle="Personen-Profil (ORCID)">
                         <i class="icon-info-circled orcid"></i>
-                    </a>
+			</a>
 			<a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
-            <div class="col-sm-6">
+            
+	<div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Forstwissenschaften und Waldökologie</h4>
                 <p>Prof. Dr. Dirk Hölscher <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+dirk+h%C3%B6lscher%2C+chair/73186.html"><span class="glyphicon glyphicon-home"></span></a>&#160;</p>
             </div>
@@ -3155,7 +3158,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Agrarwissenschaften</h4>
-                <p>Prof. Dr. Senja Post <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/600680.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Jürgen Hummel<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/492912.html"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Wirtschaftswissenschaftliche Fakultät</h4>
@@ -3167,16 +3170,15 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             <div class="col-sm-6">
                 <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
                 <p>Prof. Dr. Elfriede Hermann<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/152352.html"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Gabriele Rosenthal <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sh/28238.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p>
             </div>
+		
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek Göttingen (Vorsitz)</h4>
                 <p><nobr>Prof. Dr. Wolfram Horstmann</nobr>
-
                     <a href="//orcid.org/0000-0001-8673-6104" target="_blank" itle="Personen-Profil (ORCID)">
                         <i class="icon-info-circled orcid"></i>
                     </a>
-
                     <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
             </div>
         </div>
