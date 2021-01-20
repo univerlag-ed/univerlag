@@ -2979,8 +2979,9 @@ Göttingen University Press.
             
 	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Humanities</h4>
-                <p>Prof. Dr. Andrew Gross<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a></p>
-                <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/450366.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Andrew Gross<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home"></span></a>&#160;
+			<!-- <a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> --></p>
+                <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sahm-heike-prof-dr/450366.html"><span class="glyphicon glyphicon-home"></span></a></p>
 	    </div>
 		
         </div>
@@ -3042,7 +3043,8 @@ Göttingen University Press.
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Social Sciences</h4>
                 <p>Prof. Dr. Elfriede Hermann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/152352.html"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home"></span></a>&#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a></p> 
+                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home"></span></a>&#160;
+			<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a> --></p> 
 		</div>
             
 	<div class="col-sm-6">
