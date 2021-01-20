@@ -2904,7 +2904,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a class="bigger" href="/news"><span class="new">!</span>Aktuelles</a>
+                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->Aktuelles</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right bigger" href="/info/publishing-catalog">Verlagskatalog</a>

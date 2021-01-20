@@ -2860,7 +2860,7 @@ Your team at the Universitätsverlag Göttingen</p>
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a class="bigger" href="/news"><span class="new">!</span>News</a>
+                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->News</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right bigger" href="/info/publishing-catalog">Publishing Catalog</a>
