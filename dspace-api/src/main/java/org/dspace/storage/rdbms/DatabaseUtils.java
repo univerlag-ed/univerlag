@@ -10,6 +10,7 @@ package org.dspace.storage.rdbms;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -17,7 +18,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Locale;
 import javax.sql.DataSource;
+
+import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.dspace.core.ConfigurationManager;
@@ -60,6 +64,11 @@ public class DatabaseUtils
                             File.separator + "conf" +
                             File.separator + "reindex.flag";
 
+    // Types of databases supported by DSpace. See getDbType()
+    public static final String DBMS_POSTGRES="postgres";
+    public static final String DBMS_ORACLE="oracle";
+    public static final String DBMS_H2="h2";
+
     /**
      * Commandline tools for managing database changes, etc.
      * @param argv
@@ -70,7 +79,8 @@ public class DatabaseUtils
         if (argv.length < 1)
         {
             System.out.println("\nDatabase action argument is missing.");
-            System.out.println("Valid actions: 'test', 'info', 'migrate', 'repair' or 'clean'");
+            System.out.println("Valid actions: 'test', 'info', 'migrate', 'repair', "
+                    + "'update-sequences' or 'clean'");
             System.out.println("\nOr, type 'database help' for more information.\n");
             System.exit(1);
         }
@@ -219,16 +229,38 @@ public class DatabaseUtils
                     System.out.println("Done.");
                 }
             }
+            else if(argv[0].equalsIgnoreCase("update-sequences"))
+            {
+                try (Connection connection = dataSource.getConnection()) {
+                    String dbType = getDbType(connection);
+                    String sqlfile = "org/dspace/storage/rdbms/sqlmigration/" + dbType +
+                             "/update-sequences.sql";
+                    InputStream sqlstream = DatabaseUtils.class.getClassLoader().getResourceAsStream(sqlfile);
+                    if (sqlstream != null) {
+                        String s = IOUtils.toString(sqlstream, "UTF-8");
+                        if (!s.isEmpty()) {
+                            System.out.println("Running " + sqlfile);
+                            connection.createStatement().execute(s);
+                            System.out.println("update-sequences complete");
+                        } else {
+                            System.err.println(sqlfile + " contains no SQL to execute");
+                        }
+                    } else {
+                        System.err.println(sqlfile + " not found");
+                    }
+                }
+            }
             else
             {
                 System.out.println("\nUsage: database [action]");
-                System.out.println("Valid actions: 'test', 'info', 'migrate', 'repair' or 'clean'");
-                System.out.println(" - test    = Test database connection is OK");
-                System.out.println(" - info    = Describe basic info about database, including migrations run");
-                System.out.println(" - migrate = Migrate the Database to the latest version");
-                System.out.println("             Optionally, specify \"ignored\" to also run \"Ignored\" migrations");
-                System.out.println(" - repair  = Attempt to repair any previously failed database migrations");
-                System.out.println(" - clean   = DESTROY all data and tables in Database (WARNING there is no going back!)");
+                System.out.println("Valid actions: 'test', 'info', 'migrate', 'repair', 'update-sequences' or 'clean'");
+                System.out.println(" - test             = Test database connection is OK");
+                System.out.println(" - info             = Describe basic info about database, including migrations run");
+                System.out.println(" - migrate          = Migrate the Database to the latest version");
+                System.out.println("                      Optionally, specify \"ignored\" to also run \"Ignored\" migrations");
+                System.out.println(" - repair           = Attempt to repair any previously failed database migrations");
+                System.out.println(" - update-sequences = Update database sequences after running AIP ingest.");
+                System.out.println(" - clean            = DESTROY all data and tables in Database (WARNING there is no going back!)");
                 System.out.println("");
             }
 
@@ -281,14 +313,11 @@ public class DatabaseUtils
                     scriptLocations.add("filesystem:" + ConfigurationManager.getProperty("dspace.dir") +
                                         "/etc/" + dbType);
                 }
-
                 // Also add the Java package where Flyway will load SQL migrations from (based on DB Type)
                 scriptLocations.add("classpath:org.dspace.storage.rdbms.sqlmigration." + dbType);
-
                 // Also add the Java package where Flyway will load Java migrations from
                 // NOTE: this also loads migrations from any sub-package
                 scriptLocations.add("classpath:org.dspace.storage.rdbms.migration");
-
                 // Special scenario: If XMLWorkflows are enabled, we need to run its migration(s)
                 // as it REQUIRES database schema changes. XMLWorkflow uses Java migrations
                 // which first check whether the XMLWorkflow tables already exist
@@ -378,7 +407,6 @@ public class DatabaseUtils
             {
                 flyway.setTarget(targetVersion);
             }
-
             // Does the necessary Flyway table ("schema_version") exist in this database?
             // If not, then this is the first time Flyway has run, and we need to initialize
             // NOTE: search is case sensitive, as flyway table name is ALWAYS lowercase,
@@ -402,19 +430,19 @@ public class DatabaseUtils
                     flyway.init();
                 }
             }
-
             // Determine pending Database migrations
             MigrationInfo[] pending = flyway.info().pending();
-
+	
             // As long as there are pending migrations, log them and run migrate()
             if (pending!=null && pending.length>0)
             {
+		
                 log.info("Pending DSpace database schema migrations:");
                 for (MigrationInfo info : pending)
                 {
                     log.info("\t" + info.getVersion() + " " + info.getDescription() + " " + info.getType() + " " + info.getState());
                 }
-
+		
                 // Run all pending Flyway migrations to ensure the DSpace Database is up to date
                 flyway.migrate();
 
@@ -516,7 +544,6 @@ public class DatabaseUtils
             // Item table doesn't exist. This database must be a fresh install
             return null;
         }
-
         // We will now check prior versions in reverse chronological order, looking
         // for specific tables or columns that were newly created in each version.
 
@@ -1032,6 +1059,37 @@ public class DatabaseUtils
             // (See ReindexerThread nested class below)
             ReindexerThread go = new ReindexerThread(indexer);
             go.start();
+        }
+    }
+
+    /**
+     * Determine the type of Database, based on the DB connection.
+     *
+     * @param connection current DB Connection
+     * @return a DB keyword/type (see DatabaseUtils.DBMS_* constants)
+     * @throws SQLException if database error
+     */
+    public static String getDbType(Connection connection)
+            throws SQLException
+    {
+        DatabaseMetaData meta = connection.getMetaData();
+        String prodName = meta.getDatabaseProductName();
+        String dbms_lc = prodName.toLowerCase(Locale.ROOT);
+        if (dbms_lc.contains("postgresql"))
+        {
+            return DBMS_POSTGRES;
+        }
+        else if (dbms_lc.contains("oracle"))
+        {
+            return DBMS_ORACLE;
+        }
+        else if (dbms_lc.contains("h2")) // Used for unit testing only
+        {
+            return DBMS_H2;
+        }
+        else
+        {
+            return dbms_lc;
         }
     }
 

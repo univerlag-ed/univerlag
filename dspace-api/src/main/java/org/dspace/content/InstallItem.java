@@ -235,6 +235,7 @@ public class InstallItem
 	        {
         	    String isbn = handleKey.substring(handleKey.indexOf("isbn-") + 5);
 	            item.addMetadata("dc", "relation", "isbn-13", null, isbn);
+		    item.addMetadata("dc", "identifier", "asin", null, generateASIN(isbn)); 
         	}
 	        else if (handleKey.indexOf("issn") > -1)
         	{
@@ -371,5 +372,25 @@ public class InstallItem
         erg=erg/(sb.charAt(sb.length()-1)-48);
         String serg=String.valueOf(erg);
         return serg.substring(serg.length() - 1);
+    }
+
+
+    /**
+     * Generate 10-digit ISBN needed for ASIN (Amazon Serial Book Identifier) 
+     *
+     * @param 13-digit ISBN
+     *
+     * @return 10-digit ISBN without "-"
+     */
+    private static String generateASIN(String isbn)
+    {
+	String base = isbn.substring(0,16).substring(4).replaceAll("-","");
+	int checksum=0;
+        for(int i=0;i<9;i++)
+            checksum += base.charAt(i) * (i+1);
+
+	checksum = checksum % 11;
+	
+        return base  + checksum;
     }
 }

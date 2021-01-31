@@ -63,14 +63,15 @@ public class V5_0_2014_11_04__Enable_XMLWorkflow_Migration
             {
                 // Determine path of this migration class (as the SQL scripts 
                 // we will run are based on this path under /src/main/resources)
+		
                 String packagePath = V5_0_2014_11_04__Enable_XMLWorkflow_Migration.class.getPackage().getName().replace(".", "/");
-
+		log.debug("FL-BUG packagePath: " + packagePath);
                 // Get the contents of our DB Schema migration script, based on path & DB type
                 // (e.g. /src/main/resources/[path-to-this-class]/postgres/xml_workflow_migration.sql)
                 String dbMigrateSQL = new ClassPathResource(packagePath + "/" +
                                                         DatabaseManager.getDbKeyword() +
                                                         "/xml_workflow_migration.sql", getClass().getClassLoader()).loadAsString(Constants.DEFAULT_ENCODING);
-
+		log.debug("FL-BUG : dbMigrateSQL: " + dbMigrateSQL);
                 // Actually execute the Database schema migration SQL
                 // This will create the necessary tables for the XMLWorkflow feature
                 DatabaseUtils.executeSql(connection, dbMigrateSQL);
@@ -80,7 +81,7 @@ public class V5_0_2014_11_04__Enable_XMLWorkflow_Migration
                 String dataMigrateSQL = new ClassPathResource(packagePath + "/" +
                                                           DatabaseManager.getDbKeyword() +
                                                           "/data_workflow_migration.sql", getClass().getClassLoader()).loadAsString(Constants.DEFAULT_ENCODING);
-
+		log.debug("FL-BUG : dataMigrateSQL: " + dataMigrateSQL);
                 // Actually execute the Data migration SQL
                 // This will migrate all existing traditional workflows to the new XMLWorkflow system & tables
                 DatabaseUtils.executeSql(connection, dataMigrateSQL);

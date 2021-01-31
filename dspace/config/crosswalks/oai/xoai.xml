@@ -19,10 +19,7 @@
             <Filter ref="defaultFilter" />
 
             <Format ref="oaidc"/>
-	    <Format ref="picaxml"/>
-	    <Format ref="epicur"/>
-	    <!-- <Format ref="xoai"/> -->
-            <!-- 
+            <Format ref="mets"/>
             <Format ref="xoai"/>
             <Format ref="didl"/>
             <Format ref="dim"/>
@@ -33,56 +30,16 @@
             <Format ref="qdc"/>
             <Format ref="marc"/>
             <Format ref="uketd_dc"/>
-            <Format ref="junii2" />
-	    -->
+            <!--<Format ref="junii2" />-->
             <Description>
                 This is the default context of the DSpace OAI-PMH data provider.
             </Description>
         </Context>
 
-
-	<Context baseurl="oapen" name="OAPEN Context">
-            <!-- Restrict access to hidden items -->
-            <!-- <Filter ref="defaultFilter" /> -->
-            <!-- The oapen filter -->
-            <Filter ref="oapenFilter"/>
-            <!-- Metadata Formats -->
-	    <!-- <Format ref="oaidc"/> -->
-            <Format ref="simpledc"/>
-            <Format ref="qdc"/>
-            <Description>
-                This contexts complies with OAPEN rules.
-            </Description>
-        </Context>
-
-	<Context baseurl="fundref" name="FundRef Context">
-                 <Transformer ref="fundrefTransformer"/>
-                 <Filter ref="FundRefFilter" />
-                 <Format ref="oaidc" />
-                 <Description>
-                This contexts lists all publications sponsored by some funder.
-                </Description>
-        </Context>
-
-
-	<Context baseurl="print">
-	    <Filter refid="printexistsFilter"/>
-	    <!-- <Format refid="onixprint"/>  -->
-	    <!-- <Set refid="printPublicationsSet"/> -->
-	    <!-- <Format refid="oaidc"/>
-	   <Format refid="xoai"/>--> 
-	    <Format ref="oaidc"/> 
-	    <Description>
-                Print publications in ONIX 2.1 format.
-            </Description>
-	</Context>
-
         <!--
             Driver Guidelines:
 
-            - http://www.driver-support.eu/documents/DRIVER_Guidelines_v2_Final_2008-11-13.pdf
-
-            Page 57 - 58
+            - https://guidelines.openaire.eu/en/latest/literature/use_of_oai_pmh.html
          -->
         <Context baseurl="driver" name="Driver Context">
             <!-- Date format, field prefixes, etc are ensured by the transformer -->
@@ -133,30 +90,6 @@
             <Namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</Namespace>
             <SchemaLocation>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</SchemaLocation>
         </Format>
-	<Format id="simpledc">
-            <Prefix>oaidc</Prefix>
-            <XSLT>metadataFormats/simpledc.xsl</XSLT>
-            <Namespace>http://www.openarchives.org/OAI/2.0/oai_dc/</Namespace>
-            <SchemaLocation>http://www.openarchives.org/OAI/2.0/oai_dc.xsd</SchemaLocation>
-        </Format>
-	<Format id="picaxml">
-	    <Prefix>picaxml</Prefix>
-	    <XSLT>metadataFormats/picaxml.xsl</XSLT>
-	    <Namespace>info:srw/schema/5/picaXML-v1.0</Namespace>
-	    <SchemaLocation>http://www.oclcpica.org/xml/picaplus.xsd</SchemaLocation>
-        </Format>
-        <Format id="epicur">
-	    <Prefix>epicur</Prefix>
-	    <XSLT>metadataFormats/epicur.xsl</XSLT>
-	    <Namespace>urn:nbn:de:1111-2004033116</Namespace>
-	    <SchemaLocation>http://www.persistent-identifier.de/xepicur/version1.0/xepicur.xsd</SchemaLocation>
-	</Format>
-	<!-- <Format id="onixprint">
-		<Prefix>onix_print</Prefix>
-		<XSLT>metadataFormats/onix_print.xsl</XSLT>
-		<Namespace>http://ns.editeur.org/onix/2.1/short</Namespace>
-		<SchemaLocation>http://www.editeur.org/onix/2.1/short/ONIX_BookProduct_2.1_short.xsd</SchemaLocation>
-	</Format> -->
         <Format id="mets">
             <Prefix>mets</Prefix>
             <XSLT>metadataFormats/mets.xsl</XSLT>
@@ -240,9 +173,6 @@
         </Transformer>
         <Transformer id="openaireTransformer">
             <XSLT>transformers/openaire.xsl</XSLT>
-        </Transformer>
-	<Transformer id="fundrefTransformer">
-            <XSLT>transformers/fundref.xsl</XSLT>
         </Transformer>
     </Transformers>
 
@@ -346,12 +276,6 @@
             </Definition>
         </Filter>
 
-	<Filter id="FundRefFilter">
-            <Definition>
-                <Custom ref="sponsorshipExistsCondition"/>
-            </Definition>
-        </Filter>
-
         <!-- UKETD Filter for records returned by OAI-PMH.
              By default, return an Item record:
                 * If it is a "thesis"
@@ -384,24 +308,6 @@
             </Definition>
         </Filter>
 
-	<!-- 
-		OAPEN filter for records marked as related to
-	-->
-	<Filter id="oapenFilter">
-	    <Definition>
-                <Custom ref="oapenRelatedCondition"/>
-            </Definition>
-	</Filter>
-
-	<!-- 
-		ONIX PRINT filter for records having print format
-	-->
-	<Filter id="printexistsFilter">
-	    <Definition>
-                <Custom ref="printexistsCondition"/>
-            </Definition>
-	</Filter>
-
         <!-- This condition determines if an Item has a "dc.type" field
              which contains "Thesis". -->
         <CustomCondition id="thesisDocumentTypeCondition">
@@ -426,13 +332,6 @@
             <Class>org.dspace.xoai.filter.DSpaceMetadataExistsFilter</Class>
             <Configuration>
                 <string name="field">dc.title</string>
-            </Configuration>
-        </CustomCondition>
-
-	<CustomCondition id="sponsorshipExistsCondition">
-            <Class>org.dspace.xoai.filter.DSpaceMetadataExistsFilter</Class>
-            <Configuration>
-                <string name="field">dc.relation.sponsorship</string>
             </Configuration>
         </CustomCondition>
 
@@ -502,35 +401,9 @@
                 <string name="value">info:eu-repo/grantAgreement/EC/FP</string>
             </Configuration>
         </CustomCondition>
-	
-	<!-- This condition detemines if an Item has a "dc.subject.other" field
-             which contains "OAPEN" -->
-	<CustomCondition id="oapenRelatedCondition">
-            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
-            <Configuration>
-                <string name="field">dc.subject.other</string>
-                <string name="operator">contains</string>
-                <string name="value">OAPEN</string>
-            </Configuration>
-        </CustomCondition>
-
-	<!-- This condition determines if an Item has a "dc.format.medium" field
-             which contains "Print" -->
-        <CustomCondition id="printexistsCondition">
-            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
-            <Configuration>
-                <string name="field">dc.format.medium</string>
-                <string name="operator">contains</string>
-                <string name="value">Print</string>
-            </Configuration>
-        </CustomCondition>
     </Filters>
 
     <Sets>
-	<Set id="printPublicationsSet">
-		<Spec>print</Spec>
-		<Name>print publications</Name>
-	</Set>
         <Set id="driverSet">
             <Spec>driver</Spec>
             <Name>Open Access DRIVERset</Name>

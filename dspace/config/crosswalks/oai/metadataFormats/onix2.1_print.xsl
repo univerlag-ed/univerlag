@@ -86,16 +86,28 @@
 				</b012>
 				
 
-				<!-- <series> DNB example differs from specification. Here according DNB -->
-				<xsl:if test="doc:metadata/doc:element[@name='dc']/doc:element[@name='relation']/doc:element[@name='ispartofseries']/doc:element/doc:field[@name='value']">
-				<series>
-					<title>
-						<!-- title type code, CL 15: 01: Distinctive title (book); Cover title (serial); Title on item (serial content item or reviewed resource) -->
-						<b202>01</b202>
-						<b203><xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='relation']/doc:element[@name='ispartofseries']/doc:element/doc:field[@name='value']" /></b203>
-					</title>
-				</series>
-				</xsl:if>
+				<!-- series -->
+                                <!--    <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='relation']/doc:element[@name='issn'][1]/doc:element/doc:field[@name='value']" > -->
+                                <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='relation']/doc:element[@name='ispartofseries']/doc:element/doc:field[@name='value']"> 
+                                        <series>
+                                                <!-- <SeriesIDType> CL 13: 02 ISSSn, 01 Proprietary, 06 DOI ... -->
+                                                <!-- <b273>02</b273> -->
+                                                <!-- <IDValue> -->
+                                                <!-- <b244>
+                                                        <xsl:value-of select="." />
+                                                </b244> -->
+                                                <!-- <TitleOfseries> -->
+                                                <b018>
+                                                        <xsl:value-of select="." />
+                                                </b018>
+                                                <xsl:if test="//doc:element[@name='bibliographicCitation']/doc:element[@name='volume']/doc:element/doc:field[@name='value']">
+                                                <!-- <NumberWithinSeries> -->
+                                                <b019>
+                                                        <xsl:value-of select="//doc:element[@name='dc']/doc:element[@name='bibliographicCitation']/doc:element[@name='volume']/doc:element/doc:field[@name='value']" />
+                                                </b019>
+                                                </xsl:if>
+                                        </series>
+                                </xsl:for-each>
 
 				<!-- Here <set> for multivolume publikations -->
 				<!--
@@ -241,18 +253,30 @@
                                         </d104>
                                 </othertext>
                                 </xsl:for-each>
-		
+	
 				<!-- ProductWebsite mandatory for DNB- Transfer 
-				Role: CL 73 - 01 Publisher's corporate website -->
-				<productwebsite>
-				<!--	<WebsiteRole> -->
-					<b367>31</b367> 
-				<!-- <ProductWebsiteDescription>  -->
-				<!--	<ProductWebsiteLink> -->
-				<f123><xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field[@name='value']" />
-					</f123>
-				</productwebsite>
-			
+                                Role: CL 73 - 01 Publisher's corporate website -->
+                                <!-- requested by DNB -->
+
+				<xsl:for-each select="doc:metadata/doc:element[@name='bundles']/doc:element/doc:field[text()='ORIGINAL']">
+                                        <xsl:for-each select="../doc:element[@name='bitstreams']/doc:element/doc:field[@name='url']">
+                                <productwebsite>
+                                <!--    <WebsiteRole> -->
+                                        <b367>31</b367>
+                                <!-- <ProductWebsiteDescription>  -->
+                                <!--    <ProductWebsiteLink> -->
+                                <f123><xsl:value-of select="."/></f123>
+                                <!-- <f123><xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field[@name='value']" /> </f123> -->
+                                </productwebsite>
+					</xsl:for-each>
+                                </xsl:for-each>
+
+				<xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field">
+                                <productwebsite>
+                                        <b367>02</b367>
+                                        <f123><xsl:value-of select="."/></f123>
+                                </productwebsite>
+				</xsl:for-each>
 
 				<!-- publisher 
 				Role: CL 45 - 01. Publisher -->

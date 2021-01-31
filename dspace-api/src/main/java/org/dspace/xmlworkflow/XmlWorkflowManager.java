@@ -92,6 +92,15 @@ public class XmlWorkflowManager {
      * startWithoutNotify() starts the workflow normally, but disables
      * notifications (useful for large imports,) for the first workflow step -
      * subsequent notifications happen normally
+     * @param c
+     * @param wsi
+     * @return a new workflow item wrapping the item removed from the workspace.
+     * @throws java.sql.SQLException passed through
+     * @throws org.dspace.authorize.AuthorizeException passed through.
+     * @throws java.io.IOException passed through.
+     * @throws org.dspace.xmlworkflow.WorkflowException passed through.
+     * @throws org.dspace.xmlworkflow.WorkflowConfigurationException passed through.
+     * @throws javax.mail.MessagingException passed through.
      */
     public static XmlWorkflowItem startWithoutNotify(Context c, WorkspaceItem wsi)
             throws SQLException, AuthorizeException, IOException, WorkflowException, WorkflowConfigurationException, MessagingException {
@@ -352,9 +361,14 @@ public class XmlWorkflowManager {
      * with the relevant collection, added to the search index, and any other
      * tasks such as assigning dates are performed.
      *
+     * @param c
+     * @param wfi
      * @return the fully archived item.
+     * @throws java.sql.SQLException passed through.
+     * @throws java.io.IOException passed through.
+     * @throws org.dspace.authorize.AuthorizeException passed through.
      */
-    public static Item archive(Context c, XmlWorkflowItem wfi)
+    protected static Item archive(Context c, XmlWorkflowItem wfi)
             throws SQLException, IOException, AuthorizeException {
         // FIXME: Check auth
         Item item = wfi.getItem();
@@ -519,7 +533,7 @@ public class XmlWorkflowManager {
         grantUserAllItemPolicies(c, wi.getItem(), e);
     }
 
-    public static void grantUserAllItemPolicies(Context context, Item item, EPerson epa) throws AuthorizeException, SQLException {
+    private static void grantUserAllItemPolicies(Context context, Item item, EPerson epa) throws AuthorizeException, SQLException {
         if(epa != null){
             //A list of policies the user has for this item
             List<Integer>  userHasPolicies = new ArrayList<Integer>();
@@ -597,7 +611,7 @@ public class XmlWorkflowManager {
         }
     }
 
-    public static void removeUserItemPolicies(Context context, Item item, EPerson e) throws SQLException, AuthorizeException {
+    private static void removeUserItemPolicies(Context context, Item item, EPerson e) throws SQLException, AuthorizeException {
         if(e != null){
             //Also remove any lingering authorizations from this user
             AuthorizeManager.removeEPersonPolicies(context, item, e);

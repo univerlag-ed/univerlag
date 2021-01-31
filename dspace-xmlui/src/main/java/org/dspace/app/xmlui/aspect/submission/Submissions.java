@@ -139,7 +139,6 @@ public class Submissions extends AbstractDSpaceTransformer
         this.addUnfinishedSubmissions(div);
 //        this.addSubmissionsInWorkflowDiv(div);
         this.addPreviousSubmissions(div, displayAll);
-
     }
 
     /**

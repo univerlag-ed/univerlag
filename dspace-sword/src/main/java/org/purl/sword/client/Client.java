@@ -338,8 +338,7 @@ public class Client implements SWORDClient {
 		DepositResponse response = null;
 
 		String messageBody = "";
-		log.debug("Filepath: " + message.getFilepath());
-		log.debug("user: " + username);
+		
 		try {
 			if (message.isUseMD5()) {
 				String md5 = ChecksumUtils.generateMD5(message.getFilepath());
@@ -353,7 +352,6 @@ public class Client implements SWORDClient {
 			}
 
 			String filename = message.getFilename();
-			log.debug("Filename: " + filename);
 			if (! "".equals(filename)) {
 				httppost.addHeader(HttpHeaders.CONTENT_DISPOSITION,
                         " filename=" + filename);

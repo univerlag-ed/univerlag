@@ -60,6 +60,8 @@
 	     <xsl:text>www.univerlag.uni-goettingen.de</xsl:text>
     </xsl:variable>
 
+    <xsl:variable name="amazon"><xsl:text>https://www.amazon.de/s?i=stripbook&amp;k=</xsl:text></xsl:variable>
+
     <xsl:template name="itemSummaryView-DIM">
         <!-- Generate the info about the item from the metadata section -->
         <xsl:apply-templates select="./mets:dmdSec/mets:mdWrap[@OTHERMDTYPE='DIM']/mets:xmlData/dim:dim"
@@ -690,6 +692,12 @@
 		</xsl:otherwise>
 		</xsl:choose>
 		</span>
+		<a class="asin">
+                     <xsl:attribute name="href">
+                            <xsl:value-of select="concat($amazon, //dim:field[@element='identifier' and @qualifier='asin'])" />
+                     </xsl:attribute>
+                      <i class="icon-amazon-1">amazon order</i>
+                 </a>
 		</div>
 		<div class="details">
 		<small><xsl:value-of select="concat($descr, '; ', $extent, ' ')" /><i18n:text>xmlui.item.info.pages</i18n:text></small>

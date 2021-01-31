@@ -226,15 +226,27 @@
 
 
 				<!-- ProductWebsite mandatory for DNB- Transfer 
-				Role: CL 73 - 01 Publisher's corporate website -->
-				<productwebsite>
-				<!--	<WebsiteRole> -->
-					<b367>31</b367> 
-				<!-- <ProductWebsiteDescription>  -->
-				<!--	<ProductWebsiteLink> -->
-				<f123><xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field[@name='value']" />
-					</f123>
-				</productwebsite>
+                                Role: CL 73 - 01 Publisher's corporate website -->
+                                <!-- requested by DNB -->
+
+                                <xsl:for-each select="doc:metadata/doc:element[@name='bundles']/doc:element/doc:field[text()='ORIGINAL']/doc:element[@name='bitstreams']/doc:element[@name='bitstream']">
+
+                                <productwebsite>
+                                <!--    <WebsiteRole> -->
+                                        <b367>31</b367>
+                                <!-- <ProductWebsiteDescription>  -->
+                                <!--    <ProductWebsiteLink> -->
+                                <f123><xsl:value-of select="doc:field[@name='uri']/text()"/></f123>
+                                <!-- <f123><xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field[@name='value']" /> </f123> -->
+                                </productwebsite>
+                                </xsl:for-each>
+
+                                <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='identifier']/doc:element[@name='uri']/doc:element/doc:field[@name='value']">
+                                <productwebsite>
+                                        <b367>02</b367>
+                                        <f123><xsl:value-of select="."/></f123>
+                                </productwebsite>
+                                </xsl:for-each>
 			
 
 				<!-- publisher 

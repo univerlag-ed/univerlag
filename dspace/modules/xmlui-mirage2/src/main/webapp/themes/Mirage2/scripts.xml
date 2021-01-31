@@ -56,6 +56,8 @@
     <script src="scripts/citations.js">&#160;</script>
     <script src="scripts/deepl.js">&#160;</script>
 
+    <!-- Message catalog -->
+    <script src="scripts/message-catalogue.js">&#160;</script>
 
     <!-- endbuild -->
 
