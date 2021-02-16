@@ -566,13 +566,16 @@
             <xsl:variable name="externalMetadataUrl">
                 <xsl:text>cocoon://metadata/handle/3/</xsl:text>
                 <xsl:choose>
+		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='purl'], 'univerlag-')">
+                        <xsl:value-of select="substring-after(//dim:field[@element='identifier'][@qualifier='purl'], 'purl?univerlag-')"/>
+                    </xsl:when>
 		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.17875')">
                         <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
                     </xsl:when>
 		    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], '10.3249/')">
                         <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='intern']"/>
                     </xsl:when>
-                    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], 'univerlag')">
+                    <xsl:when test="contains(//dim:field[@element='identifier'][@qualifier='uri'], 'univerlag-')">
                         <xsl:value-of select="substring-after(//dim:field[@element='identifier'][@qualifier='uri'], 'purl?univerlag-')"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -583,10 +586,15 @@
             </xsl:variable>
 
             <xsl:variable name="metsDoc" select="document($externalMetadataUrl)/mets:METS/mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']"/>
-
+	   <!-- <xsl:comment>Metadata:<xsl:value-of select="$externalMetadataUrl"/><xsl:comment> -->
             <xsl:for-each select="$metsDoc/mets:file[1]">
 		<!-- ID: <xsl:value-of select="./@ID"/> -->
                 <!-- Do not show description if file is not free or no files atteched -->
+		 <xsl:comment>URI: <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='uri']"/>
+		PURL: <xsl:value-of select="//dim:field[@element='identifier'][@qualifier='purl']"/>
+		</xsl:comment>
+		 <xsl:comment>METADATA: <xsl:value-of select="$externalMetadataUrl"/></xsl:comment>
+	 	 <xsl:comment>DOC: <xsl:value-of select="document($externalMetadataUrl)/mets:METS/mets:fileSec/mets:fileGrp[@USE='CONTENT' or @USE='ORIGINAL']/mets:file[1]/mets:FLocat[@LOCTYPE='URL']/@xlink:href"/></xsl:comment>		
                 <xsl:choose>
                     <xsl:when test="contains(mets:FLocat[@LOCTYPE='URL']/@xlink:href,'isAllowed=n')">
                         <!-- do nothing -->

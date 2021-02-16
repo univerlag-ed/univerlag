@@ -158,8 +158,8 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateissued">Browsing {0} by Issue Date {1}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateissued">Browsing {0} by Issue Date</message>
 
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Issue Date {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Issue Date</message>
 
 
     <!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
@@ -5293,7 +5293,7 @@ We collect your data for the purpose of processing your request. Your data will 
     <p>
 	We will store your data to provide the requested services. As soon as we have delivered our services or you ask for your data to be deleted, we’ll store your data only until all current processes have been completed. It will then be deleted unless legal requirements demands longer storage.
     </p> 
-        <h3>Right of access by the data subject</h3>
+        <h3>ight of access by the data subject</h3>
     <p>
 	According to the EU general data protection regulation (GDPR), you have the following rights: If your personal data is processed, you have the right to receive information about the data stored about you (Art. 15 GDPR). If incorrect personal data is processed, you have the right to have it corrected (Art. 16 GDPR). If the legal requirements are met, you can request the deletion or restriction of the processing and object to the processing (Art. 17, 18 and 21 GDPR). If you can’t provide the required data your request won’t be processed. If you have consented to data processing or if a contract for data processing exists and the data processing is carried out using automated procedures, you may have a right to data transferability (Art. 20 GDPR). Should you make use of your above mentioned rights, the Lower Saxony State and University Library Göttingen will check whether the legal requirements are fulfilled. To exercise your rights, please contact the instition’s data protection officer. 
     </p> 

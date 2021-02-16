@@ -1585,11 +1585,11 @@ If a key is NOT found, the MIME Type is displayed by default (e.g. application/p
                 </xsl:if>
                 <a data-target="#details" data-toggle="tab"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-details</i18n:text></a>
             </li>
-            <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
+            <!-- <xsl:if test="//dri:referenceSet[@id='aspect.discovery.RelatedItems.referenceSet.item-related-items']">
                 <li>
                     RELATED ITEMS
                 </li>
-            </xsl:if>
+            </xsl:if> -->
 	    <xsl:if test="contains(//dim:field[@element='identifier' and @qualifier='uri'], 'doi.org')"> 
                 <li><a  id="cs" data-target="#cite" data-toggle="tab">
 			<i18n:text>xmlui.dri2xhtml.METS-1.0.item-cite</i18n:text> 
@@ -1612,7 +1612,6 @@ If a key is NOT found, the MIME Type is displayed by default (e.g. application/p
         <div class="tab-content">
             <div id="related" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'RelatedItems']);">
                 <xsl:attribute name="class"><xsl:text>tab-pane</xsl:text>
-                    <xsl:if test="//dim:field[@element='relation'][@qualifier='otherparts']"><xsl:text> active</xsl:text></xsl:if>
                 </xsl:attribute>
                 <xsl:for-each select="//dim:field[@element='relation'][@qualifier='otherparts']">
                     <p>
@@ -1625,10 +1624,7 @@ If a key is NOT found, the MIME Type is displayed by default (e.g. application/p
 
             </div>
             <div id="abstract" onclick="javascript:_paq.push(['trackEvent', 'Clicks', 'Tabs', 'Abstract']);">
-                <xsl:attribute name="class"><xsl:text>tab-pane</xsl:text>
-                    <xsl:if test="(//dim:field[@element='description' and starts-with(@qualifier, 'abstract')]) and not(//dim:field[@element='relation'][@qualifier='otherparts'])">
-                        <xsl:text> active</xsl:text>
-                    </xsl:if>
+                <xsl:attribute name="class"><xsl:text>tab-pane active</xsl:text>
                 </xsl:attribute>
                 <xsl:for-each select="//dim:field[@element='description'][@qualifier='other']">
                     <p>

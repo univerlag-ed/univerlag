@@ -494,6 +494,7 @@ public class XmlWorkflowManager {
     public static void createPoolTasks(Context context, XmlWorkflowItem wi, RoleMembers assignees, Step step, WorkflowActionConfig action)
             throws SQLException, AuthorizeException {
         // create a tasklist entry for each eperson
+	log.info("Creating Pool for given step: " + step.getId());
         for (EPerson anEpa : assignees.getEPersons()) {
             PoolTask task = PoolTask.create(context);
             task.setStepID(step.getId());
@@ -503,6 +504,7 @@ public class XmlWorkflowManager {
             task.setWorkflowItemID(wi.getID());
             task.update();
             //Make sure this user has a task
+	    log.info("Create Pool, Grant All Policies for WFI: " + wi.getID() + " and user: " + anEpa.getID());
             grantUserAllItemPolicies(context, wi.getItem(), anEpa);
         }
         for(Group group: assignees.getGroups()){
@@ -514,6 +516,7 @@ public class XmlWorkflowManager {
             task.setWorkflowItemID(wi.getID());
             task.update();
             //Make sure this user has a task
+	    log.info("Create Pool, Grant All Policies for WFI: " + wi.getID() + " and group: " + group.getID());
             grantGroupAllItemPolicies(context, wi.getItem(), group);
         }
     }
@@ -522,6 +525,7 @@ public class XmlWorkflowManager {
      * Claims an action for a given eperson
      */
     public static void createOwnedTask(Context c, XmlWorkflowItem wi, Step step, WorkflowActionConfig action, EPerson e) throws SQLException, AuthorizeException {
+	log.info("Claiming action: " + action.getId() + "  for WFI: " + wi.getID() + " by eperson: " + e.getID() + " step: " + step.getId() );
         ClaimedTask task = ClaimedTask.create(c);
         task.setWorkflowItemID(wi.getID());
         task.setStepID(step.getId());
@@ -530,6 +534,7 @@ public class XmlWorkflowManager {
         task.setWorkflowID(step.getWorkflow().getID());
         task.update();
         //Make sure this user has a task
+	log.info("Claim Task, Grant All Policies for WFI: " + wi.getID() + " and user: " + e.getID());
         grantUserAllItemPolicies(c, wi.getItem(), e);
     }
 
