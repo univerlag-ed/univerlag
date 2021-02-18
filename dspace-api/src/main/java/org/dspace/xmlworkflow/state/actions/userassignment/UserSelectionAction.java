@@ -42,6 +42,10 @@ public abstract class UserSelectionAction extends Action {
             task = PoolTask.findByWorkflowIdAndEPerson(context, wfi.getID(), context.getCurrentUser().getID());
 
         //Check if we have pooled the current task
+	log.info("Checking if we have pooled the current task...");
+	log.info("WFID: " + task.getWorkflowID() + " ParentWFID: " + getParent().getStep().getWorkflow().getID());
+	log.info("StepID: " + task.getStepID() + " ParentStepID: " + getParent().getStep().getId()); 
+	log.info("ActionID: " + task.getActionID() + " ParentActionID: " + getParent().getId());
         return task != null &&
                 task.getWorkflowID().equals(getParent().getStep().getWorkflow().getID()) &&
                 task.getStepID().equals(getParent().getStep().getId()) &&

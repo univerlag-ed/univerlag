@@ -158,8 +158,8 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateissued">Browsing {0} by Issue Date {1}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateissued">Browsing {0} by Issue Date</message>
 
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Submit Date {1}</message>
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Submit Date</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Browsing {0} by Issue Date {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Browsing {0} by Issue Date</message>
 
 
     <!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
