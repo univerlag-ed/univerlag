@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 
     The contents of this file are subject to the license and copyright
@@ -6,8 +7,7 @@
 
     //www.dspace.org/license/
 
--->
-<catalogue xml:lang="de" xmlns:i18n="//apache.org/cocoon/i18n/2.1">
+--><catalogue xmlns:i18n="//apache.org/cocoon/i18n/2.1" xml:lang="de">
 
     <!--
 		The format used by all keys is as follows
@@ -163,7 +163,7 @@
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">absteigend</message>
 
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Autoren/Herausgeber</message>
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">&#160;</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading"> </message>
 
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">nach Autor/Herausgeber</message>
@@ -197,8 +197,8 @@
     <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Publikaitonen</message>
     <!-- <message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Bereiche in Dspace</message>
 	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Wählen Sie einen Bereich, um die enthaltenen Sammlungen zu durchstöbern.</message> -->
-    <message key="xmlui.ArtifactBrowser.CommunityBrowser.head">&#160;</message>
-    <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">&#160;</message>
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.head"> </message>
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.select"> </message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
     <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Suchbereich</message>
@@ -249,7 +249,7 @@
     <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Dokumentanzeige</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Das Dokument erscheint in:</message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Zur Kurzanzeige</message>
-    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">&#160;&#160;</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">  </message>
     <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Diese Dokument wurde zurückgezogen und steht nicht mehr zur Verfügung.</message>
 
     <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
@@ -537,7 +537,7 @@
     <message key="xmlui.Submission.general.workflow.title">Dokument veröffentlichen</message>
     <message key="xmlui.Submission.general.workflow.trail">Dokument veröffentlichen</message>
     <message key="xmlui.Submission.general.workflow.head">Dokument veröffentlichen</message>
-    <message key="xmlui.Submission.general.showfull">&#32;</message>
+    <message key="xmlui.Submission.general.showfull"> </message>
     <message key="xmlui.Submission.general.showsimple">Zur Kurzanzeige</message>
 
     <!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
@@ -557,7 +557,7 @@
     <message key="xmlui.Submission.Submissions.workflow_head1">Aufgaben aus Geschäftsgängen</message>
     <message key="xmlui.Submission.Submissions.workflow_info1">Dies sind Dokumente, die sich noch in Bearbeitung befinden. Es gibt zwei Bearbeitungskategorien, eine für Aufgaben, die Sie persönlich übernommen haben, eine andere für Aufgaben, die noch keine Bearbeiter übernommen hat.</message>
     <message key="xmlui.Submission.Submissions.workflow_head2">Ihre eigenen Aufgaben</message>
-    <message key="xmlui.Submission.Submissions.workflow_column1">&#160;</message>
+    <message key="xmlui.Submission.Submissions.workflow_column1"> </message>
     <message key="xmlui.Submission.Submissions.workflow_column2">Aufgabe</message>
     <message key="xmlui.Submission.Submissions.workflow_column3">Dokument</message>
     <message key="xmlui.Submission.Submissions.workflow_column4">Sammlung</message>
@@ -570,13 +570,13 @@
     <!-- Same transformer, submissions section -->
     <message key="xmlui.Submission.Submissions.submit_head1">Neue Veröffentlichung starten</message>
     <message key="xmlui.Submission.Submissions.submit_info1a">Starten Sie eine neue Veröffentlichung, indem Sie im rechten Hauptmenü unter <strong>Fachgebiet</strong> zu Ihrem Fach navigieren und dort auf <strong>"Hier veröffentlichen"</strong> klicken!</message>
-    <message key="xmlui.Submission.Submissions.submit_info1b">&#160;<br /></message>
+    <message key="xmlui.Submission.Submissions.submit_info1b"> <br /></message>
     <message key="xmlui.Submission.Submissions.submit_info1c">Der Veröffentlichungsprozess beinhaltet die Beschreibung des Dokuments und das Hochladen der zugehörigen Dateien. Jeder Bereich oder jede Sammlung kann seine/ihre eigenen Veröffentlichungsbestimmungen haben.</message>
     <message key="xmlui.Submission.Submissions.submit_head2">Unvollendete Veröffentlichungen</message>
     <message key="xmlui.Submission.Submissions.submit_info2a">Dies sind Ihre unvollendeten Veröffentlichungen. Sie können statt dessen auch </message>
     <message key="xmlui.Submission.Submissions.submit_info2b">eine neue Veröffentlichung beginnen</message>
     <message key="xmlui.Submission.Submissions.submit_info2c">.</message>
-    <message key="xmlui.Submission.Submissions.submit_column1">&#160;</message>
+    <message key="xmlui.Submission.Submissions.submit_column1"> </message>
     <message key="xmlui.Submission.Submissions.submit_column2">Titel</message>
     <message key="xmlui.Submission.Submissions.submit_column3">Sammlung</message>
     <message key="xmlui.Submission.Submissions.submit_column4">Veröffentlicht von</message>
@@ -716,12 +716,12 @@
     <message key="xmlui.Submission.submit.UploadStep.submit_upload">Datei hochladen oder noch eine hinzufügen</message>
     <message key="xmlui.Submission.submit.UploadStep.head2">Hochgeladene Dateien</message>
     <message key="xmlui.Submission.submit.UploadStep.column0">Primäre Datei</message>
-    <message key="xmlui.Submission.submit.UploadStep.column1">&#160;</message>
+    <message key="xmlui.Submission.submit.UploadStep.column1"> </message>
     <message key="xmlui.Submission.submit.UploadStep.column2">Datei</message>
     <message key="xmlui.Submission.submit.UploadStep.column3">Größe</message>
     <message key="xmlui.Submission.submit.UploadStep.column4">Beschreibung</message>
     <message key="xmlui.Submission.submit.UploadStep.column5">Format</message>
-    <message key="xmlui.Submission.submit.UploadStep.column6">&#160;</message>
+    <message key="xmlui.Submission.submit.UploadStep.column6"> </message>
     <message key="xmlui.Submission.submit.UploadStep.unknown_name">Unbekannt</message>
     <message key="xmlui.Submission.submit.UploadStep.unknown_format">unbekanntes Format</message>
     <message key="xmlui.Submission.submit.UploadStep.supported">(Unterstützt)</message>
@@ -748,7 +748,7 @@
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column3">Größe</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column4">Beschreibung</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column5">Format</message>
-    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6">&#160;</message>
+    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.column6"> </message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_name">Unbekannt</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.unknown_format">Unbekanntes Format</message>
     <message key="xmlui.Submission.submit.UploadWithEmbargoStep.supported">(Unterstützt)</message>
@@ -954,7 +954,7 @@
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help">Benutzer werden nach Wortfragmenten aus Name und E-Mail-Adresse gesucht.</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">Unten ist eine Liste aller Benutzer, auf die Ihre Suchanfrage zutraf. Wählen Sie den Benutzer aus, den Sie löschen möchten und klicken Sie auf Löschen, um den Benutzer zu löschen oder auf die E-Mail-Adresse oder den Namen, um den Benutzer zu bearbeiten.</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Suchergebnisse</message>
-    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1">&#160;</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"> </message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Name</message>
     <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">E-Mail-Adresse</message>
@@ -1027,7 +1027,7 @@
     <message key="xmlui.administrative.group.ManageGroupsMain.actions_search">Gruppensuche</message>
     <message key="xmlui.administrative.group.ManageGroupsMain.search_help">Sie können nach jedem Teil des Gruppennamens suchen.</message>
     <message key="xmlui.administrative.group.ManageGroupsMain.search_head">Suchergebnisse</message>
-    <message key="xmlui.administrative.group.ManageGroupsMain.search_column1">&#160;</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column1"> </message>
     <message key="xmlui.administrative.group.ManageGroupsMain.search_column2">ID</message>
     <message key="xmlui.administrative.group.ManageGroupsMain.search_column3">Name</message>
     <message key="xmlui.administrative.group.ManageGroupsMain.search_column4">Mitglieder</message>
@@ -1059,18 +1059,18 @@
     <message key="xmlui.administrative.group.EditGroupForm.epeople_column1">ID</message>
     <message key="xmlui.administrative.group.EditGroupForm.epeople_column2">Name</message>
     <message key="xmlui.administrative.group.EditGroupForm.epeople_column3">E-Mail</message>
-    <message key="xmlui.administrative.group.EditGroupForm.epeople_column4">&#160;</message>
+    <message key="xmlui.administrative.group.EditGroupForm.epeople_column4"> </message>
     <message key="xmlui.administrative.group.EditGroupForm.groups_column1">ID</message>
     <message key="xmlui.administrative.group.EditGroupForm.groups_column2">Name</message>
     <message key="xmlui.administrative.group.EditGroupForm.groups_column3">Mitglieder</message>
     <message key="xmlui.administrative.group.EditGroupForm.groups_column4">Sammlung</message>
-    <message key="xmlui.administrative.group.EditGroupForm.groups_column5">&#160;</message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column5"> </message>
     <message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">anzeigen</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_head">Mitglieder</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_column1">ID</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_column2">Name</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_column3">E-Mail</message>
-    <message key="xmlui.administrative.group.EditGroupForm.members_column4">&#160;</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_column4"> </message>
     <message key="xmlui.administrative.group.EditGroupForm.members_group_name">Gruppe: {0}</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_none">Diese Gruppe hat keine Mitglieder.</message>
     <message key="xmlui.administrative.group.EditGroupForm.members_pending">[anhängig]</message>
@@ -1150,7 +1150,7 @@
     <message key="xmlui.administrative.registries.EditMetadataSchema.head1">Metadatenschema: „{0}“</message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.para1">Dies ist das Metadatenschema für: „{0}". Sie können Felder hinzufügen, löschen oder aktualisieren. Felder können zudem in ein anderes Schema verschoben werden. </message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.head2">Felder des Metadatenschemas</message>
-    <message key="xmlui.administrative.registries.EditMetadataSchema.column1">&#160;</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.column1"> </message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.column2">ID</message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.column3">Feld</message>
     <message key="xmlui.administrative.registries.EditMetadataSchema.column4">Gültigkeitsbereich</message>
@@ -1177,7 +1177,7 @@
     <message key="xmlui.administrative.registries.FormatRegistryMain.head">Dateiformate Referenzliste</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.para1">Diese Referenzliste enthält Informationen zu bekannten Dateiformaten und ihren Unterstützungsgrad durch das Repositorium. Mit diesem Werkzeug können Sie bereits eingetragene Formate bearbeiten oder nue Formate hinzufügen. Formate die mit „internal' gekennzeichnet sind, bleiben dem Benutzer verborgen und werden für administrative Zwecke verwendet.</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Dateiformat hinzufügen</message>
-    <message key="xmlui.administrative.registries.FormatRegistryMain.column1">&#160;</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column1"> </message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.column2">ID</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.column3">Name</message>
     <message key="xmlui.administrative.registries.FormatRegistryMain.column4">MIME Typ</message>
@@ -1192,7 +1192,7 @@
     <message key="xmlui.administrative.registries.MetadataRegistryMain.title">Metadaten Referenzliste</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Metadaten Referenzliste</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.para1">Die Metadatenreferenzliste enthält alle Metadatenfelder dieses Repositoriums. Die Metadatenfelder können auf mehrere Schema aufgeteilt werden. Univerlag benötigt als Basis qualifiziertes Dublin Core. Sie können das Dublin Core Schema erweitern oder neue Schemata anlegen.</message>
-    <message key="xmlui.administrative.registries.MetadataRegistryMain.column1">&#160;</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.column1"> </message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Namensraum</message>
     <message key="xmlui.administrative.registries.MetadataRegistryMain.column4">Name</message>
@@ -1279,7 +1279,7 @@
     <message key="xmlui.administrative.authorization.EditPolicyForm.main_head_edit">Bearbeite Recht {0} für {1} {2}</message>
     <message key="xmlui.administrative.authorization.EditPolicyForm.error_no_group">Keine Gruppe ausgewählt</message>
     <message key="xmlui.administrative.authorization.EditPolicyForm.error_no_action">Keine Aktion ausgewählt</message>
-    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4">&#160;</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4"> </message>
     <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column1">ID</message>
     <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column2">Name</message>
     <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column3">Aktionen für diese Ressource</message>
@@ -1460,7 +1460,7 @@
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.title">Zur Ressourcegehörige Dateien</message>
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.trail">Zur Ressourcegehörige Dateien</message>
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Dateien</message>
-    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column1">&#160;</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column1"> </message>
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.column2">Name</message>
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.column3">Beschreibung</message>
     <message key="xmlui.administrative.item.EditItemBitstreamsForm.column4">Format</message>
@@ -1601,7 +1601,7 @@
     <message key="xmlui.administrative.mapper.SearchItemForm.trail">Dokumente suchen</message>
     <message key="xmlui.administrative.mapper.SearchItemForm.head1">Treffer: „{0}“</message>
     <message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Ausgewählte Dokumente spiegeln</message>
-    <message key="xmlui.administrative.mapper.SearchItemForm.column1">&#160;</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.column1"> </message>
     <message key="xmlui.administrative.mapper.SearchItemForm.column2">Sammlung</message>
     <message key="xmlui.administrative.mapper.SearchItemForm.column3">Autor/Herausgeber</message>
     <message key="xmlui.administrative.mapper.SearchItemForm.column4">Titel</message>
@@ -1611,7 +1611,7 @@
     <message key="xmlui.administrative.mapper.BrowseItemForm.trail">Blättern gespiegelter Dokumente</message>
     <message key="xmlui.administrative.mapper.BrowseItemForm.head1">Blättern gespiegelter Dokumente</message>
     <message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Spiegelungen löschen</message>
-    <message key="xmlui.administrative.mapper.BrowseItemForm.column1">&#160;</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.column1"> </message>
     <message key="xmlui.administrative.mapper.BrowseItemForm.column2">Sammlung</message>
     <message key="xmlui.administrative.mapper.BrowseItemForm.column3">Autor/Herausgeber</message>
     <message key="xmlui.administrative.mapper.BrowseItemForm.column4">Titel</message>
@@ -1651,7 +1651,7 @@
     <message key="xmlui.administrative.collection.AssignCollectionRoles.label_submitters">Veröffentlichungsberechtigte</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.label_default_read">Standard lesender Zugriff</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.sysadmins_only"><nobr>(nur für Systemadministratoren)</nobr></message>
-    <message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br/>(Gruppe auf Repositoriumsebene, nur für Systemadministratoren)</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br />(Gruppe auf Repositoriumsebene, nur für Systemadministratoren)</message>
     <message key="xmlui.administrative.collection.AssignCollectionRoles.not_allowed"><nobr>(Sie haben nicht die Berechtigung dies zu konfigurieren)</nobr></message>
 
     <!-- org.dspace.app.xmlui.administrative.collection.CurateCollectionForm.java -->
@@ -2043,7 +2043,7 @@
     <!-- structural.xsl -->
     <message key="xmlui.dri2xhtml.structural.footer-promotional">
         <a href="//di.tamu.edu" id="ds-logo-link">
-            <span id="ds-footer-logo">&#160;</span>
+            <span id="ds-footer-logo"> </span>
         </a>
         <p>
             Diese Seite verwendet Manakin, das neue Univerlag Front-End, welches von den Texas A&amp;M University
@@ -2112,7 +2112,7 @@
     <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Zu diesem Dokument gibt es keine Dateien.</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.heading">Annotationsservice</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate">Ansehen und Annotieren</message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.description"><a href="https://web.hypothes.is/" >Hypothes.is</a> ist ein kostenloser Dienst, der es den Benutzern ermöglicht, Markierungen, Anmerkungen und Kommentare zu erstellen, sowohl öffentlich als auch privat, für sich selbst oder für eine bestimmte Gruppe.</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-annotate.description"><a href="https://web.hypothes.is/">Hypothes.is</a> ist ein kostenloser Dienst, der es den Benutzern ermöglicht, Markierungen, Anmerkungen und Kommentare zu erstellen, sowohl öffentlich als auch privat, für sich selbst oder für eine bestimmte Gruppe.</message>
 
 
     <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">Bytes</message>
@@ -2454,7 +2454,7 @@
     <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">Keine Kennung</message>
 
     <message key="xmlui.Discovery.RelatedItems.head">Weitere Publikationen von diesen Autoren</message>
-    <message key="xmlui.Discovery.RelatedItems.help"></message>
+    <message key="xmlui.Discovery.RelatedItems.help" />
 
     <message key="xmlui.Discovery.AbstractSearch.head1_community">Anzeige von {0} der {1} Treffer für den Bereich: {2}. <span class="searchTime">({3} Sekunden)</span></message>
     <message key="xmlui.Discovery.AbstractSearch.head1_collection">Anzeige von {0} der {1} Treffer für die Sammlung: {2}. <span class="searchTime">({3} Sekunden)</span></message>
@@ -2462,7 +2462,7 @@
 
     <message key="xmlui.Discovery.AbstractSearch.head2">Sammlungen, die Ihrer Suche entsprechen.</message>
     <message key="xmlui.Discovery.AbstractSearch.head3">Dokumente, die Ihrer Suche entsprechen.</message>
-    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle Publikationen <i class="icon-arrow-right"></i></message>
+    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Alle Publikationen <i class="icon-arrow-right" /></message>
     <!-- End Discovery -->
 
     <!--   Start Sword Client  -->
@@ -2736,10 +2736,10 @@
 <div>
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=onix2_edocs" target="_blank">Elektronische Publikationen</a>
-<br/>
+<br />
                                 
 <a href="https://www.univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=onixi2_print" target="_blank">Gedruckte Publikationen</a>
-<br/>
+<br />
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=onix2_media" target="_blank">DVDs und CD-ROMs</a>
                         
@@ -2754,10 +2754,10 @@
 <div>
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/edocs?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Elektronische Publikationen</a>
-<br/>
+<br />
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/print?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">Gedruckte Publikationen</a>
-<br/>
+<br />
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/multimedia?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">DVDs und CD-ROMs</a>
                         
@@ -2767,7 +2767,7 @@
 <div>
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=marc" target="_blank">Alle Publikationen</a>
-<br/>
+<br />
                         
 </div>
 <h3>PICA XML</h3> 
@@ -2775,7 +2775,7 @@
 <div>
                                 
 <a href="https://univerlag.uni-goettingen.de/oai/request?verb=ListRecords&amp;metadataPrefix=picaxml" target="_blank">Alle Publikationen</a>
-<br/>
+<br />
                         
 </div>
 <!-- <h3>Spezielle Dublin Core Simple für <a href="http://www.oapen.org/home">OAPEN</a> (Open Access Publishing in European Networks)</h3>	
@@ -2811,7 +2811,7 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
             Bitte benutzen Sie das Kontaktformular, um uns eine Nachricht zukommen zu lassen. Wenn Sie uns telefonisch, postalisch oder per E-Mail erreichen wollen, nutzen Sie bitte die unten angegebenen Daten. Bitte ersetzen Sie das "_AT_" durch ein "@", wenn Sie unsere E-Mail-Adressen verwenden.
         </p>
         <p>
-            <a href="/feedback">Kontaktformular <i class="icon-arrow-right"></i></a>
+            <a href="/feedback">Kontaktformular <i class="icon-arrow-right" /></a>
         </p>
         <h2>Sprechzeiten</h2>
         <p class="address">
@@ -2824,36 +2824,36 @@ Three elements make up the asjournal.org web presence: the American Studies Jour
         <div class="contact">
             <h3>Autorenbetreuung</h3>
             <h4>Jutta Pabst</h4>
-            <p class="address"><i class="icon-call"></i>0551 / 39-52 43</p>
-            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
-            <p class="address"><i class="icon-mail"></i> <a href="mailto:pabst_AT_sub.uni-goettingen.de">pabst AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call" />0551 / 39-52 43</p>
+            <p class="address"><i class="icon-fax" title="Fax" />0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail" /> <a href="mailto:pabst_AT_sub.uni-goettingen.de">pabst AT sub.uni-goettingen.de</a></p>
 
             <h4>Petra Lepschy</h4>
-            <p class="address"><i class="icon-call"></i>0551 / 39-90 97</p>
-            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
-            <p class="address"><i class="icon-mail"></i> <a href="mailto:lepschy_AT_sub.uni-goettingen.de">lepschy AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call" />0551 / 39-90 97</p>
+            <p class="address"><i class="icon-fax" title="Fax" />0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail" /> <a href="mailto:lepschy_AT_sub.uni-goettingen.de">lepschy AT sub.uni-goettingen.de</a></p>
 
 
             <h3>Open Access und Publikationskonzepte</h3>
 
             <h4>Margo Bargheer</h4>
-            <p class="address"><i class="icon-call"></i>0551 / 39-9 11 88</p>
-            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
-            <p class="address"><i class="icon-mail"></i> <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call" />0551 / 39-9 11 88</p>
+            <p class="address"><i class="icon-fax" title="Fax" />0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail" /> <a href="mailto:bargheer_AT_sub.uni-goettingen.de">bargheer AT sub.uni-goettingen.de</a></p>
 
 
             <h3>Bestellungen</h3>
 
             <h4>Holger Jendral</h4>
-            <p class="address"><i class="icon-call"></i>0551 / 39-53 83</p>
-            <p class="address"><i class="icon-fax" title="Fax"></i>0551 / 39-2 24 57</p>
-            <p class="address"><i class="icon-mail"></i> <a href="mailto:univerlag_AT_uni-goettingen.de">univerlag AT uni-goettingen.de</a></p>
+            <p class="address"><i class="icon-call" />0551 / 39-53 83</p>
+            <p class="address"><i class="icon-fax" title="Fax" />0551 / 39-2 24 57</p>
+            <p class="address"><i class="icon-mail" /> <a href="mailto:univerlag_AT_uni-goettingen.de">univerlag AT uni-goettingen.de</a></p>
 
 
             <h2>Postanschrift</h2>
             <p class="address"><span class="icon-body">Georg-August-Universität Göttingen</span></p>
 	    <p class="address"><span class="icon-body">Niedersächsische Staats- und Universitätsbibliothek Göttingen</span></p>
-	    <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location"></i></a>Universitätsverlag Göttingen</p>
+	    <p class="address"><a target="_blank" href="//goo.gl/maps/DYwuXQMKZjt"><i class="icon-location" /></a>Universitätsverlag Göttingen</p>
             <p class="address"><span class="icon-body">Platz der Göttinger Sieben 1</span></p>
             <p class="address"><span class="icon-body">37073 Göttingen</span></p>
 
@@ -2879,6 +2879,15 @@ Ihr Team vom Universitätsverlag Göttingen </p>
 
 	</div> -->
 
+	<!-- <div class="highlight news">
+        <span id="cm">🎄</span>
+        <div class="right">
+    <h4>Verehrte Kundinnen und Kunden, liebe Autorinnen und Autoren,</h4>
+    der Universitätsverlag macht ab dem 21. Dezember 2020 eine Weihnachtspause. In der Zeit werden keine Bücher versendet und die Autorinnen und Autoren werden in dieser Zeit nicht betreut.<br />
+Ab dem 11. Januar 2021 sind wir wieder für Sie da.
+Wir hoffen auf Ihr Verständnis und wünschen allen eine frohe Weihnachtszeit und einen angenehmen Übergang in ein gesundes Neues Jahr.
+</div> 
+</div> -->
         <p class="paragraph justify strech-bottom">
             Der Universitätsverlag ist der Eigenverlag der Georg-August-Universität Göttingen und publiziert wissenschaftliche Werke von Wissenschaftlern, die zur Universität Göttingen gehören.
             Wir unterstützen unsere Autorinnen und Autoren beim elektronischen und printbasierten Publizieren.
@@ -2904,7 +2913,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         </div> -->
         <div class="row">
             <div class="col-xs-6">
-                <a class="bigger" href="/news"><!-- <span class="new">!</span> -->Aktuelles</a>
+                <a class="bigger" href="/news"><span class="new">!</span>Aktuelles</a>
             </div>
             <div class="col-xs-6">
                 <a class="pull-right bigger" href="/info/publishing-catalog">Verlagskatalog</a>
@@ -2916,7 +2925,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
     <message key="xmlui.static.aboutus">
         <div>
             <p>
-                Der Universitätsverlag Göttingen gehört zu dem Bereich <a  class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
+                Der Universitätsverlag Göttingen gehört zu dem Bereich <a class="extern-link" target="_blank" href="//www.sub.uni-goettingen.de/0_e-publishing.html.de">„Elektronisches Publizieren“</a> der Universitätsbibliothek und entwickelt seit seiner Gründung im Sommer 2003 innovative Publikationsdienstleistungen, um sie primär den Wissenschaftlerinnen und Wissenschaftlern
                 der Universität Göttingen anzubieten:
             </p>
 
@@ -2928,13 +2937,13 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 <li>kurze Produktionszeit </li>
                 <li>garantierte Qualitätssicherung</li>
                 <li>ggf. Begutachtung im Herausgebergremium des Universitätsverlages</li>
-                <li>Marketing &#38; Vertrieb</li>
+                <li>Marketing &amp; Vertrieb</li>
                 <li>permanente Archivierung</li>
             </ul>
 
             <p>Der Universitätsverlag Göttingen offeriert ein innovatives Publikationsmodell, das Ihnen als Autor neue Wahlfreiheiten bzgl. der freien Verfügbarmachung der elektronischen
                 Ausgabe eröffnet. Dies zielt auf eine breitere Wahrnehmung und Nutzung von Publikationen und macht
-                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden daher über den Publikationsserver <a  class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
+                insbesondere die Leistungsfähigkeit der Göttinger Wissenschaftler weltweit sichtbar. Die Publikationen der qualitätsgeprüften Sparte „Universitätsverlag“ werden daher über den Publikationsserver <a class="extern-link" href="//goedoc.uni-goettingen.de/goescholar/" title="GOESCHOLAR" target="_blank">GOESCHOLAR</a> bereitgestellt, auf dem begutachtete Publikationen aus der Georg-August-Universität nach Fakultäten und Zentren geordnet archiviert sind.
             </p>
 
             <p>Alle Publikationen im Universitätsverlag Göttingen sind über den OPAC der SUB erschlossen und
@@ -2948,21 +2957,21 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 	<div id="services" class="container-fluid text-center">
 	    	<div class="row">
                     <div class="col-sm-4">
-                        <img src="/dokumente/images/hirmeos.ico"></img>
+                        <img src="/dokumente/images/hirmeos.ico" />
                         <h4><a class="extern-link" href="//www.hirmeos.eu//" target="_blank">HIRMEOS</a></h4>
                         <p>High Integration of Research Monographs in the European Open Science infrastructure</p>
                     </div>
                     <div class="col-sm-4">
-                        <img src="/static/icons/ediss.ico"></img>
-                        <h4><a  class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
+                        <img src="/static/icons/ediss.ico" />
+                        <h4><a class="extern-link" href="//ediss.uni-goettingen.de/" target="_blank">eDiss</a></h4>
 
 
                         <p>Elektronische Dissertationen der Georg-August-Universität Göttingen</p>
 
                     </div>
                     <div class="col-sm-4">
-                        <img src="/static/icons/gcdh.ico"></img>
-                        <h4><a href="http://www.gcdh.de/"  class="extern-link" target="_blank">GCDH</a></h4>
+                        <img src="/static/icons/gcdh.ico" />
+                        <h4><a href="http://www.gcdh.de/" class="extern-link" target="_blank">GCDH</a></h4>
                         <p>Göttingen Centre for Digital Humanities</p>
                     </div>
                 </div>
@@ -2983,7 +2992,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
 
                 </div>
             </div>-->
-<p><a href="https://www.sub.uni-goettingen.de/projekte-forschung/projekte-a-z/"  class="extern-link" target="_blank">Weitere Projekte der SUB Göttingen ...</a>
+<p><a href="https://www.sub.uni-goettingen.de/projekte-forschung/projekte-a-z/" class="extern-link" target="_blank">Weitere Projekte der SUB Göttingen ...</a>
             </p>		
 
 		<!-- <div class="row">
@@ -3074,15 +3083,15 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Theologische Fakultät</h4>
-                <p>Prof. Dr. Reinhard Müller <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/56732.html"> <span class="glyphicon glyphicon-home"></span></a>&#160;
-                <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
+                <p>Prof. Dr. Reinhard Müller <a title="Homepage" target="_blank" href="https://www.uni-goettingen.de/en/prof.+dr.+reinhard+m%C3%BCller/56732.html"> <span class="glyphicon glyphicon-home" /></a> 
+                <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Reinhard_M%C3%BCller_(Theologe)"><i class="icon-wikipedia" /></a>
 		</p>
             </div>
             <div class="col-sm-6">
 
                 <h4 class="list-item-header">Juristische Fakultät</h4>
-                <p>Prof. Dr. Thomas Mann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/493270.html"><span class="glyphicon glyphicon-home"></span></a> &#160;<a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Thomas_Mann_(Jurist)"><i class="icon-wikipedia"></i></a></p>
-                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home"></span></a>
+                <p>Prof. Dr. Thomas Mann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/493270.html"><span class="glyphicon glyphicon-home" /></a>  <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Thomas_Mann_(Jurist)"><i class="icon-wikipedia" /></a></p>
+                <p>Prof. Dr. Joachim Münch <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/33188.html"><span class="glyphicon glyphicon-home" /></a>
                 </p>
             </div>
         </div>
@@ -3093,28 +3102,25 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
                 <h4 class="list-item-header">Universitätsmedizin Göttingen (UMG)</h4>
                 <p>Prof. Dr. Claudia Wiesemann
                     <a href="//orcid.org/0000-0002-8260-0346" target="_blank" title="Personen-Profil (ORCID)">
-                        <i class="icon-info-circled orcid"></i>
+                        <i class="icon-info-circled orcid" />
                     </a>
-			<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/537520.html"><span class="glyphicon glyphicon-home"></span></a> &#160;
-                    <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia"></i></a></p>
+<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/537520.html"><span class="glyphicon glyphicon-home" /></a>  
+                    <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Claudia_Wiesemann"><i class="icon-wikipedia" /></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Philosophische Fakultät</h4>
-                <p>Prof. Dr. Andrew Gross <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home"></span></a>&#160;
-				<!-- <a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/Regina_Bendix"><i class="icon-wikipedia"></i></a> --></p>
-                <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sahm-heike-prof-dr/450366.html"><span class="glyphicon glyphicon-home"></span></a>&#160;
-				</p>
-			</div>
+                <p>Prof. Dr. Andrew Gross <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home" /></a></p>
+              <!--  <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/450366.html"><span class="glyphicon glyphicon-home" /></a> </p>-->
+		</div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Mathematik und Informatik</h4>
-                <p>Prof. Dr. Ina Kersten <a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home"></span></a>&#160;
-            <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia"></i></a></p>
+                <p>Prof. Dr. Ina Kersten <a title="Homepage" target="_blank" href="//www.uni-math.gwdg.de/kersten/"><span class="glyphicon glyphicon-home" /></a> 
+            <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Ina_Kersten"><i class="icon-wikipedia" /></a></p>
 		</div>
-		
-         <div class="col-sm-6">
+            <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Physik</h4>
                 <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
@@ -3123,58 +3129,60 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Chemie</h4>
-                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Konrad Koszinowski <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/311590.html"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
-            
-	<div class="col-sm-6">
+            <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Geowissenschaften und Geographie</h4>
-                <p>Dr. Alexander Gehler <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home"></span></a> &#160;
-		<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
-                </p>
+<!--                <p>Prof. Dr. Joachim Reitner <a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/jreitne/index.shtml"><span class="glyphicon glyphicon-home" /></a>  <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Joachim_Reitner"><i class="icon-wikipedia" /></a> -->
+		    <p>Dr. Alexander Gehler <a title="Homepage" target="_blank" href="https://www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home" /></a>
+		    </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Biologie und Psychologie</h4>
-                <p>Prof. Dr. Erwin Bergmeier <a href="//orcid.org/0000-0002-6118-4611" target="_blank" itle="Personen-Profil (ORCID)">
-                        <i class="icon-info-circled orcid"></i>
-			</a>
-			<a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home"></span></a></p>
+                 <p>Prof. Dr. Erwin Bergmeier <a href="//orcid.org/0000-0002-6118-4611" target="_blank" itle="Personen-Profil (ORCID)">
+                        <i class="icon-info-circled orcid" />
+                    </a>
+			<a title="Homepage" target="_blank" href="https://www.uni-goettingen.de/de/prof-dr-erwin-bergmeier/520187.html"><span class="glyphicon glyphicon-home" /></a>
+		</p> 
             </div>
-            
-	<div class="col-sm-6">
+            <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Forstwissenschaften und Waldökologie</h4>
-                <p>Prof. Dr. Dirk Hölscher <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+dirk+h%C3%B6lscher%2C+chair/73186.html"><span class="glyphicon glyphicon-home"></span></a>&#160;</p>
+                <p>Prof. Dr. Dirk Hölscher <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+dirk+h%C3%B6lscher%2C+chair/73186.html"><span class="glyphicon glyphicon-home" /></a> </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Fakultät für Agrarwissenschaften</h4>
-                <p>Prof. Dr. Jürgen Hummel<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/492912.html"><span class="glyphicon glyphicon-home"></span></a></p>
+<!--                <p>Prof. Dr. Senja Post <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/600680.html"><span class="glyphicon glyphicon-home" /></a></p> -->
+		    <p>Prof. Dr. J�rgen Hummel <a title="Homepage" target="_blank" href="https://www.uni-goettingen.de/de/492912.html"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Wirtschaftswissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home"></span></a></p>
+                <p>Prof. Dr. Matthias Schumann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/45070.html"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Sozialwissenschaftliche Fakultät</h4>
-                <p>Prof. Dr. Elfriede Hermann<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/152352.html"> <span class="glyphicon glyphicon-home"></span></a></p>
-                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home"></span></a>&#160;
-				<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a> --></p>
-            </div>
+<!--                <p>Prof. Dr. Elfriede Hermann<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/152352.html"> <span class="glyphicon glyphicon-home" /></a></p> 
 		
+                <p>Prof. Dr. Gabriele Rosenthal <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sh/28238.html"><span class="glyphicon glyphicon-home" /></a> <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia" /></a></p> -->
+		<p>Prof. Dr. Andrea Lauser <a title="Homepage" target="_blank" href="www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home" /></a></p>
+            </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Niedersächsische Staats- und Universitätsbibliothek Göttingen (Vorsitz)</h4>
                 <p><nobr>Prof. Dr. Wolfram Horstmann</nobr>
+
                     <a href="//orcid.org/0000-0001-8673-6104" target="_blank" itle="Personen-Profil (ORCID)">
-                        <i class="icon-info-circled orcid"></i>
+                        <i class="icon-info-circled orcid" />
                     </a>
-                    <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home"></span></a></p>
+
+                    <a title="Homepage" target="_blank" href="//www.sub.uni-goettingen.de/kontakt/personen-a-z/personendetails/person/wolfram-horstmann/"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
         </div>
 
@@ -3258,7 +3266,7 @@ Bitte entschuldigen Sie die damit entstehenden Unannehmlichkeiten.
             </p>
 
             <p>
-                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="//creativecommons.org/licenses/by/4.0/deed.de"  class="extern-link" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
+                Nach der Freigabe wird Ihr Werk über die Verlagshomepage unter einer <a href="//creativecommons.org/licenses/by/4.0/deed.de" class="extern-link" target="_blank">Creative Commons Lizenz 4.0 (Namensnennung)</a> online <a href="/info/openaccess"><strong>open access</strong></a> zur Verfügung gestellt und an wichtige Datenbanken und an diverse Kataloge (u. a. GVK, DNB) gemeldet. Die Druckversion wird zusätzlich beim Verzeichnis lieferbarer Bücher (VLB) und bei amazon gemeldet.
             </p>
 	<p>
 		Die Archivierung der Volltextversionen erfolgt im Rahmen der bibliothekarischen Verantwortung für die Langzeitverfügbarkeit digitaler Objekte durch Meldung an die DNB (Deutsche Nationalbibliothek).
@@ -3287,7 +3295,7 @@ nationalen Bibliographien.
     <message key="xmlui.static.reviewer">
         <div>
             <p>
-                <i class="icon-file-pdf"></i><a href="/dokumente/texts/simple-review_extern_160617.pdf">Begutachtungsbogen</a> zum Herunterladen.
+                <i class="icon-file-pdf" /><a href="/dokumente/texts/simple-review_extern_160617.pdf">Begutachtungsbogen</a> zum Herunterladen.
             </p>
         </div>
 	<div>
@@ -3412,7 +3420,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                     Die VG-Wort verwaltet als nicht gewinnorientierte Organisation treuhänderisch die Urheberrechte von Autoren
                     und Herausgebern. Sie nimmt die gesetzlich festgeschriebenen Tantiemen aus den Zweitnutzungsrechten ein
                     und gibt sie an die Rechteinhaber der gemeldeten Werke weiter.
-                    <a href="//www.vgwort.de"  class="extern-link" target="_blank">VG-Wort</a>
+                    <a href="//www.vgwort.de" class="extern-link" target="_blank">VG-Wort</a>
 
                 </p>
 
@@ -3423,7 +3431,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
 
                 <p>
                     Um Tantiemen zu erhalten müssen Sie als Autor sich bei der VG-Wort als Bezugsberechtigter anmelden:
-                    <a href="//www.vgwort.de/teilnahmemoeglichkeiten/bezugsberechtigte.html"  class="extern-link" target="_blank">VG Wort Bezugsberechtigte</a>
+                    <a href="//www.vgwort.de/teilnahmemoeglichkeiten/bezugsberechtigte.html" class="extern-link" target="_blank">VG Wort Bezugsberechtigte</a>
 
                 </p>
 
@@ -3487,20 +3495,20 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Sammelband, 180 Seiten, keine Farbseiten, &#173;gedruckt als Softcover auf Offset-Papier, verlagsseitig geringer Bearbeitungsaufwand, &#173;35 Autoren-Exemplare</td>
+                        <td>Sammelband, 180 Seiten, keine Farbseiten, ­gedruckt als Softcover auf Offset-Papier, verlagsseitig geringer Bearbeitungsaufwand, ­35 Autoren-Exemplare</td>
                         <td class="numeric">665,00 €</td>
                         <td class=" numeric">240,00 €</td>
 
                         <td class="numeric">905,00 €</td>
                     </tr>
                     <tr>
-                        <td>Sammelband, 450 Seiten, 20 Farbseiten, &#173;gedruckt als Softcover auf Offset-Papier, verlagsseitig hoher Bearbeitungsaufwand, &#173;erscheint in einer Schriftenreihe, 100 Autoren/Hrsg.-Exemplare</td>
+                        <td>Sammelband, 450 Seiten, 20 Farbseiten, ­gedruckt als Softcover auf Offset-Papier, verlagsseitig hoher Bearbeitungsaufwand, ­erscheint in einer Schriftenreihe, 100 Autoren/Hrsg.-Exemplare</td>
                         <td class="numeric">1.323,00 €</td>
                         <td class="numeric">1.320,00 €</td>
                         <td class="numeric">2.643,00 €</td>
                     </tr>
                     <tr>
-                        <td>Dissertation, 250 Seiten, 10 Farbseiten, &#173;gedruckt als Softcover auf hochwertigem Bilderdruckpapier, &#173;verlagsseitig geringer Bearbeitungsaufwand, &#173;20 Autoren-Exemplare</td>
+                        <td>Dissertation, 250 Seiten, 10 Farbseiten, ­gedruckt als Softcover auf hochwertigem Bilderdruckpapier, ­verlagsseitig geringer Bearbeitungsaufwand, ­20 Autoren-Exemplare</td>
                         <td class="numeric">516,00 €</td>
                         <td class="numeric">250 x 1,78 = 445,00 €</td>
                         <td class="numeric">960,00 €</td>
@@ -3545,9 +3553,9 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                     <tr>
 
                         <th>Publikations-dienstleistung</th>
-                        <td>volle Verlagsdienstleistung <br/>
+                        <td>volle Verlagsdienstleistung <br />
                             (ggf. Lektorat, Korrektorat sowie Produktionsbetreuung, Veröffentlichung, Vertrieb)</td>
-                        <td>Verlagssdienstleistung<br/>
+                        <td>Verlagssdienstleistung<br />
                             (Produktionsbetreuung, Veröffentlichung, Vertrieb)</td>
 
                     </tr>
@@ -3579,9 +3587,9 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
                     <tr>
 
                         <th>Ausgabe</th>
-                        <td>klassischer und digitaler Druck sowie elektronische Formate<br/>
+                        <td>klassischer und digitaler Druck sowie elektronische Formate<br />
                             Print-on-Demand-Möglichkeit</td>
-                        <td>klassischer und digitaler Druck sowie elektronische Formate<br/>
+                        <td>klassischer und digitaler Druck sowie elektronische Formate<br />
                             Print-on-Demand-Möglichkeit</td>
 
                     </tr>
@@ -3602,7 +3610,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             </p>
         </div>
     </message>
-    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/dokumente/images/hypthesis_Symbol_bl.jpg"/></message>
+    <message key="xmlui.static.annotations.link">Annotationsservice <img title="hypothes.is" src="/dokumente/images/hypthesis_Symbol_bl.jpg" /></message>
     <message key="xmlui.item.annotation.download">Annotationen: </message>
     <message key="xmlui.static.annotations.head">Annotationsservice</message>
     <message key="xmlui.static.annotations">
@@ -3612,9 +3620,9 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
             <p>hypothes.is ist ein weit verbreitetes Annotationssystem, das von mehreren wissenschaftlichen Verlagen genutzt wird: so haben Johns Hopkins University Press, University of Michigan Publishing, University of California Press und Ubiquity Press das hypothes.is-Werkzeug bereits in ihre Plattformen integriert.</p>
 
             <h4>Wie man das hypothes.is-Tool mit unseren Publikationen benutzt</h4>
-            <p>Um eine Publikation des Universitätsverlages Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em> zusammen mit dem schwarzen hypothes.is Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_bl.jpg" />). Ein rotes Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_red.jpg"/>) signalisiert, dass zu dieser Publikation bereits Annotationen erstellt wurden. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, in dem das hypothes.is-Tool integriert ist.</p>
+            <p>Um eine Publikation des Universitätsverlages Göttingen zu annotieren, finden Sie auf der Webseite jeder Publikation den Link <em>Öffnen</em> zusammen mit dem schwarzen hypothes.is Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_bl.jpg" />). Ein rotes Symbol (<img title="hypothes.is logo" src="/dokumente/images/hypthesis_Symbol_red.jpg" />) signalisiert, dass zu dieser Publikation bereits Annotationen erstellt wurden. Durch Anklicken werden Sie zu einem PDF-Viewer weitergeleitet, in dem das hypothes.is-Tool integriert ist.</p>
 			<p>In dem Reiter <em>Details</em> können Sie alle bisher realisierten Annotationen zu der ausgewählten Publikation im csv-Format herunterladen:<br />
-			<img src="/dokumente/images/Snippet_Reiter_Details_dt.png" style="max-width: 100%;"></img></p>
+			<img src="/dokumente/images/Snippet_Reiter_Details_dt.png" style="max-width: 100%;" /></p>
             <p>Um eine Annotation zu erstellen, klicken Sie auf die Pfeiltaste rechts und melden Sie sich mit Ihrem bestehenden hypothes.is-Konto an oder erstellen Sie ein Konto. Um ein Konto zu erstellen, müssen Sie einen Accountnamen und eine gültige E-Mail-Adresse eingeben. Die Nutzung des Dienstes ist kostenlos. Sobald Sie eingeloggt sind, können Sie Anmerkungen machen, Textpassagen hervorheben, auf bestehende öffentliche Anmerkungen antworten und vieles mehr. Sie können entweder private Notizen für sich selbst erstellen oder Ihre Kommentare auch für Andere lesbar machen.  Um Gruppendiskussionen zu starten, können Sie eine private Gruppe einrichten, in der Sie Kommentare ausschließlich innerhalb dieser Gruppe austauschen können. </p>
             <p>Ein interessantes Beispiel dafür ist der "Call for Annotations" des <em>Hypothesis Reading Group für James Brown's Ethical Programs: </em><a href="https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/">https://web.hypothes.is/blog/call-for-annotations-hypothes-is-reading-group-for-james-browns-ethical-programs/</a></p>
             <p>Auch Lehrende und Lernende können von dieser Technologie profitieren, so ist es zum Beispiel möglich, Kursmaterialien und andere Ressourcen in privaten Gruppen zu diskutieren.</p>
@@ -3632,7 +3640,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
     <message key="xmlui.static.policy">
         <div class="ds-static-div">
             <p>
-                <i class="icon-file-pdf"></i><a href="/dokumente/texts/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien</a>
+                <i class="icon-file-pdf" /><a href="/dokumente/texts/Verlagspolicy-de_UVG_150529_Stand161104.pdf">Leitlinien</a>
                 <span class="pull-right">Göttingen im Mai 2015</span>
             </p>
             <p>
@@ -3704,7 +3712,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
         <div class="media">
             <div class="media-left">
                 <a href="//creativecommons.org/" target="_blank">
-                    <img class="media-object" src="/static/icons/cc.logo.large.png" alt="CreativeCommons logo"></img>
+                    <img class="media-object" src="/static/icons/cc.logo.large.png" alt="CreativeCommons logo" />
                 </a>
             </div>
             <div class="media-body">
@@ -3755,7 +3763,7 @@ Sowohl die Mitglieder des Herausgebergremiums als auch die Mitarbeiterinnen und 
 <div class="media">
             <div class="media-left">
                 <a href="//hirmeos.eu/" target="_blank">
-                    <img class="media-object" src="/dokumente/images/HIRMEOS_LOGO.png" alt="HIRMEOS"></img>
+                    <img class="media-object" src="/dokumente/images/HIRMEOS_LOGO.png" alt="HIRMEOS" />
                 </a>
             </div>
             <div class="media-body">
@@ -3774,7 +3782,7 @@ bereits vorhandenen Publikationsplattformen und Repositorien, die ebenfalls an d
 <div class="media">
             <div class="media-left">
                 <a href="//doabooks.org//" target="_blank">
-                    <img class="media-object" src="/dokumente/images/doab.png" alt="doab"></img>
+                    <img class="media-object" src="/dokumente/images/doab.png" alt="doab" />
                 </a>
             </div>
             <div class="media-body">
@@ -3790,7 +3798,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 	 <div class="media">
             <div class="media-left">
                 <a href="//oaspa.org/" target="_blank">
-                    <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA"></img>
+                    <img class="media-object" src="/static/icons/OASPA-logo.png" alt="OASPA" />
                 </a>
             </div>
             <div class="media-body">
@@ -3805,7 +3813,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
         <div class="media">
             <div class="media-left">
                 <a href="//www.open-access.net/" target="_blank">
-                    <img class="media-object extern-link" src="/static/icons/OpenAccess_Logo.gif" alt="OAR"></img>
+                    <img class="media-object extern-link" src="/static/icons/OpenAccess_Logo.gif" alt="OAR" />
                 </a>
             </div>
             <div class="media-body">
@@ -3821,7 +3829,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
         <div class="media">
             <div class="media-left">
                 <a href="//www.oapen.org/" target="_blank">
-                    <img class="media-object" src="/static/icons/oapen.logo.png" alt="OAPEN"></img>
+                    <img class="media-object" src="/static/icons/oapen.logo.png" alt="OAPEN" />
                 </a>
             </div>
             <div class="media-body">
@@ -3835,7 +3843,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
         <div class="media">
             <div class="media-left">
-                <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL"></img></a>
+                <a href="http://www.gojil.org" target="_blank"><img class="media-object" src="/static/icons/liesl.png" alt="GoJIL" /></a>
             </div>
             <div class="media-body">
                 Das Goettingen Journal for International Law (<a href="http://www.gojil.org" class="extern-link" target="_blank">GoJIL</a>) steht ab sofort Open Access unter einer Creative Commons License bereit. GoJIL veröffentlicht deutsche und englische Fachbeiträge zum Völkerrecht, welche vorwiegend aus dem rechtswissenschaftlichen Bereich, aber auch aus angrenzenden Disziplinen stammen. GoJIL knüpft an die Tradition US-amerikanischer Law Schools wie Harvard an, wonach unter studentischem Management rechtwissenschaftliche Zeitschriften mit anspruchsvoller Qualitätsprüfung herausgegeben werden. In Göttingen erfolgt die Herausgabe in Zusammenarbeit mit dem hochkarätig besetzten <a href="http://www.gojil.eu/about/people.html" class="extern-link" target="_blank">GoJIL Advisory Board</a>, dem <a href="http://inteurlaw.uni-goettingen.de" class="extern-link" target="_blank">Lehrstuhl für Völkerrecht</a> der Georg-August-Universität Göttingen sowie mit der Unterstützung des Universitätsverlags.
@@ -3869,16 +3877,16 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
                 37073 Göttingen
             </p>
             <p class="address">
-                <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
+                <i class="icon-call" title="Telefon" /> +49(0)551/39-91188
             </p>
             <p class="address">
-                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> univerlag.uni-goettingen.de</a>
+                <a href="//univerlag.uni-goettingen.de"><i class="icon-globe" /> univerlag.uni-goettingen.de</a>
             </p>
             <p class="address">
-                <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
+                <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail" /> bargheer AT sub.uni-goettingen.de</a>
 
             </p>
-            <p></p>
+            <p />
 
             <h3>Vertreter</h3>
 
@@ -3901,13 +3909,13 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
                     37073 Göttingen
                 </p>
                 <p class="address">
-                    <i class="icon-call" title="Telefon"></i> +49(0)551/39-91188
+                    <i class="icon-call" title="Telefon" /> +49(0)551/39-91188
                 </p>
                 <p class="address">
-                    <a href="//univerlag.uni-goettingen.de"><i class="icon-globe"></i> univerlag.uni-goettingen.de</a>
+                    <a href="//univerlag.uni-goettingen.de"><i class="icon-globe" /> univerlag.uni-goettingen.de</a>
                 </p>
                 <p class="address">
-                    <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i> bargheer AT sub.uni-goettingen.de</a>
+                    <a href="mailto:bargheer_AT_sub.uni-goettingen.de" title="E-Mail"><i class="icon-mail" /> bargheer AT sub.uni-goettingen.de</a>
 
                 </p>
 
@@ -3967,23 +3975,23 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <!-- Collection texts -->
     <message key="xmlui.collection.serieCEDPAL.introduction">
-        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanisch"></img></a> <a href="#" data-toggle="collapse" data-target="#port"><img  class="flag" src="/static/icons/portugal-flag.png" title="portugiesisch"></img></a></h3>
+        <h3>CEDPAL Series <a href="#" data-toggle="collapse" data-target="#spain"><img class="flag" src="/static/icons/spain-flag.png" title="spanisch" /></a> <a href="#" data-toggle="collapse" data-target="#port"><img class="flag" src="/static/icons/portugal-flag.png" title="portugiesisch" /></a></h3>
         <p>
 
-            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty's Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
+            The Research Centre for Latin American Criminal Law and Criminal Procedure <a href="//cedpal.uni-goettingen.de/index.php" class="extern-link" target="_blank">(Centro de Estudios de Derecho Penal y Proceso Penal Latinoamericano - CEDPAL)</a> is an autonomous unit of the Institute for Criminal Law and Criminal Justice and, at the same time, part of the Department for Foreign and International Criminal Law of the Law Faculty of the Georg-August-Universität Göttingen (GAU). It was founded by a Resolution of the Presidency on December 10, 2013 based upon a <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolution no. 58)</a> Resolution of the Law Faculty's Council, adopted on 6 November 2013. The Centre has among its aims to foster criminal law and criminological research in Latin America and to promote post-graduate education through different academic programmes.
             The Cedpal Series seeks to make accessible the Centre´s research projects (transnational, national and individual ones) and other academic activities (such as its series of lectures and seminars as well as its teaching courses on criminal law and justice) to criminal law students, researchers, professors and lawyers. The Series also provides a place to publish high quality works of researchers somehow linked to the Centre.
         </p>
         <div id="spain" class="collapse">
             <h3>Serie CEDPAL</h3>
             <p>
-                El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
+                El Centro de Estudios de Derecho Penal y Procesal Penal Latinoamericano <a href="//cedpal.uni-goettingen.de/index.php" class="extern-link" target="_blank">(CEDPAL)</a> es una entidad autónoma del Instituto de Ciencias Criminales de la Facultad de Derecho de la Universidad Georg-August de Göttingen y parte del Departamento de Derecho Penal Extranjero e Internacional. Fue fundado por medio de la resolución del Rectorado de la Universidad de fecha 10 de diciembre de 2013 con base en la decisión del Consejo de la Facultad de Derecho de fecha 6 de noviembre de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" target="_blank">(Resolución nº 58)</a>. Entre sus objetivos se encuentra la promoción de la investigación en ciencias penales y criminológicas en América Latina y el fomento, a través de diferentes modalidades de oferta académica, de la enseñanza y capacitación en estas áreas.
                 Con la Serie de publicaciones CEDPAL, iniciada en febrero de 2016, se busca poner al alcance de estudiantes, investigadores, profesores y prácticos de las ciencias criminales los resultados de las investigaciones del Centro (proyectos transnacionales, nacionales e individuales), así como de sus actividades de enseñanza ("Escuela de Verano en Ciencias Criminales y Dogmática Penal alemana"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Asimismo, la Serie ofrece un espacio propicio para que investigadores externos al Centro, pero vinculados a él, publiquen sus trabajos de investigación.<br />
             </p>
         </div>
         <div id="port" class="collapse">
             <h3>Série CEDPAL</h3>
             <p>
-                O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="//cedpal.uni-goettingen.de/index.php"  class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
+                O Centro de Estudos de Direito Penal e Processual Penal Latino-americano <a href="//cedpal.uni-goettingen.de/index.php" class="extern-link" target="_blank">(CEDPAL)</a> é uma entidade autônoma do Instituto de Ciências Criminais da Faculdade de Direito da Universidade Georg-August de Göttingen, Alemanha, e parte do Departamento de Direito Penal Estrangeiro e Internacional. Foi fundado por meio de resolução da Reitoria da Universidade, em 10 de dezembro de 2013, com base na decisão do Conselho da Faculdade de Direito, de 6 de novembro de 2013 <a href="//cedpal.uni-goettingen.de/data/Home/ResolucionPresidium.pdf" class="extern-link" target="_blank">(Resolução nº 58)</a>. Entre seus objetivos, encontra-se a promoção da investigação em ciências penais ecriminológicas na América Latina e o fomento, através de diferentes modalidades de oferta acadêmica, de ensino e capacitação nessas áreas.
                 Com a Série de publicações CEDPAL, iniciada em fevereiro de 2016, busca-se colocar ao alcance de estudantes, pesquisadores, professores e profissionais das ciências criminais os resultados das pesquisas do Centro (projetos transnacionais, nacionais e individuais), assim como de sus atividades de ensino ("Escola de Verão em Ciências Criminais e Dogmática Penal alemã"; "Curso sobre Fundamentos do Direito Penal e Processual Penal"). Outrossim, a Série oferece um espaço propício para que pesquisadores externos ao Centro, mas vinculados a ele, publiquem seus trabalhos de pesquisa.<br />
             </p>
         </div>
@@ -4001,7 +4009,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <message key="xmlui.collection.gssca.introduction">
         <p>
-            Diese Reihe ist die Fortsetzung von "<a href="//univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="//www.lit-verlag.de/reihe/GSE"  class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
+            Diese Reihe ist die Fortsetzung von "<a href="//univerlag.uni-goettingen.de/handle/3/Goettingen_contributions_to_cultural_anthropology_series" target="_blank">Göttinger Beiträge zur Ethnologie</a>", (Universitätsverlag Göttingen, Volume 1-6, 2008-2012), die ursprünglich unter dem Titel "<a href="//www.lit-verlag.de/reihe/GSE" class="extern-link" target="_blank">Göttinger Studien zur Ethnologie</a>" im LIT-Verlag (Vol. 1-17, 2001-2007) publiziert wurde.
         </p>
         <p class="narrow">ISSN (Print): 2199-5346</p>
         <p class="narrow">ISSN (Online): 2512-6881</p>
@@ -4038,7 +4046,7 @@ Lizenz erschienenen  Bücher an doab zu melden. Die Metadaten können von Aggreg
 
     <message key="xmlui.collection.annalsBiologie.introduction">
         <p>
-            Die <a href="//www.geschichte-der-biologie.de/"  class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
+            Die <a href="//www.geschichte-der-biologie.de/" class="extern-link" target="_blank">„Deutsche Gesellschaft für Geschichte und Theorie der Biologie“</a> wurde 1991 zu Beginn der deutschen Wiedervereinigung gegründet. Von Anfang an hat sich die Gesellschaft das Ziel gesetzt, Studien zur Geschichte und Philosophie der Biologie einem breitem Publikum bekannt zu machen. Dafür wurde das eigene „Jahrbuch für Geschichte und Theorie der Biologie“ genutzt. Inzwischen sind die parallel zum Jahrbuch erscheinenden „Verhandlungen zur Geschichte und Theorie der Biologie“ zu dem Medium zur Veröffentlichung der Beiträge der Jahrestagung der Gesellschaft avanciert. 2005 wurde das Jahrbuch umbenannt in „Annals of the History and Philosophy of Biology", um den internationalen Anspruch der Gesellschaft zur Thematik der vergleichenden Biologie als Themengebiet historischer und philosophischer Studien zu belegen.
         </p>
         <p class="narrow">ISSN (Print): 1863-0197</p>
         <p class="narrow">ISSN (Online): 2512-5923</p>
@@ -4106,14 +4114,14 @@ In den meisten Fällen basieren die Beiträge auf Dissertationen. Mit dieser Buc
 	    <p>
 		    Herausgeberinnen und Herausgeber der Reihe sind Prof. Dr. Regina Bendix, Prof. Dr. Kilian Bizer, Prof. Dr. Brigitta Hauser-Schäublin, Prof. Dr. Gerald Spindler und Prof. Dr. Peter-Tobias Stoll.
 	    </p>
-        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/culturalproperty_SIEF_2017_neu_170321_Webseite_Univerlag.pdf"><i class="icon-file-pdf" />Flyer</a></p>
         <p class="narrow">ISSN (Print): 2190-8672</p>
         <p class="narrow">ISSN (Online): 2512-6342</p>
     </message>
 
     <message key="xmlui.collection.gbao.introduction">
         <p>
-            Die Reihe »Göttinger Beiträge zun Alten Orient« setzt die erfolgreichen »<a href="//books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y"  class="extern-link" target="_blank">Göttinger Arbeitshefte zur Altorientalischen Literatur</a>« fort. Die Reihe wird vom <a href="//www.uni-goettingen.de/en/115101.html"  class="extern-link" target="_blank">Seminar für Altorientalistik der Georg-August-Universität Göttingen</a> herausgegeben und behandelt die Erschließung und Deutung der reichhaltigen Schriftdenkmäler in akkadischer oder sumerischer Sprache aus der Zeit von ca. 3100 - 500 v. Chr.
+            Die Reihe »Göttinger Beiträge zun Alten Orient« setzt die erfolgreichen »<a href="//books.google.de/books/about/G%C3%B6ttinger_Arbeitshefte_zur_altorientali.html?id=yn74mQEACAAJ&amp;redir_esc=y" class="extern-link" target="_blank">Göttinger Arbeitshefte zur Altorientalischen Literatur</a>« fort. Die Reihe wird vom <a href="//www.uni-goettingen.de/en/115101.html" class="extern-link" target="_blank">Seminar für Altorientalistik der Georg-August-Universität Göttingen</a> herausgegeben und behandelt die Erschließung und Deutung der reichhaltigen Schriftdenkmäler in akkadischer oder sumerischer Sprache aus der Zeit von ca. 3100 - 500 v. Chr.
         </p>
         <p class="narrow">ISSN (Print): 1866-2595</p>
         <p class="narrow">ISSN (Online): 2512-6423</p>
@@ -4149,7 +4157,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 	
     <message key="xmlui.collection.gf.introduction">
         <p>
-	    Die Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html"  class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
+	    Die Schriftenreihe „Göttinger Forstwissensschaften“ der traditionsreichen <a href="//www.uni-goettingen.de/de/fakultaet-f%C3%BCr-forstwissenschaften-und-waldoekologie/19852.html" class="extern-link" target="_blank">Fakultät für Forstwissenschaften und Waldökologie</a> der Georg-August-Universität Göttingen fasst die Reihen „Schriften aus der Forstlichen Fakultät der Universität Göttingen und der Nordwestdeutschen Forstlichen Versuchsanstalt“ und die 
 	    Reihe A der „Berichte des Forschungszentrums Waldökosysteme“ zusammen. 
 	    Die Reihe spiegelt das breite Themenspektrum der Fakultät sowie der Nordwestdeutschen Forstlichen Versuchsanstalt wider und stellt alle Bände als gedruckte Ausgabe und Online-Version bereit.
         </p>
@@ -4159,7 +4167,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
     <message key="xmlui.collection.gjs.introduction">
         <p>
-            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
+            Die Reihe »Göttinger Juristische Schriften« wird von der <a href="http://www.jura.uni-goettingen.de/" class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> herausgegeben und macht Veranstaltungen an der Fakultät einer interessierten Öffentlichkeit zugänglich.
         </p>
         <p class="narrow">ISSN (Print): 1864-2128</p>
         <p class="narrow">ISSN (Online): 2512-6849</p>
@@ -4167,7 +4175,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
     <message key="xmlui.collection.gksm.introduction">
         <p>
-            Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl"  class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
+            Die Reihe »Göttinger Klassiker der Strömungsmechanik« stellt ausgewählte Publikationen, die der Göttinger Schule um <a href="//de.wikipedia.org/wiki/Ludwig_Prandtl" class="extern-link" target="_blank">Ludwig Prandtl</a> zuzurechnen sind oder in einem gewissen historischen Bezug dazu stehen, wieder zur Verfügung.
         </p>
         <p class="narrow">ISSN (Print): 1863-1088</p>
         <p class="narrow">ISSN (Online): 2512-6865</p>
@@ -4175,9 +4183,9 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
     <message key="xmlui.collection.gsmr.introduction">
         <p>
-            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/31523.html"  class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
+            Die neue Reihe der „Göttinger Schriften zum Medizinrecht“ schafft ein Forum, um der interessierten Öffentlichkeit die aktuellen Forschungsergebnisse des im WS 2005/06 neu gegründeten „<a href="//www.uni-goettingen.de/de/31523.html" class="extern-link" target="_blank">Göttinger Zentrum für Medizinrecht</a>„ zugänglich zu machen.
         </p>
-        <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/GSM_flyer_neuesDesign_akt.pdf"><i class="icon-file-pdf" />Flyer</a></p>
         <p class="narrow">ISSN (Print): 1864-2144</p>
         <p class="narrow">ISSN (Online): 2512-689X</p>
 
@@ -4185,7 +4193,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
     <message key="xmlui.collection.gsoer.introduction">
         <p>
-            Diese Reihe der <a href="//www.jura.uni-goettingen.de/"  class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
+            Diese Reihe der <a href="//www.jura.uni-goettingen.de/" class="extern-link" target="_blank">Juristischen Fakultät der Georg-August-Universität Göttingen</a> beinhaltet Dissertationen, wissenschaftliche Studien und Sammelbände zum Öffentlichen Recht, insbesondere zum Staats- und Verwaltungsrecht. Die Autoren stammen vorrangig aus den Reihen des Instituts für Öffentliches Recht und des Instituts für Allgemeine Staatslehre.
         </p>
         <p class="narrow">ISSN (Print): 2191-4583</p>
         <p class="narrow">ISSN (Online): 2512-6911</p>
@@ -4212,7 +4220,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
     <message key="xmlui.collection.gskw.introduction">
         <p>
-            Die Schriftenreihe des <a href="//www.uni-goettingen.de/de/sh/32133.html"  class="extern-link" target="_blank">Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a> will ein Spiegel wissenschaftlicher Arbeit des Instituts sein und ein Forum für bedeutsame Forschungsarbeiten auf dem Gebiet der Kriminalwissenschaften bieten.
+            Die Schriftenreihe des <a href="//www.uni-goettingen.de/de/sh/32133.html" class="extern-link" target="_blank">Instituts für Kriminalwissenschaften der Juristischen Fakultät der Georg-August-Universität Göttingen</a> will ein Spiegel wissenschaftlicher Arbeit des Instituts sein und ein Forum für bedeutsame Forschungsarbeiten auf dem Gebiet der Kriminalwissenschaften bieten.
         </p>
         <p class="narrow">ISSN (Print): 1864-2136</p>
         <p class="narrow">ISSN (Online): 2512-7047</p>
@@ -4241,7 +4249,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 
         <message key="xmlui.collection.fadaf.introduction">
         <p>
-            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF). In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen und wird seit Mitte 2017 (Bd. 97 ff.) unter dem Namen <a href ="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“</a>  im Universitätsverlag Göttingen weitergeführt.
+            Herausgeber der Reihe „Materialien Deutsch als Fremdsprache (DaF)“ ist der Fachverband Deutsch als Fremdsprache (FaDaF). In dieser Reihe werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes veröffentlicht. Außerdem finden Dissertationen und andere wichtige Einzeldarstellungen ihren Platz. Die Reihe erscheint erst ab Band 78 im Universitätsverlag Göttingen und wird seit Mitte 2017 (Bd. 97 ff.) unter dem Namen <a href="/handle/3/matdaf_series">„Materialien Deutsch als Fremd- und Zweitsprache“</a>  im Universitätsverlag Göttingen weitergeführt.
         </p>
         <p class="narrow">ISSN (Print): 1866-8283</p>
         <p class="narrow">ISSN (Online): 2512-7071</p>
@@ -4251,7 +4259,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
     <message key="xmlui.collection.matdaf.introduction">
 
 	<p>
-            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href ="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.</p>
+            Herausgeber der Reihe „Materialien Deutsch als Fremd- und Zweitsprache (MatDaF)“ ist Dr. Annegret Middeke (Universität Göttingen) im Auftrag des Fachverbandes Deutsch als Fremd- und Zweitsprache e.V. (FaDaF). In MatDaF werden u.a. die Ergebnisse der Jahrestagungen und Fachtagungen des Verbandes sowie Monographien zu fachrelevanten Themen im internationalen Kontext veröffentlicht. Von 2008 bis Mitte 2017 erschien die Reihe unter dem Namen <a href="/handle/3/fadaf_series">„Materialien Deutsch als Fremdsprache“ (Bände 78-96) </a>, seit Mitte 2017 erscheint sie unter dem Namen „Materialien Deutsch als Fremd- und Zweitsprache“ (Bd. 97 ff.) im Universitätsverlag Göttingen.</p>
         <!-- <p class="narrow">ISSN (Print): 2566-9230</p>
         <p class="narrow">ISSN (Online): 2566-9281</p> -->
 	<div class="row">
@@ -4263,7 +4271,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 		<div class="col-md-6">
 	
 
-		<i id="play" class="fa fa-youtube-play" style="font-size:30px;color:red;vertical-align: top;float: right;"></i>
+		<i id="play" class="fa fa-youtube-play" style="font-size:30px;color:red;vertical-align: top;float: right;" />
 		<a data-type="iframe" data-fancybox="" data-src="https://www.youtube.com/embed/O5nbW5e_8PI" href="https://www.youtube.com/embed/O5nbW5e_8PI">
 			<span class="info">Festkolloquium</span>
 		</a>
@@ -4357,7 +4365,7 @@ Die herausgegebenen Sammelbände unterliegen einem double-blind/peer-review-Begu
 	<p>
 		Herausgeberinnen und Herausgeber der Reihe sind Prof. Dr. Regina Bendix, Prof. Dr. Sabine Hess, Prof. Dr. Carola Lipp, Prof. Dr. Moritz Ege und Dr. Torsten Näser.
 	    </p>		
-        <p><a class="flyer" target="_blank" href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf"></i>Flyer</a></p>
+        <p><a class="flyer" target="_blank" href="/dokumente/flyer/KAEE_161213_Webseite_Univerlag.pdf"><i class="icon-file-pdf" />Flyer</a></p>
         <p class="narrow">ISSN (Print): 2365-3191</p>
         <p class="narrow">ISSN (Online): 2512-7055</p>
     </message>
@@ -4398,140 +4406,51 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.static.shipping.costs.title">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.trail">Versandkosten</message>
     <message key="xmlui.static.shipping.costs.head">Versandkosten</message>
-    <message key="xmlui.static.shipping.costs">
-        <!-- <div class="row">
-            <div class="col-md-6">
-                <table class="table table-striped shipping">
-                    <thead>
-                        <tr>
-                            <th colsapn="2">Buchsendungen in Deutschland</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Unter 500 g:</td><td class="numeric">2,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>500 g - 1 kg:</td><td class="numeric">3,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>1 kg - 10 kg:</td><td class="numeric">4,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>10 kg 30 kg:</td><td class="numeric">7,50 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-6">
-                <table class="table table-striped shipping">
-                    <thead>
-                        <tr>
-                            <th colsapn="2">Buchsendungen in Europa</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Unter 500 g:</td><td class="numeric"> 4,50 €</td>
-                        </tr>
-                        <tr>
-                            <td>Über 500 g:</td><td class="numeric"> 6,50 €</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th colsapn="2">Buchsendungen in USA / Rest der Welt</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1  Buch:</td><td class="numeric">12,50 €</td>
-                </tr>
-                <tr>
-                    <td colspan="2">&gt; 1 Buch - Bitte setzen Sie sich (über <a href="/info/contact">Kontakt / Bestellungen</a>) mit uns in Verbindung, damit wir für Sie die Versandkosten optimieren können!</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="alert alert-info">
-            Bei Bestellungen im Wert von über 60,00 € innerhalb Deutschland bzw. über 70,00 € innerhalb der Europäischen Union liefert der Verlag versandkostenfrei.
-        </div>
-	-->
-	Pro Bestellung werden pauschal 3,50 € Versandkosten berechnet.
-    </message>
+    <message key="xmlui.static.shipping.costs"><div>Zu den Einzelpreisen der Waren berechnen wir für eine Lieferung innerhalb Deutschlands eine Versandkostenpauschale von 2,50 €.</div>
+<h3>Ab 22.02.2021 gelten folgende Versandkostenpauschalen ins Ausland</h3>
+<table class="table table-striped shipping"><tbody><tr><td>Österreich, Luxemburg, Liechtenstein</td><td class="numeric">3,50 €</td></tr>
+                        <tr><td>Schweiz</td><td class="numeric">6,00 €</td></tr>
+                        <tr><td>alle weiteren EU-Länder</td><td class="numeric">8,00 €</td></tr>
+                        <tr><td>nicht EU-Länder Europa,  außerhalb Europa</td><td class="numeric">15,00 €</td></tr></tbody></table>
+<div>Der Auslandsversand erfolgt mit Sendungsverfolgung.</div></message>
 
     <message key="xmlui.static.review.form">Begutachtungsbogen</message>
 
     <message key="xmlui.static.order-conditions.title">Allgemeine Geschäftsbedingungen</message>
     <message key="xmlui.static.order-conditions.trail">AGB</message>
     <message key="xmlui.static.order-conditions.head">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</message>
-    <message key="xmlui.static.order-conditions">
-
-        <ol>
-            <li>
-
-                <p>
-                    Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.
-                </p>
+    <message key="xmlui.static.order-conditions"><ol><li><p>Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.</p>
 
 
-                <p>
-                    Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware. Zu den Einzelpreisen der Waren berechnen wir übliche Versandkosten für den Warenversand aus Deutschland. Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.
-                </p>
+                <p>Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware.</p>
+<p>Zu den Einzelpreisen der Waren berechnen wir für eine Lieferung innerhalb Deutschlands eine Versandkostenpauschale von 2,50 €.</p>
+<p>Ins Ausland gelten folgende Versandkostenpauschalen:<br />
+3,50 EUR bei Lieferung nach Österreich, Luxemburg, Liechtenstein<br />
+6,00 EUR bei Lieferung in die Schweiz<br />
+8,00 EUR bei Lieferung in alle weiteren EU-Länder und<br />
+15,00 EUR bei Lieferung in europäische Länder (Nicht-EU) und in außer-europäische Länder (Welt).<br />
+Der Auslandsversand erfolgt mit Sendungsverfolgung.<br />
+ Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.</p></li>
+            <li><p>Ist der Vertragspartner ein Verbraucher (§13 BGB, Geschäftszweck weder gewerblicher noch selbständig beruflichen Tätigkeit zugeordnet) und beruht der Vertragsschluss auf einem Fernabsatzvertrag (§312b BGB, z.B. Bestellung über das Internet) gilt für die Bestellung von Waren folgende Widerrufsbestimmungen, über die der Vertragspartner hiermit wie gesetzlich vorgeschrieben belehrt wird:</p>
 
+                <div class="box"><h3>Widerrufsbelehrung</h3>
 
-            </li>
-            <li>
-                <p>
-
-                    Ist der Vertragspartner ein Verbraucher (§13 BGB, Geschäftszweck weder gewerblicher noch selbständig beruflichen Tätigkeit zugeordnet) und beruht der Vertragsschluss auf einem Fernabsatzvertrag (§312b BGB, z.B. Bestellung über das Internet) gilt für die Bestellung von Waren folgende Widerrufsbestimmungen, über die der Vertragspartner hiermit wie gesetzlich vorgeschrieben belehrt wird:
-                </p>
-
-                <div class="box">
-                    <h3>Widerrufsbelehrung</h3>
-
-                    <p>
-
-                        Widerrufsrecht:
-                    </p>
-                    <p>
-
-                        Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.
-                    </p>
-                    <p>Der Widerruf ist zu richten an: </p>
+                    <p>Widerrufsrecht:</p>
+                    <p>Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z.B. Brief, Fax, E-Mail) oder durch Rücksendung der Sache widerrufen. Die Frist beginnt frühestens mit Erhalt dieser Belehrung. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache.</p>
+                    <p>Der Widerruf ist zu richten an:</p>
                     <p class="address">Georg-August-Universität Göttingen</p>
 		    <p class="address">Niedersächsische Staats- und Universitätsbibliothek Göttingen</p>
 		    <p class="address">Universitätsverlag Göttingen</p>
                     <p class="address">Platz der Göttinger Sieben 1</p>
                     <p class="address">37073 Göttingen</p>
-                    <p></p>
-                    <p>
-                        Widerrufsfolgen:
-                    </p>
-                    <p>
-                        Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
-                        (Ende der Widerrufsbelehrung)
-                    </p>
-                </div>
-            </li>
-            <li>
-                <p>
-                    Der Vertragspartner erklärt sich einverstanden, dass personenbezogene Daten in dem Umfang gespeichert werden, in dem dies zur Erfüllung des Vertragsverhältnisses erforderlich ist. Eine Speicherung darüber hinaus oder Weitergabe der Daten erfolgt nicht.
-                </p>
+                    <p />
+                    <p>Widerrufsfolgen:</p>
+                    <p>Im Falle eines Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung -- wie sie Ihnen etwa in einem Ladengeschäft möglich gewesen wäre -- zurückzuführen ist. Im Übrigen können Sie die Wertersatzpflicht vermeiden, indem Sie die Sache nicht wie ein Eigentümer in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache 40,-- Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich ausnahmsweise vereinbarte Teilzahlung erbracht haben. Andernfalls ist die Rücksendung für Sie kostenfrei. Verpflichtungen zur Erstattung von Zahlungen müssen Sie innerhalb von 30 Tagen nach Absendung Ihrer Widerrufserklärung erfüllen.<br />
+                        (Ende der Widerrufsbelehrung)</p></div></li>
+            <li><p>Der Vertragspartner erklärt sich einverstanden, dass personenbezogene Daten in dem Umfang gespeichert werden, in dem dies zur Erfüllung des Vertragsverhältnisses erforderlich ist. Eine Speicherung darüber hinaus oder Weitergabe der Daten erfolgt nicht.</p>
 
-                <p>
-                </p></li>
-            <li>
-                <p>
-                    Sollte eine Bestimmung dieser allgemeinen Geschäftsbedingungen ganz oder teilweise unwirksam sein, bleiben hiervon andere Bedingungen, die von der unwirksamen Bestimmung unterscheidbar sind, unberührt und wirksam. An Stelle der unwirksamen Bedingungen gelten entsprechend die gesetzlichen Bestimmungen. Erfüllungsort und Gerichtsstand ist Göttingen.
-                </p>
-            </li>
-        </ol>
-    </message>
+                <p /></li>
+            <li><p>Sollte eine Bestimmung dieser allgemeinen Geschäftsbedingungen ganz oder teilweise unwirksam sein, bleiben hiervon andere Bedingungen, die von der unwirksamen Bestimmung unterscheidbar sind, unberührt und wirksam. An Stelle der unwirksamen Bedingungen gelten entsprechend die gesetzlichen Bestimmungen. Erfüllungsort und Gerichtsstand ist Göttingen.</p></li></ol></message>
 
 
     <message key="xmlui.static.ring.contact-ss14">
@@ -4556,18 +4475,16 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
 
     <message key="xmlui.static.order.terms.title">Lieferbedingungen (Allgemeine Geschäftsbedingungen)</message>
     <message key="xmlui.static.order.terms.trail">AGB</message>
-    <message key="xmlui.static.order.terms.text">
-        <div>
-            <ol>
-                <li>
-                    Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.
-                </li>
-                <li>
-                    Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware. Zu den Einzelpreisen der Waren berechnen wir Kosten für Verpackung und Versand. Für Deutschland und Europa sind diese  ausgewiesen, sowie über den Warenkorb bestellt wird. Für alle weiteren Länder geben wir diese auf Anfrage an. Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.
-                </li>
-            </ol>
-        </div>
-    </message>
+    <message key="xmlui.static.order.terms.text"><div><ol><li>Sämtliche Lieferungen und Leistungen des Universitätsverlags Göttingen erfolgen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen. Abweichende Bedingungen des Vertragspartners werden nur dann anerkannt, wenn dem ausdrücklich in Schriftform zugestimmt worden ist.</li>
+                <li>Mit dem Abschluß des Bestellvorgangs auf der Internetseite gibt der Nutzer zunächst ein Angebot zum Kauf ab und erklärt sein Einverständnis mit diesen allgemeinen Geschäftsbedingungen. Die Annahme dieses Angebots erfolgt durch Zusendung der bestellten Ware.
+<p>Zu den Einzelpreisen der Waren berechnen wir für eine Lieferung innerhalb Deutschlands eine Versandkostenpauschale von 2,50 €. </p>
+<p>Ins Ausland gelten folgende Versandkostenpauschalen:<br />
+3,50 EUR bei Lieferung nach Österreich, Luxemburg, Liechtenstein<br />
+6,00 EUR bei Lieferung in die Schweiz<br />
+8,00 EUR bei Lieferung in alle weiteren EU-Länder und<br />
+15,00 EUR bei Lieferung in europäische Länder (Nicht-EU) und in außer-europäische Länder (Welt).</p>
+Der Auslandsversand erfolgt mit Sendungsverfolgung.<br />
+Bis zur vollständigen Zahlung des Kaufpreises verbleibt die gelieferte Ware im Eigentum des Universitätsverlags Göttingen.</li></ol></div></message>
 
     <message key="xmlui.static.publishing.catalog.text">
         <p class="paragraph">
@@ -4578,7 +4495,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
             Sie können unser Verlagsprogramm <a href="/dokumente/texts/verlagsprogramm.pdf">als PDF herunterladen</a>. Falls Sie es in Offset-Druckqualität lesen möchten, bestellen Sie es bitte kostenfrei <a href="mailto:univerlag@uni-goettingen.de?subject=Verlagkatalog bestellen">hier</a>.
         </p>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm.pdf"></iframe>
+            <iframe class="embed-responsive-item" src="/dokumente/texts/verlagsprogramm.pdf" />
         </div>
 
 
@@ -4634,7 +4551,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process">Peer-Review-Verfahren</message>
     <message key="xmlui.dri2xhtml.METS-1.0.item-pr-process.icon.title">Zertifikat und Details zum Begutachtungsprozess</message>
 
-    <message key="xmlui.static.copyright">&#169; 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
+    <message key="xmlui.static.copyright">© 2017 Niedersächsische Staats- und Universitätsbibliothek Göttingen</message>
     <!-- search facet values -->
     <message key="de">Deutsch</message>
     <message key="ger">Deutsch</message>
@@ -4696,7 +4613,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.dri2xhtml.METS-1.0.item-contributors">Über die Autoren/Hrsg.</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.series">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.series">{0}</message>
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.series.column_heading"></message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.series.column_heading" />
 
     <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language">Sprache</message>
     <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Publikationstyp</message>
@@ -4745,7 +4662,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.ArtifactBrowser.CostRequestForm.city_help">Stadt</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.phone">*Telefon</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email">*E-Mail-Adresse</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email_help"></message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.customer_email_help" />
     <message key="xmlui.ArtifactBrowser.CostRequestForm.sponsor">*Kostenübernahme durch</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter">Kostenstelle</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.costcenter_help">(Nur ausfüllen, falls Kostenübernahme durch Universität bzw. Institut)</message>
@@ -4754,11 +4671,11 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.ArtifactBrowser.CostRequestForm.creator">*Autor(en)/Herausgeber</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.creator_help">Autor bzw. Herausgeber der Arbeit<br />bei mehreren Verfassern abtrennen durch Schrägstrich /<br />bei Herausgebern hinter dem letzten Namen den Zusatz (Hg.) oder (Ed.) hinzufügen. </message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.publ_title">*Titel der Arbeit</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.title_help"></message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.title_help" />
     <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle">Untertitel</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle_help"></message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.subtitle_help" />
     <message key="xmlui.ArtifactBrowser.CostRequestForm.institute">Fakultät / Institut</message>
-    <message key="xmlui.ArtifactBrowser.CostRequestForm.institute_help"></message>
+    <message key="xmlui.ArtifactBrowser.CostRequestForm.institute_help" />
     <message key="xmlui.ArtifactBrowser.CostRequestForm.series">Reihe</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.series_help">(Nur ausfüllen falls Ihre Publikation in einer Reihe erscheint)</message>
     <message key="xmlui.ArtifactBrowser.CostRequestForm.series_title">Titel der Reihe</message>
@@ -4804,7 +4721,7 @@ Die vorliegende Schriftenreihe vereint Texte, Vorträge und Reden, die seit 2014
     <message key="xmlui.dri2xhtml.structural.order-link">Warenkorb</message>
 
     <message key="xmlui.item.part">Teil </message>
-    <message key="xmlui.list.all.publications">Alle Publikationen  <i class="icon-arrow-right"></i></message>
+    <message key="xmlui.list.all.publications">Alle Publikationen  <i class="icon-arrow-right" /></message>
     <message key="xmlui.dri2xhtml.default.textarea.value">Ihr Text</message>
 
 
@@ -4883,12 +4800,12 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
 	<p>Die Vorträge wurden aufgezeichnet und sind öffentlich zugänglich:
 	</p>
 	<ul>
-	<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Trailer </i></a></li>
-	<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> die Eröffnung </i></a></li>
-	<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Annegret Middeke </i></a></li>
-	<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Prof. Dr. Uwe Koreik </i></a></li>
-	<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Matthias Jung </i></a></li>
-	<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank" ><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von PD Dr. Roger Fornoff </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=O5nbW5e_8PI" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> der Trailer </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=an8VkVDvkJU" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> die Eröffnung </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=oLwSzVJMhI8" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Annegret Middeke </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=U2VSJGlFKR8" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Prof. Dr. Uwe Koreik </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=EZAEhNVVEI8" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von Dr. Matthias Jung </i></a></li>
+	<li><a href="https://www.youtube.com/watch?v=I-gLHQ4VpJc" target="_blank"><i class="fa fa-youtube-play" style="font-size:14px;"> der Vortrag von PD Dr. Roger Fornoff </i></a></li>
 	</ul>	
 		
 	<h3 class="list-item-header">PDF-Annotationen über Hypothes.is<span class="pull-right"><small>Nov. 2018</small></span></h3>
@@ -4915,7 +4832,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
 
             <h3 class="list-item-header">Fachartikel zum Thema Universitätsverlage in Deutschland erschienen<span class="pull-right"><small>Mai 2016</small></span></h3>
             <span class="contributor">Bargheer, Margo; Pabst, Jutta</span>
-            <span class="title">&#8217;Being small is not a fault&#8217;: Making sense of the newer generation of German-language university presses.</span>
+            <span class="title">’Being small is not a fault’: Making sense of the newer generation of German-language university presses.</span>
             <span class="biblio"> Learned Publishing, Vol. 29, Issue S1 (2016), p. 335-341</span>
             <p class="strech-top">Zugänglich auf <a href="//resolver.sub.uni-goettingen.de/purl?gs-1/13814" class="extern-link" target="_blank">GoeScholar</a> oder direkt beim Verlag in der <a href="//onlinelibrary.wiley.com/doi/10.1002/leap.1053/full" class="extern-link" target="_blank">Wiley Online Library</a>.</p>
 
@@ -4947,7 +4864,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Name</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="name" placeholder="Vorname Nachname" class="form-control" type="text" required="true"></input>
+                            <input name="name" placeholder="Vorname Nachname" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -4957,7 +4874,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
 			<label class="col-md-4 control-label">ORCID iD</label>
 			<div class="col-md-6 inputGroupContainer">
 				<div class="input-group">
-					<input name="orcid" placeholder="ORCID iD" class="form-control" type="text"></input>
+					<input name="orcid" placeholder="ORCID iD" class="form-control" type="text" />
 				</div>
 			</div>
 		</div>
@@ -4968,7 +4885,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Adresse</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="address" placeholder="Strasse Hausnummer" class="form-control" type="text" required="true"></input>
+                            <input name="address" placeholder="Strasse Hausnummer" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -4978,7 +4895,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Postleitzahl</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="zip" placeholder="zip" class="form-control" type="text" required="true"></input>
+                            <input name="zip" placeholder="zip" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -4988,7 +4905,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Stadt</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="city" placeholder="City" class="form-control" type="text" required="true"></input>
+                            <input name="city" placeholder="City" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -4998,7 +4915,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Fakultät / Institut</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="institute" placeholder="institute" class="form-control" type="text"></input>
+                            <input name="institute" placeholder="institute" class="form-control" type="text" />
                         </div>
                     </div>
                 </div>
@@ -5009,7 +4926,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Telefon</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text"  required="true"></input>
+                            <input name="phone" placeholder="(845)555-1212" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -5020,7 +4937,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Email</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="customer_email" placeholder="email" class="form-control" type="email" required="true"></input>
+                            <input name="customer_email" placeholder="email" class="form-control" type="email" required="true" />
                         </div>
                     </div>
                 </div>
@@ -5082,7 +4999,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Autor/Hrsg.</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="creator1" placeholder="Vorname Nachname" class="form-control" type="text" required="true"></input>
+                            <input name="creator1" placeholder="Vorname Nachname" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                     <div>
@@ -5098,7 +5015,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Autor/Hrsg.</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="creator2" placeholder="Vorname Nachname" class="form-control" type="text"></input>
+                            <input name="creator2" placeholder="Vorname Nachname" class="form-control" type="text" />
                         </div>
                     </div>
                     <div>
@@ -5112,7 +5029,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Autor/Hrsg.</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="creator3" placeholder="Vorname Nachname" class="form-control" type="text"></input>
+                            <input name="creator3" placeholder="Vorname Nachname" class="form-control" type="text" />
                         </div>
                     </div>
                     <div>
@@ -5126,7 +5043,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Autor/Hrsg.</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="creator4" placeholder="Vorname Nachname" class="form-control" type="text"></input>
+                            <input name="creator4" placeholder="Vorname Nachname" class="form-control" type="text" />
                         </div>
                     </div>
                 </div>
@@ -5141,7 +5058,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Titel der Arbeit</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="publ_title" placeholder="Titel" class="form-control" type="text" required="true"></input>
+                            <input name="publ_title" placeholder="Titel" class="form-control" type="text" required="true" />
                         </div>
                     </div>
                 </div>
@@ -5151,7 +5068,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Untertitel</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="subtitle" placeholder="Untertitel" class="form-control" type="text"></input>
+                            <input name="subtitle" placeholder="Untertitel" class="form-control" type="text" />
                         </div>
                     </div>
                 </div>
@@ -5221,7 +5138,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Vorläufige Seitenzahl</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="extent" class="form-control" type="number" required="true"></input>
+                            <input name="extent" class="form-control" type="number" required="true" />
                         </div>
                     </div>
                 </div>
@@ -5245,7 +5162,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Anzahl Seiten mit farbigen Elementen in der Druckausgabe</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="colored" class="form-control" type="number"></input>
+                            <input name="colored" class="form-control" type="number" />
                         </div>
                     </div>
                 </div>
@@ -5255,7 +5172,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Anzahl der Exemplare für Ihren eigenen Gebrauch</label>
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
-                            <input name="copy" class="form-control" type="number" required="true"></input>
+                            <input name="copy" class="form-control" type="number" required="true" />
                             <div class="help-block with-errors">z.B. für Beiträger, Prüfungsämter etc.</div>
                         </div>
                     </div>
@@ -5266,8 +5183,8 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">Voraussichtlicher Termin Ihrer Manuskriptabgabe</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="deliveryDatePicker">
-                            <input id="delivery_date" class="form-control" name="delivery_date" type="text"  placeholder="JJJJ-MM-DD"></input>
-                            <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
+                            <input id="delivery_date" class="form-control" name="delivery_date" type="text" placeholder="JJJJ-MM-DD" />
+                            <span class="input-group-addon add-on"><i class="icon-calendar-1" /></span>
                         </div>
                     </div>
                 </div>
@@ -5277,8 +5194,8 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <label class="col-md-4 control-label">*Gewünschter Termin der Veröffentlichung</label>
                     <div class="col-md-6  inputGroupContainer date">
                         <div class="input-group input-append date" id="issueDatePicker">
-                            <input id="issue_date" class="form-control" name="issue_date" type="text" required="true" placeholder="JJJJ-MM-DD"></input>
-                            <span class="input-group-addon add-on"><i class="icon-calendar-1"></i></span>
+                            <input id="issue_date" class="form-control" name="issue_date" type="text" required="true" placeholder="JJJJ-MM-DD" />
+                            <span class="input-group-addon add-on"><i class="icon-calendar-1" /></span>
                         </div>
                     </div>
                 </div>
@@ -5292,7 +5209,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
                     <div class="col-md-6  inputGroupContainer">
                         <div class="input-group">
                             <!-- <span class="input-group-addon"><i class="icon-pencil"></i></span> -->
-                            <textarea class="form-control" name="comments" placeholder="Ihre Nachricht"></textarea>
+                            <textarea class="form-control" name="comments" placeholder="Ihre Nachricht" />
                         </div>
                     </div>
                 </div>
@@ -5301,7 +5218,7 @@ Weitere Beiträge von Dr. Johannes Becker sind in dem von Prof. Gabriele Rosenth
 
                 <!-- Button -->
                 <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
+                    <label class="col-md-4 control-label" />
                     <div class="col-md-4">
                         <button type="submit" class="btn btn-default">Senden </button>
                     </div>
@@ -5342,11 +5259,11 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
       <p class="address">37073 Göttingen</p>
 <p class="address">
                     
-<i class="icon-call" title="Telefon"></i> +49 551 39-21000
+<i class="icon-call" title="Telefon" /> +49 551 39-21000
                 </p>
 <p class="address">
                     
-<a href="mailto:praesident_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i>praesident AT uni-goettingen.de</a>
+<a href="mailto:praesident_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail" />praesident AT uni-goettingen.de</a>
 
                 
 </p>
@@ -5361,11 +5278,11 @@ Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für 
       <p class="address">37073 Göttingen</p>
 <p class="address">
                     
-<i class="icon-call" title="Telefon"></i> +49 551 39-7381
+<i class="icon-call" title="Telefon" /> +49 551 39-7381
                 </p>
 <p class="address">
                     
-<a href="mailto:datenschutz_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail"></i>datenschutz AT uni-goettingen.de</a>
+<a href="mailto:datenschutz_at_uni-goettingen.de" title="E-Mail"><i class="icon-mail" />datenschutz AT uni-goettingen.de</a>
 
                 
 </p>
@@ -5407,11 +5324,11 @@ Zur Ausübung Ihrer Rechte wenden Sie sich bitte an den betrieblichen Datenschut
     <p class="address">30159 Hannover</p>
       <p class="address">
                     
-<i class="icon-call" title="Telefon"></i> +49 511 120 4500
+<i class="icon-call" title="Telefon" /> +49 511 120 4500
                 </p>
 <p class="address">
                     
-<a href="mailto:poststelle_at_lfd.niedersachsen.de" title="E-Mail"><i class="icon-mail"></i>poststelle AT lfd.niedersachsen.de</a>
+<a href="mailto:poststelle_at_lfd.niedersachsen.de" title="E-Mail"><i class="icon-mail" />poststelle AT lfd.niedersachsen.de</a>
 
                 
 </p>
@@ -5477,7 +5394,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.ArtifactBrowser.Navigation.browse_uri">DOI</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.uri">{0}</message>
     <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.uri">nach DOI</message>
-    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading"></message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.uri.column_heading" />
     <message key="xmlui.item.sponsor.details">Geförderte Publikation</message>
 
     <message key="xmlui.dri2xhtml.mimetype.application/epub+zip">EPUB</message>
@@ -5500,8 +5417,8 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.item.annotation.details.link">Herunterladen (csv)</message>
     <message key="xmlui.item.annotation.details.none">Keine Annotationen gefunden</message>
 
-    <message key="xmlui.collection.JAWG.introduction"></message>
-    <message key="xmlui.collection.arthistory.introduction"></message>
+    <message key="xmlui.collection.JAWG.introduction" />
+    <message key="xmlui.collection.arthistory.introduction" />
 
     <message key="xmlui.static.editorials.title">Redaktionelles</message>
     <message key="xmlui.static.editorials.head">Redaktionelles</message>
@@ -5512,8 +5429,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
                 <ul id="annotations"></ul>
         </p> -->
 	<div>
-		<iframe src="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*"
-        width="100%" height="1000" frameborder="0">
+		<iframe src="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*" width="100%" height="1000" frameborder="0">
 	  <p> <a href="https://hypothes.is/search?q=url%3Ahttps%3A%2F%2Fwww.univerlag.uni-goettingen.de%2F*">
 	  </a> </p>
 	</iframe>
@@ -5523,7 +5439,7 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
     <message key="xmlui.biblio.export.label">Bibliografie-Export</message>
     <message key="xmlui.biblio.export.ebookdata">eBook: </message>
     <message key="xmlui.biblio.export.printdata">Print: </message>
-    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Multimedia <span class="glyphicon glyphicon-film"></span></message> 
+    <message key="xmlui.dri2xhtml.METS-1.0.item-lecture">Multimedia <span class="glyphicon glyphicon-film" /></message> 
     <message key="xmlui.dri2xhtml.METS-1.0.item-annotations">Annotationen</message>
 
     <message key="xmlui.dri2xhtml.METS-1.0.item-statistics">Statistiken</message>
@@ -5540,4 +5456,42 @@ Wenn Sie sich dagegen entscheiden möchten, klicken Sie den folgenden Link, um d
 
     <message key="xmlui.dri2xhtml.METS-1.0.item-aboutauthors">Über die Autoren</message>
     <message key="xmlui.dri2xhtml.item.litref">Literatur</message>
+
+<message key="xmlui.administrative.Navigation.administrative_message_catalogues">Message Catalogues</message>
+	
+	<message key="xmlui.administrative.catalogue.title">Message Catalogue</message>
+	<message key="xmlui.administrative.catalogue.trail">Message Catalogue</message>
+	<message key="xmlui.administrative.catalogue.head">Message Catalogue</message>
+	<message key="xmlui.administrative.catalogue.none.provided">Please select a message catalogue.</message>
+	<message key="xmlui.administrative.catalogue.does.not.exist">The selected catalogue does not exist.</message>
+	<message key="xmlui.administrative.catalogue.not.valid">The selected catalogue is not a valid catalogue file.</message>
+	<message key="xmlui.administrative.catalogue.message.not.loading">Message catalogue could not be loaded.</message>
+	<message key="xmlui.administrative.catalogue.message.update.success">The message was successfullly updated.</message>
+	<message key="xmlui.administrative.catalogue.message.update.failure">The message could not be updated.</message>
+	<message key="xmlui.administrative.catalogue.message.add">Add new message</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.message">Are you sure you want to delete the following key:</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.header">Delete Message</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.ok">Delete</message>
+	<message key="xmlui.administrative.catalogue.message.delete.modal.cancel">Cancel</message>
+	
+	<message key="xmlui.administrative.catalogue.message.description">Click the buttons next to an input field to edit or delete a message, or click “Add” to add a new message. Your changes will be made immediately. Please wait for the page to finish processing before starting another change.</message>
+	<message key="xmlui.administrative.catalogue.message.loading">Loading, please wait...</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.message.key">Key:</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.message.key.missing">Please provide a message key.</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.message.value">Text:</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.header">Add Message</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.ok">Add</message>
+	<message key="xmlui.administrative.catalogue.message.add.modal.cancel">Cancel</message>
+	<message key="xmlui.administrative.catalogue.message.server.error.add">A server error occurred and the message could not be added. Please contact a system administrator and try again later.</message>
+	<message key="xmlui.administrative.catalogue.message.server.error.delete">A server error occurred and the message could not be deleted. Please contact a system administrator and try again later.</message>
+	<message key="xmlui.administrative.catalogue.message.server.success.add">Message was successfully added.</message>
+	<message key="xmlui.administrative.catalogue.message.server.success.delete">Message was successfully deleted.</message>
+	
+	<message key="xmlui.available.soon">bald bestellbar</message>	
+	<message key="xmlui.administrative.select.catalogue.title">Select Message Catalogue</message>
+	<message key="xmlui.administrative.select.catalogue.trail">Select Message Catalogue</message>
+	<message key="xmlui.administrative.select.catalogue.head">Select Message Catalogue</message>
+	<message key="xmlui.administrative.select.catalogue.list.prefix">Catalogue: </message>
+	<message key="xmlui.administrative.catalogue.message.server.warning.invalidxml">The HTML you have entered is not well formed. Please make sure all opening tags have a closing tag.</message>
+<message key="xmlui.administrative.catalogue.message.add.warning.invalidxml.message">The HTML you have entered is not well formed. Please make sure all opening tags have a closing tag.</message>
 </catalogue>
