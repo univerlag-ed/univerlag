@@ -2968,7 +2968,7 @@ Your team at the Universitätsverlag Göttingen</p>
             
 	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Humanities</h4>
-                <p>Prof. Dr. Andrew Gross<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof-dr-andrew-s-gross/510067.html"><span class="glyphicon glyphicon-home" /></a> 
+                <p>Prof. Dr. Andrew Gross<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/510067.html"><span class="glyphicon glyphicon-home" /></a> 
 			<!-- <a title="Wikipedia" target="_blank" href="//en.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> --></p>
                 <p>Prof. Dr. Heike Sahm <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/sahm-heike-prof-dr/450366.html"><span class="glyphicon glyphicon-home" /></a></p>
 	    </div>
@@ -2984,7 +2984,8 @@ Your team at the Universitätsverlag Göttingen</p>
             
 	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Physics</h4>
-                <p>apl. Prof. Dr. Martin Rein <!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
+                <p>apl. Prof. Dr. Martin Rein 
+		<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Werner_Lauterborn">&#160;</a><a title="Homepage" target="_blank" href="//www.physik3.gwdg.de/Personen/Lauterborn/">&#160;</a> --></p>
             </div>
         </div>
 
@@ -2996,7 +2997,7 @@ Your team at the Universitätsverlag Göttingen</p>
             
 	<div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Geoscience and Geography</h4>
-                <p>Dr. Alexander Gehler<a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index.shtml"><span class="glyphicon glyphicon-home" /></a>  
+                <p>Dr. Alexander Gehler<a title="Homepage" target="_blank" href="//www.geobiologie.uni-goettingen.de/people/agehler/index_e.shtml"><span class="glyphicon glyphicon-home" /></a>  
 		<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/"><i class="icon-wikipedia"></i></a> -->
                 </p>
             </div>
@@ -3008,7 +3009,7 @@ Your team at the Universitätsverlag Göttingen</p>
                 <p>Prof. Dr. Erwin Bergmeier <a href="//orcid.org/0000-0002-6118-4611" target="_blank" title="Personen-Profil (ORCID)">
                         <i class="icon-info-circled orcid" />
                     </a>
-			<a title="Homepage" target="_blank" href="//www.geobotanik.uni-goettingen.de/bergmeier/"><span class="glyphicon glyphicon-home" /></a></p>
+			<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/520187.html"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Forest Sciences and Forest Ecology</h4>
@@ -3019,7 +3020,7 @@ Your team at the Universitätsverlag Göttingen</p>
         <div class="row">
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Agricultural Sciences</h4>
-                <p>Prof. Dr. Jürgen Hummel<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/492912.html"><span class="glyphicon glyphicon-home" /></a></p>
+                <p>Prof. Dr. Jürgen Hummel<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/492912.html"><span class="glyphicon glyphicon-home" /></a></p>
             </div>
             
 	<div class="col-sm-6">
@@ -3032,7 +3033,7 @@ Your team at the Universitätsverlag Göttingen</p>
             <div class="col-sm-6">
                 <h4 class="list-item-header">Faculty of Social Sciences</h4>
                 <p>Prof. Dr. Elfriede Hermann <a title="Homepage" target="_blank" href="//www.uni-goettingen.de/en/152352.html"> <span class="glyphicon glyphicon-home" /></a></p>
-                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//www.uni-goettingen.de/de/prof.+dr.+andrea+lauser/65485.html"><span class="glyphicon glyphicon-home" /></a> 
+                <p>Prof. Dr. Andrea Lauser<a title="Homepage" target="_blank" href="//https://www.uni-goettingen.de/en/65485.html"><span class="glyphicon glyphicon-home" /></a> 
 			<!-- <a title="Wikipedia" target="_blank" href="//de.wikipedia.org/wiki/Gabriele_Rosenthal"><i class="icon-wikipedia"></i></a> --></p> 
 		</div>
             
