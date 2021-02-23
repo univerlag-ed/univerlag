@@ -27,6 +27,7 @@ import java.sql.SQLException;
 
 import java.util.Iterator;
 import java.util.Arrays;
+import java.util.ArrayList;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -332,7 +333,7 @@ public class OrderAction extends AbstractAction
 
             } else {
                 System.out.println("calculating shipping costs...");
-
+		bill.setShippingCosts(countrycode);
                 jsonResult.put("products", bill.getProductCost());
                 jsonResult.put("shipping", bill.getShippingCost());
                 jsonResult.put("total", bill.getTotalSum());
@@ -404,6 +405,7 @@ public class OrderAction extends AbstractAction
 
                 System.out.println("data complete!");
                 //customer data complete
+		bill.setShippingCosts((String) customer.get("countrycode"));
                 if (customer.get("name") != null) {
 					temp_data.append((String) customer.get("name"));
 					temp_data.append("\n");
@@ -451,6 +453,7 @@ public class OrderAction extends AbstractAction
                 } else //delivery data complete
                 {
                     System.out.println("data complete!");
+		    System.out.println("Country: " + delivery.get("country"));
                     if (delivery.get("name") != null )
                     {
 						temp_data.append((String) delivery.get("name"));
@@ -586,6 +589,12 @@ public class OrderAction extends AbstractAction
         protected int amountSum;
         protected int shippingCosts;
 
+	protected ArrayList<String> lowcost = new ArrayList<String>( 
+            Arrays.asList("DE", "AT", "LU", "LI")); 
+	protected ArrayList<String> eu = new ArrayList<String>(
+            Arrays.asList("BE", "BG", "DK", "EE", "FI", "FR", "GR", "IE", 
+		"IT", "HR", "LV", "LT", "MT", "NL", "PL", "PT", "RO", 
+		"SE", "SK", "SI", "ES", "CZ", "HU", "CY"));
         DecimalFormat df = new DecimalFormat("##0.00");
 
         public Bill() {
@@ -604,6 +613,7 @@ public class OrderAction extends AbstractAction
 
             }
 
+	    
         }
 
 
@@ -646,6 +656,37 @@ public class OrderAction extends AbstractAction
 
             return df.format(amountSum/100.00);
         }
+
+	/**
+         * Set shipping cost depending on 
+         * target country
+         *
+         */
+        public void setShippingCosts(String Countrycode)
+        {
+		
+            /* shipping costs are changed: instead of 3.50 flat
+                3.50 EUR DE
+                3.50 EUR AT Österreich, LU Luxemburg, LI Liechtenstein
+                6.00 EUR CH Schweiz
+                8.00 EUR bei Lieferung in alle weiteren EU-Länder und
+                15.00 EUR in europäische Länder (Nicht-EU) und in nicht-europäische Länder (Welt).
+            */
+	
+	    if (!lowcost.contains(Countrycode)) {
+		if (eu.contains(Countrycode)) {
+			shippingCosts = 800;
+		}
+		else if (Countrycode.equals("CH")) {
+			shippingCosts = 600;
+		}
+		else {
+			shippingCosts = 1500;
+		}
+	    }
+
+        }
+
 
         /**
          * Gives the cost of all ordered products
